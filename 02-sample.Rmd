@@ -1,0 +1,3 @@
+# Sample Sub-Topic
+
+This is an example for the deliverable every group works on. Every group works on one independent chapter (starting as one Rmd file).
