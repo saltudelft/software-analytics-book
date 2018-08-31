@@ -2,10 +2,12 @@
 
 This is the repository in which we collaboratively create our survey on software analytics from course [IN4334, software analytics](https://github.com/gousiosg/softwanal). Please file a pull request with your changes. Others will then review it.
 
+[![Build Status](https://travis-ci.org/saltudelft/software-analytics-book.svg?branch=master)](https://travis-ci.org/saltudelft/software-analytics-book)
+
 ## Dependencies
 
 1. Fork this repository (and keep your fork updated).
-2. Install RStudio and RMarkDown.
+2. Install RStudio and RMarkdown.
 3. Open book.Rproj to contribute to the book. `index.Rmd` binds it together.
 
 
