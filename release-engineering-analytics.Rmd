@@ -18,8 +18,16 @@ These initial papers were @adams2016a, @da2016a, @d2014a, @khomh2012a, and
 We collected publications using two search engines: Scopus and Google Scholar.
 These each encompass various databases such as ACM Digital Library, Springer,
 IEEE Xplore and ScienceDirect.
-The queries we entered as well as the results they yielded are summarized in
-Figure 1.
+The queries we entered are summarized in Figure 1.
+The publications found using this query were:
+- @kaur2019a
+- @kerzazi2013a
+- @castelluccio2017a
+- @karvonen2017a
+- @claes2017a
+- @fujibayashi2017a
+- @souza2015a
+- @laukkanen2018a
 
 ```
 TITLE-ABS-KEY(
