@@ -59,11 +59,11 @@ Results of which are listed in Table 1.
 
 _Table 1. Papers found indirectly by investigating citations of/by other papers._
 
-| Starting point | Type | Result |
-|----------------|------|--------|
-| @souza2015a    | has cited | @plewnia2014a <br> @mantyla2015a |
+| Starting point | Type        | Result                              |
+|----------------|-------------|-------------------------------------|
+| @souza2015a    | has cited   | @plewnia2014a   <br> @mantyla2015a  |
 | @khomh2015a    | is cited by | @poo-caama2016a <br> @teixeira2017a |
-| @mantyla2015a  | is cited by | @rodriguez2017a <br> @cesar2017a |
+| @mantyla2015a  | is cited by | @rodriguez2017a <br> @cesar2017a    |
 
 In order to aggregate our collective efforts, selected sources were stored in a
 custom built web-based tool for conducting literature reviews.
