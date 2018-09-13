@@ -12,7 +12,7 @@ These initial papers were @adams2016a, @da2016a, @d2014a, @khomh2012a, and
 
 We collected publications using two search engines: Scopus and Google Scholar.
 These each encompass various databases such as ACM Digital Library, Springer, IEEE Xplore and ScienceDirect.
-The queries we entered as well as the results they yielded are summarized in table 2.
+The queries we entered as well as the results they yielded are summarized in Table 1.
 In addition to the search strategy that is based on a combination of keywords and subject headings as described above, a review of the list of publications that retrieved papers cite and are cited by is done.
 These lists are provided by Google Scholar, as well as the reference lists of the papers themselves.
 Results of which are listed in Table 2.
