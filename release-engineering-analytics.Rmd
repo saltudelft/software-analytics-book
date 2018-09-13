@@ -20,6 +20,36 @@ These each encompass various databases such as ACM Digital Library, Springer,
 IEEE Xplore and ScienceDirect.
 The queries we entered as well as the results they yielded are summarized in
 Figure 1.
+
+```
+TITLE-ABS-KEY(
+	(
+		("continuous release" OR "rapid release" OR "frequent release" OR "quick release" OR "speedy release" OR "accelerated release" OR "agile release" OR "short release" OR "shorter release" OR "lightning release" OR "brisk release" OR "hasty release" OR "compressed release" OR "release length" OR "release size" OR "release cadence" OR "release frequency")
+
+		OR
+
+		("continuous delivery" OR "rapid delivery" OR "frequent delivery" OR "fast delivery" OR "quick delivery" OR "speedy delivery" OR "accelerated delivery" OR "agile delivery" OR "short delivery" OR "lightning delivery" OR "brisk delivery" OR "hasty delivery" OR "compressed delivery" OR "delivery length" OR "delivery size" OR "delivery cadence")
+
+		OR
+
+		("continuous deployment" OR "rapid deployment" OR "frequent deployment" OR "fast deployment" OR "quick deployment" OR "speedy deployment" OR "accelerated deployment" OR "agile deployment" OR "short deployment" OR "lightning deployment" OR "brisk deployment" OR "hasty deployment" OR "compressed deployment" OR "deployment length" OR "deployment size" OR "deployment cadence")
+	)
+
+	AND
+
+	("release schedule" OR "release management" OR "release engineering" OR "release cycle" OR "release pipeline" OR "release process" OR "release model" OR "release strategy" OR "release strategies" OR "release infrastructure")
+
+	AND
+
+	software
+) AND (
+	LIMIT-TO(SUBJAREA, "COMP") OR LIMIT-TO(SUBJAREA, "ENGI")
+)
+AND PUBYEAR AFT 2014
+```
+
+_Figure 1. Query used for retrieving release engineering publications via Scopus._
+
 In addition to the search strategy that is based on a combination of keywords
 and subject headings as described above, a review of the list of publications
 that retrieved papers cite and are cited by is done.
@@ -27,7 +57,7 @@ These lists are provided by Google Scholar,
 as well as the reference lists of the papers themselves.
 Results of which are listed in Table 1.
 
-_Table 1. Papers found indirectly by investicating citations of/by other papers._
+_Table 1. Papers found indirectly by investigating citations of/by other papers._
 
 | Starting point | Type | Result |
 |----------------|------|--------|
