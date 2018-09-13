@@ -1,3 +1,6 @@
 # Release Engineering Analytics
 
 ## Search Strategy
+In addition to the search strategy that is based on a combination of keywords and subject headings as described above, a review of the list of publications that retrieved papers cite and are cited by is done. 
+These lists are provided by Google Scholar, as well as the reference lists of the papers themselves.
+Results of which are listed in Table 2.
