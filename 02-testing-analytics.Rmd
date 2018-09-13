@@ -1,0 +1,31 @@
+# Paper categorization index
+
+|Category          |Title                                   | Query|
+|------------------|----------------------------------------|-------------------------------|
+|Test evolution    |Supporting Test Suite Evolution through Test Case Adaptation | Google Scholar query: test-suite evolution |
+|Test evolution    | TestEvol: A tool for analyzing test-suite evolution | Referenced by: Understanding myths and realities of test-suite evolution |
+|Test evolution   | Facilitating software evolution research with kenyon | Referenced by: Understanding myths and realities of test-suite evolution |
+|Test evolution  | Supporting Test Suite Evolution through Test Case Adaptation | Google Scholar query: test-suite evolution |
+|Test evolution | Understanding myths and realities of test-suite evolution | Initial Paper Seed |
+|Co-evolution | Studying Fine-Grained Co-evolution Patterns of Production and Test Code | Google Scholar keywords: Maintain developer tests, in ‘cited by’ of “Aiding Software Developers to Maintain Developer Tests” on IEEE|
+|Co-evolution | Studying the co-evolution of production and test code in open source and industrial developer test processes through repository mining | Initial Paper Seed|
+|Co-evolution | Strategies for avoiding text fixture smells during software evolution | In ‘cited by’ of “Understanding myths and realities of test-suite evolution” on Scopus |
+|Co-evolution | Aiding Software Developers to Maintain Developer Tests | Keywords: Maintain developer tests, ‘cited by’ in “Studying the co-evolution of production and test code in open source and industrial developer test processes through repository mining” on IEEE |
+|Production evolution| Does code decay? Assessing the evidence from change management data | Referenced by: Testing analytics on software variability |
+|Production evolution| Testing analytics on software variability, | Initial Paper Seed |
+| | |
+| Test generation |Scaling up automated test generation: Automatically generating maintainable regression unit tests for programs | Referenced in Supporting Test Suite Evolution through Test Case Adaptation |
+|Test generation|Obsidian: Pattern-Based Unit Test Implementations| Springer: Reverse search on “Automatically generating maintainable regression unit tests for programs” |
+|Test generation|How Do Automatically Generated Unit Tests Influence Software Maintenance?| Google Scholar query: Automatically generating unit tests |
+|Test generation|Model-Based Strategies for Reducing the Complexity of Statistically Generated Test Suites| Scopus query: “software development” AND Computer Science AND Software Engineering
+| | |
+| Testing practices | A survey of software testing practices in Canada | Google Scholar query: Survey software testing |
+| Testing practices | Developer testing in the ide: Patterns, beliefs, and behavior | Initial Paper Seed |
+| Testing practices | When, how, and why developers (do not) test in their IDEs | In ‘cited by’ of “Understanding myths and realities of test-suite evolution”. |
+| Testing practices | Uncertainty in Software Testing | Springer query: software testing
+| | |
+| Risk-driven testing | Investigating NLP-Based Approaches for Predicting Manual Test Case Failure | In ‘cited by’ of “Test case analytics: Mining test case traces to improve risk-driven testing” |
+| Risk-driven testing | Risk-driven software testing and reliability | Scopus query: risk-driven testing |
+| Risk-driven testing | Risk-driven vulnerability testing: Results from eHealth experiments using patterns and model-based approach | Scopus query: “risk-driven” AND testing |
+| Risk-driven testing | A comparative study of software testing techniques | In ‘cited by’ of “Risk-driven software testing and reliability” |
+| Risk-driven testing | Test case analytics: Mining test case traces to improve risk-driven testing, | Initial Paper Seed |
