@@ -1,2 +1,3 @@
 # Release Engineering Analytics
 
+## Search Strategy
