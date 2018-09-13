@@ -31,25 +31,31 @@ The publications found using this query were:
 
 ```
 TITLE-ABS-KEY(
-	(
-		("continuous release" OR "rapid release" OR "frequent release" OR "quick release" OR "speedy release" OR "accelerated release" OR "agile release" OR "short release" OR "shorter release" OR "lightning release" OR "brisk release" OR "hasty release" OR "compressed release" OR "release length" OR "release size" OR "release cadence" OR "release frequency")
-
-		OR
-
-		("continuous delivery" OR "rapid delivery" OR "frequent delivery" OR "fast delivery" OR "quick delivery" OR "speedy delivery" OR "accelerated delivery" OR "agile delivery" OR "short delivery" OR "lightning delivery" OR "brisk delivery" OR "hasty delivery" OR "compressed delivery" OR "delivery length" OR "delivery size" OR "delivery cadence")
-
-		OR
-
-		("continuous deployment" OR "rapid deployment" OR "frequent deployment" OR "fast deployment" OR "quick deployment" OR "speedy deployment" OR "accelerated deployment" OR "agile deployment" OR "short deployment" OR "lightning deployment" OR "brisk deployment" OR "hasty deployment" OR "compressed deployment" OR "deployment length" OR "deployment size" OR "deployment cadence")
-	)
-
-	AND
-
-	("release schedule" OR "release management" OR "release engineering" OR "release cycle" OR "release pipeline" OR "release process" OR "release model" OR "release strategy" OR "release strategies" OR "release infrastructure")
-
-	AND
-
-	software
+  (
+    "continuous release" OR "rapid release" OR "frequent release"
+    OR "quick release" OR "speedy release" OR "accelerated release"
+    OR "agile release" OR "short release" OR "shorter release"
+    OR "lightning release" OR "brisk release" OR "hasty release"
+    OR "compressed release" OR "release length" OR "release size"
+    OR "release cadence" OR "release frequency"
+    OR "continuous delivery" OR "rapid delivery" OR "frequent delivery"
+    OR "fast delivery" OR "quick delivery" OR "speedy delivery"
+    OR "accelerated delivery" OR "agile delivery" OR "short delivery"
+    OR "lightning delivery" OR "brisk delivery" OR "hasty delivery"
+    OR "compressed delivery" OR "delivery length" OR "delivery size"
+    OR "delivery cadence" OR "continuous deployment" OR "rapid deployment"
+    OR "frequent deployment" OR "fast deployment" OR "quick deployment"
+    OR "speedy deployment" OR "accelerated deployment" OR "agile deployment"
+    OR "short deployment" OR "lightning deployment" OR "brisk deployment"
+    OR "hasty deployment" OR "compressed deployment" OR "deployment length"
+    OR "deployment size" OR "deployment cadence"
+  ) AND (
+    "release schedule" OR "release management" OR "release engineering"
+    OR "release cycle" OR "release pipeline" OR "release process"
+    OR "release model" OR "release strategy" OR "release strategies"
+    OR "release infrastructure"
+  )
+  AND software
 ) AND (
 	LIMIT-TO(SUBJAREA, "COMP") OR LIMIT-TO(SUBJAREA, "ENGI")
 )
