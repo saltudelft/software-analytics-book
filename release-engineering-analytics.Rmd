@@ -20,6 +20,7 @@ These each encompass various databases such as ACM Digital Library, Springer,
 IEEE Xplore and ScienceDirect.
 The queries we entered are summarized in Figure 1.
 The publications found using this query were:
+
 - @kaur2019a
 - @kerzazi2013a
 - @castelluccio2017a
