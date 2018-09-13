@@ -1,4 +1,9 @@
 # Paper categorization index
+The papers used in this paper were found by using a given initial seed of papers (query defined below as 'Initial Paper Seed'). From this initial seed of papers we used the keywords used by those papers to construct queries, additionally the references (‘referenced by’) and the citations (‘cited in’) of the papers were used to find papers. The query row of the tables describing the references as found in below indicates how a paper was found. For queries the default search sites were Scopus, Google Scholar and Springer.
+
+The keywords were: software, test*, analytics, test-suite, evolution, software development, computer science, software engineering, risk-driven, survey software testing
+
+The table below describers for each paper, which query technique was used.
 
 |Category          |Title                                   | Query|
 |------------------|----------------------------------------|-------------------------------|
