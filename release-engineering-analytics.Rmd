@@ -5,6 +5,11 @@ Release engineering is a relatively new research topic, given that modern proces
 Therefore, we took an exploratory approach in collecting any literature revolving around the topic of release engineering from the perspective of software analytics.
 This will aid us in determining a more narrow scope for our survey, subsequently allowing us to find additional literature fitting this scope.
 
+At the start of this project, five papers were given to us as a starting point
+for the literature survey.
+These initial papers were @adams2016a, @da2016a, @d2014a, @khomh2012a, and
+@khomh2015a.
+
 We collected publications using two search engines: Scopus and Google Scholar.
 These each encompass various databases such as ACM Digital Library, Springer, IEEE Xplore and ScienceDirect.
 The queries we entered as well as the results they yielded are summarized in table 2.
