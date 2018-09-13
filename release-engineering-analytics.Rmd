@@ -4,3 +4,11 @@
 In addition to the search strategy that is based on a combination of keywords and subject headings as described above, a review of the list of publications that retrieved papers cite and are cited by is done. 
 These lists are provided by Google Scholar, as well as the reference lists of the papers themselves.
 Results of which are listed in Table 2.
+
+_Table 2. Papers found indirectly by investicating citations of/by other papers._
+
+| Starting point | Type | Result |
+|----------------|------|--------|
+| @souza2015a    | has cited | @plewnia2014a <br> @mantyla2015a |
+| @khomh2015a    | is cited by | @poo-caama2016a <br> @teixeira2017a |
+| @mantyla2015a  | is cited by | @rodriguez2017a <br> @cesar2017a |
