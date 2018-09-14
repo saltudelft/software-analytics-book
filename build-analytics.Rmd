@@ -38,6 +38,58 @@ my Microsoft. Using logistic regression a prediction can be made on the probabil
 failing. Using this method build errors can be better anticipated, which decreases the time until
 the build works again.
 
+### @beller2017oops
+
+This paper explores data from Travis CI^[See https://travis-ci.org] on a large scale by analyzing
+2,640,825 build logs of Java and Ruby builds. It uses <span
+style="font-variant:small-caps">TravisTorrent</span> as a data source. It is found that the number
+one reason for failing builds it test failure. It also explores differences in testing between
+Java and Ruby.
+
+### @rausch2017empirical
+
+A stuy on the build results of 14 open source software Java projects. It is similar to
+@beller2017oops, albeit on a smaller scale. It does go more in depth on the result and changes
+over time.
+
+### @beller2017travistorrent
+
+This paper introduces <span style="font-variant:small-caps">TravisTorrent</span>, a dataset
+containing analyzed builds from more than 1,000 projects. This data is freely downloadable from
+the internet. It uses <span style="font-variant:small-caps">GHTorrent</span> to link the
+information from travis to commits on GitHub.
+
+### @pinto2018work
+
+This paper is a survey amongst Travis CI users. It found that users are not sure whether a job
+failure represents a failure or not, that inadequate testing is the most common (technical) reason
+for build breakage and that people feel that there is a false sense of confidence when blindly
+trusing tests.
+
+### @zhao2017impact
+
+<!-- Note: Interesting collab between Nanjing (China), Eindhoven (Netherlands), UC Davis (USA) and Carnegie Mellon (USA). -->
+
+This paper analyzed approximately 160,000 projects written in seven different programming
+languages. It notes that adoption of CI is often part of a reorganisation. It collected
+information on the differences before and after adoption of CI. There is also a survey amongst
+developers to learn about their experiences in adopting Travis CI.
+
+### @widder2018m
+
+This paper analyzes what factors have impact on abandonment of Travis. They find that increased
+build complexity reduces the chance of abandonment, but larger projects abandon at a higher rate
+and that a project's language has significant but varying effect. A surprising result is that
+metrics of configuration attempts and knowledge dispersion in the project don't affect the rate of
+abandonment.
+
+### @hilton2018usage
+
+This paper explores which CI system developers use, how developers use CI and why developers use
+CI. For this it analyzes data from Github, Travis CI and it conducts a developer survey. It finds
+that projects using CI release twice as oftern, accept pull requests faster and have developers
+who are less worried about breaking the build.
+
 ### @vassallo2017tale
 
 Discusses the difference in failures on continuous integration between open source software (OSS)
