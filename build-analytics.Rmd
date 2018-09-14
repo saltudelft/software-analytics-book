@@ -6,4 +6,8 @@
 
 ## Search Strategy
 
+Using the initial seed consisting of @bird2017predicting, @beller2017oops, @raush2017emprical,
+@beller2017travistorrent, @pinto2018work, @zhao2017impact, @widder2018m and @hilton2016usage we
+used references and similar keywords to find new papers to analyze.
+
 ## Study Selection
