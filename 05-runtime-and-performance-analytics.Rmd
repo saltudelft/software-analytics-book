@@ -1,62 +1,3 @@
---- 
-title: "A Literature Survey of Software Analytics"
-author: "Moritz Beller, IN4334 2018 TU Delft"
-date: "`r Sys.Date()`"
-site: bookdown::bookdown_site
-output: bookdown::gitbook
-documentclass: book
-bibliography: [book.bib]
-biblio-style: apalike
-link-citations: yes
-github-repo: saltudelft/software-analytics-book
-description: "This is a contemporary, systematic survey of literature on Software Analytics."
----
-
-# Preamble {#intro}
-
-The book you see in front of you is the outcome of an eight week seminar run by the Software Engineering Research Group (SERG) at TU Delft. We have split up the novel area of Software Analytics into several sub topics. Every chapter addresses one such sub-topic of Software Analytics and is the outcome of a systematic literature review a laborious team of 3-4 students performed.
-
-With this book, we hope to structure the new field of Software Analytics and show how it is related to many long existing research fields.
-
-*Moritz Beller*
-
-
-
-## License
-
-![Creative Commons](figures/cc-nc-sa.png)
-This book is copyrighted 2018 by TU Delft and its
-respective authors and distributed under a [CC BY-NC-SA 4.0
-license](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-
-<!--chapter:end:index.Rmd-->
-
-# A contemporary view on Software Analytics
-
-## What is Software Analytics?
-
-## A list of Software Analytics Sub-Topics
-
-<!--chapter:end:01-definition.Rmd-->
-
-# Sample Sub-Topic
-
-This is an example for the deliverable every group works on. Every group works on one independent chapter (starting as one Rmd file).
-
-<!--chapter:end:02-sample.Rmd-->
-
-# Final Words
-
-We have finished a nice book on Software Analytics.
-
-<!--chapter:end:03-summary.Rmd-->
-
-`r if (knitr:::is_html_output()) '
-# References {-}
-'`
-
-<!--chapter:end:04-references.Rmd-->
-
 # Runtime and Performance Analytics
 
 In this chapter, we will discuss the field of performance and runtime analytics. We will not cover the entire field because it is too broad. Using Kitchenham’s method [1], we have narrowed down the scope of this survey. 
@@ -102,25 +43,54 @@ Citations:
 scholar: 18
 scopus: 10
 
-
 The mobile applications market continues to grow and many applications are available. It is important for developers that their application keeps working and that crashes are fixed as fast as possible to keep up with competitors. However, the mobile market is tough: there are many different versions/hardware/steps end users take and it is hard to reproduce the environment and steps the end users take before running into a crash. This is why the researchers developed MoTiF which uses machine learning to reproduce the steps the end users take before the app crashes on the end user’s phone and generates a test suite. MoTiF also uses the crowd to validate whether the generated test suite truly reproduces the observed crash.
 
 Remarks
-1.    The datasets used for the research are a bit questionable. One is based on simply performing a large amount of random event on the app, the other dataset is created by letting a group of 10 student try to crash the app in one hour. 
-2.    Only 5 different apps have been tested. 
-3.    Contains reference to "Charting the API minefield using software telemetry data". 
+
+* The datasets used for the research are a bit questionable. One is based on simply performing a large amount of random event on the app, the other dataset is created by letting a group of 10 student try to crash the app in one hour. 
+* Only 5 different apps have been tested. 
+* Contains reference to "Charting the API minefield using software telemetry data". 
 
 ## An exploratory study on faults in web api integration in a large-scale payment company
 
+Year: 2018, published in top conference. 
+Citations: 
+scholar: 2
+scopus: 0
+
 This research explores what the implications of web API faults are, what the most common web API faults are and best practices for API design. The faults in API integration can be grouped in 11 causes: invalid user input, missing user input, expired request data, invalid request data, missing request data, insufficient permissions, double processing, configuration, missing server data, internal and third party. Most faults can be attributed to the invalid or missing request data, and most API consumers seem to be impacted by faults caused by invalid request data and third party integration. Furthermore, API consumers most often use official API documentation to implement an API correctly, followed by code examples. The challenges of preventing problems from occurring are the lack of implementation details, insufficient guidance on certain aspects of the integration, insufficient understanding of the impact of problems, and missing guidance on how to recover from errors.
+
+Remarks
+
+* Easy to read
+* Paper only considers a single API
+* Survey only has 40 responses
 
 ## Search-based test data generation for SQL queries
 
+Year: 2018, published in top conference. 
+Citations: 
+scholar: 0
+scopus: 0
+
 SQL queries should be tested as thoroughly as program code. However, it is hard to generate test data for testing. Other researchers proposed viewing this problem as a constraint solving problem, so test data could be generated with a SAT-solver. However, strings are not supported by current SAT-solver tools and it is a complex task to translate a query to a satisfiability problem. In this research, they view the test generation problem as a search-based problem. They use random search, biased random search and genetic algorithms (GA) to generate the data. The methods are combined in a tool called EvSQL and the tool is tested on more than 2000 queries. The GA method is the best and is able to cover a little over 98% of the queries. 
+
+Remarks
+
+* Easy to read
+* Utilizes queries of 4 different systems
+* Generation of test data for SQL questies implies easier generation of unit- regression- and integration tests for SQL queries. 
 
 ## Anomaly detection using program control flow graph mining from execution logs
 
-They are trying to diagnose distributed applications. main cause of failures: when you make an API request to another application. This results in many new calls to other services or even other applications. This flow gets interrupted at some point. So when the top level API is not working, they want to show where it goes wrong. Before this paper, they used metrics and logs to find the cause. Drawbacks of this: many benign warnings or errors in healthy state or faults do not manifest as errors. Manually checking a transaction flow is also very hard. They use templates: print statements from the source code. These are the nodes, the edges are the flows. Two challenges: mining print statements is hard because parameters are different in every log and flows can happen at the same time. Their method: they do a join on two print statements if the statements are preceded and followed by approximately the same steps. Niet te lezen deze paper.
+Year: 2016, published in top conference. 
+Citations: 
+scholar: 12
+scopus: 8
 
-<!--chapter:end:05-runtime-and-performance-analytics.Rmd-->
+The paper attempts to diagnose distributed applications. For this purpose they mine templates and their sequences from exedcution logs, from this information they create a control flow graph. The main cause of failures identified: making an API request to another application. This results in many new calls to other services or even other applications. This flow gets interrupted at some point. So when the top level API is not working, they want to show where it goes wrong. In earlier work, primarily metrics and logs were used to find the cause. Drawbacks of this: many benign warnings or errors in healthy state or faults do not manifest as errors. Manually checking a transaction flow is also very hard. They use templates: print statements from the source code. These are the nodes, the edges are the flows. Two challenges: mining print statements is hard because parameters are different in every log and flows can happen at the same time. Their method: they do a join on two print statements if the statements are preceded and followed by approximately the same steps. 
 
+Remarks 
+
+* Has a presentation on YouTube
+* Difficult to read
