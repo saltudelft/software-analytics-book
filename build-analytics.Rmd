@@ -33,7 +33,10 @@ Through this we found the following papers
 
 ### @bird2017predicting
 
-This is a US patent grant for a method of predicting software build errors. This patent is owned my Microsoft. Using logistic regression a prediction can be made on the probability of a build failing. Using this method build errors can be better anticipated, which decreases the time until the build works again.
+This is a US patent grant for a method of predicting software build errors. This patent is owned
+my Microsoft. Using logistic regression a prediction can be made on the probability of a build
+failing. Using this method build errors can be better anticipated, which decreases the time until
+the build works again.
 
 ### @vassallo2017tale
 
