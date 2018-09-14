@@ -1,0 +1,26 @@
+# Ecosystem Analytics
+
+Software ecosystems are a combination of systems that a community of developers use to maintain 
+their software projects. By doing analysis on these systems people hope to find meaningful insights
+that could lead to improvements of the software development process. For our literature review we
+started with the initial seed of papers that was given to us. After reviewing them we have decided
+that we would not use one, and that we had 3 that were debatable. In the table below we have made
+an overview of all these papers. The first column describes whether we are going to use them. A 
+'+' means we will use it, a '-' means we will not, and empty means we are still unsure. The 
+keywords are the actual keywords from the paper. 
+
+| First Author          | Title                                                                                         | Year | Keywords                                                                                                    |
+|-----------------------|-----------------------------------------------------------------------------------------------|------|-------------------------------------------------------------------------------------------------------------|
+| Abate, Pietro         | Strong dependencies between software components                                               | 2009 |                                                                                                             |
+| Abdalkareem, Rabe     | Why do developers use trivial packages? An empirical case study on NPM                        | 2017 | JavaScript; Node.js; Code Reuse; Empirical Studies                                                          |
+| Bogart, Christopher   | How to break an api: Cost negotiation and community values in three software ecosystem        | 2016 | Software ecosystems; Dependency management; semantic versioning; Collaboration; Qualitative research        |
+| Claes, Maelick        | A historical analysis of Debian package incompatibilities                                     | 2015 | debian, conflict, empirical, analysis, software, evolution, distribution, package, dependency, maintenance  |
+| Constantinou, Eleni   | An empirical comparison of developer retention in the RubyGems and NPM software ecosystems    | 2017 | Software ecosystem, Socio-technical interaction, Software evolution, Empirical analysis, Survival analysis  |
+| Hejderup, Joseph      | Software Ecosystem Call Graph for Dependency Management                                       | 2018 |                                                                                                             |
+| Kikas, Riivo          | Structure and evolution of package dependency networks                                        | 2017 |                                                                                                             |
+| Kula, Raula Gaikovina | Do developers update their library dependencies?                                              | 2017 | Software reuse, Software maintenance, Security vulnerabilities                                              |
+| Mens, Tom             | Studying Evolving Software Ecosystems based on Ecological Models                              | 2014 | Coral Reef, Natural Ecosystem, Open Source Software, Ecological Model, Software Project                     |
+| Raemaekers, Steven    | Semantic versioning and impact of breaking changes in the Maven repository                    | 2017 | Semantic versioning, Breaking changes, Software libraries                                                   |
+| Robbes, Romain        | How do developers react to API deprecation? The case of a smalltalk ecosystem                 | 2012 | Ecosystems, Mining Software Repositories, Empirical Studies                                                 |
+| Trockman, Asher       | Adding sparkle to social coding: An empirical study of repository badges in the npm ecosystem | 2018 |                                                                                                             |
+| Posnett, Daryl        | Dual ecological measures of focus in software development                                     | 2013 |                                                                                                             |
