@@ -83,7 +83,7 @@ and that a project's language has significant but varying effect. A surprising r
 metrics of configuration attempts and knowledge dispersion in the project don't affect the rate of
 abandonment.
 
-### @hilton2018usage
+### @hilton2016usage
 
 This paper explores which CI system developers use, how developers use CI and why developers use
 CI. For this it analyzes data from Github, Travis CI and it conducts a developer survey. It finds
