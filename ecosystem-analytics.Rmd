@@ -43,6 +43,7 @@ are in the "Filters Used" column. A summary can be found below.
 | + | Rajlich, Václav   | Software evolution and maintenance                                                                               | 2014 |                                                                                                                               | Software Evolution and Maintenance             | Google Scholar | >=2014       |
 | + | Teixeira, Jose    | Lessons learned from applying social network analysis on an industrial Free/Libre/Open Source Software Ecosystem | 2015 | Social network analysis Open source Open-coopetition Software ecosystems Business models Homophily Cloud computing OpenStack  | "software ecosystem analytics"                 | Google Scholar | >=2014       |
 
+
 Finally we have also analyzed some papers that were referenced by the papers that we have found 
 before. The original paper that they were referenced in can be found in the "Referenced In" 
 column.
@@ -55,3 +56,4 @@ column.
 | + | Decan, Alexandre                        | An empirical comparison of dependency issues in OSS packaging ecosystems                                 | 2017 |                                                                                  | Abdelkareem (2017), Constantinou (2017), Decan (2018) |
 | + | Dietrich, Jens                          | Broken Promises - An Empirical Study into Evolution Problems in Java Programs Caused by Library Upgrades | 2014 |                                                                                  | Raemaekers, Steven(2017)                              |
 | + | Malloy, Brian                           | uantifying the transition from Python 2 to 3: an empirical study of Python applications.                 | 2017 |                                                                                  | Malloy (2018)                                         |
+| + | McDonnell, T | 2013 | | An empirical study of api stability and adoption in the android ecosystem | Manikas, Konstantinos (2016)
