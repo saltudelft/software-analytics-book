@@ -12,10 +12,11 @@ The goal of the review is to summarize the state of the art and identify future 
 code review area. The research questions are as follows:
 
 * What is the state of the art in the research area of code review?
+* What is the expectations and outcomes of the code review? Do they match and What is the difference?
 * What are future challenges in the research area of code review?
 
 ## Search process
-The search process consits of the following:
+Given six initial paper seed to have a basic understanding about this topic, we then search for more paper to obtain  more information to complete the survey. The search process consits of the following:
 
 * A Google Scholar search using the search query *code review*. In Google Scholar, the option to
 only display results from 2014 onward will be used, and the results will be sorted by relevance.
@@ -23,7 +24,7 @@ The result list will then be considered in order.
 * A general Google search for non-scientific reports (e.g., blog posts) and implemented code review
 tools. For this search queries *code review* and *code review tools* are used, respectively. The
 result list will be considered in order.
-* All papers in the initial seed provided by the course instructor will be considered.
+* All papers in the initial seed provided by the course instructor will be considered and also their reference and citation.
 
 From now on, all three categories listed above in general will be called *resource*.
 
@@ -31,6 +32,7 @@ From now on, all three categories listed above in general will be called *resour
 The following types of resource will be included:
 
 * Resources discussing new code review methods.
+* Resources discussing the motivations and expectations of code review.
 * Resources discussing the effect of existing or new code review methods on a development team or
 on the code they produce.
 
@@ -68,3 +70,6 @@ All data will be collected by one person participating in the review and checked
 ## Data analysis
 
 ## Dissemination
+
+### Next step
+The next plan is to collect a lot of paper to obtain deeper understanding aiming at solving the research questions and have a clear standard of quality assessment.  
