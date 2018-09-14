@@ -18,7 +18,7 @@ code review area. The research questions are as follows:
 The search process consits of the following:
 
 * A Google Scholar search using the search query *code review*. In Google Scholar, the option to
-only display results from 2014 onwards will be used, and the results will be sorted by relevance.
+only display results from 2014 onward will be used, and the results will be sorted by relevance.
 The result list will then be considered in order.
 * A general Google search for non-scientific reports (e.g., blog posts) and implemented code review
 tools. For this search queries *code review* and *code review tools* are used, respectively. The
