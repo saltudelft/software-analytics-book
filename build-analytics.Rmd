@@ -2,7 +2,21 @@
 
 ## Background
 
+When building a project from source code to executables everything should go smoothly. This is not
+always the case, a build can break for several reasons. This chapter will give an overview of
+research done on build scripts and continuous integration.
+
+<!--
+ - Define build
+ - Define context
+ -->
+
 ## Research Questions
+
+<!-- Subject to change -->
+
+ * What are causes of a broken build?
+ * With which goals is continuous integration applied?
 
 ## Search Strategy
 
@@ -11,3 +25,24 @@ Using the initial seed consisting of @bird2017predicting, @beller2017oops, @raus
 used references and similar keywords to find new papers to analyze.
 
 ## Study Selection
+
+Through this we found the following papers
+
+### @vassallo2017tale
+
+Discusses the difference in failures on continuous integration between open source software (OSS)
+and industrial software projects. For this 349 Java OSS projects and 418 project from ING
+Nederland, a financial organisation.
+
+Using cluser analysis it was observed that both kinds of projects share similar build failures,
+but in other cases very different patterns emerge.
+
+### @hassan2018hirebuild
+
+This paper uses TravisTorrent (@beller2017travistorrent) to show that 22% of code commits include changes in build script files to keep the build working or to fix the build.
+
+In the paper a tool is proposed to automatically fix build failures based on previous changes.
+
+### @vassallo2018break
+
+### @zampetti2017open
