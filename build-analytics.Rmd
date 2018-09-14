@@ -17,6 +17,7 @@ research done on build scripts and continuous integration.
 
  * What are causes of a broken build?
  * With which goals is continuous integration applied?
+ * What can be used to effectively fix a broken build?
 
 ## Search Strategy
 
@@ -39,10 +40,20 @@ but in other cases very different patterns emerge.
 
 ### @hassan2018hirebuild
 
-This paper uses TravisTorrent (@beller2017travistorrent) to show that 22% of code commits include changes in build script files to keep the build working or to fix the build.
+This paper uses TravisTorrent (@beller2017travistorrent) to show that 22% of code commits include
+changes in build script files to keep the build working or to fix the build.
 
 In the paper a tool is proposed to automatically fix build failures based on previous changes.
 
 ### @vassallo2018break
 
+This paper proposes a tool called <span style="font-variant:small-caps">BART</span> to help
+developers fix build errors. This tool eliminates the need to browse error logs which can be very
+long by generating a summary of the failure with useful information.
+
 ### @zampetti2017open
+
+This paper studies the usage of static analysis tools in 20 Java open source software projects
+hosted on GitHub and using Travic CI as continuous integration infrastructure. There is
+investigated which tools are being used, what types of issues make the build fail or raise
+warnings and how is responded to broken builds. 
