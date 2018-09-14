@@ -1,0 +1,26 @@
+---
+title: "Bug Prediction"
+author: "Guillem Bonet, Ana Semrov, Joost Wooning"
+date: "14 September 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Bug Prediction
+
+## Identification of papers
+
+We started by studying the initial 6 seed papers [1] - [6] which helped us identify the key aspects of the bug prediction field we wanted to focus on. We decided to investigate the following questions: which metrics and which prediction models are predominantly used, how are the prediction models evaluated and are the current developments in the field able to provide actionable tools for developers.
+
+Our searches were based on the following elements:
+
+1. Keyword search using search engines (Scopus, ACM Digital Library, IEEE Explorer). The search query was constructed so that the paper title had to contain the phrase bug prediction, but also the other more general variants used in literature: *bug/defect/fault prediction*. The title also had to contain at least one of following keywords: *metrics*, *models*, *validation*, *evaluation*, *developers*. To remain within the bug prediction field we required *software* to appear in the abstract.
+
+2. Filtering search results by publication date. We excluded papers older than 10 years; that is, published before 2008. 
+
+3. Filtering by the number of citations. We selected papers with 10 or more citations in order to focus on the ones that already have some visibility within the field.
+
+4. Exploring other impactful publications by the same authors.
