@@ -1,3 +1,5 @@
+# App Store analytics
+
 ## API change and fault proneness: A threat to the success of Android apps
 M. Linares-Vásquez, G. Bavota, C. Bernal-Cárdenas, M. Di Penta, R. Oliveto, and D. Poshyvanyk, in Proceedings of the 2013 9th joint meeting on foundations of software engineering, 2013, pp. 477–487.
 
