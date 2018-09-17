@@ -21,13 +21,13 @@ The RQs that everyone should be aiming at are:
 
 ## Research protocol
 
-_Here, you describe the details of applying the Kitchenham survey method for your topic,
+_Here, you describe the details of applying Kitchenham's survey method for your topic,
 including search queries, fact extraction, coding process and an intial groupping of
-the papers that you will be analyzing_
+the papers that you will be analyzing._
 
 ## Answers
 
-_Aggregated answers to the RQs, per RQ. You need_
+_Aggregated answers to the RQs, per RQ. You need:_
 
 * For **RQ1**
     - Topics that are being explored
