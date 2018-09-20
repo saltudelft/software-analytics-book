@@ -140,3 +140,6 @@ This paper studies the usage of static analysis tools in 20 Java open source sof
 hosted on GitHub and using Travic CI as continuous integration infrastructure. There is
 investigated which tools are being used, what types of issues make the build fail or raise
 warnings and how is responded to broken builds. 
+
+## What is the current state of practice in the field of build analytics?
+
