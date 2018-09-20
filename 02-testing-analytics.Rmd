@@ -1,6 +1,24 @@
 ## Motivation
-Imagine playing a game and out of a sudden the application is freezes. This is one of the scenarios
-of a bug in a program. Such unexpected events can be frustrating and could even lead to damages.
+Imagine playing a game and out of a sudden the application freezes. This is one of the scenarios
+of a bug in a program. Such unexpected events can be frustrating and could even lead to damages if
+a bug is encountered during, for example, a transaction on a webshop. To prevent bugs, developers
+should make tests, such as unit tests or integration tests. However, in practice it seems that not
+all developers test actively. In this paper we will survey on the use of testing and the tools that
+make this possible. We will also look into the future development of tools that is done or required
+in order to improve testing practices in real-world applications.
+The above example could have prevented by making tests but is not guaranteed to do so. Testing is
+not the holy grail for completely removing all bugs from a program but it can decrease the chances
+for a user to encounter a bug. We believe that extra research is needed to ease the life of
+developers by making testing more efficient, easier to maintain and more effective. Therefore, we
+wanted to write a survey on the testing behavior, current practices and future developments of
+testing.
+In order to perform our survey, we formulated three Research Questions (RQs):
+* **RQ1** How do developers currently tests?
+* **RQ2** What state of the art technologies are being used?
+* **RQ3** What future developments can be expect?
+In this paper we will first elaborate on te research protocol that was used in order to find papers
+and extract information for the survey. Second, the the actual findings for each of the research
+questions will be explained.
 
 # Research protocol
 The papers used in this paper were found by using a given initial seed of papers (query defined 
@@ -13,7 +31,7 @@ were Scopus, Google Scholar and Springer.
 The keywords were: software, test*, analytics, test-suite, evolution, software development,
 computer science, software engineering, risk-driven, survey software testing
 
-The table below describers for each paper, which query technique was used.
+The table below describers for each paper, which Query resulted in which paper being found.
 
 |Category          |Reference                                   | Query|
 |------------------|----------------------------------------|-------------------------------|
