@@ -23,7 +23,7 @@ research done on build scripts and continuous integration.
 
 Using the initial seed consisting of @bird2017predicting, @beller2017oops, @rausch2017empirical,
 @beller2017travistorrent, @pinto2018work, @zhao2017impact, @widder2018m and @hilton2016usage we
-used references and similar keywords to find new papers to analyze.
+used references to find new papers to analyze.
 
 ## Study Selection
 
@@ -33,12 +33,16 @@ Through this we found the following papers
 
 ### @bird2017predicting
 
+_Initial Seed_
+
 This is a US patent grant for a method of predicting software build errors. This patent is owned
 by Microsoft. Using logistic regression a prediction can be made on the probability of a build
 failing. Using this method build errors can be better anticipated, which decreases the time until
 the build works again.
 
 ### @beller2017oops
+
+_Initial Seed_
 
 This paper explores data from Travis CI^[See https://travis-ci.org] on a large scale by analyzing
 2,640,825 build logs of Java and Ruby builds. It uses <span
@@ -48,11 +52,15 @@ Java and Ruby.
 
 ### @rausch2017empirical
 
+_Initial Seed_
+
 A stuy on the build results of 14 open source software Java projects. It is similar to
 @beller2017oops, albeit on a smaller scale. It does go more in depth on the result and changes
 over time.
 
 ### @beller2017travistorrent
+
+_Initial Seed_
 
 This paper introduces <span style="font-variant:small-caps">TravisTorrent</span>, a dataset
 containing analyzed builds from more than 1,000 projects. This data is freely downloadable from
@@ -61,12 +69,16 @@ information from travis to commits on GitHub.
 
 ### @pinto2018work
 
+_Initial Seed_
+
 This paper is a survey amongst Travis CI users. It found that users are not sure whether a job
 failure represents a failure or not, that inadequate testing is the most common (technical) reason
 for build breakage and that people feel that there is a false sense of confidence when blindly
 trusing tests.
 
 ### @zhao2017impact
+
+_Initial Seed_
 
 <!-- Note: Interesting collab between Nanjing (China), Eindhoven (Netherlands), UC Davis (USA) and Carnegie Mellon (USA). -->
 
@@ -77,6 +89,8 @@ developers to learn about their experiences in adopting Travis CI.
 
 ### @widder2018m
 
+_Initial Seed_
+
 This paper analyzes what factors have impact on abandonment of Travis. They find that increased
 build complexity reduces the chance of abandonment, but larger projects abandon at a higher rate
 and that a project's language has significant but varying effect. A surprising result is that
@@ -85,12 +99,16 @@ abandonment.
 
 ### @hilton2016usage
 
+_Initial Seed_
+
 This paper explores which CI system developers use, how developers use CI and why developers use
 CI. For this it analyzes data from Github, Travis CI and it conducts a developer survey. It finds
 that projects using CI release twice as often, accept pull requests faster and have developers who
 are less worried about breaking the build.
 
 ### @vassallo2017tale
+
+_References @beller2017oops _
 
 This paper discusses the difference in failures on continuous integration between open source
 software (OSS) and industrial software projects. For this 349 Java OSS projects and 418 project
@@ -101,6 +119,8 @@ but in other cases very different patterns emerge.
 
 ### @hassan2018hirebuild
 
+_References @beller2017travistorrent _
+
 This paper uses TravisTorrent (@beller2017travistorrent) to show that 22% of code commits include
 changes in build script files to keep the build working or to fix the build.
 
@@ -108,11 +128,15 @@ In the paper a tool is proposed to automatically fix build failures based on pre
 
 ### @vassallo2018break
 
+_References @beller2017oops, @rausch2017empirical _
+
 This paper proposes a tool called <span style="font-variant:small-caps">BART</span> to help
 developers fix build errors. This tool eliminates the need to browse error logs which can be very
 long by generating a summary of the failure with useful information.
 
 ### @zampetti2017open
+
+_Referenced by @vassallo2018break _
 
 This paper studies the usage of static analysis tools in 20 Java open source software projects
 hosted on GitHub and using Travic CI as continuous integration infrastructure. There is
