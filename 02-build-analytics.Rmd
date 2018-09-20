@@ -143,3 +143,16 @@ warnings and how is responded to broken builds.
 
 ## What is the current state of practice in the field of build analytics?
 
+In this section, I will examine scientific papers to analyse the current trend of build analytics in the software development industry. 
+
+### Continuous Integration by Martin Fowler 
+
+In this paper, Martin talks about the current state of the software industry in terms of Continuous Integration (CI) and comments on the practises required to implement CI effectively. He talks about his experience working for a large English electronics company where the development of a project took two years and the integration process took several months. Integration is a long and unpredictable process. Martin suggested this approach and that the two most common reactions he got were: “it can’t work (here)” or “doing it won’t make much difference”.  He expresses that most engineers don’t know how simple the process can be of setting the CI framework up. In this way, we get a glimpse into the practises popular within the industry regarding build analytics.
+
+### Usage, Costs, and Benefits of Continuous Integration in Open-Source Projects 
+
+
+
+
+
+
