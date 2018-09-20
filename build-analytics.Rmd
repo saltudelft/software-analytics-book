@@ -4,7 +4,7 @@
 
 When building a project from source code to executables everything should go smoothly. This is not
 always the case, a build can break for several reasons. This chapter will give an overview of
-research done on build scripts and continuous integration.
+research done on build configurations and continuous integration.
 
 <!--
  - Define build
@@ -13,11 +13,9 @@ research done on build scripts and continuous integration.
 
 ## Research Questions
 
-<!-- Subject to change -->
-
- * What are causes of a broken build?
- * With which goals is continuous integration applied?
- * What can be used to effectively fix a broken build?
+**RQ1** What is the current state of the art in the field of build analytics?
+**RQ2** What is the current state of practice in the field of build analytics?
+**RQ3** What future research can we expect in the field of build analytics?
 
 ## Search Strategy
 
