@@ -145,7 +145,7 @@ warnings and how is responded to broken builds.
 
 In this section, I will examine scientific papers to analyse the current trend of build analytics in the software development industry. 
 
-### Continuous Integration by Martin Fowler 
+### @fowler2006continuous
 
 In this paper, Martin talks about the current state of the software industry in terms of Continuous Integration (CI) and comments on the practises required to implement CI effectively. He talks about his experience working for a large English electronics company where the development of a project took two years and the integration process took several months. Integration is a long and unpredictable process. Martin suggested this approach and that the two most common reactions he got were: “it can’t work (here)” or “doing it won’t make much difference”.  He expresses that most engineers don’t know how simple the process can be of setting the CI framework up. In this way, we get a glimpse into the practises popular within the industry regarding build analytics.
 
@@ -157,7 +157,7 @@ This paper examines the usage, costs and benefits of Continuous Integration. A s
 
 Version Control Systems (VCS) such as GitHub, and hosted build automation platforms such as Travis, have made Continuous Integration is widely available for projects of every size. This paper suggests that CI is widely used and has improved the quality of processes and developed software itself. However, the article suggests that there is little known about the variety and frequency of errors that cause builds to fail. It suggests that developers should eliminate flaky tests and address common issues regularly such as broken interaction with repositories to keep the build system healthy.
 
-### Enabling Agile Testing through Continuous Integration
+### @stolberg2009enabling
 
 This paper defines CI as a key element in agile software development and testing environment. It also uses Marin Fowler’s practises of CI (as discussed previously) and expresses the importance of CI in the software industry.  
 
