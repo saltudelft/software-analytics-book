@@ -31,7 +31,7 @@ were Scopus, Google Scholar and Springer.
 The keywords were: software, test*, analytics, test-suite, evolution, software development,
 computer science, software engineering, risk-driven, survey software testing
 
-The table below describers for each paper, which query technique was used.
+The table below describers for each paper, which Query resulted in which paper being found.
 
 |Category          |Title                                   | Query|
 |------------------|----------------------------------------|-------------------------------|
