@@ -1,4 +1,6 @@
+# Testing Analytics
 ## Motivation
+
 Imagine playing a game and out of a sudden the application freezes. This is one of the scenarios
 of a bug in a program. Such unexpected events can be frustrating and could even lead to damages if
 a bug is encountered during, for example, a transaction on a webshop. To prevent bugs, developers
@@ -48,6 +50,7 @@ for an unchanged concept.
 included.
 * Papers with recommendations for future development in the software testing field are included.
 
+
 The papers used in this paper were found by using a given initial seed of papers (query defined 
 below as 'Initial Paper Seed'). From this initial seed of papers we used the keywords used by those
 papers to construct queries, additionally the references (‘referenced by’) and the citations
@@ -88,3 +91,224 @@ The table below describers for each paper, which Query resulted in which paper b
 | Risk-driven testing | @vernotte2015 | Scopus query: “risk-driven” AND testing |
 | Risk-driven testing | @atifi2017 | In ‘cited by’ of “Risk-driven software testing and reliability” |
 | Risk-driven testing | @noor2015test | Initial Paper Seed |
+
+## Extracted paper information
+The papers retrieved using the research protocol are reviewed for their quality and usefull information is extracted to be able to answer the research questions. This information can be found in this section as a list of bulletpoints. If a paper is perceived as 'bad' or irrelevent for answering the research questions, this is elaborated.  
+
+###Test evolution
+
+Supporting Test Suite Evolution through Test Case Adaptation (@supportingtestsuite)
+
+* Test case evolution.
+* Automatic test repairing using information available in existing test cases.
+* Identifies set of common actions for adapting test cases by developers.
+* Properly repairs 90% of the compilation errors addressed and covers the same amount of instructions.
+* Not all prototypes were tested.
+* Claims that many test cases designed for the early versions of the system become obsolete during the software lifecycle.
+* An approach is proposed for automatically repairing and generating test cases during software evolution.
+* This approach uses information available in existing test cases, defines a set of heuristics to repair test cases invalidated by changes in the software, and generate new test cases for evolved software.
+* The results show that the approach can effectively maintain evolving test suites, and perform well compared to competing approaches.
+* Frequent actions for adapting test cases that developers commonly adopt to repair and generate test cases are identified.
+* In general: automated test case evolution seems fairly possible. (in 2012)
+
+
+TestEvol: A tool for analyzing test-suite evolution (@pinto2013)
+
+* Test case evolution.
+* Tool for systematic investigating the evolution of the test-suite.
+* Motivation: understand test maintenance in general.
+* Only for Java and JUnit.
+
+
+Facilitating software evolution research with kenyon (@bevan2005)
+
+* Reverse engineering and reengineering for software evolution systems.
+* Proposes a system (called Kenyon) for the configuration and (meta)data storage of actual code evolution.
+* Many systems normally use CVS as storage, which limits the applicability for industrial systems where CVS is often not used. Although CVS is commonly considered acceptable.
+* Created to facilitate both the creation of new software evolution analysis tools as well as the sharing of data between such tools.
+* Kenyon included configuration retrieval, fact extractor invocation, and database storage and access.
+
+
+Understanding myths and realities of test-suite evolution (@pinto2012understanding)
+
+* Systematic measurement of how test-suites evolve
+* Test repairs occur in practice. avg 16 repairs per version --> often enough to warrent the development of automated techniques.
+* Test repairs are not the primary reason for test modification. Non-test repair related modifications occur about 4 times as frequently.
+* Only 10% of the tests consider fixed assert tests (oracle tests)
+* Test repairs frequently consider repairs to method call chains.
+* Test deletions and additions are often due to refactoring
+* A considerable portion of the additions is due to augmenting tests to make it more *adequate.
+* General: automated techniques may be useful.
+
+
+###Co-Evolution
+
+Studying Fine-Grained Co-evolution Patterns of Production and Test Code (@marsavina2014)
+
+* Co-evolution of production and test code.
+* Generally co-evolving test and production code is a difficult tass.
+* Mines fine-grained changes from the evolution of 5 open-source systems.
+* Also uses an association rule mining algorithm to generate co-evolution patterns.
+* The patterns are interpreted by performing a qualitative analysis.
+* Meant to gain a deeper understanding of the way in which tests evolve as a result of changes in the production classes and identify possible gaps to signal developers  for missed production code parts that have not been addressed adequately by tests.
+* Some patterns that were found:
+  + Tests are mostly removed when production classes they cover are deleted. Programmers are are careful not to leave non-compiling tests.
+  + Only limited effort is done on updating test cases after production classes are modified; tests are rarely changed when attributes or methods are changed in the production classes.
+  + A patterns indicates that mostly when numerous condition related changes are made in the production methods, test cases are created/deleted in order to address the branches that were removed/added.
+  + Test cases are rarely updated when changes related to attributes or methods are made in the production code.
+  + Test methods are in several cases created/deleted when conditional statements are altered in the production code.
+* Future work should include the co-evolution patterns of different coding methodologies, for example, Test-Driven Development and their possible respective differences.
+* Future work should include intent-preserving techniques, which could help ensure test repairs address the same production code functionalities as before the tests were broken.
+
+
+Studying the co-evolution of production and test code (@zaidman2011studying)
+
+* Testing is phased and co-evolution is synchronous
+* No increase in testing activity before major releases. Intense phases were detected.
+* Evidence for TDD discovered in 2/6(?) test cases. (soepele manier van meten)
+* The fraction of test code (wrt prod code) increases as coverage increases
+
+
+Strategies for avoiding text fixture smells during software evolution (@greiler2013)
+
+* Knowledge about how and when smells in test fixtures are produced.
+* Test fixture smells do not continuously develop over time.
+* A correlation between the number of tests and smells.
+* Few test cases contribute to the majority of the smells.
+* Not the highest quality paper, the title even contains a typo, where ‘text’ should be ‘test’.
+
+
+Aiding Software Developers to Maintain Developer Tests (@hurdugaci2012)
+
+* Support for co-evolution of testing code with production code.
+* Introduces TestNForce (Visual Studio only), a tool to help developers to identify unit tests that need to be altered and executed after code change.
+* Gives a broad explanation for the need for the co-evolution of test code.
+* Three scenarios: show covering tests, enforcing self-contained commits and what tests need to run?
+* Used an experimental setup with only eight participants from the Delft University of Technology of which two participants did not use Unit testing. Hard to generalize.
+* On average, the participants considered 80 code coverage as “good”.
+
+
+###Production evolution
+
+Does code decay? Assessing the evidence from change management data (@eick2001)
+This paper is too old based on our exclusion criteria.
+
+
+Testing analytics on software variability (@leung2015testing)
+
+* Variability-aware testing.
+* System integration testing has to be manually executed to evaluate the system’s compliance with its specified requirement and performance.
+* Aids testers and developers to reduce their product time-to-market by utilizing historical testing results and similarity among systems.
+
+
+###Test generation
+
+Scaling up automated test generation: Automatically generating maintainable regression unit tests for programs (@robinson2011)
+
+* A system that has good coverage and mutation kill score, made readable code and required few edits as the system under test evolved. (stable)
+* Statement: The costs of unit tests are not perceived to outweigh the benefits.
+* Previous techniques: hard to understand / maintain / brittle and only tested on libraries → not real software development code.
+* They claim they made a pretty well working test-generation tool.
+
+
+Obsidian: Pattern-Based Unit Test Implementations (@bowring2014obsidian)
+
+* A tool that generates the templates for tests: guarantee compilation, support exception handling, find suitable location… etc.
+* Developers still need to fix the oracle tests, but the implementation/template is there.
+* Looks at the context in order to decide what template to use.
+* Distinguishes implementations from test cases
+
+
+How Do Automatically Generated Unit Tests Influence Software Maintenance? (@shamshiri2018automatically)
+
+* Automatically generated tests are usually not based on realistic scenarios, and are therefore generally considered to be less readable.
+* Every time a test fails, a developer has to decide whether this failure has revealed a regression fault in the program under test, or whether the test itself needs to be updated.
+* Whilst maintenance activities take longer when working with automatically generated tests, they found developers to be equally effective with manually written and automatically generated tests.
+* There is a need for research into the generation of more realistic tests.
+
+
+Model-Based Strategies for Reducing the Complexity of Statistically Generated Test Suites (@dulz2013model)
+
+* By directed adjusting specific probability values in the usage profile of a Markov chain usage model it is relatively easy to generate abstract test suites for different user classes and test purposes in an automated approach.
+* By using proper tools, like the TestUS Testplayer even less experienced test engineers will be able to efficiently generate abstract test cases and to graphically assess quality characteristics of different test suites.
+
+
+
+###Testing Practices
+A survey of software testing practices in Canada (@GAROUSI20131354)
+
+* The importance of testing-related training is increasing
+* Functional and unit-testing receive the most effort and attention
+* The mutation testing approach is getting attention amongst Canadian firms
+* Test last approach is still dominant, few companies try TDD
+* In terms of popularity: NUnit and Web application testing overtook JUnit and IBM Rational tools
+* Coverage metrics, to most commonly used: branch and conditional coverage
+* Number of passing test / defects per day is used as the most popular metric in order to determine a release
+* Ratio of testers : developers is somewhere around 1:2 and 1:5. The total effort is estimated to be less than 40%
+* More than 70% of the respondents participated in a forum related to testing on a regular basis
+* In general: more attention to testing (in 2012)
+
+
+Developer testing in the IDE: Patterns, beliefs and behavior (@beller2017developer)
+
+* Java C# developer testing behavior
+* Little support for TDD
+* Developers execute tests phased
+* Only half of the developers practice testing actively
+* Testing time is overestimated twofold.
+* 12% of the test cases shows flaky behavior
+* Correlation between test flakiness and CI error proneness?
+* Few (25%) tests detect 75% of the execution failures.
+* Tests and production code do not co-evolve gracefully.
+
+
+When, how, and why developers (do not) test in their IDEs (@beller2015)
+
+* Developers largely do not run tests in the IDE. However, when they do, they do it heftily.
+* Tests run in the IDE take a short amount of time
+* Developers run selective tests (often 1)
+* Most test executions fail
+* A typical reaction is to dive into offending code
+* TDD is not widely practiced, even by those who say they do (strict definition)
+* The way people test is different from how they believe they test.
+
+
+Uncertainty in Software Testing (@moiz2017uncertainty)
+
+* Mechanisms are needed to address uncertainty in each of the deliverables produced during software development process. The uncertainty metrics can help in assessing the degree of uncertainty.
+
+
+###Risk-driven testing
+Investigating NLP-Based Approaches for Predicting Manual Test Case Failure (@hemmati2018)
+
+* System-level manual acceptance testing is one of the most expensive testing activities.
+* A new test case failure prediction approach is proposed, which does not rely on source code or specification of the software under test.
+* The approach uses basic Information Retrieval (IR) methods on the test case descriptions, written in natural language, based on the frequency of terms in the manual test scripts.
+* The test fail prediction is accurate and the NLP-based feature can improve the prediction models.
+* “To the best of our knowledge, this work is the first use of NLP on manual test case scripts for test failure prediction and has shown promising results, which we are planning to replicate on different systems and expand on different NLP-based features to more accurately extract features keywords from test cases.”
+
+
+Risk-driven software testing and reliability (@schneidewind2007)
+
+This paper is discarded from the survery, because it uses weak models to validate the claims made and is too old based on our exclusion criteria.
+
+
+Risk-driven vulnerability testing: Results from eHealth experiments using patterns and model-based approach (@vernotte2015)
+
+* This paper introduces and reports on an original tooled risk-driven security testing process called Pattern-driven and Model-based Vulnerability Testing. This fully automated testing process, drawing on risk-driven strategies and Model-Based Testing (MBT) techniques, aims to improve the capability of detection of various Web application vulnerabilities, in particular SQL injections, Cross-Site Scripting, and Cross-Site Request Forgery.
+* An empirical evaluation, conducted on a complex and freely-accessible eHealth system developed by Info World, shows that this novel process is appropriate for automatically generating and executing risk-driven vulnerability test cases and is promising to be deployed for large-scale Web applications.
+
+
+A comparative study of software testing techniques (@atifi2017)
+
+* They highlight two software testing techniques considered among the most used techniques to perform software tests, and then perform a comparative study of these techniques, the approaches that supports studied techniques, and the tools used for each technique. 
+* The first technique is Model-based-testing, the second Risk based testing.
+
+
+Test case analytics: Mining test case traces to improve risk-driven testing (@noor2015test)
+
+* In risk-driven testing, test cases are generated and/or prioritized based on different risk measures.
+*The most basic risk measure would analyze the history of the software and assigns higher risk to the test cases that used to detect bugs in the past.
+* A new risk measure is defined which assigns a risk factor to a test case, if it is similar to a failing test case from history.
+*The new risk measure is by far more effective in identifying failing test cases compared to the traditional risk measure.
+* “Though our initial and simple implementation in this paper was very promising, we are planning to investigate other similarity functions, specifically those that account for the the method orders in the trace. In addition, this project is a sub-project of a bigger research on risk-driven model-based testing, where we are planning to extract specification models of the system and augment them with the similarity-based risk measures. Those models can later be used in both risk-driven test generation and prioritization.”
