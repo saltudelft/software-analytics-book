@@ -22,12 +22,13 @@ and extract information for the survey. Second, the the actual findings for each
 questions will be explained.
 
 ## Research protocol
-The papers used in this paper were found by using a given initial seed of papers (query defined 
-below as 'Initial Paper Seed'). From this initial seed of papers we used the keywords used by those
-papers to construct queries, additionally the references (‘referenced by’) and the citations
-(‘cited in’) of the papers were used to find papers. The query row of the tables describing the
-references, as found below, indicates how a paper was found. For queries the default search sites
-were Scopus, Google Scholar and Springer.
+For this paper the Kitchemham survey method was applied. For this method a protocol has to be
+specified. This protocol is defined for the research questions given above. Below the inclusion
+and exclusion criteria are given, which helped finding the rightful papers. After these criteria,
+the actual search for papers is described. The papers that were found are listed and after they
+are tested against the critiria that are given. The data that is extracted from these papers are
+list afterward. Some papers that were left out, will be listed and the reasons for leaving them out
+will be given to make clear why some papers do not meet the required desire.
 
 Each of the papers found were tested using our inclusion and exclusion criteria. These criteria
 were introduced to make sure the papers have the information required to anwser the RQs while also
@@ -47,6 +48,12 @@ for an unchanged concept.
 included.
 * Papers with recommendations for future development in the software testing field are included.
 
+The papers used in this paper were found by using a given initial seed of papers (query defined 
+below as 'Initial Paper Seed'). From this initial seed of papers we used the keywords used by those
+papers to construct queries, additionally the references (‘referenced by’) and the citations
+(‘cited in’) of the papers were used to find papers. The query row of the tables describing the
+references, as found below, indicates how a paper was found. For queries the default search sites
+were Scopus, Google Scholar and Springer.
 
 The keywords used to find papers were: software, test*, analytics, test-suite, evolution, software development,
 computer science, software engineering, risk-driven, survey software testing
