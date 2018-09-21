@@ -65,6 +65,8 @@ The table below describers for each paper, which Query resulted in which paper b
 | Risk-driven testing | @noor2015test | Initial Paper Seed |
 
 ## Extracted paper information
+The papers retrieved using the research protocol are reviewed for their quality and usefull information is extracted to be able to answer the research questions. This information can be found in this section as a list of bulletpoints. If a paper is perceived as 'bad' or irrelevent for answering the research questions, this is elaborated.  
+
 ###Test evolution
 
 Supporting Test Suite Evolution through Test Case Adaptation (@supportingtestsuite)
