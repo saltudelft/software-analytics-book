@@ -8,12 +8,12 @@ _A short introduction about why the topic you are working on is interesting._
 
 The RQs that everyone should be aiming at are:
 
-* **RQ1** Current state of the art in software analytics for _your topic _:
+* **RQ1** Current state of the art in software analytics for Code Review:
     - Topics that are being explored
     - Research methods, tools and datasets being used
     - Main research findings, aggregated
     
-* **RQ2** Current state of practice in software analytics for _your topic _:
+* **RQ2** Current state of practice in software analytics for Code Review:
     - Tools and companies creating / employing them
     - Case studies and their findings
 
@@ -24,6 +24,63 @@ The RQs that everyone should be aiming at are:
 _Here, you describe the details of applying Kitchenham's survey method for your topic,
 including search queries, fact extraction, coding process and an intial groupping of
 the papers that you will be analyzing._
+
+### Search process
+Given six initial paper seed to have a basic understanding about this topic, we then search for more paper to obtain  more information to complete the survey. The search process consits of the following:
+
+* A Google Scholar search using the search query *code review*. In Google Scholar, the option to
+only display results from 2014 onward will be used, and the results will be sorted by relevance.
+The result list will then be considered in order.
+* A general Google search for non-scientific reports (e.g., blog posts) and implemented code review
+tools. For this search queries *code review* and *code review tools* are used, respectively. The
+result list will be considered in order.
+* All papers in the initial seed provided by the course instructor will be considered and also their reference and citation.
+
+From now on, all three categories listed above in general will be called *resource*.
+
+### Inclusion criteria
+The following types of resource will be included:
+
+* Resources discussing new code review methods.
+* Resources discussing the motivations and expectations of code review.
+* Resources discussing the effect of existing or new code review methods on a development team or
+on the code they produce.
+
+Also, tools assisting development teams in the development process will be included.
+
+### Exclusion criteria
+Resources published before 2008 will be excluded from the study.
+
+### Primary study selection process
+We will select a number of candidate resources based on the criteria stated above. For each
+resource, if one person participating in the review selects it as a candidate, it will be candidate
+for review.
+
+From all candidates, resource will be selected that will actually be reviewed. This will also be
+done by one person only, for each resource. All resources that are candidates but are not selected
+for actual review must be explicitly rejected, with accompanying reasoning, by at least two person
+participating in the review.
+
+### Quality assessment
+
+### Data collection
+The following data will be collected from each considered resource:
+
+* Source (for example, the blog website or specific journal)
+* Year published
+* Type of resource
+* Sub-area of code review
+* Author(s) and organization(s)
+* Research question(s), if applicable
+* Summary of the resource. In case of scientific literature: include the main research questions and conclusions.
+* Quality score
+
+All data will be collected by one person participating in the review and checked by another.
+
+### Data analysis
+
+###Initial groupping of the papers
+
 
 ## Answers
 
