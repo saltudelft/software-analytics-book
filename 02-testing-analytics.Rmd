@@ -191,16 +191,7 @@ Aiding Software Developers to Maintain Developer Tests (@hurdugaci2012)
 ###Production evolution
 
 Does code decay? Assessing the evidence from change management data (@eick2001)
-
-* Code decay: introducing new features, accommodate new hardware and repair faults.
-* Code decay becomes increasingly harder over time.
-* Code decay does not come from the code itself but from its environment.
-* Research based on a single, large, fifteen-year old real-time software system for telephone switches.
-* A unit of code is decayed if it is harder to change that it should be, measured in terms of effort, interval, and quality.
-* Earlier was reported that it is nearly-impossible to add new code to aged systems without introducing faults.
-* In the system, evidence for code decay was found. While, at the same time, evidence of dramatic, widespread decay is lacking. According to the paper also because the system is only fifteen years old, successful, and new features can still be added.
-* The authors anticipate that all projects of sufficiently large scale will, to some extent, will exhibit decay. In other words, code decay is a generic phenomenon.
-* Current investigations focus on preventing code decay. Whether code decay can ultimately be fatal is unclear. 
+This paper is too old based on our exclusion criteria.
 
 
 Testing analytics on software variability (@leung2015testing)
