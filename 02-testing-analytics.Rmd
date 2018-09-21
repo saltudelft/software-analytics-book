@@ -14,7 +14,7 @@ wanted to write a survey on the testing behavior, current practices and future d
 testing.
 In order to perform our survey, we formulated three Research Questions (RQs):
 
-* **RQ1** How do developers currently tests?
+* **RQ1** How do developers currently test?
 * **RQ2** What state of the art technologies are being used?
 * **RQ3** What future developments can be expect?
 In this paper we will first elaborate on te research protocol that was used in order to find papers
@@ -88,3 +88,37 @@ The table below describers for each paper, which Query resulted in which paper b
 | Risk-driven testing | @vernotte2015 | Scopus query: “risk-driven” AND testing |
 | Risk-driven testing | @atifi2017 | In ‘cited by’ of “Risk-driven software testing and reliability” |
 | Risk-driven testing | @noor2015test | Initial Paper Seed |
+
+
+### Papers per research question
+In this section each of the papers is categorized with a corresponding research question. In the
+table above, the categorise per paper were added based on their general topic. In this section
+these broad topics will be assigned to a corresponding research question. All papers per research
+question are ordered on their relevance, which in most cases means that a newer paper is considered
+as more relevant than an older paper. A lower ranking may also be caused by lower quality of 
+writing (e.g. @greiler2013 in RQ2).
+
+* **RQ1** (_How do developers currently test?_):
+    - @beller2017developer
+    - @beller2015
+    - @marsavina2014
+    - @pinto2013
+    - @GAROUSI20131354
+    - @pinto2012understanding
+    - @zaidman2011studying
+* **RQ2** (_What state of the art technologies are being used?_):
+    - @supportingtestsuite
+    - @bevan2015
+    - @vernotte2015
+    - @bowring2014obsidian
+    - @hurdugaci2012
+    - @robinson2011
+    - @greiler2013
+* **RQ3** (_What future developments can be expect?_):
+    - @hemmati2018
+    - shamshiri2018automatically
+    - @vernotte2015
+    - @noor2015test
+    - @supportingtestsuite
+    - @bowring2014obsidian
+    - @leung2015testing
