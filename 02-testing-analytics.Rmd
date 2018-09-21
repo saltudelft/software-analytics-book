@@ -113,7 +113,6 @@ below.
     - @zaidman2011studying
 * **RQ2** (_What state of the art technologies are being used?_):
     - @supportingtestsuite
-    - @bevan2005
     - @vernotte2015
     - @bowring2014obsidian
     - @hurdugaci2012
@@ -163,12 +162,7 @@ TestEvol: A tool for analyzing test-suite evolution (@pinto2013)
 
 
 Facilitating software evolution research with kenyon (@bevan2005)
-
-* Reverse engineering and reengineering for software evolution systems.
-* Proposes a system (called Kenyon) for the configuration and (meta)data storage of actual code evolution.
-* Many systems normally use CVS as storage, which limits the applicability for industrial systems where CVS is often not used. Although CVS is commonly considered acceptable.
-* Created to facilitate both the creation of new software evolution analysis tools as well as the sharing of data between such tools.
-* Kenyon included configuration retrieval, fact extractor invocation, and database storage and access.
+This paper is too old based on our exclusion criteria.
 
 
 Understanding myths and realities of test-suite evolution (@pinto2012understanding)
