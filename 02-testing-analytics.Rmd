@@ -113,7 +113,7 @@ below.
     - @zaidman2011studying
 * **RQ2** (_What state of the art technologies are being used?_):
     - @supportingtestsuite
-    - @bevan2015
+    - @bevan2005
     - @vernotte2015
     - @bowring2014obsidian
     - @hurdugaci2012
