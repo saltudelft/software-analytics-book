@@ -299,10 +299,7 @@ Investigating NLP-Based Approaches for Predicting Manual Test Case Failure (@hem
 
 Risk-driven software testing and reliability (@schneidewind2007)
 
-* Risk was reduced towards the end - but weak model to validate this.
-* Reliability increased towards the end - also; weak model.
-* Insight into complex interrelationship of customer and producer risk and reliability.
-* // weak paper: old and little information //
+This paper is discarded from the survery, because it uses weak models to validate the claims made and is too old based on our exclusion criteria.
 
 
 Risk-driven vulnerability testing: Results from eHealth experiments using patterns and model-based approach (@vernotte2015)
