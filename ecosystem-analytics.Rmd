@@ -142,9 +142,10 @@ being selected.
 | @Decan2017                     | An empirical comparison of dependency issues in OSS packaging ecosystems                                 | 2017 |                                                                                  | @Abdalkareem2017, @Constantinou2017, @Decan2018 |
 | @Dietrich2014                          | Broken Promises - An Empirical Study into Evolution Problems in Java Programs Caused by Library Upgrades | 2014 |                                                                                  | @Raemaekers2017                              |
 | @Malloy2017                           | Quantifying the transition from Python 2 to 3: an empirical study of Python applications.                 | 2017 |                                                                                  | @Malloy2018                                         |
-| @McDonnell2013 | An empirical study of api stability and adoption in the android ecosystem | | 2013 | @Manikas2016
-Table: 4. Papers selected which are referenced in previously selected papers. The column
-"Referenced In" describes in which selected paper the paper is referenced.
+| @McDonnell2013 | An empirical study of api stability and adoption in the android ecosystem | 2013 |  | @Manikas2016
+
+_Table: 4. Papers selected which are referenced in previously selected papers. The column
+"Referenced In" describes in which selected paper the paper is referenced._
 
 ## Answers
 [^1]: <https://pypi.org/project/pip/>
