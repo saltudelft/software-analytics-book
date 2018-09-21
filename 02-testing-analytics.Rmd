@@ -119,14 +119,19 @@ below.
     - @hurdugaci2012
     - @robinson2011
     - @greiler2013
+	- @dulz2013model
+	- @atifi2017
+	- @noor2015test
 * **RQ3** (_What future developments can be expect?_):
     - @hemmati2018
-    - shamshiri2018automatically
+    - @shamshiri2018automatically
     - @vernotte2015
     - @noor2015test
     - @supportingtestsuite
     - @bowring2014obsidian
     - @leung2015testing
+	- @greiler2013
+	- @atifi2017
 
 
 ## Extracted paper information
