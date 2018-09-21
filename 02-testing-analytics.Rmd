@@ -13,6 +13,7 @@ developers by making testing more efficient, easier to maintain and more effecti
 wanted to write a survey on the testing behavior, current practices and future developments of
 testing.
 In order to perform our survey, we formulated three Research Questions (RQs):
+
 * **RQ1** How do developers currently tests?
 * **RQ2** What state of the art technologies are being used?
 * **RQ3** What future developments can be expect?
@@ -20,7 +21,7 @@ In this paper we will first elaborate on te research protocol that was used in o
 and extract information for the survey. Second, the the actual findings for each of the research
 questions will be explained.
 
-# Research protocol
+## Research protocol
 The papers used in this paper were found by using a given initial seed of papers (query defined 
 below as 'Initial Paper Seed'). From this initial seed of papers we used the keywords used by those
 papers to construct queries, additionally the references (‘referenced by’) and the citations
@@ -28,7 +29,26 @@ papers to construct queries, additionally the references (‘referenced by’) a
 references, as found below, indicates how a paper was found. For queries the default search sites
 were Scopus, Google Scholar and Springer.
 
-The keywords were: software, test*, analytics, test-suite, evolution, software development,
+Each of the papers found were tested using our inclusion and exclusion criteria. These criteria
+were introduced to make sure the papers have the information required to anwser the RQs while also
+being relevant with respect to their quality and age. Below a list of inclusion and exclusion
+criteria is given. In general, for all criteria, the exclusion criteria take presedence over
+inclusion criteria.
+The following inclusion and exclusion criteria were used:
+
+* Papers published before 2008 are excluded from the research, unless a reference/citation is used
+for an unchanged concept.
+* Papers with less than 15 references, excluding self-references, are excluded from the research.
+* Selected papers should have an abstract, introduction and conclusion section.
+* Papers stating the developers’ testing behavior are included.
+* Papers stating the developers’ problems related to testing are included.
+* Papers stating the technologies, related to testing analytics, which developers use are included.
+* Papers writing about the expected advantage of current findings in testing analytics are
+included.
+* Papers with recommendations for future development in the software testing field are included.
+
+
+The keywords used to find papers were: software, test*, analytics, test-suite, evolution, software development,
 computer science, software engineering, risk-driven, survey software testing
 
 The table below describers for each paper, which Query resulted in which paper being found.
