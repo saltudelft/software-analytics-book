@@ -22,7 +22,7 @@ and extract information for the survey. Second, the the actual findings for each
 questions will be explained.
 
 ## Research protocol
-For this paper the Kitchemham survey method was applied. For this method a protocol has to be
+For this paper Kitchenham's survey method was applied. For this method a protocol has to be
 specified. This protocol is defined for the research questions given above. Below the inclusion
 and exclusion criteria are given, which helped finding the rightful papers. After these criteria,
 the actual search for papers is described. The papers that were found are listed and after they
