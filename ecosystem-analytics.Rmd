@@ -1,59 +1,154 @@
 # Ecosystem Analytics
 
- Software ecosystems are a combination of systems that a community of developers use to maintain 
-their software projects. By doing analysis on these systems people hope to find meaningful insights
-that could lead to improvements of the software development process. For our literature review we
-started with the initial seed of papers that was given to us. After reviewing them we have decided
-that we would not use one, and that we had 3 that were debatable. In the table below we have made
-an overview of all these papers. The first column describes whether we are going to use them. A 
-'+' means we will use it, a '-' means we will not, and empty means we are still unsure. The 
-keywords are the actual keywords from the paper. 
+## Motivation
+In the modern day and age, the majority of software products make use of external software or
+libraries to use the functionality of these products, without having to develop this functionality
+itself. Moreover, multiple languages, such as Python and Rust, provide package managers (pip[^1]
+and Cargo[^2] respectively) which can be used to easily manage this third-party functionality, as
+well as distribute it.
 
-|   | First Author          | Title                                                                                         | Year | Keywords                                                                                                    |
+Together with this comes the growth in open source projects. On platforms such as GitHub[^3], it
+is easy and quick to create a new software product, which can be developed, reviewed and used by
+the whole community.
+
+This in turn leads to intertwined landscapes of software products, which are deemed a
+_software ecosystems_.
+As stated by @Messerschmitt2003, a _software ecosystem_ is "a collection of software products that
+have some given degree of symbiotic relationships." Another, similar definition is given by
+@Lungu2009: "A software ecosystem is a collection of software projects which are developed and
+co-evolve in the same environment." @Mens2013 extends this definition, "by explicitly considering
+the communities involved (e.g. user and developer communities) as being part of the software
+ecosystem."
+
+By performing analysis on these software ecosystems, people aim to generate meaningful insights,
+which can then be used to improve the efficiency and effectivity of the software development
+process throughout the lifecycle of the developed software.
+
+In order to perform a survey on the current progress in the field of software ecosystem analytics,
+we have formulated three research questions:
+
+* **RQ1**: What is the current state of the art in software analytics for ecosystem analytics?
+* **RQ2**: What is the current state of practice in software analytics for ecosystem analytics?
+* **RQ3**: What are the open challenges in ecosystem analytics, for which future research is
+required?
+
+Each of these research questions will be answered, using recent papers written in this field of
+research.
+
+## Research Protocol
+
+In order to select literature to answer the research questions given in the previous section, the
+survey method suggested by @Kitchenham2004 is used. This method creates a systematic way to select
+a set of papers, which is relevant to the research question(s).
+
+The search strategy, as described by @Kitchenham2004, are usually iterative and benefit from
+consultations with experts in the field, amongst other things. Our search strategy can be split in
+three different types:
+
+* the initial seed, given by an expert in the field, MSc. Joseph Hejderup
+* a search using a digital search engine, namely Google Scholar[^3]
+* a selection of referenced papers within papers selected before in the above two searches
+
+### Initial seed
+The first type is quite straightforward. To give this survey a head start, MSc. Joseph Hejderup
+has provided us with a total of thirteen papers, as shown in Table 1.
+
+As each of these papers come from an expert in the field, each paper is assumed to be relevant to
+atleast the field of software ecosystems. Because of this, each of these papers were judged on
+their relevance to either of the research questions. In Table 1, this relevance judgment is shown
+in the left column, since a paper is only selected, if the paper is indeed relevant. Table 2
+describes the reason for which each particular paper is not selected for the literature survey.
+
+
+| Selected | Author(s)          | Title                                                                                         | Year | Keywords                                                                                                    |
 |---|-----------------------|-----------------------------------------------------------------------------------------------|------|-------------------------------------------------------------------------------------------------------------|
-| - | Abate, Pietro         | Strong dependencies between software components                                               | 2009 |                                                                                                             |
-| + | Abdalkareem, Rabe     | Why do developers use trivial packages? An empirical case study on NPM                        | 2017 | JavaScript; Node.js; Code Reuse; Empirical Studies                                                          |
-| + | Bogart, Christopher   | How to break an api: Cost negotiation and community values in three software ecosystem        | 2016 | Software ecosystems; Dependency management; semantic versioning; Collaboration; Qualitative research        |
-| + | Claes, Maelick        | A historical analysis of Debian package incompatibilities                                     | 2015 | debian, conflict, empirical, analysis, software, evolution, distribution, package, dependency, maintenance  |
-|   | Constantinou, Eleni   | An empirical comparison of developer retention in the RubyGems and NPM software ecosystems    | 2017 | Software ecosystem, Socio-technical interaction, Software evolution, Empirical analysis, Survival analysis  |
-|   | Hejderup, Joseph      | Software Ecosystem Call Graph for Dependency Management                                       | 2018 |                                                                                                             |
-| + | Kikas, Riivo          | Structure and evolution of package dependency networks                                        | 2017 |                                                                                                             |
-| + | Kula, Raula Gaikovina | Do developers update their library dependencies?                                              | 2017 | Software reuse, Software maintenance, Security vulnerabilities                                              |
-|   | Mens, Tom             | Studying Evolving Software Ecosystems based on Ecological Models                              | 2014 | Coral Reef, Natural Ecosystem, Open Source Software, Ecological Model, Software Project                     |
-| + | Raemaekers, Steven    | Semantic versioning and impact of breaking changes in the Maven repository                    | 2017 | Semantic versioning, Breaking changes, Software libraries                                                   |
-| + | Robbes, Romain        | How do developers react to API deprecation? The case of a smalltalk ecosystem                 | 2012 | Ecosystems, Mining Software Repositories, Empirical Studies                                                 |
-| + | Trockman, Asher       | Adding sparkle to social coding: An empirical study of repository badges in the npm ecosystem | 2018 |                                                                                                             |
-|   | Posnett, Daryl        | Dual ecological measures of focus in software development                                     | 2013 |                                                                                                             |
+| - | @Abate2009        | Strong dependencies between software components                                               | 2009 | | 
+| - | @Abate2011        | Predicting upgrade failures using dependency analysis                                         | 2011 | |
+| + | @Abdalkareem2017  | Why do developers use trivial packages? An empirical case study on NPM                        | 2017 | JavaScript; Node.js; Code Reuse; Empirical Studies |
+| + | @Bogart2016       | How to break an api: Cost negotiation and community values in three software ecosystem        | 2016 | Software ecosystems; Dependency management; semantic versioning; Collaboration; Qualitative research |
+| + | @Claes2015        | A historical analysis of Debian package incompatibilities                                     | 2015 | debian, conflict, empirical, analysis, software, evolution, distribution, package, dependency, maintenance |
+| + | @Constantinou2017 | An empirical comparison of developer retention in the RubyGems and NPM software ecosystems    | 2017 | Software ecosystem, Socio-technical interaction, Software evolution, Empirical analysis, Survival analysis  |
+| + | @Hejderup2018     | Software Ecosystem Call Graph for Dependency Management                                       | 2018 | |
+| + | @Kikas2017        | Structure and evolution of package dependency networks                                        | 2017 | |
+| + | @Kula2017         | Do developers update their library dependencies?                                              | 2017 | Software reuse, Software maintenance, Security vulnerabilities                                              |
+| - | @Mens2013         | Studying Evolving Software Ecosystems based on Ecological Models                              | 2013 | Coral Reef, Natural Ecosystem, Open Source Software, Ecological Model, Software Project                     |
+| + | @Raemaekers2017   | Semantic versioning and impact of breaking changes in the Maven repository                    | 2017 | Semantic versioning, Breaking changes, Software libraries                                                   |
+| + | @Robbes2012       | How do developers react to API deprecation? The case of a smalltalk ecosystem                 | 2012 | Ecosystems, Mining Software Repositories, Empirical Studies                                                 |
+| + | @Trockman2018     | Adding sparkle to social coding: An empirical study of repository badges in the npm ecosystem | 2018 |                                                                                                             |
 
-Next we have also searched for some papers on Google Scholar. The main queries that we have used to
-search are "software ecosystems", "analysis" and "empirical". In the "Query Used" column you can 
-see the query that we have inputted into the search engine. Any additional filters that were used
-are in the "Filters Used" column. A summary can be found below.
-
-|   | First Author      | Title                                                                                                            | Year | Keywords                                                                                                                      | Query Used                                     | Engine Used    | Filters Used |
-|---|-------------------|------------------------------------------------------------------------------------------------------------------|------|-------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|----------------|--------------|
-| + | Manikas, Konstantinos | Revisiting software ecosystems Research: A longitudinal literature study | 2016 | Software ecosystems; Longitudinal literature study; Software ecosystem maturity | "Software ecosystems" OR "Dependency management" OR "semantic version" | Google Scholar | >=2014
-| + | Decan, Alexandre  | An empirical comparison of dependency network evolution in seven software packaging ecosystems                   | 2018 | Software repository mining, Software ecosystem, Package manager, Dependency network, Software evolution                       | "software ecosystems" AND "empirical analysis" | Google Scholar | >=2018       |
-| + | Dittrich, Yvonne  | Software engineering beyond the project – Sustaining software ecosystems                                         | 2014 |                                                                                                                               | engineering software ecosystems                | Google Scholar | >=2014       |
-| + | Hora, Andre       | How do developers react to API evolution? A large-scale empirical study                                          | 2016 | API evolution, API deprecation, Software ecosystem, Empirical study                                                           | "software ecosystem" AND "empirical"           | Google Scholar |              |
-| - | Izquierdo, Daniel | Software Development Analytics for Xen: Why and How                                                              | 2018 | Companies, Ecosystems, Software, Measurement, Object recognition, Monitoring, Virtualization                                  | software ecosystem analytics                   | Google Scholar | >=2014       |
-| + | Jansen, Slinger   | Measuring the Health of Open Source Software Ecosystems: Beyond the Scope of Project Health                      | 2014 |                                                                                                                               | "open source software ecosystems"              | Google Scholar | >=2014       |
-| + | Kula, Raula       | An exploratory study on library aging by monitoring client usage in a software ecosystem                         | 2017 |                                                                                                                               | "software ecosystem" AND "analysis"            | Google Scholar | >=2017       |
-| + | Malloy, Brian     | An empirical analysis of the transition from Python 2 to Python 3                                                | 2018 | Python programming, Programming language evolution, Compliance                                                                | “software ecosystem” AND “empirical"           | Google Scholar | >=2018       |
-| + | Rajlich, Václav   | Software evolution and maintenance                                                                               | 2014 |                                                                                                                               | Software Evolution and Maintenance             | Google Scholar | >=2014       |
-| + | Teixeira, Jose    | Lessons learned from applying social network analysis on an industrial Free/Libre/Open Source Software Ecosystem | 2015 | Social network analysis Open source Open-coopetition Software ecosystems Business models Homophily Cloud computing OpenStack  | "software ecosystem analytics"                 | Google Scholar | >=2014       |
+_Table: 1. Papers provided by MSc. Joseph Hejderup. The first column describes whether the paper of
+the row will be used. A '+' means it will be used, a '-' means it will not._
 
 
-Finally we have also analyzed some papers that were referenced by the papers that we have found 
-before. The original paper that they were referenced in can be found in the "Referenced In" 
-column.
+| Paper Reference | Reason not selected |
+|---|---|
+| @Abate2009 | This paper seems to delve more into the software itself whereas we are more interested in the surrounding ecosystems |
+| @Abate2011 | Kind of the same reason as @Abate2009, again we are more interested in the surrounding ecosystems |
+| @Mens2013  | We were in doubt over this one, it could be useful but we weren't convinced that it was. Since we already had a lot of material we decided to not use this |
 
-|   | First Author                            | Title                                                                                                    | Year | Keywords                                                                         | Referenced In                                         |
-|---|-----------------------------------------|----------------------------------------------------------------------------------------------------------|------|----------------------------------------------------------------------------------|-------------------------------------------------------|
-| + | Bavota, Gabriele                        | How the Apache community upgrades dependencies: an evolutionary study                                    | 2014 | Software Ecosystems · Project dependency upgrades · Mining software repositories | Kula (2017)                                           |
-| + | Blincoe, Kelly, Harrison, F., Damian, D | Ecosystems in GitHub and a method for ecosystem identification using reference coupling.                 | 2015 |                                                                                  | Constantinou(2017)                                    |
-| + | Cox, Joel                               | Measuring Dependency Freshness in Software Systems                                                       | 2015 |                                                                                  | Riivo Kikas(2017)                                     |
-| + | Decan, Alexandre                        | An empirical comparison of dependency issues in OSS packaging ecosystems                                 | 2017 |                                                                                  | Abdelkareem (2017), Constantinou (2017), Decan (2018) |
-| + | Dietrich, Jens                          | Broken Promises - An Empirical Study into Evolution Problems in Java Programs Caused by Library Upgrades | 2014 |                                                                                  | Raemaekers, Steven(2017)                              |
-| + | Malloy, Brian                           | uantifying the transition from Python 2 to 3: an empirical study of Python applications.                 | 2017 |                                                                                  | Malloy (2018)                                         |
-| + | McDonnell, T | An empirical study of api stability and adoption in the android ecosystem | | 2013 | Manikas, Konstantinos (2016)
+_Table: 2. Papers from the initial seed that were not selected for the literature survey, along
+with a specification of the reason why this is the case._
+
+### Digital Search Engine
+The second strategy type which is used to select relevant papers for this literature study, is by
+a digital search engine. In this literature survey, Google Scholar[^3] is used. The following
+queries have been used to search for relevant papers:
+
+* "software ecosystems" AND "empirical analysis" _(2018)_
+* "engineering software ecosystems" _(2014)_
+* "software ecosystem" AND "empirical" _(2014)_
+* "software ecosystem analytics" _(2014)_
+* "software ecosystem" AND "analysis" _(2017)_
+* "software ecosystem" AND "empirical" _(2018)_
+
+For each of these queries, the results were first filtered by the publish year. These are
+described by the italic year after each query above. The papers that are filtered are published
+earlier than the set publish year.
+
+After this filtering, we first determined whether a paper was relevant to the literature survey by
+examining the title. If it was unclear whether the paper was indeed relevant by only looking at
+the title, the abstract of the paper was examined closely. On these two criteria, each of the
+selected papers were judged and ultimately selected. The selected paper using these method can be
+found in Table 3.
+
+ | First Author      | Title                                                                                                            | Year | Keywords                                                                                                                      | Query Used                                     |
+|-------------------|------------------------------------------------------------------------------------------------------------------|------|-------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
+| @Decan2018     | An empirical comparison of dependency network evolution in seven software packaging ecosystems | 2018 | Software repository mining, Software ecosystem, Package manager, Dependency network, Software evolution | "software ecosystems" AND "empirical analysis" |
+| @Dittrich2014  | Software engineering beyond the project – Sustaining software ecosystems                       | 2014 |                                                                                                               | engineering software ecosystems           |
+| @Hora2016      | How do developers react to API evolution? A large-scale empirical study                        | 2016 | API evolution, API deprecation, Software ecosystem, Empirical study                                         | "software ecosystem" AND "empirical"          |
+| @Izquierdo2018 | Software Development Analytics for Xen: Why and How                                            | 2018 | Companies, Ecosystems, Software, Measurement, Object recognition, Monitoring, Virtualization            | software ecosystem analytics            |
+| @Jansen2014    | Measuring the Health of Open Source Software Ecosystems: Beyond the Scope of Project Health    | 2014 |                                                                                                               | "open source software ecosystems"          |
+| @Kula2017-2    | An exploratory study on library aging by monitoring client usage in a software ecosystem       | 2017 |                                                                                                               | "software ecosystem" AND "analysis"           |
+| @Malloy2018    | An empirical analysis of the transition from Python 2 to Python 3                              | 2018 | Python programming, Programming language evolution, Compliance                                                 | “software ecosystem” AND “empirical"          | 
+| @Manikas2016   | Revisiting software ecosystems Research: A longitudinal literature study                       | 2016 | Software ecosystems; Longitudinal literature study; Software ecosystem maturity                         | "Software ecosystems" OR "Dependency management" OR "semantic version" |
+| @Rajlich2014   | Software evolution and maintenance                                                             | 2014 |                                                                                                               | Software Evolution and Maintenance          | 
+| @Teixeira2015  | Lessons learned from applying social network analysis on an industrial Free/Libre/Open Source Software Ecosystem | 2015 | Social network analysis Open source Open-coopetition Software ecosystems Business models Homophily Cloud computing OpenStack  | "software ecosystem analytics"                 |
+
+_Table: 3. Papers selected from searches using Google Scholar. The column "Query Used" describes
+which of the queries is used to retrieve the paper._
+
+### Referenced papers
+Finally, a selection of papers has been made by looking at the references found in papers
+selected using the two methods above. For these papers, the selection process is similar to that
+of the selected papers using the digital search engine; it is selected when both the title and the
+abstract are deemed relevant to the research questions. This has led to the papers in Table 4.
+being selected.
+
+| First Author                            | Title                                                                                                    | Year | Keywords                                                                         | Referenced In                                         |
+|-----------------------------------------|----------------------------------------------------------------------------------------------------------|------|----------------------------------------------------------------------------------|-------------------------------------------------------|
+| @Bavota2014                        | How the Apache community upgrades dependencies: an evolutionary study                                    | 2014 | Software Ecosystems · Project dependency upgrades · Mining software repositories | @Kula2017                                           |
+| @Blincoe2015 | Ecosystems in GitHub and a method for ecosystem identification using reference coupling.                 | 2015 |                                                                                  | @Constantinou2017                                    |
+| @Cox2015                               | Measuring Dependency Freshness in Software Systems                                                       | 2015 |                                                                                  | @Kikas2017                                     |
+| @Decan2017                     | An empirical comparison of dependency issues in OSS packaging ecosystems                                 | 2017 |                                                                                  | @Abdalkareem2017, @Constantinou2017, @Decan2018 |
+| @Dietrich2014                          | Broken Promises - An Empirical Study into Evolution Problems in Java Programs Caused by Library Upgrades | 2014 |                                                                                  | @Raemaekers2017                              |
+| @Malloy2017                           | Quantifying the transition from Python 2 to 3: an empirical study of Python applications.                 | 2017 |                                                                                  | @Malloy2018                                         |
+| @McDonnell2013 | An empirical study of api stability and adoption in the android ecosystem | 2013 |  | @Manikas2016
+
+_Table: 4. Papers selected which are referenced in previously selected papers. The column
+"Referenced In" describes in which selected paper the paper is referenced._
+
+## Answers
+[^1]: <https://pypi.org/project/pip/>
+[^2]: <https://crates.io/>
+[^3]: <https://github.com:>
+[^4]: <https://scholar.google.com>
