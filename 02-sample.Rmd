@@ -10,7 +10,7 @@ The RQs that everyone should be aiming at are:
 
 * **RQ1** Current state of the art in software analytics for Code Review:
     - Topics that are being explored
-    - Research methods, tools and datasets being used
+    - Research methods, tools and datasets being used	
     - Main research findings, aggregated
     
 * **RQ2** Current state of practice in software analytics for Code Review:
@@ -80,6 +80,17 @@ All data will be collected by one person participating in the review and checked
 ### Data analysis
 
 ###Initial groupping of the papers
+
+####Code Reviews Do Not Find Bugs: How the Current Code Review Best Practice Slows Us Down
+Authors:Jacek Czerwonka, Michaela Greiler, Jack Tilford（Microsoft）
+Year published: 2015, IEEE/ACM 37th IEEE International Conference on Software Engineering
+Citation: Google Scholar(20), Scopus(8)  
+
+As code review have many uses and benefits,the authors hope to find out whether the currently code review is in the most efficient way or is it merely adequate and do code reviews provide more value than other methods. 
+With experience gained at Microsoft and with support of data,the authors posit (1) that code reviews often do not find functionality issues that should block a
+code submission; 
+(2) that effective code reviews should be performed by people with specific set of skills; and (3) that the social aspect of code reviews cannot be ignored.
+
 
 
 ## Answers
