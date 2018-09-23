@@ -99,17 +99,70 @@ _Table 1. Papers found indirectly by investigating citations of/by other papers.
 
 ### Study Selection
 
-In order to aggregate our collective efforts, selected sources were stored in a
+All papers that were found, were stored in a
 custom built web-based tool for conducting literature reviews.
 The source code of this tool is published in a
 [GitHub repository](https://github.com/jessetilro/research).
-By commenting on and tagging our findings we were able to export a filtered
-list of publications,
-the relevance of which was agreed upon.
+
+In this tool, it is possible to label papers with tags
+and leave comments and ratings.
+Every paper is reviewed based on the selection criteria.
+Based on this, the tool allowed to filter out all papers
+that appeared not to be relevant for this literature survey.
+
+The selection criteria are as follows:
+
+1. The study must show (at least) one release engineering technique.
+1. The study must not just show a release engineering technique,
+   but analyze its performance compared to other techniques.
+
+Based on these selection criteria,
+the following papers appeared to be irrelevant for the scope of this survey:
+
+<!-- Example. TODO: actually exclude papers -->
+- [link to paper] - Excluded based on rule 2.
 
 ### Study Quality Assessment
 
-<!-- TODO -->
+Based on @kitchenham2004procedures, the quality of a paper will be assessed
+by the evidence it provides, based on the following scale.
+All levels of quality will be accepted, except for level 5 (expert opinion).
+
+1. Evidence obtained from at least one properly-designed
+   randomised controlled trial.
+2. Evidence obtained from well-designed pseudo-randomised controlled trials
+   (i.e. non-random allocation to treatment).
+3. Comparative studies in a real-world setting:
+    1. Evidence obtained from comparative studies with concurrent controls and
+       allocation not randomised, cohort studies, case-control studies or
+       interrupted time series with a control group.
+    2. Evidence obtained from comparative studies with historical control,
+       two or more single arm studies,
+       or interrupted time series without a parallel control group.
+4. Experiments in artificial settings:
+    1. Evidence obtained from a randomised experiment performed in an
+       artificial setting.
+    2. Evidence obtained from case series,
+       either post-test or pre-test/post-test.
+    3. Evidence obtained from a quasi-random experiment performed in an
+       artificial setting.
+5. Evidence obtained from expert opinion based on theory or consensus.
+
+Also, the studies will be examined to see if they contain any type of bias.
+For this, the same types of biases will be used as described by @kitchenham2004procedures:
+
+- Selection/Allocation bias: Systematic difference between comparison groups
+  with respect to treatment.
+- Performance bias: Systematic difference is the conduct of comparison groups
+  apart from the treatment being evaluated.
+- Measurement/Detection bias: Systematic difference between the groups in how
+  outcomes are ascertained.
+- Attrition/Exclusion bias: Systematic differences between comparison groups in
+  terms of withdrawals or exclusions of participants from the study sample.
+
+The studies will be labeled by their quality level and possible biases.
+This information can be used during the Data Synthesis phase
+to weigh the importance of individual studies [@kitchenham2004procedures].
 
 ### Data Extraction
 
