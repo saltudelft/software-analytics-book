@@ -27,15 +27,21 @@ In this section, we will describe...
 
 ### Search Strategy
 
-At the start of this project,
-five papers were given to us as a starting point for the literature survey.
+Since release engineering is a relatively new research topic,
+we took an exploratory approach in collecting any literature revolving around
+the topic of release engineering from the perspective of software analytics.
+This aided us in determining a more narrow scope for our survey,
+subsequently allowing us to find additional literature fitting this scope.
+
+At the start of this project, we were provided with an initial seed of five
+papers as a starting point for our literature survey.
 These initial papers were @adams2016a, @da2016a, @d2014a, @khomh2012a, and
 @khomh2015a.
 
 We collected publications using two search engines: Scopus and Google Scholar.
 These each encompass various databases such as ACM Digital Library, Springer,
 IEEE Xplore and ScienceDirect.
-The queries we entered are summarized in Figure 1.
+The main query that we constructed is displayed in Figure 1.
 The publications found using this query were:
 
 - @kaur2019a
@@ -82,12 +88,13 @@ AND PUBYEAR AFT 2014
 
 _Figure 1. Query used for retrieving release engineering publications via Scopus._
 
-In addition to the search strategy that is based on a combination of keywords
-and subject headings as described above, a review of the list of publications
-that retrieved papers cite and are cited by is done.
-These lists are provided by Google Scholar,
-as well as the reference lists of the papers themselves.
-Results of which are listed in Table 1.
+In addition to querying search engines as described above,
+references related to retrieved papers were analyzed.
+For each paper, the review concerned the publications cited by the paper,
+as well as those citing the paper.
+These reference lists were obtained from Google Scholar and from the reference
+lists in the papers themselves.
+The results of the reference analysis are listed in Table 1.
 
 _Table 1. Papers found indirectly by investigating citations of/by other papers._
 
@@ -97,12 +104,13 @@ _Table 1. Papers found indirectly by investigating citations of/by other papers.
 | @khomh2015a    | is cited by | @poo-caama2016a <br> @teixeira2017a |
 | @mantyla2015a  | is cited by | @rodriguez2017a <br> @cesar2017a    |
 
-### Study Selection
-
 In order to aggregate our collective efforts, selected sources were stored in a
 custom built web-based tool for conducting literature reviews.
 The source code of this tool is published in a
 [GitHub repository](https://github.com/jessetilro/research).
+
+### Study Selection
+
 By commenting on and tagging our findings we were able to export a filtered
 list of publications,
 the relevance of which was agreed upon.
