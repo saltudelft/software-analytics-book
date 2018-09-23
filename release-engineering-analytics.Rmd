@@ -134,7 +134,7 @@ What research gaps does this publication contain?
 
 Are these research gaps filled by any other publications in this survey?
 
-Quantitive research publications:
+Quantitative research publications:
 	Study start date:
 	Study end date or duration:
 	Population description:
