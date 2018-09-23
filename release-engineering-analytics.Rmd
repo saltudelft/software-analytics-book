@@ -18,7 +18,7 @@ Due to these developments being industry-driven, release engineering forms a
 largely uncharted territory for software engineering research.
 It requires the attention from researchers both because these new practices
 have an often unanticipated impact on software studies and because they require
-empirical validation [citation needed].
+empirical validation [@adams2016a].
 
 Therefore, this systematic literature review aims to provide an overview of
 the software analytics research that has been conducted so far on release
