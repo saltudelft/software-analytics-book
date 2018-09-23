@@ -2,23 +2,57 @@
 
 ## Motivation
 
-Release engineering is a relatively new research topic,
-given that modern processes for releasing software (e.g. continuous delivery)
-are industry-driven.
-Therefore, we took an exploratory approach in collecting any literature
-revolving around the topic of release engineering from the perspective of
-software analytics.
-This will aid us in determining a more narrow scope for our survey,
-subsequently allowing us to find additional literature fitting this scope.
+Release engineering is a discipline involved with making software available for
+end users.
+Efforts spent within the development environment of a software system
+should eventually be integrated and deployed such that end users may benefit
+from them.
+In recent years, release engineers have developed and
+adopted techniques to build infrastructures and pipelines which automate the
+process of releasing software to an increasingly large degree.
+These modern approaches have resulted
+in various practices such as releasing new versions of a software system in
+significantly shorter cycles.
+
+Due to these developments being industry-driven, release engineering forms a
+largely uncharted territory for software engineering research.
+It requires the attention from researchers both because these new practices
+have an often unanticipated impact on software studies and because they require
+empirical validation [@adams2016a].
+
+Therefore, this systematic literature review aims to provide an overview of
+the software analytics research that has been conducted so far on release
+engineering. Its main purpose is to identify the apparent gap
+between research and practice, in order to guide further research efforts.
 
 ### Research Questions
 
+Contrary to what is regularly the case, with release engineering, practice
+seems to be ahead of research.
+Building on this idea, our questions are constructed to identify in which ways
+existing modern release engineering practices should still be studied in
+software analytics research.
+Our review thus aims to answer the following questions.
+
 <!-- TODO -->
-**RQ 1:** ...
+- **RQ 1:** _How is modern release engineering done in practice?_<br>
+  This question aims to identify the so-called "state of the practice" in
+  release engineering.
+  We will summarize practices that have been adopted to drive release
+  engineering forward. In addition we will identify the tools utilized to bring
+  this about. Case studies will also be analyzed to this end.
 
-**RQ 2:** ...
+- **RQ 2:** _What aspects of modern release engineering have been studied
+  in software analytics research so far?_<br>
+  In order to answer this question we investigate the practices that previous
+  empirical studies have focused on. In doing so, we identify the associated
+  costs and benefits that have been found, and the analysis methods used.
 
-**RQ 3:** ...
+- **RQ 3:** _What aspects of modern release engineering make for relevant
+  study objects in future software analytics research?_<br>
+  In answering this question we aim to identify the gap between practice and
+  research in release engineering. This way, our intent is not only to guide
+  but also to motivate future research.
 
 ## Research Protocol
 
@@ -27,15 +61,21 @@ In this section, we will describe...
 
 ### Search Strategy
 
-At the start of this project,
-five papers were given to us as a starting point for the literature survey.
+Since release engineering is a relatively new research topic,
+we took an exploratory approach in collecting any literature revolving around
+the topic of release engineering from the perspective of software analytics.
+This aided us in determining a more narrow scope for our survey,
+subsequently allowing us to find additional literature fitting this scope.
+
+At the start of this project, we were provided with an initial seed of five
+papers as a starting point for our literature survey.
 These initial papers were @adams2016a, @da2016a, @d2014a, @khomh2012a, and
 @khomh2015a.
 
 We collected publications using two search engines: Scopus and Google Scholar.
 These each encompass various databases such as ACM Digital Library, Springer,
 IEEE Xplore and ScienceDirect.
-The queries we entered are summarized in Figure 1.
+The main query that we constructed is displayed in Figure 1.
 The publications found using this query were:
 
 - @kaur2019a
@@ -82,12 +122,13 @@ AND PUBYEAR AFT 2014
 
 _Figure 1. Query used for retrieving release engineering publications via Scopus._
 
-In addition to the search strategy that is based on a combination of keywords
-and subject headings as described above, a review of the list of publications
-that retrieved papers cite and are cited by is done.
-These lists are provided by Google Scholar,
-as well as the reference lists of the papers themselves.
-Results of which are listed in Table 1.
+In addition to querying search engines as described above,
+references related to retrieved papers were analyzed.
+For each paper, the review concerned the publications cited by the paper,
+as well as those citing the paper.
+These reference lists were obtained from Google Scholar and from the reference
+lists in the papers themselves.
+The results of the reference analysis are listed in Table 1.
 
 _Table 1. Papers found indirectly by investigating citations of/by other papers._
 
@@ -97,15 +138,17 @@ _Table 1. Papers found indirectly by investigating citations of/by other papers.
 | @khomh2015a    | is cited by | @poo-caama2016a <br> @teixeira2017a |
 | @mantyla2015a  | is cited by | @rodriguez2017a <br> @cesar2017a    |
 
-### Study Selection
-
-All papers that were found, were stored in a
-custom built web-based tool for conducting literature reviews.
+All the papers that were found, were stored in a custom built web-based tool for
+conducting literature reviews.
 The source code of this tool is published in a
 [GitHub repository](https://github.com/jessetilro/research).
+The tool was hosted on a virtual private server, such that all retrieved
+publications were stored centrally, accessible to all reviewers.
 
-In this tool, it is possible to label papers with tags
-and leave comments and ratings.
+### Study Selection
+
+In the utilized tool for conducting the survey, it is possible to label papers
+with tags and leave comments and ratings.
 Every paper is reviewed based on the selection criteria.
 Based on this, the tool allowed to filter out all papers
 that appeared not to be relevant for this literature survey.
