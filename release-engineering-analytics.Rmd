@@ -2,14 +2,28 @@
 
 ## Motivation
 
-Release engineering is a relatively new research topic,
-given that modern processes for releasing software (e.g. continuous delivery)
-are industry-driven.
-Therefore, we took an exploratory approach in collecting any literature
-revolving around the topic of release engineering from the perspective of
-software analytics.
-This will aid us in determining a more narrow scope for our survey,
-subsequently allowing us to find additional literature fitting this scope.
+Release engineering is a discipline involved with making software available for
+end users.
+Efforts spent within the development environment of a software system
+should eventually be integrated and deployed such that end users may benefit
+from them.
+In recent years, release engineers have developed and
+adopted techniques to build infrastructures and pipelines which automate the
+process of releasing software to an increasingly large degree.
+These modern approaches have resulted
+in various practices such as releasing new versions of a software system in
+significantly shorter cycles.
+
+Due to these developments being industry-driven, release engineering forms a
+largely uncharted territory for software engineering research.
+It requires the attention from researchers both because these new practices
+have an often unanticipated impact on software studies and because they require
+empirical validation [citation needed].
+
+Therefore, this systematic literature review aims to provide an overview of
+the software analytics research that has been conducted so far on release
+engineering. Its main purpose is to identify the apparent gap
+between research and practice, in order to guide further research efforts.
 
 ### Research Questions
 
