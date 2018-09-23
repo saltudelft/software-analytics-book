@@ -138,28 +138,134 @@ _Table 1. Papers found indirectly by investigating citations of/by other papers.
 | @khomh2015a    | is cited by | @poo-caama2016a <br> @teixeira2017a |
 | @mantyla2015a  | is cited by | @rodriguez2017a <br> @cesar2017a    |
 
-In order to aggregate our collective efforts, selected sources were stored in a
-custom built web-based tool for conducting literature reviews.
+All papers that were found, were stored in a custom built web-based tool for
+conducting literature reviews.
 The source code of this tool is published in a
 [GitHub repository](https://github.com/jessetilro/research).
 
 ### Study Selection
 
-By commenting on and tagging our findings we were able to export a filtered
-list of publications,
-the relevance of which was agreed upon.
+In this tool, it is possible to label papers with tags
+and leave comments and ratings.
+Every paper is reviewed based on the selection criteria.
+Based on this, the tool allowed to filter out all papers
+that appeared not to be relevant for this literature survey.
+
+The selection criteria are as follows:
+
+1. The study must show (at least) one release engineering technique.
+1. The study must not just show a release engineering technique,
+   but analyze its performance compared to other techniques.
+
+Based on these selection criteria,
+the following papers appeared to be irrelevant for the scope of this survey:
+
+<!-- Example. TODO: actually exclude papers -->
+- [link to paper] - Excluded based on rule 2.
 
 ### Study Quality Assessment
 
-<!-- TODO -->
+Based on @kitchenham2004procedures, the quality of a paper will be assessed
+by the evidence it provides, based on the following scale.
+All levels of quality will be accepted, except for level 5 (expert opinion).
+
+1. Evidence obtained from at least one properly-designed
+   randomised controlled trial.
+2. Evidence obtained from well-designed pseudo-randomised controlled trials
+   (i.e. non-random allocation to treatment).
+3. Comparative studies in a real-world setting:
+    1. Evidence obtained from comparative studies with concurrent controls and
+       allocation not randomised, cohort studies, case-control studies or
+       interrupted time series with a control group.
+    2. Evidence obtained from comparative studies with historical control,
+       two or more single arm studies,
+       or interrupted time series without a parallel control group.
+4. Experiments in artificial settings:
+    1. Evidence obtained from a randomised experiment performed in an
+       artificial setting.
+    2. Evidence obtained from case series,
+       either post-test or pre-test/post-test.
+    3. Evidence obtained from a quasi-random experiment performed in an
+       artificial setting.
+5. Evidence obtained from expert opinion based on theory or consensus.
+
+Also, the studies will be examined to see if they contain any type of bias.
+For this, the same types of biases will be used as described by @kitchenham2004procedures:
+
+- Selection/Allocation bias: Systematic difference between comparison groups
+  with respect to treatment.
+- Performance bias: Systematic difference is the conduct of comparison groups
+  apart from the treatment being evaluated.
+- Measurement/Detection bias: Systematic difference between the groups in how
+  outcomes are ascertained.
+- Attrition/Exclusion bias: Systematic differences between comparison groups in
+  terms of withdrawals or exclusions of participants from the study sample.
+
+The studies will be labeled by their quality level and possible biases.
+This information can be used during the Data Synthesis phase
+to weigh the importance of individual studies [@kitchenham2004procedures].
 
 ### Data Extraction
+To accurately capture the information contributed by each publication in our
+survey, we will use a systematic approach to extracting data.
+To guide this process, we will be using a data extraction form which describes
+what aspects of a publication are crucial to record.
+Besides general publication information (title, author etc.), the form contains
+questions that are based on our defined research questions.
+Furthermore, the form contains a section for quantitative research, where
+aspects such as population and evaluation will be documented.
+The form that is used for this is shown below:
 
-<!-- TODO -->
+```
+General information:
+	Name of person extracting data:
+	Date form completed (dd/mm/yyyy):
+	Publication title:
+	Author information:
+	Journal:
+	Publication type:
+	Type of study:
+
+What practices in release engineering does this publication mention?
+
+Are these practices to be classified under dated, state of the art or state of
+the practice? Why?
+
+What open challenges in release engineering does this publication mention?
+
+What research gaps does this publication contain?
+
+Are these research gaps filled by any other publications in this survey?
+
+Quantitative research publications:
+	Study start date:
+	Study end date or duration:
+	Population description:
+	Method(s) of recruitment of participants:
+	Sample size:
+	Evaluation/measurement description:
+	Outcomes:
+	Limitations:
+	Future research:
+
+Notes:
+
+```
 
 ### Data Synthesis
+To summarize the contributions and limitations of each of the included
+publications, we will apply a descriptive synthesis approach.
+In this part of our survey, we will compare the data that was extracted of the
+included publications.
+Publications with similar findings will be grouped and evaluated, and
+differences between groups of publications will be structured and elaborated on.
+In this we will compare them using specifics such as their study types, time of
+publication and study quality.
 
-<!-- TODO -->
+If the extracted data allows for a structured tabular visualization of
+similarities and differences between publications this we serve as an additional
+form of synthesis. However, this depends on the final included publications of
+this survey.
 
 ### Included and Excluded Studies
 
