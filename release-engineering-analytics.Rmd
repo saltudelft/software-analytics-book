@@ -138,15 +138,15 @@ _Table 1. Papers found indirectly by investigating citations of/by other papers.
 | @khomh2015a    | is cited by | @poo-caama2016a <br> @teixeira2017a |
 | @mantyla2015a  | is cited by | @rodriguez2017a <br> @cesar2017a    |
 
-All papers that were found, were stored in a custom built web-based tool for
+All the papers that were found, were stored in a custom built web-based tool for
 conducting literature reviews.
 The source code of this tool is published in a
 [GitHub repository](https://github.com/jessetilro/research).
 
 ### Study Selection
 
-In this tool, it is possible to label papers with tags
-and leave comments and ratings.
+In the utilized tool for conducting the survey, it is possible to label papers
+with tags and leave comments and ratings.
 Every paper is reviewed based on the selection criteria.
 Based on this, the tool allowed to filter out all papers
 that appeared not to be relevant for this literature survey.
