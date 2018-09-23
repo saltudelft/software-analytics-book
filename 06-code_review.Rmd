@@ -197,12 +197,12 @@ of code review, such as functionalities of code review.
 ### Code reviews do not find bugs: how the current code review best practice slows us down
 Reference: @czerwonka2015code
 
-As code review have many uses and benefits,the authors hope to find out whether the currently code
-review is in the most efficient way or is it merely adequate and do code reviews provide more value
-than other methods. With experience gained at Microsoft and with support of data,the authors posit
-(1) that code reviews often do not find functionality issues that should block a code submission;
-(2) that effective code reviews should be performed by people with specific set of skills; and (3)
-that the social aspect of code reviews cannot be ignored.
+As code review has many uses and benefits, the authors hope to find out whether the current code
+review methods are sufficiently efficient. They also research whether other methods may be more
+efficient. With experience gained at Microsoft and with support of data, the authors posit (1) that
+code reviews often do not find functionality issues that should block a code submission; (2) that
+effective code reviews should be performed by people with a specific set of skills; and (3) that
+the social aspect of code reviews cannot be ignored.
 
 ### Design and code inspections to reduce errors in program development
 Reference: @fagan2002design
