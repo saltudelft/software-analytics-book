@@ -18,7 +18,7 @@ commercial companies.
 challenges and challenges for use in practice.
 
 ### Search process
-The search process consits of the following:
+The search process consists of the following:
 
 * A Google Scholar search using the search query *"modern code review" OR "modern code reviews"*.
 The results list will be sorted by decreasing relevance by Google Scholar and will be considered by
