@@ -1,0 +1,94 @@
+# Code Review
+## Review protocol
+This section describes the review protocol used for the systematic review presented in this
+section. The protcol has been set up using Kitchenham's method as described by Kitchenham et al.
+[@kitchenham2007].
+
+### Research questions
+The goal of the review is to summarize the state of the art and identify future challenges in the
+code review area. The research questions are as follows:
+
+* **RQ1**: *What is the state of the art in the research area of code review?* This question
+focusses on topics that are researched often, the results of that research, and research methods,
+tools and datasets that are used.
+* **RQ2**: *What is the current state of practice in the area of code review?* This concerns tools
+and techniques that are developed and used in practice, by open source projects but also by
+commercial companies.
+* **RQ3**: *What are future challenges in the area of code review?* This concerns both research
+challenges and challenges for use in practice.
+
+### Search process
+The search process consists of the following:
+
+* A Google Scholar search using the search query *"modern code review" OR "modern code reviews"*.
+The results list will be sorted by decreasing relevance by Google Scholar and will be considered by
+us in order.
+* A general Google search for non-scientific reports (e.g., blog posts) and implemented code review
+tools. For this search queries *code review* and *code review tools* are used, respectively. The
+result list will be considered in order.
+* All papers in the initial seed provided by the course instructor will be considered, as well as
+the papers they reference.
+* All papers referenced by already collected papers will be considered.
+
+From now on, all four categories listed above in general will be called *resource*.
+
+### Inclusion criteria
+From the scientific literature, the following types of papers will be considered:
+
+Papers researching recent code review
+
+* concepts,
+* methodologies,
+* tools and platforms,
+* and experiments concerning the preceding.
+
+From non-scientific resources, all resources discussing recent tools and techniques used in
+practice will be considered.
+
+### Exclusion criteria
+Resources published before 2008 will be excluded from the study.
+
+### Primary study selection process
+We will select a number of candidate resources based on the criteria stated above. For each
+resource, each person participating in the review can select it as a candidate.
+
+From all candidates, resource will be selected that will actually be reviewed. This can also be
+done by each person participating in the review. All resources that are candidates but are not
+selected
+for actual review must be explicitly rejected, with accompanying reasoning, by at least two persons
+participating in the review.
+
+### Data collection
+The following data will be collected from each considered resource:
+
+* Source (for example, the blog website or specific journal)
+* Year published
+* Type of resource
+* Author(s) and organization(s)
+* Summary of the resource of a maximum of 100 words
+* Data for answering **RQ1**:
+    - Sub-topic of research
+    - Research method
+    - Used tools
+    - Used datasets
+    - Research questions and their answers
+* Data for answering **RQ2**:
+    - Tools used
+    - Company/organization using the tool
+    - Evaluation of the tool
+* Data for answering **RQ3**:
+    - Future research challenges posed
+
+All data will be collected by one person participating in the review and checked by another.
+
+## Paper summaries
+
+###Code Reviews Do Not Find Bugs: How the Current Code Review Best Practice Slows Us Down
+Authors:Jacek Czerwonka, Michaela Greiler, Jack Tilford（Microsoft）
+Year published: 2015, IEEE/ACM 37th IEEE International Conference on Software Engineering
+Citation: Google Scholar(20), Scopus(8)  
+
+As code review have many uses and benefits,the authors hope to find out whether the currently code review is in the most efficient way or is it merely adequate and do code reviews provide more value than other methods. 
+With experience gained at Microsoft and with support of data,the authors posit (1) that code reviews often do not find functionality issues that should block a
+code submission; 
+(2) that effective code reviews should be performed by people with specific set of skills; and (3) that the social aspect of code reviews cannot be ignored.
