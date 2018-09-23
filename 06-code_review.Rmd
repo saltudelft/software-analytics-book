@@ -80,6 +80,53 @@ The following data will be collected from each considered resource:
 
 All data will be collected by one person participating in the review and checked by another.
 
+## Candidate resources
+In this section, all candidates that are collected using the described search process are
+presented. The in survey column in the tables below indicates whether the paper has been
+included in the survey in the end or if it has been excluded for some reason. If it has been
+excluded, the reason is stated along with the paper summary.
+
+### Initial seed
+These following table lists all initial seed papers provided by the course intructor. They are
+listed in alphabetical order of the first author's name, and then by publish year.
+
+| First author  | Year | Reference                  | In survey? (Y/N) |
+|---------------|------|----------------------------|------------------|
+| Bacchelli, A. | 2013 | @bacchelli2013expectations |                  |
+| Beller, M.    | 2014 | @beller2014modern          |                  |
+| Bird, C.      | 2015 | @bird2015lessons           |                  |
+| Fagan, M.     | 2002 | @fagan2002design           |                  |
+| Gousios, G.   | 2014 | @gousios2014exploratory    |                  |
+| McIntosh, S.  | 2014 | @mcintosh2014impact        |                  |
+
+### Google Scholar
+The following table lists all candidates that have been collected through the Google Scholar search
+described in the search process. They are listed in alphabetical order of the first author's name,
+and then by publish year. Note that as described in the search process section, papers in the
+search are considered in order.
+
+| First author     | Year | Reference                   | In survey? (Y/N) |
+|------------------|------|-----------------------------|------------------|
+| Baysal, O.       | 2016 | @baysal2016investigating    |                  |
+| Thongtanunam, P. | 2015 | @thongtanunam2015should     |                  |
+| Thongtanunam, P. | 2016 | @thongtanunam2016revisiting |                  |
+| Xia, X.          | 2015 | @xia2015should              |                  |
+| Zanjani, M. B.   | 2016 | @zanjani2016automatically   |                  |
+
+### By reference
+The following table lists all candidates that have been found by being referenced by another paper
+we found. They are listed in alphabetical order of the first author's name, and then by publish
+year.
+
+| First author | Year | Reference               | Referenced by | In survey? (Y/N) |
+|--------------|------|-------------------------|---------------|------------------|
+| Baum         | 2016 | @baum2016faceted        |               |                  |
+| Baum         | 2017 | @baum2017choice         |               |                  |
+| Baysal       | 2013 | @baysal2013influence    |               |                  |
+| Bosu         | 2013 | @bosu2013impact         |               |                  |
+| Ciolkowski   | 2003 | @ciolkowski2003software |               |                  |
+| Czerwonka    | 2015 | @czerwonka2015code      |               |                  |
+
 ## Paper summaries
 
 ###Code Reviews Do Not Find Bugs: How the Current Code Review Best Practice Slows Us Down
