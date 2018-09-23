@@ -156,7 +156,7 @@ that appeared not to be relevant for this literature survey.
 The selection criteria are as follows:
 
 1. The study must show (at least) one release engineering technique.
-1. The study must not just show a release engineering technique,
+2. The study must not just show a release engineering technique,
    but analyze its performance compared to other techniques.
 
 Based on these selection criteria,
