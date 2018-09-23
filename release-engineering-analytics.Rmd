@@ -27,12 +27,32 @@ between research and practice, in order to guide further research efforts.
 
 ### Research Questions
 
+Contrary to what is regularly the case, with release engineering, practice
+seems to be ahead of research.
+Building on this idea, our questions are constructed to identify in which ways
+existing modern release engineering practices should still be studied in
+software analytics research.
+Our review thus aims to answer the following questions.
+
 <!-- TODO -->
-**RQ 1:** ...
+- **RQ 1:** _How is modern release engineering done in practice?_<br>
+  This question aims to identify the so-called "state of the practice" in
+  release engineering.
+  We will summarize practices that have been adopted to drive release
+  engineering forward. In addition we will identify the tools utilized to bring
+  this about. Case studies will also be analyzed to this end.
 
-**RQ 2:** ...
+- **RQ 2:** _What aspects of modern release engineering have been studied
+  in software analytics research so far?_<br>
+  In order to answer this question we investigate the practices that previous
+  empirical studies have focused on. In doing so, we identify the associated
+  costs and benefits that have been found, and the analysis methods used.
 
-**RQ 3:** ...
+- **RQ 3:** _What aspects of modern release engineering make for relevant
+  study objects in future software analytics research?_<br>
+  In answering this question we aim to identify the gap between practice and
+  research in release engineering. This way, our intent is not only to guide
+  but also to motivate future research.
 
 ## Research Protocol
 
