@@ -107,7 +107,7 @@ By commenting on and tagging our findings we were able to export a filtered
 list of publications,
 the relevance of which was agreed upon.
 
-### Study Quality Assessent
+### Study Quality Assessment
 
 <!-- TODO -->
 
@@ -116,6 +116,10 @@ the relevance of which was agreed upon.
 <!-- TODO -->
 
 ### Data Synthesis
+
+<!-- TODO -->
+
+### Included and Excluded Studies
 
 <!-- TODO -->
 
@@ -132,6 +136,10 @@ the relevance of which was agreed upon.
 <!-- TODO -->
 
 ### RQ3: ...
+
+<!-- TODO -->
+
+## Discussion
 
 <!-- TODO -->
 
