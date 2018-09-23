@@ -112,7 +112,15 @@ the relevance of which was agreed upon.
 <!-- TODO -->
 
 ### Data Extraction
-To accurately capture the information contributed by each publication in our survey, we will use a systematic approach to extracting data. To guide this process, we will be using a data extraction form which describes what aspects of a publication are crucial to record. Besides general publication information (title, author etc.), the form contains questions that are based on our defined research questions. Furthermore, the form contains a section for quantitive research, where aspects such as population and evaluation will be documented. The form that is used for this is shown below:
+To accurately capture the information contributed by each publication in our
+survey, we will use a systematic approach to extracting data.
+To guide this process, we will be using a data extraction form which describes
+what aspects of a publication are crucial to record.
+Besides general publication information (title, author etc.), the form contains
+questions that are based on our defined research questions.
+Furthermore, the form contains a section for quantitive research, where aspects
+such as population and evaluation will be documented.
+The form that is used for this is shown below:
 
 ```
 General information:
@@ -126,7 +134,8 @@ General information:
 
 What practices in release engineering does this publication mention?
 
-Are these practices to be classified under dated, state of the art or state of the practice? Why?
+Are these practices to be classified under dated, state of the art or state of
+the practice? Why?
 
 What open challenges in release engineering does this publication mention?
 
@@ -150,9 +159,19 @@ Notes:
 ```
 
 ### Data Synthesis
-To summarize the contributions and limitations of each of the included publications, we will apply a descriptive synthesis approach. In this part of our survey, we will compare the data that was extracted of the included publications. Publications with similar findings will be grouped and evaluated, and differences between groups of publications will be structured and elaborated on. In this we will compare them using specifics such as their study types, time of publication and study quality.
+To summarize the contributions and limitations of each of the included
+publications, we will apply a descriptive synthesis approach.
+In this part of our survey, we will compare the data that was extracted of the
+included publications.
+Publications with similar findings will be grouped and evaluated, and
+differences between groups of publications will be structured and elaborated on.
+In this we will compare them using specifics such as their study types, time of
+publication and study quality.
 
-If the extracted data allows for a structured tabular visualization of similarities and differences between publications this we serve as an additional form of synthesis. However, this depends on the final included publications of this survey.
+If the extracted data allows for a structured tabular visualization of
+similarities and differences between publications this we serve as an additional
+form of synthesis. However, this depends on the final included publications of
+this survey.
 
 ### Included and Excluded Studies
 
