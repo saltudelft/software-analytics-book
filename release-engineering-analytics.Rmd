@@ -1,6 +1,7 @@
 # Release Engineering Analytics
 
-## Search Strategy
+## Motivation
+
 Release engineering is a relatively new research topic,
 given that modern processes for releasing software (e.g. continuous delivery)
 are industry-driven.
@@ -9,6 +10,22 @@ revolving around the topic of release engineering from the perspective of
 software analytics.
 This will aid us in determining a more narrow scope for our survey,
 subsequently allowing us to find additional literature fitting this scope.
+
+### Research Questions
+
+<!-- TODO -->
+**RQ 1:** ...
+
+**RQ 2:** ...
+
+**RQ 3:** ...
+
+## Research Protocol
+
+<!-- TODO -->
+In this section, we will describe...
+
+### Search Strategy
 
 At the start of this project,
 five papers were given to us as a starting point for the literature survey.
@@ -80,6 +97,8 @@ _Table 1. Papers found indirectly by investigating citations of/by other papers.
 | @khomh2015a    | is cited by | @poo-caama2016a <br> @teixeira2017a |
 | @mantyla2015a  | is cited by | @rodriguez2017a <br> @cesar2017a    |
 
+### Study Selection
+
 In order to aggregate our collective efforts, selected sources were stored in a
 custom built web-based tool for conducting literature reviews.
 The source code of this tool is published in a
@@ -87,3 +106,43 @@ The source code of this tool is published in a
 By commenting on and tagging our findings we were able to export a filtered
 list of publications,
 the relevance of which was agreed upon.
+
+### Study Quality Assessment
+
+<!-- TODO -->
+
+### Data Extraction
+
+<!-- TODO -->
+
+### Data Synthesis
+
+<!-- TODO -->
+
+### Included and Excluded Studies
+
+<!-- TODO -->
+
+## Answers
+
+<!-- TODO -->
+
+### RQ1: ...
+
+<!-- TODO -->
+
+### RQ2: ...
+
+<!-- TODO -->
+
+### RQ3: ...
+
+<!-- TODO -->
+
+## Discussion
+
+<!-- TODO -->
+
+## Conclusion
+
+<!-- TODO -->
