@@ -34,7 +34,8 @@ From now on, all four categories listed above in general will be called *resourc
 
 ### Inclusion criteria
 From the scientific literature, the following types of papers will be considered:
-Papers researching recent code review:
+
+Papers researching recent code review
 
 * concepts,
 * methodologies,
