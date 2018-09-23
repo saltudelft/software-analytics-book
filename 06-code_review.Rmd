@@ -128,13 +128,119 @@ year.
 | Czerwonka    | 2015 | @czerwonka2015code      |               |                  |
 
 ## Paper summaries
+This section contains summaries of all papers included in the survey. They are listed in
+alphabetical order of first author name, and then by year published.
 
-###Code Reviews Do Not Find Bugs: How the Current Code Review Best Practice Slows Us Down
-Authors:Jacek Czerwonka, Michaela Greiler, Jack Tilford（Microsoft）
-Year published: 2015, IEEE/ACM 37th IEEE International Conference on Software Engineering
-Citation: Google Scholar(20), Scopus(8)  
+### Expectations, outcomes, and challenges of modern code review
+Reference: @bacchelli2013expectations
 
-As code review have many uses and benefits,the authors hope to find out whether the currently code review is in the most efficient way or is it merely adequate and do code reviews provide more value than other methods. 
-With experience gained at Microsoft and with support of data,the authors posit (1) that code reviews often do not find functionality issues that should block a
-code submission; 
-(2) that effective code reviews should be performed by people with specific set of skills; and (3) that the social aspect of code reviews cannot be ignored.
+This paper describes research about the goals and actual effects of code reviews. Interviews and
+experiments have been done with people in the programming field.
+
+One of the main conclusions is that the main effect of doing code reviews is that everyone involved
+understands the code better. This is opposed to what the goal of code reviews is generally:
+discovering errors.
+
+### A Faceted Classification Scheme for Change-Based Industrial Code Review Processes
+Reference: @baum2016faceted
+
+The broad research questions treated in this article are: How is code review performed in industry
+today? Which commonalities and variations exist between code review processes of different teams
+and companies? The article describes a classification scheme for change-based code review processes
+in industry. This scheme is based on descriptions of the code review processes of eleven companies,
+obtained from interviews with software engineering professionals that were performed during a
+Grounded Theory study.
+
+### The Choice of Code Review Process: A Survey on the State of the Practice
+Reference: @baum2017choice
+
+This paper, published in 2017, is trying to answer 3 RQs. Firstly, how prevalent is change-based
+review in the industry? Secondly, does the chance that code review remains in use increase if code
+review is embedded into the process (and its supporting tools) so that it does not require a
+conscious decision to do a review? Thirdly, are the intended and acceptable levels of review
+effects a mediator in determining the code review process?
+
+### The influence of non-technical factors on code review
+Reference: @baysal2013influence
+
+### Investigating technical and non-technical factors influencing modern code review
+Reference: @baysal2016investigating
+
+### Modern code reviews in open-source projects: Which problems do they fix?
+Reference: @beller2014modern
+
+It has been researched what kinds of problems are solved by doing code reviews. The conclusion is
+that 75% are improvements in evolvability of the code, and 25% in functional aspects.
+
+It has also been researched which part of the review comments is actually followed up by an action,
+and which part of the edits after a review are actually caused by review comments.
+
+### Lessons learned from building and deploying a code review analytics platform
+Reference: @bird2015lessons
+
+A code review data analyzation platform developed and used by Microsoft is discussed. It is mainly
+presented what users of the system think of it and how its use influences development teams. One of
+the conclusions is that in general, the platform has a positive influence on development teams and
+their products.
+
+### Impact of peer code review on peer impression formation: A survey
+Reference: @bosu2013impact
+
+### Software Reviews: The State of the Practice
+Reference: @ciolkowski2003software
+
+To investigate how industry carries out software reviews and in what forms, this paper con- ducted
+a two-part survey in 2002, the first part based on a national initiative in Germany and the second
+involving companies world- wide. Additionally, this paper also include some fundenmental concepts
+of code review, such as functionalities of code review.
+
+### Code reviews do not find bugs: how the current code review best practice slows us down
+Reference: @czerwonka2015code
+
+As code review have many uses and benefits,the authors hope to find out whether the currently code
+review is in the most efficient way or is it merely adequate and do code reviews provide more value
+than other methods. With experience gained at Microsoft and with support of data,the authors posit
+(1) that code reviews often do not find functionality issues that should block a code submission;
+(2) that effective code reviews should be performed by people with specific set of skills; and (3)
+that the social aspect of code reviews cannot be ignored.
+
+### Design and code inspections to reduce errors in program development
+Reference: @fagan2002design
+
+This paper describes a method to thoroughly check code quality after each step of the development
+process, in a heavyweight manner. It does not really concern agile development.
+
+The authors state that these methods do not affect the developing process negatively, and that they
+work well for improving software quality.
+
+### An exploratory study of the pull-based software development model
+Reference: @gousios2014exploratory
+
+This article focusses on how much pull requests are being used and how they are used, focussing on
+GitHub. For example, it is concluded that pull-request are not being used that much, that
+pull-requests are being merged fast after they have been submitted, and that a pull request not
+being merged is most of the time not caused by technical errors in the pull-request.
+
+### The impact of code review coverage and code review participation on software quality: A case study of the qt, vtk, and itk projects
+Reference: @mcintosh2014impact
+
+This paper focusses on the influence of doing light-weight code reviews on software quality. In
+particular, the effect of review coverage (the part of the code that has been reviewed) and review
+participation (a measure for how much reviewers are involved in the review process) are being
+assessed.
+
+It turns out that both aspects improve software quality when they are higher. Review participation
+is the most influential. According to the authors there are other aspects, which they have not
+looked into, that are of significant importance for the review process.
+
+### Who should review my code? A file location-based code-reviewer recommendation approach for modern code review
+Reference: @thongtanunam2015should
+
+### Revisiting code ownership and its relationship with software quality in the scope of modern code review 
+Reference: @thongtanunam2016revisiting
+
+### Who should review this change?: Putting text and file location analyses together for more accurate recommendations
+Reference: @xia2015should
+
+### Automatically recommending peer reviewers in modern code review
+Reference: @zanjani2016automatically
