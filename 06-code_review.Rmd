@@ -1,0 +1,246 @@
+# Code Review
+## Review protocol
+This section describes the review protocol used for the systematic review presented in this
+section. The protcol has been set up using Kitchenham's method as described by Kitchenham et al.
+[@kitchenham2007].
+
+### Research questions
+The goal of the review is to summarize the state of the art and identify future challenges in the
+code review area. The research questions are as follows:
+
+* **RQ1**: *What is the state of the art in the research area of code review?* This question
+focusses on topics that are researched often, the results of that research, and research methods,
+tools and datasets that are used.
+* **RQ2**: *What is the current state of practice in the area of code review?* This concerns tools
+and techniques that are developed and used in practice, by open source projects but also by
+commercial companies.
+* **RQ3**: *What are future challenges in the area of code review?* This concerns both research
+challenges and challenges for use in practice.
+
+### Search process
+The search process consists of the following:
+
+* A Google Scholar search using the search query *"modern code review" OR "modern code reviews"*.
+The results list will be sorted by decreasing relevance by Google Scholar and will be considered by
+us in order.
+* A general Google search for non-scientific reports (e.g., blog posts) and implemented code review
+tools. For this search queries *code review* and *code review tools* are used, respectively. The
+result list will be considered in order.
+* All papers in the initial seed provided by the course instructor will be considered.
+* All papers referenced by already collected papers will be considered.
+
+From now on, all four categories listed above in general will be called *resource*.
+
+### Inclusion criteria
+From the scientific literature, the following types of papers will be considered:
+
+Papers researching recent code review
+
+* concepts,
+* methodologies,
+* tools and platforms,
+* and experiments concerning the preceding.
+
+From non-scientific resources, all resources discussing recent tools and techniques used in
+practice will be considered.
+
+### Exclusion criteria
+Resources published before 2008 will be excluded from the study.
+
+### Primary study selection process
+We will select a number of candidate resources based on the criteria stated above. For each
+resource, each person participating in the review can select it as a candidate.
+
+From all candidates, resource will be selected that will actually be reviewed. This can also be
+done by each person participating in the review. All resources that are candidates but are not
+selected
+for actual review must be explicitly rejected, with accompanying reasoning, by at least two persons
+participating in the review.
+
+### Data collection
+The following data will be collected from each considered resource:
+
+* Source (for example, the blog website or specific journal)
+* Year published
+* Type of resource
+* Author(s) and organization(s)
+* Summary of the resource of a maximum of 100 words
+* Data for answering **RQ1**:
+    - Sub-topic of research
+    - Research method
+    - Used tools
+    - Used datasets
+    - Research questions and their answers
+* Data for answering **RQ2**:
+    - Tools used
+    - Company/organization using the tool
+    - Evaluation of the tool
+* Data for answering **RQ3**:
+    - Future research challenges posed
+
+All data will be collected by one person participating in the review and checked by another.
+
+## Candidate resources
+In this section, all candidates that are collected using the described search process are
+presented. The in survey column in the tables below indicates whether the paper has been
+included in the survey in the end or if it has been excluded for some reason. If it has been
+excluded, the reason is stated along with the paper summary.
+
+### Initial seed
+These following table lists all initial seed papers provided by the course intructor. They are
+listed in alphabetical order of the first author's name, and then by publish year.
+
+| First author  | Year | Reference                  | In survey? (Y/N) |
+|---------------|------|----------------------------|------------------|
+| Bacchelli, A. | 2013 | @bacchelli2013expectations |                  |
+| Beller, M.    | 2014 | @beller2014modern          |                  |
+| Bird, C.      | 2015 | @bird2015lessons           |                  |
+| Fagan, M.     | 2002 | @fagan2002design           |                  |
+| Gousios, G.   | 2014 | @gousios2014exploratory    |                  |
+| McIntosh, S.  | 2014 | @mcintosh2014impact        |                  |
+
+### Google Scholar
+The following table lists all candidates that have been collected through the Google Scholar search
+described in the search process. They are listed in alphabetical order of the first author's name,
+and then by publish year. Note that as described in the search process section, papers in the
+search are considered in order.
+
+| First author     | Year | Reference                   | In survey? (Y/N) |
+|------------------|------|-----------------------------|------------------|
+| Baysal, O.       | 2016 | @baysal2016investigating    |                  |
+| Thongtanunam, P. | 2015 | @thongtanunam2015should     |                  |
+| Thongtanunam, P. | 2016 | @thongtanunam2016revisiting |                  |
+| Xia, X.          | 2015 | @xia2015should              |                  |
+| Zanjani, M. B.   | 2016 | @zanjani2016automatically   |                  |
+
+### By reference
+The following table lists all candidates that have been found by being referenced by another paper
+we found. They are listed in alphabetical order of the first author's name, and then by publish
+year.
+
+| First author | Year | Reference               | Referenced by | In survey? (Y/N) |
+|--------------|------|-------------------------|---------------|------------------|
+| Baum         | 2016 | @baum2016faceted        |               |                  |
+| Baum         | 2017 | @baum2017choice         |               |                  |
+| Baysal       | 2013 | @baysal2013influence    |               |                  |
+| Bosu         | 2013 | @bosu2013impact         |               |                  |
+| Ciolkowski   | 2003 | @ciolkowski2003software |               |                  |
+| Czerwonka    | 2015 | @czerwonka2015code      |               |                  |
+
+## Paper summaries
+This section contains summaries of all papers included in the survey. They are listed in
+alphabetical order of first author name, and then by year published.
+
+### Expectations, outcomes, and challenges of modern code review
+Reference: @bacchelli2013expectations
+
+This paper describes research about the goals and actual effects of code reviews. Interviews and
+experiments have been done with people in the programming field.
+
+One of the main conclusions is that the main effect of doing code reviews is that everyone involved
+understands the code better. This is opposed to what the goal of code reviews is generally:
+discovering errors.
+
+### A Faceted Classification Scheme for Change-Based Industrial Code Review Processes
+Reference: @baum2016faceted
+
+The broad research questions treated in this article are: How is code review performed in industry
+today? Which commonalities and variations exist between code review processes of different teams
+and companies? The article describes a classification scheme for change-based code review processes
+in industry. This scheme is based on descriptions of the code review processes of eleven companies,
+obtained from interviews with software engineering professionals that were performed during a
+Grounded Theory study.
+
+### The Choice of Code Review Process: A Survey on the State of the Practice
+Reference: @baum2017choice
+
+This paper, published in 2017, is trying to answer 3 RQs. Firstly, how prevalent is change-based
+review in the industry? Secondly, does the chance that code review remains in use increase if code
+review is embedded into the process (and its supporting tools) so that it does not require a
+conscious decision to do a review? Thirdly, are the intended and acceptable levels of review
+effects a mediator in determining the code review process?
+
+### The influence of non-technical factors on code review
+Reference: @baysal2013influence
+
+### Investigating technical and non-technical factors influencing modern code review
+Reference: @baysal2016investigating
+
+### Modern code reviews in open-source projects: Which problems do they fix?
+Reference: @beller2014modern
+
+It has been researched what kinds of problems are solved by doing code reviews. The conclusion is
+that 75% are improvements in evolvability of the code, and 25% in functional aspects.
+
+It has also been researched which part of the review comments is actually followed up by an action,
+and which part of the edits after a review are actually caused by review comments.
+
+### Lessons learned from building and deploying a code review analytics platform
+Reference: @bird2015lessons
+
+A code review data analyzation platform developed and used by Microsoft is discussed. It is mainly
+presented what users of the system think of it and how its use influences development teams. One of
+the conclusions is that in general, the platform has a positive influence on development teams and
+their products.
+
+### Impact of peer code review on peer impression formation: A survey
+Reference: @bosu2013impact
+
+### Software Reviews: The State of the Practice
+Reference: @ciolkowski2003software
+
+To investigate how industry carries out software reviews and in what forms, this paper con- ducted
+a two-part survey in 2002, the first part based on a national initiative in Germany and the second
+involving companies world- wide. Additionally, this paper also include some fundenmental concepts
+of code review, such as functionalities of code review.
+
+### Code reviews do not find bugs: how the current code review best practice slows us down
+Reference: @czerwonka2015code
+
+As code review has many uses and benefits, the authors hope to find out whether the current code
+review methods are sufficiently efficient. They also research whether other methods may be more
+efficient. With experience gained at Microsoft and with support of data, the authors posit (1) that
+code reviews often do not find functionality issues that should block a code submission; (2) that
+effective code reviews should be performed by people with a specific set of skills; and (3) that
+the social aspect of code reviews cannot be ignored.
+
+### Design and code inspections to reduce errors in program development
+Reference: @fagan2002design
+
+This paper describes a method to thoroughly check code quality after each step of the development
+process, in a heavyweight manner. It does not really concern agile development.
+
+The authors state that these methods do not affect the developing process negatively, and that they
+work well for improving software quality.
+
+### An exploratory study of the pull-based software development model
+Reference: @gousios2014exploratory
+
+This article focusses on how much pull requests are being used and how they are used, focussing on
+GitHub. For example, it is concluded that pull-request are not being used that much, that
+pull-requests are being merged fast after they have been submitted, and that a pull request not
+being merged is most of the time not caused by technical errors in the pull-request.
+
+### The impact of code review coverage and code review participation on software quality: A case study of the qt, vtk, and itk projects
+Reference: @mcintosh2014impact
+
+This paper focusses on the influence of doing light-weight code reviews on software quality. In
+particular, the effect of review coverage (the part of the code that has been reviewed) and review
+participation (a measure for how much reviewers are involved in the review process) are being
+assessed.
+
+It turns out that both aspects improve software quality when they are higher. Review participation
+is the most influential. According to the authors there are other aspects, which they have not
+looked into, that are of significant importance for the review process.
+
+### Who should review my code? A file location-based code-reviewer recommendation approach for modern code review
+Reference: @thongtanunam2015should
+
+### Revisiting code ownership and its relationship with software quality in the scope of modern code review 
+Reference: @thongtanunam2016revisiting
+
+### Who should review this change?: Putting text and file location analyses together for more accurate recommendations
+Reference: @xia2015should
+
+### Automatically recommending peer reviewers in modern code review
+Reference: @zanjani2016automatically
