@@ -118,8 +118,8 @@ To guide this process, we will be using a data extraction form which describes
 what aspects of a publication are crucial to record.
 Besides general publication information (title, author etc.), the form contains
 questions that are based on our defined research questions.
-Furthermore, the form contains a section for quantitive research, where aspects
-such as population and evaluation will be documented.
+Furthermore, the form contains a section for quantitative research, where
+aspects such as population and evaluation will be documented.
 The form that is used for this is shown below:
 
 ```
