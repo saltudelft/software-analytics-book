@@ -1,6 +1,6 @@
 # Build analytics
 
-## Background
+## Motivation
 
 When building a project from source code to executables everything should go smoothly. This is not
 always the case, a build can break for several reasons. This chapter will give an overview of
@@ -141,6 +141,18 @@ hosted on GitHub and using Travic CI as continuous integration infrastructure. T
 investigated which tools are being used, what types of issues make the build fail or raise
 warnings and how is responded to broken builds. 
 
+### @baltes2018no
+
+_Google Scholar search term `Github "Continuous Integration"`, papers from 2018_
+
+This paper analyses 93 GitHub projects before and after adoption of Travis CI. It finds only one
+non-negligible effect, an increasing merge ratio, meaning that more merging commits in relation to
+all commits after a project started using Travis CI. But the paper also shows that this effect can
+be seen on projects not adopting CI. It shows the importance of having a proper dataset with as
+little bias as possible.
+
+## What is the current state of the art in the field of build analytics?
+
 ## What is the current state of practice in the field of build analytics?
 
 In this section, I will examine scientific papers to analyse the current trend of build analytics in the software development industry. 
@@ -161,4 +173,12 @@ Version Control Systems (VCS) such as GitHub, and hosted build automation platfo
 
 This paper defines CI as a key element in agile software development and testing environment. It also uses Marin Fowler’s practises of CI (as discussed previously) and expresses the importance of CI in the software industry.  
 
+## What future research can we expect in the field of build analytics?
 
+Future research in build analytics branches in a couple of different topics. @pinto2018work
+proposes to focus on getting a better understanding of the users and why they might choose to
+abandon an automatic build platform.
+
+According to @baltes2018no future work could look into more perspectives when analyzing commit
+data, for instance partitioning commits by developer. It also notes the importance of more
+qualitative research.
