@@ -142,6 +142,8 @@ All the papers that were found, were stored in a custom built web-based tool for
 conducting literature reviews.
 The source code of this tool is published in a
 [GitHub repository](https://github.com/jessetilro/research).
+The tool was hosted on a virtual private server, such that all retrieved
+publications were stored centrally, accessible to all reviewers.
 
 ### Study Selection
 
