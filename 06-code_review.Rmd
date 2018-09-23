@@ -1,24 +1,33 @@
 # Code Review
 ## Review protocol
 This section describes the review protocol used for the systematic review presented in this
-section. The protcol has been set up using Kitchenham's method as described by Kitchenham et al. [@kitchenham2007].
+section. The protcol has been set up using Kitchenham's method as described by Kitchenham et al.
+[@kitchenham2007].
 
 ### Research questions
 The goal of the review is to summarize the state of the art and identify future challenges in the
 code review area. The research questions are as follows:
 
-* **RQ1**: *What is the state of the art in the research area of code review?* This question focusses on topics that are researched often, the results of that research, and research methods, tools and datasets that are used.
-* **RQ2**: *What is the current state of practice in the area of code review?* This concerns tools and techniques that are developed and used in practice, by open source projects but also by commercial companies.
-* **RQ3**: *What are future challenges in the area of code review?* This concerns both research challenges and challenges for use in practice.
+* **RQ1**: *What is the state of the art in the research area of code review?* This question
+focusses on topics that are researched often, the results of that research, and research methods,
+tools and datasets that are used.
+* **RQ2**: *What is the current state of practice in the area of code review?* This concerns tools
+and techniques that are developed and used in practice, by open source projects but also by
+commercial companies.
+* **RQ3**: *What are future challenges in the area of code review?* This concerns both research
+challenges and challenges for use in practice.
 
 ### Search process
 The search process consits of the following:
 
-* A Google Scholar search using the search query *"modern code review" OR "modern code reviews"*. The results list will be sorted by decreasing relevance by Google Scholar and will be considered by us in order.
+* A Google Scholar search using the search query *"modern code review" OR "modern code reviews"*.
+The results list will be sorted by decreasing relevance by Google Scholar and will be considered by
+us in order.
 * A general Google search for non-scientific reports (e.g., blog posts) and implemented code review
 tools. For this search queries *code review* and *code review tools* are used, respectively. The
 result list will be considered in order.
-* All papers in the initial seed provided by the course instructor will be considered, as well as the papers they reference.
+* All papers in the initial seed provided by the course instructor will be considered, as well as
+the papers they reference.
 * All papers referenced by already collected papers will be considered.
 
 From now on, all four categories listed above in general will be called *resource*.
@@ -32,7 +41,8 @@ Papers researching recent code review:
 * tools and platforms,
 * and experiments concerning the preceding.
 
-From non-scientific resources, all resources discussing recent tools and techniques used in practice will be considered.
+From non-scientific resources, all resources discussing recent tools and techniques used in
+practice will be considered.
 
 ### Exclusion criteria
 Resources published before 2008 will be excluded from the study.
@@ -41,7 +51,9 @@ Resources published before 2008 will be excluded from the study.
 We will select a number of candidate resources based on the criteria stated above. For each
 resource, each person participating in the review can select it as a candidate.
 
-From all candidates, resource will be selected that will actually be reviewed. This can also be done by each person participating in the review. All resources that are candidates but are not selected
+From all candidates, resource will be selected that will actually be reviewed. This can also be
+done by each person participating in the review. All resources that are candidates but are not
+selected
 for actual review must be explicitly rejected, with accompanying reasoning, by at least two persons
 participating in the review.
 
