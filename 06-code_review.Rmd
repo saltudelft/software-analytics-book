@@ -26,8 +26,7 @@ us in order.
 * A general Google search for non-scientific reports (e.g., blog posts) and implemented code review
 tools. For this search queries *code review* and *code review tools* are used, respectively. The
 result list will be considered in order.
-* All papers in the initial seed provided by the course instructor will be considered, as well as
-the papers they reference.
+* All papers in the initial seed provided by the course instructor will be considered.
 * All papers referenced by already collected papers will be considered.
 
 From now on, all four categories listed above in general will be called *resource*.
