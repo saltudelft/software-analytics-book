@@ -177,6 +177,18 @@ management scheme and one the other hand for other researchers that may improve 
 
 
 ### @santolucito2018statically
+The paper presents a tool VeriCI capable of checking the errors in CI configurations files before the 
+developer push a commit and without needing to wait for the build result. Even if there are some other 
+papers that achieve even higher accuracy in prediction of build failures, this paper is unique by not 
+using metadata in the learning process like number of commits, code churn and so on. The authors rely 
+on the actual user programs and configuration scripts, fact that make the identification of the error 
+cause possible. Their approach consists of the following steps: give a formal description to the CI build 
+process, extract the right code features and train self-explainable decision trees. VeriCI achieve 
+83% accuracy of predicting build failure on real data from GitHub projects and 30-48% of time the error 
+justification provided by the tool matched the actual error cause. Even if VeriCI is capable of locate 
+and give a reason for the expected failure, the false positive rate is quite high, therefore the authors
+proposed as a future work the analysis of the cost impact that a high rate of false positive has and 
+also deploying the tool in large scale of CI enviroments.
 
 
 ### @ni2018acona
