@@ -94,7 +94,7 @@ _Initial Seed_
 This paper analyzes what factors have impact on abandonment of Travis. They find that increased
 build complexity reduces the chance of abandonment, but larger projects abandon at a higher rate
 and that a project's language has significant but varying effect. A surprising result is that
-metrics of configuration attempts and knowledge dispersion in the project don't affect the rate of
+metrics of configuration attempts and knowledge dispersion in the project do not affect the rate of
 abandonment.
 
 ### @hilton2016usage
