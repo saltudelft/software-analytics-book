@@ -160,6 +160,19 @@ newer projects with less training data available. Beside the papers from the ini
 the following state-of-the-art aproaches papers:
 
 ### @bisong2017built
+This paper aims to find a balance between the frequency of integration and developers productivity. 
+They proposed models able to predict the build time of a job taking advantage of data from TravisTorrent. 
+Their research is also slighty addressing the problem of optimal build time. Their method consists of 
+selecting using different strategies to select the relevant features from the 56 features presented in 
+TravisTorrent build records and applying a set of both linear and non-linear algorithm for predicting 
+the time of a build. They evaluate the models performance using Root Mean Square Error (RMSE) and R-Squared 
+and obtained for some models like Extreme-Gradient-Boosting(XGBOOST) a very high R-Squared around 80%, which 
+shows that their model was able to capture the variation of build time over multiple projects. The main downfall 
+of this paper is the testing size of only 10000 records of the 1,846,396 available data due to computational 
+limits resulted probably from the usage of R machine learning packages, instead of python with TensorFlow. 
+Their research could be useful on one hand for software developers and project managers for a better time 
+management scheme and one the other hand for other researchers that may improve their proposed models. 
+
 
 
 
