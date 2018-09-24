@@ -53,5 +53,10 @@ The title also had to contain at least one of following keywords: *metrics*, *mo
 
 4. Exploring other impactful publications by the same authors.
 
+_Table 1. Papers found by investigating the authors of other papers._
+
+| @DAmbros2010      | is author of | @DAmbros2012                             |
+| @Catal2009review  | is author of | @Catal2011 <br> @Catal2009investigating  |
+
 ## Answers
 
