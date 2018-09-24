@@ -1,3 +1,44 @@
 # Sample Sub-Topic
 
-This is an example for the deliverable every group works on. Every group works on one independent chapter (starting as one Rmd file).
+_This is an example for the deliverable every group works on. Every group works on one independent chapter (starting as one Rmd file)._
+
+## Motivation
+
+_A short introduction about why the topic you are working on is interesting._
+
+The RQs that everyone should be aiming at are:
+
+* **RQ1** Current state of the art in software analytics for _your topic _:
+    - Topics that are being explored
+    - Research methods, tools and datasets being used
+    - Main research findings, aggregated
+    
+* **RQ2** Current state of practice in software analytics for _your topic _:
+    - Tools and companies creating / employing them
+    - Case studies and their findings
+
+* **RQ3** Open challenges and future research required
+
+## Research protocol
+
+_Here, you describe the details of applying Kitchenham's survey method for your topic,
+including search queries, fact extraction, coding process and an intial groupping of
+the papers that you will be analyzing._
+
+## Answers
+
+_Aggregated answers to the RQs, per RQ. You need:_
+
+* For **RQ1**
+    - Topics that are being explored
+    - Research methods, tools and datasets being used
+    - Main research findings, aggregated
+    
+* For **RQ2** :
+    - Tools and companies creating / employing them
+    - Case studies and their findings
+
+* For **RQ3**:
+    - List of challenges
+    - An aggregated set of open research items, as described in the papers
+    - Research questions that emerge from the synthesis of the presented works
