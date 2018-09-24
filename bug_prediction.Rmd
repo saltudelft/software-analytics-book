@@ -55,6 +55,8 @@ The title also had to contain at least one of following keywords: *metrics*, *mo
 
 _Table 1. Papers found by investigating the authors of other papers._
 
+| Starting point    | Type         | Result                                   |
+|-------------------|--------------|------------------------------------------|
 | @DAmbros2010      | is author of | @DAmbros2012                             |
 | @Catal2009review  | is author of | @Catal2011 <br> @Catal2009investigating  |
 
