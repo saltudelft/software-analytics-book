@@ -1,13 +1,10 @@
 # Testing Analytics
 ## Motivation
-
-Imagine playing a game and out of a sudden the application freezes. This is one of the scenarios
-of a bug in a program. Such unexpected events can be frustrating and could even lead to damages if
-a bug is encountered during, for example, a transaction on a webshop. To prevent bugs, developers
-should make tests, such as unit tests or integration tests. However, in practice it seems that not
-all developers test actively. In this paper we will survey on the use of testing and the tools that
-make this possible. We will also look into the future development of tools that is done or required
-in order to improve testing practices in real-world applications.
+Testing is an important aspect in software engineering, as it forms the first line of
+defence against the introduction of software faults\cite{pinto2012understanding}. However, in
+practice it seems that not all developers test actively. In this paper we will survey on the use of 
+testing and the tools thatmake this possible. We will also look into the future development of
+tools that is done or required in order to improve testing practices in real-world applications.
 The above example could have prevented by making tests but is not guaranteed to do so. Testing is
 not the holy grail for completely removing all bugs from a program but it can decrease the chances
 for a user to encounter a bug. We believe that extra research is needed to ease the life of
