@@ -32,7 +32,12 @@ development practice in many projects.
 
 Using the initial seed consisting of @bird2017predicting, @beller2017oops, @rausch2017empirical,
 @beller2017travistorrent, @pinto2018work, @zhao2017impact, @widder2018m and @hilton2016usage we
-used references to find new papers to analyze.
+used references to find new papers to analyze. Moreover, we used academical search engines like
+_GoogleScholar_ to perform a keyword based search for other relevant build analytics domain papers.
+The keywords used were: build analytics, machine learning, build time, prediction, 
+continuous integration, build failures, active learning, build errors, mining, 
+software repositories, open-source software.
+
 
 ## Study Selection
 
