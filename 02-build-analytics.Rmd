@@ -153,6 +153,23 @@ little bias as possible.
 
 ## What is the current state of the art in the field of build analytics?
 
+The current state-of-the-art in build analytics domain refers to the use of machine learning techniques
+to increase the productivity when using Continuos Integration (CI), to generate contraints on the 
+configuration of the CI that could improve build success rate and to predict build failures even for 
+newer projects with less training data available. Beside the papers from the initial seed, we will discuss
+the following state-of-the-art aproaches papers:
+
+### @bisong2017built
+
+
+
+### @santolucito2018statically
+
+
+### @ni2018acona
+
+
+
 ## What is the current state of practice in the field of build analytics?
 
 In this section, I will examine scientific papers to analyse the current trend of build analytics in the software development industry. 
