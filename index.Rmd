@@ -9,7 +9,7 @@ bibliography: [book.bib]
 biblio-style: apalike
 link-citations: yes
 github-repo: saltudelft/software-analytics-book
-description: "This is a contemporary, systematic survey of literature on Software Analytics."
+description: "A systematic literature survey on Software Analytics."
 ---
 
 # Preamble {#intro}
@@ -18,7 +18,7 @@ The book you see in front of you is the outcome of an eight week seminar run by 
 
 With this book, we hope to structure the new field of Software Analytics and show how it is related to many long existing research fields.
 
-*The IN4334 - Software Analytics class of 2018*
+*The IN4334 -- Software Analytics class of 2018*
 
 
 
