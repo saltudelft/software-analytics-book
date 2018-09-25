@@ -3,10 +3,11 @@
 Testing is an important aspect in software engineering, as it forms the first line of
 defence against the introduction of software faults\cite{pinto2012understanding}. However, in
 practice it seems that not all developers test actively. In this paper we will survey on the use of 
-testing and the tools thatmake this possible. We will also look into the future development of
+testing and the tools that make this possible. We will also look into the future development of
 tools that is done or required in order to improve testing practices in real-world applications.
-The above example could have prevented by making tests but is not guaranteed to do so. Testing is
-not the holy grail for completely removing all bugs from a program but it can decrease the chances
+The above example could have been prevented by making tests but is not guaranteed to do so. 
+Testing is not the holy grail for completely removing all bugs from a program but it can decrease
+the chances
 for a user to encounter a bug. We believe that extra research is needed to ease the life of
 developers by making testing more efficient, easier to maintain and more effective. Therefore, we
 wanted to write a survey on the testing behavior, current practices and future developments of
@@ -15,24 +16,24 @@ In order to perform our survey, we formulated three Research Questions (RQs):
 
 * **RQ1** How do developers currently test?
 * **RQ2** What state of the art technologies are being used?
-* **RQ3** What future developments can be expect?
-In this paper we will first elaborate on te research protocol that was used in order to find papers
-and extract information for the survey. Second, the the actual findings for each of the research
+* **RQ3** What future developments can be expected?
+In this paper we will first elaborate on the research protocol that was used in order to find papers
+and extract information for the survey. Second, the actual findings for each of the research
 questions will be explained.
 
 ## Research protocol
-For this paper Kitchenham's survey method was applied. For this method a protocol has to be
+For this paper, Kitchenham's survey method was applied. For this method, a protocol has to be
 specified. This protocol is defined for the research questions given above. Below the inclusion
 and exclusion criteria are given, which helped finding the rightful papers. After these criteria,
 the actual search for papers is described. The papers that were found are listed and after they
-are tested against the critiria that are given. The data that is extracted from these papers are
-list afterward. Some papers that were left out, will be listed and the reasons for leaving them out
+are tested against the criteria that are given. The data that is extracted from these papers are
+list afterward. Some papers that were left out will be listed and the reasons for leaving them out
 will be given to make clear why some papers do not meet the required desire.
 
-Each of the papers found were tested using our inclusion and exclusion criteria. These criteria
-were introduced to make sure the papers have the information required to anwser the RQs while also
+Each of the papers found was tested using our inclusion and exclusion criteria. These criteria
+were introduced to make sure the papers have the information required to answser the RQs while also
 being relevant with respect to their quality and age. Below a list of inclusion and exclusion
-criteria is given. In general, for all criteria, the exclusion criteria take presedence over
+criteria is given. In general, for all criteria, the exclusion criteria take precedence over
 inclusion criteria.
 The following inclusion and exclusion criteria were used:
 
@@ -58,7 +59,7 @@ were Scopus, Google Scholar and Springer.
 The keywords used to find papers were: software, test*, analytics, test-suite, evolution, software development,
 computer science, software engineering, risk-driven, survey software testing
 
-The table below describers for each paper, which Query resulted in which paper being found.
+The table below describes for each paper, which Query resulted in which paper being found.
 
 |Category          |Reference                                   | Query|
 |------------------|----------------------------------------|-------------------------------|
@@ -91,11 +92,10 @@ The table below describers for each paper, which Query resulted in which paper b
 
 
 ### Papers per research question
-In this section each of the papers is categorized with a corresponding research question. In the
-table above, the categories per paper were added based on their general topic. In this section
-these broad topics will be assigned to a corresponding research question. All papers per research
+In this section, each of the papers is categorized with a corresponding research question. In the
+table above, the categories per paper were added based on their general topic. These broad topics will be assigned to a corresponding research question. All papers per research
 question are ordered on their relevance, which in most cases means that a newer paper is considered
-as more relevant than an older paper. A lower ranking may also be caused by lower quality of 
+as more relevant than an older paper. A lower ranking may also be caused by a lower quality of 
 writing (e.g. @greiler2013 in RQ2). The categorizations are based on the bullet points extracted
 from each paper. These bullet points can be found below in section _'Extracted paper information'_
 below.
@@ -131,7 +131,7 @@ below.
 
 
 ## Extracted paper information
-The papers retrieved using the research protocol are reviewed for their quality and usefull information is extracted to be able to answer the research questions. This information can be found in this section as a list of bulletpoints. If a paper is perceived as 'bad' or irrelevent for answering the research questions, this is elaborated.  
+The papers retrieved using the research protocol are reviewed for their quality and useful information is extracted to be able to answer the research questions. This information can be found in this section as a list of bullet-points. If a paper is perceived as 'bad' or irrelevant for answering the research questions, this is elaborated.  
 
 ###Test evolution
 
@@ -139,7 +139,7 @@ Supporting Test Suite Evolution through Test Case Adaptation (@supportingtestsui
 
 * Test case evolution.
 * Automatic test repairing using information available in existing test cases.
-* Identifies set of common actions for adapting test cases by developers.
+* Identifies a set of common actions for adapting test cases by developers.
 * Properly repairs 90% of the compilation errors addressed and covers the same amount of instructions.
 * Not all prototypes were tested.
 * Claims that many test cases designed for the early versions of the system become obsolete during the software lifecycle.
@@ -165,7 +165,7 @@ This paper is too old based on our exclusion criteria.
 Understanding myths and realities of test-suite evolution (@pinto2012understanding)
 
 * Systematic measurement of how test-suites evolve
-* Test repairs occur in practice. avg 16 repairs per version --> often enough to warrent the development of automated techniques.
+* Test repairs occur in practice. avg 16 repairs per version --> often enough to warrant the development of automated techniques.
 * Test repairs are not the primary reason for test modification. Non-test repair related modifications occur about 4 times as frequently.
 * Only 10% of the tests consider fixed assert tests (oracle tests)
 * Test repairs frequently consider repairs to method call chains.
@@ -185,9 +185,9 @@ Studying Fine-Grained Co-evolution Patterns of Production and Test Code (@marsav
 * The patterns are interpreted by performing a qualitative analysis.
 * Meant to gain a deeper understanding of the way in which tests evolve as a result of changes in the production classes and identify possible gaps to signal developers  for missed production code parts that have not been addressed adequately by tests.
 * Some patterns that were found:
-  + Tests are mostly removed when production classes they cover are deleted. Programmers are are careful not to leave non-compiling tests.
+  + Tests are mostly removed when production classes they cover are deleted. Programmers are careful not to leave non-compiling tests.
   + Only limited effort is done on updating test cases after production classes are modified; tests are rarely changed when attributes or methods are changed in the production classes.
-  + A patterns indicates that mostly when numerous condition related changes are made in the production methods, test cases are created/deleted in order to address the branches that were removed/added.
+  + A pattern indicates that mostly when numerous condition related changes are made in the production methods, test cases are created/deleted in order to address the branches that were removed/added.
   + Test cases are rarely updated when changes related to attributes or methods are made in the production code.
   + Test methods are in several cases created/deleted when conditional statements are altered in the production code.
 * Future work should include the co-evolution patterns of different coding methodologies, for example, Test-Driven Development and their possible respective differences.
@@ -198,7 +198,7 @@ Studying the co-evolution of production and test code (@zaidman2011studying)
 
 * Testing is phased and co-evolution is synchronous
 * No increase in testing activity before major releases. Intense phases were detected.
-* Evidence for TDD discovered in 2/6(?) test cases. (soepele manier van meten)
+* Evidence for TDD discovered in 2/6 test cases.
 * The fraction of test code (wrt prod code) increases as coverage increases
 
 
