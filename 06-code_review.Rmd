@@ -1,7 +1,7 @@
 # Code Review
 ## Review protocol
 This section describes the review protocol used for the systematic review presented in this
-section. The protcol has been set up using Kitchenham's method as described by Kitchenham et al.
+chapter. The protocol has been set up using Kitchenham's method as described by Kitchenham et al.
 [@kitchenham2007].
 
 ### Research questions
@@ -29,7 +29,7 @@ result list will be considered in order.
 * All papers in the initial seed provided by the course instructor will be considered.
 * All papers referenced by already collected papers will be considered.
 
-From now on, all four categories listed above in general will be called *resource*.
+From now on, elements of all four categories listed above in general will be called *resource*.
 
 ### Inclusion criteria
 From the scientific literature, the following types of papers will be considered:
@@ -53,9 +53,8 @@ resource, each person participating in the review can select it as a candidate.
 
 From all candidates, resource will be selected that will actually be reviewed. This can also be
 done by each person participating in the review. All resources that are candidates but are not
-selected
-for actual review must be explicitly rejected, with accompanying reasoning, by at least two persons
-participating in the review.
+selected for actual review must be explicitly rejected, with accompanying reasoning, by at least
+two persons participating in the review.
 
 ### Data collection
 The following data will be collected from each considered resource:
@@ -191,7 +190,7 @@ Reference: @ciolkowski2003software
 
 To investigate how industry carries out software reviews and in what forms, this paper con- ducted
 a two-part survey in 2002, the first part based on a national initiative in Germany and the second
-involving companies world- wide. Additionally, this paper also include some fundenmental concepts
+involving companies worldwide. Additionally, this paper also include some fundamental concepts
 of code review, such as functionalities of code review.
 
 ### Code reviews do not find bugs: how the current code review best practice slows us down
@@ -216,15 +215,15 @@ work well for improving software quality.
 ### An exploratory study of the pull-based software development model
 Reference: @gousios2014exploratory
 
-This article focusses on how much pull requests are being used and how they are used, focussing on
-GitHub. For example, it is concluded that pull-request are not being used that much, that
+This article focuses on how much pull requests are being used and how they are used, focusing on
+GitHub. For example, it is concluded that pull-requests are not being used that much, that
 pull-requests are being merged fast after they have been submitted, and that a pull request not
 being merged is most of the time not caused by technical errors in the pull-request.
 
 ### The impact of code review coverage and code review participation on software quality: A case study of the qt, vtk, and itk projects
 Reference: @mcintosh2014impact
 
-This paper focusses on the influence of doing light-weight code reviews on software quality. In
+This paper focuses on the influence of doing light-weight code reviews on software quality. In
 particular, the effect of review coverage (the part of the code that has been reviewed) and review
 participation (a measure for how much reviewers are involved in the review process) are being
 assessed.
