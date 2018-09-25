@@ -27,7 +27,8 @@ us in order.
 tools. For this search queries *code review* and *code review tools* are used, respectively. The
 result list will be considered in order.
 * All papers in the initial seed provided by the course instructor will be considered.
-* All papers referenced by already collected papers will be considered.
+* All papers referenced by already collected papers will be considered. We exlude papers found
+using this rule of the search process. In other words, we do not apply this rule recursively.
 
 From now on, elements of all four categories listed above in general will be called *resource*.
 
