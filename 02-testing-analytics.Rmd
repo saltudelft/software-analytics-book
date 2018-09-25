@@ -346,4 +346,3 @@ Test case analytics: Mining test case traces to improve risk-driven testing (@no
 * A new risk measure is defined which assigns a risk factor to a test case, if it is similar to a failing test case from history.
 *The new risk measure is by far more effective in identifying failing test cases compared to the traditional risk measure.
 * “Though our initial and simple implementation in this paper was very promising, we are planning to investigate other similarity functions, specifically those that account for the method orders in the trace. In addition, this project is a sub-project of a bigger research on risk-driven model-based testing, where we are planning to extract specification models of the system and augment them with the similarity-based risk measures. Those models can later be used in both risk-driven test generation and prioritization.”
->>>>>>> 8e265b355888ef252d9601eee0e8c76f5ed5a63e
