@@ -45,7 +45,8 @@ From non-scientific resources, all resources discussing recent tools and techniq
 practice will be considered.
 
 ### Exclusion criteria
-Resources published before 2008 will be excluded from the study.
+Resources published before 2008 will be excluded from the study, in order for the survey to show
+only the state of the art of the field.
 
 ### Primary study selection process
 We will select a number of candidate resources based on the criteria stated above. For each
