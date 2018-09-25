@@ -195,7 +195,11 @@ also deploying the tool in large scale of CI enviroments.
 This paper is posted only as a cover so far. It is the most recent paper of this survey, with the poster 
 being published in June 2018. The paper addresses the problem of build failure prediction in CI environment 
 for newer projects with less data available. It is using already trained models from other project with more 
-data available and combined them by the means of active learning in order to find which of that models generalized better from the problem in hand and to update the models weights accordingly. It is also aimed to cut the expense that CI introduce by reducing the label data necessarily for training. Even if the method seems promising, the results presented in the poster shows an F-Measure (harmonic average of recall and precision) of around 40% that could be better improved.
+data available and combined them by the means of active learning in order to find which of that models 
+generalized better from the problem in hand and to update the models weights accordingly. It is also aimed 
+to cut the expense that CI introduce by reducing the label data necessarily for training. Even if the method 
+seems promising, the results presented in the poster shows an F-Measure (harmonic average of recall and precision) 
+of around 40% that could be better improved.
 
 
 ## What is the current state of practice in the field of build analytics?
