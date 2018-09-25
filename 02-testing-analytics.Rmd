@@ -39,7 +39,7 @@ The following inclusion and exclusion criteria were used:
 
 * Papers published before 2008 are excluded from the research, unless a reference/citation is used
 for an unchanged concept.
-* Papers with less than 15 references, excluding self-references, are excluded from the research.
+* Papers referring to less than 15 other papers, excluding self-references, are excluded from the research.
 * Selected papers should have an abstract, introduction and conclusion section.
 * Papers stating the developers’ testing behavior are included.
 * Papers stating the developers’ problems related to testing are included.
@@ -93,7 +93,8 @@ The table below describes for each paper, which Query resulted in which paper be
 
 ### Papers per research question
 In this section, each of the papers is categorized with a corresponding research question. In the
-table above, the categories per paper were added based on their general topic. These broad topics will be assigned to a corresponding research question. All papers per research
+table above, the categories per paper were added based on their general topic. 
+These broad topics will be assigned to a corresponding research question. All papers per research
 question are ordered on their relevance, which in most cases means that a newer paper is considered
 as more relevant than an older paper. A lower ranking may also be caused by a lower quality of 
 writing (e.g. @greiler2013 in RQ2). The categorizations are based on the bullet points extracted
@@ -289,8 +290,8 @@ Developer testing in the IDE: Patterns, beliefs and behavior (@beller2017develop
 * Developers execute tests phased
 * Only half of the developers practice testing actively
 * Testing time is overestimated twofold.
-* 12% of the test cases shows flaky behavior
-* Correlation between test flakiness and CI error proneness?
+* 12% of the test cases show flaky behavior
+* Correlation between test flakiness and CI error-proneness?
 * Few (25%) tests detect 75% of the execution failures.
 * Tests and production code do not co-evolve gracefully.
 
@@ -323,7 +324,7 @@ Investigating NLP-Based Approaches for Predicting Manual Test Case Failure (@hem
 
 Risk-driven software testing and reliability (@schneidewind2007)
 
-This paper is discarded from the survery, because it uses weak models to validate the claims made and is too old based on our exclusion criteria.
+This paper is discarded from the survey, because it uses weak models to validate the claims made and is too old based on our exclusion criteria.
 
 
 Risk-driven vulnerability testing: Results from eHealth experiments using patterns and model-based approach (@vernotte2015)
@@ -334,8 +335,8 @@ Risk-driven vulnerability testing: Results from eHealth experiments using patter
 
 A comparative study of software testing techniques (@atifi2017)
 
-* They highlight two software testing techniques considered among the most used techniques to perform software tests, and then perform a comparative study of these techniques, the approaches that supports studied techniques, and the tools used for each technique. 
-* The first technique is Model-based-testing, the second Risk based testing.
+* They highlight two software testing techniques considered among the most used techniques to perform software tests, and then perform a comparative study of these techniques, the approaches that support studied techniques, and the tools used for each technique. 
+* The first technique is Model-based-testing, the second Risk-based testing.
 
 
 Test case analytics: Mining test case traces to improve risk-driven testing (@noor2015test)
@@ -344,5 +345,5 @@ Test case analytics: Mining test case traces to improve risk-driven testing (@no
 *The most basic risk measure would analyze the history of the software and assigns higher risk to the test cases that used to detect bugs in the past.
 * A new risk measure is defined which assigns a risk factor to a test case, if it is similar to a failing test case from history.
 *The new risk measure is by far more effective in identifying failing test cases compared to the traditional risk measure.
-* “Though our initial and simple implementation in this paper was very promising, we are planning to investigate other similarity functions, specifically those that account for the the method orders in the trace. In addition, this project is a sub-project of a bigger research on risk-driven model-based testing, where we are planning to extract specification models of the system and augment them with the similarity-based risk measures. Those models can later be used in both risk-driven test generation and prioritization.”
+* “Though our initial and simple implementation in this paper was very promising, we are planning to investigate other similarity functions, specifically those that account for the method orders in the trace. In addition, this project is a sub-project of a bigger research on risk-driven model-based testing, where we are planning to extract specification models of the system and augment them with the similarity-based risk measures. Those models can later be used in both risk-driven test generation and prioritization.”
 >>>>>>> 8e265b355888ef252d9601eee0e8c76f5ed5a63e
