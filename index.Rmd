@@ -1,6 +1,6 @@
 --- 
 title: "A Literature Survey of Software Analytics"
-author: "Moritz Beller, IN4334 2018 TU Delft"
+author: "IN4334 2018 TU Delft"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
@@ -9,7 +9,7 @@ bibliography: [book.bib]
 biblio-style: apalike
 link-citations: yes
 github-repo: saltudelft/software-analytics-book
-description: "This is a contemporary, systematic survey of literature on Software Analytics."
+description: "A systematic literature survey on Software Analytics."
 ---
 
 # Preamble {#intro}
@@ -18,7 +18,7 @@ The book you see in front of you is the outcome of an eight week seminar run by 
 
 With this book, we hope to structure the new field of Software Analytics and show how it is related to many long existing research fields.
 
-*Moritz Beller*
+*The IN4334 -- Software Analytics class of 2018*
 
 
 
@@ -26,5 +26,5 @@ With this book, we hope to structure the new field of Software Analytics and sho
 
 ![Creative Commons](figures/cc-nc-sa.png)
 This book is copyrighted 2018 by TU Delft and its
-respective authors and distributed under a [CC BY-NC-SA 4.0
+respective authors and distributed under the [CC BY-NC-SA 4.0
 license](https://creativecommons.org/licenses/by-nc-sa/4.0/)
