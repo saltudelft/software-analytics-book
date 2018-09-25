@@ -90,14 +90,14 @@ excluded, the reason is stated along with the paper summary.
 These following table lists all initial seed papers provided by the course intructor. They are
 listed in alphabetical order of the first author's name, and then by publish year.
 
-| First author  | Year | Reference                  | In survey? (Y/N) |
-|---------------|------|----------------------------|------------------|
-| Bacchelli, A. | 2013 | @bacchelli2013expectations |                  |
-| Beller, M.    | 2014 | @beller2014modern          |                  |
-| Bird, C.      | 2015 | @bird2015lessons           |                  |
-| Fagan, M.     | 2002 | @fagan2002design           |                  |
-| Gousios, G.   | 2014 | @gousios2014exploratory    |                  |
-| McIntosh, S.  | 2014 | @mcintosh2014impact        |                  |
+| Title                                                                                                                               | Year | Reference                  | In survey? (Y/N) |
+|-------------------------------------------------------------------------------------------------------------------------------------|------|----------------------------|------------------|
+| Expectations, outcomes, and challenges of modern code review                                                                        | 2013 | @bacchelli2013expectations |                  |
+| Modern code reviews in open-source projects: Which problems do they fix?                                                            | 2014 | @beller2014modern          |                  |
+| Lessons learned from building and deploying a code review analytics platform                                                        | 2015 | @bird2015lessons           |                  |
+| Design and code inspections to reduce errors in program development                                                                 | 2002 | @fagan2002design           |                  |
+| An exploratory study of the pull-based software development model                                                                   | 2014 | @gousios2014exploratory    |                  |
+| The impact of code review coverage and code review participation on software quality: A case study of the qt, vtk, and itk projects | 2014 | @mcintosh2014impact        |                  |
 
 ### Google Scholar
 The following table lists all candidates that have been collected through the Google Scholar search
@@ -105,27 +105,27 @@ described in the search process. They are listed in alphabetical order of the fi
 and then by publish year. Note that as described in the search process section, papers in the
 search are considered in order.
 
-| First author     | Year | Reference                   | In survey? (Y/N) |
-|------------------|------|-----------------------------|------------------|
-| Baysal, O.       | 2016 | @baysal2016investigating    |                  |
-| Thongtanunam, P. | 2015 | @thongtanunam2015should     |                  |
-| Thongtanunam, P. | 2016 | @thongtanunam2016revisiting |                  |
-| Xia, X.          | 2015 | @xia2015should              |                  |
-| Zanjani, M. B.   | 2016 | @zanjani2016automatically   |                  |
+| Title                                                                                                              | Year | Reference                   | In survey? (Y/N) |
+|--------------------------------------------------------------------------------------------------------------------|------|-----------------------------|------------------|
+| Investigating technical and non-technical factors influencing modern code review                                   | 2016 | @baysal2016investigating    |                  |
+| Who should review my code? A file location-based code-reviewer recommendation approach for modern code review      | 2015 | @thongtanunam2015should     |                  |
+| Revisiting code ownership and its relationship with software quality in the scope of modern code review            | 2016 | @thongtanunam2016revisiting |                  |
+| Who should review this change?: Putting text and file location analyses together for more accurate recommendations | 2015 | @xia2015should              |                  |
+| Automatically recommending peer reviewers in modern code review                                                    | 2016 | @zanjani2016automatically   |                  |
 
 ### By reference
 The following table lists all candidates that have been found by being referenced by another paper
 we found. They are listed in alphabetical order of the first author's name, and then by publish
 year.
 
-| First author | Year | Reference               | Referenced by | In survey? (Y/N) |
-|--------------|------|-------------------------|---------------|------------------|
-| Baum         | 2016 | @baum2016faceted        |               |                  |
-| Baum         | 2017 | @baum2017choice         |               |                  |
-| Baysal       | 2013 | @baysal2013influence    |               |                  |
-| Bosu         | 2013 | @bosu2013impact         |               |                  |
-| Ciolkowski   | 2003 | @ciolkowski2003software |               |                  |
-| Czerwonka    | 2015 | @czerwonka2015code      |               |                  |
+| Title                                                                                  | Year | Reference               | Referenced by | In survey? (Y/N) |
+|----------------------------------------------------------------------------------------|------|-------------------------|---------------|------------------|
+| A Faceted Classification Scheme for Change-Based Industrial Code Review Processes      | 2016 | @baum2016faceted        |               |                  |
+| The Choice of Code Review Process: A Survey on the State of the Practice               | 2017 | @baum2017choice         |               |                  |
+| The influence of non-technical factors on code review                                  | 2013 | @baysal2013influence    |               |                  |
+| Impact of peer code review on peer impression formation: A survey                      | 2013 | @bosu2013impact         |               |                  |
+| Software Reviews: The State of the Practice                                            | 2003 | @ciolkowski2003software |               |                  |
+| Code reviews do not find bugs: how the current code review best practice slows us down | 2015 | @czerwonka2015code      |               |                  |
 
 ## Paper summaries
 This section contains summaries of all papers included in the survey. They are listed in
