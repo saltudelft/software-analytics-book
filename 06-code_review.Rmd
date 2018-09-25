@@ -82,9 +82,9 @@ All data will be collected by one person participating in the review and checked
 
 ## Candidate resources
 In this section, all candidates that are collected using the described search process are
-presented. The in survey column in the tables below indicates whether the paper has been
+presented. The `In survey` column in the tables below indicates whether the paper has been
 included in the survey in the end or if it has been excluded for some reason. If it has been
-excluded, the reason is stated along with the paper summary.
+excluded, the reason will be stated in the section *Excluded papers*.
 
 ### Initial seed
 These following table lists all initial seed papers provided by the course intructor. They are
@@ -138,13 +138,13 @@ This paper describes research about the goals and actual effects of code reviews
 experiments have been done with people in the programming field.
 
 One of the main conclusions is that the main effect of doing code reviews is that everyone involved
-understands the code better. This is opposed to what the goal of code reviews is generally:
+understands the code better. This is opposed to what the goal of code reviews generally is:
 discovering errors.
 
 ### A Faceted Classification Scheme for Change-Based Industrial Code Review Processes
 Reference: @baum2016faceted
 
-The broad research questions treated in this article are: How is code review performed in industry
+The broad research questions answered in this article are: How is code review performed in industry
 today? Which commonalities and variations exist between code review processes of different teams
 and companies? The article describes a classification scheme for change-based code review processes
 in industry. This scheme is based on descriptions of the code review processes of eleven companies,
@@ -189,7 +189,7 @@ Reference: @bosu2013impact
 ### Software Reviews: The State of the Practice
 Reference: @ciolkowski2003software
 
-To investigate how industry carries out software reviews and in what forms, this paper con- ducted
+To investigate how industry carries out software reviews and in what forms, this paper conducted
 a two-part survey in 2002, the first part based on a national initiative in Germany and the second
 involving companies worldwide. Additionally, this paper also include some fundamental concepts
 of code review, such as functionalities of code review.
