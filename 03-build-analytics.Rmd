@@ -1,6 +1,6 @@
 # Build analytics
 
-## Background
+## Motivation
 
 Ideally, when building a project from source code to executable, the process should be 
 fast and without any errors. Unfortunately, this is not always the case and automated 
@@ -18,11 +18,23 @@ development practice in many projects.
 
 <!-- Subject to change -->
 
- * What are causes of a broken build?
- * With which goals is continuous integration applied?
- * What can be used to effectively fix a broken build?
+ * **RQ1** What is the current state of the art in the field of build analytics?
+<!--
+  - Topics that are being explored
+  - Research methods, tools and datasets being used
+  - Main research findings, aggregated -->
+ * **RQ2** What is the current state of practice in the field of build analytics?
+<!--
+  - Topics that are being explored
+  - Research methods, tools and datasets being used
+  - Main research findings, aggregated -->
+ * **RQ3** What future research can we expect in the field of build analytics?
+<!--
+  - Topics that are being explored
+  - Research methods, tools and datasets being used
+  - Main research findings, aggregated -->
 
-## Search Strategy
+## Research protocol
 
 Using the initial seed consisting of @bird2017predicting, @beller2017oops, @rausch2017empirical,
 @beller2017travistorrent, @pinto2018work, @zhao2017impact, @widder2018m and @hilton2016usage we
@@ -33,7 +45,9 @@ continuous integration, build failures, active learning, build errors, mining,
 software repositories, open-source software.
 
 
-## Study Selection
+## Answers
+
+<!-- Group per RQ -->
 
 Through this we found the following papers
 
