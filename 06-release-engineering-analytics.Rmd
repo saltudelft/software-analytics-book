@@ -308,3 +308,11 @@ iteratively and planned for four weekly milestones.
 ## Conclusion
 
 <!-- TODO -->
+
+## Appendix
+
+<!-- TODO Maarten -->
+
+<!-- TODO Jesse -->
+
+<!-- TODO Nels -->
