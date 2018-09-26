@@ -2,9 +2,12 @@
 
 ## Motivation
 
-When building a project from source code to executables everything should go smoothly. This is not
-always the case, a build can break for several reasons. This chapter will give an overview of
-research done on build configurations and continuous integration.
+Ideally, when building a project from source code to executable, the process should be 
+fast and without any errors. Unfortunately, this is not always the case and automated 
+builds results notify developers of compile errors, missing dependencies, broken functionality 
+and many other problems. This chapter is aimed to give an overview of the effort made 
+in build analytics field and Continuous Integration (CI) as an increasingly common 
+development practice in many projects.
 
 <!--
  - Define build
@@ -13,17 +16,38 @@ research done on build configurations and continuous integration.
 
 ## Research Questions
 
-**RQ1** What is the current state of the art in the field of build analytics?
-**RQ2** What is the current state of practice in the field of build analytics?
-**RQ3** What future research can we expect in the field of build analytics?
+<!-- Subject to change -->
 
-## Search Strategy
+ * **RQ1** What is the current state of the art in the field of build analytics?
+<!--
+  - Topics that are being explored
+  - Research methods, tools and datasets being used
+  - Main research findings, aggregated -->
+ * **RQ2** What is the current state of practice in the field of build analytics?
+<!--
+  - Topics that are being explored
+  - Research methods, tools and datasets being used
+  - Main research findings, aggregated -->
+ * **RQ3** What future research can we expect in the field of build analytics?
+<!--
+  - Topics that are being explored
+  - Research methods, tools and datasets being used
+  - Main research findings, aggregated -->
+
+## Research protocol
 
 Using the initial seed consisting of @bird2017predicting, @beller2017oops, @rausch2017empirical,
 @beller2017travistorrent, @pinto2018work, @zhao2017impact, @widder2018m and @hilton2016usage we
-used references to find new papers to analyze.
+used references to find new papers to analyze. Moreover, we used academical search engines like
+_GoogleScholar_ to perform a keyword based search for other relevant build analytics domain papers.
+The keywords used were: build analytics, machine learning, build time, prediction, 
+continuous integration, build failures, active learning, build errors, mining, 
+software repositories, open-source software.
 
-## Study Selection
+
+## Answers
+
+<!-- Group per RQ -->
 
 Through this we found the following papers
 
@@ -92,7 +116,7 @@ _Initial Seed_
 This paper analyzes what factors have impact on abandonment of Travis. They find that increased
 build complexity reduces the chance of abandonment, but larger projects abandon at a higher rate
 and that a project's language has significant but varying effect. A surprising result is that
-metrics of configuration attempts and knowledge dispersion in the project don't affect the rate of
+metrics of configuration attempts and knowledge dispersion in the project do not affect the rate of
 abandonment.
 
 ### @hilton2016usage
