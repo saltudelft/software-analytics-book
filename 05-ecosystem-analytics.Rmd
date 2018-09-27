@@ -66,6 +66,18 @@ three different types:
 * a search using a digital search engine, namely Google Scholar[^3]
 * a selection of referenced papers within papers selected before in the above two searches
 
+In order to select literature to answer the research questions given in the previous section, the
+survey method suggested by @Kitchenham2004 is used. This method creates a systematic way to select
+a set of papers, which is relevant to the research question(s).
+
+The search strategy, as described by @Kitchenham2004, are usually iterative and benefit from
+consultations with experts in the field, amongst other things. Our search strategy can be split in
+three different types:
+
+* the initial seed, given by an expert in the field, MSc. Joseph Hejderup
+* a search using a digital search engine, namely Google Scholar[^3]
+* a selection of referenced papers within papers selected before in the above two searches
+
 ### Initial seed
 MSc. Joseph Hejderup has provided us with a total of thirteen papers, as shown in Table 1.
 
@@ -98,8 +110,8 @@ the row will be used. A '+' means it will be used, a '-' means it will not._
 
 | Paper Reference | Reason not selected |
 |---|---|
-| @Abate2009 | This paper seems to delve more into the software itself whereas we are more interested in the surrounding ecosystems |
-| @Abate2011 | Kind of the same reason as @Abate2009, again we are more interested in the surrounding ecosystems |
+| @Abate2009 | This paper seems to delve more into one software project itself whereas we are more interested in the relationship between different software projects |
+| @Abate2011 | Similarly to @Abate2009, we are more interested in the relationship between different software projects |
 | @Mens2013  | We were in doubt over this one, it could be useful but we weren't convinced that it was. Since we already had a lot of material we decided to not use this |
 
 _Table: 2. Papers from the initial seed that were not selected for the literature survey, along
@@ -107,8 +119,9 @@ with a specification of the reason why this is the case._
 
 ### Digital Search Engine
 The second strategy type which is used to select relevant papers for this literature study, is by
-a digital search engine. In this literature survey, Google Scholar[^3] is used. The following
-queries have been used to search for relevant papers:
+a digital search engine. In this literature survey, Google Scholar[^3] is used. From the initial
+seed, common keywords were retrieved and the following queries have been used to search for
+relevant papers:
 
 * "software ecosystems" AND "empirical analysis" _(2018)_
 * "engineering software ecosystems" _(2014)_
@@ -119,7 +132,8 @@ queries have been used to search for relevant papers:
 
 For each of these queries, the results were first filtered by the publish year. These are
 described by the italic year after each query above. The papers that are filtered are published
-earlier than the set publish year.
+earlier than the set publish year. These specific years were chosen since the survey focuses on the
+state of the art within the ecosystem analytics.
 
 After this filtering, we first determined whether a paper was relevant to the literature survey by
 examining the title. If it was unclear whether the paper was indeed relevant by only looking at
@@ -164,6 +178,11 @@ _Table: 4. Papers selected which are referenced in previously selected papers. T
 "Referenced In" describes in which selected paper the paper is referenced._
 
 ## Answers
+
+* **RQ1**: What is the current state of the art in software analytics for ecosystem analytics?
+* **RQ2**: What is the current state of practice in software analytics for ecosystem analytics?
+* **RQ3**: What are the open challenges in ecosystem analytics, for which future research is
+required?
 [^1]: <https://pypi.org/project/pip/>
 [^2]: <https://crates.io/>
 [^3]: <https://github.com:>
