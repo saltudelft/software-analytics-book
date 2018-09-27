@@ -1,24 +1,81 @@
 # Release Engineering Analytics
 
-## Search Strategy
-Release engineering is a relatively new research topic,
-given that modern processes for releasing software (e.g. continuous delivery)
-are industry-driven.
-Therefore, we took an exploratory approach in collecting any literature
-revolving around the topic of release engineering from the perspective of
-software analytics.
-This will aid us in determining a more narrow scope for our survey,
+## Motivation
+
+Release engineering is a discipline involved with making software available for
+end users.
+Efforts spent within the development environment of a software system
+should eventually be integrated and deployed such that end users may benefit
+from them.
+In recent years, release engineers have developed and
+adopted techniques to build infrastructures and pipelines which automate the
+process of releasing software to an increasingly large degree.
+These modern approaches have resulted
+in various practices such as releasing new versions of a software system in
+significantly shorter cycles.
+
+Due to these developments being industry-driven, release engineering forms a
+largely uncharted territory for software engineering research.
+It requires the attention from researchers both because these new practices
+have an often unanticipated impact on software studies and because they require
+empirical validation [@adams2016a].
+
+Therefore, this systematic literature review aims to provide an overview of
+the software analytics research that has been conducted so far on release
+engineering. Its main purpose is to identify the apparent gap
+between research and practice, in order to guide further research efforts.
+
+### Research Questions
+
+Contrary to what is regularly the case, with release engineering, practice
+seems to be ahead of research.
+Building on this idea, our questions are constructed to identify in which ways
+existing modern release engineering practices should still be studied in
+software analytics research.
+Our review thus aims to answer the following questions.
+
+<!-- TODO -->
+- **RQ 1:** _How is modern release engineering done in practice?_<br>
+  This question aims to identify the so-called "state of the practice" in
+  release engineering.
+  We will summarize practices that have been adopted to drive release
+  engineering forward. In addition we will identify the tools utilized to bring
+  this about. Case studies will also be analyzed to this end.
+
+- **RQ 2:** _What aspects of modern release engineering have been studied
+  in software analytics research so far?_<br>
+  In order to answer this question we investigate the practices that previous
+  empirical studies have focused on. In doing so, we identify the associated
+  costs and benefits that have been found, and the analysis methods used.
+
+- **RQ 3:** _What aspects of modern release engineering make for relevant
+  study objects in future software analytics research?_<br>
+  In answering this question we aim to identify the gap between practice and
+  research in release engineering. This way, our intent is not only to guide
+  but also to motivate future research.
+
+## Research Protocol
+
+<!-- TODO -->
+In this section, we will describe...
+
+### Search Strategy
+
+Since release engineering is a relatively new research topic,
+we took an exploratory approach in collecting any literature revolving around
+the topic of release engineering from the perspective of software analytics.
+This aided us in determining a more narrow scope for our survey,
 subsequently allowing us to find additional literature fitting this scope.
 
-At the start of this project,
-five papers were given to us as a starting point for the literature survey.
+At the start of this project, we were provided with an initial seed of five
+papers as a starting point for our literature survey.
 These initial papers were @adams2016a, @da2016a, @d2014a, @khomh2012a, and
 @khomh2015a.
 
 We collected publications using two search engines: Scopus and Google Scholar.
 These each encompass various databases such as ACM Digital Library, Springer,
 IEEE Xplore and ScienceDirect.
-The queries we entered are summarized in Figure 1.
+The main query that we constructed is displayed in Figure 1.
 The publications found using this query were:
 
 - @kaur2019a
@@ -65,12 +122,13 @@ AND PUBYEAR AFT 2014
 
 _Figure 1. Query used for retrieving release engineering publications via Scopus._
 
-In addition to the search strategy that is based on a combination of keywords
-and subject headings as described above, a review of the list of publications
-that retrieved papers cite and are cited by is done.
-These lists are provided by Google Scholar,
-as well as the reference lists of the papers themselves.
-Results of which are listed in Table 1.
+In addition to querying search engines as described above,
+references related to retrieved papers were analyzed.
+For each paper, the review concerned the publications cited by the paper,
+as well as those citing the paper.
+These reference lists were obtained from Google Scholar and from the reference
+lists in the papers themselves.
+The results of the reference analysis are listed in Table 1.
 
 _Table 1. Papers found indirectly by investigating citations of/by other papers._
 
@@ -80,10 +138,173 @@ _Table 1. Papers found indirectly by investigating citations of/by other papers.
 | @khomh2015a    | is cited by | @poo-caama2016a <br> @teixeira2017a |
 | @mantyla2015a  | is cited by | @rodriguez2017a <br> @cesar2017a    |
 
-In order to aggregate our collective efforts, selected sources were stored in a
-custom built web-based tool for conducting literature reviews.
+All the papers that were found, were stored in a custom built web-based tool for
+conducting literature reviews.
 The source code of this tool is published in a
 [GitHub repository](https://github.com/jessetilro/research).
-By commenting on and tagging our findings we were able to export a filtered
-list of publications,
-the relevance of which was agreed upon.
+The tool was hosted on a virtual private server, such that all retrieved
+publications were stored centrally, accessible to all reviewers.
+
+### Study Selection
+
+In the utilized tool for conducting the survey, it is possible to label papers
+with tags and leave comments and ratings.
+Every paper is reviewed based on the selection criteria.
+Based on this, the tool allowed to filter out all papers
+that appeared not to be relevant for this literature survey.
+
+The selection criteria are as follows:
+
+1. The study must show (at least) one release engineering technique.
+2. The study must not just show a release engineering technique,
+   but analyze its performance compared to other techniques.
+
+Based on these selection criteria,
+the following papers appeared to be irrelevant for the scope of this survey:
+
+<!-- Example. TODO: actually exclude papers -->
+- [link to paper] - Excluded based on rule 2.
+
+### Study Quality Assessment
+
+Based on @kitchenham2004procedures, the quality of a paper will be assessed
+by the evidence it provides, based on the following scale.
+All levels of quality will be accepted, except for level 5 (expert opinion).
+
+1. Evidence obtained from at least one properly-designed
+   randomised controlled trial.
+2. Evidence obtained from well-designed pseudo-randomised controlled trials
+   (i.e. non-random allocation to treatment).
+3. Comparative studies in a real-world setting:
+    1. Evidence obtained from comparative studies with concurrent controls and
+       allocation not randomised, cohort studies, case-control studies or
+       interrupted time series with a control group.
+    2. Evidence obtained from comparative studies with historical control,
+       two or more single arm studies,
+       or interrupted time series without a parallel control group.
+4. Experiments in artificial settings:
+    1. Evidence obtained from a randomised experiment performed in an
+       artificial setting.
+    2. Evidence obtained from case series,
+       either post-test or pre-test/post-test.
+    3. Evidence obtained from a quasi-random experiment performed in an
+       artificial setting.
+5. Evidence obtained from expert opinion based on theory or consensus.
+
+Also, the studies will be examined to see if they contain any type of bias.
+For this, the same types of biases will be used as described by @kitchenham2004procedures:
+
+- Selection/Allocation bias: Systematic difference between comparison groups
+  with respect to treatment.
+- Performance bias: Systematic difference is the conduct of comparison groups
+  apart from the treatment being evaluated.
+- Measurement/Detection bias: Systematic difference between the groups in how
+  outcomes are ascertained.
+- Attrition/Exclusion bias: Systematic differences between comparison groups in
+  terms of withdrawals or exclusions of participants from the study sample.
+
+The studies will be labeled by their quality level and possible biases.
+This information can be used during the Data Synthesis phase
+to weigh the importance of individual studies [@kitchenham2004procedures].
+
+### Data Extraction
+To accurately capture the information contributed by each publication in our
+survey, we will use a systematic approach to extracting data.
+To guide this process, we will be using a data extraction form which describes
+what aspects of a publication are crucial to record.
+Besides general publication information (title, author etc.), the form contains
+questions that are based on our defined research questions.
+Furthermore, the form contains a section for quantitative research, where
+aspects such as population and evaluation will be documented.
+The form that is used for this is shown below:
+
+```
+General information:
+	Name of person extracting data:
+	Date form completed (dd/mm/yyyy):
+	Publication title:
+	Author information:
+	Journal:
+	Publication type:
+	Type of study:
+
+What practices in release engineering does this publication mention?
+
+Are these practices to be classified under dated, state of the art or state of
+the practice? Why?
+
+What open challenges in release engineering does this publication mention?
+
+What research gaps does this publication contain?
+
+Are these research gaps filled by any other publications in this survey?
+
+Quantitative research publications:
+	Study start date:
+	Study end date or duration:
+	Population description:
+	Method(s) of recruitment of participants:
+	Sample size:
+	Evaluation/measurement description:
+	Outcomes:
+	Limitations:
+	Future research:
+
+Notes:
+
+```
+
+### Data Synthesis
+To summarize the contributions and limitations of each of the included
+publications, we will apply a descriptive synthesis approach.
+In this part of our survey, we will compare the data that was extracted of the
+included publications.
+Publications with similar findings will be grouped and evaluated, and
+differences between groups of publications will be structured and elaborated on.
+In this we will compare them using specifics such as their study types, time of
+publication and study quality.
+
+If the extracted data allows for a structured tabular visualization of
+similarities and differences between publications this we serve as an additional
+form of synthesis. However, this depends on the final included publications of
+this survey.
+
+### Included and Excluded Studies
+
+### Project timetable
+
+The literature review was conducted over the course of four weeks. We worked
+iteratively and planned for four weekly milestones.
+
+| Milestone | Deadline        | Goals                              |
+|----------------|-------------|-------------------------------------|
+| Milestone 1    | 16/9/18  | - Develop the search strategy<br> - Collect initial publications  |
+| Milestone 2    | 23/9/18 | Write full research protocol |
+| Milestone 3  | 30/9/18 | - Collect additional literature according to the protocol<br> - Perform data extraction    |
+| Milestone 4  | 7/10/18 | - Perform data synthesis<br> - Write final version of the chapter |
+
+<!-- TODO -->
+
+## Answers
+
+<!-- TODO -->
+
+### RQ1: ...
+
+<!-- TODO -->
+
+### RQ2: ...
+
+<!-- TODO -->
+
+### RQ3: ...
+
+<!-- TODO -->
+
+## Discussion
+
+<!-- TODO -->
+
+## Conclusion
+
+<!-- TODO -->
