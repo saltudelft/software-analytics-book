@@ -2,38 +2,55 @@
 
 ## Motivation
 In the modern day and age, the majority of software products make use of external software or
-libraries to use the functionality of these products, without having to develop this functionality
-itself. Moreover, multiple languages, such as Python and Rust, provide package managers (pip[^1]
-and Cargo[^2] respectively) which can be used to easily manage this third-party functionality, as
-well as distribute it.
+libraries to use the functionality (for example parsing JSON) of these products, without having to
+develop this functionality itself. Moreover, multiple languages, such as Python and Rust, provide
+package managers (pip[^1] and Cargo[^2] respectively) which can be used to easily manage this
+third-party functionality, as well as distribute it.
 
-Together with this comes the growth in open source projects. On platforms such as GitHub[^3], it
-is easy and quick to create a new software product, which can be developed, reviewed and used by
-the whole community.
+In parallel to this, the popularity of creating open source projects is on the rise as well. On
+platforms such as GitHub[^3], it is easy and quick to create a new software project, which can be
+developed, reviewed and used by the whole community. This development leads to more libraries
+being developed and being available for public use.
 
-This in turn leads to intertwined landscapes of software products, which are deemed a
-_software ecosystems_.
-As stated by @Messerschmitt2003, a _software ecosystem_ is "a collection of software products that
-have some given degree of symbiotic relationships." Another, similar definition is given by
-@Lungu2009: "A software ecosystem is a collection of software projects which are developed and
-co-evolve in the same environment." @Mens2013 extends this definition, "by explicitly considering
-the communities involved (e.g. user and developer communities) as being part of the software
-ecosystem."
+Because of these two developments, further inspection of the dependency relations between projects
+leads to a graph-like structure of software projects, where the nodes are the projects and the
+edges represent a dependency between two software projects. This structure is known as a
+_software ecosystem_. As stated by @Messerschmitt2003, a _software ecosystem_ is "a collection of
+software products that have some given degree of symbiotic relationships." Another, similar
+definition is given by @Lungu2009: "A software ecosystem is a collection of software projects
+which are developed and co-evolve in the same environment." @Mens2013 extends this definition,
+"by explicitly considering the communities involved (e.g. user and developer communities) as
+being part of the software ecosystem." @Stallman2002 opposes the overall notion of calling this 
+structure a software ecosystem: "It is inadvisable to describe the free software community, or any
+human community, as an ecosystem, because that word implies the absence of ethical judgment."
 
-By performing analysis on these software ecosystems, people aim to generate meaningful insights,
-which can then be used to improve the efficiency and effectivity of the software development
-process throughout the lifecycle of the developed software.
+Although @Stallman2002 thinks that the term software ecosystem itself is incorrect, it does not
+necessarily disagree with the definition of the term. The definition which will be used in
+this chapter is the definition of @Mens2013, since it captures the essence of the other two
+definitions, while adding the notion of the human communities alongside as well.
 
-In order to perform a survey on the current progress in the field of software ecosystem analytics,
-we have formulated three research questions:
+By performing analysis on these software ecosystems, the aim is to generate meaningful insights.
+These insights can then be used to improve the efficiency and effectivity of the software
+development process, as well as to learn to identify and inform about potential problems. For
+example, a warning could be displayed if a dependency has a security vulnerability.
+
+The field of research on software ecosystems, _ecosystem analytics_, focuses on performing such
+analysis. This chapter discovers what the current progress is in this field of research through a
+literature survey. This discovery is not limited to the theoretical perspective, but will uncover
+practical implications as well as the open challenges of the field. In order to describe each
+covered aspect, we have formulated three research questions:
 
 * **RQ1**: What is the current state of the art in software analytics for ecosystem analytics?
-* **RQ2**: What is the current state of practice in software analytics for ecosystem analytics?
+* **RQ2**: What are the practical implications from the state of the art?
 * **RQ3**: What are the open challenges in ecosystem analytics, for which future research is
 required?
 
-Each of these research questions will be answered, using recent papers written in this field of
+Each of these research questions will be answered using recent papers written in this field of
 research.
+
+This chapter is structured as follows. First, the research protocol is described in detail. This
+includes decisions on which papers are included in the review. After this, the research questions
+are answered using the previously stated set of papers.
 
 ## Research Protocol
 
@@ -50,8 +67,7 @@ three different types:
 * a selection of referenced papers within papers selected before in the above two searches
 
 ### Initial seed
-The first type is quite straightforward. To give this survey a head start, MSc. Joseph Hejderup
-has provided us with a total of thirteen papers, as shown in Table 1.
+MSc. Joseph Hejderup has provided us with a total of thirteen papers, as shown in Table 1.
 
 As each of these papers come from an expert in the field, each paper is assumed to be relevant to
 atleast the field of software ecosystems. Because of this, each of these papers were judged on
