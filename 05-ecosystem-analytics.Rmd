@@ -178,11 +178,36 @@ _Table: 4. Papers selected which are referenced in previously selected papers. T
 "Referenced In" describes in which selected paper the paper is referenced._
 
 ## Answers
+In this section, an aggregation of information, found in the papers, is presented. Each subsection
+of this section focuses on one of the three research questions posed in Section 1.
 
-* **RQ1**: What is the current state of the art in software analytics for ecosystem analytics?
-* **RQ2**: What is the current state of practice in software analytics for ecosystem analytics?
-* **RQ3**: What are the open challenges in ecosystem analytics, for which future research is
-required?
+### What is the current state of the art in software analytics for ecosystem analytics?
+<!-- Topics that are being explored, research methods, tools and datasets being used -->
+To answer this research question, we examine the explored topics in ecosystem analytics. Moreover,
+we summarize which research methods, tools and datasets are being used to explore this topics.
+
+The main topic explored in the selected papers are related to the dependencies within the software
+ecosystem. One of the main subjects related to these dependencies is the subject of breaking
+changes between different versions of a package. @Bogart2016 researched the attitude of developers
+of Eclipse, CRAN and NPM packages towards making breaking changes.
+
+| Reference | Explored topic(s) | Research method(s) | Tool(s) | Dataset(s) | Ecosystem(s) | Conclusion |
+| --------- | ----------------- | ------------------ | ------- | ---------- | ------------ | ---------- |
+| @Abdalkareem2017 | Empirical study on the use of trivial packages, as well as the reasoning behind this | Quantitative frequency, Survey | - | NPM, GitHub | NPM | Used because it is assumed to be well implemented and tested (only 45% actually has tests) and increases productivity. Quantitative research has shown that 10% of NodeJS uses trivial packages, where 16.8% are trivial packages in NPM |
+| @Bogart2016 | Attitude of towards breaking changes and how do ecosystems influence this | Interviews | - | - | Eclipse, CRAM, NPM | There are numerous ways of dealing with breaking changes and ecosystems play an essential role in the chosen way. |
+
+### What are the practical implications from the state of the art?
+<!-- Rather than theoretical, actual case studies done with findings -->
+
+### What are the open challenges in ecosystem analytics, for which future research is required?
+<!--List of challenges, research questions and an aggregated set of open research items -->
+
+| Reference | Open Challenges Found |
+| --------- | --------------------- |
+| @Abdalkareem2017 | Examine relationship between team experience and project maturity and usage of trivial packages |
+| @Abdalkareem2017 | Compare use of code snippets on Q&A sites and trivial packages | 
+| @Abdalkareem2017 | How to manage and help developers choose the best packages |
+
 [^1]: <https://pypi.org/project/pip/>
 [^2]: <https://crates.io/>
 [^3]: <https://github.com:>
