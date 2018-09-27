@@ -271,6 +271,10 @@ this survey.
 
 ### Included and Excluded Studies
 
+- @khomh2012a has been excluded, because it presents the same results as
+@khomh2015a, while the latter is more extensive because it is a journal article
+instead of a conference article.
+
 ### Project timetable
 
 The literature review was conducted over the course of four weeks. We worked
@@ -309,9 +313,165 @@ iteratively and planned for four weekly milestones.
 
 <!-- TODO -->
 
-## Appendix
+## Raw synthesized data
 
-<!-- TODO Maarten -->
+### Understanding the impact of rapid releases on software quality -- The Case of Firefox
+
+Reference: @khomh2015a 
+
+General information:
+
+- Name of person extracting data: Maarten Sijm
+- Date form completed: 27-09-2018
+- Author information: Foutse Khomh, Bram Adams, Tejinder Dhaliwal, Ying Zou
+- Conference: Mining Software Repositories (MSR)
+- Publication type: Paper in Conference Proceedings
+- Type of study: Quantitative, case study
+
+What practices in release engineering does this publication mention?
+
+- Changing from traditional to rapid release cycles in Mozilla Firefox
+
+Are these practices to be classified under dated,
+state of the art or state of the practice? Why?
+
+- State of the practice, because they study Firefox
+  and Firefox is still using rapid release cycles.
+  However, it is dated because the data is six years old.
+
+What open challenges in release engineering does this publication mention?
+
+- More case studies are needed
+
+What research gaps does this publication contain?
+
+- More case studies are needed
+
+Are these research gaps filled by any other publications in this survey?
+
+- Not yet known **TODO**
+
+Quantitative research publications:
+
+- Study start date: 01-01-2010 (Firefox 3.6)
+- Study end date or duration: 20-12-2011 (Firefox 9.0)
+- Population description: Mozilla Wiki, VCS, Crash Repository, Bug Repository
+- Method(s) of recruitment of participants: N/A (case study)
+- Sample size: 25 alpha versions, 25 beta versions,
+  29 minor versions and 7 major versions.
+  Amount of bugs/commits/etc. is not specified.
+- Evaluation/measurement description: Wilcoxon rank sum test
+- Outcomes:
+	- With shorter release cycles,
+	  users do not experience significantly more post-release bugs
+	- Bugs are fixed faster
+	- Users experience these bugs earlier during software execution
+	  (the program crashes earlier)
+- Limitations: Results are specific to Firefox
+- Future research: More case studies are needed
+
+### On the influence of release engineering on software reputation
+
+Reference: @plewnia2014a
+
+General information:
+
+- Name of person extracting data: Maarten Sijm
+- Date form completed: 27-09-2018
+- Author information: Christian Plewnia, Andrej Dyck, Horst Lichter
+- Conference: 2nd International Workshop on Release Engineering
+- Publication type: Paper in Conference Proceedings
+- Type of study: Quantitative, case study on multiple software
+
+What practices in release engineering does this publication mention?
+
+- Rapid releases
+
+Are these practices to be classified under dated,
+state of the art or state of the practice? Why?
+
+- Dated practice, data is from before 2014
+
+What open challenges in release engineering does this publication mention?
+
+- Identifying software reputation can better be done using a qualitative study.
+
+What research gaps does this publication contain?
+
+- Identifying software reputation can better be done using a qualitative study.
+
+Are these research gaps filled by any other publications in this survey?
+
+- Not yet known **TODO**
+
+Quantitative research publications:
+
+- Study start date: Q3 2008
+- Study end date or duration: Q4 2013
+- Population description: Chrome, Firefox, Internet Explorer
+- Method(s) of recruitment of participants: N/A (case study)
+- Sample size: 3 browsers
+- Evaluation/measurement description: No statistical analysis,
+  just presenting market share results
+- Outcomes:
+  	- Chrome's market share increased after adopting rapid releases
+  	- Firefox's market share decreased after adopting rapid releases
+  	- IE's market share decreased
+- Limitations: 
+	- Identifying software reputation can better be done
+	  using a qualitative study.
+- Future research: 
+	- Identifying software reputation can better be done
+	  using a qualitative study.
+
+### 
+
+Reference: @
+
+General information:
+
+- Name of person extracting data: Maarten Sijm
+- Date form completed: 27-09-2018
+- Author information: 
+- Conference: 
+- Publication type: 
+- Type of study: 
+
+What practices in release engineering does this publication mention?
+
+- Rapid releases
+
+Are these practices to be classified under dated,
+state of the art or state of the practice? Why?
+
+- 
+
+What open challenges in release engineering does this publication mention?
+
+- 
+
+What research gaps does this publication contain?
+
+- 
+
+Are these research gaps filled by any other publications in this survey?
+
+- Not yet known **TODO**
+
+Quantitative research publications:
+
+- Study start date: 
+- Study end date or duration: 
+- Population description: 
+- Method(s) of recruitment of participants: 
+- Sample size: 
+- Evaluation/measurement description: 
+- Outcomes:
+- Limitations: 
+- Future research: 
+
+Notes:
+
 
 ### Kanbanize the release engineering process
 
