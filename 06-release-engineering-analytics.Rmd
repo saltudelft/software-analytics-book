@@ -1,0 +1,89 @@
+# Release Engineering Analytics
+
+## Search Strategy
+Release engineering is a relatively new research topic,
+given that modern processes for releasing software (e.g. continuous delivery)
+are industry-driven.
+Therefore, we took an exploratory approach in collecting any literature
+revolving around the topic of release engineering from the perspective of
+software analytics.
+This will aid us in determining a more narrow scope for our survey,
+subsequently allowing us to find additional literature fitting this scope.
+
+At the start of this project,
+five papers were given to us as a starting point for the literature survey.
+These initial papers were @adams2016a, @da2016a, @d2014a, @khomh2012a, and
+@khomh2015a.
+
+We collected publications using two search engines: Scopus and Google Scholar.
+These each encompass various databases such as ACM Digital Library, Springer,
+IEEE Xplore and ScienceDirect.
+The queries we entered are summarized in Figure 1.
+The publications found using this query were:
+
+- @kaur2019a
+- @kerzazi2013a
+- @castelluccio2017a
+- @karvonen2017a
+- @claes2017a
+- @fujibayashi2017a
+- @souza2015a
+- @laukkanen2018a
+
+```
+TITLE-ABS-KEY(
+  (
+    "continuous release" OR "rapid release" OR "frequent release"
+    OR "quick release" OR "speedy release" OR "accelerated release"
+    OR "agile release" OR "short release" OR "shorter release"
+    OR "lightning release" OR "brisk release" OR "hasty release"
+    OR "compressed release" OR "release length" OR "release size"
+    OR "release cadence" OR "release frequency"
+    OR "continuous delivery" OR "rapid delivery" OR "frequent delivery"
+    OR "fast delivery" OR "quick delivery" OR "speedy delivery"
+    OR "accelerated delivery" OR "agile delivery" OR "short delivery"
+    OR "lightning delivery" OR "brisk delivery" OR "hasty delivery"
+    OR "compressed delivery" OR "delivery length" OR "delivery size"
+    OR "delivery cadence" OR "continuous deployment" OR "rapid deployment"
+    OR "frequent deployment" OR "fast deployment" OR "quick deployment"
+    OR "speedy deployment" OR "accelerated deployment" OR "agile deployment"
+    OR "short deployment" OR "lightning deployment" OR "brisk deployment"
+    OR "hasty deployment" OR "compressed deployment" OR "deployment length"
+    OR "deployment size" OR "deployment cadence"
+  ) AND (
+    "release schedule" OR "release management" OR "release engineering"
+    OR "release cycle" OR "release pipeline" OR "release process"
+    OR "release model" OR "release strategy" OR "release strategies"
+    OR "release infrastructure"
+  )
+  AND software
+) AND (
+	LIMIT-TO(SUBJAREA, "COMP") OR LIMIT-TO(SUBJAREA, "ENGI")
+)
+AND PUBYEAR AFT 2014
+```
+
+_Figure 1. Query used for retrieving release engineering publications via Scopus._
+
+In addition to the search strategy that is based on a combination of keywords
+and subject headings as described above, a review of the list of publications
+that retrieved papers cite and are cited by is done.
+These lists are provided by Google Scholar,
+as well as the reference lists of the papers themselves.
+Results of which are listed in Table 1.
+
+_Table 1. Papers found indirectly by investigating citations of/by other papers._
+
+| Starting point | Type        | Result                              |
+|----------------|-------------|-------------------------------------|
+| @souza2015a    | has cited   | @plewnia2014a   <br> @mantyla2015a  |
+| @khomh2015a    | is cited by | @poo-caama2016a <br> @teixeira2017a |
+| @mantyla2015a  | is cited by | @rodriguez2017a <br> @cesar2017a    |
+
+In order to aggregate our collective efforts, selected sources were stored in a
+custom built web-based tool for conducting literature reviews.
+The source code of this tool is published in a
+[GitHub repository](https://github.com/jessetilro/research).
+By commenting on and tagging our findings we were able to export a filtered
+list of publications,
+the relevance of which was agreed upon.
