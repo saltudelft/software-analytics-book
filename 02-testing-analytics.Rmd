@@ -355,5 +355,53 @@ Test case analytics: Mining test case traces to improve risk-driven testing (@no
 ###What state of the art technologies are being used?
 
 
-###What future developments can be expected?
+###What future developments can be expected?  
 
+
+**Co-evolution and test generation**  
+For understanding how test- and production code co-evolve and how tests can be generated to support
+developers, studies have been conducted (@pinto2012understanding, @marsavina2014,
+@zaidman2011studying), additionally a tool has been made in order to analyze and, consequently,
+better understand test-suite evolution (@pinto2013). For the time being the practical implications of
+this subtopic have mainly been sought in the repairing and generation of tests. 
+
+
+According to Pinto (@pinto2012understanding) test repairs occur often enough to justify the
+development and research for automated repair techniques. M. Mirzaaghaei et al.
+(@supportingtestsuite) argues that evolving test cases is an expensive and time-consuming activity,
+for which automated approaches reduce the pressure on developers. Shamshiri et al. 
+(@shamshiri2018automatically) argues that automated generation of unit tests does not end up
+generating realistic tests and that the effectivity of developers writing manual tests is equal
+to developers using automatically generated tests. They, therefore, call for the use of more
+realistic tests. This suggests that automated test generation is still a topic of interest, which
+will consequently likely be researched in order to find a way to generate realistic tests.  
+
+**Risk-driven testing**  
+Risk-driven testing has been receiving attention recently. Researchers have been looking for
+methods that can either detect potential risks within the same project (@noor2015test, 
+@hemmati2018
+, @vernotte2015) or that can detect risks based on models carried over from one project to another 
+(@leung2015testing, @atifi2017). These techniques have been implementing history based prediction
+approaches.
+
+In the future, we can expect more interest and research into risk-driven testing as allocating
+testing activities effectively will remain important due to testing efforts, and developer time,
+being expensive. This area will likely stay in its research phase for the next couple of years as
+effective measures for risk prediction are still being researched. This goes for measures within
+the same project and cross-project prediction. Given the currently researched techniques regard
+history based implementations, it's like that these techniques will be subject to further research
+later on.  
+
+**Testing practices**  
+Research various papers (@GAROUSI20131354, @beller2017developer, @beller2015) has indicated
+that testing of any
+form is not as widely practiced as the status quo suggests. How the current state of the practice
+will change depends on various developments within the field. Tools will be created to assist the
+developer in writing quality code and tests, such as TestEvoHound as suggested by M. Greiler. 
+(@greiler2013). As
+automated test generation becomes more effective this may reduce the need for developers to spend a
+lot of time on writing and maintaining tests. With the development of risk-driven testing, 
+developers may also be able to focus on the parts that are likely to be the most important to 
+address, which could lead to better time allocation. The status quo for how much time is to be 
+expected to be spent on testing may also change, given automated test repair and generation 
+techniques become effective and accessible.
