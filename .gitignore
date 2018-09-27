@@ -6,3 +6,6 @@ _book
 _bookdown_files
 rsconnect
 .DS_Store
+
+# Ignore files that are generated to compile the book
+software-analytics-survey.*
