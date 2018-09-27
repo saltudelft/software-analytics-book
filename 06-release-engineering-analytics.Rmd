@@ -74,7 +74,7 @@ These initial papers were @adams2016a, @da2016a, @d2014a, @khomh2012a, and
 @khomh2015a.
 
 We collected publications using two search engines: Scopus and Google Scholar.
-Each of the two search engines encompass several databases such as
+Each of the two search engines comprises several databases such as
 ACM Digital Library, Springer, IEEE Xplore and ScienceDirect.
 The main query that we constructed is displayed in Figure 1.
 The publications found using this query were:
@@ -149,7 +149,9 @@ publications were stored centrally, accessible to all reviewers.
 
 ### Study Selection
 
-In the aforementioned tool for storing the papers,
+We selected the studies that we wanted to include in the survey
+with aid of the aforementioned tool for storing the papers.
+In this tool,
 it is possible to label papers with tags and leave comments and ratings.
 Every paper is reviewed based on the selection criteria.
 Based on this, the tool allowed to filter out all papers
