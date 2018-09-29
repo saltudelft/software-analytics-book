@@ -628,4 +628,55 @@ Notes:
 - Very short, probably not very strong evidence, refer to limitations
 - Nice that the focus is libraries here, very interesting population because
   most studies focus on end-user targeting software systems
+
+### Rapid releases and patch backouts: A software analytics approach
+
+Reference: @souza2015a
+
+General information:
+
+- Name of person extracting data: Jesse Tilro
+- Date form completed: 29-09-2018
+- Author information: Souza, R. and Chavez, C. and Bittencourt, R.A.
+- Publication type: Journal/Magazine Article
+- Journal: IEEE Software
+- Type of study: Quantitative
+
+What practices in release engineering does this publication mention?
+
+-
+
+Are these practices to be classified under dated,
+state of the art or state of the practice? Why?
+
+-
+
+What open challenges in release engineering does this publication mention?
+
+- How rapid release cycles affect code integration
+
+What research gaps does this publication contain?
+
+-
+
+Are these research gaps filled by any other publications in this survey?
+
+-
+
+Quantitative research publications:
+
+- Study start date:
+- Study end date or duration:
+- Population description:
+- Method(s) of recruitment of participants:
+- Sample size:
+- Evaluation/measurement description:
+- Outcomes:
+    1.
+- Limitations:
+    -
+- Future research:
+
+Notes:
+- Also reviews existing literature very well
 <!-- TODO Nels -->
