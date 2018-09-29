@@ -374,4 +374,63 @@ Quantitative research publications:
 Notes:
 
 
+### Is it safe to uplift this patch? An empirical study on mozilla firefox
+
+Reference: @castelluccio2017a
+
+General information:
+
+- Name of person extracting data: Jesse Tilro
+- Date form completed: 29-09-2018
+- Author information: Castelluccio, M. and An, L. and Khomh, F.
+- Publication type: Paper in Conference Proceedings
+- Journal: Proceedings - 2017 IEEE International Conference on Software Maintenance and Evolution, ICSME 2017
+- Type of study: Case study, both quantitative (data analysis) and qualitative
+  (interviews)
+
+What practices in release engineering does this publication mention?
+
+- Patch uplift (meaning the promotion of patches from development directly
+  to a stabilization channel, potentially skipping several channels)
+
+Are these practices to be classified under dated,
+state of the art or state of the practice? Why?
+
+- State of the practice: case study of what is being done in the field,
+  quite recently (2017).
+
+What open challenges in release engineering does this publication mention?
+
+- Exploring possibilities to leverage this research by building classifiers
+  capable of automatically assessing the risk associated with patch uplift
+  candidates and recommend patches that can be uplifted safely.
+- Validate and extend results of this study for generalizability.
+
+What research gaps does this publication contain?
+
+- Study aimed to fill two identified gaps identified in literature:
+  - How do urgent patches in rapid release models affect software quality
+    (in terms of fault proneness)?
+  - How can the reliability of the integration of urgent patches be improved?
+
+Are these research gaps filled by any other publications in this survey?
+
+- The paper itself
+
+Quantitative research publications:
+
+- Study start date:
+- Study end date or duration:
+- Population description:
+- Method(s) of recruitment of participants:
+- Sample size:
+- Evaluation/measurement description:
+- Outcomes:
+    1.
+- Limitations:
+    -
+- Future research:
+
+Notes:
+-
 <!-- TODO Nels -->
