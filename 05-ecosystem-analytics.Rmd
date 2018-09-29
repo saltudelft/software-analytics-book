@@ -200,6 +200,9 @@ of Eclipse, CRAN and NPM packages towards making breaking changes.
 
 ### What are the practical implications from the state of the art?
 <!-- Rather than theoretical, actual case studies done with findings -->
+| Reference | Explored topic(s) | Research method(s) | Dataset(s) | Ecosystem(s) | Conclusion |
+| --------- | ----------------- | ------------------ | ---------- | ------------ | ---------- |
+| @Hora2016 | Exploratory study aimed at observing API evolution and its impact | Empirical study | 3600 distinct systems | Pharo | After API changes, clients need time to react and rarely react at all. Replacements cannot be resolved in a uniform manner throughout the ecosystem. API changes and deprication can present different characteristics. |
 
 ### What are the open challenges in ecosystem analytics, for which future research is required?
 <!--List of challenges, research questions and an aggregated set of open research items -->
