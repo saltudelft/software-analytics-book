@@ -567,4 +567,65 @@ Quantitative research publications:
 
 Notes:
 -
+
+### Does the release cycle of a library project influence when it is adopted by a client project?
+
+Reference: @fujibayashi2017a
+
+General information:
+
+- Name of person extracting data: Jesse Tilro
+- Date form completed: 29-09-2018
+- Author information: Fujibayashi, D. and Ihara, A. and Suwa, H. and Kula, R.G. and Matsumoto, K.
+- Publication type: Paper in Conference Proceedings
+- Journal: SANER 2017 - 24th IEEE International Conference on Software Analysis, Evolution, and Reengineering
+- Type of study: Quantitative study
+
+What practices in release engineering does this publication mention?
+
+- Rapid release cycles
+
+Are these practices to be classified under dated,
+state of the art or state of the practice? Why?
+
+- State of the art and practice: practitioners currently practice it,
+  researchers currently research it.
+
+What open challenges in release engineering does this publication mention?
+
+- Gaining an understanding of the effect of a library's release cycle on its
+  adoption.
+
+What research gaps does this publication contain?
+
+- First step towards solving the above challenge.
+
+Are these research gaps filled by any other publications in this survey?
+
+- This paper
+
+Quantitative research publications:
+
+- Study start date: 21-07-2016 (data extraction)
+- Study end date or duration:
+- Population description:
+- Method(s) of recruitment of participants:
+- Sample size: 23 libraries, 415 client projects
+- Evaluation/measurement description:
+  - Scott-Knott test to group libraries with similar release cycle.
+- Outcomes:
+    1.  There is a relationship between release cycle of a library project
+        and the time for clients to adopt it: quicker release seems to be
+        associated with quicker adoption.
+
+- Limitations:
+    - Small sample size
+    - Not controlled for many factors
+    - No statistical significance tests?
+- Future research:
+
+Notes:
+- Very short, probably not very strong evidence, refer to limitations
+- Nice that the focus is libraries here, very interesting population because
+  most studies focus on end-user targeting software systems
 <!-- TODO Nels -->
