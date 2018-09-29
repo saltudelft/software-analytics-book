@@ -315,7 +315,7 @@ iteratively and planned for four weekly milestones.
 
 <!-- TODO -->
 
-## Raw synthesized data
+## Raw extracted data
 
 This section is not part of the main content of our chapter.
 It can be viewed as an Appendix.
