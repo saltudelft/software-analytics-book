@@ -433,4 +433,74 @@ Quantitative research publications:
 
 Notes:
 -
+
+### Systematic literature review on the impacts of agile release engineering practices
+
+Reference: @karvonen2017a
+
+General information:
+
+- Name of person extracting data: Jesse Tilro
+- Date form completed: 29-09-2018
+- Author information: Karvonen, T. and Behutiye, W. and Oivo, M. and Kuvaja, P.
+- Publication type: Journal/Magazine Article
+- Journal: Information and Software Technology
+- Type of study: Systematic literature review
+
+What practices in release engineering does this publication mention?
+
+- Agile release engineering (ARE) practices
+  - Continuous integration (CI)
+  - Continuous delivery (CD)
+  - Rapid Release (RR)
+  - Continuous deployment
+  - DevOps (similar to CD, congruent with release engineering practices)
+
+
+Are these practices to be classified under dated,
+state of the art or state of the practice? Why?
+
+- State of the art, for it concerns a state of the art report and was published
+  recently (2017).
+
+What open challenges in release engineering does this publication mention?
+
+- Claims that modern release engineering practices allow for software
+  to be delivered faster and cheaper should be further empirically validated.
+- This analysis could be extended with industry case studies, to develop a
+  checklist for analyzing company and ecosystem readiness for continuous
+  delivery and continuous deployment.
+- The comprehensive reporting of the context and how the practice is
+  implemented instead of merely referring to usage of the practice should be
+  considered by future research.
+- Different stakeholders' points of view, such as customer perceptions regarding
+  practices require further research.
+- Research on DevOps would be highly relevant for release engineering and the
+  continuous software engineering research domain.
+- Future research on the impact of RE practices could benefit from more
+  extensive use of quantitative methodologies from case studies, and the
+  combination of quantitative with qualitative (e.g. interviews) methods.
+
+What research gaps does this publication contain?
+
+- Refer to challenges
+
+Are these research gaps filled by any other publications in this survey?
+
+- **TODO**
+
+Quantitative research publications:
+
+- Study start date: N/A
+- Study end date or duration: N/A
+- Population description: N/A
+- Method(s) of recruitment of participants: N/A
+- Sample size: N/A
+- Evaluation/measurement description: N/A
+- Outcomes: N/A
+- Limitations: N/A
+- Future research: N/A
+
+Notes:
+-
 <!-- TODO Nels -->
