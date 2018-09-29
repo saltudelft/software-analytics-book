@@ -313,7 +313,6 @@ iteratively and planned for four weekly milestones.
 
 <!-- TODO Maarten -->
 
-<!-- TODO Jesse -->
 ## Extracted data
 
 ### Kanbanize the release engineering process
