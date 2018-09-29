@@ -679,4 +679,56 @@ Quantitative research publications:
 
 Notes:
 - Also reviews existing literature very well
+
+### Comparison of release engineering practices in a large mature company and a startup
+
+Reference: @laukkanen2018a
+
+General information:
+
+- Name of person extracting data: Jesse Tilro
+- Date form completed: 29-09-2018
+- Author information: Laukkanen, E. and Paasivaara, M. and Itkonen, J. and Lassenius, C.
+- Publication type: Journal/Magazine Article
+- Journal: Empirical Software Engineering
+- Type of study:
+
+What practices in release engineering does this publication mention?
+
+-
+
+Are these practices to be classified under dated,
+state of the art or state of the practice? Why?
+
+-
+
+What open challenges in release engineering does this publication mention?
+
+-
+
+What research gaps does this publication contain?
+
+-
+
+Are these research gaps filled by any other publications in this survey?
+
+-
+
+Quantitative research publications:
+
+- Study start date:
+- Study end date or duration:
+- Population description:
+- Method(s) of recruitment of participants:
+- Sample size:
+- Evaluation/measurement description:
+- Outcomes:
+    1.
+- Limitations:
+    -
+- Future research:
+
+Notes:
+-
+
 <!-- TODO Nels -->
