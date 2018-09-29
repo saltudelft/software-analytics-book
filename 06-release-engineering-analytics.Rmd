@@ -314,5 +314,64 @@ iteratively and planned for four weekly milestones.
 <!-- TODO Maarten -->
 
 <!-- TODO Jesse -->
+## Extracted data
+
+### Kanbanize the release engineering process
+
+Reference: @kerzazi2013a
+
+General information:
+
+- Name of person extracting data: Jesse Tilro
+- Date form completed: 29-09-2018
+- Author information: Kerzazi, N. and Robillard, P.N.
+- Publication type: Paper in Conference Proceedings
+- Journal: 2013 1st International Workshop on Release Engineering, RELENG 2013 -
+  Proceedings
+- Type of study: Action research
+
+What practices in release engineering does this publication mention?
+
+- Following principles of the Kanban agile software development life-cycle model
+  that implicitly describe the release process
+- (Switching to) more frequent (daily) release cycles
+- (Transitioning to) a structured release process
+
+Are these practices to be classified under dated,
+state of the art or state of the practice? Why?
+
+- Either dated or state of the practice, not sure. Would have to do some
+  additional research on the adoption of Kanban
+
+What open challenges in release engineering does this publication mention?
+
+- Release effectiveness: minimize system failure and customer impact
+- Problems with releasing encountered in practice
+    - **TODO** list problems if of interest
+
+What research gaps does this publication contain?
+
+-
+
+Are these research gaps filled by any other publications in this survey?
+
+-
+
+Quantitative research publications:
+
+- Study start date:
+- Study end date or duration:
+- Population description:
+- Method(s) of recruitment of participants:
+- Sample size:
+- Evaluation/measurement description:
+- Outcomes:
+    1.
+- Limitations:
+    -
+- Future research:
+
+Notes:
+
 
 <!-- TODO Nels -->
