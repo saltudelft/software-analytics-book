@@ -273,6 +273,16 @@ this survey.
 
 ### Included and Excluded Studies
 
+**Included:**
+
+- @khomh2015a
+- @plewnia2014a
+- @mantyla2015a
+- @poo-caamano2016a
+- @teixeira2017a
+
+**Excluded:**
+
 - @khomh2012a has been excluded, because it presents the same results as
 @khomh2015a, while the latter is more extensive because it is a journal article
 instead of a conference article.
