@@ -21,10 +21,15 @@ Version Control Systems (VCS) such as git.
  - Define context
  -->
  
-In order to get a complete view of the current state of the build analytics field we ask the
+In order to get a complete view of the current state of the build analytics field, we ask the
 following research questions.
 
 **RQ1**: What is the current state of the art in the field of build analytics?
+
+In order to answer to the first reseacrh question, we need to present the current topics that
+are being explored in the build analytics domain alogside with the research methods, tools 
+and datasets acquired for the problems in hand and aggregate and reflect about the main 
+research findings that the state-of-the-art papers display.
 <!--
   - Topics that are being explored
   - Research methods, tools and datasets being used
