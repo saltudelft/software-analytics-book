@@ -315,4 +315,230 @@ iteratively and planned for four weekly milestones.
 
 <!-- TODO Jesse -->
 
-<!-- TODO Nels -->
+## Modern Release Engineering in a Nutshell
+General information: 
+	Name of person extracting data: Nels Numan
+	Date form completed (dd/mm/yyyy): 28/09/2018
+	Publication title: Modern Release Engineering in a Nutshell
+	Author information: Bram Adams and Shane McIntosh
+	Journal: 23rd International Conference on Software Analysis, Evolution, and Reengineering (2016)
+	Publication type: Conference paper
+	Type of study: Survey
+
+What practices in release engineering does this publication mention?
+- Branching and merging
+	- Software teams rely on Version Control Systems
+	- Quality assurance activities like code reviews are used before doing a merge or even allowing a code change to be committed into a branch
+	- Keep branches short-lived and merge often. If this is impossible, a rebase can be done.
+	- "trunk-based development" can be applied to eliminate most branches below the master branch.
+	- Feature toggles are used to provide isolation for new features in case of the absence of branches.
+- Building and testing
+	- To help assess build and test conflicts, many projects also provide "try" servers to development teams, which automatically runs a build and test process referred to as CI.
+	- The CI process often does not run full test, but a representative subset.
+	- The more intensive tests, such as integration, system or performance typically get run nightly or in weekends.
+- Build system:
+	- GNU Make is the most popular file-based build system technology. Ant is the prototypical task-based build system technology. Lifecycle-based build technologies like Maven consider the build system of a project to have a sequence of standard build activities that together form a "build lifecycle."
+	- "Reproducible builds" involve for a given feature and hardware configuration of the code base, every build invoca- tion should yield bit-to-bit identical build results.
+- Infrastructure-as-code
+	- Containers or virtual machines are used to deploy new versions of the system for testing or even production.
+	- It has been recommended that infrastructure code is to be stored in a separate VCS repository than source code, in order to restrict access to infrastructure code.
+- Deployment
+	- The term "dark launching" corresponds to deploying new features without releasing them to the public, in which parts of the system automatically make calls to the hidden features in a way invisible to end users.
+	- "Blue green deployment" deploys the next software version on a copy of the production environment, and changes this to be the main enviroment on release.
+	- In "canary deployment" a prospective release of the software system is loaded onto a subset of the production environments for only a subset of users.
+	- "A/B testing" deploys alternative A of a feature to the environment of a subset of the user base, while alternative B is deployed to the environment of another subset.
+- Release
+	- Once a deployed version of a system is released, the release engineers monitor telemetry data and crash logs to track the performance and quality of releases. Several frameworks and applications have been introduced for this.
+
+Are these practices to be classified under dated, state of the art or state of
+the practice? Why?
+The majority of these practices are classified by the paper as state of the practice, but state of the art practices are also mentioned.
+
+What open challenges in release engineering does this publication mention?
+- Branching and merging
+	- No methodology or insight exists on how to empirically validate the best branching structure for a given organization or project, and what results in the smallest amount of merge conflicts.
+	- Release engineers need to pay particular attention to conflicts and incompatibilities caused by evolving library and API dependencies.
+- Building and testing
+	- Speeding up CI might be the major concern of practitioners. This speed up can be achieved through predicting whether a code change will break the build, or by "chunking" code changes into a group and only compile and test each group once.
+	- The concept of "green builds" slowly is becoming an issue, in the sense that frequent triggering of the CI server consumes energy.
+	- Security of the release engineering pipeline in general, and the CI server in particular, also has become a major concern.	
+- Release
+	- Qualitative studies are not only essential to understand the rationale behind quantitative findings, but also to identify design patterns and best practices for build systems.
+		- How can developers make their builds more maintainable and of higher quality?
+		- What refactorings should be performed for which build system anti-patterns?
+	- Identification and resolution of build bugs, i.e., source code or build specification changes that cause build breakage, possibly on a subset of the supported platforms.
+	- Basic tools have a hard time determining what part of the system is necessary to build.
+	- Studies on non-GNU Make build systems are missing.
+	- Apart from identifying bottlenecks, such approaches should also suggest concrete refactorings of the build system specifications or source code.
+- Infrastructure-as-code
+	- Research on differences between infrastructure languages is lacking.
+	- Best practices and design patterns for infrastructure-as-code need to be documented.
+	- Qualitative analysis of infrastructure code will be necessary to understand how developers address different infrastructure needs.
+	- Quantitative analysis of the version control and bug report systems can then help to determine which patterns were beneficial in terms of maintenance effort and/or quality.
+- Deployment
+	- More emperical studies can be done to answer question like this:
+		- Is blue-green deployment the fastest means to deploy a new version of a web app?
+		- Are A/B testing and dark launching worth the investment and risk?
+		- Should one use containers or virtual machines for a medium-sized web app in order to meet application performance and robustness criteria?
+		- If an app is part of a suite of apps built around a common database, should each app be deployed in a different container?
+	- Better tools for quality assurance are required, to prevent showstopper bugs from slipping through and requiring re-deployment of a mobile app version (with corresponding vetting), these include:
+		- Defect prediction (either file- or commit-based)
+		- Smarter/safer update mechanisms
+		- Tools for improving code review
+		- Generating tests
+		- Filtering and interpreting crash reports
+		- Prioritization and triaging of defect reports
+- Release
+	- More research is needed on determining which code change is the perfect one for triggering the release of one of these releases, or whether a canary is good enough to be released to another data centre.
+	- Question such as the following should be investigated:
+		- Should one release on all platforms at the same time? 
+		- In the case of defects, which platform should receive priority? 
+		- Should all platforms use the same version numbering, or should that be feature-dependent?
+		- Research on the continuous delivery and rapid releases from other systems should be explored.
+
+What research gaps does this publication contain?
+As is common with surveys, it does not contain the state of the field today. More quantitive and qualitive research has been done, which can not possibly be included.
+
+Are these research gaps filled by any other publications in this survey?
+An example of further research that expand on this study is @da2016a
+
+## 
+General information: 
+	Name of person extracting data: Nels Numan
+	Date form completed (dd/mm/yyyy): 28/09/2018
+	Publication title: The Impact of Switching to a Rapid Release Cycle on the Integration Delay of Addressed Issues
+	Author information: Daniel Alencar da Costa, Shane McIntosh, Uira Kulesza, Ahmed E. Hassan
+	Journal: 13th Working Conference on Mining Software Repositories (2016)
+	Publication type: Conference paper
+	Type of study: Emperical study
+
+What practices in release engineering does this publication mention?
+To give a context to the study, the paper describes the concept of traditional releases, rapid releases, their differences, and how issue reports are structured.
+
+Are these practices to be classified under dated, state of the art or state of
+the practice? Why?
+State of the practice. The paper describes common practices that were in use at the time of the publication.
+
+What open challenges in release engineering does this publication mention?
+The study mentions that comparing systems with different release structures is difficult since one has to distinguish to what extent the results are due to the release strategy and which are due to intricacies of the systems or organization itself.
+
+What research gaps does this publication contain?
+The main gap in this study is the specificity of the data. Only Mozilla has been considered, and external factors such as other organizational challenges which could have an effect on release time could not be included. More research that looks further into comparing this case to that of other organizations is needed.
+
+Are these research gaps filled by any other publications in this survey?
+
+
+Quantitative research publications:
+	Study start date: Used data starts from 1999
+	Study end date or duration: Used data ends in 2010
+	Population description: The paper describes multiple steps to describe their data collection approach. The paper collected the date and version number of each Firefox release. Tags within the VCS were used to link issue IDs to releases. The paper discards issues that are potential false positives: IDs that have less five digits, issues that refer to tests instead of bugfixes, any potential ID that is the name of a file. Since the commit logs are linked to the VCS tags, the paper is able to link the issue IDs found within these commit logs to the releases that correspond to those tags.
+	Method(s) of recruitment of participants: Firefox release history wiki and VCS logs
+	Sample size: 72114 issue reports from the Firefox system (34673 for traditional releases and 37441 for rapid releases)
+	Evaluation/measurement description: The paper aims to answer three research questions:
+      - Are addressed issues integrated more quickly in rapid releases?
+      Approach: Through beanplots to compare the distributions, the paper first observes the lifetime of the issues of traditional and rapid releases. Next, it looks at the time span of the triaging, fixing, and integration phases within the lifetime of an issue.
+      - Why can traditional releases integrate addressed issues more quickly?
+      Approach: the paper groups traditional and rapid releases into major and minor releases and study their integration delay through beanplots, Mann-Whiteney-Wilcoxon tests, Cliff's delta, and MAD.
+      - Did the change in the release strategy have an impact on the characteristics of delayed issues?
+      Approach: the paper builds linear regression models for both release approaches. The paper firstly estimates the degrees of freedom that can be spent on the models. Secondly, they check for metrics that are highly correlated using Spearman rank correlation tests and perform a redundancy check to remove redundant metrics. The paper then assesses the fit of our models using the ROC area and the Brier score. The ROC area is used to evaluate the degree of discrimination achieved by the model. The Brier score is used to evaluate the accuracy of probabilistic predictions. The used metrics include reporter experience, resolver experience, issue severity, issue priority, project queue rank, number of impacted files and fix time. A full list of metrics can be found in Table 2 of the paper.
+	Outcomes:
+    - Are addressed issues integrated more quickly in rapid releases?
+    Results: There is no significant difference between traditional and rapid releases regarding issue lifetime.
+    Results: 
+    - Why can traditional releases integrate addressed issues more quickly?
+    Results: Minor-traditional releases tend to have less integration delay than major/minor-rapid releases.
+    - Did the change in the release strategy have an impact on the characteristics of delayed issues?
+    Results: The models achieve a Brier score of 0.05- 0.16 and ROC areas of 0.81-0.83. Traditional releases prioritize the integration of backlog issues, while rapid releases prioritize the inte- gration of issues of the current release cycle. 
+	Limitations: Defects in the tools that were developed to perform the data collection and evaluation could have an effect on the outcomes. Furthermore, the way that issue IDs are linked to releases may not represent the total addressed issues per release. The results cannot be generalized as the evaluation was solely done on the Firefox system.
+	Future research: Further research can look into applying the same evaluation strategy to other organizations that switched from traditional to rapid release.
+
+Notes:
+
+## 
+General information:
+  Name of person extracting data: Nels Numan
+  Date form completed (dd/mm/yyyy): 29/09/18
+  Publication title: An Empirical Study of Delays in the Integration of Addressed Issues
+  Author information: Daniel Alencar da Costa, Surafel Lemma Abebe, Shane McIntosh, Uira Kulesza, Ahmed E. Hassan
+  Journal: 2014 IEEE International Conference on Software Maintenance and Evolution
+  Publication type: Conference paper
+  Type of study: Emperical study
+
+What practices in release engineering does this publication mention?
+This publication discusses the usage of issue tracking systems, and what the term issue means to form a context around the study.
+
+Are these practices to be classified under dated, state of the art or state of
+the practice? Why?
+State of the practice.
+
+What open challenges in release engineering does this publication mention?
+The results based on the investigated open source projects may not be generalizable and replication of the study is required on a larger set of projects to form a more general conclusion. Another challenge is finding metrics that are truly correlated with the integration delay of issues.
+What research gaps does this publication contain?
+Please see last question.
+Are these research gaps filled by any other publications in this survey?
+@da2016a
+
+Quantitative research publications:
+  Study start date: 
+  Used data start dates:
+      - ArgoUML: 18/08/2003
+      - Eclipse: 03/11/2003
+      - Firefox: 05/06/2012
+  Used data end dates:
+      - ArgoUML: 15/12/2011
+      - Eclipse: 12/02/2007
+      - Firefox: 04/02/2014  
+  Population description:
+  Method(s) of recruitment of participants: The data was collected from both ITSs and VCSs of the studied systems.
+  Sample size: 20,995 issues from ArgoUML, Eclipse and Firefox projects
+  Evaluation/measurement description:
+      - How long are addressed issues typically delayed by the integration process?
+      Approach: models are created using metrics from four dimensions: reporter, issue, project, and history. Please refer to Table 2 in the paper for all of the metrics considered. The models are trained using the random forest technique. Precision, recall, F-measure, and ROC area are used to evaluate the models.
+  Outcomes:
+      - How long are addressed issues typically delayed by the integration process?
+      Addressed issues are usually delayed in a rapid release cycle. Many delayed issues were addressed well before releases from which they were omitted. Many delayed issues were addressed well before releases from which they were omitted.
+      - Can we accurately predict when an addressed issue will be integrated? 
+      The prediction models achieve a weighted average precision between 0.59 to 0.88 and a recall between 0.62 to 0.88, with ROC areas of above 0.74. The models achieve better F-measure values than Zero-R.
+      - What are the most influential attributes for estimating integration delay? The integrator workload has a bigger influence on integrator delay than the other attributes. Severity and priority have little influence on issue in- tegration delay.
+  Limitations: See open challenges.
+  Future research: See open challenges.
+
+Notes:
+
+## Towards Definitions for Release Engineering and DevOps
+General information:
+  Name of person extracting data: Nels Numan
+  Date form completed (dd/mm/yyyy): 30/09/2018
+  Publication title: Towards Definitions for Release Engineering and DevOps
+  Author information: Andrej Dyck, Ralf Penners, Horst Lichter
+  Journal:
+  Publication type:
+  Type of study: Survey
+
+What practices in release engineering does this publication mention?
+This paper talks about approaches to improve the collaboration between development and IT operations teams, in order to streamline software engineering processes. The paper defines for release engineering and devops.
+
+Are these practices to be classified under dated, state of the art or state of
+the practice? Why?
+Not applicable.
+
+What open challenges in release engineering does this publication mention?
+The paper mentions that creating a definition which is uniform and valid for many situations is difficult to find and that further research is needed.
+
+What research gaps does this publication contain?
+This paper aims to form a uniform definition for release engeneering and devops, in collaboration with experts. It is unclear how many experts were consulted for this definition, and more consultations and research could be done to further improve the definition.
+
+Are these research gaps filled by any other publications in this survey?
+
+Quantitative research publications:
+  Study start date:
+  Study end date or duration:
+  Population description:
+  Method(s) of recruitment of participants:
+  Sample size:
+  Evaluation/measurement description:
+  Outcomes:
+  Limitations:
+  Future research:
+
+Notes:
