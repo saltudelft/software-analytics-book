@@ -21,14 +21,15 @@ have an often unanticipated impact on software studies and because they require
 empirical validation [@adams2016a].
 
 Therefore, this systematic literature review aims to provide an overview of
-the software analytics research that has been conducted so far on release
-engineering. Its main purpose is to identify the apparent gap
+the software analytics research that has been conducted so far on modern
+release engineering.
+Its main purpose is to identify the apparent gap
 between research and practice, in order to guide further research efforts.
 
 ### Research Questions
 
-Contrary to what is regularly the case, with release engineering, practice
-seems to be ahead of research.
+Contrary to what is regularly the case, advances in release engineering
+practices are driven by industry, instead of scientific research.
 Building on this idea, our questions are constructed to identify in which ways
 existing modern release engineering practices should still be studied in
 software analytics research.
@@ -73,8 +74,8 @@ These initial papers were @adams2016a, @da2016a, @da2014a, @khomh2012a, and
 @khomh2015a.
 
 We collected publications using two search engines: Scopus and Google Scholar.
-These each encompass various databases such as ACM Digital Library, Springer,
-IEEE Xplore and ScienceDirect.
+Each of the two search engines comprises several databases such as
+ACM Digital Library, Springer, IEEE Xplore and ScienceDirect.
 The main query that we constructed is displayed in Figure 1.
 The publications found using this query were:
 
@@ -124,10 +125,11 @@ _Figure 1. Query used for retrieving release engineering publications via Scopus
 
 In addition to querying search engines as described above,
 references related to retrieved papers were analyzed.
-For each paper, the review concerned the publications cited by the paper,
-as well as those citing the paper.
-These reference lists were obtained from Google Scholar and from the reference
-lists in the papers themselves.
+These reference lists were obtained from Google Scholar and from the
+_References_ section in the papers themselves.
+We selected all papers on release engineering that are citing or being cited
+by the initial set of papers.
+Using this approach, we have found six additional papers.
 The results of the reference analysis are listed in Table 1.
 
 _Table 1. Papers found indirectly by investigating citations of/by other papers._
@@ -147,8 +149,10 @@ publications were stored centrally, accessible to all reviewers.
 
 ### Study Selection
 
-In the utilized tool for conducting the survey, it is possible to label papers
-with tags and leave comments and ratings.
+We selected the studies that we wanted to include in the survey
+with aid of the aforementioned tool for storing the papers.
+In this tool,
+it is possible to label papers with tags and leave comments and ratings.
 Every paper is reviewed based on the selection criteria.
 Based on this, the tool allowed to filter out all papers
 that appeared not to be relevant for this literature survey.
@@ -169,7 +173,8 @@ the following papers appeared to be irrelevant for the scope of this survey:
 
 Based on @kitchenham2004procedures, the quality of a paper will be assessed
 by the evidence it provides, based on the following scale.
-All levels of quality will be accepted, except for level 5 (expert opinion).
+All levels of quality in this scale will be accepted,
+except for level 5 (evidence obtained from expert opinion).
 
 1. Evidence obtained from at least one properly-designed
    randomised controlled trial.
