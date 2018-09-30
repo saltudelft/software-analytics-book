@@ -215,6 +215,7 @@ of Eclipse, CRAN and NPM packages towards making breaking changes.
 | @Abdalkareem2017 | How to manage and help developers choose the best packages |
 | @Decan2018 | Findings for one ecosystem cannot necessarily be generalized to another |
 | @Decan2018 | Transitive dependencies are very frequent, meaning that package failrues can affect a large number of other packages in the ecosystem |
+| @Jansen2014 | Determing the health of a system from an ecosystem perspective instead of project level is needed to determine which systems to use. This paper provides an initial approach but a lot more research could and should be done to determine system health. |
 
 [^1]: <https://pypi.org/project/pip/>
 [^2]: <https://crates.io/>
