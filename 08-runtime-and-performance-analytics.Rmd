@@ -51,15 +51,47 @@ To answer **RQ1** a more in-depth look at available tools for the energy efficie
 
 Many researchers found that there is increasing demand for energy efficient software. In their research they often propose state of the art approaches to assisting developers. These approaches can be separated into two main categories: tools and guidelines. This section will contain an overview of all state of the art tools and guidelines that satisfy our search criteria [REFERENCE TO METHODOLOGY]. This overview is used to  answer RQ1.
 
-tools
 
---table--
+```{r table-tools, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+require(pander)
+panderOptions('table.split.table', Inf)
+set.caption("Tools")
+my.data <- " 
+  Reference   | Tool                  | Description
+  CA2018      | Leafactor             | Analyze code smells 
+  LWXM2017    | NavyDroid             | Locate energy inefficiencies 
+  KKK2016     | Static analysis tool  | Identify graphical energy bugs
+  SKHA2018    | APOA                  | Compare energy consumption of apps
+  BCBR2017    | Energy Patch          | Detect, validate and repair energy leaks
+  NPPPZL2017B | PETrA                 | Measure energy consumption of apps
+  PSCS2018    | jStanley              | Detect and improve energy bugs in java"
+df <- read.delim(textConnection(my.data),header=FALSE,sep="|",strip.white=TRUE,stringsAsFactors=FALSE)
+names(df) <- unname(as.list(df[1,])) # put headers on
+df <- df[-1,] # remove first row
+row.names(df)<-NULL
+pander(df, style = 'rmarkdown')
+```
 
 Most of the state of the art tools can be classified as performing either measurement of energy consumption or code analysis. Although plenty of such tools have been proposed, with low citation numbers, none of them seem to have had a big influence in the research area. There is, however, the possibility, with growing demand for energy efficiency, that the amount and quality of tools will increase in the near future. 
 
-Guidelines
-
---table--
+```{r table-guidelines, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+require(pander)
+panderOptions('table.split.table', Inf)
+set.caption("Guidelines")
+my.data <- " 
+  MSA2018 | Energy saving coding practices  | Guidelines for energy saving mobile apps
+  CA2017  | Energy saving coding practices  | Evaluating effectiveness of several energy saving practices
+  AKG2015 | Cloud applications  | Guidelines for balancing quality of service and energy consumption
+  BAW2017 | Parameter optimization  | Learn hardware specific energy models
+  MPF2018 & MPF2017 | Cryptography  | Energy consumption of cryptographic primitives
+  BSB2017 | Software structure  | Relate software structural metric to power consumption
+  LH2014  | Energy saving coding practices  | Empirical evaluation of commonly suggested practices"
+df <- read.delim(textConnection(my.data),header=FALSE,sep="|",strip.white=TRUE,stringsAsFactors=FALSE)
+names(df) <- unname(as.list(df[1,])) # put headers on
+df <- df[-1,] # remove first row
+row.names(df)<-NULL
+pander(df, style = 'rmarkdown')
+```
 
 The guidelines presented in these papers aim to either provide general coding practices or they explain how to involve energy efficiency in a specific domain.
 
