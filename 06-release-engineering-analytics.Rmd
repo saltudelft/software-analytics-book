@@ -369,7 +369,7 @@ Quantitative research publications:
 - Future research:
 
 Notes:
-
+-
 
 ### Is it safe to uplift this patch? An empirical study on mozilla firefox
 
@@ -406,9 +406,9 @@ What open challenges in release engineering does this publication mention?
 What research gaps does this publication contain?
 
 - Study aimed to fill two identified gaps identified in literature:
-  - How do urgent patches in rapid release models affect software quality
-    (in terms of fault proneness)?
-  - How can the reliability of the integration of urgent patches be improved?
+    - How do urgent patches in rapid release models affect software quality
+      (in terms of fault proneness)?
+    - How can the reliability of the integration of urgent patches be improved?
 
 Are these research gaps filled by any other publications in this survey?
 
@@ -447,11 +447,11 @@ General information:
 What practices in release engineering does this publication mention?
 
 - Agile release engineering (ARE) practices
-  - Continuous integration (CI)
-  - Continuous delivery (CD)
-  - Rapid Release (RR)
-  - Continuous deployment
-  - DevOps (similar to CD, congruent with release engineering practices)
+    - Continuous integration (CI)
+    - Continuous delivery (CD)
+    - Rapid Release (RR)
+    - Continuous deployment
+    - DevOps (similar to CD, congruent with release engineering practices)
 
 
 Are these practices to be classified under dated,
