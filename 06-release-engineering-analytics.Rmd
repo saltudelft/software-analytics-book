@@ -542,3 +542,59 @@ Quantitative research publications:
   Future research:
 
 Notes:
+
+## Continuous deployment of software intensive products and services: A systematic mapping study
+General information:
+  Name of person extracting data: Nels Numan
+  Date form completed (dd/mm/yyyy): 30/09/18
+  Publication title: Continuous deployment of software intensive products and services: A systematic mapping study
+  Author information: Pilar Rodrígueza, Alireza Haghighatkhaha, Lucy Ellen Lwakatarea, Susanna Teppolab, Tanja Suomalainenb, Juho Eskelib, Teemu Karvonena, Pasi Kuvajaa, June M. Vernerc, Markku Oivoa
+  Journal: 
+  Publication type:
+  Type of study: Semantic study
+
+What practices in release engineering does this publication mention?
+This paper discussed the developments of continuous development over the years until June 2014. This paper has performed a semantic study to identify, classify and analyze primary studies related to continuous development. The paper has found the following major points:
+- Almost all primary studies make reference in one way or another to accelerate the releae cycle by shortening the release cadence and turning it into a continuous flow.
+- Some reviewed publications claim that accelerating the release cycle can make it harder to perform re-engineering activities.
+- CD challenges and changes traditional planning towards continuous planning in order to achieve fast and frequent releases.
+- Tighter integration between planning and execution is required in order to achieve a more holisitic view on planning in CD.
+- It is important for the engineering and QA teams to ensure backward compatibility of enhancements, so that users perceive only improvements rather than experience any loss of functionality.
+- Code change activities tend to focus more on bug fixing and maintenance than functional- ity expansion
+- The architecture must be robust enough to allow the organization to invest its resources in offensive initiatives such as new functionalitity, product enhancements and innovation rather than defensive efforts such as bugfixes.
+- A major challenge in CD is to retain the balance between speed and quality. Some approaches reviewed by this study propose a focus on measuring and monitoring source code and architectural quality.
+- To avoid issues such as duplicated testing efforts and slow feedback loops it is important to make all testing activities transparent to individual developers.
+
+What open challenges in release engineering does this publication mention?
+Continuous and rapid experimentation is an emerging research topic with many possibilities for future work. This is why it's important to keep up with the newly contributed studies and add them to future reviews to compare their findings.
+What research gaps does this publication contain?
+
+Notes:
+
+## Frequent Releases in Open Source Software: A Systematic Review
+General information:
+  Name of person extracting data: Nels Numan
+  Date form completed (dd/mm/yyyy): 30/09/18
+  Publication title: Frequent Releases in Open Source Software: A Systematic Review
+  Author information: Antonio Cesar Brandão Gomes da Silva, Glauco de Figueiredo Carneiro, Fernando Brito e Abreu and Miguel Pessoa Monteiro
+  Journal: Information
+  Publication type: Journal
+  Type of study: Survey
+
+What practices in release engineering does this publication mention?
+This paper discussed the developments of continuous development over the years. This paper has performed a semantic study to identify, classify and analyze primary studies related to continuous development. The paper finds:
+- Two main motivations for the implementation of frequent software releases in the context of OSS projects, which are the project attractiveness/increase of participants and maintenance and increase of market share
+- Four main strategies are adopted by practitioners to implement frequent software releases in the context of OSS projects: time-based release, automated release, test-driven development and continuous delivery/deployment.
+- The main positive points associated to rapid releases are: quick return on customer needs, rapid delivery of new features, quick bug fixes, immediate release security patches, increased efficiency, entry of new collaborators, and greater focus on quality on the part of developers and testers.
+- The main negative points assocaited to rapid releases are reliability of new versions, increase in the "technical debt", pressure felt by employees and community dependence.
+
+Are these practices to be classified under dated, state of the art or state of
+the practice? Why?
+The practices discussed are a combination of state of the art and state of the practice approaches.
+
+What open challenges in release engineering does this publication mention?
+A meta-model for the mining of open source bases in view of gathering data that leads to assessment of the quality of projects adoping the frequent release approach.
+
+What research gaps does this publication contain?
+
+Are these research gaps filled by any other publications in this survey?
