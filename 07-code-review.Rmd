@@ -94,7 +94,7 @@ listed in alphabetical order of the first author's name, and then by publish yea
 | Title                                                                                                                               | Year | Reference                  | In survey? (Y/N) |
 |-------------------------------------------------------------------------------------------------------------------------------------|------|----------------------------|------------------|
 | Expectations, outcomes, and challenges of modern code review                                                                        | 2013 | @bacchelli2013expectations | Y                |
-| Modern code reviews in open-source projects: Which problems do they fix?                                                            | 2014 | @beller2014modern          |                  |
+| Modern code reviews in open-source projects: Which problems do they fix?                                                            | 2014 | @beller2014modern          | Y                |
 | Lessons learned from building and deploying a code review analytics platform                                                        | 2015 | @bird2015lessons           |                  |
 | Design and code inspections to reduce errors in program development                                                                 | 2002 | @fagan2002design           |                  |
 | An exploratory study of the pull-based software development model                                                                   | 2014 | @gousios2014exploratory    |                  |
@@ -129,7 +129,7 @@ year.
 | The influence of non-technical factors on code review                                  | 2013 | @baysal2013influence    |               |                  |
 | Impact of peer code review on peer impression formation: A survey                      | 2013 | @bosu2013impact         |               |                  |
 | Software Reviews: The State of the Practice                                            | 2003 | @ciolkowski2003software |               |                  |
-| Code reviews do not find bugs: how the current code review best practice slows us down | 2015 | @czerwonka2015code      |               |                  |
+| Code reviews do not find bugs: how the current code review best practice slows us down | 2015 | @czerwonka2015code      |  Zequn                    | Y                 |
 
 ## Collected data
 This section contains data collected from all resources included in the survey, according to the
