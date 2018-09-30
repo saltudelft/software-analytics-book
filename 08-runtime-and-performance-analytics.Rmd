@@ -108,9 +108,7 @@ Another comparable recent research paper investigated the energy-delay product (
 E * T^w
 where E is the total energy used to complete a task, T the time and w is a value that represents how important energy saving is with regard to time. The advantage of using this function is that performance is not neglected. The results in the paper show that the programming language should be chosen depending on the task. From these results, it is clear that Java is not performing well when comparing it to other languages as can be seen Table [ref:to table nr].  However, it should be noted that the paper does not test this on actual Android applications but rather the Rosetta Code repository.
 
---image--
-
-[CAPTION under this table should be: Programming Languages Average Weighted EDP Ranking, retrieved from [ref:GKLS2018]
+![Programming Languages Average Weighted EDP Ranking, retrieved from [ref:GKLS2018]](figures/EDPranking.jpeg)
 
 The above two papers are examples of research that suggest that the current state of practice, developing applications in Java only, is not in line with the current state of the art on energy efficiency. In spite of these research papers, developers are still working mostly with Java. One possible explanation is that Java is simply compatible with almost every system due to the JVM. We suggest that further research should investigate why developers are sticking to Java. For example, looking at available libraries, coding difficulty and available tools and knowledge might have a significant impact on this choice.
 
