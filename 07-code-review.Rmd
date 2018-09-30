@@ -106,16 +106,16 @@ described in the search process. They are listed in alphabetical order of the fi
 and then by publish year. Note that as described in the search process section, papers in the
 search are considered in order.
 
-| Title                                                                                                              | Year | Reference                   | In survey? (Y/N) |
-|--------------------------------------------------------------------------------------------------------------------|------|-----------------------------|------------------|
-| Investigating technical and non-technical factors influencing modern code review                                   | 2016 | @baysal2016investigating    |                  |
-| Who should review my code? A file location-based code-reviewer recommendation approach for modern code review      | 2015 | @thongtanunam2015should     |                  |
-| Revisiting code ownership and its relationship with software quality in the scope of modern code review            | 2016 | @thongtanunam2016revisiting |                  |
-| Who should review this change?: Putting text and file location analyses together for more accurate recommendations | 2015 | @xia2015should              |                  |
-| Automatically recommending peer reviewers in modern code review                                                    | 2016 | @zanjani2016automatically   |                  |
-| Four eyes are better than two: On the impact of code reviews on software quality   							     | 2015 | @bavota2015four             |                  |
-| Investigating code review quality: Do people and participation matter?	                                         | 2015 | @kononenko2015investigating |                  |
-| Applying continuous code reviews in airport operations software                                                    | 2012 | @bernhart2012applying       |                  |
+| Title                                                                                                         | Year | Reference                   | Search date | Result number | In survey? (Y/N) |
+|---------------------------------------------------------------------------------------------------------------|------|-----------------------------|-------------|---------------|------------------|
+| Investigating technical and non-technical factors influencing modern code review                              | 2016 | @baysal2016investigating    | 29-09-2018  | 9             |                  |
+| Modern code review                                                                                            | 2010 | @cohen2010modern            | 25-09-2018  | 1             | N                |
+| An empirical study of the impact of modern code review practices on software quality                          | 2016 | @mcintosh2016empirical      | 25-09-2018  | 4             |                  |
+| Reda: A web-based visualization tool for analyzing modern code review dataset                                 | 2014 | @thongtanunam2014reda       | 29-09-2018  | 8             |                  |
+| Who should review my code? A file location-based code-reviewer recommendation approach for modern code review | 2015 | @thongtanunam2015should     | 29-09-2018  | 5             |                  |
+| Revisiting code ownership and its relationship with software quality in the scope of modern code review       | 2016 | @thongtanunam2016revisiting | 29-09-2018  | 6             |                  |
+| Review participation in modern code review                                                                    | 2017 | @thongtanunam2017review     | 29-09-2018  | 10            |                  |
+| Automatically recommending peer reviewers in modern code review                                               | 2016 | @zanjani2016automatically   | 29-09-2018  | 7             |                  |
 
 ### By reference
 The following table lists all candidates that have been found by being referenced by another paper
