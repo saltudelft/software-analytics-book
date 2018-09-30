@@ -2,20 +2,23 @@
 
 ## Motivation
 Minimizing the number of bugs in software is an effort central to software engineering - faulty
-code fails to fullfill the purpose it was written for, its impact ranges from sligthly
+code fails to fulfill the purpose it was written for, its impact ranges from slightly
 embarrassing to disastrous and dangerous, and last but not least - fixing it 
-costs time and money. Resources in a 
-software development lifecycle are almost always limited and therefore should be allocated to where
- they are needed most - in order to avoid bugs, they should be focused on the most fault-prone
- areas of the project. Being able to predict where such areas might be would allow more development and 
+costs time and money. 
+Resources in a software development lifecycles are almost always limited and 
+therefore should be allocated to where  they are needed most - in order to avoid bugs, 
+they should be focused on the most fault-prone areas of the project. 
+Being able to predict where such areas might be would allow more development and 
 testing efforts to be allocated on the right places.
 
 However, as noted in @DAmbros2012, reliably predicting which parts of source code are the most 
-fault-prone is one of the holy-grails of software engineering. Thus it is not surprising that bug-prediction continues
- to garner a widespread research interest in software analytics, now equipped with the 
- ever-expanding toolbox of data-mining and machine learning techniques. In this survey we 
- investigate the current efforts in bug-prediction in the light of the advances in software analytics methods and focus our attention on answering the
-  following research questions:
+fault-prone is one of the holy-grails of software engineering. 
+Thus it is not surprising that bug-prediction continues to 
+garner a widespread research interest in software analytics, 
+now equipped with the ever-expanding toolbox of data-mining and machine learning techniques. 
+In this survey we  investigate the current efforts in bug-prediction 
+in the light of the advances in software analytics methods and 
+focus our attention on answering the following research questions:
 
 * **RQ1** What is the current state of the art in bug prediction?
     More specifically, we aim to answer the following:
@@ -36,7 +39,8 @@ We started by studying the initial 6 seed papers which were selected based on do
 | @Gyimothy2005      | metrics validation | performance of object-oriented metrics |
 | @Catal2009review | literature review | comparison of metrics, methods, datasets |
 | @Arisholm2010  | literature review | comparison of models, metrics, performance measures |
-| @DAmbros2010 | BP performance | benchmark for bug prediction, evaluation of approaches using the benchmark|
+| @DAmbros2010 | BP performance | benchmark for bug prediction, 
+                                  evaluation of approaches using the benchmark|
 | @Hall2012 | literature review | influence of model context, methods, metrics on performance  |
 | @Lewis2013 | case study | BP deployment in industry |
 
@@ -129,7 +133,7 @@ fault-prone over and over.
 
 #### Process metrics
 The other prominent group of metrics are the process metrics which are related to the software 
-developement process and the changes of the software through time. Additional infrastructure has 
+development process and the changes of the software through time. Additional infrastructure has 
 to be in place in order to capture the process features and typically at least a version control 
 system is required. @DAmbros2012 notes one of the rationales for using these metrics in a 
 predictive model - faults are introduced by changes in software and should be studied. 
@@ -275,29 +279,38 @@ Downside is that ASTs is that dynamic programming languages cannot produce stati
 
 ### Evaluations
 
-In order to answer this questions we looked at the scientific papers that benchmark prediction models in any way, 
+In order to answer this questions we looked at the scientific papers that 
+benchmark prediction models in any way, 
 and specifically looked at the way this are evaluated. 
-We found that most papers use a simple yet logical approach to benchmark an algorithm’s performance. 
+We found that most papers use a simple yet logical approach to 
+benchmark an algorithm’s performance. 
 This approach is called Area Under the Curve (commonly referred as AUC), 
-it consists of measuring the area under a curve which is known as Receiver Operating Characteristic (ROC).
+it consists of measuring the area under a curve 
+which is known as Receiver Operating Characteristic (ROC).
 This process graphically draws the relationship between the accuracy, 
-which is the ability of an algorithm to find all existing bug-prone files, 
-and precision, which is how accurate the algorithm is at finding them (optimal would be no false negatives). 
-This approach is used in this papers: @DAmbros2012, @Arisholm2010, @Jiang2008, @Malhotra2015, @Lessman2008. 
+which is the ability of an algorithm to find all existing bug-prone files, and precision, 
+which is how accurate the algorithm is at finding them (optimal would be no false negatives). 
+This approach is used in this papers: 
+@DAmbros2012, @Arisholm2010, @Jiang2008, @Malhotra2015, @Lessman2008. 
 
 Other authors use different methodologies in order to rank the algorithm’s performance. 
-@Jiang2008 focuses solely on how to evaluate the algorithm’s performance, and the researchers used basically the accuracy and precision metrics in numerical and graphical form, 
+@Jiang2008 focuses solely on how to evaluate the algorithm’s performance, 
+and the researchers used basically the accuracy and 
+precision metrics in numerical and graphical form, 
 but they also bring to the table a graphic that helps identify where to spend 
 the project resources in order to get a greater software quality.
 Finally, we came across @DAmbros2010, in which the authors choose to use 
 linear regression in order to qualify the fault-prediction method’s prediction power.
 
-In conclusion, we can see that the most used methodology is AUC, this is because, citing @Lessman2008: 
-“The AUC was recommended as the primary accuracy indicator for comparative studies in software defect prediction 
-since it separates predictive performance from class and cost distributions, 
-which are project-specific characteristics that may be unknown or subject to change.”
+In conclusion, we can see that the most used methodology is AUC, 
+this is because, citing @Lessman2008: “The AUC was recommended as the primary accuracy indicator 
+for comparative studies in software defect prediction since it separates predictive performance 
+from class and cost distributions, which are project-specific characteristics that may be unknown 
+or subject to change.”
 
-It’s also worth noting the interesting conclusion of @Shepperd2014, in which they found that 30 percent of the variance of the algorithm’s performance can be “explained” based on the research group, 
+It’s also worth noting the interesting conclusion of @Shepperd2014, 
+in which they found that 30 percent of the variance of the algorithm’s performance 
+can be “explained” based on the research group, 
 while the variability due to the choice of classifier is very small.
 
 
@@ -322,19 +335,24 @@ Managers can use bug-prone list for quality assurance @kim2007.
 
 ### Actionable tools for developers
 
-The only paper that tackles this question is @Lewis2013, in which they deploy bug predicting software to developers 
+The only paper that tackles this question is @Lewis2013, 
+in which they deploy bug predicting software to developers 
 workspaces and evaluate developers behaviour after and before having the software. 
-In this study they conclude currently, fault-prediction does not provide actionable tools for developers.
+In this study they conclude currently, 
+fault-prediction does not provide actionable tools for developers.
 
-To answer this questions we found no more information in scientific papers, so we had to look outside of the academic world in 
-order to see if this techniques are being used by developers. After some research we concluded that bug-prediction 
-is not currently being used on developers, and we, as in @Lewis2013, think that maybe bug-prediction is supposed 
-to be used for software quality in order to find the places where we should invest the project resources instead 
+To answer this questions we found no more information in scientific papers, 
+so we had to look outside of the academic world in order to see if this techniques are 
+being used by developers. 
+After some research we concluded that bug-prediction is not currently being used on developers, 
+and we, as in @Lewis2013, think that maybe bug-prediction is supposed to be used for software 
+quality in order to find the places where we should invest the project resources instead 
 of helping developers write code without bugs.
 
 ### Open challenges and future work
 
-* The role of developer-related factors in the bug prediction field is still a partially explored area
+* The role of developer-related factors in the bug prediction field 
+  is still a partially explored area
 * Still no strong conclusions - process metrics were found to perform better, but are more 
   expensive to obtain. Then again, code metrics have high stasis and might result in stale models. 
 * Defect prediction is a field where external validity is very hard to achieve
