@@ -93,7 +93,7 @@ listed in alphabetical order of the first author's name, and then by publish yea
 
 | Title                                                                                                                               | Year | Reference                  | In survey? (Y/N) |
 |-------------------------------------------------------------------------------------------------------------------------------------|------|----------------------------|------------------|
-| Expectations, outcomes, and challenges of modern code review                                                                        | 2013 | @bacchelli2013expectations |                  |
+| Expectations, outcomes, and challenges of modern code review                                                                        | 2013 | @bacchelli2013expectations | Y                |
 | Modern code reviews in open-source projects: Which problems do they fix?                                                            | 2014 | @beller2014modern          |                  |
 | Lessons learned from building and deploying a code review analytics platform                                                        | 2015 | @bird2015lessons           |                  |
 | Design and code inspections to reduce errors in program development                                                                 | 2002 | @fagan2002design           |                  |
