@@ -22,16 +22,21 @@ build systems. This information is often paired with data from version control s
 In order to get a complete view of the current state of the build analytics field we ask the
 following research questions.
 
- * **RQ1** What is the current state of the art in the field of build analytics?
+**RQ1**: What is the current state of the art in the field of build analytics?
 <!--
   - Topics that are being explored
   - Research methods, tools and datasets being used
   - Main research findings, aggregated -->
- * **RQ2** What is the current state of practice in the field of build analytics?
+**RQ2**: What is the current state of practice in the field of build analytics?
 <!--
   - Tools and companies creating / employing them
   - Case studies and their findings -->
- * **RQ3** What future research can we expect in the field of build analytics?
+
+**RQ3**: What future research can we expect in the field of build analytics?
+
+In this section we will explore where new challenges lie in the field of build analytics. We will
+also show what open research items are described in the papers. This section ends with research
+questions based on the open research and challenges in current research.
 
 ## Research protocol
 
