@@ -313,6 +313,423 @@ iteratively and planned for four weekly milestones.
 
 <!-- TODO Maarten -->
 
-<!-- TODO Jesse -->
+### Kanbanize the release engineering process
+
+Reference: @kerzazi2013a
+
+General information:
+
+- Name of person extracting data: Jesse Tilro
+- Date form completed: 29-09-2018
+- Author information: Kerzazi, N. and Robillard, P.N.
+- Publication type: Paper in Conference Proceedings
+- Journal: 2013 1st International Workshop on Release Engineering, RELENG 2013 -
+  Proceedings
+- Type of study: Action research
+
+What practices in release engineering does this publication mention?
+
+- Following principles of the Kanban agile software development life-cycle model
+  that implicitly describe the release process
+- (Switching to) more frequent (daily) release cycles
+- (Transitioning to) a structured release process
+
+Are these practices to be classified under dated,
+state of the art or state of the practice? Why?
+
+- Either dated or state of the practice, not sure. Would have to do some
+  additional research on the adoption of Kanban
+
+What open challenges in release engineering does this publication mention?
+
+- Release effectiveness: minimize system failure and customer impact
+- Problems with releasing encountered in practice
+    - **TODO** list problems if of interest
+
+What research gaps does this publication contain?
+
+-
+
+Are these research gaps filled by any other publications in this survey?
+
+-
+
+Quantitative research publications:
+
+- Study start date:
+- Study end date or duration:
+- Population description:
+- Method(s) of recruitment of participants:
+- Sample size:
+- Evaluation/measurement description:
+- Outcomes:
+    1.
+- Limitations:
+    -
+- Future research:
+
+Notes:
+
+-
+
+### Is it safe to uplift this patch? An empirical study on mozilla firefox
+
+Reference: @castelluccio2017a
+
+General information:
+
+- Name of person extracting data: Jesse Tilro
+- Date form completed: 29-09-2018
+- Author information: Castelluccio, M. and An, L. and Khomh, F.
+- Publication type: Paper in Conference Proceedings
+- Journal: Proceedings - 2017 IEEE International Conference on Software Maintenance and Evolution, ICSME 2017
+- Type of study: Case study, both quantitative (data analysis) and qualitative
+  (interviews)
+
+What practices in release engineering does this publication mention?
+
+- Patch uplift (meaning the promotion of patches from development directly
+  to a stabilization channel, potentially skipping several channels)
+
+Are these practices to be classified under dated,
+state of the art or state of the practice? Why?
+
+- State of the practice: case study of what is being done in the field,
+  quite recently (2017).
+
+What open challenges in release engineering does this publication mention?
+
+- Exploring possibilities to leverage this research by building classifiers
+  capable of automatically assessing the risk associated with patch uplift
+  candidates and recommend patches that can be uplifted safely.
+- Validate and extend results of this study for generalizability.
+
+What research gaps does this publication contain?
+
+- Study aimed to fill two identified gaps identified in literature:
+    - How do urgent patches in rapid release models affect software quality
+      (in terms of fault proneness)?
+    - How can the reliability of the integration of urgent patches be improved?
+
+Are these research gaps filled by any other publications in this survey?
+
+- The paper itself
+
+Quantitative research publications:
+
+- Study start date:
+- Study end date or duration:
+- Population description:
+- Method(s) of recruitment of participants:
+- Sample size:
+- Evaluation/measurement description:
+- Outcomes:
+    1.
+- Limitations:
+- Future research:
+
+Notes:
+
+-
+
+### Systematic literature review on the impacts of agile release engineering practices
+
+Reference: @karvonen2017a
+
+General information:
+
+- Name of person extracting data: Jesse Tilro
+- Date form completed: 29-09-2018
+- Author information: Karvonen, T. and Behutiye, W. and Oivo, M. and Kuvaja, P.
+- Publication type: Journal/Magazine Article
+- Journal: Information and Software Technology
+- Type of study: Systematic literature review
+
+What practices in release engineering does this publication mention?
+
+- Agile release engineering (ARE) practices
+    - Continuous integration (CI)
+    - Continuous delivery (CD)
+    - Rapid Release (RR)
+    - Continuous deployment
+    - DevOps (similar to CD, congruent with release engineering practices)
+
+
+Are these practices to be classified under dated,
+state of the art or state of the practice? Why?
+
+- State of the art, for it concerns a state of the art report and was published
+  recently (2017).
+
+What open challenges in release engineering does this publication mention?
+
+- Claims that modern release engineering practices allow for software
+  to be delivered faster and cheaper should be further empirically validated.
+- This analysis could be extended with industry case studies, to develop a
+  checklist for analyzing company and ecosystem readiness for continuous
+  delivery and continuous deployment.
+- The comprehensive reporting of the context and how the practice is
+  implemented instead of merely referring to usage of the practice should be
+  considered by future research.
+- Different stakeholders' points of view, such as customer perceptions regarding
+  practices require further research.
+- Research on DevOps would be highly relevant for release engineering and the
+  continuous software engineering research domain.
+- Future research on the impact of RE practices could benefit from more
+  extensive use of quantitative methodologies from case studies, and the
+  combination of quantitative with qualitative (e.g. interviews) methods.
+
+What research gaps does this publication contain?
+
+- Refer to challenges
+
+Are these research gaps filled by any other publications in this survey?
+
+- **TODO**
+
+Quantitative research publications:
+
+- Study start date: N/A
+- Study end date or duration: N/A
+- Population description: N/A
+- Method(s) of recruitment of participants: N/A
+- Sample size: N/A
+- Evaluation/measurement description: N/A
+- Outcomes: N/A
+- Limitations: N/A
+- Future research: N/A
+
+Notes:
+
+-
+
+### Abnormal Working Hours: Effect of Rapid Releases and Implications to Work Content
+
+Reference: @claes2017a
+
+General information:
+
+- Name of person extracting data: Jesse Tilro
+- Date form completed: 29-09-2018
+- Author information: Claes, M. and Mantyla, M. and Kuutila, M. and Adams, B.
+- Publication type: Paper in Conference Proceedings
+- Journal: IEEE International Working Conference on Mining Software Repositories
+- Type of study: Quantitative case study
+
+What practices in release engineering does this publication mention?
+
+- Faster release cycles
+
+Are these practices to be classified under dated,
+state of the art or state of the practice? Why?
+
+-
+
+What open challenges in release engineering does this publication mention?
+
+- Future research might further study the impact of time pressure and work
+  patterns - indirectly release practices - on software developers.
+
+What research gaps does this publication contain?
+
+-
+
+Are these research gaps filled by any other publications in this survey?
+
+-
+
+Quantitative research publications:
+
+- Study start date: first data item 2012-12-21
+- Study end date or duration: last data item 2016-01-03
+- Population description: N/A
+- Method(s) of recruitment of participants: N/A
+- Sample size: 145691 bug tracker contributors (1.8% timezone), 11.11 million
+  comments (53% author with timezone)
+- Evaluation/measurement description: measure distributions on number of
+  comments per day of the week and time of the day, before and after transition
+  to rapid release cycles. Test distribution difference using Mann-Whitney U
+  test and test effect size using Cohen's d and Cliff's delta.
+  Also evaluate general development of number of comments, working day against
+  weekend and day against night.
+- Outcomes:
+    1.  Switching to rapid releases has reduced the amount of work performed
+        outside of office hours. (Supported by results in psychology.)
+    2.  Thus, rapid release cycles seem to have a positive effect on
+        occupational health.
+    3.  Comments posted during the weekend contained more technical terms.
+    4.  Comments posted during weekdays contained more positive and polite
+        vocabulary.
+- Limitations:
+- Future research:
+
+Notes:
+
+-
+
+### Does the release cycle of a library project influence when it is adopted by a client project?
+
+Reference: @fujibayashi2017a
+
+General information:
+
+- Name of person extracting data: Jesse Tilro
+- Date form completed: 29-09-2018
+- Author information: Fujibayashi, D. and Ihara, A. and Suwa, H. and Kula, R.G. and Matsumoto, K.
+- Publication type: Paper in Conference Proceedings
+- Journal: SANER 2017 - 24th IEEE International Conference on Software Analysis, Evolution, and Reengineering
+- Type of study: Quantitative study
+
+What practices in release engineering does this publication mention?
+
+- Rapid release cycles
+
+Are these practices to be classified under dated,
+state of the art or state of the practice? Why?
+
+- State of the art and practice: practitioners currently practice it,
+  researchers currently research it.
+
+What open challenges in release engineering does this publication mention?
+
+- Gaining an understanding of the effect of a library's release cycle on its
+  adoption.
+
+What research gaps does this publication contain?
+
+- First step towards solving the above challenge.
+
+Are these research gaps filled by any other publications in this survey?
+
+- This paper
+
+Quantitative research publications:
+
+- Study start date: 21-07-2016 (data extraction)
+- Study end date or duration:
+- Population description:
+- Method(s) of recruitment of participants:
+- Sample size: 23 libraries, 415 client projects
+- Evaluation/measurement description:
+  - Scott-Knott test to group libraries with similar release cycle.
+- Outcomes:
+    1.  There is a relationship between release cycle of a library project
+        and the time for clients to adopt it: quicker release seems to be
+        associated with quicker adoption.
+
+- Limitations:
+    - Small sample size
+    - Not controlled for many factors
+    - No statistical significance tests?
+- Future research:
+
+Notes:
+
+- Very short, probably not very strong evidence, refer to limitations
+- Nice that the focus is libraries here, very interesting population because
+  most studies focus on end-user targeting software systems
+
+### Rapid releases and patch backouts: A software analytics approach
+
+Reference: @souza2015a
+
+General information:
+
+- Name of person extracting data: Jesse Tilro
+- Date form completed: 29-09-2018
+- Author information: Souza, R. and Chavez, C. and Bittencourt, R.A.
+- Publication type: Journal/Magazine Article
+- Journal: IEEE Software
+- Type of study: Quantitative
+
+What practices in release engineering does this publication mention?
+
+-
+
+Are these practices to be classified under dated,
+state of the art or state of the practice? Why?
+
+-
+
+What open challenges in release engineering does this publication mention?
+
+- How rapid release cycles affect code integration
+
+What research gaps does this publication contain?
+
+-
+
+Are these research gaps filled by any other publications in this survey?
+
+-
+
+Quantitative research publications:
+
+- Study start date:
+- Study end date or duration:
+- Population description:
+- Method(s) of recruitment of participants:
+- Sample size:
+- Evaluation/measurement description:
+- Outcomes:
+    1.
+- Limitations:
+- Future research:
+
+Notes:
+
+- Also reviews existing literature very well
+
+### Comparison of release engineering practices in a large mature company and a startup
+
+Reference: @laukkanen2018a
+
+General information:
+
+- Name of person extracting data: Jesse Tilro
+- Date form completed: 29-09-2018
+- Author information: Laukkanen, E. and Paasivaara, M. and Itkonen, J. and Lassenius, C.
+- Publication type: Journal/Magazine Article
+- Journal: Empirical Software Engineering
+- Type of study:
+
+What practices in release engineering does this publication mention?
+
+-
+
+Are these practices to be classified under dated,
+state of the art or state of the practice? Why?
+
+-
+
+What open challenges in release engineering does this publication mention?
+
+-
+
+What research gaps does this publication contain?
+
+-
+
+Are these research gaps filled by any other publications in this survey?
+
+-
+
+Quantitative research publications:
+
+- Study start date:
+- Study end date or duration:
+- Population description:
+- Method(s) of recruitment of participants:
+- Sample size:
+- Evaluation/measurement description:
+- Outcomes:
+    1.
+- Limitations:
+    -
+- Future research:
+
+Notes:
+
+-
 
 <!-- TODO Nels -->
