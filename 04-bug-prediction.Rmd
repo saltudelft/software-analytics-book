@@ -62,3 +62,108 @@ _Table 1. Papers found by investigating the authors of other papers._
 
 ## Answers
 
+## RQ 1.2: What kind prediction models are predominantly used?
+In the section below we will show different models presented by several studies.
+
+### Static predictors
+Many older bug-prediction methods [insert refs] use the static code for bug prediction,
+these methods argue that complex code is more diffucult to change and 
+therefor introduces more bugs.
+
+### Code changes
+Predictors based on code changes argue that code changes induce bugs.
+And as it turns out, methods based on code modifications clearly outperform
+static prediction methods @Moser2008.
+
+#### History Complexity Metric (HCM) @hassan2009
+Files that are modified during periods of high change complexity will contain more faults.
+Developers changing code during these periods will make mistakes,
+because they probably will not be aware of the current state of the code.
+
+Useful in practice because companies may not have a full bug history,
+while they probably do have history of code changes.
+
+Outperforms models based on prior faults, 15-38% decrease in prediction errors @hassan2009.
+However, @DAmbros2010 contradicts this statement.
+
+### Prior faults
+Methods based on prior faults argue that files which in the past contained faults will
+probably have more faults in the future.
+It is shown that predictors based on previous bugs show better results than 
+predictors based on code changes @rahman2011.
+
+#### FixCache @kim2007
+Maintains a fixed-size cache of files that are most likely to contain bugs.
+Files are added to cache if it meets one of the locality criteria, which are:
+
+* Churn locality: if a file is recently modified it is likely to contain faults
+* Temporal locality: if a file contains a fault, it is more likely to contain more faults
+* Spatial locality: files that change alongside faulty files are more likely to contain faults
+
+If the cache if full the least recently used file is removed from the cache.
+The size of the cache is set at 10% of all files.
+Hit rate of about 73-95% at file level, 46-72% at method level.
+
+#### Rahman @rahman2011
+The Rahman algorithm is based on the FixCache algorithm,
+in their research they found that the temporal locality was by far the most influential factor.
+The Rahman algorithm is thus implemented based solely on that factor.
+
+#### Time-weighted risk algorithm @Lewis2013
+An algorithm based on the Rahman algorithm,
+it includes a weight factor based on how old a commit is, 
+older bug fixing commits have less impact on the overall bug-proneness of the file.
+Instead of showing top 10% of bug-prone files, this shows the top 20 files.
+
+### Other methods
+Besides the more obvious reasonings listed above there are some other possible methods for bug
+prediction.
+
+#### Developer centered
+@DiNucci2018 proposed a method based on the scattering of changes made by a developer.
+These scattering is defined by:
+
+* Structural scattering: based on amount of different components worked on (e.g. packages)
+* Semantic scattering: based on the textual difference between classes 
+  (i.e. classes which have similar behaviour are textually similar)
+
+Developer experience has no clear correlation with how much faults they introduce @rahman2011.
+
+#### Machine learning
+With machine learning methods bugs can be predicted by software tools,
+these tools train on the code base, code history and other logs.
+
+Machine learning is also useful for reducing the amount of metrics used for 
+bug prediction @shivaji2009.
+
+Downside is that these methods give little insights in why a component is bug-prone @Lewis2013.
+
+Another downside is that this doesn't work for new projects since cross-project
+defect prediction does not yet give good results @zimmermann2009.
+
+@Shepperd2014
+
+#### Analysis on Abstract Syntax Trees
+Because ASTs give a more high-level description of the syntax of a program
+it could give more useful insights for bug-prediction than other analysis methods.
+
+@wang2016 uses ASTs in combination with a machine learning approach for bug prediction.
+They also mention that using features from ASTs improves cross-project prediction.
+
+Downside is that ASTs is that dynamic programming languages cannot produce static ASTs.
+
+## RQ 2.1: Are bug prediction techniques applied in practice and if so, how?
+No significant effect on developers @Lewis2013.
+Managers can use bug-prone list for quality assurance @kim2007.
+
+### Practical problems
+
+* Obvious reasoning @Lewis2013
+* Bias towards the new @Lewis2013
+* Actionable messages @Lewis2013
+* Noise problem @Kim2011
+* Granularity: Most methods we found work on a class- or file-based granularity, 
+  having a lower level of granularity could improve the usefulness of the prediction for 
+  developers @giger2012
+* Scalability @Lewis2013
+
