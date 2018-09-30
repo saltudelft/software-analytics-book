@@ -248,30 +248,41 @@ of around 40% that could be better improved.
 
 ## What is the current state of practice in the field of build analytics?
 
-In this section, I will examine scientific papers to analyse the current trend of build analytics in the software development industry. 
+In this section, I will examine scientific papers to analyse the current trend of build analytics
+in the software development industry. 
 
 ### @fowler2006continuous
 
-In this paper, Martin talks about the current state of the software industry in terms of Continuous Integration (CI) and comments on the practises required to implement CI effectively. He talks about his experience working for a large English electronics company where the development of a project took two years and the integration process took several months. Integration is a long and unpredictable process. Martin suggested this approach and that the two most common reactions he got were: “it can’t work (here)” or “doing it won’t make much difference”.  He expresses that most engineers don’t know how simple the process can be of setting the CI framework up. In this way, we get a glimpse into the practises popular within the industry regarding build analytics.
+In this paper, Martin talks about the current state of the software industry in terms of Continuous
+Integration (CI) and comments on the practises required to implement CI effectively. He talks about
+his experience working for a large English electronics company where the development of a project
+took two years and the integration process took several months. Integration is a long and
+unpredictable process. Martin suggested this approach and that the two most common reactions he got
+were: “it can’t work (here)” or “doing it won’t make much difference”.  He expresses that most
+engineers don’t know how simple the process can be of setting the CI framework up. In this way, we
+get a glimpse into the practises popular within the industry regarding build analytics.
 
 ### @hilton2016usage
 
-This paper examines the usage, costs and benefits of Continuous Integration. A survey conducted in open-source projects indicated that 40% of all projects used CI. Of the projects that used CI, 90% used Travis for their CI services. They also determine that the more popular projects use CI but there is no correlation between the popularity of language and usage of CI. It also observes that the median project introduces CI a year into development. The paper claims that CI is widely used in practise nowadays and CI adoption rates will increase even further in the future. 
+This paper examines the usage, costs and benefits of Continuous Integration. A survey conducted in
+open-source projects indicated that 40% of all projects used CI. Of the projects that used CI, 90%
+used Travis for their CI services. They also determine that the more popular projects use CI but
+there is no correlation between the popularity of language and usage of CI. It also observes that
+the median project introduces CI a year into development. The paper claims that CI is widely used
+in practise nowadays and CI adoption rates will increase even further in the future. 
 
 ### @rausch2017empirical
 
-Version Control Systems (VCS) such as GitHub, and hosted build automation platforms such as Travis, have made Continuous Integration is widely available for projects of every size. This paper suggests that CI is widely used and has improved the quality of processes and developed software itself. However, the article suggests that there is little known about the variety and frequency of errors that cause builds to fail. It suggests that developers should eliminate flaky tests and address common issues regularly such as broken interaction with repositories to keep the build system healthy.
+Version Control Systems (VCS) such as GitHub, and hosted build automation platforms such as Travis,
+have made Continuous Integration is widely available for projects of every size. This paper
+suggests that CI is widely used and has improved the quality of processes and developed software
+itself. However, the article suggests that there is little known about the variety and frequency of
+errors that cause builds to fail. It suggests that developers should eliminate flaky tests and
+address common issues regularly such as broken interaction with repositories to keep the build
+system healthy.
 
 ### @stolberg2009enabling
 
-This paper defines CI as a key element in agile software development and testing environment. It also uses Marin Fowler’s practises of CI (as discussed previously) and expresses the importance of CI in the software industry.  
-
-## What future research can we expect in the field of build analytics?
-
-Future research in build analytics branches in a couple of different topics. @pinto2018work
-proposes to focus on getting a better understanding of the users and why they might choose to
-abandon an automatic build platform.
-
-According to @baltes2018no future work could look into more perspectives when analyzing commit
-data, for instance partitioning commits by developer. It also notes the importance of more
-qualitative research.
+This paper defines CI as a key element in agile software development and testing environment. It
+also uses Marin Fowler’s practises of CI (as discussed previously) and expresses the importance of
+CI in the software industry.  
