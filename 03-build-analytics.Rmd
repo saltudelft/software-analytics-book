@@ -13,10 +13,8 @@ development practice in many projects.
  - Define build
  - Define context
  -->
-
-## Research Questions
-
-<!-- Subject to change -->
+ 
+In order to get a complete view of the current state of the build analytics field we ask the following research questions.
 
  * **RQ1** What is the current state of the art in the field of build analytics?
 <!--
@@ -25,14 +23,9 @@ development practice in many projects.
   - Main research findings, aggregated -->
  * **RQ2** What is the current state of practice in the field of build analytics?
 <!--
-  - Topics that are being explored
-  - Research methods, tools and datasets being used
-  - Main research findings, aggregated -->
+  - Tools and companies creating / employing them
+  - Case studies and their findings -->
  * **RQ3** What future research can we expect in the field of build analytics?
-<!--
-  - Topics that are being explored
-  - Research methods, tools and datasets being used
-  - Main research findings, aggregated -->
 
 ## Research protocol
 
