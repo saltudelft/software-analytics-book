@@ -369,6 +369,7 @@ Quantitative research publications:
 - Future research:
 
 Notes:
+
 -
 
 ### Is it safe to uplift this patch? An empirical study on mozilla firefox
@@ -425,10 +426,10 @@ Quantitative research publications:
 - Outcomes:
     1.
 - Limitations:
-    -
 - Future research:
 
 Notes:
+
 -
 
 ### Systematic literature review on the impacts of agile release engineering practices
@@ -499,6 +500,7 @@ Quantitative research publications:
 - Future research: N/A
 
 Notes:
+
 -
 
 ### Abnormal Working Hours: Effect of Rapid Releases and Implications to Work Content
@@ -559,10 +561,10 @@ Quantitative research publications:
     4.  Comments posted during weekdays contained more positive and polite
         vocabulary.
 - Limitations:
-    -
 - Future research:
 
 Notes:
+
 -
 
 ### Does the release cycle of a library project influence when it is adopted by a client project?
@@ -622,6 +624,7 @@ Quantitative research publications:
 - Future research:
 
 Notes:
+
 - Very short, probably not very strong evidence, refer to limitations
 - Nice that the focus is libraries here, very interesting population because
   most studies focus on end-user targeting software systems
@@ -671,10 +674,10 @@ Quantitative research publications:
 - Outcomes:
     1.
 - Limitations:
-    -
 - Future research:
 
 Notes:
+
 - Also reviews existing literature very well
 
 ### Comparison of release engineering practices in a large mature company and a startup
@@ -726,6 +729,7 @@ Quantitative research publications:
 - Future research:
 
 Notes:
+
 -
 
 <!-- TODO Nels -->
