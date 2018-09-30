@@ -113,6 +113,9 @@ search are considered in order.
 | Revisiting code ownership and its relationship with software quality in the scope of modern code review            | 2016 | @thongtanunam2016revisiting |                  |
 | Who should review this change?: Putting text and file location analyses together for more accurate recommendations | 2015 | @xia2015should              |                  |
 | Automatically recommending peer reviewers in modern code review                                                    | 2016 | @zanjani2016automatically   |                  |
+| Four eyes are better than two: On the impact of code reviews on software quality   							     | 2015 | @bavota2015four             |                  |
+| Investigating code review quality: Do people and participation matter?	                                         | 2015 | @kononenko2015investigating |                  |
+| Applying continuous code reviews in airport operations software                                                    | 2012 | @bernhart2012applying       |                  |
 
 ### By reference
 The following table lists all candidates that have been found by being referenced by another paper
