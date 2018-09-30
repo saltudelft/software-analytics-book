@@ -62,10 +62,30 @@ software repositories, open-source software.
     - Case studies and their findings -->
 
 **RQ3**:
-<!--
-    - List of challenges
-    - An aggregated set of open research items, as described in the papers
-    - Research questions that emerge from the synthesis of the presented works -->
+<!-- List of challenges -->
+
+Currently research on build analytics is limited by some challenges, some are specific to
+build analytics and some are applicable to the entire field of software engineering.
+
+In @bisong2017built the main limitation was the performance of the machine learning algorithm used.
+In the implementation R was used and it proved not capable of processing the amounts of data
+needed. This shows that it is important to choose the right tool when analyzing data.
+
+<!-- An aggregated set of open research items, as described in the papers -->
+
+Future research in build analytics branches in a couple of different topics. @pinto2018work
+proposes to focus on getting a better understanding of the users and why they might choose to
+abandon an automatic build platform.
+
+According to @baltes2018no future work could look into more perspectives when analyzing commit
+data, for instance partitioning commits by developer. It also notes the importance of more
+qualitative research.
+
+ * (@zhao2017impact) How do teams change their pull request review practices in response to the
+ introduction of continuous integration?
+ * 
+
+<!-- Research questions that emerge from the synthesis of the presented works -->
 
 <!-- Below you can find the foundation laid in week 1 & 2, this is to be restructured into answers to research questions or additional information below research questions. -->
 
