@@ -59,6 +59,13 @@ software repositories, open-source software.
 ## Answers
 
 **RQ1**: 
+The current state-of-the-art in build analytics domain refers to the use of machine learning techniques
+to increase the productivity when using Continuos Integration (CI), to generate contraints on the 
+configuration of the CI that could improve build success rate and to predict build failures even for 
+newer projects with less training data available.
+
+
+
 <!--
     - Topics that are being explored
     - Research methods, tools and datasets being used
