@@ -350,6 +350,56 @@ Test case analytics: Mining test case traces to improve risk-driven testing (@no
 ##Answers
 
 ###How do developers currently test?
+####How do we test?
+In order to get some sense of the quality of an application, developers can apply different
+methods. For the quality of code or the quality of testing different metrics can be used, of which
+on of the most popular metric is the code coverage metric. Alternatives are, for example,
+acceptance tests, the number of defects in the last week, or defects per Line of Code (LOC)
+[@GAROUSI20131354]. Code coverage might not be the best indicator for the extensiveness of testing,
+as according to @Beller:2015:DT:2819009.2819101 a code coverage 75% can possibly be reached with
+only spending less than a tenth of the total development time on testing. This might also have to
+do something with treating the metric, where developers try to uplift the value of code coverage by
+hitting many lines with only a few test cases. It could also be the case that tests are too simple.
+In @marsavina2014 it was observed that test cases were rarely updated when changes related to
+attributes or methods in the production code were made. Possible explanations for this are that
+these changes were not significant or the tests were too simple and were likely to pass. This also
+fits with the findings of @ROMANO201764, where they claim that "[d]evelopers write quick-and-dirty
+production code to pass the tests, do not update their tests often, and ignore refactoring."
+Besides older tests rarely being updated for changed code, it was also observed by
+@pinto2012understanding that a significant number of new tests that are added, were not necessarily
+added to cover new code but rather to exercise the changed parts of the code after the program is
+modified. This finding fits with the observation of @marsavina2014, who found whenever numerous
+condition related changes are conducted in the production code base, test cases are created or
+deleted in order to address the modified branches. Older production code lines, therefore, may stay
+untouched by any test cases. Lines uncovered by any code coverage tool should be indicated and
+signaled to the developer, whereas the most commonly used coverage metrics are branch coverage and
+conditional coverage [@GAROUSI20131354]. As both branch coverage and conditional coverage require
+multiple different conditions for if-statements, it may possibly be that the absolute number of
+missed lines of production code by tests is very low.
+
+####Co-evolution
+In a case study conducted by @zaidman2011studying, there was no evidence found for an increased
+activity of testing before a release. However, they were capable of detecting periods of increased
+test writing activity. These increased activities of writing test cases were found to be after
+longer periods of writing production code [@zaidman2011studying]. With a longer timespan of not
+writing tests, it can be concluded for these cases that the production code and test code do not
+gracefully co-evolve [@zaidman2011studying; @marsavina2014]. 
+
+####Test-Driven Development (TDD)
+Different definitions for TDD were used across different documents. According to
+@zaidman2011studying, evidence of TDD was found where test code was committed alongside production
+code, meaning that the methodology of TDD is used when production code was written before the
+respective test code. This is in contrast with the originally proposed constraint by @beck2003test,
+where a line of production code should only be written after a failing automated test was written
+in advance. The confusion for the definition of TDD can also be traced back by the finding of
+@beller2015, where programmers who claim they practice TDD neither follow it strictly nor do they
+practice it for all of their modification. A survey conveyed by @GAROUSI20131354 on 196 respondents
+(amongst them managers and developers) indicated that with a ratio of 3:1 use Test-last development
+and Test-driven development respectively. This found ratio is in contrast with the numbers found by
+@beller2015; only 1.7% of the developers followed seem to follow the strict TDD definition, where
+even most of these developers only practice this strict definition in less than 20% of their time.
+However, it must be mentioned that the survey done by @GAROUSI20131354 only surveyed the subjects,
+which allows the confusion for the definition of TDD to play a major role in the results found.
 
 
 ###What state of the art technologies are being used?
@@ -405,7 +455,7 @@ developer can start fixing the faulty code right away.
 ###What future developments can be expected?  
 
 
-**Co-evolution and test generation**  
+####Co-evolution and test generation  
 For understanding how test- and production code co-evolve and how tests can be generated to support
 developers, studies have been conducted (@pinto2012understanding, @marsavina2014,
 @zaidman2011studying), additionally a tool has been made in order to analyze and, consequently,
@@ -421,9 +471,9 @@ for which automated approaches reduce the pressure on developers. Shamshiri et a
 generating realistic tests and that the effectivity of developers writing manual tests is equal
 to developers using automatically generated tests. They, therefore, call for the use of more
 realistic tests. This suggests that automated test generation is still a topic of interest, which
-will consequently likely be researched in order to find a way to generate realistic tests.  
+will consequently likely be researched in order to find a way to generate realistic tests. 
 
-**Risk-driven testing**  
+####Risk-driven testing####
 Risk-driven testing has been receiving attention recently. Researchers have been looking for
 methods that can either detect potential risks within the same project (@noor2015test, 
 @hemmati2018
@@ -439,7 +489,7 @@ the same project and cross-project prediction. Given the currently researched te
 history based implementations, it's like that these techniques will be subject to further research
 later on.  
 
-**Testing practices**  
+####Testing practices
 Research various papers (@GAROUSI20131354, @beller2017developer, @beller2015) has indicated
 that testing of any
 form is not as widely practiced as the status quo suggests. How the current state of the practice
