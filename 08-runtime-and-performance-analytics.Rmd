@@ -7,15 +7,23 @@ cover the entire field because it is too broad. Using Kitchenham’s method
 For inspiration, we started reading five recent papers on runtime and performance analytics
 published at top conferences. These five were selected because the papers handle the software side
 of performance and runtime analytics which is more in line with the other chapters of this book.
-However, focussing on only software, the field is still very broad. Currently, we are leaning
-towards a focus on performance and runtime analytics literature regarding the Android platform.
-As we still are at the start of this research, we might deviate from this initial focus.
+However, focussing on only software, the field is still very broad. We have chosen to focus on the field of performance vs. Energy consumption. This chioce was made due to it being a very current and thriving domain within Runtime and performance analysis.
 
-We have gathered a few other papers (excluding the five initial papers) to find out if this field
-is suited for this survey. These papers can be found in Figure INSERT FIGURE NUMBER HERE.
-To get relevant papers, we used the following keywords: Android, performance, runtime, reliability,
-synchronization, security, monitoring. Furthermore, we only retrieved papers published at top
-venues, which we list here:
+## Introduction
+Energy consumption plays a big role in day-to-day usage of software. Especially in the field of software development for mobile devices, for which energy consumption results in a negative effect on the battery duration and hence limiting the usage time of the device. Although the importance of energy efficient software is clear, programmers lack the knowledge of the best practices to reduce software energy consumption, and education is not focused on this field either [ref:PHA2016]. In an analysis of questions posted on StackOverflow on the topic of energy efficiency performed by Pinto et. al. [ref:PCL2014] it was found that although programmers had questions related to energy efficiency, they rarely got the appropriate advice. 
+With over 2 billion daily smartphone and tablet users worldwide [ref:NPPPZL2017] it is clear that this lack of knowledge needs to be addressed. To help the programmers close this knowledge gap, hardware-based tools have been introduced. These tools can determine the energy profile of an application with high precision, but it means the costly hardware components need to be acquired[ref:NPPPZL2017]. Software-based solutions solve the problem of requiring expensive hardware, and are easier to use, but also less precise. 
+
+In this chapter the current state of energy efficiency in software development for mobile devices will be analysed. This research will be conducted by following three research questions:
+
+* **RQ1:** What is the state of the art of energy efficiency in software development for mobile devices?
+* **RQ2:** What is the state of practice for energy efficiency in software development for mobile devices?
+* **RQ3:** What future work needs to be researched in the field of energy efficiency in software development for mobile devices?
+
+In the following paragraph the methodology of the research will be elaborated. After that each research questions will be answered in a separate paragraph. In the last paragraph of this chapter the conclusion on energy efficiency in software development for mobile devices will be made.
+
+
+##Methodology
+In order to find answers to the research questions, over 30 papers in the field have been selected. These papers have been found by searching on Google Scholar with a set of filters. First off, only papers from the following journals and conference are selected:
 
 * ACM Transactions on Software Engineering Methodology (TOSEM),
 * Empirical Software Engineering (EMSE),
@@ -28,161 +36,60 @@ venues, which we list here:
 * Working Conference on Mining Software Repositories (MSR)
 * Symposium on Operating Systems Design and Implementation (OSDI)
 
-##Week 1
+The following criteria is given by the activity and relative newness of the field. The preference is given to papers which are published not too long ago, preferably after 2012. But if well cited, and with interesting findings, older papers can also be used.
 
-Because we consider the five starting papers to be our inspiration, we have chosen to briefly
-describe these papers by giving some basic metrics about them (citations), summarizing them and by
-adding a few notes about them. This is our initial work that we would like to expand on in the
-coming weeks.
+Given these two criteria the following search queries have been used:
 
-### Charting the API minefield using software telemetry data
+* "Android AND Energy Efficiency AND Software"
+* "Energy AND Android AND Runtime AND Analysis AND performance AND Software"
 
-In this paper, researchers used software telemetry data from mobile application crashes. With
-heuristics, they separated the API calls from application calls so they can analyze what the most
-common causes for crashes are. Top crash causes are: memory exhaustion, race conditions or
-deadlocks, and missing resources. A significant percentage was not suitable for analysis as these
-crashes were associated with generic exceptions (10%). They performed a literature search to find
-solutions to the problems that cause the crashes. For each crash cause category, an implementation
-recommendation is made. More specific exceptions, non-blocking algorithms, and default resources
-can eliminate the most frequent crashes. They also suggest that development tools like memory
-analyzers, thread debuggers, and static analyzers can prevent many application failures. They also
-propose features of execution platforms and frameworks related to process and memory management
-that could reduce application crashes.
+From the selected papers some backward and forward references have also been selected, to get a complete picture. All papers are also checked for relevance to the topic.
 
-**Remarks**
+To answer **RQ1** a more in-depth look at available tools for the energy efficiency is performed. The focus for **RQ2** is on what is currently used in Android application that are actively used. **RQ3** is answered by the finding of the papers used for both RQ1 and RQ2.
 
-* Among the papers that refer to this paper or are referenced by this paper there are four papers
-that share the topic of crash data on mobile platforms that have been publiced to top software
-engineering venues [].
-* The paper seems to be quite discerning as they evaluate their methods and reason about the
-threats to validity.
+##State of the Art
 
-### Reproducing context-sensitive crashes of mobile apps using crowdsourced monitoring
+Many researchers found that there is increasing demand for energy efficient software. In their research they often propose state of the art approaches to assisting developers. These approaches can be separated into two main categories: tools and guidelines. This section will contain an overview of all state of the art tools and guidelines that satisfy our search criteria [REFERENCE TO METHODOLOGY]. This overview is used to  answer RQ1.
 
-The mobile applications market continues to grow and many applications are available. It is
-important for developers that their application keeps working and that crashes are fixed as fast as
-possible to keep up with competitors. However, the mobile market is complex as for end users there
-are endless configurations of application versions, mobile hardware and  user input sequences.
-Therefore, it is difficult to reproduce software crashes under the same context and conditions that
-triggered the observed crash. This is why the researchers developed MoTiF which uses machine
-learning to reproduce the steps the end users take before the app crashes on the end user’s phone
-and generates a test suite. MoTiF also uses the crowd to validate whether the generated test suite
-truly reproduces the observed crash.
+tools
 
-**Remarks**
+--table--
 
-* The datasets used for the research are a bit questionable. One is based on simply performing a
-large amount of random event on the app, the other dataset is created by letting a group of 10
-student try to crash the app in one hour.
-* Only 5 different apps have been tested.
-* Contains reference to "Charting the API minefield using software telemetry data".
+Most of the state of the art tools can be classified as performing either measurement of energy consumption or code analysis. Although plenty of such tools have been proposed, with low citation numbers, none of them seem to have had a big influence in the research area. There is, however, the possibility, with growing demand for energy efficiency, that the amount and quality of tools will increase in the near future. 
 
-### An exploratory study on faults in web api integration in a large-scale payment company
+Guidelines
 
-This research explores what the implications of web API faults are, what the most common web API
-faults are and best practices for API design. The faults in API integration can be grouped in 11
-causes: invalid user input, missing user input, expired request data, invalid request data, missing
-request data, insufficient permissions, double processing, configuration, missing server data,
-internal and third party. Most faults can be attributed to the invalid or missing request data, and
-most API consumers seem to be impacted by faults caused by invalid request data and third party
-integration. Furthermore, API consumers most often use official API documentation to implement an
-API correctly, followed by code examples. The challenges of preventing runtime problems are the
-lack of implementation details, insufficient guidance on certain aspects of the integration,
-insufficient understanding of the impact of problems, and missing guidance on how to recover from
-errors.
+--table--
 
-**Remarks**
+The guidelines presented in these papers aim to either provide general coding practices or they explain how to involve energy efficiency in a specific domain.
 
-* Easy to read
-* Paper only considers a single API
-* Survey only has 40 responses
+##State of Practice
+Now that we have an overview of the state of the art regarding energy consumption on Android driven mobile devices, we investigate what the current state of practice is. In this section, we try to find an answer to RQ2 stated in the introduction by going through the papers we have retrieved using the methodology described in Section 2. First, we study how different software engineering approaches affect energy consumption and if developers have any knowledge or training regarding energy saving programming techniques. Furthermore, we try to see if there are any tools being used which help decreasing energy consumption. To make this more specific, we divide RQ2 into several sub research questions:
 
-### Search-based test data generation for SQL queries
+* **SQ1:** What are the current development approaches used in practice and how does that affect energy consumption?
+* **SQ2:** What do programmers currently know and do about energy saving app development?
 
-SQL queries should be tested as thoroughly as program code. However, it is hard to generate test
-data for testing. Other researchers proposed viewing this problem as a constraint solving problem,
-so test data could be generated with a SAT-solver. However, strings are not supported by current
-SAT-solver tools and it is a complex task to translate a query to a satisfiability problem. In this
-research, the test generation problem is treated as a search-based problem. They use random search,
-biased random search and genetic algorithms (GA) to generate the data. The methods are combined in
-a tool called EvSQL and the tool is tested on more than 2000 queries. The GA method is the best and
-is able to cover a little over 98% of the queries.
+###Answering SQ1
+Under development approaches, the language used to write the app is one of the things that is taken into consideration. There have been a number of studies into the effects of using a certain programming language in the applications. Java is still the most used language for Android applications. According to Oliveira et al. [ref:OOC2017], Java is actually not a good choice when limiting energy consumption is one of your priorities. One of the contributions of the paper is a study where hybrid implementations of applications are compared with the original, pure Java implementations in terms of energy consumption and performance. The paper suggests that hybrid implementations might be a good solution, but the problem is that the study was done on just four Android applications. The paper did use the Rosetta Code repository, but this does not represent commercial software development.
 
-**Remarks**
+Another comparable recent research paper investigated the energy-delay product (EDP) which is defined as  “a weighted function of the energy consumption and run-time performance product” [ref:GKLS2018] :\s\s
+E * T^w
+where E is the total energy used to complete a task, T the time and w is a value that represents how important energy saving is with regard to time. The advantage of using this function is that performance is not neglected. The results in the paper show that the programming language should be chosen depending on the task. From these results, it is clear that Java is not performing well when comparing it to other languages as can be seen Table [ref:to table nr].  However, it should be noted that the paper does not test this on actual Android applications but rather the Rosetta Code repository.
 
-* Easy to read
-* Utilizes queries of 4 different systems
-* Generation of test data for SQL questies implies easier generation of unit- regression- and
-integration tests for SQL queries.
+--image--
 
-### Anomaly detection using program control flow graph mining from execution logs
+[CAPTION under this table should be: Programming Languages Average Weighted EDP Ranking, retrieved from [ref:GKLS2018]
 
-The paper attempts to diagnose distributed applications. For this purpose they mine templates and
-their sequences from exedcution logs, from this information they create a control flow graph. The
-main cause of failures identified: making an API request to another application. This results in
-many new calls to other services or even other applications. This flow gets interrupted at some
-point. So when the top level API is not working, they want to show where it goes wrong. In earlier
-work, primarily metrics and logs were used to find the cause. However these approaches struggled
-with many benign warnings or errors in healthy state or faults do not manifest as errors. Manually
-checking a transaction flow is also very hard. Instead, templates are used as print statements from
-the source code. These represent the nodes, the edges are the flows. This approach imposes two
-major challenges. One, mining print statements is hard because parameters are different in every
-log. Two, flows can happen at the simultaneously. The paper tries to solve these challenges by
-applying a join on two print statements if the statements are preceded and followed by
-approximately the same steps.
+The above two papers are examples of research that suggest that the current state of practice, developing applications in Java only, is not in line with the current state of the art on energy efficiency. In spite of these research papers, developers are still working mostly with Java. One possible explanation is that Java is simply compatible with almost every system due to the JVM. We suggest that further research should investigate why developers are sticking to Java. For example, looking at available libraries, coding difficulty and available tools and knowledge might have a significant impact on this choice.
 
-**Remarks**
+###Answering SQ2
+In the previous sections we have seen examples of the state of the art, as well as development methods that could lead to improvements in energy consumption. However, this knowledge only holds value when the community can get developers willing to use these. There have been a number of studies that look into what is actually happening.
 
-* Has a presentation on YouTube
-* Difficult to read
+One example is the paper by Moura et al. [ref:MPEC2015]. In this paper a study is conducted by looking at  a large number of energy-aware commits with Github as the primary data source. This analysis has yielded a list of approaches that are being used by developers in practice. These include: frequency and voltage scaling, using power efficient libraries and more. The study notes that the vast majority of the commits focus on the lower levels of the software stack. Furthermore, only 16.2% of the commits were related to using more efficient libraries or data structures.  There are also a number of software qualities that have been shown to take precedence of the energy consumption. These include correctness, responsiveness and performance. Another point which the research addressed is whether software developers were certain of their energy saving commits. The paper suggests that there are definitely cases where developers are not certain about their energy saving change. This might be caused by the fact that there are few user friendly tools available for aiding developers in making energy-aware decisions. 
 
-##Week 2
+##Future research
+In this section we will take a look at the suggested future research directions that have been mentioned in the papers used in this survey. We attempt to extract some general trend from the future research suggestions that are included. One of the fields of research we looked at in the previous sections was the relation between programming languages and energy consumption. Multiple papers suggest that the programming language used for implementation has an influence on the energy consumption and performance [ref:GKLS2018, OOC2017]. These papers however do not look into the influence of specific features of the programming languages on energy consumption and performance. Or rather the specific characteristics of a programming language that cause the differences, as described in the paper by Georgiou et al.
 
-Because we are still working on the exact scope of the survey as well as the lay-out of the chapter, we have chosen to temporarily divide the papers by week. This will be changed later on. A more suitable focus for this survey would be the Energy vs performance sub-domain of runtime and performance analytics. To explore this domain we have summarized some initial papers.
+In the investigations of this report, we came across a number of tools which can be used to aid developers in their management of the energy consumption of applications. However, to our knowledge, there are no studies reporting on the actual use of such tools. For future research, we suggest investigating the amount of developers actually using such tools. Furthermore, it is important what features such tools should have for optimal use. For example, we replicated the paper that introduces jStanley, a tool which can be used for energy and performance optimization [ref:PSCS2018]. We faced the issue that this tool cannot implement the suggested improvements in an easy and efficient way. For example, we took the AssertJ open source project from GitHub and there were more than 300 energy saving suggestions. A user has to click on every suggestion to actually implement the improvement which is tedious work.
+Similarly, a lot of the papers reporting on tools that could be used in practice are currently being tested with benchmarks. However, it is always the question whether these benchmarks are representative enough of the real world to hold actual merit.
 
-The survey on performance vs energy efficiency focuses on the following research questions:
-**RQ1** What is the current state of art?
-**RQ2** What is the current state of practice?
-**RQ3** What are the challenges of the future work?
-
-To answer these questions three papers are selected to form the basis of this literature survey:
-
-- Yepang Liu, Chang Xu, and Shing-Chi Cheung. 2014. Characterizing and detecting performance bugs for smartphone applications. In Proceedings of the 36th International Conference on Software Engineering (ICSE 2014). ACM, New York, NY, USA, 1013-1024. DOI: https://doi.org/10.1145/2568225.2568229
-
-- Rui Pereira, Pedro Simão, Jácome Cunha, and João Saraiva. 2018. jStanley: placing a green thumb on Java collections. In Proceedings of the 33rd ACM/IEEE International Conference on Automated Software Engineering (ASE 2018). ACM, New York, NY, USA, 856-859. DOI: https://doi.org/10.1145/3238147.3240473
-
-- Stefanos Georgiou, Maria Kechagia, Panos Louridas, and Diomidis Spinellis. 2018. What are your programming language's energy-delay implications?. In Proceedings of the 15th International Conference on Mining Software Repositories (MSR '18). ACM, New York, NY, USA, 303-313. DOI: https://doi.org/10.1145/3196398.3196414
-
-By looking into the state of programming languages in regards to energy performance, the state of the art will be determined, thus answering RQ1. For the current state of practice (RQ2) literature on the topic of energy efficiency in Android applications will be used. From both topics the challenges and related work will be used for answering RQ3.
-
-**Running list of domain keywords:**
-Programming Languages, Energy-Delay-Product, Energy-Efficiency, Empirical study, performance bug, testing, static analysis, Green Software, Energy-aware Software, JCF
-
-###What Are Your Programming Language’s Energy-Delay Implications?
-Motivated by the lack of studies that investigate the energy consumption of software applications compared to the number of studies in the energy efficiency of hardware, the researchers set out to investigate the run-time performance of commonly used programming tasks in different languages on different platforms. The paper contributes by giving a customized and extended data set that can be used as a benchmark for similar studies, a set of publicly available tools for measuring the Energy Delay Product (EDP) of various programming tasks implemented in different programming languages, an empirical study on programming language EDP implications, by using different types of programming tasks and software platforms, and a programming language-based ranking catalogue, in the form of heat maps, where developers can find which programming language to pick for particular tasks and platforms; when energy or run-time performance are important. The research questions which are answered are as follows:
-Which programming languages are the most EDP efficient and inefficient for particular tasks?
-Which types of programming languages are, on average, more EDP efficient and inefficient for each of the selected platforms (i.e. server, laptop and embedded system)?
-How much does the EDP of each programming language differ among the selected platforms?
-To answer these questions the Rosetta Code Repository, a publicly available repository for programming tasks, is used. It offers 868 tasks, 204 draft tasks and has implementations in 675 programming languages.
-The results of the paper are that for most tasks the compiled programming languages outperform the interpreted ones.
-
-**Keywords:** Programming Languages; Energy-Delay-Product; Energy-Efficiency
-
-###Characterizing and Detecting Performance Bugs for Smartphone Applications
-Bugs can cause significant performance degradation, which in turn may lead to losing the competitive edge for the application. The paper is motivated by people having little understanding for performance bugs and the lack of effective techniques to fight these bugs. In the paper the questions are researched what the common types of performance bugs are in Android applications, and what impact they have on the user experience (RQ1), how the performance bugs manifest themselves and if their manifestation needs special input (RQ2), if performance bugs are more difficult to debug and fix compared to non-performance bugs and what information or tools can help with that (RQ3) and if there are common causes of performance bugs, and if patterns can be distilled to facilitate performance analysis and bug detection (RQ4).
-Answering these questions leads to the paper making two major contributions:
-The first empirical study of real-world performance bugs in smartphone applications. The findings can help understand characteristics of performance bugs in smartphone applications, and provide guidance to related research.
-The implementation of a static code analyzer, PerfChecker, which successfully identified performance optimization opportunities in 18 popular Android applications.
-The selected Android applications needed to have more than 10.000 downloads and own a public bug tracking system. Furthermore there should be at least hundreds of code revisions. These criteria provide an indicator of the popularity and maturity of the selected applications. At first 29 Android applications were selected, with PerfChecker successfully detecting 126 matching instances of the bug patterns in 18 of these applications. Of these detected 126 matching instances of performance bug patterns, 68 were quickly confirmed by developers as previously unknown issues that affect application performance.
-
-**Keywords**: Empirical study, performance bug, testing, static analysis.
-
-###jStanley: Placing a Green Thumb on Java Collections
-In this short paper the tool jStanley is presented. With the help of this tool developers can obtain information and suggestions on the energy efficiency of their Java code. jStanley is available as Eclipse plugin. In a preliminary evaluation jStanley shows energy gains between 2% and 17%, and a reduction in execution time between 2% and 13%.
-
-**Keywords:** Green Software, Energy-aware Software, JCF, Eclipse Plugin
-
-###A Study on the Energy Consumption of Android App Development Approaches
-In this study, an analysis is given of the energy consumption of Android app according to which development method was used to create them. They look mainly at the difference between programming languages and their respective frameworks. They measured across multiple devices, which presented little difference between them. They also rewrote some app to use a hybrid framework in the hopes of improving the performance vs Energy consumption balance and they report a non-negligible improvement.
-
-**Keywords:** Android, runtime, performance (search keywords, the paper itself did not contain keywords)
