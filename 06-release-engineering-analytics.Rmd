@@ -115,7 +115,7 @@ TITLE-ABS-KEY(
   )
   AND software
 ) AND (
-	LIMIT-TO(SUBJAREA, "COMP") OR LIMIT-TO(SUBJAREA, "ENGI")
+  LIMIT-TO(SUBJAREA, "COMP") OR LIMIT-TO(SUBJAREA, "ENGI")
 )
 AND PUBYEAR AFT 2014
 ```
@@ -132,11 +132,11 @@ The results of the reference analysis are listed in Table 1.
 
 _Table 1. Papers found indirectly by investigating citations of/by other papers._
 
-| Starting point | Type        | Result                              |
-|----------------|-------------|-------------------------------------|
-| @souza2015a    | has cited   | @plewnia2014a   <br> @mantyla2015a  |
-| @khomh2015a    | is cited by | @poo-caama2016a <br> @teixeira2017a |
-| @mantyla2015a  | is cited by | @rodriguez2017a <br> @cesar2017a    |
+| Starting point | Type        | Result                                |
+|----------------|-------------|---------------------------------------|
+| @souza2015a    | has cited   | @plewnia2014a     <br> @mantyla2015a  |
+| @khomh2015a    | is cited by | @poo-caamano2016a <br> @teixeira2017a |
+| @mantyla2015a  | is cited by | @rodriguez2017a   <br> @cesar2017a    |
 
 All the papers that were found, were stored in a custom built web-based tool for
 conducting literature reviews.
@@ -220,13 +220,14 @@ The form that is used for this is shown below:
 
 ```
 General information:
-	Name of person extracting data:
-	Date form completed (dd/mm/yyyy):
-	Publication title:
-	Author information:
-	Journal:
-	Publication type:
-	Type of study:
+
+- Name of person extracting data:
+- Date form completed (dd/mm/yyyy):
+- Publication title:
+- Author information:
+- Publication type:
+- Conference/Journal:
+- Type of study:
 
 What practices in release engineering does this publication mention?
 
@@ -240,15 +241,16 @@ What research gaps does this publication contain?
 Are these research gaps filled by any other publications in this survey?
 
 Quantitative research publications:
-	Study start date:
-	Study end date or duration:
-	Population description:
-	Method(s) of recruitment of participants:
-	Sample size:
-	Evaluation/measurement description:
-	Outcomes:
-	Limitations:
-	Future research:
+
+- Study start date:
+- Study end date or duration:
+- Population description:
+- Method(s) of recruitment of participants:
+- Sample size:
+- Evaluation/measurement description:
+- Outcomes:
+- Limitations:
+- Future research:
 
 Notes:
 
@@ -270,6 +272,33 @@ form of synthesis. However, this depends on the final included publications of
 this survey.
 
 ### Included and Excluded Studies
+
+**Included:**
+
+- @adams2016a
+- @castelluccino2017a
+- @cesar2017a
+- @claes2017a
+- @da2014a
+- @da2016a
+- @dyck2015a
+- @fuyibayashi2017a
+- @karvonen2017a
+- @kerzazi2013a
+- @khomh2015a
+- @laukkanen2018a
+- @mantyla2015a
+- @plewnia2014a
+- @poo-caamano2016a
+- @rodriguez2017a
+- @souza2015a
+- @teixeira2017a
+
+**Excluded:**
+
+- @khomh2012a has been excluded, because it presents the same results as
+@khomh2015a, while the latter is more extensive because it is a journal article
+instead of a conference article.
 
 ### Project timetable
 
@@ -309,9 +338,396 @@ iteratively and planned for four weekly milestones.
 
 <!-- TODO -->
 
-## Appendix
+## Raw extracted data
 
-<!-- TODO Maarten -->
+This section is not part of the main content of our chapter.
+It can be viewed as an Appendix.
+<!-- We are not sure how we should include this raw data for the final verion
+     of the book, please let us know if you do :) -->
+
+### Understanding the impact of rapid releases on software quality -- The Case of Firefox
+
+Reference: @khomh2015a
+
+General information:
+
+- Name of person extracting data: Maarten Sijm
+- Date form completed: 27-09-2018
+- Author information: Foutse Khomh, Bram Adams, Tejinder Dhaliwal, Ying Zou
+- Publication type: Paper in Conference Proceedings
+- Conference: Mining Software Repositories (MSR)
+- Type of study: Quantitative, empirical case study
+
+What practices in release engineering does this publication mention?
+
+- Changing from traditional to rapid release cycles in Mozilla Firefox
+
+Are these practices to be classified under dated,
+state of the art or state of the practice? Why?
+
+- State of the practice, because they study Firefox
+  and Firefox is still using rapid release cycles.
+  However, it is dated because the data is six years old.
+
+What open challenges in release engineering does this publication mention?
+
+- More case studies are needed
+
+What research gaps does this publication contain?
+
+- More case studies are needed
+
+Are these research gaps filled by any other publications in this survey?
+
+- Not yet known **TODO**
+
+Quantitative research publications:
+
+- Study start date: 01-01-2010 (Firefox 3.6)
+- Study end date or duration: 20-12-2011 (Firefox 9.0)
+- Population description: Mozilla Wiki, VCS, Crash Repository, Bug Repository
+- Method(s) of recruitment of participants: N/A (case study)
+- Sample size: 25 alpha versions, 25 beta versions,
+  29 minor versions and 7 major versions.
+  Amount of bugs/commits/etc. is not specified.
+- Evaluation/measurement description: Wilcoxon rank sum test
+- Outcomes:
+    - With shorter release cycles,
+      users do not experience significantly more post-release bugs
+    - Bugs are fixed faster
+    - Users experience these bugs earlier during software execution
+      (the program crashes earlier)
+- Limitations: Results are specific to Firefox
+- Future research: More case studies are needed
+
+### On the influence of release engineering on software reputation
+
+Reference: @plewnia2014a
+
+General information:
+
+- Name of person extracting data: Maarten Sijm
+- Date form completed: 27-09-2018
+- Author information: Christian Plewnia, Andrej Dyck, Horst Lichter
+- Publication type: Paper in Conference Proceedings
+- Conference: 2nd International Workshop on Release Engineering
+- Type of study: Quantitative, empirical case study on multiple software
+
+What practices in release engineering does this publication mention?
+
+- Rapid releases
+
+Are these practices to be classified under dated,
+state of the art or state of the practice? Why?
+
+- Dated practice, data is from before 2014
+
+What open challenges in release engineering does this publication mention?
+
+- Identifying software reputation can better be done using a qualitative study.
+
+What research gaps does this publication contain?
+
+- Identifying software reputation can better be done using a qualitative study.
+
+Are these research gaps filled by any other publications in this survey?
+
+- Not yet known **TODO**
+
+Quantitative research publications:
+
+- Study start date: Q3 2008
+- Study end date or duration: Q4 2013
+- Population description: Chrome, Firefox, Internet Explorer
+- Method(s) of recruitment of participants: N/A (case study)
+- Sample size: 3 browsers
+- Evaluation/measurement description: No statistical analysis,
+  just presenting market share results
+- Outcomes:
+    - Chrome's market share increased after adopting rapid releases
+    - Firefox's market share decreased after adopting rapid releases
+    - IE's market share decreased
+- Limitations:
+    - Identifying software reputation can better be done
+      using a qualitative study.
+- Future research:
+    - Identifying software reputation can better be done
+      using a qualitative study.
+
+### On rapid releases and software testing: a case study and a semi-systematic literature review
+
+Reference: @mantyla2015a
+
+General information:
+
+- Name of person extracting data: Maarten Sijm
+- Date form completed: 28-09-2018
+- Author information: Mäntylä, Mika V. and Adams, Bram and Khomh, Foutse and Engström, Emelie and Petersen, Kai
+- Publication type: Journal/Magazine Article
+- Journal: Empirical Software Engineering
+- Type of study: Empirical case study and semi-systematic literature review
+
+What practices in release engineering does this publication mention?
+
+- Impact of rapid releases on testing effort
+
+Are these practices to be classified under dated,
+state of the art or state of the practice? Why?
+
+- State of the practice for the case study
+- State of the art for the literature review
+
+What open challenges in release engineering does this publication mention?
+
+- Future work should focus on empirical studies of these factors
+  that complement the existing qualitative observations
+  and perceptions of rapid releases.
+
+What research gaps does this publication contain?
+
+- See open challenges
+
+Are these research gaps filled by any other publications in this survey?
+
+- Not yet known **TODO**
+
+Quantitative research publications:
+
+- Study start date: June 2006 (Firefox 2.0)
+- Study end date or duration: June 2012 (Firefox 13.0)
+- Population description: System-level test execution data
+- Method(s) of recruitment of participants: N/A (case study)
+- Sample size: 1,547 unique test cases, 312,502 executions,
+  performed by 6,058 individuals on 2,009 software builds,
+  22 OS versions and 78 locales.
+- Evaluation/measurement description: Wilcoxon rank-sum test, Cliff's delta,
+  Cohen's Kappa for Firefox Research Question (FF-RQ) 5.
+- Outcomes (FF-RQs; RR = rapid release; TR = traditional release):
+    1. RRs perform more test executions per day, but these tests focus on a
+       smaller subset of the test case corpus.
+    2. RRs have less testers, but they have a higher workload.
+    3. RRs test fewer, but larger builds.
+    4. RRs test fewer platforms in total,
+       but test each supported platform more thoroughly.
+    5. RRs have higher similarity of test suites and testers
+       within a release series than TRs had.
+    6. RR testing happens closer to the release date and is more continuous,
+       yet these findings were not confirmed by the QA engineer.
+- Limitations:
+    - Study measures correlation, not causation
+    - Not generalizable, as it is a case study on FF
+- Future research: More empirical studies
+
+Semi-systematic literature survey:
+
+- Study date: Unknown (before 2015)
+- Population description: Papers with main focus on:
+    - Rapid Releases (RRs)
+    - Aspect of software engineering largely impacted by RRs
+    - An agile, lean or open source process having results of RRs
+    - Excluding: opinion papers without empirical data on RRs
+- Method(s) of recruitment of participants: Scopus queries
+- Sample size: 24 papers
+- Outcomes:
+    - Evidence is scarce.
+      Often RRs are implemented as part of agile adoption.
+      This makes it difficult to separate the impact of RRs
+      from other process changes.
+    - Originates from several software development paradigms: Agile, FOSS, Lean,
+      internet-speed software development
+    - Prevalence
+        - Practiced in many software engineering domains, not just web applications
+        - Between 23% and 83% of practitioners do RRs
+    - (Perceived) Problems:
+        - Increased technical debt
+        - RRs are in conflict with high reliability and high test coverage
+        - Customers might be dipleased with RRs (many updates)
+        - Time-pressure / Deadline oriented work
+    - (Perceived) Benefits:
+        - Rapid feedback leading to increased quality focus of the devs and testers
+        - Easier monitoring of progress and quality
+        - Customer satisfaction
+        - Shorter time-to-market
+        - Continuous work / testing
+    - Enablers:
+        - Sequential development where multiple releases are under work simultaneously
+        - Tools for automated testing and efficient deployment
+        - Involvement of product management and productive customers
+- Limitations:
+    - Not all papers that present results about RRs,
+      have "rapid release" mentioned in the abstract.
+- Future research:
+    - Systematically search for agile and lean adoption papers
+
+Notes:
+
+- Basically contains all the answers we need 😂
+
+### Release management in free and open source software ecosystems
+
+Reference: @poo-caamano2016a
+
+General information:
+
+- Name of person extracting data: Maarten Sijm
+- Date form completed: 28-09-2018
+- Author information: Germán Poo-Caamaño
+- Publication type: PhD Thesis
+- Type of study: Empirical case study on two large-scale FOSSs: GNOME and OpenStack
+
+What practices in release engineering does this publication mention?
+
+- Communication in release engineering
+
+Are these practices to be classified under dated,
+state of the art or state of the practice? Why?
+
+- State of the practice, because case study
+
+What open challenges in release engineering does this publication mention?
+
+- Is the ecosystem [around the studied software] shrinking or expanding?
+- How have communications in the ecosystem changed over time?
+
+What research gaps does this publication contain?
+
+- More case studies are needed
+
+Are these research gaps filled by any other publications in this survey?
+
+- Not yet known **TODO**
+
+Quantitative research publications (GNOME):
+
+- Study start date: January 2009 (GNOME 2.x)
+- Study end date or duration: August 2011 (GNOME 3.x)
+- Population description: Mailing lists
+- Method(s) of recruitment of participants:
+  GNOME's website recommends this channel of communication.
+  IRC is also recommended, but its history is not stored.
+- Sample size: 285 mailing lists, 6947 messages, grouped into 945 discussions.
+- Evaluation/measurement description: Counting
+- Outcomes:
+    - Developers also communicate via blogs, bug trackers, conferences,
+      and hackfests.
+    - The Release Team has direct contact with almost all participants
+      in the mailing list
+    - The tasks of the Release Team:
+        - defining requirements of GNOME releases
+        - coordinating and communicating with projects and teams
+        - shipping a release within defined quality and time specifications
+    - Major challenges of the Release Team:
+        - coordinate projects and teams of volunteers without direct power over them
+        - keep the build process manageable
+        - monitor for unplanned changes
+        - monitor for changes during the stabilization phase
+        - test the GNOME release
+- Limitations:
+    - Only mailing list was investigated, other channels were not
+    - Possible subjective bias in manually categorizing email subjects
+    - Not very generalizable, as it's just one case study
+- Future research:
+    - Fix the limitations
+
+Quantitative research publications (OpenStack):
+
+- Study start date: May 2012
+- Study end date or duration: July 2014
+- Population description: Mailing lists
+- Method(s) of recruitment of participants: Found on OpenStack's website
+- Sample size: 47 mailing lists, 24,643 messages, grouped into 7,650 discussions.
+  Filtered data: 14,486 messages grouped into 2,682 discussions.
+- Evaluation/measurement description: Counting
+- Outcomes:
+    - Developers communicate via email, blogs, launchpad, wiki, gerrit,
+      face-to-face, IRC, video-conferences, and etherpad.
+    - Project Team Leaders and the Release Team members are the key players
+      in the communication and coordination across projects in the context of
+      release management
+    - The tasks for the Release Team and Project Team Leaders:
+        - defining the requirements of an OpenStack release
+        - coordinating and communicating with projects and teams to reach
+        the objectives of each milestone
+        - coordinating feature freeze exceptions at the end of a release
+        - shipping a release within defined quality and time specifications
+    - Major challenges of these teams:
+        - coordinate projects and teams without direct power over them
+        - keep everyone informed and engaged
+        - decide what becomes part of of the integrated release
+        - monitor changes
+        - set priorities in cross-project coordination
+        - overcome limitations of the communication infrastructure
+- Limitations:
+    - Only studies mailing list, to compare with GNOME case study
+    - Possible subjective bias in manually categorizing email subjects
+    - Not very generalizable, as it's just one case study
+- Future research:
+    - Fix the limitations
+
+Notes:
+
+- Since there are two case studies, the results become a bit more generalizable
+- The author set up a theory that encapsulates the communication and
+  coordination regarding release management in FOSS ecosystems,
+  and can be summarized as:
+    1. The size and complexity of the integrated product is constrained
+       by the release managers capacity
+    2. The release management should reach the whole ecosystem
+       to increase awareness and participation
+    3. The release managers need social and technical skills
+
+### Release Early, Release Often and Release on Time. An Empirical Case Study of Release Management
+
+Reference: @teixeira2017a
+
+General information:
+
+- Name of person extracting data: Maarten Sijm
+- Date form completed: 28-09-2018
+- Author information: Jose Teixeira
+- Publication type: Paper in Conference Proceedings
+- Conference: Open Source Systems: Towards Robust Practices
+- Type of study: Empirical case study
+
+What practices in release engineering does this publication mention?
+
+- Shifting towards rapid releases in OpenStack
+
+Are these practices to be classified under dated,
+state of the art or state of the practice? Why?
+
+- State of the practice, because it is a recent case study on OpenStack
+
+What open challenges in release engineering does this publication mention?
+
+- More case studies are needed.
+
+What research gaps does this publication contain?
+
+- More case studies are needed.
+
+Are these research gaps filled by any other publications in this survey?
+
+- Not yet known **TODO**
+
+Quantitative research publications:
+
+- Study start date: Not specified
+- Study end date or duration: Not specified
+- Population description: Websites and blogs
+- Method(s) of recruitment of participants:
+  Random clicking through OpenStack websites
+- Sample size: Not specified
+- Evaluation/measurement description: Not specified
+- Outcomes:
+    - OpenStack releases in a cycle of six months
+    - The release management process is a hybrid of feature-based and time-based
+    - Having a time-based release strategy is a challenging coopearative task
+      involving multiple people and technology
+- Limitations:
+    - Study is not completed yet, these are preliminary results
+- Future research:
+    - Not indicated
 
 ### Kanbanize the release engineering process
 
