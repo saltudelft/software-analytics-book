@@ -275,10 +275,23 @@ this survey.
 
 **Included:**
 
+- @adams2016a
+- @castelluccino2017a
+- @cesar2017a
+- @claes2017a
+- @da2014a
+- @da2016a
+- @dyck2015a
+- @fuyibayashi2017a
+- @karvonen2017a
+- @kerzazi2013a
 - @khomh2015a
-- @plewnia2014a
+- @laukkanen2018a
 - @mantyla2015a
+- @plewnia2014a
 - @poo-caamano2016a
+- @rodriguez2017a
+- @souza2015a
 - @teixeira2017a
 
 **Excluded:**
