@@ -128,13 +128,17 @@ year.
 | Software Reviews: The State of the Practice                                            | 2003 | @ciolkowski2003software |               |                  |
 | Code reviews do not find bugs: how the current code review best practice slows us down | 2015 | @czerwonka2015code      |               |                  |
 
-## Paper summaries
-This section contains summaries of all papers included in the survey. They are listed in
-alphabetical order of first author name, and then by year published.
+## Collected data
+This section contains data collected from all resources included in the survey, according to the
+*Data collection* section of the review protocol. Note that if some data could not be collected, it
+is explicitly stated.
+
+The resources are listed in alphabetical order of first author name, and then by year published.
 
 ### Expectations, outcomes, and challenges of modern code review
 Reference: @bacchelli2013expectations
 
+### Summary
 This paper describes research about the goals and actual effects of code reviews. Interviews and
 experiments have been done with people in the programming field.
 
@@ -142,9 +146,45 @@ One of the main conclusions is that the main effect of doing code reviews is tha
 understands the code better. This is opposed to what the goal of code reviews generally is:
 discovering errors.
 
+### For answering **RQ1**
+* *Sub-topic*: in practice; tools
+* *Research method*: empirical; qualitative
+* *Tools*: CodeFlow
+* *Datasets*: Data collected from interviews, surveys and code reviews
+
+#### Research questions and answers
+* *What are the motivations and expectations for modern code review? Do they change from managers
+  to developers and testers?* The top motivation for code reviews is finding defects, closely
+  followed by code improvement. There does not seem to be a large difference between managers,
+  developers and testers.
+* *What are the actual outcomes of modern code review? Do they match the expectations?* Code
+  improvements are the most seen outcomes of code review, followed by code understanding and social
+  communication. The outcomes do not match the expectations well. For example, onlt 14% of
+  researched review comments was about code defects, while about 44% chose finding defects as the
+  main motivation for doing code review.
+* *What are the main challenges experienced when performing modern code reviews relative to the
+  expectations and outcomes?* The main challenges is by far understanding the code under review. This
+  occurs for example when code has to be reviewed that is not in the same system as a developers
+  works on daily.
+
+### For answering **RQ2**
+Not applicable
+
+### For answering **RQ3**
+#### Future research challenges
+* Research on automating code review tasks. This mainly concerns low-level tasks, like checking
+  boundary conditions or catching common mistakes.
+* Research on code comprehension during code review. According to the authors research has been
+  done on this with new developers in mind, but it would also be applicable to code reviews. The
+  authors note that IDEs often include tools for code comprehension, but code review tools do not.
+* Research on awareness and learning during code review. Those two aspects were cited as
+  motivations for code review by developers. Future research could research these aspects more
+  explicitly.
+
 ### A Faceted Classification Scheme for Change-Based Industrial Code Review Processes
 Reference: @baum2016faceted
 
+### Summary
 The broad research questions answered in this article are: How is code review performed in industry
 today? Which commonalities and variations exist between code review processes of different teams
 and companies? The article describes a classification scheme for change-based code review processes
@@ -155,6 +195,7 @@ Grounded Theory study.
 ### The Choice of Code Review Process: A Survey on the State of the Practice
 Reference: @baum2017choice
 
+### Summary
 This paper, published in 2017, is trying to answer 3 RQs. Firstly, how prevalent is change-based
 review in the industry? Secondly, does the chance that code review remains in use increase if code
 review is embedded into the process (and its supporting tools) so that it does not require a
@@ -170,6 +211,7 @@ Reference: @baysal2016investigating
 ### Modern code reviews in open-source projects: Which problems do they fix?
 Reference: @beller2014modern
 
+### Summary
 It has been researched what kinds of problems are solved by doing code reviews. The conclusion is
 that 75% are improvements in evolvability of the code, and 25% in functional aspects.
 
@@ -179,6 +221,7 @@ and which part of the edits after a review are actually caused by review comment
 ### Lessons learned from building and deploying a code review analytics platform
 Reference: @bird2015lessons
 
+### Summary
 A code review data analyzation platform developed and used by Microsoft is discussed. It is mainly
 presented what users of the system think of it and how its use influences development teams. One of
 the conclusions is that in general, the platform has a positive influence on development teams and
@@ -190,6 +233,7 @@ Reference: @bosu2013impact
 ### Software Reviews: The State of the Practice
 Reference: @ciolkowski2003software
 
+### Summary
 To investigate how industry carries out software reviews and in what forms, this paper conducted
 a two-part survey in 2002, the first part based on a national initiative in Germany and the second
 involving companies worldwide. Additionally, this paper also include some fundamental concepts
@@ -198,6 +242,7 @@ of code review, such as functionalities of code review.
 ### Code reviews do not find bugs: how the current code review best practice slows us down
 Reference: @czerwonka2015code
 
+### Summary
 As code review has many uses and benefits, the authors hope to find out whether the current code
 review methods are sufficiently efficient. They also research whether other methods may be more
 efficient. With experience gained at Microsoft and with support of data, the authors posit (1) that
@@ -208,6 +253,7 @@ the social aspect of code reviews cannot be ignored.
 ### Design and code inspections to reduce errors in program development
 Reference: @fagan2002design
 
+### Summary
 This paper describes a method to thoroughly check code quality after each step of the development
 process, in a heavyweight manner. It does not really concern agile development.
 
@@ -217,6 +263,7 @@ work well for improving software quality.
 ### An exploratory study of the pull-based software development model
 Reference: @gousios2014exploratory
 
+### Summary
 This article focuses on how much pull requests are being used and how they are used, focusing on
 GitHub. For example, it is concluded that pull-requests are not being used that much, that
 pull-requests are being merged fast after they have been submitted, and that a pull request not
@@ -225,6 +272,7 @@ being merged is most of the time not caused by technical errors in the pull-requ
 ### The impact of code review coverage and code review participation on software quality: A case study of the qt, vtk, and itk projects
 Reference: @mcintosh2014impact
 
+### Summary
 This paper focuses on the influence of doing light-weight code reviews on software quality. In
 particular, the effect of review coverage (the part of the code that has been reviewed) and review
 participation (a measure for how much reviewers are involved in the review process) are being
