@@ -9,12 +9,18 @@ and many other problems. This chapter is aimed to give an overview of the effort
 in build analytics field and Continuous Integration (CI) as an increasingly common 
 development practice in many projects.
 
+Build analytics covers research done on data extracted from a build process inisde a project. This
+contains amongst others, build logs from continuous integration such as Travis CI, Circle CI,
+Jenkins and TeamCity or surveys among developers about their usage of continuous integration or
+build systems. This information is often paired with data from version control systems such as git 
+
 <!--
  - Define build
  - Define context
  -->
  
-In order to get a complete view of the current state of the build analytics field we ask the following research questions.
+In order to get a complete view of the current state of the build analytics field we ask the
+following research questions.
 
  * **RQ1** What is the current state of the art in the field of build analytics?
 <!--
@@ -40,11 +46,27 @@ software repositories, open-source software.
 
 ## Answers
 
-<!-- Group per RQ -->
+**RQ1**: 
+<!--
+    - Topics that are being explored
+    - Research methods, tools and datasets being used
+    - Main research findings, aggregated -->
+**RQ2**:
+<!--
+    - Tools and companies creating / employing them
+    - Case studies and their findings -->
 
-Through this we found the following papers
+**RQ3**:
+<!--
+    - List of challenges
+    - An aggregated set of open research items, as described in the papers
+    - Research questions that emerge from the synthesis of the presented works -->
+
+<!-- Below you can find the foundation laid in week 1 & 2, this is to be restructured into answers to research questions or additional information below research questions. -->
 
 ## Summary of papers
+
+Through this we found the following papers
 
 ### @bird2017predicting
 
