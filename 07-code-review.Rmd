@@ -118,6 +118,9 @@ list, respectively.
 | Revisiting code ownership and its relationship with software quality in the scope of modern code review       | 2016 | @thongtanunam2016revisiting | 29-09-2018  | 6             |                  |
 | Review participation in modern code review                                                                    | 2017 | @thongtanunam2017review     | 29-09-2018  | 10            |                  |
 | Automatically recommending peer reviewers in modern code review                                               | 2016 | @zanjani2016automatically   | 29-09-2018  | 7             |                  |
+|A Study of the Quality-Impacting Practices of Modern Code Review at Sony Mobile                                | 2016 | @shimagaki2016study      |29-09-2018 | 11            |                  |
+|Mining the Modern Code Review Repositories: A Dataset of People, Process and Product                           | 2016 | @yang2016mining      |29-09-2018 | 12            |                  |
+ 
 
 ### By reference
 The following table lists all candidates that have been found by being referenced by another paper
@@ -131,7 +134,7 @@ year.
 | The influence of non-technical factors on code review                                  | 2013 | @baysal2013influence    |               |                  |
 | Impact of peer code review on peer impression formation: A survey                      | 2013 | @bosu2013impact         |               |                  |
 | Software Reviews: The State of the Practice                                            | 2003 | @ciolkowski2003software |               |                  |
-| Code reviews do not find bugs: how the current code review best practice slows us down | 2015 | @czerwonka2015code      |  Zequn        | Y                |
+| Code reviews do not find bugs: how the current code review best practice slows us down | 2015 | @czerwonka2015code      |  Zequn                     | Y                |
 
 ## Collected data
 This section contains data collected from all resources included in the survey, according to the
