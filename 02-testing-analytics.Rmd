@@ -457,28 +457,30 @@ developer can start fixing the faulty code right away.
 
 ####Co-evolution and test generation  
 For understanding how test- and production code co-evolve and how tests can be generated to support
-developers, studies have been conducted (@pinto2012understanding, @marsavina2014,
-@zaidman2011studying), additionally a tool has been made in order to analyze and, consequently,
-better understand test-suite evolution (@pinto2013). For the time being the practical implications of
+developers, studies have been conducted [@pinto2012understanding; @marsavina2014;
+@zaidman2011studying]. Additionally a tool has been made in order to analyze and, consequently,
+better understand test-suite evolution [@pinto2013]. For the time being the practical
+implications of
 this subtopic have mainly been sought in the repairing and generation of tests. 
 
 
-According to Pinto (@pinto2012understanding) test repairs occur often enough to justify the
+According to Pinto [@pinto2012understanding] test repairs occur often enough to justify the
 development and research for automated repair techniques. M. Mirzaaghaei et al.
-(@supportingtestsuite) argues that evolving test cases is an expensive and time-consuming activity,
+[@supportingtestsuite] argues that evolving test cases is an expensive and time-consuming activity,
 for which automated approaches reduce the pressure on developers. Shamshiri et al. 
-(@shamshiri2018automatically) argues that automated generation of unit tests does not end up
+[@shamshiri2018automatically] argues that automated generation of unit tests does not end up
 generating realistic tests and that the effectivity of developers writing manual tests is equal
 to developers using automatically generated tests. They, therefore, call for the use of more
-realistic tests. This suggests that automated test generation is still a topic of interest, which
-will consequently likely be researched in order to find a way to generate realistic tests. 
+realistic tests. This suggests that automated test generation is still a topic of future interest,
+which
+will likely be researched in order to find a way to generate realistic tests. 
 
 ####Risk-driven testing####
-Risk-driven testing has been receiving attention recently. Researchers have been looking for
-methods that can either detect potential risks within the same project (@noor2015test, 
+Risk-driven testing is an area of recent attention. Researchers have been looking for
+methods that can either detect potential risks within the same project [@noor2015test; 
 @hemmati2018
-, @vernotte2015) or that can detect risks based on models carried over from one project to another 
-(@leung2015testing, @atifi2017). These techniques have been implementing history based prediction
+; @vernotte2015] or that can detect risks based on models carried over from one project to another 
+[@leung2015testing; @atifi2017]. These techniques have been implementing history based prediction
 approaches.
 
 In the future, we can expect more interest and research into risk-driven testing as allocating
@@ -490,12 +492,12 @@ history based implementations, it's like that these techniques will be subject t
 later on.  
 
 ####Testing practices
-Research various papers (@GAROUSI20131354, @beller2017developer, @beller2015) has indicated
+Research various papers [@GAROUSI20131354; @beller2017developer; @beller2015] has indicated
 that testing of any
 form is not as widely practiced as the status quo suggests. How the current state of the practice
 will change depends on various developments within the field. Tools will be created to assist the
 developer in writing quality code and tests, such as TestEvoHound as suggested by M. Greiler. 
-(@greiler2013). As
+[@greiler2013]. As
 automated test generation becomes more effective this may reduce the need for developers to spend a
 lot of time on writing and maintaining tests. With the development of risk-driven testing, 
 developers may also be able to focus on the parts that are likely to be the most important to 
