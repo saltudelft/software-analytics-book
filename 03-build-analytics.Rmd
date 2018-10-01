@@ -78,7 +78,7 @@ with useful information, thus eliminating the need to browse error logs @vassall
 * VeriCI capable of checking the errors in CI configurations files before the developer 
 push a commit and without needing to wait for the build result @santolucito2018statically
 * ACONA capable of predicting build failure prediction in CI environment for newer projects 
-with less data available
+with less data available @ni2018acona
 
 The build process is important part of a project that uses VCS in the way that based on the findings
 from @hassan2018hirebuild 22% of code commits include changes in build script files for either
@@ -88,6 +88,8 @@ abandonment of Travis CI. The paper finds that increased build complexity reduce
 of abandonment, but larger projects abandon at a higher rate and that a project's language has 
 significant but varying effect. A surprising result is that metrics of configuration attempts 
 and knowledge dispersion in the project do not affect the rate of abandonment.
+
+
 
 
 
