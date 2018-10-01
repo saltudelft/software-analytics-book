@@ -115,15 +115,6 @@ tool matched the actual error cause. These results seems promising, but there is
 more on producing the error justification fact that could make the use of machine learning tools in
 real build analytics tools achievable and tolerated.
 
-
-
-
-
-
-
-
-
-
 <!--
     - Topics that are being explored
     - Research methods, tools and datasets being used
