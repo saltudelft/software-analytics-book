@@ -475,7 +475,7 @@ realistic tests. This suggests that automated test generation is still a topic o
 which
 will likely be researched in order to find a way to generate realistic tests. 
 
-####Risk-driven testing####
+####Risk-driven testing
 Risk-driven testing is an area of recent attention. Researchers have been looking for
 methods that can either detect potential risks within the same project [@noor2015test; 
 @hemmati2018
