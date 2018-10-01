@@ -122,13 +122,21 @@ According to @baltes2018no future work could look into more perspectives when an
 data, for instance partitioning commits by developer. It also notes the importance of more
 qualitative research.
 
- * (@zhao2017impact) How do teams change their pull request review practices in response to the
- introduction of continuous integration?
- * 
+  * How do teams change their pull request review practices in response to the introduction of
+  continuous integration? (@zhao2017impact)
+  * How can we detect if fixing a build configuration requires changes in the remote environment? (@vassallo2018break) 
+  * Does breaking the build often translate to worse project quality and decreased productivity? (@beller2017oops)
 
 <!-- Research questions that emerge from the synthesis of the presented works -->
 
-<!-- Below you can find the foundation laid in week 1 & 2, this is to be restructured into answers to research questions or additional information below research questions. -->
+From the synthesis of the works discussed in this section the following research questions emerged:
+
+ * What is the impact of the choice of Continuos Integration platform? Most of the research is done
+ on users using Travis CI, there are many other platforms out there. Every platform has their own
+ characteristics.
+
+<!-- Below you can find the foundation laid in week 1 & 2, this is to be restructured into answers
+to research questions or additional information below research questions. -->
 
 ## Summary of papers
 
