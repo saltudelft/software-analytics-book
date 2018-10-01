@@ -71,6 +71,16 @@ The topics that are being explored are:
 * predicting build time @bisong2017built
 * predicting build failures @santolucito2018statically, @ni2018acona
 
+The tools that are being proposed are:
+* BART to help developers fix build errors by generating a summary of the failures
+with useful information, thus eliminating the need to browse error logs @vassallo2018break
+* HireBuild to automatically fix build failures based on previous changes @hassan2018hirebuild
+* VeriCI capable of checking the errors in CI configurations files before the developer 
+push a commit and without needing to wait for the build result @santolucito2018statically
+* ACONA capable of predicting build failure prediction in CI environment for newer projects 
+with less data available
+
+
 
 
 <!--
