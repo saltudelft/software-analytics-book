@@ -353,3 +353,10 @@ Reference: @xia2015should
 
 ### Automatically recommending peer reviewers in modern code review
 Reference: @zanjani2016automatically
+
+## Excluded papers
+The following papers have been excluded from the survey. These papers are candidates, but have not
+been added to the final survey for the stated reason.
+
+* [@cohen2010modern]: This book is not accessible via the TU Delft subscription of Safari Books
+  Online, and hence we could not read it to include it in the survey.
