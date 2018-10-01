@@ -10,10 +10,11 @@ in build analytics field and Continuous Integration (CI) as an increasingly comm
 development practice in many projects.
 
 Build analytics covers research done on data extracted from a build process inside a project. This
-contains amongst others, build logs from continuous integration such as Travis CI^[https://travis-ci.org/], 
-Circle CI^[https://circleci.com/],Jenkins^[https://jenkins.io/], AppVeyor^[https://www.appveyor.com/] and 
-TeamCity^[https://www.jetbrains.com/teamcity/] or surveys among developers about their usage of 
-Continuous Integration or build systems. This information is often paired with data from 
+contains amongst others, build logs from continuous integration such as
+Travis&nbsp;CI^[See&nbsp;https://travis-ci.org/], Circle CI^[See&nbsp;https://circleci.com/], 
+Jenkins^[See&nbsp;https://jenkins.io/], AppVeyor^[See&nbsp;https://www.appveyor.com/] and
+TeamCity^[See&nbsp;https://www.jetbrains.com/teamcity/] or surveys among developers about their
+usage of Continuous Integration or build systems. This information is often paired with data from
 Version Control Systems (VCS) such as git. 
 
 <!--
@@ -34,6 +35,7 @@ research findings that the state-of-the-art papers display.
   - Topics that are being explored
   - Research methods, tools and datasets being used
   - Main research findings, aggregated -->
+
 **RQ2**: What is the current state of practice in the field of build analytics?
 <!--
   - Tools and companies creating / employing them
@@ -155,11 +157,11 @@ the build works again.
 
 _Initial Seed_
 
-This paper explores data from Travis CI^[See https://travis-ci.org] on a large scale by analyzing
-2,640,825 build logs of Java and Ruby builds. It uses <span
+This paper explores data from Travis&nbsp;CI^[See&nbsp;https://travis-ci.org] on a large scale by
+analyzing 2,640,825 build logs of Java and Ruby builds. It uses <span
 style="font-variant:small-caps">TravisTorrent</span> as a data source. It is found that the number
-one reason for failing builds it test failure. It also explores differences in testing between
-Java and Ruby.
+one reason for failing builds it test failure. It also explores differences in testing between Java
+and Ruby.
 
 ### @rausch2017empirical
 
