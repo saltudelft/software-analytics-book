@@ -146,7 +146,7 @@ The resources are listed in alphabetical order of first author name, and then by
 ### Expectations, outcomes, and challenges of modern code review
 Reference: @bacchelli2013expectations
 
-### Summary
+#### Summary
 This paper describes research about the goals and actual effects of code reviews. Interviews and
 experiments have been done with people in the programming field.
 
@@ -154,7 +154,7 @@ One of the main conclusions is that the main effect of doing code reviews is tha
 understands the code better. This is opposed to what the goal of code reviews generally is:
 discovering errors.
 
-### For answering **RQ1**
+#### For answering **RQ1**
 * *Sub-topic*: in practice; tools
 * *Research method*: empirical; qualitative
 * *Tools*: CodeFlow
@@ -175,10 +175,10 @@ discovering errors.
   This occurs for example when code has to be reviewed that is not in the same system as a
   developers works on daily.
 
-### For answering **RQ2**
+#### For answering **RQ2**
 Not applicable
 
-### For answering **RQ3**
+#### For answering **RQ3**
 #### Future research challenges
 * Research on automating code review tasks. This mainly concerns low-level tasks, like checking
   boundary conditions or catching common mistakes.
@@ -192,7 +192,7 @@ Not applicable
 ### A Faceted Classification Scheme for Change-Based Industrial Code Review Processes
 Reference: @baum2016faceted
 
-### Summary
+#### Summary
 The broad research questions answered in this article are: How is code review performed in industry
 today? Which commonalities and variations exist between code review processes of different teams
 and companies? The article describes a classification scheme for change-based code review processes
@@ -203,7 +203,7 @@ Grounded Theory study.
 ### The Choice of Code Review Process: A Survey on the State of the Practice
 Reference: @baum2017choice
 
-### Summary
+#### Summary
 This paper, published in 2017, is trying to answer 3 RQs. Firstly, how prevalent is change-based
 review in the industry? Secondly, does the chance that code review remains in use increase if code
 review is embedded into the process (and its supporting tools) so that it does not require a
@@ -219,20 +219,20 @@ Reference: @baysal2016investigating
 ### Modern code reviews in open-source projects: Which problems do they fix?
 Reference: @beller2014modern
 
-### Summary
+#### Summary
 It has been researched what kinds of problems are solved by doing code reviews. The conclusion is
 that 75% are improvements in evolvability of the code, and 25% in functional aspects.
 
 It has also been researched which part of the review comments is actually followed up by an action,
 and which part of the edits after a review are actually caused by review comments.
 
-### For answering **RQ1**
+#### For answering **RQ1**
 * *Sub-topic*: impact,changes
 * *Research method*: empirically explore; change classification
 * *Tools*: R
 * *Datasets*: documented history of ConQAT and GROMACS
 
-####Research questions and answers
+#### Research questions and answers
 * *Which types of changes occur in code under review?* 75% of changes are related to the
 evolvability of the system, and only 25% to its functionality.
 * *What triggered the changes occurring in code under review?* 
@@ -240,10 +240,10 @@ evolvability of the system, and only 25% to its functionality.
 * *What influences the number of changes in code under review?* Code churn, number of changed files
 and task type are the most important factors influencing the number of changes.
 
-### For answering **RQ2**
+#### For answering **RQ2**
 Not applicable
 
-### For answering **RQ3**
+#### For answering **RQ3**
 #### Future research challenges
 
 
@@ -251,7 +251,7 @@ Not applicable
 ### Lessons learned from building and deploying a code review analytics platform
 Reference: @bird2015lessons
 
-### Summary
+#### Summary
 A code review data analyzation platform developed and used by Microsoft is discussed. It is mainly
 presented what users of the system think of it and how its use influences development teams. One of
 the conclusions is that in general, the platform has a positive influence on development teams and
@@ -263,7 +263,7 @@ Reference: @bosu2013impact
 ### Software Reviews: The State of the Practice
 Reference: @ciolkowski2003software
 
-### Summary
+#### Summary
 To investigate how industry carries out software reviews and in what forms, this paper conducted
 a two-part survey in 2002, the first part based on a national initiative in Germany and the second
 involving companies worldwide. Additionally, this paper also include some fundamental concepts
@@ -272,7 +272,7 @@ of code review, such as functionalities of code review.
 ### Code reviews do not find bugs: how the current code review best practice slows us down
 Reference: @czerwonka2015code
 
-### Summary
+#### Summary
 As code review has many uses and benefits, the authors hope to find out whether the current code
 review methods are sufficiently efficient. They also research whether other methods may be more
 efficient. With experience gained at Microsoft and with support of data, the authors posit (1) that
@@ -280,7 +280,7 @@ code reviews often do not find functionality issues that should block a code sub
 effective code reviews should be performed by people with a specific set of skills; and (3) that
 the social aspect of code reviews cannot be ignored.
 
-### For answering **RQ1**
+#### For answering **RQ1**
 * *Sub-topic*: impact
 * *Research method*: empirical
 * *Tools*: not mentioned
@@ -298,10 +298,10 @@ Code review usefulness is negatively correlated with the size of a code review.
 With 20 or more changed files, the more files there are in a single
 review, the lower the overall rate of useful feedback.
 
-### For answering **RQ2**
+#### For answering **RQ2**
 Not applicable
 
-### For answering **RQ3**
+#### For answering **RQ3**
 #### Future research challenges
 * Research on undocumented changes of code review because prior research has neglected.
 
@@ -313,7 +313,7 @@ best practice currently prescribes.
 ### Design and code inspections to reduce errors in program development
 Reference: @fagan2002design
 
-### Summary
+#### Summary
 This paper describes a method to thoroughly check code quality after each step of the development
 process, in a heavyweight manner. It does not really concern agile development.
 
@@ -323,7 +323,7 @@ work well for improving software quality.
 ### An exploratory study of the pull-based software development model
 Reference: @gousios2014exploratory
 
-### Summary
+#### Summary
 This article focuses on how much pull requests are being used and how they are used, focusing on
 GitHub. For example, it is concluded that pull-requests are not being used that much, that
 pull-requests are being merged fast after they have been submitted, and that a pull request not
@@ -332,7 +332,7 @@ being merged is most of the time not caused by technical errors in the pull-requ
 ### The impact of code review coverage and code review participation on software quality: A case study of the qt, vtk, and itk projects
 Reference: @mcintosh2014impact
 
-### Summary
+#### Summary
 This paper focuses on the influence of doing light-weight code reviews on software quality. In
 particular, the effect of review coverage (the part of the code that has been reviewed) and review
 participation (a measure for how much reviewers are involved in the review process) are being
