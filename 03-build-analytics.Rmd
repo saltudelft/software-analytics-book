@@ -9,13 +9,15 @@ and many other problems. This chapter is aimed to give an overview of the effort
 in build analytics field and Continuous Integration (CI) as an increasingly common 
 development practice in many projects.
 
+<!-- The following paragraph is prone to errors when auto formatting. After a ..^[..] or ..^[..],
+there _must_ be a space, else it is interpreted as superscript. --> 
+
 Build analytics covers research done on data extracted from a build process inside a project. This
-contains amongst others, build logs from continuous integration such as
-Travis&nbsp;CI^[See&nbsp;https://travis-ci.org/], Circle CI^[See&nbsp;https://circleci.com/], 
-Jenkins^[See&nbsp;https://jenkins.io/], AppVeyor^[See&nbsp;https://www.appveyor.com/] and
-TeamCity^[See&nbsp;https://www.jetbrains.com/teamcity/] or surveys among developers about their
-usage of Continuous Integration or build systems. This information is often paired with data from
-Version Control Systems (VCS) such as git. 
+contains amongst others, build logs from continuous integration such as Travis\ CI^[See\ 
+https://travis-ci.org/], Circle\ CI^[See https://circleci.com/], Jenkins^[See https://jenkins.io/], 
+AppVeyor^[See\ https://www.appveyor.com/] and TeamCity^[See https://www.jetbrains.com/teamcity/] or
+surveys among developers about their usage of Continuous Integration or build systems. This
+information is often paired with data from Version Control Systems (VCS) such as git. 
 
 <!--
  - Define build
@@ -134,7 +136,7 @@ qualitative research.
 From the synthesis of the works discussed in this section the following research questions emerged:
 
  * What is the impact of the choice of Continuos Integration platform? Most of the research is done
- on users using Travis CI, there are many other platforms out there. Every platform has their own
+ on users using Travis\ CI, there are many other platforms out there. Every platform has their own
  characteristics.
 
 <!-- Below you can find the foundation laid in week 1 & 2, this is to be restructured into answers
@@ -157,8 +159,8 @@ the build works again.
 
 _Initial Seed_
 
-This paper explores data from Travis&nbsp;CI^[See&nbsp;https://travis-ci.org] on a large scale by
-analyzing 2,640,825 build logs of Java and Ruby builds. It uses <span
+This paper explores data from Travis\ CI^[See https://travis-ci.org] on a large scale by analyzing
+2,640,825 build logs of Java and Ruby builds. It uses <span
 style="font-variant:small-caps">TravisTorrent</span> as a data source. It is found that the number
 one reason for failing builds it test failure. It also explores differences in testing between Java
 and Ruby.
@@ -204,7 +206,7 @@ developers to learn about their experiences in adopting Travis CI.
 
 _Initial Seed_
 
-This paper analyzes what factors have impact on abandonment of Travis. They find that increased
+This paper analyzes what factors have impact on abandonment of Travis\ CI. They find that increased
 build complexity reduces the chance of abandonment, but larger projects abandon at a higher rate
 and that a project's language has significant but varying effect. A surprising result is that
 metrics of configuration attempts and knowledge dispersion in the project do not affect the rate of
@@ -215,7 +217,7 @@ abandonment.
 _Initial Seed_
 
 This paper explores which CI system developers use, how developers use CI and why developers use
-CI. For this it analyzes data from Github, Travis CI and it conducts a developer survey. It finds
+CI. For this it analyzes data from Github, Travis\ CI and it conducts a developer survey. It finds
 that projects using CI release twice as often, accept pull requests faster and have developers who
 are less worried about breaking the build.
 
