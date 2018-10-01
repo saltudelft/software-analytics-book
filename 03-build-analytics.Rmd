@@ -64,6 +64,13 @@ to increase the productivity when using Continuos Integration (CI), to generate 
 configuration of the CI that could improve build success rate and to predict build failures even for 
 newer projects with less training data available.
 
+The topics that are being explored are:
+* the importance of the build process in a VCS project @hassan2018hirebuild
+* the impact factors of user satisfaction from using a CI tools @widder2018m
+* methods from helping the developer to fix bugs @hassan2018hirebuild, @vassallo2018break
+* predicting build time @bisong2017built
+* predicting build failures @santolucito2018statically, @ni2018acona
+
 
 
 <!--
