@@ -39,6 +39,11 @@ research findings that the state-of-the-art papers display.
   - Main research findings, aggregated -->
 
 **RQ2**: What is the current state of practice in the field of build analytics?
+
+This section examines scientific papers to analyse the current trend of build analytics in the software development industry. 
+We looks at the popularity of CI in the industry as @hilton2016usage describes. In addition, it also explores the increase in 
+the use of Continuous Integration (CI) by discussing its ample benefits as @fowler2006continuous presents. 
+Furthermore, it will discuss the practises used by engineers in the industry to ensure that their code is improving and not decaying. 
 <!--
   - Tools and companies creating / employing them
   - Case studies and their findings -->
@@ -342,8 +347,11 @@ of around 40% that could be better improved.
 
 ## What is the current state of practice in the field of build analytics?
 
-In this section, I will examine scientific papers to analyse the current trend of build analytics
-in the software development industry. 
+IBM’s Grady Booch first proposed the methodology of Continuous Integration in the 1990s. 
+It became widely used when adopted by Extreme Programming in the 1996. 
+In 2000,  @fowler2006continuous wrote the cornerstone description of integration practises. 
+The following section provides critical analysis of the papers presented and explains the 
+current practises of build analytics in our industry. 
 
 ### @fowler2006continuous
 
