@@ -1,27 +1,20 @@
 # App Store Analytics
 
-## Motivation
-In the year 2008, the first app stores became available. These stores have grown rapidly in size 
-since then, with over 3 million apps in the Google Play store alone at the time of writing 
-[REFERENCE]. These app stores together with the large user bases associated with them provide 
-software developers and researchers with valuable data. The process of exploiting this data from 
-app stores to gain valuable insights is what we would call “App Store Analytics”. Because apps 
-have not been around for a long time the research field of App Store Analytics is still very 
-young. However, because apps are used so much nowadays it plays an important role in the field of 
-Software Engineering. Therefore, to get an overview of the current state of this young research 
-field this chapter(?) is devoted as a survey on the field of App Store Analytics. We present 
-three research questions to structure this survey:
+In the year 2008, the first app stores became available. These marketplaces have grown rapidly in size since then with over 3 million apps in the Google Play store alone at the time of writing [REFERENCE]. These app stores together with the large user base associated with them provide software developers and researchers with valuable data. The process of using the data from the app stores to gain valuable insights is what we would call “App Store Analytics”. Because these app marketplaces are relatively new, the research field of App Store Analytics is still not mature. However, because apps are used so much nowadays, it plays an important role in the field of Software Engineering.
+ 
+In 2015, Martin, William, et al., published "A survey of app store analysis for software engineering." In the paper, 7 main categories are proposed of the field: API Analysis, Review Analytics, Security, Store Ecosystem, Size and Effort Prediction, Release Engineering and Feature Analysis (REFERENCE TO SURVEY). Given that relevant literature on the field of App Store Analytics has been already gathered and analyzed, it makes sense to use this chapter to go a step further.  In this order of ideas, we will delve deeper into the subfield of Reviews Analytics. We check the literature proposed by (REFERENCE TO SURVEY) and update it with the relevant articles (as defined by the inclusion criteria presented below) that were published after 2015.  We then use the data to answer the following research questions regarding the chosen subcategory.
 
-* **RQ1** Current state of the art in software analytics for App Store Analytics:
-    - Topics that are being explored.
-    - Research methods, tools, and datasets being used.
-    - Main research findings, aggregated.
+* **RQ1** What is the state of the art in Reviews Analytics? Specifically:
+    - Which topics that are being explored?
+    - Which research methods, tools, and datasets being used?
+    - Which are the main research findings (aggregated)?
 
-* **RQ2** Current state of practice in software analytics for App Store Analytics:
-    - Tools and companies creating/employing them.
+* **RQ2** What is the state of practice in Reviews Analytics? Specifically:
+    - Which are the tools and the companies that create/employ them?
     - Case studies and their findings.
 
-* **RQ3** Open challenges and future research required.
+* **RQ3** Which are the challenges and future research that the field is facing or will face?
+
 
 
 ## Research protocol
@@ -57,7 +50,8 @@ discarding the rest.
 #### Inclusion criteria
  - The paper was published in well established journal or conference.
  - Title or abstract of the paper mentions app stores, mining from app stores or app store analytics.
- - Tha paper was published in 2010 or later.
+ - Title or abstract of the paper mentions user reviews
+ - The paper was published in 2016 or later.
 
 #### Exclution criteria
  - The paper has at least 10 citations on Google Scholar.
@@ -82,6 +76,25 @@ Each one of the team members was in charge of reviewing and extracting the data 
 ## Answers 
 
 * **RQ1** Current state of the art in software analytics for App Store Analytics
+Since 2015 some interesting research has been done in the field of Review Analytics. To answer the question at hand we look at the novel ideas and the research that has been done in this field since 2015. We can divide the research into X categories, which are: Mapping user reviews to the source code, Privacy / App Permissions, Responding to reviews, Comparing Apps and App stores and Wearables.
+
+TODO: Expand and revise categories
+
+
+### Mapping User reviews to source Code
+
+### Privacy / App Permissions 
+
+### Responding to reviews
+
+Comparing Apps and App stores
+Papers that compare apps or app stores are discussed in this section.  Li et  al. mined user reviews from Google Play to find comparisons between apps[Mining User Reviews for Mobile App Comparisons]. They tried to identify comparative reviews to extract differences between apps on different topics. For example, a user says in a review that this app is not as good regarding power consumption than another app. Li et al. created a method that with reasonable accuracy extracts these opinions and provides comparisons between apps. 
+Ali et al. did a comparative study on cross-platform apps. They took a sample of 80.000 app-pairs to quantitatively compare the same apps across different platforms and identify the differences between the platforms. [REFERENCE]  
+In a related study Hu et al. compared app-pairs that are created using hybrid development tools such as PhoneGap. [REFERENCE] With this approach they found that in 33 of the 68 app-pairs the star rating was not consistent across platforms.
+
+### Wearables.
+
+
 
 * **RQ2** Current state of practice in software analytics for App Store Analytics
 
@@ -230,4 +243,56 @@ trained on 20% of the data (1421 manually labeled sentences from reviews of seve
 and the rest is used for testing. The paper also states that the results do not differ in a 
 statistically significant manner when a different classifier is used and shows that precision 
 and recall can be further improved by increasing the size of the data set.
+
+
+### A systematic literature review: Opinion mining studies from mobile app store user reviews
+ 
+**Complete reference:**
+@article{genc2017systematic,
+  title={A systematic literature review: Opinion mining studies from mobile app store user reviews},
+  author={Genc-Nayebi, Necmiye and Abran, Alain},
+  journal={Journal of Systems and Software},
+  volume={125},
+  pages={207--219},
+  year={2017},
+  publisher={Elsevier}
+}
+ 
+**Source:**
+Journal of Systems and Software
+ 
+**Main topic area:**
+Opinion Mining and Requirement Engineering
+ 
+**Authors information (full names, institution, and country):**
+Necmiye Genc-Nayebi, École de Technologie Supérieure (ETS) - Université du Québec, Canada
+Dr. Alain Abran,  École de Technologie Supérieure (ETS) - Université du Québec, Canada
+ 
+**Summary (research questions and answers):**
+ 
+**Research question/issue:**
+What are the proposed solutions for mining online opinions in app store user reviews, challenges and unsolved problems in the domain, new contributions to software requirements evolution and future research direction.
+
+**Quality assessment:**
+
+Bullets: 
+
+
+### You can promote, but you can't hide: large-scale abused app detection in mobile app stores.
+
+- Identification of manipulated app ratings by analyzing attack signatures. 
+- Development of an algorithm (graph-based) to identify these attackers in linear time.
+- In the initial validation they used 2188 apps with 4841720 reviews and 1622552 reviewers. They ran the tool for 33 hours and 31 minutes. 
+- Analyzed app stores from different markets: China, United Kingdom, and United States of America.
+- Suspected apps are around 1% of the total number of apps.
+- Possible deployment of the algorithm by app store vendors or a third party.
+
+### What would users change in my app? summarizing app reviews for recommending software changes.
+
+- Automated approaches with the aim of reducing the effort required for analyzing feedback contained in user reviews via automatic classification/prioritization according to specific topics [reference to the paper].
+- Introduced SURF (Summarizer of User Reviews Feedback). An approach to condense a large number of user reviews. Main features are summarization and classification.
+- Extract useful information for developers doing maintenance and evolution tasks. 
+- To validate the output of SURF, the authors realized 2 experiments using 17 apps and 23 developers and researchers. 
+- There is a need to use a larger and representative sample of apps to test the validity of the model.
+
 
