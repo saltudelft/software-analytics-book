@@ -128,6 +128,37 @@ real build analytics tools achievable and tolerated.
     - Research methods, tools and datasets being used
     - Main research findings, aggregated -->
 **RQ2**: What is the current state of practice in the field of build analytics?
+
+Continuous Integration is a development practise that requires developers to integrate code into a 
+share repository several times a day. Each check-in is then verified by an automated build which allows 
+engineers to detect any bugs early. 
+
+A survey conduced in open-source projects by @hilton2016usage indicated that 40% of all projects used CI. 
+It observed that a median project introduces CI a year into development. Furthermore, the paper claims that 
+CI is widely used in practise nowadays. The paper by @rausch2017empirical explores how CI is widely available 
+for projects of every size with the introduction of Version Control Systems (VCS) such as GitHub, and hosted 
+build automation platforms such as Travis. In this way, CI adoption rates will increase further in the future. 
+
+This is an overview of CI and how it works in daily life. Maintaining this system requires engineers to follow 
+fundamental practises presented by @fowler2006continuous. The practises presented by @fowler2006continuous are 
+still commonly used today, particularly in the agile software industry as suggested by @stolberg2009enabling. 
+
+  * Maintain a Single Source Repository
+  * Automate the Build
+  * Make Your Build Self-Testing
+  * Everyone Commits To the Mainline Every Day
+  * Every Commit Should Build the Mainline on an Integration Machine
+  * Fix Broken Builds Immediately
+  * Keep the Build Fast
+  * Test in a Clone of the Production Environment
+  * Make it Easy for Anyone to Get the Latest Executable
+  * Everyone can see what's happening
+  * Automate Deployment
+  
+It is important to note that CI does not get rid of bugs, but it does make them dramatically easier to find and remove. 
+The above practises are important for the smooth functioning of CI framework.
+  
+
 <!--
     - Tools and companies creating / employing them
     - Case studies and their findings -->
