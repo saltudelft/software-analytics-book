@@ -372,8 +372,7 @@ have made Continuous Integration is widely available for projects of every size.
 suggests that CI is widely used and has improved the quality of processes and developed software
 itself. However, the article suggests that there is little known about the variety and frequency of
 errors that cause builds to fail. It suggests that developers should eliminate flaky tests and
-address common issues regularly such as broken interaction with repositories to keep the build
-system healthy.
+address common issues regularly to keep the build system healthy.
 
 ### @stolberg2009enabling
 
