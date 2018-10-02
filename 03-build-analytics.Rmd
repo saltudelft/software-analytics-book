@@ -41,10 +41,10 @@ research findings that the state-of-the-art papers display.
 **RQ2**: What is the current state of practice in the field of build analytics?
 
 This section examines scientific papers to analyse the current trend of build analytics
-in the software development industry.We looks at the popularity of CI in the industry 
+in the software development industry. We look at the popularity of CI in the industry 
 as @hilton2016usage describes. In addition, it also explores the increase in the use of 
 Continuous Integration (CI) by discussing its ample benefits as @fowler2006continuous presents. 
-Furthermore, it will discuss the practises used by engineers in the industry to ensure 
+Furthermore, it will discuss the practices used by engineers in the industry to ensure 
 that their code is improving and not decaying. 
 <!--
   - Tools and companies creating / employing them
