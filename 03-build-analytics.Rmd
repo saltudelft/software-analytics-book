@@ -198,9 +198,13 @@ From the synthesis of the works discussed in this section the following research
  on users using Travis&nbsp;CI, there are many other platforms out there. Every platform has their own
  characteristics.
 
+<!--Commented part to extract info from and add it on the final structure -->
+
+
 <!-- Below you can find the foundation laid in week 1 & 2, this is to be restructured into answers
 to research questions or additional information below research questions. -->
 
+<!--
 ## Summary of papers
 
 Through this we found the following papers
@@ -254,8 +258,11 @@ trusing tests.
 
 _Initial Seed_
 
+-->
+
 <!-- Note: Interesting collab between Nanjing (China), Eindhoven (Netherlands), UC Davis (USA) and Carnegie Mellon (USA). -->
 
+<!--
 This paper analyzed approximately 160,000 projects written in seven different programming
 languages. It notes that adoption of CI is often part of a reorganization. It collected
 information on the differences before and after adoption of CI. There is also a survey amongst
@@ -420,3 +427,4 @@ address common issues regularly to keep the build system healthy.
 This paper defines CI as a key element in agile software development and testing environment. It
 also uses Marin Fowler’s practises of CI (as discussed previously) and expresses the importance of
 CI in the software industry.  
+-->
