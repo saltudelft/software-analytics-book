@@ -154,6 +154,21 @@ tool matched the actual error cause. These results seem promising, but there is 
 more on producing the error justification fact that could make the use of machine learning tools in
 real build analytics tools achievable and tolerated.
 
+Even if there were considerable efforts in developing powerful and accurate machine learning models
+for predicting the outcome of builds, most of this techniques cannot be trained properly without
+large project past data. The problem that resulted from this is newer project being unable to take 
+advantage of the research conducted before and having to wait until enough data from their project
+is generated in order to sufficiently train machine learning models from predicting the build outcome.
+The most recent paper of this survey which is only published as a poster in June 2018, @ni2018acona,
+addresses the problem of build failure prediction in CI environment for newer projects with less 
+data available. It is using already trained models from other project with more data available and 
+combined them by the means of active learning in order to find which of that models generalized better 
+from the problem in hand and to update the models weights accordingly. It is also aimed to cut the expense 
+that CI introduce by reducing the label data necessarily for training. Even if the method seems promising, 
+the results presented in the poster shows an F-Measure (harmonic average of recall and precision) of around 
+40% that could be better improved.
+
+
 <!--
     - Topics that are being explored
     - Research methods, tools and datasets being used
