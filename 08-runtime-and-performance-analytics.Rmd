@@ -42,7 +42,7 @@ research questions will be answered in a separate paragraph. In the last paragra
 the conclusion on energy efficiency in software development for mobile devices will be made.
 
 
-##Methodology
+## Methodology
 In order to find answers to the research questions, over 30 papers in the field have been selected. 
 These papers have been found by searching on Google Scholar with a set of filters. First off, only 
 papers from the following journals and conference are selected:
@@ -74,7 +74,7 @@ To answer **RQ1** a more in-depth look at available tools for the energy efficie
 The focus for **RQ2** is on what is currently used in Android application that are actively used. 
 **RQ3** is answered by the finding of the papers used for both RQ1 and RQ2.
 
-##State of the Art
+## State of the Art
 
 Many researchers found that there is increasing demand for energy efficient software. In their 
 research they often propose state of the art approaches to assisting developers. These approaches 
@@ -82,7 +82,8 @@ can be separated into two main categories: tools and guidelines. This section wi
 overview of all state of the art tools and guidelines that satisfy our search criteria 
 [REFERENCE TO METHODOLOGY]. This overview is used to  answer RQ1.
 
-_Tools_
+### Tools
+In the table below the tools that will be discussed are mentioned. These the tools will be discussed in more detail in order to answer the RQ1.
 
   |Reference   |  Tool                |  Description                            |
   |------------|-----------------------|------------------------------------------|
@@ -92,8 +93,62 @@ _Tools_
   |SKHA2018    | APOA                  | Compare energy consumption of apps       |
   |BCBR2017    | Energy Patch          | Detect, validate and repair energy leaks |
   |NPPPZL2017B | PETrA                 | Measure energy consumption of apps       |
-  |PSCS2018    | jStanley              | Detect and improve energy bugs in java"  |
+  |PSCS2018    | jStanley              | Detect and improve energy bugs in java   |
 
+_Leafactor_
+
+Using static code analysis and automatic refactoring, Leafactor is able to apply
+Android-specific optimizations of energy efficiency. The possible optimizations are
+indicated by a leaf icon, and the fix priority is provided by the official Android lint
+documentation. This priority reflects the severity of the energy performance, from 1 to 10
+with 10 being the most severe energy consumption. Leafactor is able to detect five known
+energy optimizations.
+
+_NavyDroid_
+
+NavyDroid is a tool created on top of the Java Pathfinder (JPF). Being constructed as a
+strengthened DFA (deterministic finite automaton) it can accurately simulate the paused
+state, the killed state and related state transitions of an activity. This way it can
+detect complex patterns of wake lock misuses (for example multiple lock aquisitions). 
+
+_Static analysis tool_
+
+The proposed static analysis is a novel static optimization technique for eliminating
+drawing commands to produce energy-efficient apps.  The technique is explointing the
+insight that static analysis is able to predict future behavior of the app. With the
+examples of _loop invariant texture analysis_, _packing_ and _identical frames detection_
+it indicates total energy savings up to 44% of the total energy consumption of the device.
+
+_APOA_
+
+A recommendation system which can be implemented in any marketplace for helping users and
+developers to compare apps in terms of performance. As an input APOA uses a set of metrics
+and rating of apps in csv format as well as metrics to optimize (context of usage). The
+result is a Pareto optimal front, from which the user selects the most preferred solution.
+
+_Energy Patch_
+
+Framework that can systematically detect and fix energy bugs in mobile apps in a scalable
+fashion. It uses a combination of static and dynamic analysis technique to detect, validate
+and repair energy bugs in Android apps. This enables EnergyPatch to quickly narrow down to
+the potential program paths along which energy bugs may occur.
+
+_PETrA_
+
+A novel software-based tool for measuring the energy consumption of Android apps. PETrA
+(Power Estimation Tool for Android) measures the energy consumption of Android apps by
+relying on the tools and APIs provided with the publicly available Project Volta. This
+means that all smartphones equipped with Android 5.0 or higher are compatible. The tool
+provides similar performance to hardware-based solutions.
+
+_jStanley_
+
+Eclipse plugin that helps developers detect energy bugs. jStanley scans the open Java
+collection for the usage of methods and functions that have more efficient alternatives.
+Not only are energy leaks highlighted, but better alternatives are provided. The tool is
+driven by a set of csv files which contains energy consumption and run time of a wide
+variety of methods. These values are harvested on a specific device of the researchers.
+With the help of these values the possible performance boost is calculated.
 
 Most of the state of the art tools can be classified as performing either measurement of energy 
 consumption or code analysis. Although plenty of such tools have been proposed, with low citation 
@@ -101,7 +156,7 @@ numbers, none of them seem to have had a big influence in the research area. The
 possibility, with growing demand for energy efficiency, that the amount and quality of tools will 
 increase in the near future. 
 
-_Guidelines_ 
+### Guidelines
 
   |Reference | Area  | Description|
   |--------|---------------------------------|--------------------------------------------------------------|
@@ -117,7 +172,7 @@ _Guidelines_
 The guidelines presented in these papers aim to either provide general coding practices or they 
 explain how to involve energy efficiency in a specific domain.
 
-##State of Practice
+## State of Practice
 Now that we have an overview of the state of the art regarding energy consumption on Android driven 
 mobile devices, we investigate what the current state of practice is. In this section, we try to 
 find an answer to RQ2 stated in the introduction by going through the papers we have retrieved using
@@ -131,7 +186,7 @@ sub-research questions:
 energy consumption?
 * **SQ2:** What do programmers currently know and do about energy saving app development?
 
-###Answering SQ1
+### Answering SQ1
 Under development approaches, the language used to write the app is one of the things that is taken 
 into consideration. There have been a number of studies into the effects of using a certain 
 programming language in the applications. Java is still the most used language for Android 
@@ -168,7 +223,7 @@ suggest that further research should investigate why developers are sticking to 
 looking at available libraries, coding difficulty and available tools and knowledge might have a 
 significant impact on this choice.
 
-###Answering SQ2
+### Answering SQ2
 In the previous sections we have seen examples of the state of the art, as well as development 
 methods that could lead to improvements in energy consumption. However, this knowledge only holds 
 value when the community can get developers willing to use these. There have been a number of 
@@ -187,7 +242,7 @@ paper suggests that there are definitely cases where developers are not certain 
 saving change. This might be caused by the fact that there are few user friendly tools available for
 aiding developers in making energy-aware decisions. 
 
-##Future research
+## Future research
 In this section we will take a look at the suggested future research directions that have been 
 mentioned in the papers used in this survey. We attempt to extract some general trend from the 
 future research suggestions that are included. One of the fields of research we looked at in the 
