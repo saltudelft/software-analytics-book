@@ -67,7 +67,7 @@ continuous integration, build failures, active learning, build errors, mining,
 software repositories, open-source software.
 
 | Paper                   | Source              |  Reference                 |  RQ  | Obs.              |
-| -------------           | -------------       |  ------------------------- | ---- | ------------------|                
+| -----------------       | ----------------    |  ------------------------- | ---- | ------------------|                
 | 1. Bird et al.          | Initial seed        | @bird2017predicting        |      |  US patent        |         
 | 2. Beller et al.        | Initial seed        | @beller2017oops            |      |                   |                
 | 3. Rausch et al.        | Initial seed        | @rausch2017empirical       |      |                   |
