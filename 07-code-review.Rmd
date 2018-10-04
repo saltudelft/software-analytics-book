@@ -176,7 +176,10 @@ discovering errors.
   developers works on daily.
 
 #### For answering **RQ2**
-Not applicable
+* *Tools used*: CodeFlow, a reviewing tool. It is not publicly available.
+* *Company/organization*: Microsoft
+* *Evaluation*: At the time of this paper, it still focusses mainly on fixing errors, and not on
+  the more often ocurring results of doing code review.
 
 #### For answering **RQ3**
 #### Future research challenges
