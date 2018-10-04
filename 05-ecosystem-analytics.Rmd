@@ -189,6 +189,9 @@ we summarize which research methods, tools and datasets are being used to explor
 #### Explored Topics
 
 #### Used Research Methods
+The studied papers cover a plethora of research methods. These methods can be divided into two
+categories: quantitative and qualitative. The first thing that is common in the studied papers is
+the combination of quantitative and qualitative research methods.
 
 #### Used Ecosystems
 As has been said above, the most common explored topic within the body of studied papers are
@@ -224,14 +227,14 @@ that this ecosystem would provide support for answering their research questions
 
 | Reference | Explored topic(s) | Research method(s) | Tool(s) | Dataset(s) | Ecosystem(s) | Conclusion |
 | --------- | ----------------- | ------------------ | ------- | ---------- | ------------ | ---------- |
-| @Abdalkareem2017 | Use of trivial packages | Quantitative, Qualitative | - | npm, GitHub | npm | Used because it is assumed to be well implemented and tested (only 45% actually has tests) and increases productivity. Quantitative research has shown that 10% of NodeJS uses trivial packages, where 16.8% are trivial packages in npm |
-| @Bavota2014 | Upgrading of dependencies | Quantitative, Qualitative | - | Apache | Apache | Upgrade done when bugfixes, but no API changes |
+| @Abdalkareem2017 | Use of trivial packages | Quantitative, Qualitative (Statistics over data, survey)| - | npm, GitHub | npm | Used because it is assumed to be well implemented and tested (only 45% actually has tests) and increases productivity. Quantitative research has shown that 10% of NodeJS uses trivial packages, where 16.8% are trivial packages in npm |
+| @Bavota2014 | Upgrading of dependencies | Quantitative, Qualitative (Statistics, Looking through mailing lists) | - | Apache | Apache | Upgrade done when bugfixes, but no API changes |
 | @Bogart2016 | Attitude towards breaking changes for different ecosystems | Qualitative (Interviews) | - | - | Eclipse, CRAM, npm | There are numerous ways of dealing with breaking changes and ecosystems play an essential role in the chosen way. |
 | @Claes2015 | Debian Package Incompatibilities | Quantitative | - | Debian i386 testing / stable | Debian | - |
-| @Cox2015 | Metric for dependency freshness of a system | Qualitative / Quantitative | - | Maven | Maven | Metric has been found and verified with Maven |
-| @Decan2017 | Dependency Issues in OSS Packaging Ecosystems | Quantitative analysis | - | Eclipse, CRAM, npm | Eclipse, CRAM, npm | In all ecosystems, dependency updates result in issues, however the problems and solutions do vary. |
-| @Kikas2017 | Package dependency networks | Quantitative | - | npm, RubyGems, Crates.io | npm, RubyGems, Crates.io | All ecosystems are growing and over time, ecosystems become less dependent on a single popular package. |
-| @Robbes2012 | Developers response to API deprecation | Quantitative | - | Squeak, Pharo | Squeak, Pharo | API changes can have a large impact on ecosystem. Projects take a long time to adapt to an API change. |
+| @Cox2015 | Metric for dependency freshness of a system | Qualitative / Quantitative (Statistics, Interviews)| - | Maven | Maven | Metric has been found and verified with Maven |
+| @Decan2017 | Dependency Issues in OSS Packaging Ecosystems | Quantitative analysis (Survival analysis, statistics)| - | Eclipse, CRAM, npm | Eclipse, CRAM, npm | In all ecosystems, dependency updates result in issues, however the problems and solutions do vary. |
+| @Kikas2017 | Package dependency networks | Quantitative (Statistics)| - | npm, RubyGems, Crates.io | npm, RubyGems, Crates.io | All ecosystems are growing and over time, ecosystems become less dependent on a single popular package. |
+| @Robbes2012 | Developers response to API deprecation | Quantitative (Statistics)| - | Squeak, Pharo | Squeak, Pharo | API changes can have a large impact on ecosystem. Projects take a long time to adapt to an API change. |
 | @Decan2018 | Quantitative empirical analysis of differences and similarities between the evolution of 7 varying ecosystems | Survival analysis | - | libraries.io | Cargo, CPAN, CRAN, npm, NuGet, Packagist, RubyGems | Package updates, which may cause dependent package failrues, are done on average every few months. Many packages in the analyzed package dependency networks were found to have a high number of transitive reverse dependencies, implying that package failures can affect a large number of other packages in the ecosystem. |
 | @Dittrich2014 | The article provides a holistic understanding of the observed and reported practices as a starting point to device specific support for the development in software ecosystems | Qualitative interview study | - | - | - | The main contribution of this article is the presentation of common features of product development and evolution in four companies. Although size, kind of software and business models differ |
 | @Izquierdo2018 | Code review analysis | Virtualization of process | - | Xen Github data | Xen | Analysis of code review has lead to more reviews and a more thoughtful and participary review process. Also providing accomodations for new software developers on OSS by easy access is very important. |
