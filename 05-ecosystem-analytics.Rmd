@@ -203,15 +203,37 @@ of Eclipse, CRAN and NPM packages towards making breaking changes.
 
 ### What are the practical implications from the state of the art?
 <!-- Rather than theoretical, actual case studies done with findings -->
-In this research question we aim to find out the practical implications of the state of the art as discussed in the previous section. Rather than a theoratical standpoint, we look at a practical angle. The papers discussed in this section are mostly case studies and we will summarize their findings. A schematic overview of our findings can be found in the table below. 
+In this research question we aim to find out the practical implications of the state of the art as
+discussed in the previous section. Rather than a theoratical standpoint, we look at a practical
+angle. The papers discussed in this section are mostly case studies and we will summarize their
+findings. A schematic overview of our findings can be found in the table below. 
 
-From most papers we find that developers are slow when updating their dependencies, or sometimes they do not even do it at all. @Hora2016 suggest that a main reason for this is that breaking changes cannot be solved in a uniform manner througout the ecosystem, but rather need a specific implementation for each system. We have also found that breaking changes are constantly introduced when dependencies are updated. According to @Raemaekers2017 about 33% of releases, either minor or major, contain a breaking change that needs looking into. Breaking changes could pose compiling errors, thereby breaking the system that depends on it. Furthermore, @Kula2017 has found that not actively updating libraries leads to security risks. 
+From most papers we find that developers are slow when updating their dependencies, or sometimes
+they do not even do it at all. @Hora2016 suggest that a main reason for this is that breaking
+changes cannot be solved in a uniform manner througout the ecosystem, but rather need a specific
+implementation for each system. We have also found that breaking changes are constantly introduced
+when dependencies are updated. According to @Raemaekers2017 about 33% of releases, either minor or
+major, contain a breaking change that needs looking into. Breaking changes could pose compiling
+errors, thereby breaking the system that depends on it. Furthermore, @Kula2017 has found that not
+actively updating libraries leads to security risks. 
 
-Regarding ecosystem health, @Constantinou2017 has researched which factors indicate that a developer is likely to abandon an ecosystem. Their study, which analyzed Github issues and commits, has found that developers are more likely to abandon a system when they 1) do not communicate with their fellow developers, 2) do not participate often in social or technical activities and 3) for an extended period of time do not react or commit anymore. 
+Regarding ecosystem health, @Constantinou2017 has researched which factors indicate that a
+developer is likely to abandon an ecosystem. Their study, which analyzed Github issues and
+commits, has found that developers are more likely to abandon a system when they 1) do not
+communicate with their fellow developers, 2) do not participate often in social or technical
+activities and 3) for an extended period of time do not react or commit anymore. 
 
-@Malloy2018 has studied the transition from Python 2 to Python 3. Python 3 has been out since 2008, and the final Python 2 release was in 2010. Both are (almost) 10 years ago. Even though, during their study they have found that most Python developers choose to maintain compatibility with both Python 2 and Python 3 by only using a subset of the Python 3 language. By not using the newly developed features they are severely limiting themselves in their language capabilities. 
+@Malloy2018 has studied the transition from Python 2 to Python 3. Python 3 has been out since
+2008, and the final Python 2 release was in 2010. Both are (almost) 10 years ago. Even though,
+during their study they have found that most Python developers choose to maintain compatibility
+with both Python 2 and Python 3 by only using a subset of the Python 3 language. By not using the
+newly developed features they are severely limiting themselves in their language capabilities. 
 
-Overall we can conclude that there are a lot of improvements to be made. The current method that most users use to manage their dependencies is lacking. Whether it be updating late or not updating at all, there are many risks bound to this. @Dietrich2014 has also found that there are a lot of problems in the Java ecosystem, and has posed a set of relatively minor changes to both development tools and the Java language itself that could be very effective. 
+Overall we can conclude that there are a lot of improvements to be made. The current method that
+most users use to manage their dependencies is lacking. Whether it be updating late or not
+updating at all, there are many risks bound to this. @Dietrich2014 has also found that there are a
+lot of problems in the Java ecosystem, and has posed a set of relatively minor changes to both
+development tools and the Java language itself that could be very effective. 
 
 | Reference | Explored topic(s) | Research method(s) | Dataset(s) | Ecosystem(s) | Conclusion |
 | --------- | ----------------- | ------------------ | ---------- | ------------ | ---------- |
