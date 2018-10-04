@@ -98,7 +98,7 @@ listed in alphabetical order of the first author's name, and then by publish yea
 | Modern code reviews in open-source projects: Which problems do they fix?                                                            | 2014 | @beller2014modern          | Y                |
 | Lessons learned from building and deploying a code review analytics platform                                                        | 2015 | @bird2015lessons           |                  |
 | Design and code inspections to reduce errors in program development                                                                 | 2002 | @fagan2002design           |                  |
-| An exploratory study of the pull-based software development model                                                                   | 2014 | @gousios2014exploratory    |                  |
+| An exploratory study of the pull-based software development model                                                                   | 2014 | @gousios2014exploratory    | Y                |
 | The impact of code review coverage and code review participation on software quality: A case study of the qt, vtk, and itk projects | 2014 | @mcintosh2014impact        |                  |
 
 ### Google Scholar
