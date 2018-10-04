@@ -260,7 +260,10 @@ Regarding ecosystem health, @Constantinou2017 has researched which factors indic
 developer is likely to abandon an ecosystem. Their study, which analyzed Github issues and
 commits, has found that developers are more likely to abandon a system when they 1) do not
 communicate with their fellow developers, 2) do not participate often in social or technical
-activities and 3) for an extended period of time do not react or commit anymore. 
+activities and 3) for an extended period of time do not react or commit anymore. Another
+interesting characteristic about ecosystem health, studied by @Kula2017-2, is the way in
+which projects age over time. Their study found that the usage over time of 81.7% of 4,659 
+popular GitHub projects follow a higher order function.
 
 @Malloy2018 has studied the transition from Python 2 to Python 3. Python 3 has been out since
 2008, and the final Python 2 release was in 2010. Both are (almost) 10 years ago. Even though,
