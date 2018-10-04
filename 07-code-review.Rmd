@@ -77,6 +77,7 @@ The following data will be collected from each considered resource:
     - Evaluation of the tool
 * Data for answering **RQ3**:
     - Future research challenges posed
+    - Challenges for use in practice
 
 All data will be collected by one person participating in the review and checked by another.
 
@@ -96,7 +97,7 @@ listed in alphabetical order of the first author's name, and then by publish yea
 | Modern code reviews in open-source projects: Which problems do they fix?                                                            | 2014 | @beller2014modern          | Y                |
 | Lessons learned from building and deploying a code review analytics platform                                                        | 2015 | @bird2015lessons           | Y                |
 | Design and code inspections to reduce errors in program development                                                                 | 2002 | @fagan2002design           |                  |
-| An exploratory study of the pull-based software development model                                                                   | 2014 | @gousios2014exploratory    |                  |
+| An exploratory study of the pull-based software development model                                                                   | 2014 | @gousios2014exploratory    | Y                |
 | The impact of code review coverage and code review participation on software quality: A case study of the qt, vtk, and itk projects | 2014 | @mcintosh2014impact        |                  |
 
 ### Google Scholar
@@ -156,7 +157,7 @@ discovering errors.
 #### For answering **RQ1**
 * *Sub-topic*: in practice; tools
 * *Research method*: empirical; qualitative
-* *Tools*: CodeFlow
+* *Tools*: N/A
 * *Datasets*: Data collected from interviews, surveys and code reviews
 
 #### Research questions and answers
@@ -175,7 +176,10 @@ discovering errors.
   developers works on daily.
 
 #### For answering **RQ2**
-Not applicable
+* *Tools used*: CodeFlow, a reviewing tool. It is not publicly available.
+* *Company/organization*: Microsoft
+* *Evaluation*: At the time of this paper, it still focusses mainly on fixing errors, and not on
+  the more often ocurring results of doing code review.
 
 #### For answering **RQ3**
 #### Future research challenges
@@ -340,6 +344,60 @@ This article focuses on how much pull requests are being used and how they are u
 GitHub. For example, it is concluded that pull-requests are not being used that much, that
 pull-requests are being merged fast after they have been submitted, and that a pull request not
 being merged is most of the time not caused by technical errors in the pull-request.
+
+#### For answering **RQ1**
+* *Sub-topic*: open-source, in practice
+* *Research method*: empirical; qualitative for finding out reasons for closing pull request,
+  rest quantitative.
+* *Tools*: Custom developed tools, available online
+* *Datasets*: GHTorrent dataset, along with data collected by authors. The last is also available
+  online
+
+#### Research questions and answers
+* *How popular is the pull based development model?* "14% of repositories are using pull requests
+on Github. Pull requests and shared repositories are equally used among projects. Pull request
+usage is increasing in absolute numbers, even though the proportion of repositories using pull
+requests has decreased slightly."
+* *What are the lifecycle characteristics of pull requests?* "Most pull requests are less than 20
+lines long and processed (merged or discarded) in less than 1 day. The discussion spans on average
+to 3 comments, while code reviews affect the time to merge a pull request. Inclusion of test code
+does not affect the time or the decision to merge a pull request. Pull requests receive no special
+treatment, irrespective whether they come from contributors or the core team."
+* *What factors affect the decision and the time required to merge a pull request?* "The decision to
+merge a pull request is mainly influenced by whether the pull request modifies recently modified
+code. The time to merge is influenced by the developer’s previous track record, the size of the
+project and its test coverage and the project’s openness to external contributions."
+* *Why are some pull requests not merged?* "53% of pull requests are rejected for reasons having to
+do with the distributed nature of pull based development. Only 13% of the pull requests are
+rejected due to technical reasons."
+
+#### For answering **RQ2**
+* *Tools used*: GitHub PR system
+* *Company/organization*: Several open-source projects
+* *Evaluation*: N/A
+
+#### For answering **RQ3**
+#### Future research challenges
+* More research is needed on *drive-by commits*, which the paper loosely defines as commits added
+  to a repository through a PR by a user that has never contributed to the repository and hence
+  does so for the first time. Often this new contributor also has created a fork for the sole
+  purpose of creating this PR. More research is needed on accurately defining drive-by commits and
+  on assessing their implications.
+* More research is needed on the effect of the democratization of the develoment process, which
+  occurs for example through the use of pull requests. Democratization could for example lead to a
+  substantially stronger commons ecosystem.
+* Validating the used models on data from different sources and on projects on different languages.
+* Research on the motives of developers to work in a highly transparent workspace.
+* Research on formation of teams and management hierarchies with respect to open-source projects.
+* Research on novel code review practices.
+* Research on ways to managing tasks in the pull-based development model.
+
+#### Challenges in practice
+* Development of tools to help the core team of a project with prioritizing their work. The paper
+  gives as an example a tool which would suggest whether a pull request can be merged or not,
+  because this can be predicted with fairly high accuracy.
+* Development of tools that would suggest categories of improvement for pull request, for example
+  by suggesting that more documentation needs to be added.
 
 ### The impact of code review coverage and code review participation on software quality: A case study of the qt, vtk, and itk projects
 Reference: @mcintosh2014impact
