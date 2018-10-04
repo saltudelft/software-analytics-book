@@ -1,8 +1,7 @@
 # Code Review
 ## Review protocol
 This section describes the review protocol used for the systematic review presented in this
-chapter. The protocol has been set up using Kitchenham's method as described by Kitchenham et al.
-[@kitchenham2007].
+chapter. The protocol has been set up using Kitchenham's method as described by @kitchenham2007.
 
 ### Research questions
 The goal of the review is to summarize the state of the art and identify future challenges in the
@@ -95,7 +94,7 @@ listed in alphabetical order of the first author's name, and then by publish yea
 |-------------------------------------------------------------------------------------------------------------------------------------|------|----------------------------|------------------|
 | Expectations, outcomes, and challenges of modern code review                                                                        | 2013 | @bacchelli2013expectations | Y                |
 | Modern code reviews in open-source projects: Which problems do they fix?                                                            | 2014 | @beller2014modern          | Y                |
-| Lessons learned from building and deploying a code review analytics platform                                                        | 2015 | @bird2015lessons           |                  |
+| Lessons learned from building and deploying a code review analytics platform                                                        | 2015 | @bird2015lessons           | Y                |
 | Design and code inspections to reduce errors in program development                                                                 | 2002 | @fagan2002design           |                  |
 | An exploratory study of the pull-based software development model                                                                   | 2014 | @gousios2014exploratory    |                  |
 | The impact of code review coverage and code review participation on software quality: A case study of the qt, vtk, and itk projects | 2014 | @mcintosh2014impact        |                  |
@@ -257,6 +256,19 @@ presented what users of the system think of it and how its use influences develo
 the conclusions is that in general, the platform has a positive influence on development teams and
 their products.
 
+#### For answering **RQ1**
+Not applicable
+
+#### For answering **RQ2**
+* *Tools used:* CodeFlow
+* *Company/organization using the tool:* Microsoft
+* *Evaluation of the tool:* CodeFlow has already had a positive implace on development teams because of its simplicity, low barrier for feedback and flexible support of Microsoft's disparate engineering systems. But some challenges such as dealing with branches and linking reviews to commits need to improve.
+
+#### For answering **RQ3**
+#### Future research challenges
+* Research on an automatic way to classify and assess the usefulness of comments. This is the interviewees's request and a challenge of CodeFlow.  
+* Research on many aspects of code view based on CodeFlow or other similar tools. 
+
 ### Impact of peer code review on peer impression formation: A survey
 Reference: @bosu2013impact
 
@@ -358,5 +370,5 @@ Reference: @zanjani2016automatically
 The following papers have been excluded from the survey. These papers are candidates, but have not
 been added to the final survey for the stated reason.
 
-* [@cohen2010modern]: This book is not accessible via the TU Delft subscription of Safari Books
+* @cohen2010modern: This book is not accessible via the TU Delft subscription of Safari Books
   Online, and hence we could not read it to include it in the survey.
