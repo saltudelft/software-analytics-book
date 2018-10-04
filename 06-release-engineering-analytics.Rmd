@@ -57,8 +57,12 @@ Our review thus aims to answer the following questions.
 
 ## Research Protocol
 
-<!-- TODO -->
-In this section, we will describe...
+In this section, we will describe how we applied the protocol for
+performing systematic literature reviews by @kitchenham2004procedures.
+In order, we will go over the search strategy, study selection,
+study quality assessment, and data extraction.
+The last subsection will list which studies we included in this review
+and which we have found, but excluded from the review for a specific reason.
 
 ### Search Strategy
 
@@ -69,11 +73,11 @@ This aided us in determining a more narrow scope for our survey,
 subsequently allowing us to find additional literature fitting this scope.
 
 At the start of this project, we were provided with an initial seed of five
-papers as a starting point for our literature survey.
-These initial papers were @adams2016a, @da2016a, @da2014a, @khomh2012a, and
-@khomh2015a.
+papers as a starting point for our literature survey
+[@adams2016a; @da2014a; @da2016a; @khomh2012a; @khomh2015a].
 
-We collected publications using two search engines: Scopus and Google Scholar.
+We collected other publications using two search engines:
+Scopus and Google Scholar.
 Each of the two search engines comprises several databases such as
 ACM Digital Library, Springer, IEEE Xplore and ScienceDirect.
 The main query that we constructed is displayed in Figure 1.
@@ -87,6 +91,7 @@ The publications found using this query were:
 - @fujibayashi2017a
 - @souza2015a
 - @laukkanen2018a
+- @dyck2015a
 
 ```
 TITLE-ABS-KEY(
@@ -163,11 +168,8 @@ The selection criteria are as follows:
 2. The study must not just show a release engineering technique,
    but analyze its performance compared to other techniques.
 
-Based on these selection criteria,
-the following papers appeared to be irrelevant for the scope of this survey:
-
-<!-- Example. TODO: actually exclude papers -->
-- [link to paper] - Excluded based on rule 2.
+[Section 7.2.6](#included-and-excluded-studies) lists which studies
+were selected and which were discareded.
 
 ### Study Quality Assessment
 
@@ -286,7 +288,6 @@ this survey.
 - @claes2017a
 - @da2014a
 - @da2016a
-- @dyck2015a
 - @fuyibayashi2017a
 - @karvonen2017a
 - @kerzazi2013a
@@ -301,23 +302,27 @@ this survey.
 
 **Excluded:**
 
+- @dyck2015a has been excluded, because it only provides definitions
+  for release engineering and DevOps, but does not perform any analysis.
 - @khomh2012a has been excluded, because it presents the same results as
-@khomh2015a, while the latter is more extensive because it is a journal article
-instead of a conference article.
+  @khomh2015a, while the latter is more extensive because it is a journal article
+  instead of a conference article.
+- @kaur2019a has been excluded, because we could not obtain the actual paper
+  since it has not yet been officially released.
 
 ### Project timetable
+
+**TODO** Move this somewhere else
 
 The literature review was conducted over the course of four weeks. We worked
 iteratively and planned for four weekly milestones.
 
-| Milestone | Deadline        | Goals                              |
-|----------------|-------------|-------------------------------------|
-| Milestone 1    | 16/9/18  | - Develop the search strategy<br> - Collect initial publications  |
-| Milestone 2    | 23/9/18 | Write full research protocol |
-| Milestone 3  | 30/9/18 | - Collect additional literature according to the protocol<br> - Perform data extraction    |
-| Milestone 4  | 7/10/18 | - Perform data synthesis<br> - Write final version of the chapter |
-
-<!-- TODO -->
+| Milestone | Deadline | Goals |
+|-----------|----------|-------|
+| 1 | 16/9/18 | - Develop the search strategy<br> - Collect initial publications |
+| 2 | 23/9/18 | Write full research protocol |
+| 3 | 30/9/18 | - Collect additional literature according to the protocol<br> - Perform data extraction |
+| 4 | 7/10/18 | - Perform data synthesis<br> - Write final version of the chapter |
 
 ## Answers
 
