@@ -186,6 +186,7 @@ of this section focuses on one of the three research questions posed in Section 
 To answer this research question, we examine the explored topics in ecosystem analytics. Moreover,
 we summarize which research methods, tools and datasets are being used to explore this topics.
 
+#### Explored Topics
 The main topic explored in the selected papers are related to the dependencies within the software
 ecosystem. One of the main subjects related to these dependencies is the subject of breaking
 changes between different versions of a package. @Bogart2016 researched the attitude of developers
@@ -195,7 +196,8 @@ of Eclipse, CRAN and NPM packages towards making breaking changes.
 | --------- | ----------------- | ------------------ | ------- | ---------- | ------------ | ---------- |
 | @Abdalkareem2017 | Empirical study on the use of trivial packages, as well as the reasoning behind this | Quantitative frequency, Survey | - | NPM, GitHub | NPM | Used because it is assumed to be well implemented and tested (only 45% actually has tests) and increases productivity. Quantitative research has shown that 10% of NodeJS uses trivial packages, where 16.8% are trivial packages in NPM |
 | @Bogart2016 | Attitude of towards breaking changes and how do ecosystems influence this | Interviews | - | - | Eclipse, CRAM, NPM | There are numerous ways of dealing with breaking changes and ecosystems play an essential role in the chosen way. |
-| @Decan2018 | Quantative empirical analysis of differences and similarities between the evolution of 7 varying ecosystems | Survival analysis | - | libraries.io | Cargo, CPAN, CRAN, npm, NuGet, Packagist, RubyGems | Package updates, which may cause dependent package failrues, are done on average every few months. Many packages in the analyzed package dependency networks were found to have a high number of transitive reverse dependencies, implying that package failures can affect a large number of other packages in the ecosystem. |
+| @Decan2017 | Dependency Issues in OSS Packaging Ecosystems | Quantitative analysis | - | - | Eclipse, CRAM, NPM | In all ecosystems, dependency updates result in issues, however the problems and solutions do vary. |
+| @Decan2018 | Quantitative empirical analysis of differences and similarities between the evolution of 7 varying ecosystems | Survival analysis | - | libraries.io | Cargo, CPAN, CRAN, npm, NuGet, Packagist, RubyGems | Package updates, which may cause dependent package failrues, are done on average every few months. Many packages in the analyzed package dependency networks were found to have a high number of transitive reverse dependencies, implying that package failures can affect a large number of other packages in the ecosystem. |
 | @Dittrich2014 | The article provides a holistic understanding of the observed and reported practices as a starting point to device specific support for the development in software ecosystems | Qualitative interview study | - | - | - | The main contribution of this article is the presentation of common features of product development and evolution in four companies. Although size, kind of software and business models differ |
 | @Izquierdo2018 | Code review analysis | Virtualization of process | - | Xen Github data | Xen | Analysis of code review has lead to more reviews and a more thoughtful and participary review process. Also providing accomodations for new software developers on OSS by easy access is very important. |
 
@@ -217,11 +219,54 @@ Overall we can conclude that there are a lot of improvements to be made. The cur
 | @Kula2017 | An Empirical Study on the Impact of Security Advisories on Library Migration  | Empirical study | 4,600 GitHub software projects and 2,700 library dependencies | Github, Maven | Currently, developers do not actively update their libraries, leading to security risks. |
 | @Constantinou2017 | Empirical comparison of developer retention in the RubyGems and NPM software ecosystems | Measurement of frequency and intensity of activity and retention | Github | NPM and RubyGems | Developers are more likely to abandon an ecosystem when they: 1) do not communicate with other developers, 2) do not have strong social and technical activity intensity, 3) communicate or commit less frequently and 4) do not communicate or commit for a longer period of time. |
 | @Raemaekers2017 | To what degree do versioning schemes provide information signals about breaking changes | Snapshot analysis | More than 100.000 jar files from Maven Central | Maven | 1) Minor or major does not matter, both about 33% breaking chances, 2) breaking changes have significant impact and need fix before an upgrade, 3) Bigger libraries introduce more breaking changes, maturity is not a factor |
-| @Malloy2018 | Analysis of the transition from Python 2 to Python 3 | Empirical impact study | 51 applications in the Qualitas suite for Python | Python | Most Python developers choose to maintain compatibility with Python 2 and 3, thereby only using a subset of the Python 3 language and not using the new features but instead limiting themselves to a langauge that is no longer under active development. |
+| @Malloy2018 | Analysis of the transition from Python 2 to Python 3 | Empirical impact study | 51 applications in the Qualitas suite for Python | Python | Most Python developers choose to maintain compatibility with Python 2 and 3, thereby only using a subset of the Python 3 language and not using the new features but instead limiting themselves to a language that is no longer under active development. |
 | @Dietrich2014 | Java | Empirical study into evolution problems caused by library upgrades | Qualitas corpus (Java OSS) | Java | There are currently a lot of problems caused, but some relatively minor changes to developments tools and the language could be very effective.  |
 
 ### What are the open challenges in ecosystem analytics, for which future research is required?
 <!--List of challenges, research questions and an aggregated set of open research items -->
+This research question gives insight in the current open challenges in the field of ecosystem
+analytics. It focuses on the challenges described in the studied papers.
+
+The most common open challenge across almost all papers is the generalization of results. Most of
+the studied papers only use a single ecosystem on which they base their results. This in turn
+means that it is unsure whether these results hold for other ecosystems as well in a similar
+fashion. For example, @Claes2015 states that a possibility for future work is to investigate to
+what extent the findings can be reused in the framework of other package-based software
+distributions.
+However, even if multiple ecosystems are researched within one paper, it shows to still not be
+enough to provide a generalization for each ecosystem. @Decan2018 states, after researching
+dependency network evolution for seven ecosystems, that they do not make any claims that their
+results can be generalised beyond the main package managers for specific languages. This is
+because @Decan2018 do not expect similar results for networks such as WordPress, as these
+packages tend to be more high-level (e.g. used by end users instead of reused by other packages).
+This overall shows that there is a lot of space for future research to be done in generalizing
+research beyond the already researched ecosystems.
+
+Another persistent open challenge is the ability to determine the health of an ecosystem. Although
+@Jansen2014 has provided OSEHO, "a framework that is used to establish the health of an open
+source ecosystem", @Jansen2014 noted that "there is surprisingly little literature available about
+open source ecosystem health". @Kikas2017 agree, stating that a general goal is to provide
+analytics to maintainers about the overall ecosystem trends.
+
+This challenge is related to determining a systems health. @Kikas2017 states that "a measure
+quantifying dependency health in an ecosystem should be developed". Moreover, according to
+@Jansen2014, determining the health of a system from an ecosystem perspective is required to
+determine which systems to use.
+
+Because of this, this challenge ties into the assistance while selecting packages as well. This
+challenge is about selecting the best dependency, according to the functionality needs of the
+existing application. @Abdalkareem2017 states that helping developers find the best packages
+suiting their needs need to be addressed. @Kikas2017 agrees that another general goal is to
+provide maintainers with tools to manage their dependencies.
+
+However, whenever these dependencies are chosen, another open challenge is to assist maintainers
+to keep these dependencies up to date. In order to find out when dependencies have to be updated,
+metrics have to be defined. @Bavota2014 states that their observations could be a starting point
+to build recommenders for supporting developers in complex dependency upgrade activity. @Cox2015
+provided "a metric to aid stakeholdersin deciding on whether the dependencies of a system should
+be updated". However, @Cox2015 states multiple refinements on this metric which could still be
+researched.
+
 
 | Reference | Open Challenges Found |
 | --------- | --------------------- |
