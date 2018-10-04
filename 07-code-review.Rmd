@@ -333,6 +333,60 @@ GitHub. For example, it is concluded that pull-requests are not being used that 
 pull-requests are being merged fast after they have been submitted, and that a pull request not
 being merged is most of the time not caused by technical errors in the pull-request.
 
+#### For answering **RQ1**
+* *Sub-topic*: open-source, in practice
+* *Research method*: empirical; qualitative for finding out reasons for closing pull request,
+  rest quantitative.
+* *Tools*: Custom developed tools, available online
+* *Datasets*: GHTorrent dataset, along with data collected by authors. The last is also available
+  online
+
+#### Research questions and answers
+* *How popular is the pull based development model?* "14% of repositories are using pull requests
+on Github. Pull requests and shared repositories are equally used among projects. Pull request
+usage is increasing in absolute numbers, even though the proportion of repositories using pull
+requests has decreased slightly."
+* *What are the lifecycle characteristics of pull requests?* "Most pull requests are less than 20
+lines long and processed (merged or discarded) in less than 1 day. The discussion spans on average
+to 3 comments, while code reviews affect the time to merge a pull request. Inclusion of test code
+does not affect the time or the decision to merge a pull request. Pull requests receive no special
+treatment, irrespective whether they come from contributors or the core team."
+* *What factors affect the decision and the time required to merge a pull request?* "The decision to
+merge a pull request is mainly influenced by whether the pull request modifies recently modified
+code. The time to merge is influenced by the developer’s previous track record, the size of the
+project and its test coverage and the project’s openness to external contributions."
+* *Why are some pull requests not merged?* "53% of pull requests are rejected for reasons having to
+do with the distributed nature of pull based development. Only 13% of the pull requests are
+rejected due to technical reasons."
+
+#### For answering **RQ2**
+* *Tools used*: GitHub PR system
+* *Company/organization*: Several open-source projects
+* *Evaluation*: N/A
+
+#### For answering **RQ3**
+#### Future research challenges
+* More research is needed on *drive-by commits*, which the paper loosely defines as commits added
+  to a repository through a PR by a user that has never contributed to the repository and hence
+  does so for the first time. Often this new contributor also has created a fork for the sole
+  purpose of creating this PR. More research is needed on accurately defining drive-by commits and
+  on assessing their implications.
+* More research is needed on the effect of the democratization of the develoment process, which
+  occurs for example through the use of pull requests. Democratization could for example lead to a
+  substantially stronger commons ecosystem.
+* Validating the used models on data from different sources and on projects on different languages.
+* Research on the motives of developers to work in a highly transparent workspace.
+* Research on formation of teams and management hierarchies with respect to open-source projects.
+* Research on novel code review practices.
+* Research on ways to managing tasks in the pull-based development model.
+
+#### Challenges in practice
+* Development of tools to help the core team of a project with prioritizing their work. The paper
+  gives as an example a tool which would suggest whether a pull request can be merged or not,
+  because this can be predicted with fairly high accuracy.
+* Development of tools that would suggest categories of improvement for pull request, for example
+  by suggesting that more documentation needs to be added.
+
 ### The impact of code review coverage and code review participation on software quality: A case study of the qt, vtk, and itk projects
 Reference: @mcintosh2014impact
 
