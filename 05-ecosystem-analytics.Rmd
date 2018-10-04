@@ -2,7 +2,7 @@
 
 ## Motivation
 In the modern day and age, the majority of software products make use of external software or
-libraries to use the functionality (for example parsing JSON) of these products, without having to
+libraries to use the functionality (for example parsing JSON) of these libraries, without having to
 develop this functionality itself. Moreover, multiple languages, such as Python and Rust, provide
 package managers (pip[^1] and Cargo[^2] respectively) which can be used to easily manage this
 third-party functionality, as well as distribute it.
@@ -13,8 +13,8 @@ developed, reviewed and used by the whole community. This development leads to m
 being developed and being available for public use.
 
 Because of these two developments, further inspection of the dependency relations between projects
-leads to a graph-like structure of software projects, where the nodes are the projects and the
-edges represent a dependency between two software projects. This structure is known as a
+leads to a graph-like structure of software projects. In this structure,the nodes are the projects
+and the edges represent a dependency between two software projects. This structure is known as a
 _software ecosystem_. As stated by @Messerschmitt2003, a _software ecosystem_ is "a collection of
 software products that have some given degree of symbiotic relationships." Another, similar
 definition is given by @Lungu2009: "A software ecosystem is a collection of software projects
@@ -24,7 +24,7 @@ being part of the software ecosystem." @Stallman2002 opposes the overall notion 
 structure a software ecosystem: "It is inadvisable to describe the free software community, or any
 human community, as an ecosystem, because that word implies the absence of ethical judgment."
 
-Although @Stallman2002 thinks that the term software ecosystem itself is incorrect, it does not
+Although @Stallman2002 disagrees with the use of the term ecosystem, he does not
 necessarily disagree with the definition of the term. The definition which will be used in
 this chapter is the definition of @Mens2013, since it captures the essence of the other two
 definitions, while adding the notion of the human communities alongside as well.
@@ -54,7 +54,7 @@ are answered using the previously stated set of papers.
 
 ## Research Protocol
 
-In order to select literature to answer the research questions given in the previous section, the
+In order to review literature to answer the research questions given in the previous section, the
 survey method suggested by @Kitchenham2004 is used. This method creates a systematic way to select
 a set of papers, which is relevant to the research question(s).
 
