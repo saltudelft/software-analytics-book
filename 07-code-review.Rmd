@@ -98,7 +98,7 @@ listed in alphabetical order of the first author's name, and then by publish yea
 | Lessons learned from building and deploying a code review analytics platform                                                        | 2015 | @bird2015lessons           | Y                |
 | Design and code inspections to reduce errors in program development                                                                 | 2002 | @fagan2002design           |                  |
 | An exploratory study of the pull-based software development model                                                                   | 2014 | @gousios2014exploratory    | Y                |
-| The impact of code review coverage and code review participation on software quality: A case study of the qt, vtk, and itk projects | 2014 | @mcintosh2014impact        |                  |
+| The impact of code review coverage and code review participation on software quality: A case study of the qt, vtk, and itk projects | 2014 | @mcintosh2014impact        | Y                |
 
 ### Google Scholar
 The following table lists all candidates that have been collected through the Google Scholar search
@@ -411,6 +411,32 @@ assessed.
 It turns out that both aspects improve software quality when they are higher. Review participation
 is the most influential. According to the authors there are other aspects, which they have not
 looked into, that are of significant importance for the review process.
+
+#### For answering **RQ1**
+* *Sub-topic*: open-source, in practice, impact
+* *Research method*: qualitative for finding out the impact of code review coverage and code review participation on software quality
+  rest quantitative.
+* *Tools*: N/A
+* *Datasets*: Data extracted from Qt, VTK and ITK code review dataset and necessary metrics including version control metrics, coverage metrics and participation metrics.
+
+#### Research questions and answers
+* *Is there a relationship between code review coverage and post-release defects?*
+ Although review coverage is negatively associated with software quality in our models, 
+ several defect-prone components have high coverage rates, suggesting that other properties of the code review process are at play.
+ 
+* *Is there a relationship between code review participation and post-release defects?*
+Lack of participation in code review has a negative impact on software quality. 
+Reviews without discussion are associated with higher post-release defect counts, 
+suggesting that the amount of discussion generated during review should be considered when making integration decisions.
+
+#### For answering **RQ2**
+Not applicable
+
+#### For answering **RQ3**
+#### Future research challenges
+* Research on other properties of modern code review such as code ownership. Inspired by this paper, other properties of modern code review can also be explored. 
+
+
 
 ### Who should review my code? A file location-based code-reviewer recommendation approach for modern code review
 Reference: @thongtanunam2015should
