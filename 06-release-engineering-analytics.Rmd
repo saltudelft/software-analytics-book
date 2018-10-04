@@ -321,17 +321,32 @@ iteratively and planned for four weekly milestones.
 
 ## Answers
 
+In this section, we will give an answer to each of the research questions
+that we have presented in [Section 7.1.1](#research-questions-1).
+
+### RQ1: Current Release Engineering Practices
+
+This section will give an answer to the question:
+How is modern release engineering done in practice?
+
+@adams2016a and @karvonen2017a have both described release engineering practices
+that are currently in use in the industry.
+@adams2016a focused on modern release engineering,
+while @karvonen2017a investigated agile release engineering.
+
 <!-- TODO -->
 
-### RQ1: ...
+### RQ2: Studied Parts of Release Engineering
+
+This section will give an answer to the question:
+What aspects of modern release engineering have been studied in software analytics research so far?
 
 <!-- TODO -->
 
-### RQ2: ...
+### RQ3: Future Research
 
-<!-- TODO -->
-
-### RQ3: ...
+This section will give an answer to the question:
+What aspects of modern release engineering make for relevant study objects in future software analytics research?
 
 <!-- TODO -->
 
