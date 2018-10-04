@@ -82,7 +82,7 @@ three different types:
 MSc. Joseph Hejderup has provided us with a total of thirteen papers, as shown in Table 1.
 
 As each of these papers come from an expert in the field, each paper is assumed to be relevant to
-atleast the field of software ecosystems. Because of this, each of these papers were judged on
+at least the field of software ecosystems. Because of this, each of these papers were judged on
 their relevance to either of the research questions. In Table 1, this relevance judgment is shown
 in the left column, since a paper is only selected, if the paper is indeed relevant. Table 2
 describes the reason for which each particular paper is not selected for the literature survey.
@@ -197,16 +197,16 @@ the combination of quantitative and qualitative research methods.
 As has been said above, the most common explored topic within the body of studied papers are
 topics relating to dependencies between different software projects. Therefore, it does make a lot
 of sense that the most common ecosystems used are those of package managers, since these package
-managers are central repositories from which the packages, aswell as their dependencies, can
+managers are central repositories from which the packages, as well as their dependencies, can
 easily be retrieved.
 
 The most common used ecosystem in the studied papers is _npm_[^5], as used by @Abdalkareem2017,
 @Bogart2016, @Decan2017, @Kikas2017, and @Decan2018. There are a few reasons why this is the most
 common used ecosystem throughout the papers. Firstly, npm is the largest software registry,
 according to their website[^5]. Moreover, npm is the package manager of JavaScript. @Kikas2017
-explains that it is benificial to use this ecosystem, because the majority of their packages are
+explains that it is beneficial to use this ecosystem, because the majority of their packages are
 hosted on GitHub and Developers specify required packages in their project's dependency files.
-Ofcourse, there are more ecosystems which have the same properties, such as RubyGems (Ruby) and
+Of course, there are more ecosystems which have the same properties, such as RubyGems (Ruby) and
 Crates.io (Rust)[@Kikas2017].
 
 However, these are not the only used ecosystems. @Decan2018 use the _libraries.io_ dataset for its
@@ -219,7 +219,7 @@ Apart from these datasets based on packages in package repositories, there are p
 other datasets and therefore ecosystems as well. @Bavota2014 researches the Apache Community and
 therefore uses a dataset corresponding to the full Java subset of the Apache ecosystem. @Cox2015
 instead uses the dataset of the Apache Maven Project to validate his created metric. @Claes2015
-researches package incompatiblities and therefore uses a ten year period of the Debian i386
+researches package incompatibilities and therefore uses a ten year period of the Debian i386
 testing and stable distributions. @Robbes2012 opted for the Squeak/Pharo ecosystem, as they stated
 that this ecosystem would provide support for answering their research questions.
 
@@ -235,9 +235,9 @@ that this ecosystem would provide support for answering their research questions
 | @Decan2017 | Dependency Issues in OSS Packaging Ecosystems | Quantitative analysis (Survival analysis, statistics)| - | Eclipse, CRAM, npm | Eclipse, CRAM, npm | In all ecosystems, dependency updates result in issues, however the problems and solutions do vary. |
 | @Kikas2017 | Package dependency networks | Quantitative (Statistics)| - | npm, RubyGems, Crates.io | npm, RubyGems, Crates.io | All ecosystems are growing and over time, ecosystems become less dependent on a single popular package. |
 | @Robbes2012 | Developers response to API deprecation | Quantitative (Statistics)| - | Squeak, Pharo | Squeak, Pharo | API changes can have a large impact on ecosystem. Projects take a long time to adapt to an API change. |
-| @Decan2018 | Quantitative empirical analysis of differences and similarities between the evolution of 7 varying ecosystems | Survival analysis | - | libraries.io | Cargo, CPAN, CRAN, npm, NuGet, Packagist, RubyGems | Package updates, which may cause dependent package failrues, are done on average every few months. Many packages in the analyzed package dependency networks were found to have a high number of transitive reverse dependencies, implying that package failures can affect a large number of other packages in the ecosystem. |
+| @Decan2018 | Quantitative empirical analysis of differences and similarities between the evolution of 7 varying ecosystems | Survival analysis | - | libraries.io | Cargo, CPAN, CRAN, npm, NuGet, Packagist, RubyGems | Package updates, which may cause dependent package failures, are done on average every few months. Many packages in the analyzed package dependency networks were found to have a high number of transitive reverse dependencies, implying that package failures can affect a large number of other packages in the ecosystem. |
 | @Dittrich2014 | The article provides a holistic understanding of the observed and reported practices as a starting point to device specific support for the development in software ecosystems | Qualitative interview study | - | - | - | The main contribution of this article is the presentation of common features of product development and evolution in four companies. Although size, kind of software and business models differ |
-| @Izquierdo2018 | Code review analysis | Virtualization of process | - | Xen Github data | Xen | Analysis of code review has lead to more reviews and a more thoughtful and participary review process. Also providing accomodations for new software developers on OSS by easy access is very important. |
+| @Izquierdo2018 | Code review analysis | Virtualization of process | - | Xen Github data | Xen | Analysis of code review has lead to more reviews and a more thoughtful and participatory review process. Also providing accommodations for new software developers on OSS by easy access is very important. |
 
 ### What are the practical implications from the state of the art?
 <!-- Rather than theoretical, actual case studies done with findings -->
@@ -248,7 +248,7 @@ findings. A schematic overview of our findings can be found in the table below.
 
 From most papers we find that developers are slow when updating their dependencies, or sometimes
 they do not even do it at all. @Hora2016 suggest that a main reason for this is that breaking
-changes cannot be solved in a uniform manner througout the ecosystem, but rather need a specific
+changes cannot be solved in a uniform manner throughout the ecosystem, but rather need a specific
 implementation for each system. We have also found that breaking changes are constantly introduced
 when dependencies are updated. According to @Raemaekers2017 about 33% of releases, either minor or
 major, contain a breaking change that needs looking into. Breaking changes could pose compiling
@@ -275,7 +275,7 @@ development tools and the Java language itself that could be very effective.
 
 | Reference | Explored topic(s) | Research method(s) | Dataset(s) | Ecosystem(s) | Conclusion |
 | --------- | ----------------- | ------------------ | ---------- | ------------ | ---------- |
-| @Hora2016 | Exploratory study aimed at observing API evolution and its impact | Empirical study | 3600 distinct systems | Pharo | After API changes, clients need time to react and rarely react at all. Replacements cannot be resolved in a uniform manner throughout the ecosystem. API changes and deprication can present different characteristics.
+| @Hora2016 | Exploratory study aimed at observing API evolution and its impact | Empirical study | 3600 distinct systems | Pharo | After API changes, clients need time to react and rarely react at all. Replacements cannot be resolved in a uniform manner throughout the ecosystem. API changes and depreciation can present different characteristics.
 | @Kula2017 | An Empirical Study on the Impact of Security Advisories on Library Migration  | Empirical study | 4,600 GitHub software projects and 2,700 library dependencies | Github, Maven | Currently, developers do not actively update their libraries, leading to security risks. |
 | @Constantinou2017 | Empirical comparison of developer retention in the RubyGems and NPM software ecosystems | Measurement of frequency and intensity of activity and retention | Github | NPM and RubyGems | Developers are more likely to abandon an ecosystem when they: 1) do not communicate with other developers, 2) do not have strong social and technical activity intensity, 3) communicate or commit less frequently and 4) do not communicate or commit for a longer period of time. |
 | @Raemaekers2017 | To what degree do versioning schemes provide information signals about breaking changes | Snapshot analysis | More than 100.000 jar files from Maven Central | Maven | 1) Minor or major does not matter, both about 33% breaking chances, 2) breaking changes have significant impact and need fix before an upgrade, 3) Bigger libraries introduce more breaking changes, maturity is not a factor |
@@ -323,7 +323,7 @@ However, whenever these dependencies are chosen, another open challenge is to as
 to keep these dependencies up to date. In order to find out when dependencies have to be updated,
 metrics have to be defined. @Bavota2014 state that their observations could be a starting point
 to build recommenders for supporting developers in complex dependency upgrade activity. @Cox2015
-provide "a metric to aid stakeholdersin deciding on whether the dependencies of a system should
+provide "a metric to aid stakeholders in deciding on whether the dependencies of a system should
 be updated". However, @Cox2015 state multiple refinements on this metric which could still be
 researched.
 
@@ -334,8 +334,8 @@ researched.
 | @Abdalkareem2017 | Compare use of code snippets on Q&A sites and trivial packages | 
 | @Abdalkareem2017 | How to manage and help developers choose the best packages |
 | @Decan2018 | Findings for one ecosystem cannot necessarily be generalized to another |
-| @Decan2018 | Transitive dependencies are very frequent, meaning that package failrues can affect a large number of other packages in the ecosystem |
-| @Jansen2014 | Determing the health of a system from an ecosystem perspective instead of project level is needed to determine which systems to use. This paper provides an initial approach but a lot more research could and should be done to determine system health. |
+| @Decan2018 | Transitive dependencies are very frequent, meaning that package failures can affect a large number of other packages in the ecosystem |
+| @Jansen2014 | Determining the health of a system from an ecosystem perspective instead of project level is needed to determine which systems to use. This paper provides an initial approach but a lot more research could and should be done to determine system health. |
 
 [^1]: <https://pypi.org/project/pip/>
 [^2]: <https://crates.io/>
