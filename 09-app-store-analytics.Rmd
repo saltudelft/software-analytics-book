@@ -1,9 +1,108 @@
-# App Store analytics
+# App Store Analytics
 
-## API change and fault proneness: A threat to the success of Android apps
-M. Linares-Vásquez, G. Bavota, C. Bernal-Cárdenas, M. Di Penta, R. Oliveto, and D. Poshyvanyk, in 
-Proceedings of the 2013 9th joint meeting on foundations of software engineering, 2013, pp. 
-477–487.
+## Motivation
+In the year 2008, the first app stores became available. These stores have grown rapidly in size 
+since then, with over 3 million apps in the Google Play store alone at the time of writing 
+[REFERENCE]. These app stores together with the large user bases associated with them provide 
+software developers and researchers with valuable data. The process of exploiting this data from 
+app stores to gain valuable insights is what we would call “App Store Analytics”. Because apps 
+have not been around for a long time the research field of App Store Analytics is still very 
+young. However, because apps are used so much nowadays it plays an important role in the field of 
+Software Engineering. Therefore, to get an overview of the current state of this young research 
+field this chapter(?) is devoted as a survey on the field of App Store Analytics. We present 
+three research questions to structure this survey:
+
+* **RQ1** Current state of the art in software analytics for App Store Analytics:
+    - Topics that are being explored.
+    - Research methods, tools, and datasets being used.
+    - Main research findings, aggregated.
+
+* **RQ2** Current state of practice in software analytics for App Store Analytics:
+    - Tools and companies creating/employing them.
+    - Case studies and their findings.
+
+* **RQ3** Open challenges and future research required.
+
+
+## Research protocol
+TODO: here are just ideas of what I'm doing but they should be properly written 
+
+The research protocol is divided into two important parts: the articles search process and the 
+article selection process. In the following paragraphs, both processes will be explained. [Refer 
+to Kitchenham?]
+
+### Search queries (Article search process)
+Our initial seed of the papers came from the survey of the field of App Store Analytics by Martin 
+et al. [TODO: REFER to survey] and after that we used the keywords **apps**, **app store**, **app 
+store analytics** and **app store mining** to search for other relevant papers on Google Scholar, 
+ACM, IEEE Xplore and pages of individual journals (CSUR, TSE, EMSE, JSS, TOSEM, IST) and 
+conferences (ICSE, FSE, ASE, MSR, OSDI). From the results only articles with relevant titles were 
+selected and added to the list for consideration.
+
+TODO: Include a table with journals/conferences including their full names
+
+
+### Article selection
+In order to retain only the most relevant papers to answer the research questions, we devised a 
+composed metric that takes into account the number of citations and the year the paper was 
+published. Taking these elements the scoring scheme is the following: 
+Citations (C):
+Year of publication (Y):
+The metric is computed as follows:
+Inclusion_metric = C (0.5) * Y (0.5)
+
+For each paper the previously mentioned metric was calculated and the top 30 were selected, 
+discarding the rest. 
+
+#### Inclusion criteria
+ - The paper was published in well established journal or conference.
+ - Title or abstract of the paper mentions app stores, mining from app stores or app store analytics.
+ - Tha paper was published in 2010 or later.
+
+#### Exclution criteria
+ - The paper has at least 10 citations on Google Scholar.
+ - The paper focuses on mobile app development or is an analysis of arbitrary selection of apps
+  and does not extend to the app stores as a whole.
+
+### Fact extraction
+
+Taking into consideration the example presented by Kitchenham et al in [reference], the following
+ data were extracted from each of the papers:
+- Source (journal or conference)
+- Complete reference
+- Main topic area
+- Authors information (full names, institution, and country)
+- Summary (research questions and answers)
+- Research question / issue
+- MORE?
+
+Each one of the team members was in charge of reviewing and extracting the data of a set of papers
+. Then, the extracted data was checked by another member. The allocation of team members to the papers was random, equally splitting the workloads.
+
+## Answers 
+
+* **RQ1** Current state of the art in software analytics for App Store Analytics
+
+* **RQ2** Current state of practice in software analytics for App Store Analytics
+
+* **RQ3** Open challenges and future research required
+
+## Paper extracted data
+
+### API change and fault proneness: A threat to the success of Android apps
+
+**Source:** Conference ESEC/FSE'17 Joint Meeting of the European Software Engineering Conference 
+and the ACM SIGSOFT Symposium on the Foundations of Software Engineering
+
+**Main topic area:** using user feedback/reviews, API changes
+
+**Authors information (full names, institution, and country):**
+- Mario Linares-Vásquez - Universidad de los Andes, Colombia
+- Gabriele Bavota - University of Sannio, Italy
+- Carlos Bernal-Cárdenas - Universidad Nacional de Colombia, Colombia
+- Massimiliano Di Penta - University of Sannio, Italy
+- Rocco Oliveto - University of Molise, Italy
+- Denys Poshyvanyk - College of William and Mary, USA
 
 The paper presents an empirical study that aims to corroborate the relationship between the fault 
 and change-proneness of APIs and the degree of success of Android apps measured by their user 
@@ -18,11 +117,93 @@ relationships between the variables can be assumed, the paper found significant 
 level of success of the apps taking into consideration the change and fault-proneness of the APIs 
 they use. 
 
-## The Impact of API Change and Fault-Proneness on the User Ratings of Android Apps
-G. Bavota, M. Linares-Vásquez, C. E. Bernal-Cárdenas, M. D. Penta, R. Oliveto and D. Poshyvanyk, 
-in IEEE Transactions on Software Engineering, vol. 41, no. 4, pp. 384-407, 1 April 2015.
-doi: 10.1109/TSE.2014.2367027
 
+**Research question/issue:** relationship between fault- and change-proneness of APIs and the 
+degree of success in Android apps.
+
+### What would users change in my app? summarizing app reviews for recommending software changes
+
+**Source:** Proceeding FSE 2016 Proceedings of the 2016 24th ACM SIGSOFT International Symposium 
+on Foundations of Software Engineering
+
+**Main topic area:** using user feedback/reviews
+
+**Authors information (full names, institution, and country):**
+- Andrea Di Sorbo - University of Sannio, Italy
+- Sebastiano Panichella - University of Zurich, Switzerland
+- Carol V. Alexandru - University of Zurich, Switzerland
+- Junji Shimagaki - Sony Mobile Communications, Japan
+- Corrado A. Visaggio - University of Sannio, Italy
+- Gerardo Canfora - University of Sannio, Italy
+- Harald C. Gall - University of Zurich, Switzerland
+
+**Summary (research questions and answers):** The paper proposes a new approach for analyzing App 
+Store user reviews, deriving insights from them. The presented solution has two components. 
+First, the User Reviews Model (URM) that enable the classification of users intentions (e.g., UI 
+improvements, bug fixes, etc.). Second, the Summarizer of User Review Feedback (SURF). A tool 
+that, by leveraging the URM, is capable of generating summaries of users feedback. After 
+evaluating the proposed approach, TODO
+
+**Research question/issue:** there is no approach that is able to do, at the same time, the 
+following: (i) determine for a large number of reviews the speciﬁc topic discussed in the 
+review (e.g., UI improvements, security/licensing issues, etc.), (ii) identify the maintenance 
+task to perform for addressing the request stated in the review (e.g., bug ﬁxing, feature 
+enhancement, etc.), and (iii) present such information in the form of a condensed, interactive and
+ structured agenda of recommended software changes, which is actionable for developers. [Reference paper]
+
+### App Store, Marketplace, Play! An Analysis of Multi-Homing in Mobile Software Ecosystems
+ 
+**Source:**
+Proceedings of the Fourth International Workshops on Software Ecosystems
+**Main topic area:** App store ecosystem
+
+**Authors information (full names, institution, and country):**
+Sami Hyrynsalmi, University of Turku, Finland
+ 
+Tuomas Mäkilä, University of Turku, Finland
+ 
+Antero Järvi, University of Turku, Finland
+ 
+Arho Suominen, VTT Technical Research Centre of Finland, Finland
+ 
+Marko Seppänen, Tampere University of Technology, Finland
+ 
+Timo Knuutila, University of Turku, Finland
+
+**Summary (research questions and answers):**
+Multi-homing is not used by many developers, where multi-homing is the strategy of releasing your 
+application to multiple platforms. An analysis of Google Play, App Store and Windows Phone Store 
+shows that not many developers use this strategy. Next to this, the paper found that the type and 
+popularity of apps does not differ from those that use a single-homing strategy.
+ 
+**Research question/issue:** Analysis of multi-homing in different app stores. How much is it used 
+by developers and is there a difference in popularity?
+
+### A systematic literature review: Opinion mining studies from mobile app store user reviews
+
+*Source:**
+Journal of Systems and Software
+ 
+**Main topic area:**
+Opinion Mining and Requirement Engineering
+ 
+**Authors information (full names, institution, and country):**
+Necmiye Genc-Nayebi, École de Technologie Supérieure (ETS) - Université du Québec, Canada
+Dr. Alain Abran,  École de Technologie Supérieure (ETS) - Université du Québec, Canada
+ 
+**Summary (research questions and answers):**
+TODO: summary
+ 
+**Research question/issue:**
+What are the proposed solutions for mining online opinions in app store user reviews, challenges 
+and unsolved problems in the domain, new contributions to software requirements evolution and 
+future research direction.
+
+
+
+### The Impact of API Change and Fault-Proneness on the User Ratings of Android Apps
+
+TODO: template
 
 The paper by Bavota et al. aims to find empirical evidence supporting the success of apps and the 
 relationship with change- and fault-proneness of the underlying APIs, where the success of the app 
@@ -34,9 +215,9 @@ user rating are significantly less change- and fault-prone than APIs used by app
 rating. In the second case study the paper found that most of the 45 developers observed a direct 
 relationship between the user ratings of apps and the APIs those apps use.
 
-## How can i improve my app? Classifying user reviews for software maintenance and evolution
-S. Panichella, A. D. Sorbo, E. Guzman, C. A. Visaggio, G. Canfora, and H. C. Gall, in 2015 ieee 
-international conference on software maintenance and evolution (icsme), 2015, pp. 281–290.
+### How can i improve my app? Classifying user reviews for software maintenance and evolution
+
+TODO: template
 
 The most popular apps in the app stores (such as Google Play or App Store) receive thousands of 
 user reviews per day and therefore it would be very time demanding to go through the reviews 
