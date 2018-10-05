@@ -448,9 +448,11 @@ suggesting that the amount of discussion generated during review should be consi
 
 #### For answering **RQ3**
 #### Future research challenges
-* Research on other properties of modern code review such as code ownership. Inspired by this paper, other properties of modern code review can also be explored. 
+* Research on other properties of modern code review such as code ownership. Inspired by this paper, other properties of modern code review can also be explored.
 
-
+#### Notes
+There exists an extended version of this paper [@mcintosh2016empirical]. Only the original version
+of the paper has been included in this survey.
 
 ### Who should review my code? A file location-based code-reviewer recommendation approach for modern code review
 Reference: @thongtanunam2015should
