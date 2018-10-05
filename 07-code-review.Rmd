@@ -264,14 +264,26 @@ their products.
 Not applicable
 
 #### For answering **RQ2**
-* *Tools used:* CodeFlow
+* *Tools used:* CodeFlow, CodeFlow Analytics
 * *Company/organization using the tool:* Microsoft
-* *Evaluation of the tool:* CodeFlow has already had a positive implace on development teams because of its simplicity, low barrier for feedback and flexible support of Microsoft's disparate engineering systems. But some challenges such as dealing with branches and linking reviews to commits need to improve.
+* *Evaluation of the tool:* CodeFlow has already had a positive implace on development teams
+because of its simplicity, low barrier for feedback and flexible support of Microsoft's disparate
+engineering systems. But some challenges such as dealing with branches and linking reviews to
+commits need to improve.
+
+As for CodeFlow Analytics: the tool is being used increasingly throughout Microsoft, with
+different teams using the tool for different purposes. It is for example effectively used to create
+dashboards with code review evaluation information, or for examining past reviews in detail.
+However, some parts of the tool still need to improve in terms of user-friendliness, for example
+because some functionality is difficult to find.
 
 #### For answering **RQ3**
 #### Future research challenges
-* Research on an automatic way to classify and assess the usefulness of comments. This is the interviewees's request and a challenge of CodeFlow.  
-* Research on many aspects of code view based on CodeFlow or other similar tools. 
+* Research on an automatic way to classify and assess the usefulness of comments. This was
+specifically requested by an interviewees's and is still an open challenge regarding CodeFlow.
+* Research on many aspects of code review based on data from CodeFlow Analytics or other similar
+tools.
+* Research on methods to automatically recommend reviewers for changes in the system.
 
 ### Impact of peer code review on peer impression formation: A survey
 Reference: @bosu2013impact
