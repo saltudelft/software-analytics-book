@@ -249,8 +249,6 @@ Not applicable
 #### For answering **RQ3**
 #### Future research challenges
 
-
-
 ### Lessons learned from building and deploying a code review analytics platform
 Reference: @bird2015lessons
 
