@@ -327,7 +327,7 @@ iteratively and planned for four weekly milestones.
 In this section, we will give an answer to each of the research questions
 that we have presented in [Section 7.1.1](#research-questions-1).
 
-### RQ1: Current Release Engineering Practices
+### RQ1: Modern Release Engineering Practices
 
 This section will give an answer to the question:
 _How is modern release engineering done in practice?_
