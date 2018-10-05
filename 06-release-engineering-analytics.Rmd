@@ -284,12 +284,12 @@ this survey.
 **Included:**
 
 - @adams2016a
-- @castelluccino2017a
+- @castelluccio2017a
 - @cesar2017a
 - @claes2017a
 - @da2014a
 - @da2016a
-- @fuyibayashi2017a
+- @fujibayashi2017a
 - @karvonen2017a
 - @kerzazi2013a
 - @khomh2015a
