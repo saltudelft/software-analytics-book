@@ -68,8 +68,8 @@ The following data will be collected from each considered resource:
 * Data for answering **RQ1**:
     - Sub-topic of research
     - Research method
-    - Tools that are subject of research
-    - Datasets that are subject of research
+    - Tools used for research
+    - Datasets used for research
     - Research questions and their answers
 * Data for answering **RQ2**:
     - Tools used
