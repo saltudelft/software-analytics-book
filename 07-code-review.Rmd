@@ -112,7 +112,7 @@ list, respectively.
 |---------------------------------------------------------------------------------------------------------------|------|-----------------------------|-------------|---------------|------------------|
 | Investigating technical and non-technical factors influencing modern code review                              | 2016 | @baysal2016investigating    | 29-09-2018  | 9             |                  |
 | Modern code review                                                                                            | 2010 | @cohen2010modern            | 25-09-2018  | 1             | N                |
-| An empirical study of the impact of modern code review practices on software quality                          | 2016 | @mcintosh2016empirical      | 25-09-2018  | 4             |                  |
+| An empirical study of the impact of modern code review practices on software quality                          | 2016 | @mcintosh2016empirical      | 25-09-2018  | 4             | N                |
 | A Study of the Quality-Impacting Practices of Modern Code Review at Sony Mobile                               | 2016 | @shimagaki2016study         | 29-09-2018  | 11            |                  |
 | Reda: A web-based visualization tool for analyzing modern code review dataset                                 | 2014 | @thongtanunam2014reda       | 29-09-2018  | 8             |                  |
 | Who should review my code? A file location-based code-reviewer recommendation approach for modern code review | 2015 | @thongtanunam2015should     | 29-09-2018  | 5             |                  |
@@ -451,8 +451,8 @@ suggesting that the amount of discussion generated during review should be consi
 * Research on other properties of modern code review such as code ownership. Inspired by this paper, other properties of modern code review can also be explored.
 
 #### Notes
-There exists an extended version of this paper [@mcintosh2016empirical]. Only the original version
-of the paper has been included in this survey.
+There exists an extended and improved version of this paper [@mcintosh2016empirical]. Only the
+original version of the paper has been included in this survey.
 
 ### Who should review my code? A file location-based code-reviewer recommendation approach for modern code review
 Reference: @thongtanunam2015should
@@ -472,3 +472,5 @@ been added to the final survey for the stated reason.
 
 * @cohen2010modern: This book is not accessible via the TU Delft subscription of Safari Books
   Online, and hence we could not read it to include it in the survey.
+* @mcintosh2016empirical: This is an extended and improved version of a paper already included in
+  the survey. Because of time constraints we will not reconsider this version.
