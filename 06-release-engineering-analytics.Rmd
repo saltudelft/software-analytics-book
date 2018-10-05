@@ -570,10 +570,6 @@ Semi-systematic literature survey:
 - Future research:
     - Systematically search for agile and lean adoption papers
 
-Notes:
-
-- Basically contains all the answers we need 😂
-
 ### Release management in free and open source software ecosystems
 
 Reference: @poo-caamano2016a
