@@ -288,3 +288,36 @@ developers may also be able to focus on the parts that are likely to be the most
 address, which could lead to better time allocation. The status quo for how much time is to be 
 expected to be spent on testing may also change, given automated test repair and generation 
 techniques become effective and accessible.
+
+## Conclusion
+In this survey, three different research questions about software testing analytics were answered. 
+(1) How do developers currently test? (2) What state of the art technologies are being used? (3) 
+What future developments can be expected?
+
+Regarding the current testing practices of developers, it was found that developers do not seem to 
+update their tests very often and when they do, it is because of a changed condition in production 
+code lines. Furthermore, older uncovered production code lines are not likely to be covered in the 
+end. Developers, thus, seem to ignore indications of their code coverage tools or do not seem to use
+any code coverage tool at all. Furthermore, developers do not seem to put a lot of effort into 
+making sure the co-evolution of their production- and test code is done gracefully. They do, on the 
+other hand, make sure their test code compiles when production code classes have been removed. 
+However, testing is mostly done in longer periods of increased testing. Also, the methodology of TDD
+seems to be a confusing term for developers, as there is not enough clear guidance in the 
+implementation of it. The actual ratio of TLD and TDD is, therefore, unknown but can be guessed with
+great certainty to be much lower for TDD than for TDD.
+
+The current state of the art in testing analytics consists of research in co-evolution and 
+generation of tests, and risk-driven testing. Approaches are proposed for automatically repairing 
+and generating test cases during software evolution. While fully automated test suite generation is 
+not there yet, a tool is introduced that generates the templates for tests, which guarantees 
+compilation, supports exception handling and finds a suitable location for the test. In the field of 
+risk-driven testing, new risk measures are defined which make prioritizing certain high-risk tests 
+able while running the entire test-suite, which could make the suite detect failing tests earlier.
+
+For future developments, further research can be expected on the front of automated test generation.
+Even with some discussion regarding the effectiveness of test generation, the field currently agrees
+that conducting research in order to find, especially, realistic ways of generating tests is 
+worthwhile. It was also found that risk-driven testing has been given more attention in the form of 
+research recently. This subtopic is still in its research phase. It can be expected that research on
+the front of history based risk prediction methods will continue.
+
