@@ -430,7 +430,9 @@ Reviews without discussion are associated with higher post-release defect counts
 suggesting that the amount of discussion generated during review should be considered when making integration decisions.
 
 #### For answering **RQ2**
-Not applicable
+* *Tools*: Gerrit
+* *Company/Organization*: N/A
+* *Evaluation*: N/A
 
 #### For answering **RQ3**
 #### Future research challenges
