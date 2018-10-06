@@ -142,7 +142,7 @@ into.
 For the quality of code, test coverage is a popular metric. Alternatives are, for example,
 acceptance tests, the number of defects in the last week, or defects per Line of Code (LOC)
 [@GAROUSI20131354]. However, code coverage might not be the best indicator for the extensiveness of
-testing, as according to @Beller:2015:DT:2819009.2819101 a code coverage of 75% can possibly be
+testing. For example, according to @Beller:2015:DT:2819009.2819101 a code coverage of 75% can possibly be
 reached with only spending less than a tenth of the total development time on testing. Another
 concern of using test coverage as a metric is the concept of treating the metric @bouwers2012,
 where developers try to uplift the value of code coverage by hitting many lines with only a few
@@ -153,12 +153,14 @@ This also fits with the findings of @ROMANO201764, where they claim that "[d]eve
 quick-and-dirty production code to pass the tests, do not update their tests often, and ignore
 refactoring."
 
-Besides older tests rarely being updated for changed code, it was also observed by
-@pinto2012understanding that a significant number of new tests that are added, were not necessarily
+Besides older tests rarely being updated for changed code, even new tests do not necessarily have
+the purpose of validating new production code lines. It was observed by @pinto2012understanding 
+that a significant number of new tests that are added, were not necessarily
 added to cover new code but rather to exercise the changed parts of the code after the program is
-modified. This finding fits with the observation of @marsavina2014, who found whenever numerous
-condition related changes are conducted in the production code base, test cases are created or
-deleted in order to address the modified branches. Older production code lines, therefore, may stay
+modified. This finding fits with the observation of @marsavina2014, who found that test cases are
+created or deleted in order to address the modified branches whenever numerous
+condition related changes are conducted in the production code base.
+Older production code lines, therefore, may stay
 untouched by any test cases. Lines uncovered by any traditional code coverage tool should be
 indicated and signaled to the developer. Therefore, developers should be aware of the fact that
 they missed lines of their production code with any tests. It, thus, seems to be a deliberate
@@ -172,7 +174,7 @@ number of missed conditions is higher.
 
 #### Co-evolution
 In a case study conducted by @zaidman2011studying, there was no evidence found for an increased
-activity of testing before a release. However, they were capable of detecting periods of increased
+activity of testing before a release. However, the study was able to detect periods of increased
 test writing activity. These increased activities of writing test cases were found to be after
 longer periods of writing production code [@zaidman2011studying]. With a longer timespan of not
 writing tests, it can be concluded for these cases that the production code and test code do not
@@ -185,12 +187,12 @@ code, meaning that the methodology of TDD is used when production code was writt
 respective test code. This is in contrast with the originally proposed constraint by @beck2003test,
 where a line of production code should only be written after a failing automated test was written
 in advance. The confusion for the definition of TDD can also be traced back by the finding of
-@beller2015, where programmers who claim they practice TDD neither follow it strictly nor do they
+@beller2015, where programmers who claim they practice TDD neither follow it strictly nor
 practice it for all of their modification. A survey conveyed by @GAROUSI20131354 on 196 respondents
 (amongst them managers and developers) indicated that with a ratio of 3:1 use Test-last development
 and Test-driven development respectively. This found ratio is in contrast with the numbers found by
-@beller2015; only 1.7% of the developers followed seem to follow the strict TDD definition, where
-even most of these developers only practice this strict definition in less than 20% of their time.
+@beller2015; only 1.7% of the observed developers seemed to follow the strict TDD definition, where
+most of these developers only practice this strict definition in less than 20% of their time.
 However, it must be mentioned that the survey done by @GAROUSI20131354 only surveyed the subjects,
 which allows the confusion for the definition of TDD to play a major role in the results found.
 
