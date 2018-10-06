@@ -133,32 +133,42 @@ below.
 ## Answers
 
 ### How do developers currently test?
+To answer the first research question "how do developers currently test?", this research question
+is answered first by getting a general idea of test practices, then the general co-evolution of 
+code is discussed, and finally, the use of Test Driven Development amongst developers is looked 
+into.
+
 #### How do we test?
-In order to get some sense of the quality of an application, developers can apply different
-methods. For the quality of code or the quality of testing different metrics can be used, of which
-on of the most popular metric is the code coverage metric. Alternatives are, for example,
+For the quality of code, test coverage is a popular metric. Alternatives are, for example,
 acceptance tests, the number of defects in the last week, or defects per Line of Code (LOC)
-[@GAROUSI20131354]. Code coverage might not be the best indicator for the extensiveness of testing,
-as according to @Beller:2015:DT:2819009.2819101 a code coverage 75% can possibly be reached with
-only spending less than a tenth of the total development time on testing. This might also have to
-do something with treating the metric, where developers try to uplift the value of code coverage by
-hitting many lines with only a few test cases. It could also be the case that tests are too simple.
-In @marsavina2014 it was observed that test cases were rarely updated when changes related to
-attributes or methods in the production code were made. Possible explanations for this are that
-these changes were not significant or the tests were too simple and were likely to pass. This also
-fits with the findings of @ROMANO201764, where they claim that "[d]evelopers write quick-and-dirty
-production code to pass the tests, do not update their tests often, and ignore refactoring."
+[@GAROUSI20131354]. However, code coverage might not be the best indicator for the extensiveness of
+testing, as according to @Beller:2015:DT:2819009.2819101 a code coverage of 75% can possibly be
+reached with only spending less than a tenth of the total development time on testing. Another
+concern of using test coverage as a metric is the concept of treating the metric @bouwers2012,
+where developers try to uplift the value of code coverage by hitting many lines with only a few
+test cases. In @marsavina2014 it was observed that test cases were rarely updated when changes
+related to attributes or methods in the production code were made. Possible explanations for this
+are that these changes were not significant or the tests were too simple and were likely to pass.
+This also fits with the findings of @ROMANO201764, where they claim that "[d]evelopers write
+quick-and-dirty production code to pass the tests, do not update their tests often, and ignore
+refactoring."
+
 Besides older tests rarely being updated for changed code, it was also observed by
 @pinto2012understanding that a significant number of new tests that are added, were not necessarily
 added to cover new code but rather to exercise the changed parts of the code after the program is
 modified. This finding fits with the observation of @marsavina2014, who found whenever numerous
 condition related changes are conducted in the production code base, test cases are created or
 deleted in order to address the modified branches. Older production code lines, therefore, may stay
-untouched by any test cases. Lines uncovered by any code coverage tool should be indicated and
-signaled to the developer, whereas the most commonly used coverage metrics are branch coverage and
-conditional coverage [@GAROUSI20131354]. As both branch coverage and conditional coverage require
-multiple different conditions for if-statements, it may possibly be that the absolute number of
-missed lines of production code by tests is very low.
+untouched by any test cases. Lines uncovered by any traditional code coverage tool should be
+indicated and signaled to the developer. Therefore, developers should be aware of the fact that
+they missed lines of their production code with any tests. It, thus, seems to be a deliberate
+action, by most developers, to not cover older production code lines. These lines might be
+'too hard' to test, other lines may be easier to test, or developers do not seem to see the
+relevance of testing these uncovered lines of code. However, the most commonly used coverage
+metrics are branch coverage and conditional coverage [@GAROUSI20131354]. As both branch coverage
+and conditional coverage require multiple different conditions for if-statements, it may possibly
+be that the absolute number of missed lines of production code by tests is very low but rather the
+number of missed conditions is higher.
 
 #### Co-evolution
 In a case study conducted by @zaidman2011studying, there was no evidence found for an increased
