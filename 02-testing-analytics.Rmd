@@ -202,9 +202,9 @@ We will cover two research fields regarding testing analytics: test evolution an
 risk-driven testing. 
 
 #### Test evolution and generation
-Although @pinto2012understanding found the investigation of automated test repairing is not a 
+@pinto2012understanding found the investigation of automated test repairing is not a 
 promising research avenue, as these techniques would require manual guidance which could end up 
-being similar to traditional refactoring tools, more research is performed in this field since then. 
+being similar to traditional refactoring tools. Nonetheless, more research is performed in this field since then. 
 An approach for automatically repairing and generating test cases during software evolution is 
 proposed by @supportingtestsuite. This approach uses information available in existing test cases, 
 defines a set of heuristics to repair test cases invalidated by changes in the software, and 
@@ -212,18 +212,18 @@ generate new test cases for evolved software. This properly repairs 90% of the c
 addressed and covers the same amount of instructions. The results show that the approach can 
 effectively maintain evolving test suites and perform well compared to competing approaches.
 
-While full automated test suite generation is not there yet, @bowring2014obsidian introduced a 
+While full automated test suite generation can not replace human testing entirely yet, @bowring2014obsidian introduced a 
 tool that generates the templates for tests, which guarantees compilation, supports exception 
-handling and finds suitable location for the test. Developers still need to fix the oracle tests 
+handling and finds a suitable location for the test. Developers still need to fix the test oracles 
 themselves, but the template is there. The technique looks at the context in order to decide what 
 template to use. @robinson2011 created a regression unit tests generation tool. It is a suite of 
 techniques for enhancing an existing unit test generation system. Experiments are performed using 
 an industrial system. The generated tests from these experiments achieved good coverage and mutation 
-kill score, were readable by the product’s developers and required few edits as the system under test 
+kill score, were readable by the product developers and required few edits as the system under test 
 evolved. @dulz2013model found that by directed adjusting specific probability values in the usage 
 profile of a Markov chain usage model, it is relatively easy to generate abstract test suites for 
-different user classes and test purposes in an automated approach. By using proper tools, like the 
-their TestUS Testplayer, even less experienced test engineers will be able to efficiently generate 
+different user classes and test purposes in an automated approach. By using proper tools, such as the 
+TestUS Testplayer, even less experienced test engineers will be able to efficiently generate 
 abstract testcases and to graphically assess quality characteristics of different test suites.
 @hurdugaci2012 introduces TestNForce (Visual Studio only), a tool to help developers to identify 
 unit tests that need to be altered and executed after code change.
