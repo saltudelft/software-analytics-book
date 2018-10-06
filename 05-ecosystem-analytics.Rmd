@@ -275,6 +275,12 @@ during their study they have found that most Python developers choose to maintai
 with both Python 2 and Python 3 by only using a subset of the Python 3 language. By not using the
 newly developed features they are severely limiting themselves in their language capabilities. 
 
+Another interesting topic of research is the impact tools can have on eco-systems. Among these
+tools are badges. Badges are annotations on software projects which display some information 
+about a software project. One of these badges can warn developers about out-dated packages.
+Based on the results of @Trockman2018, badges can have a positive impact on the speed at
+which developers update their dependencies. 
+
 Overall we can conclude that there are a lot of improvements to be made. The current method that
 most users use to manage their dependencies is lacking. Whether it be updating late or not
 updating at all, there are many risks bound to this. @Dietrich2014 has also found that there are a
