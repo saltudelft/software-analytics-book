@@ -60,7 +60,7 @@ discarding the rest.
 Title or abstract of the paper mentions app stores, mining from app stores or app store analytics.
 - Title or abstract of the paper mentions user reviews - The paper was published in 2016 or later.
 
-#### Exclution criteria - The paper has at least 10 citations on Google Scholar. - The paper
+#### Exclusion criteria - The paper has at least 10 citations on Google Scholar. - The paper
 focuses on mobile app development or is an analysis of arbitrary selection of apps
   and does not extend to the app stores as a whole.
 
@@ -165,9 +165,9 @@ by leveraging the URM, is capable of generating summaries of users feedback. Aft
 proposed approach, TODO
 
 **Research question/issue:** there is no approach that is able to do, at the same time, the
-following: (i) determine for a large number of reviews the speciﬁc topic discussed in the review
+following: (i) determine for a large number of reviews the specific topic discussed in the review
 (e.g., UI improvements, security/licensing issues, etc.), (ii) identify the maintenance task to
-perform for addressing the request stated in the review (e.g., bug ﬁxing, feature enhancement,
+perform for addressing the request stated in the review (e.g., bug fixing, feature enhancement,
 etc.), and (iii) present such information in the form of a condensed, interactive and structured
 agenda of recommended software changes, which is actionable for developers. [Reference paper]
 

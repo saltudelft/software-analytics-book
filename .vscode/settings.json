@@ -4,5 +4,19 @@
         99
     ],
     "cSpell.enabled": true,
-    "cSpell.language": "en" 
+    "cSpell.language": "en",
+    "cSpell.words": [
+        "csur",
+        "datasets",
+        "emse",
+        "esec",
+        "icse",
+        "kitchenham",
+        "osdi",
+        "sigsoft",
+        "subfield",
+        "summarizer",
+        "tosem",
+        "xplore"
+    ]
 }
