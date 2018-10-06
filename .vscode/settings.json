@@ -1,3 +1,8 @@
 {
-    "editor.rulers": [99] //only line break after 99th char
+    //only line break after 99th character
+    "editor.rulers": [
+        99
+    ],
+    "cSpell.enabled": true,
+    "cSpell.language": "en" 
 }
