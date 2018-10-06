@@ -1,0 +1,3 @@
+{
+    "editor.rulers": [99] //only line break after 99th char
+}
