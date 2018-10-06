@@ -340,18 +340,24 @@ which is a subset of all modern release engineering.
 Both studies agreed that modern release engineering consists
 of the following components:
 
+- **Rapid Releases (RR).**
+
+    In contrast with traditional release cycles,
+    RRs regularly push new releases to users in a regular schedule.
+    As an example, FireFox releases a new version every six weeks.
+
+- **Continuous Deployment or Continuous Delivery (CD).**
+
+    These two terms describe the ability to deploy (or deliver)
+    a software product to the end user automatically
+    whenever new code is committed or merged.
+
 - **Continuous Integration (CI).**
 
     To quote @adams2016a: CI "refers to the activity of continuously polling the
     [version control system] for new commits or merges,
     checking these revisions out on dedicated build machines,
     compiling them and running an initial set of tests to check for regressions."
-
-- **Continuous Deployment or Continuous Delivery (CD).**
-
-    These two terms describe the ability to deploy (or deliver)
-    a software product to the end user very frequently.
-    A term related to this is **Rapid Releases (RR)**.
 
 Besides these two components, @adams2016a also identified three other concepts
 that are used in modern release engineering,
@@ -379,7 +385,7 @@ specifically to release software as often as possible and enable CD:
     can also be automatically configured with code,
     instead of having to configure each server manually.
 
-Besides these five technical components,
+Besides these six technical components,
 @poo-caamano2016a has identified that there are also social aspects
 to modern release engineering.
 Specifically, most large software projects have a dedicated Release Team
@@ -419,9 +425,9 @@ we have provided an answer to the following three research questions:
 
 - **RQ1:** _How is modern release engineering done in practice?_
 
-    We found that there are five important technical aspects to
-    modern release engineering: Continuous Integration, Continuous Deployment or
-    Rapid Releases, Branching and Merging, Build Configuration and
+    We found that there are six important technical aspects to
+    modern release engineering: Rapid Releases, Continuous Integration,
+    Continuous Deployment, Branching and Merging, Build Configuration and
     Infrastructure-as-code.
     The most important social aspect of modern release engineering is communication.
 
