@@ -87,13 +87,13 @@ In the table below the tools that will be discussed are mentioned. These the too
 
   |Reference   |  Tool                |  Description                            |
   |------------|-----------------------|------------------------------------------|
-  |CA2018      | Leafactor             | Analyze code smells                      |
-  |LWXM2017    | NavyDroid             | Locate energy inefficiencies             |
-  |KKK2016     | Static analysis tool  | Identify graphical energy bugs           |
-  |SKHA2018    | APOA                  | Compare energy consumption of apps       |
-  |BCBR2017    | Energy Patch          | Detect, validate and repair energy leaks |
-  |NPPPZL2017B | PETrA                 | Measure energy consumption of apps       |
-  |PSCS2018    | jStanley              | Detect and improve energy bugs in java   |
+  |@CA2018      | Leafactor             | Analyze code smells                      |
+  |@LWXM2017    | NavyDroid             | Locate energy inefficiencies             |
+  |@KKK2016     | Static analysis tool  | Identify graphical energy bugs           |
+  |@SKHA2018    | APOA                  | Compare energy consumption of apps       |
+  |@BCBR2017    | Energy Patch          | Detect, validate and repair energy leaks |
+  |@NPPPZL2017B | PETrA                 | Measure energy consumption of apps       |
+  |@PSCS2018    | jStanley              | Detect and improve energy bugs in java   |
 
 _Leafactor_
 
@@ -160,13 +160,13 @@ increase in the near future.
 
   |Reference | Area  | Description|
   |--------|---------------------------------|--------------------------------------------------------------|
-  |MSA2018 | Energy saving coding practices  | Guidelines for energy saving mobile apps |
-  |CA2017  | Energy saving coding practices  | Evaluating effectiveness of several energy saving practices  |
-  |AKG2015 | Cloud applications  | Guidelines for balancing quality of service and energy consumption |
-  |BAW2017 | Parameter optimization  | Learn hardware specific energy models  |
-  |MPF2018 & MPF2017 | Cryptography  | Energy consumption of cryptographic primitives |
-  |BSB2017 | Software structure  | Relate software structural metric to power consumption |
-  |LH2014  | Energy saving coding practices  | Empirical evaluation of commonly suggested practices"  |
+  |@MSA2018 | Energy saving coding practices  | Guidelines for energy saving mobile apps |
+  |@CA2017  | Energy saving coding practices  | Evaluating effectiveness of several energy saving practices  |
+  |@AKG2015 | Cloud applications  | Guidelines for balancing quality of service and energy consumption |
+  |@BAW2017 | Parameter optimization  | Learn hardware specific energy models  |
+  |@MPF2018 & MPF2017 | Cryptography  | Energy consumption of cryptographic primitives |
+  |@BSB2017 | Software structure  | Relate software structural metric to power consumption |
+  |@LH2014  | Energy saving coding practices  | Empirical evaluation of commonly suggested practices"  |
   
 
 The guidelines presented in these papers aim to either provide general coding practices or they 
@@ -190,7 +190,7 @@ energy consumption?
 Under development approaches, the language used to write the app is one of the things that is taken 
 into consideration. There have been a number of studies into the effects of using a certain 
 programming language in the applications. Java is still the most used language for Android 
-applications. According to Oliveira et al. [ref:OOC2017], Java is actually not a good choice when 
+applications. According to Oliveira et al. [@OOC2017], Java is actually not a good choice when 
 limiting energy consumption is one of your priorities. One of the contributions of the paper is a 
 study where hybrid implementations of applications are compared with the original, pure Java 
 implementations in terms of energy consumption and performance. The paper suggests that hybrid 
@@ -200,7 +200,7 @@ commercial software development.
 
 Another comparable recent research paper investigated the energy-delay product (EDP) which is 
 defined as  “a weighted function of the energy consumption and run-time performance 
-product” [ref:GKLS2018]:
+product” [@GKLS2018]:
 
 $E * T^w$
 
@@ -212,7 +212,7 @@ comparing it to other languages as can be seen Table [ref:to table nr].  However
 that the paper does not test this on actual Android applications but rather the Rosetta Code 
 repository.
 
-![Programming Languages Average Weighted EDP Ranking, retrieved from [ref:GKLS2018]]
+![Programming Languages Average Weighted EDP Ranking, retrieved from [@GKLS2018]]
 (figures/EDPranking.jpeg)
 
 The above two papers are examples of research that suggest that the current state of practice, 
@@ -229,7 +229,7 @@ methods that could lead to improvements in energy consumption. However, this kno
 value when the community can get developers willing to use these. There have been a number of 
 studies that look into what is actually happening.
 
-One example is the paper by Moura et al. [ref:MPEC2015]. In this paper a study is conducted by 
+One example is the paper by Moura et al. [@MPEC2015]. In this paper a study is conducted by 
 looking at  a large number of energy-aware commits with Github as the primary data source. This 
 analysis has yielded a list of approaches that are being used by developers in practice. These 
 include: frequency and voltage scaling, using power efficient libraries and more. The study notes 
@@ -248,7 +248,7 @@ mentioned in the papers used in this survey. We attempt to extract some general 
 future research suggestions that are included. One of the fields of research we looked at in the 
 previous sections was the relation between programming languages and energy consumption. Multiple 
 papers suggest that the programming language used for implementation has an influence on the energy 
-consumption and performance [ref:GKLS2018, OOC2017]. These papers however do not look into the 
+consumption and performance [@GKLS2018; @OOC2017]. These papers however do not look into the 
 influence of specific features of the programming languages on energy consumption and performance. 
 Or rather the specific characteristics of a programming language that cause the differences, as 
 described in the paper by Georgiou et al.
@@ -259,7 +259,7 @@ there are no studies reporting on the actual use of such tools. For future resea
 investigating the amount of developers actually using such tools. Furthermore, it is important what 
 features such tools should have for optimal use. For example, we replicated the paper that 
 introduces jStanley, a tool which can be used for energy and performance 
-optimization [ref:PSCS2018]. We faced the issue that this tool cannot implement the suggested 
+optimization [@PSCS2018]. We faced the issue that this tool cannot implement the suggested 
 improvements in an easy and efficient way. For example, we took the AssertJ open source project from 
 GitHub and there were more than 300 energy saving suggestions. A user has to click on every 
 suggestion to actually implement the improvement which is tedious work.
