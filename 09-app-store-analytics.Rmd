@@ -1,82 +1,87 @@
 # App Store Analytics
 
-In the year 2008, the first app stores became available. These marketplaces have grown rapidly in size since then with over 3 million apps in the Google Play store alone at the time of writing [REFERENCE]. These app stores together with the large user base associated with them provide software developers and researchers with valuable data. The process of using the data from the app stores to gain valuable insights is what we would call “App Store Analytics”. Because these app marketplaces are relatively new, the research field of App Store Analytics is still not mature. However, because apps are used so much nowadays, it plays an important role in the field of Software Engineering.
+In the year 2008, the first app stores became available. These marketplaces have grown rapidly in
+size since then with over 3 million apps in the Google Play store alone at the time of writing
+[REFERENCE]. These app stores together with the large user base associated with them provide
+software developers and researchers with valuable data. The process of using the data from the app
+stores to gain valuable insights is what we would call “App Store Analytics”. Because these app
+marketplaces are relatively new, the research field of App Store Analytics is still not mature.
+However, because apps are used so much nowadays, it plays an important role in the field of
+Software Engineering.
  
-In 2015, Martin, William, et al., published "A survey of app store analysis for software engineering." In the paper, 7 main categories are proposed of the field: API Analysis, Review Analytics, Security, Store Ecosystem, Size and Effort Prediction, Release Engineering and Feature Analysis (REFERENCE TO SURVEY). Given that relevant literature on the field of App Store Analytics has been already gathered and analyzed, it makes sense to use this chapter to go a step further.  In this order of ideas, we will delve deeper into the subfield of Reviews Analytics. We check the literature proposed by (REFERENCE TO SURVEY) and update it with the relevant articles (as defined by the inclusion criteria presented below) that were published after 2015.  We then use the data to answer the following research questions regarding the chosen subcategory.
+In 2015, Martin, William, et al., published "A survey of app store analysis for software
+engineering." In the paper, 7 main categories are proposed of the field: API Analysis, Review
+Analytics, Security, Store Ecosystem, Size and Effort Prediction, Release Engineering and Feature
+Analysis (REFERENCE TO SURVEY). Given that relevant literature on the field of App Store Analytics
+has been already gathered and analyzed, it makes sense to use this chapter to go a step further. In
+this order of ideas, we will delve deeper into the subfield of Reviews Analytics. We check the
+literature proposed by (REFERENCE TO SURVEY) and update it with the relevant articles (as defined
+by the inclusion criteria presented below) that were published after 2015.  We then use the data to
+answer the following research questions regarding the chosen subcategory.
 
 * **RQ1** What is the state of the art in Reviews Analytics? Specifically:
-    - Which topics that are being explored?
-    - Which research methods, tools, and datasets being used?
-    - Which are the main research findings (aggregated)?
+    - Which topics that are being explored? - Which research methods, tools, and datasets being
+    used? - Which are the main research findings (aggregated)?
 
 * **RQ2** What is the state of practice in Reviews Analytics? Specifically:
-    - Which are the tools and the companies that create/employ them?
-    - Case studies and their findings.
+    - Which are the tools and the companies that create/employ them? - Case studies and their
+    findings.
 
 * **RQ3** Which are the challenges and future research that the field is facing or will face?
 
 
+## Research protocol TODO: here are just ideas of what I'm doing but they should be properly
+written 
 
-## Research protocol
-TODO: here are just ideas of what I'm doing but they should be properly written 
+The research protocol is divided into two important parts: the articles search process and the
+article selection process. In the following paragraphs, both processes will be explained. [Refer to
+Kitchenham?]
 
-The research protocol is divided into two important parts: the articles search process and the 
-article selection process. In the following paragraphs, both processes will be explained. [Refer 
-to Kitchenham?]
-
-### Search queries (Article search process)
-Our initial seed of the papers came from the survey of the field of App Store Analytics by Martin 
-et al. [TODO: REFER to survey] and after that we used the keywords **apps**, **app store**, **app 
-store analytics** and **app store mining** to search for other relevant papers on Google Scholar, 
-ACM, IEEE Xplore and pages of individual journals (CSUR, TSE, EMSE, JSS, TOSEM, IST) and 
-conferences (ICSE, FSE, ASE, MSR, OSDI). From the results only articles with relevant titles were 
-selected and added to the list for consideration.
+### Search queries (Article search process) Our initial seed of the papers came from the survey of
+the field of App Store Analytics by Martin et al. [TODO: REFER to survey] and after that we used
+the keywords **apps**, **app store**, **app store analytics** and **app store mining** to search
+for other relevant papers on Google Scholar, ACM, IEEE Xplore and pages of individual journals
+(CSUR, TSE, EMSE, JSS, TOSEM, IST) and conferences (ICSE, FSE, ASE, MSR, OSDI). From the results
+only articles with relevant titles were selected and added to the list for consideration.
 
 TODO: Include a table with journals/conferences including their full names
 
 
-### Article selection
-In order to retain only the most relevant papers to answer the research questions, we devised a 
-composed metric that takes into account the number of citations and the year the paper was 
-published. Taking these elements the scoring scheme is the following: 
-Citations (C):
-Year of publication (Y):
-The metric is computed as follows:
-Inclusion_metric = C (0.5) * Y (0.5)
+### Article selection In order to retain only the most relevant papers to answer the research
+questions, we devised a composed metric that takes into account the number of citations and the
+year the paper was published. Taking these elements the scoring scheme is the following: Citations
+(C): Year of publication (Y): The metric is computed as follows: Inclusion_metric = C (0.5) * Y
+(0.5)
 
-For each paper the previously mentioned metric was calculated and the top 30 were selected, 
+For each paper the previously mentioned metric was calculated and the top 30 were selected,
 discarding the rest. 
 
-#### Inclusion criteria
- - The paper was published in well established journal or conference.
- - Title or abstract of the paper mentions app stores, mining from app stores or app store analytics.
- - Title or abstract of the paper mentions user reviews
- - The paper was published in 2016 or later.
+#### Inclusion criteria - The paper was published in well established journal or conference. -
+Title or abstract of the paper mentions app stores, mining from app stores or app store analytics.
+- Title or abstract of the paper mentions user reviews - The paper was published in 2016 or later.
 
-#### Exclution criteria
- - The paper has at least 10 citations on Google Scholar.
- - The paper focuses on mobile app development or is an analysis of arbitrary selection of apps
+#### Exclution criteria - The paper has at least 10 citations on Google Scholar. - The paper
+focuses on mobile app development or is an analysis of arbitrary selection of apps
   and does not extend to the app stores as a whole.
 
 ### Fact extraction
 
 Taking into consideration the example presented by Kitchenham et al in [reference], the following
- data were extracted from each of the papers:
-- Source (journal or conference)
-- Complete reference
-- Main topic area
-- Authors information (full names, institution, and country)
-- Summary (research questions and answers)
-- Research question / issue
-- MORE?
+data were extracted from each of the papers: - Source (journal or conference) - Complete reference
+- Main topic area - Authors information (full names, institution, and country) - Summary (research
+questions and answers) - Research question / issue - MORE?
 
-Each one of the team members was in charge of reviewing and extracting the data of a set of papers
-. Then, the extracted data was checked by another member. The allocation of team members to the papers was random, equally splitting the workloads.
+Each one of the team members was in charge of reviewing and extracting the data of a set of papers.
+Then, the extracted data was checked by another member. The allocation of team members to the
+papers was random, equally splitting the workloads.
 
 ## Answers 
 
-* **RQ1** Current state of the art in software analytics for App Store Analytics
-Since 2015 some interesting research has been done in the field of Review Analytics. To answer the question at hand we look at the novel ideas and the research that has been done in this field since 2015. We can divide the research into X categories, which are: Mapping user reviews to the source code, Privacy / App Permissions, Responding to reviews, Comparing Apps and App stores and Wearables.
+* **RQ1** Current state of the art in software analytics for App Store Analytics Since 2015 some
+interesting research has been done in the field of Review Analytics. To answer the question at hand
+we look at the novel ideas and the research that has been done in this field since 2015. We can
+divide the research into X categories, which are: Mapping user reviews to the source code, Privacy
+/ App Permissions, Responding to reviews, Comparing Apps and App stores and Wearables.
 
 TODO: Expand and revise categories
 
@@ -87,10 +92,17 @@ TODO: Expand and revise categories
 
 ### Responding to reviews
 
-Comparing Apps and App stores
-Papers that compare apps or app stores are discussed in this section.  Li et  al. mined user reviews from Google Play to find comparisons between apps[Mining User Reviews for Mobile App Comparisons]. They tried to identify comparative reviews to extract differences between apps on different topics. For example, a user says in a review that this app is not as good regarding power consumption than another app. Li et al. created a method that with reasonable accuracy extracts these opinions and provides comparisons between apps. 
-Ali et al. did a comparative study on cross-platform apps. They took a sample of 80.000 app-pairs to quantitatively compare the same apps across different platforms and identify the differences between the platforms. [REFERENCE]  
-In a related study Hu et al. compared app-pairs that are created using hybrid development tools such as PhoneGap. [REFERENCE] With this approach they found that in 33 of the 68 app-pairs the star rating was not consistent across platforms.
+### Comparing Apps and App stores Papers that compare apps or app stores are discussed in this
+section.  Li et  al. mined user reviews from Google Play to find comparisons between apps[Mining
+User Reviews for Mobile App Comparisons]. They tried to identify comparative reviews to extract
+differences between apps on different topics. For example, a user says in a review that this app is
+not as good regarding power consumption than another app. Li et al. created a method that with
+reasonable accuracy extracts these opinions and provides comparisons between apps. Ali et al. did a
+comparative study on cross-platform apps. They took a sample of 80.000 app-pairs to quantitatively
+compare the same apps across different platforms and identify the differences between the
+platforms. [REFERENCE] In a related study Hu et al. compared app-pairs that are created using
+hybrid development tools such as PhoneGap. [REFERENCE] With this approach they found that in 33 of
+the 68 app-pairs the star rating was not consistent across platforms. 
 
 ### Wearables.
 
@@ -104,74 +116,68 @@ In a related study Hu et al. compared app-pairs that are created using hybrid de
 
 ### API change and fault proneness: A threat to the success of Android apps
 
-**Source:** Conference ESEC/FSE'17 Joint Meeting of the European Software Engineering Conference 
+**Source:** Conference ESEC/FSE'17 Joint Meeting of the European Software Engineering Conference
 and the ACM SIGSOFT Symposium on the Foundations of Software Engineering
 
 **Main topic area:** using user feedback/reviews, API changes
 
-**Authors information (full names, institution, and country):**
-- Mario Linares-Vásquez - Universidad de los Andes, Colombia
-- Gabriele Bavota - University of Sannio, Italy
-- Carlos Bernal-Cárdenas - Universidad Nacional de Colombia, Colombia
-- Massimiliano Di Penta - University of Sannio, Italy
-- Rocco Oliveto - University of Molise, Italy
-- Denys Poshyvanyk - College of William and Mary, USA
+**Authors information (full names, institution, and country):** - Mario Linares-Vásquez -
+Universidad de los Andes, Colombia - Gabriele Bavota - University of Sannio, Italy - Carlos
+Bernal-Cárdenas - Universidad Nacional de Colombia, Colombia - Massimiliano Di Penta - University
+of Sannio, Italy - Rocco Oliveto - University of Molise, Italy - Denys Poshyvanyk - College of
+William and Mary, USA
 
-The paper presents an empirical study that aims to corroborate the relationship between the fault 
-and change-proneness of APIs and the degree of success of Android apps measured by their user 
-ratings. For this, the authors selected a sample of 7,097 free Android apps from the Google Play 
-Market and gathered information of the changes and faults that the APIs used by them presented. 
-Using this data and statistical tools such as box-plots and the Mann-Whitney test, two main 
-hypotheses were analyzed. The first hypothesis tested the relationship between fault-proneness 
-(number of bugs fixed in the API) and the success of an app. The second tested the relationship 
-between change-proneness (overall method changes, changes in method signatures and changes to the 
-set of exceptions thrown by methods) and the success of an app. Finally, although no causal 
-relationships between the variables can be assumed, the paper found significant differences of the 
-level of success of the apps taking into consideration the change and fault-proneness of the APIs 
+The paper presents an empirical study that aims to corroborate the relationship between the fault
+and change-proneness of APIs and the degree of success of Android apps measured by their user
+ratings. For this, the authors selected a sample of 7,097 free Android apps from the Google Play
+Market and gathered information of the changes and faults that the APIs used by them presented.
+Using this data and statistical tools such as box-plots and the Mann-Whitney test, two main
+hypotheses were analyzed. The first hypothesis tested the relationship between fault-proneness
+(number of bugs fixed in the API) and the success of an app. The second tested the relationship
+between change-proneness (overall method changes, changes in method signatures and changes to the
+set of exceptions thrown by methods) and the success of an app. Finally, although no causal
+relationships between the variables can be assumed, the paper found significant differences of the
+level of success of the apps taking into consideration the change and fault-proneness of the APIs
 they use. 
 
 
-**Research question/issue:** relationship between fault- and change-proneness of APIs and the 
+**Research question/issue:** relationship between fault- and change-proneness of APIs and the
 degree of success in Android apps.
 
 ### What would users change in my app? summarizing app reviews for recommending software changes
 
-**Source:** Proceeding FSE 2016 Proceedings of the 2016 24th ACM SIGSOFT International Symposium 
-on Foundations of Software Engineering
+**Source:** Proceeding FSE 2016 Proceedings of the 2016 24th ACM SIGSOFT International Symposium on
+Foundations of Software Engineering
 
 **Main topic area:** using user feedback/reviews
 
-**Authors information (full names, institution, and country):**
-- Andrea Di Sorbo - University of Sannio, Italy
-- Sebastiano Panichella - University of Zurich, Switzerland
-- Carol V. Alexandru - University of Zurich, Switzerland
-- Junji Shimagaki - Sony Mobile Communications, Japan
-- Corrado A. Visaggio - University of Sannio, Italy
-- Gerardo Canfora - University of Sannio, Italy
-- Harald C. Gall - University of Zurich, Switzerland
+**Authors information (full names, institution, and country):** - Andrea Di Sorbo - University of
+Sannio, Italy - Sebastiano Panichella - University of Zurich, Switzerland - Carol V. Alexandru -
+University of Zurich, Switzerland - Junji Shimagaki - Sony Mobile Communications, Japan - Corrado
+A. Visaggio - University of Sannio, Italy - Gerardo Canfora - University of Sannio, Italy - Harald
+C. Gall - University of Zurich, Switzerland
 
-**Summary (research questions and answers):** The paper proposes a new approach for analyzing App 
-Store user reviews, deriving insights from them. The presented solution has two components. 
-First, the User Reviews Model (URM) that enable the classification of users intentions (e.g., UI 
-improvements, bug fixes, etc.). Second, the Summarizer of User Review Feedback (SURF). A tool 
-that, by leveraging the URM, is capable of generating summaries of users feedback. After 
-evaluating the proposed approach, TODO
+**Summary (research questions and answers):** The paper proposes a new approach for analyzing App
+Store user reviews, deriving insights from them. The presented solution has two components. First,
+the User Reviews Model (URM) that enable the classification of users intentions (e.g., UI
+improvements, bug fixes, etc.). Second, the Summarizer of User Review Feedback (SURF). A tool that,
+by leveraging the URM, is capable of generating summaries of users feedback. After evaluating the
+proposed approach, TODO
 
-**Research question/issue:** there is no approach that is able to do, at the same time, the 
-following: (i) determine for a large number of reviews the speciﬁc topic discussed in the 
-review (e.g., UI improvements, security/licensing issues, etc.), (ii) identify the maintenance 
-task to perform for addressing the request stated in the review (e.g., bug ﬁxing, feature 
-enhancement, etc.), and (iii) present such information in the form of a condensed, interactive and
- structured agenda of recommended software changes, which is actionable for developers. [Reference paper]
+**Research question/issue:** there is no approach that is able to do, at the same time, the
+following: (i) determine for a large number of reviews the speciﬁc topic discussed in the review
+(e.g., UI improvements, security/licensing issues, etc.), (ii) identify the maintenance task to
+perform for addressing the request stated in the review (e.g., bug ﬁxing, feature enhancement,
+etc.), and (iii) present such information in the form of a condensed, interactive and structured
+agenda of recommended software changes, which is actionable for developers. [Reference paper]
 
 ### App Store, Marketplace, Play! An Analysis of Multi-Homing in Mobile Software Ecosystems
  
-**Source:**
-Proceedings of the Fourth International Workshops on Software Ecosystems
-**Main topic area:** App store ecosystem
+**Source:** Proceedings of the Fourth International Workshops on Software Ecosystems **Main topic
+area:** App store ecosystem
 
-**Authors information (full names, institution, and country):**
-Sami Hyrynsalmi, University of Turku, Finland
+**Authors information (full names, institution, and country):** Sami Hyrynsalmi, University of
+Turku, Finland
  
 Tuomas Mäkilä, University of Turku, Finland
  
@@ -183,34 +189,30 @@ Marko Seppänen, Tampere University of Technology, Finland
  
 Timo Knuutila, University of Turku, Finland
 
-**Summary (research questions and answers):**
-Multi-homing is not used by many developers, where multi-homing is the strategy of releasing your 
-application to multiple platforms. An analysis of Google Play, App Store and Windows Phone Store 
-shows that not many developers use this strategy. Next to this, the paper found that the type and 
-popularity of apps does not differ from those that use a single-homing strategy.
+**Summary (research questions and answers):** Multi-homing is not used by many developers, where
+multi-homing is the strategy of releasing your application to multiple platforms. An analysis of
+Google Play, App Store and Windows Phone Store shows that not many developers use this strategy.
+Next to this, the paper found that the type and popularity of apps does not differ from those that
+use a single-homing strategy.
  
-**Research question/issue:** Analysis of multi-homing in different app stores. How much is it used 
+**Research question/issue:** Analysis of multi-homing in different app stores. How much is it used
 by developers and is there a difference in popularity?
 
 ### A systematic literature review: Opinion mining studies from mobile app store user reviews
 
-*Source:**
-Journal of Systems and Software
+**Source:** Journal of Systems and Software
  
-**Main topic area:**
-Opinion Mining and Requirement Engineering
+**Main topic area:** Opinion Mining and Requirement Engineering
  
-**Authors information (full names, institution, and country):**
-Necmiye Genc-Nayebi, École de Technologie Supérieure (ETS) - Université du Québec, Canada
-Dr. Alain Abran,  École de Technologie Supérieure (ETS) - Université du Québec, Canada
+**Authors information (full names, institution, and country):** Necmiye Genc-Nayebi, École de
+Technologie Supérieure (ETS) - Université du Québec, Canada Dr. Alain Abran,  École de Technologie
+Supérieure (ETS) - Université du Québec, Canada
  
-**Summary (research questions and answers):**
-TODO: summary
+**Summary (research questions and answers):** TODO: summary
  
-**Research question/issue:**
-What are the proposed solutions for mining online opinions in app store user reviews, challenges 
-and unsolved problems in the domain, new contributions to software requirements evolution and 
-future research direction.
+**Research question/issue:** What are the proposed solutions for mining online opinions in app
+store user reviews, challenges and unsolved problems in the domain, new contributions to software
+requirements evolution and future research direction.
 
 
 
@@ -218,60 +220,48 @@ future research direction.
 
 TODO: template
 
-The paper by Bavota et al. aims to find empirical evidence supporting the success of apps and the 
-relationship with change- and fault-proneness of the underlying APIs, where the success of the app 
+The paper by Bavota et al. aims to find empirical evidence supporting the success of apps and the
+relationship with change- and fault-proneness of the underlying APIs, where the success of the app
 is measured by its user rating. They performed two case studies to find quantitative evidence using
-5848 free Android apps as well as an explanation for these results doing a survey with 45 
-professional Android developers. The quantitative case study was done by comparing the user ratings 
-to the number of bug fixes and changes in the API that an app uses. They found that apps with a high
-user rating are significantly less change- and fault-prone than APIs used by apps with a low user 
-rating. In the second case study the paper found that most of the 45 developers observed a direct 
-relationship between the user ratings of apps and the APIs those apps use.
+5848 free Android apps as well as an explanation for these results doing a survey with 45
+professional Android developers. The quantitative case study was done by comparing the user ratings
+to the number of bug fixes and changes in the API that an app uses. They found that apps with a
+high user rating are significantly less change- and fault-prone than APIs used by apps with a low
+user rating. In the second case study the paper found that most of the 45 developers observed a
+direct relationship between the user ratings of apps and the APIs those apps use.
 
 ### How can i improve my app? Classifying user reviews for software maintenance and evolution
 
 TODO: template
 
-The most popular apps in the app stores (such as Google Play or App Store) receive thousands of 
-user reviews per day and therefore it would be very time demanding to go through the reviews 
-manually to obtain relevant information for the future development of the apps. This paper uses a 
-combination of Natural Language Processing Sentiment Analysis and Text Analysis to extract 
-relevant sentences from the reviews and to classify them into the following categories: 
-Information Seeking, Information Giving, Feature Request, Problem Discovery, and Others. The 
-results show 75% precision and 74% recall when classifier (J48 using data from NLP+SA+TA) is 
-trained on 20% of the data (1421 manually labeled sentences from reviews of seven different apps) 
-and the rest is used for testing. The paper also states that the results do not differ in a 
-statistically significant manner when a different classifier is used and shows that precision 
-and recall can be further improved by increasing the size of the data set.
+The most popular apps in the app stores (such as Google Play or App Store) receive thousands of
+user reviews per day and therefore it would be very time demanding to go through the reviews
+manually to obtain relevant information for the future development of the apps. This paper uses a
+combination of Natural Language Processing Sentiment Analysis and Text Analysis to extract relevant
+sentences from the reviews and to classify them into the following categories: Information Seeking,
+Information Giving, Feature Request, Problem Discovery, and Others. The results show 75% precision
+and 74% recall when classifier (J48 using data from NLP+SA+TA) is trained on 20% of the data (1421
+manually labeled sentences from reviews of seven different apps) and the rest is used for testing.
+The paper also states that the results do not differ in a statistically significant manner when a
+different classifier is used and shows that precision and recall can be further improved by
+increasing the size of the data set.
 
 
 ### A systematic literature review: Opinion mining studies from mobile app store user reviews
  
-**Complete reference:**
-@article{genc2017systematic,
-  title={A systematic literature review: Opinion mining studies from mobile app store user reviews},
-  author={Genc-Nayebi, Necmiye and Abran, Alain},
-  journal={Journal of Systems and Software},
-  volume={125},
-  pages={207--219},
-  year={2017},
-  publisher={Elsevier}
-}
+**Source:** Journal of Systems and Software
  
-**Source:**
-Journal of Systems and Software
+**Main topic area:** Opinion Mining and Requirement Engineering
  
-**Main topic area:**
-Opinion Mining and Requirement Engineering
- 
-**Authors information (full names, institution, and country):**
-Necmiye Genc-Nayebi, École de Technologie Supérieure (ETS) - Université du Québec, Canada
-Dr. Alain Abran,  École de Technologie Supérieure (ETS) - Université du Québec, Canada
+**Authors information (full names, institution, and country):** Necmiye Genc-Nayebi, École de
+Technologie Supérieure (ETS) - Université du Québec, Canada Dr. Alain Abran,  École de Technologie
+Supérieure (ETS) - Université du Québec, Canada
  
 **Summary (research questions and answers):**
  
-**Research question/issue:**
-What are the proposed solutions for mining online opinions in app store user reviews, challenges and unsolved problems in the domain, new contributions to software requirements evolution and future research direction.
+**Research question/issue:** What are the proposed solutions for mining online opinions in app
+store user reviews, challenges and unsolved problems in the domain, new contributions to software
+requirements evolution and future research direction.
 
 **Quality assessment:**
 
@@ -280,19 +270,22 @@ Bullets:
 
 ### You can promote, but you can't hide: large-scale abused app detection in mobile app stores.
 
-- Identification of manipulated app ratings by analyzing attack signatures. 
-- Development of an algorithm (graph-based) to identify these attackers in linear time.
-- In the initial validation they used 2188 apps with 4841720 reviews and 1622552 reviewers. They ran the tool for 33 hours and 31 minutes. 
-- Analyzed app stores from different markets: China, United Kingdom, and United States of America.
-- Suspected apps are around 1% of the total number of apps.
-- Possible deployment of the algorithm by app store vendors or a third party.
+- Identification of manipulated app ratings by analyzing attack signatures. - Development of an
+algorithm (graph-based) to identify these attackers in linear time. - In the initial validation
+they used 2188 apps with 4841720 reviews and 1622552 reviewers. They ran the tool for 33 hours and
+31 minutes. - Analyzed app stores from different markets: China, United Kingdom, and United States
+of America. - Suspected apps are around 1% of the total number of apps. - Possible deployment of
+the algorithm by app store vendors or a third party.
 
 ### What would users change in my app? summarizing app reviews for recommending software changes.
 
-- Automated approaches with the aim of reducing the effort required for analyzing feedback contained in user reviews via automatic classification/prioritization according to specific topics [reference to the paper].
-- Introduced SURF (Summarizer of User Reviews Feedback). An approach to condense a large number of user reviews. Main features are summarization and classification.
-- Extract useful information for developers doing maintenance and evolution tasks. 
-- To validate the output of SURF, the authors realized 2 experiments using 17 apps and 23 developers and researchers. 
-- There is a need to use a larger and representative sample of apps to test the validity of the model.
+- Automated approaches with the aim of reducing the effort required for analyzing feedback
+contained in user reviews via automatic classification/prioritization according to specific topics
+[reference to the paper]. - Introduced SURF (Summarizer of User Reviews Feedback). An approach to
+condense a large number of user reviews. Main features are summarization and classification. -
+Extract useful information for developers doing maintenance and evolution tasks. - To validate the
+output of SURF, the authors realized 2 experiments using 17 apps and 23 developers and researchers.
+- There is a need to use a larger and representative sample of apps to test the validity of the
+model.
 
 
