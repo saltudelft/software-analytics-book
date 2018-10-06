@@ -252,9 +252,13 @@ changes cannot be solved in a uniform manner throughout the ecosystem, but rathe
 implementation for each system. We have also found that breaking changes are constantly introduced
 when dependencies are updated. According to @Raemaekers2017 about 33% of releases, either minor or
 major, contain a breaking change that needs looking into. Breaking changes could pose compiling
-errors, thereby breaking the system that depends on it. Furthermore, @Kula2017 has found that,
+errors, thereby breaking the system that depends on it.
+
+Developer tend to reacet poorly to changes in their dependencies; @Kula2017 has found that,
 of the 4600 surveyed projects, 81.5% of the projects contain outdated dependencies which
-can lead to security risks.
+can lead to security risks. Not only do developers not update their dependencies, according to
+an empericaly study done by @McDonnell2013 on the android API, they also do not update their 
+codebase with respect to the changes introduced by dependencies.
 
 Regarding ecosystem health, @Constantinou2017 has researched which factors indicate that a
 developer is likely to abandon an ecosystem. Their study, which analyzed Github issues and
