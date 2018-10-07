@@ -150,7 +150,7 @@ the waiting time until the build finish successfully. One of the most recent pap
 files before the developer push a commit and without needing to wait for the build result. This paper
 focuses on prediction of build failure without using metadata like number of commits, code churn also 
 in the learning process, but relying on the actual user programs and configuration scripts. This fact 
-makes the identification of the error cause possible. VeriCI achieve 83% accuracy of predicting build 
+makes the identification of the error cause possible. VeriCI achieves 83% accuracy of predicting build 
 failure on real data from GitHub projects and 30-48% of time the error justification provided by the 
 tool matched the actual error cause. These results seem promising, but there is a need in focusing
 more on producing the error justification fact that could make the use of machine learning tools in
