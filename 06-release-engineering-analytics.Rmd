@@ -500,7 +500,7 @@ Research on continuous deployment seems to be still in its infancy, therefore
 @rodriguez2017a have suggested a significant number of different concrete
 opportunities for future research.
 In general they conclude that the topic needs an increase in the number and
-rigour of empirical studies, and thus presents opportunities for software
+rigour of empirical studies, and thus it presents opportunities for software
 analytics research.
 In a systematic literature review, @laukkanen2017a identified 40 problems,
 28 causal relationships and 29 solutions related to the adoption of continuous
