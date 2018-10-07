@@ -333,10 +333,10 @@ features and fixes in a more efficient and faster manner. This has resulted in c
 being done to assess the associated risk and cost factors, and what benefits certain 
 strategies can give.
 
-@khomh2015a has looked into the effects of switching from traditional to rapid release cycles 
+@khomh2015a have looked into the effects of switching from traditional to rapid release cycles 
 in the case of Mozilla Firefox. The paper has concluded that users do not experience 
 significantly more post-release bugs, bugs are fixed faster, but that users experience bugs 
-earlier in the software execution. @mantyla2015a has also considered data from Mozilla 
+earlier in the software execution. @mantyla2015a have also considered data from Mozilla 
 Firefox, and has examined the impact of release engeering on testing efforts. Observations of 
 the paper conclude that the rapid release cycle perform more test executions per day, but 
 these tests focus on a smaller subset of the test case corpus and that testing happens closer 
@@ -348,7 +348,7 @@ excluded from releases. Similar conclusions based on Mozilla Firefox were made i
 @da2016a found that minor-traditional releases tend to have less integration delay than 
 major/minor-rapid releases.
 
-@castelluccio2017a has examined the practice of *patch lifting* in the release management at 
+@castelluccio2017a has examined the practice of *patch uplifting* in the release management at 
 Mozilla Firefox where patches that fix critical issues, or implement high-value features are 
 often promoted directly from the development channel to a stabilization channel. The paper 
 evaluated the characteristics of patch uplift decisions, and interviewed three Mozilla release 
@@ -373,19 +373,19 @@ defined challenges include keeping everyone informed and engaged, monitoring cha
 setting priorities in cross-project coordination.
 
 @laukkanen2018a has described what effects modern release engineering have on software with 
-different organizational contexts. In this, this paper specifically focusses on continuous 
-deployment (CD) practices. The paper has found that high internal quality standards combined 
-with the large distributed organizational context of large corporations slowed the 
-verification process down and therefore had a negative impact on release capability. While in 
-small corporations, the lack of internal verification measures due to a lack of resources was 
+different organizational contexts. This study specifically focusses on continuous deployment 
+(CD) practices. The paper has found that high internal quality standards combined with the 
+large distributed organizational context of large corporations slowed the verification process 
+down and therefore had a negative impact on release capability. However, in small 
+corporations, the lack of internal verification measures due to a lack of resources was 
 mitigated by code review, disciplined CI and external verification by customers in customer 
-environments. More about the factors that can play a role in @rodriguez2017a, where an 
-overview of contributing factors in continuous deployment are defined and categorized based on 
-literature between 2001 and 2014.
+environments. More about the factors that can play a role are addressed by @rodriguez2017a, 
+where an overview of contributing factors in continuous deployment are defined and categorized 
+based on literature between 2001 and 2014.
 
 As rapid release cycles and continous deployment are topics that are new and emerging, not 
 enough research has been done to generalize any conclusions that are made in the case studies 
-discussed in this section. This is why all the emperical studies in this survey have one major 
+discussed in this section. This is why all the empirical studies in this survey have one major 
 sidenote in common: more case studies are needed. Open challenges such as these will be 
 discussed in the next section.
 
