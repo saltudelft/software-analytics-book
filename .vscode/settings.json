@@ -17,6 +17,7 @@
         "i",
         "icse",
         "kitchenham",
+        "kitchenham’s",
         "microworkers",
         "osdi",
         "sigsoft",
@@ -27,5 +28,9 @@
     ],
     "files.associations": {
         "*.Rmd": "markdown"
-    }
+    },
+    "todohighlight.isEnable": true,
+    "todohighlight.keywords": [
+        "TODO", "REFERENCE"
+    ]
 }

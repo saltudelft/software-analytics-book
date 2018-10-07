@@ -6,7 +6,8 @@
 	"recommendations": [
 		"stkb.rewrap",
 		"streetsidesoftware.code-spell-checker",
-		"phr0s.bib"
+		"phr0s.bib",
+		"wayou.vscode-todo-highlight"
 	],
 	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
 	"unwantedRecommendations": [
