@@ -16,11 +16,18 @@ significantly shorter cycles.
 
 Due to these developments being industry-driven, release engineering forms a
 largely uncharted territory for software engineering research.
-It requires the attention from researchers both because these new practices
-have an often unanticipated impact on software studies and because they require
-empirical validation [@adams2016a].
+Efforts to close this gap would be relevant both for practitioners as well as
+researchers [@adams2016a].
+On the one hand, claims and rationales are presented by the industry to justify
+practices in release engineering, but these are often not empirically validated.
+For this reason, research should aim to build an understanding of the actual
+effects of release engineering practices on the software development process.
+On the other hand, software engineering researchers need to be aware of modern
+release engineering practices in order to account for them in their analyses.
+Otherwise, their lack of familiarity with these practices will likely result
+in biases in their study results.
 
-Therefore, this systematic literature review aims to provide an overview of
+This systematic literature review aims to provide an overview of
 the software analytics research that has been conducted so far on modern
 release engineering.
 Its main purpose is to identify the apparent gap
