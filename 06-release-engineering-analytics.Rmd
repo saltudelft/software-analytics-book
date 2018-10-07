@@ -513,6 +513,18 @@ Some of the problems that are more of a human or organizational nature might
 be involved with a broader spectrum of changes, so it should also be
 investigated to what extent these problems are specific to continuous delivery.
 
+**Continuous Integration / Build system**
+
+One of the main issues that seems to be obstructing organizations in adopting
+modern release engineering practices is build design [@laukkanen2017a]. In a
+case study by @laukkanen2018a it was found that a complex automated build and
+integration system led to a more undisciplined one, which in turn slowed down
+the verification and release processes. Therefore, future research might
+investigate how developers can make their builds more maintainable and of
+higher quality, how anti-patterns in the build design can be refactored,
+and how continuous integration can be made faster and more energy efficient
+[@adams2016a].
+
 ## Conclusion
 
 In this literature survey,
