@@ -139,11 +139,10 @@ Challenges & Future Research:
 
 **Comparing Apps and App stores**
 
-Papers that compare apps or app stores are discussed in this section.  Li et  al. mined user reviews from Google Play to find comparisons between apps[Mining User Reviews for Mobile App Comparisons]. They tried to identify comparative reviews to extract differences between apps on different topics. For example, a user says in a review that this app is not as good regarding power consumption than another app. Li et al. created a method that with reasonable accuracy extracts these opinions and provides comparisons between apps. 
+Papers that compare apps or app stores are discussed in this section.  Li et  al. mined user reviews from Google Play to find comparisons between apps[@li2017mining]. They tried to identify comparative reviews to extract differences between apps on different topics. For example, a user says in a review that this app is not as good regarding power consumption than another app. Li et al. created a method that with reasonable accuracy extracts these opinions and provides comparisons between apps. 
 
-Ali et al. did a comparative study on cross-platform apps. They took a sample of 80.000 app-pairs to quantitatively compare the same apps across different platforms and identify the differences between the platforms. [REFERENCE]  
-In a related study Hu et al. compared app-pairs that are created using hybrid development tools such as PhoneGap. [REFERENCE] With this approach they found that in 33 of the 68 app-pairs the star rating was not consistent across platforms.
-
+Ali et al. did a comparative study on cross-platform apps. They took a sample of 80.000 app-pairs to quantitatively compare the same apps across different platforms and identify the differences between the platforms. [@ali2017same]  
+In a related study Hu et al. compared app-pairs that are created using hybrid development tools such as PhoneGap. [@hu2018studying] With this approach they found that in 33 of the 68 app-pairs the star rating was not consistent across platforms.
 Challenges & Future Research:
 
 **Wearables**
@@ -205,7 +204,7 @@ Bullets for read papers:
 
 **Complete reference:** @di2016would
 
-- Automated approaches with the aim of reducing the effort required for analyzing feedback contained in user reviews via automatic classification/prioritization according to specific topics [reference to the paper].
+- Automated approaches with the aim of reducing the effort required for analyzing feedback contained in user reviews via automatic classification/prioritization according to specific topics @di2016would.
 - Introduced SURF (Summarizer of User Reviews Feedback). An approach to condense a large number of user reviews. Main features are summarization and classification.
 - Extract useful information for developers doing maintenance and evolution tasks. 
 - To validate the output of SURF, the authors realized 2 experiments using 17 apps and 23 developers and researchers. 
@@ -290,7 +289,7 @@ Bullets for read papers:
 
 **Summary (research questions and answers):** The paper proposes a new approach for analyzing App Store user reviews, deriving insights from them. The presented solution has two components. First, the User Reviews Model (URM) that enable the classification of users intentions (e.g., UI improvements, bug fixes, etc.). Second, the Summarizer of User Review Feedback (SURF). A tool that, by leveraging the URM, is capable of generating summaries of users feedback.  After evaluating the proposed approach, TODO
 
-**Research question/issue:** there is no approach that is able to do, at the same time, the following: (i) determine for a large number of reviews the specific topic discussed in the review (e.g., UI improvements, security/licensing issues, etc.), (ii) identify the maintenance task to perform for addressing the request stated in the review (e.g., bug fixing, feature enhancement, etc.), and (iii) present such information in the form of a condensed, interactive and structured agenda of recommended software changes, which is actionable for developers. [Reference paper]
+**Research question/issue:** there is no approach that is able to do, at the same time, the following: (i) determine for a large number of reviews the specific topic discussed in the review (e.g., UI improvements, security/licensing issues, etc.), (ii) identify the maintenance task to perform for addressing the request stated in the review (e.g., bug fixing, feature enhancement, etc.), and (iii) present such information in the form of a condensed, interactive and structured agenda of recommended software changes, which is actionable for developers. [@di2016would]
 
 
 ### API change and fault proneness: A threat to the success of Android apps
@@ -322,33 +321,6 @@ they use.
 
 **Research question/issue:** relationship between fault- and change-proneness of APIs and the
 degree of success in Android apps.
-
-### What would users change in my app? summarizing app reviews for recommending software changes
-
-**Source:** Proceeding FSE 2016 Proceedings of the 2016 24th ACM SIGSOFT International Symposium on
-Foundations of Software Engineering
-
-**Main topic area:** using user feedback/reviews
-
-**Authors information (full names, institution, and country):** - Andrea Di Sorbo - University of
-Sannio, Italy - Sebastiano Panichella - University of Zurich, Switzerland - Carol V. Alexandru -
-University of Zurich, Switzerland - Junji Shimagaki - Sony Mobile Communications, Japan - Corrado
-A. Visaggio - University of Sannio, Italy - Gerardo Canfora - University of Sannio, Italy - Harald
-C. Gall - University of Zurich, Switzerland
-
-**Summary (research questions and answers):** The paper proposes a new approach for analyzing App
-Store user reviews, deriving insights from them. The presented solution has two components. First,
-the User Reviews Model (URM) that enable the classification of users intentions (e.g., UI
-improvements, bug fixes, etc.). Second, the Summarizer of User Review Feedback (SURF). A tool that,
-by leveraging the URM, is capable of generating summaries of users feedback. After evaluating the
-proposed approach, TODO
-
-**Research question/issue:** there is no approach that is able to do, at the same time, the
-following: (i) determine for a large number of reviews the specific topic discussed in the review
-(e.g., UI improvements, security/licensing issues, etc.), (ii) identify the maintenance task to
-perform for addressing the request stated in the review (e.g., bug fixing, feature enhancement,
-etc.), and (iii) present such information in the form of a condensed, interactive and structured
-agenda of recommended software changes, which is actionable for developers. [Reference paper]
 
 ### App Store, Marketplace, Play! An Analysis of Multi-Homing in Mobile Software Ecosystems
  
