@@ -191,7 +191,7 @@ The selection criteria are as follows:
 2. The study must not just show a release engineering technique,
    but analyze its performance compared to other techniques.
 
-[Section 7.2.6](#included-and-excluded-studies) lists which studies
+The last subsection of this appendix lists which studies
 were selected and which were discareded.
 
 ### Study Quality Assessment
@@ -311,6 +311,7 @@ this survey.
 - @claes2017a
 - @da2014a
 - @da2016a
+- @dyck2015a
 - @fujibayashi2017a
 - @karvonen2017a
 - @kerzazi2013a
@@ -325,8 +326,6 @@ this survey.
 
 **Excluded:**
 
-- @dyck2015a has been excluded, because it only provides definitions
-  for release engineering and DevOps, but does not perform any analysis.
 - @khomh2012a has been excluded, because it presents the same results as
   @khomh2015a, while the latter is more extensive because it is a journal article
   instead of a conference article.
