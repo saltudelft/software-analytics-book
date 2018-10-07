@@ -1140,11 +1140,15 @@ General information:
 - Author information: Laukkanen, E. and Paasivaara, M. and Itkonen, J. and Lassenius, C.
 - Publication type: Journal/Magazine Article
 - Journal: Empirical Software Engineering
-- Type of study:
+- Type of study: Case study (2 cases)
 
 What practices in release engineering does this publication mention?
 
--
+- Continuous Integration (mainly)
+- Code review
+- Internal Verification Scope
+- Domain Expert Testing
+- Testing with customers
 
 Are these practices to be classified under dated,
 state of the art or state of the practice? Why?
@@ -1153,33 +1157,42 @@ state of the art or state of the practice? Why?
 
 What open challenges in release engineering does this publication mention?
 
--
-
-What research gaps does this publication contain?
-
--
-
-Are these research gaps filled by any other publications in this survey?
-
--
+- The results in this study can be verified by additional case studies or
+  or even surveys to close the of empirical research on release engineering
 
 Quantitative research publications:
 
 - Study start date:
 - Study end date or duration:
+- Data acquisition period: 22 weeks (BigCorp) and 24 weeks (SmallCorp)
 - Population description:
 - Method(s) of recruitment of participants:
-- Sample size:
+- Sample size: 1889 builds (BigCorp) and 760 builds (SmallCorp)
 - Evaluation/measurement description:
 - Outcomes:
-    1.
+    - High internal quality standards combined with the large distributed
+      organizational context of BigCorp slowed the verification process
+      down and therefore had a negative impact on release capability
+    - In SmallCorp, the lack of internal verification measures due to a lack
+      of resources was mitigated by code review, disciplined CI and external
+      verification by customers in customer environments. This allowed for
+      fast release capability and gaining feedback from production.
+    - Variables
+        - Multiple customers -> High quality standards
+        - High quality standards -> Complex CI
+        - High quality standards -> Slow Verification
+        - Complex CI -> Undisciplined CI
+        - Large distributed organization -> Undisciplined CI
+        - Undisciplined CI -> Slow verification
+        - Slow verification -> Slow release capability
 - Limitations:
-    -
+    - Only a case study, so difficult to generalize
 - Future research:
+    -
 
 Notes:
 
--
+- Quantitative results triangulated with interviews
 
 ### Modern Release Engineering in a Nutshell
 
