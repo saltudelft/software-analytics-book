@@ -328,8 +328,66 @@ iteratively and planned for four weekly milestones.
 <!-- TODO -->
 
 ### RQ2: ...
+Over the years, the software industry has come up with inventive approach to deliver new 
+features and fixes in a more efficient and faster manner. This has resulted in case studies 
+being done to assess the associated risk and cost factors, and what benefits certain 
+strategies can give.
 
-<!-- TODO -->
+@khomh2015a has looked into the effects of switching from traditional to rapid release cycles 
+in the case of Mozilla Firefox. The paper has concluded that users do not experience 
+significantly more post-release bugs, bugs are fixed faster, but that users experience bugs 
+earlier in the software execution. @mantyla2015a has also considered data from Mozilla 
+Firefox, and has examined the impact of release engeering on testing efforts. Observations of 
+the paper conclude that the rapid release cycle perform more test executions per day, but 
+these tests focus on a smaller subset of the test case corpus and that testing happens closer 
+to release and is more continuous. A limitation of this study is that it measures correlation, 
+rather than causation. @da2014a has further zoomed into the integration of addressed issues, 
+and has considered data from Mozilla Firefox, as well as data from ArgoUML and Eclipse. The 
+paper found that addressed issues are usually delayed in a rapid release cycle and are often 
+excluded from releases. Similar conclusions based on Mozilla Firefox were made in 2016, when 
+@da2016a found that minor-traditional releases tend to have less integration delay than 
+major/minor-rapid releases.
+
+@castelluccio2017a has examined the practice of *patch lifting* in the release management at 
+Mozilla Firefox where patches that fix critical issues, or implement high-value features are 
+often promoted directly from the development channel to a stabilization channel. The paper 
+evaluated the characteristics of patch uplift decisions, and interviewed three Mozilla release 
+managers. The paper concluded that the majority of patch uplift decisions are made due to a 
+wrong functionality or crash. The specificity and code author of patches that are requested to 
+be uplifted are also a major factor for release managers.
+
+In response to case studies being done on many prominent open source software projects, 
+@teixeira2017a has described OpenStack's shift to a liberal six-month release cycle. As this 
+is an ongoing study, the results given by the paper are preliminary and only observe the 
+process. OpenStack's release process can be considered as a hybrid of feature-based and 
+time-based releases. OpenStack encourages regular releases but also attemps to include new 
+features at each regular release.
+
+Rather than focussing on topics such as issue and delays, @poo-caamano2016a focusses on the 
+communication in release engineering in the cases of GNOME and OpenStack. Through analyzing 
+over 2.5 years of communication, the paper has made a number of observations. The paper found 
+that developers tend to communicate through blogs, bug trackers, conferences and hackfests, 
+and that a release team is set to define requirements, quality standards and coordination 
+through (direct) communcation. Although only the mailing lists of the projects were studied, 
+defined challenges include keeping everyone informed and engaged, monitoring changes and 
+setting priorities in cross-project coordination.
+
+@laukkanen2018a has described what effects modern release engineering have on software with 
+different organizational contexts. In this, this paper specifically focusses on continuous 
+deployment (CD) practices. The paper has found that high internal quality standards combined 
+with the large distributed organizational context of large corporations slowed the 
+verification process down and therefore had a negative impact on release capability. While in 
+small corporations, the lack of internal verification measures due to a lack of resources was 
+mitigated by code review, disciplined CI and external verification by customers in customer 
+environments. More about the factors that can play a role in @rodriguez2017a, where an 
+overview of contributing factors in continuous deployment are defined and categorized based on 
+literature between 2001 and 2014.
+
+As rapid release cycles and continous deployment are topics that are new and emerging, not 
+enough research has been done to generalize any conclusions that are made in the case studies 
+discussed in this section. This is why all the emperical studies in this survey have one major 
+sidenote in common: more case studies are needed. Open challenges such as these will be 
+discussed in the next section.
 
 ### RQ3: ...
 
