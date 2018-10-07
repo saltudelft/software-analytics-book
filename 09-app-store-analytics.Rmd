@@ -183,21 +183,19 @@ main purpose is to investigate the later.
 **Responding to reviews**
 
 Since 2013 developers can respond to reviews in the Google Play store and Apple introduced the same
-feature in 2017. In previous work McIlroy [Empirical studies of the distribution and feedback
-mechanisms of mobile app stores] studied whether responding to user reviews has a positive effect
-on the rating users give. Building on previous work McIlroy et al. studied how likely it is for
-users to change their rating for an app when a developer responds to their review[Is It Worth
-Responding to Reviews? Studying the Top Free Apps in Google Play]. They found that users change
+feature in 2017. In previous work McIlroy [@mcilroy2014empirical] studied whether responding to
+user reviews has a positive effect on the rating users give. Building on previous work McIlroy et
+al. studied how likely it is for users to change their rating for an app when a developer responds
+to their review [@mcilroy2017worth]. They found that users change
 their rating 38.7 percent of the time when a developer responds to their review, with a median
 increase of 20 percent in rating for the app.
 
-Hassan et al. [Studying the dialogue between users and developers of free apps in the Google Play
-Store] used 2328 top free apps from the Google Play store to study whether users are more likely to
-update their review if a developer responds to their review. They extracted 126686 dialogues
-between developers and users and concluded that responding to a review increases the chances of
-users updating their given rating for an app can increase by up to six times when compared to not
-responding. Next to this, they also studied the characteristics, likelihood and the incentives of
-user-developer dialogues in app stores.
+Hassan et al. [@hassan2018studying] used 2328 top free apps from the Google Play store to study
+whether users are more likely to update their review if a developer responds to their review. They
+extracted 126686 dialogues between developers and users and concluded that responding to a review
+increases the chances of users updating their given rating for an app can increase by up to six
+times when compared to not responding. Next to this, they also studied the characteristics,
+likelihood and the incentives of user-developer dialogues in app stores.
 
 Challenges & Future Research:
 * in depth study how developers and users are using the review mechanism to find out how the
