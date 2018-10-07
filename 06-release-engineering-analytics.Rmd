@@ -430,7 +430,7 @@ This section aims to answer the question:
 _What aspects of modern release engineering make for
 relevant study objects in future software analytics research?_
 
-#### General
+#### General suggestions
 
 The body of literature that we analyzed for this survey mostly comprised case
 studies that employed quantitative analysis methods.
@@ -470,7 +470,7 @@ taken into account.
 For example the customer perceptions regarding the adoption of a certain
 practice can be investigated.
 
-#### Specific practices
+#### Directions for specific practices
 
 **Rapid Releases**
 
