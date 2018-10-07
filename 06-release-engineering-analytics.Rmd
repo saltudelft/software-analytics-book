@@ -400,6 +400,12 @@ discussed in the next section.
 ## Conclusion
 
 <!-- TODO -->
+- RQ2: What aspects of modern release engineering have been studied in software analytics
+ research so far?
+At this point in time, case studies have mainly focussed on the resulting factors of switching 
+from a traditional release cycle to a rapid release cycle, and what effects this has in various
+organizational contexts. As all included studies suggest, more emperical studies are needed to be
+able to make general conclusions in the novel field of release engineering.
 
 ## Raw extracted data
 
