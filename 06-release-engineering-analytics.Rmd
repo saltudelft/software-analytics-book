@@ -302,6 +302,7 @@ this survey.
 - @rodriguez2017a
 - @souza2015a
 - @teixeira2017a
+- @laukkanen2017a
 
 **Excluded:**
 
