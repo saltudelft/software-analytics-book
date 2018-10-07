@@ -39,9 +39,9 @@ TODO: write intro to search strategy
 ### Search Strategy
 
 As stated in the motivation, the survey by Martin et al @martin2015survey gave us a starting point.
-Instead of gathering everything related to App Store Analytics we decided to focus on updating the
-work done by the authors and using to answer the research questions specifically for the
-subcategory of Review Analytics. In this order of ideas, all the papers that @martin2015survey
+Instead of gathering everything related to App Store Analytics we decided to focus on expanding the
+work done by the authors and to answer the research questions specifically for the
+subcategory of Review Analytics. All the papers that @martin2015survey
 found related Review Analytics were retrieved and inspected to get a sense of their specific
 keywords and content. 
 
@@ -53,11 +53,11 @@ After doing this, the following search queries were generated:
 “app store analytics” AND “reviews”, “app reviews”
 ```
 
-Google Scholar was used for the searching process with the aforementioned queries. In order to keep
-a database with only the relevant articles, the following inclusion criteria were applied to all
-the hits. It is important to notice that in addition to the results obtained by searching with the
-specific query, the first page of the “related articles” link for the top cited articles was also
-inspected. 
+Google Scholar, ACM Digital Library, and IEEE Xplore were used for the searching process with the
+aforementioned queries. In order to keep a database with only the relevant articles, the following
+inclusion criteria were applied to all the hits. It is important to notice that in addition to the
+results obtained by searching with the specific query, the first page of the “related articles”
+link for the top cited articles was also inspected. 
 
 | Criteria | Value        | 
 |----------------|-------------|
@@ -65,10 +65,9 @@ inspected.
 | journals and conferences | TSE, EMSE, JSS, IST, ICSE, FSE, MSR, OSDI, MobileSoft |
 | keywords in title | user reviews OR app store reviews |
 | keywords in abstract | user reviews OR app store reviews |
-|----------------|-------------|
 
 After the relevant articles were selected, their metadata was gathered, and they were included in a
-database. This is the input for the next step of the survey, article selection.
+database. This was the input for the next step of the survey, article selection.
 
 ### Article selection
 Taking into account that the papers considered in this survey were published from 2015, it is no
@@ -146,12 +145,11 @@ TODO
     - Which research methods, tools, and datasets being used?
     - Which are the main research findings (aggregated)?
 
-Since 2015 some interesting research has been done in the field of Review Analytics. To answer the
-question at hand we looked at the novel ideas and the research that has been done in this field
-since that time. In their survey, @martin2015survey proposed “Classification”, “Content”,
-“Requirements Engineering”, “Sentiment”, “Summarization” and “Surveys and Methodological Aspects of
-App Store Analysis” to categorize the existing literature. After analyzing posterior work,
-we propose new categories that reflect better the state of the art in this field. These are:
+To answer thequestion at hand we looked at the novel ideas and the research that has been done in
+this field since that time. In their survey, @martin2015survey proposed “Classification”,
+“Content”, “Requirements Engineering”, “Sentiment”, “Summarization” and “Surveys and Methodological
+Aspects of App Store Analysis” to categorize the existing literature. After analyzing posterior
+work, we propose new categories that reflect better the state of the art in this field. These are:
 “Review Manipulation”, “Mapping user reviews to the source code”, “Privacy / App Permissions”,
 “Responding to reviews”, “Comparing Apps and App stores and Wearables”. In the following sections,
 we expand on each one of these with the revised literature.
@@ -162,8 +160,8 @@ we expand on each one of these with the revised literature.
 Recently, significant attention has been paid to how the reviews and ratings can be used to
 influence the number of downloads of a particular app in the App Store. In their paper,
 @i2017crowdsourced analyzed the use of crowdsourcing platforms such as Microworkers to manipulate
-the ratings. Is interesting to see how the authors merged data from two different sources, App
-Store and crowdsourcing site, to identify manipulated reviews.
+the ratings. The authors merged data from two different sources, App Store and crowdsourcing site,
+to identify manipulated reviews.
 
 In @chen2017toward the authors propose an approach to identify attackers of collusive promotion
 groups in the app store. They use ranking changes and measurements of pairwise similarity to form
@@ -172,14 +170,13 @@ same problem was proposed by @xie2016you. In the paper, the authors identify man
 ratings based on the so-called attack signatures. They present a graph-based algorithm for
 achieving this purpose in linear time. 
 
-In these works, it is interesting to see how the percentage of manipulated apps in the app stores
-is not the majority of the used samples (@xie2016you found that less than 1% of the apps were
-suspicious). Regarding the datasets, the work by @i2017crowdsourced used the smaller amount of app
-store data. Considering that they manage to merge it from data from an external
-crowdsourcing site. In the case of the other two papers, they can be characterized by the small
-number of considered apps (compared to the total number of apps in the main marketplaces), but the
-significant number of reviews that were analyzed. This makes sense, considering that the
-main purpose is to investigate the later. 
+These papers also show that the percentage of manipulated apps in the app stores is not the
+majority of the used samples (@xie2016you found that less than 1% of the apps were suspicious).
+Regarding the datasets, the work by @i2017crowdsourced used the smaller amount of app store data.
+Considering that they manage to merge it from data from an external crowdsourcing site. In the case
+of the other two papers, they can be characterized by the small number of considered apps (compared
+to the total number of apps in the main marketplaces), but the significant number of reviews that
+were analyzed. This makes sense, considering that the main purpose is to investigate the later. 
 
 **Mapping user reviews to the source code**
 
@@ -195,6 +192,7 @@ negative user concerns were apps asking for too many permissions or a bad timing
 permissions.
 
 Challenges & Future Research:
+
 * A
 
 **Responding to reviews**
@@ -215,6 +213,7 @@ times when compared to not responding. Next, to this they also studied the chara
 likelihood, and the incentives of user-developer dialogues in app stores.
 
 Challenges & Future Research:
+
 * in-depth study of how developers and users are using the review mechanism to find out how the
   mechanism can be improved.
 * Investigate whether a limit of 500 responses is sufficient to ban useless responses from the
@@ -224,10 +223,10 @@ Challenges & Future Research:
 **Comparing Apps and App stores**
 
 Papers that compare apps or app stores are discussed in this section.  Li et  al. mined user
-reviews from Google Play to find comparisons between apps[@li2017mining]. They tried to identify
+reviews from Google Play to find comparisons between apps [@li2017mining]. They set out to identify
 comparative reviews to extract differences between apps on different topics. For example, a user
 says in a review that this app is not as good regarding power consumption than another app. Li et
-al. created a method that with reasonable accuracy extracts these opinions and provides comparisons
+al. created a method that with sufficient accuracy extracts these opinions and provides comparisons
 between apps. 
 
 Ali et al. did a comparative study on cross-platform apps. They took a sample of 80.000 app-pairs
@@ -238,6 +237,7 @@ such as PhoneGap. [@hu2018studying] With this approach they found that in 33 of 
 the star rating was not consistent across platforms. 
 
 Challenges & Future Research:
+
 * One of the open challenges is including indirect relationships in the comparisons as only direct
   relationships were used in work by Li et al.
 * Hu et al. noticed that apps that have been developed using hybrid development tools had
@@ -332,10 +332,10 @@ TODO
 
 ### Nayebi, Maleknaz, Henry Cho, and Guenther Ruhe. "App store mining is not enough for app improvement." Empirical Software Engineering (2018): 1-31.
 
-** Complete reference: ** @nayebi2018app
+**Complete reference:** @nayebi2018app
 
-- Complement App reviews with other sources of information such as Twitter. In this sense, authors
-  use for app analysis more than one feedback mechanism. 
+- Complements app reviews with other sources of information such as Twitter. In this sense, authors
+  use more than one feedback mechanism for the app analysis. 
 - Is there a relationship between app store ratings and Twitter engagement with respect to a
   certain app? Which are the differences between tweets and app store reviews’ provided
   information? In general how tweets compare to reviews
