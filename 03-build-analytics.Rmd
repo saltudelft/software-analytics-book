@@ -283,7 +283,6 @@ environments. Other functions that the build may include are code quality checks
 measuring technical debt etc. 
 
 *Make Your Build Self-Testing*
-
 Once the code is built, all tests should run to confirm that it behaves as the developer would expect it to behave.
 
 *Everyone Commits To the Mainline Every Day*
@@ -325,7 +324,6 @@ when rebuilding a feature that does not meet requirements. In general, all progr
 updating the project from the repository to ensure everyone is up to date. 
 
 *Everyone can see what's happening*
-
 It should be easy to find out whether the build breaks and what/who made relevant changes. 
 
 *Automate Deployment*
