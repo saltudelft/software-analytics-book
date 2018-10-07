@@ -41,7 +41,7 @@ inspected.
 
 | Criteria | Value        | 
 |----------------|-------------|
-| timeframe    | 2015-present |
+| time frame    | 2015-present |
 | journals and conferences | TSE, EMSE, JSS, IST, ICSE, FSE, MSR, OSDI, MobileSoft |
 | keywords in title | user reviews OR app store reviews |
 | keywords in abstract | user reviews OR app store reviews |
@@ -279,7 +279,7 @@ Bullets for read papers:
 
 **Summary (research questions and answers):** The paper proposes a new approach for analyzing App Store user reviews, deriving insights from them. The presented solution has two components. First, the User Reviews Model (URM) that enable the classification of users intentions (e.g., UI improvements, bug fixes, etc.). Second, the Summarizer of User Review Feedback (SURF). A tool that, by leveraging the URM, is capable of generating summaries of users feedback.  After evaluating the proposed approach, TODO
 
-**Research question/issue:** there is no approach that is able to do, at the same time, the following: (i) determine for a large number of reviews the speciﬁc topic discussed in the review (e.g., UI improvements, security/licensing issues, etc.), (ii) identify the maintenance task to perform for addressing the request stated in the review (e.g., bug ﬁxing, feature enhancement, etc.), and (iii) present such information in the form of a condensed, interactive and structured agenda of recommended software changes, which is actionable for developers. [Reference paper]
+**Research question/issue:** there is no approach that is able to do, at the same time, the following: (i) determine for a large number of reviews the specific topic discussed in the review (e.g., UI improvements, security/licensing issues, etc.), (ii) identify the maintenance task to perform for addressing the request stated in the review (e.g., bug fixing, feature enhancement, etc.), and (iii) present such information in the form of a condensed, interactive and structured agenda of recommended software changes, which is actionable for developers. [Reference paper]
 
 
 ### API change and fault proneness: A threat to the success of Android apps
