@@ -1061,45 +1061,74 @@ General information:
 - Author information: Souza, R. and Chavez, C. and Bittencourt, R.A.
 - Publication type: Journal/Magazine Article
 - Journal: IEEE Software
-- Type of study: Quantitative
+- Type of study: Quantitative case study (Mozilla Firefox)
 
 What practices in release engineering does this publication mention?
 
--
+- Rapid release
+- Backing out of broken patches (patch backouts)
+- Stabilization channels / monitored integration repository
 
 Are these practices to be classified under dated,
 state of the art or state of the practice? Why?
 
--
+- State of the practice (case study)
 
 What open challenges in release engineering does this publication mention?
 
-- How rapid release cycles affect code integration
-
-What research gaps does this publication contain?
-
--
-
-Are these research gaps filled by any other publications in this survey?
-
--
+- How rapid release cycles affect code integration, where patch backouts are
+  a proxy for studying code integration
+- Integrate backout rate analysis in an analytics tool to provide release
+  engineers with up-to-date information on the process
 
 Quantitative research publications:
 
-- Study start date:
-- Study end date or duration:
+- Study start date: first data item 30 june 2009
+- Study end date or duration: last data item 17 september 2013
 - Population description:
 - Method(s) of recruitment of participants:
-- Sample size:
-- Evaluation/measurement description:
+- Sample size: 43198 bug fixes, no further sample sizes of the raw data
+  mentioned anywhere unfortunately. (Data from Mozilla Firefox project.)
+- Evaluation/measurement description: Associate commit log, bug reports and
+  releases. Classify backouts. Measure rate of backouts against all fixed bugs,
+  per month and per release strategy period. Test for statistical significance
+  using Fisher's exact test and Wilcoxon signed-rank test.
 - Outcomes:
-    1.
+    1.  Absolute numbers of bug fixes and backouts increased under rapid
+        releases (probably the increase in regular contributors played a role,
+        cannot conclude anything about workload.)
+    2.  Backout rate increased under rapid releases (sheriff managed integration
+        repositories may have increased the prevalence of backout culture)
+    3.  Higher early backout rate and lower late backout rate indicate a shift
+        towards earlier problem detection (proportion early from 57 to 88 %)
+        The time-to-backout also dropped.
 - Limitations:
+    - Sample size not mentioned
+    - Quite trivial statistics
 - Future research:
+    - Integrate backout rate analysis in an analytics tool to provide release
+      engineers with up-to-date information on the process
+
+Interview triangulation
+
+- Explanations of quantitative outcomes:
+    - larger code base and more products -> more conflicts
+    - evolution of automated testing toolset -> earlier and more backouts
+    - sheriff managed integration repos -> earlier and more backouts
+- Explanations of impact
+    - cultural shift reduced testing efforts beforehand, and higher early
+      backout rate eventually reduced the effort to integrate bug fixes for
+      developers
+    - given the many stabilization channels and the rarity of very late backouts
+      both in traditional and rapid release cycles, changes in backouts do not
+      seem to influence users' perception of quality (even though frequent
+      update notifications and broken compatibilities caused upset users)
 
 Notes:
 
-- Also reviews existing literature very well
+- Also reviews existing literature well.
+- Treats transitional period from traditional to rapid releases as a separate
+  period.
 
 ### Comparison of release engineering practices in a large mature company and a startup
 
@@ -1112,11 +1141,15 @@ General information:
 - Author information: Laukkanen, E. and Paasivaara, M. and Itkonen, J. and Lassenius, C.
 - Publication type: Journal/Magazine Article
 - Journal: Empirical Software Engineering
-- Type of study:
+- Type of study: Case study (2 cases)
 
 What practices in release engineering does this publication mention?
 
--
+- Continuous Integration (mainly)
+- Code review
+- Internal Verification Scope
+- Domain Expert Testing
+- Testing with customers
 
 Are these practices to be classified under dated,
 state of the art or state of the practice? Why?
@@ -1125,33 +1158,42 @@ state of the art or state of the practice? Why?
 
 What open challenges in release engineering does this publication mention?
 
--
-
-What research gaps does this publication contain?
-
--
-
-Are these research gaps filled by any other publications in this survey?
-
--
+- The results in this study can be verified by additional case studies or
+  or even surveys to close the of empirical research on release engineering
 
 Quantitative research publications:
 
 - Study start date:
 - Study end date or duration:
+- Data acquisition period: 22 weeks (BigCorp) and 24 weeks (SmallCorp)
 - Population description:
 - Method(s) of recruitment of participants:
-- Sample size:
+- Sample size: 1889 builds (BigCorp) and 760 builds (SmallCorp)
 - Evaluation/measurement description:
 - Outcomes:
-    1.
+    - High internal quality standards combined with the large distributed
+      organizational context of BigCorp slowed the verification process
+      down and therefore had a negative impact on release capability
+    - In SmallCorp, the lack of internal verification measures due to a lack
+      of resources was mitigated by code review, disciplined CI and external
+      verification by customers in customer environments. This allowed for
+      fast release capability and gaining feedback from production.
+    - Variables
+        - Multiple customers -> High quality standards
+        - High quality standards -> Complex CI
+        - High quality standards -> Slow Verification
+        - Complex CI -> Undisciplined CI
+        - Large distributed organization -> Undisciplined CI
+        - Undisciplined CI -> Slow verification
+        - Slow verification -> Slow release capability
 - Limitations:
-    -
+    - Only a case study, so difficult to generalize
 - Future research:
+    -
 
 Notes:
 
--
+- Quantitative results triangulated with interviews
 
 ### Modern Release Engineering in a Nutshell
 
