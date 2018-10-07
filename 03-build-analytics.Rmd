@@ -213,8 +213,8 @@ still commonly used today, particularly in the agile software industry as sugges
   * Everyone can see what's happening
   * Automate Deployment
   
-It is important to note that CI does not get rid of bugs, but it does make them dramatically easier to find and remove. 
-The above practises are important for the smooth functioning of CI framework.
+It is important to note that CI does not get rid of bugs, but it does make them dramatically easier
+to find and remove. The above practises are important for the smooth functioning of CI framework.
   
 
 <!--
@@ -231,15 +231,23 @@ In @bisong2017built the main limitation was the performance of the machine learn
 In the implementation R was used and it proved not capable of processing the amounts of data
 needed. This shows that it is important to choose the right tool when analyzing data.
 
+@pinto2018work notes that it's research and many others are done on open source software. There are
+still a lot of possibilities for researching on proprietary software projects.
+
+Tools presented in papers might require a more large scale and long term study to verify that the
+tool presented keeps up when it is actually used (@santolucito2018statically).
+
 <!-- An aggregated set of open research items, as described in the papers -->
 
 Future research in build analytics branches in a couple of different topics. @pinto2018work
 proposes to focus on getting a better understanding of the users and why they might choose to
 abandon an automatic build platform.
 
-According to @baltes2018no future work could look into more perspectives when analyzing commit
-data, for instance partitioning commits by developer. It also notes the importance of more
-qualitative research.
+@baltes2018no suggests that in future research more perspectives when analyzing commit data should
+be taken into account, for instance partitioning commits by developer. It also notes the importance
+of more qualitative research.
+
+Some open research questions from recent papers are the following:
 
   * How do teams change their pull request review practices in response to the introduction of
   continuous integration? (@zhao2017impact)
@@ -252,7 +260,7 @@ From the synthesis of the works discussed in this section the following research
 
  * What is the impact of the choice of Continuos Integration platform? Most of the research is done
  on users using Travis&nbsp;CI, there are many other platforms out there. Every platform has their own
- characteristics.
+ characteristics and this could impact the effectiveness for a specific kind of project.
 
 <!--Commented part to extract info from and add it on the final structure -->
 
