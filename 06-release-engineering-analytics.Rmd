@@ -439,14 +439,14 @@ However, the generalizability of the findings in these case studies is very
 limited.
 Therefore, in general many studies suggest that future research efforts focus on
 performing additional case studies, both to verify existing findings and to
-study new relationships and new contexts @karvonen2017a @teixeira2017a
-@khomh2015a @claes2017a @laukkanen2018a @adams2016a @castelluccio2017a.
+study new relationships and new contexts [@karvonen2017a; @teixeira2017a;
+@khomh2015a; @claes2017a; @laukkanen2018a; @adams2016a; @castelluccio2017a].
 It also seems worthwhile to triangulate findings by complementing data analyses
 with other quantitative (e.g. a survey) or qualitative (e.g. an interview)
-methods @karvonen2017a.
+methods [@karvonen2017a].
 Finally, additional literature reviews will allow researchers to keep an
 overview of the most recent developments and findings in the area of release
-engineering @rodriguez2017a @laukkanen2018a.
+engineering [@rodriguez2017a; @laukkanen2018a].
 
 Apart from verifying results, it might be worthwhile to leverage them by
 constructing analysis tools for practitioners.
@@ -456,7 +456,7 @@ risk associated with patch uplift candidates and recommend patches that can be
 uplifted safely.
 Also, companies seem to be struggling with the adoption of continuous delivery
 and deployment, so a checklist for analyzing readiness for these practices
-might be developed @karvonen2017a.
+might be developed [@karvonen2017a].
 
 The review by @karvonen2017a makes a number of general suggestions for future
 research.
@@ -479,16 +479,16 @@ this research consists of case studies (which mostly only concerned Mozilla
 Firefox due to the availability of data).
 To this end, there are opportunities to further investigate the effects of
 switching to rapid releases on:
-code integration @da2014a @da2016a @souza2015a @castelluccio2017a,
-testing efforts @mantyla2015a,
-software quality @khomh2015a @khomh2012a,
-(library) adoption @fujibayashi2017a and
-time pressure and work patterns @claes2017a.
+code integration [@da2014a; @da2016a; @souza2015a; @castelluccio2017a],
+testing efforts [@mantyla2015a],
+software quality [@khomh2015a; @khomh2012a],
+(library) adoption [@fujibayashi2017a] and
+time pressure and work patterns [@claes2017a].
 
 **DevOps**
 
 When it comes to DevOps, future research is needed to refine its definition such
-that it is uniform and valid for many situations @dyck2015a. According to
+that it is uniform and valid for many situations [@dyck2015a]. According to
 @karvonen2017a, it seems that the goals in DevOps are congruent with those
 in release engineering, and future research on this topic is therefore highly
 relevant in order to study modern release engineering.
