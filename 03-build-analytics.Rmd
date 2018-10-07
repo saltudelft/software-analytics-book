@@ -277,7 +277,7 @@ Below is an explanation of each of the practices suggested by @fowler2006continu
 
 *Maintain a Single Source Repository*
 
-The practice advocates the use of a revision control system for the project’s source code. All artefacts required 
+The practice advocates the use of a revision control system for the project's source code. All artefacts required 
 to build the project should be placed in a single repository. This ensures that the system does not require 
 additional dependencies. It is preferred for changes to be integrated at least once a day. This makes it 
 easier to find and remove bugs. 
@@ -302,7 +302,7 @@ integral practice of the CI framework. In addition, performing nightly builds in
 *Every Commit Should Build the Mainline on an Integration Machine*
 
 The system should build commits to the current working version to ensure that they integrate correctly. 
-A “nightly build” should also execute at a scheduled time every night. This build should include more 
+A "nightly build" should also execute at a scheduled time every night. This build should include more 
 verifications than the ones on other branches. It takes longer to run and is executed less frequently.
 
 *Fix Broken Builds Immediately*
