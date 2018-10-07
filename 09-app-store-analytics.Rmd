@@ -89,7 +89,9 @@ somewhat relevant paper (score=5) and 3) a non relevant paper (score=0).
 [@di2016would]** 
 
  - Relevance score: 10
- - Remarks: TODO
+ - Remarks: applied classification and summarization techniques on app reviews in order to reduce
+   the effort required to analyze feedback from users. As can be seen, the paper was focused in
+   using the reviews to improve the development process.
 
 **Fault in your stars: an analysis of Android app reviews [@aralikatte2018fault]** 
 
