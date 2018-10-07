@@ -185,6 +185,11 @@ main purpose is to investigate the later.
 
 **Privacy / app permissions**
 
+Since Android Marshmallow the Android operating system uses a run-time permission based security system. Apple's iOS also uses run-time permissions on top of a set of permissions enabled by default. Scoccia et al. did a large-scale empirical study on this new system by inspecting 4.3 million user reviews from 5572 Google Play store apps [@scoccia2018investigation]. Using different techniques they extracted 3574 user reviews that relate to permissions. They found that users like the minimal permissions as most apps only ask for permissions they strictly need. Some of the negative user concerns were apps asking for too many permission or a bad timing asking for permissions.
+
+Challenges & Future Research:
+* A
+
 **Responding to reviews**
 
 Since 2013 developers can respond to reviews in the Google Play store and Apple introduced the same
@@ -223,7 +228,14 @@ to quantitatively compare the same apps across different platforms and identify 
 between the platforms. [@ali2017same]  
 In a related study Hu et al. compared app-pairs that are created using hybrid development tools
 such as PhoneGap. [@hu2018studying] With this approach they found that in 33 of the 68 app-pairs
-the star rating was not consistent across platforms. Challenges & Future Research:
+the star rating was not consistent across platforms. 
+
+Challenges & Future Research:
+* One of the open challenges is including indirect relationships in the comparisons as only direct relationships were used in work by Li et al.
+* Hu et al. noticed that apps that have been developed using hybrid development tools had relatively low ratings. Future studies should be done to investigate the quality of hybrid apps and compare them with the quality of native apps.
+* A detailed approach grouping topics with more granularity.
+* Market-scale analysis using a large amount of apps and reviews.  
+* Testing and analysis of apps across multiple platforms and hardware.
 
 **Wearables**
 
