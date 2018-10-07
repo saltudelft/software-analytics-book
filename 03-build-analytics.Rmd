@@ -72,26 +72,30 @@ The keywords used were: build analytics, machine learning, build time, predictio
 continuous integration, build failures, active learning, build errors, mining, 
 software repositories, open-source software.
 
-| Paper with reference              | Source              |  RQ     | Obs.              |
-| --------------------------------  | ----------------    | ------  | ------------------|                
-| 1. @bird2017predicting            | Initial seed        | RQ1     |  US patent        |         
-| 2. @beller2017oops                | Initial seed        | RQ3     |                   |                
-| 3. @rausch2017empirical           | Initial seed        | RQ2     |                   |
-| 4. @beller2017travistorrent       | Initial seed        | RQ2     |                   |
-| 5. @pinto2018work                 | Initial seed        | RQ3     |                   |
-| 6. @zhao2017impact                | Initial seed        | RQ3     | Collab China, Netherlands, USA Univ |
-| 7. @widder2018m                   | Initial seed        | RQ1     ||                   
-| 8. @hilton2016usage               | Initial seed        | RQ2     ||
-| 9. @vassallo2017tale              | Ref 2               | -       ||
-| 11. @hassan2018hirebuild          | Ref 4               | RQ1     ||
-| 12. @vassallo2018break            | Ref 2,3             | RQ1, RQ3||   
-| 13. @zampetti2017open             | Ref by 12           | -       ||
-| 14. @baltes2018no                 | GScholar Search     | RQ1, RQ3| Search term "Github Continuous Integration"|      
-| 15. @bisong2017built              | GScholar Search     | RQ1, RQ3||
-| 16. @santolucito2018statically    | GScholar Search     | RQ1     ||
-| 17. @ni2018acona                  | GScholar Search     | RQ1     ||
+| Paper with reference              | Source              |  RQ      | Notes |
+| --------------------------------  | ------------------- | -------- | ----- |                
+| 1. @bird2017predicting            | Initial seed        | RQ1      | 1     |         
+| 2. @beller2017oops                | Initial seed        | RQ3      |       |                
+| 3. @rausch2017empirical           | Initial seed        | RQ2      |       |
+| 4. @beller2017travistorrent       | Initial seed        | RQ2      |       |
+| 5. @pinto2018work                 | Initial seed        | RQ3      |       |
+| 6. @zhao2017impact                | Initial seed        | RQ3      | 2     |
+| 7. @widder2018m                   | Initial seed        | RQ1      |       |                   
+| 8. @hilton2016usage               | Initial seed        | RQ2      |       |
+| 9. @vassallo2017tale              | Ref 2               | -        |       |
+| 11. @hassan2018hirebuild          | Ref 4               | RQ1      |       |
+| 12. @vassallo2018break            | Ref 2,3             | RQ1, RQ3 |       |
+| 13. @zampetti2017open             | Ref by 12           | -        |       |
+| 14. @baltes2018no                 | GScholar Search     | RQ1, RQ3 | 3     |      
+| 15. @bisong2017built              | GScholar Search     | RQ1, RQ3 | 3     |
+| 16. @santolucito2018statically    | GScholar Search     | RQ1      | 3     |
+| 17. @ni2018acona                  | GScholar Search     | RQ1      | 3     |
 
+**Notes**
 
+ 1. US patent.
+ 2. Collaboration between universities in China, The Netherlands and The USA.
+ 3. Using search term "Github Continuous Integration".
 
 
 ## Answers
