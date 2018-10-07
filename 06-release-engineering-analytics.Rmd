@@ -474,9 +474,9 @@ practice can be investigated.
 
 As established, rapid releases are a prevalent topic in current research on
 modern release engineering.
-However, it will be useful to verify these results given the fact that most of
-this research consists of case studies (which mostly only concerned Mozilla
-Firefox due to the availability of data).
+However, it will be useful to verify these results given the fact that this
+research mainly involves case studies (most of which are only concerned with
+Mozilla Firefox due to the availability of data).
 To this end, there are opportunities to further investigate the effects of
 switching to rapid releases on:
 
