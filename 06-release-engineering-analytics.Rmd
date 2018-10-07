@@ -474,7 +474,7 @@ practice can be investigated.
 
 As established, rapid releases are a prevalent topic in current research on
 modern release engineering.
-However, it will be useful verify these results given the fact that most of
+However, it will be useful to verify these results given the fact that most of
 this research consists of case studies (which mostly only concerned Mozilla
 Firefox due to the availability of data).
 To this end, there are opportunities to further investigate the effects of
@@ -535,7 +535,7 @@ we have provided an answer to the following three research questions:
     the results of many previous case studies within the field of release
     engineering.
     In addition to performing case studies involving quantitative analyses,
-    it may be beneficial triangulate results using various research methods.
+    it may be beneficial to triangulate results using various research methods.
     Also, future research should more comprehensively describe how practices
     are implemented, and consider different stakeholders.
     For each practice, future research is suggested on the one hand to further
