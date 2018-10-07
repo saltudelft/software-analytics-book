@@ -167,6 +167,13 @@ of abandonment, but larger projects abandon at a higher rate and that a project'
 significant but varying effect. A surprising result is that metrics of configuration attempts 
 and knowledge dispersion in the project do not affect the rate of abandonment.
 
+*Patent for predicting build errors*
+
+@bird2017predicting introduce a method for predicting sofware build errors. This US patent is owned
+by Microsoft. Having logistic regression as machine learning technique, the paper is able to compute 
+the probability of a build to fail. Using this method build errors can be better anticipated, 
+which decreases the time between working builds.
+
 
 *Predicting build time*
 
