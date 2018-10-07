@@ -76,12 +76,12 @@ software repositories, open-source software.
 | --------------------------------  | ------------------- | -------- | ----- |                
 | 1. @bird2017predicting            | Initial seed        | RQ1      | 1     |         
 | 2. @beller2017oops                | Initial seed        | RQ3      |       |                
-| 3. @rausch2017empirical           | Initial seed        | RQ2      |       |
-| 4. @beller2017travistorrent       | Initial seed        | RQ2      |       |
+| 3. @rausch2017empirical           | Initial seed        | RQ2      | 4     |
+| 4. @beller2017travistorrent       | Initial seed        | RQ2      | 4     |
 | 5. @pinto2018work                 | Initial seed        | RQ3      |       |
 | 6. @zhao2017impact                | Initial seed        | RQ3      | 2     |
 | 7. @widder2018m                   | Initial seed        | RQ1      |       |                   
-| 8. @hilton2016usage               | Initial seed        | RQ2      |       |
+| 8. @hilton2016usage               | Initial seed        | RQ2      | 4     |
 | 9. @vassallo2017tale              | Ref 2               | -        |       |
 | 11. @hassan2018hirebuild          | Ref 4               | RQ1      |       |
 | 12. @vassallo2018break            | Ref 2,3             | RQ1, RQ3 |       |
@@ -90,12 +90,18 @@ software repositories, open-source software.
 | 15. @bisong2017built              | GScholar Search     | RQ1, RQ3 | 3     |
 | 16. @santolucito2018statically    | GScholar Search     | RQ1      | 3     |
 | 17. @ni2018acona                  | GScholar Search     | RQ1      | 3     |
+| 18. @fowler2006continuous         | GScholar Search     | RQ2      | 4     |
+| 19. @stolberg2009enabling         | GScholar Search     | RQ2      | 4     |
+
+
+
 
 **Notes**
 
  1. US patent.
  2. Collaboration between universities in China, The Netherlands and The USA.
  3. Using search term "Github Continuous Integration".
+ 4. Using search term "Current practices in Continuous Integration"
 
 
 ## Answers
@@ -205,6 +211,8 @@ overview of the current state of the art in build analytics domain are:
  * Rausch et al. 2017
  * Fowler et al. 2006
  * Stolberg et al. 2009
+ * Beller et al. 2017
+
  
  The topics that are being explored are:
 
