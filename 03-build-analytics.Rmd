@@ -231,7 +231,7 @@ engineers to detect any bugs early.
 An overview of Continuous Integration evolution from the introduction of the term to the current practices 
 can be seen in the figure bellow:
 
-![CI overview.](figures/Chapter3/state_pr.png)
+![CI overview.](figures/build-analytics/state_pr.png)
 
 
 The papers identified using the research protocol defined in the previous section that give us an
