@@ -165,11 +165,12 @@ The results of the reference analysis are listed in Table 1.
 
 _Table 1. Papers found indirectly by investigating citations of/by other papers._
 
-| Starting point | Type        | Result                                |
-|----------------|-------------|---------------------------------------|
-| @souza2015a    | has cited   | @plewnia2014a     <br> @mantyla2015a  |
-| @khomh2015a    | is cited by | @poo-caamano2016a <br> @teixeira2017a |
-| @mantyla2015a  | is cited by | @rodriguez2017a   <br> @cesar2017a    |
+| Starting point  | Type        | Result                                |
+|-----------------|-------------|---------------------------------------|
+| @souza2015a     | has cited   | @plewnia2014a     <br> @mantyla2015a  |
+| @khomh2015a     | is cited by | @poo-caamano2016a <br> @teixeira2017a |
+| @mantyla2015a   | is cited by | @rodriguez2017a   <br> @cesar2017a    |
+| @laukkanen2018a | has cited   | @laukkanen2017a                       |
 
 All the papers that were found, were stored in a custom built web-based tool for
 conducting literature reviews.
@@ -326,6 +327,7 @@ this survey.
 - @rodriguez2017a
 - @souza2015a
 - @teixeira2017a
+- @laukkanen2017a
 
 **Excluded:**
 
@@ -497,11 +499,104 @@ discussed in the next section.
 
 ### RQ3: Future Research
 
-This section will give an answer to the question:
+This section aims to answer the question:
 _What aspects of modern release engineering make for
 relevant study objects in future software analytics research?_
 
-<!-- TODO -->
+#### General suggestions
+
+The body of literature that we analyzed for this survey mostly comprised case
+studies that employed quantitative analysis methods.
+From these studies, interesting conclusions have been drawn about effects of
+release engineering practices on software development processes in specific
+contexts.
+However, the generalizability of the findings in these case studies is very
+limited.
+Therefore, in general many studies suggest that future research efforts focus on
+performing additional case studies, both to verify existing findings and to
+study new relationships and new contexts [@karvonen2017a; @teixeira2017a;
+@khomh2015a; @claes2017a; @laukkanen2018a; @adams2016a; @castelluccio2017a].
+It also seems worthwhile to triangulate findings by complementing data analyses
+with other quantitative (e.g. a survey) or qualitative (e.g. an interview)
+methods [@karvonen2017a].
+Finally, additional literature reviews will allow researchers to keep an
+overview of the most recent developments and findings in the area of release
+engineering [@rodriguez2017a; @laukkanen2018a].
+
+Apart from verifying results, it might be worthwhile to leverage them by
+constructing analysis tools for practitioners.
+For example, @castelluccio2017a suggest to explore possibilities to leverage
+their research by building classifiers capable of automatically assessing the
+risk associated with patch uplift candidates and recommend patches that can be
+uplifted safely.
+Also, companies seem to be struggling with the adoption of continuous delivery
+and deployment, so a checklist for analyzing readiness for these practices
+might be developed [@karvonen2017a].
+
+The review by @karvonen2017a makes a number of general suggestions for future
+research.
+In particular, there should be more attention on comprehensively reporting how
+practices are implemented and in which context they are embedded, instead of
+just stating that they are used.
+Also, the viewpoints of different stakeholders other than developers can be
+taken into account.
+For example the customer perceptions regarding the adoption of a certain
+practice can be investigated.
+
+#### Directions for specific practices
+
+**Rapid Releases**
+
+As established, rapid releases are a prevalent topic in current research on
+modern release engineering.
+However, it will be useful to verify these results given the fact that this
+research mainly involves case studies (most of which are only concerned with
+Mozilla Firefox due to the availability of data).
+To this end, there are opportunities to further investigate the effects of
+switching to rapid releases on:
+
+- code integration [@da2014a; @da2016a; @souza2015a; @castelluccio2017a],
+- testing efforts [@mantyla2015a],
+- software quality [@khomh2015a; @khomh2012a],
+- (library) adoption [@fujibayashi2017a]
+- time pressure and work patterns [@claes2017a].
+
+**DevOps**
+
+When it comes to DevOps, future research is needed to refine its definition such
+that it is uniform and valid for many situations [@dyck2015a]. According to
+@karvonen2017a, it seems that the goals in DevOps are congruent with those
+in release engineering, and future research on this topic is therefore highly
+relevant in order to study modern release engineering.
+
+**Continuous Delivery / Deployment**
+
+Research on continuous deployment seems to be still in its infancy, therefore
+@rodriguez2017a have suggested a significant number of different concrete
+opportunities for future research.
+In general they conclude that the topic needs an increase in the number and
+rigour of empirical studies, and thus it presents opportunities for software
+analytics research.
+In a systematic literature review, @laukkanen2017a identified 40 problems,
+28 causal relationships and 29 solutions related to the adoption of continuous
+delivery.
+These problems and solutions can be studied further to deepen the
+understanding of the nature of these problems and how to apply their solutions.
+Some of the problems that are more of a human or organizational nature might
+be involved with a broader spectrum of changes, so it should also be
+investigated to what extent these problems are specific to continuous delivery.
+
+**Continuous Integration / Build system**
+
+One of the main issues that seems to be obstructing organizations in adopting
+modern release engineering practices is build design [@laukkanen2017a]. In a
+case study by @laukkanen2018a it was found that a complex automated build and
+integration system led to a more undisciplined one, which in turn slowed down
+the verification and release processes. Therefore, future research might
+investigate how developers can make their builds more maintainable and of
+higher quality, how anti-patterns in the build design can be refactored,
+and how continuous integration can be made faster and more energy efficient
+[@adams2016a].
 
 ## Conclusion
 In this literature survey,
@@ -525,7 +620,16 @@ we have provided an answer to the following three research questions:
 - **RQ3:** _What aspects of modern release engineering make for relevant
   study objects in future software analytics research?_
 
-    <!-- TODO -->
+    In general, more empirical research is required to validate and generalize
+    the results of many previous case studies within the field of release
+    engineering.
+    In addition to performing case studies involving quantitative analyses,
+    it may be beneficial to triangulate results using various research methods.
+    Also, future research should more comprehensively describe how practices
+    are implemented, and consider different stakeholders.
+    For each practice, future research is suggested on the one hand to further
+    investigate their effects on the development process, and on the other hand
+    to investigate problems involved with their adoption.
 
 ## Raw extracted data
 
