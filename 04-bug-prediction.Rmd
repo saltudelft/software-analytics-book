@@ -6,7 +6,7 @@ code fails to fulfill the purpose it was written for, its impact ranges from sli
 embarrassing to disastrous and dangerous, and last but not least --- fixing it 
 costs time and money. 
 Resources in a software development lifecycles are almost always limited and 
-therefore should be allocated to where  they are needed most - in order to avoid bugs, 
+therefore should be allocated to where  they are needed most --- in order to avoid bugs, 
 they should be focused on the most fault-prone areas of the project. 
 Being able to predict where such areas might be would allow more development and 
 testing efforts to be allocated on the right places.
@@ -36,10 +36,10 @@ We started by studying the initial 6 seed papers which were selected based on do
 
 | Reference    | Topic         | Summary                                   |
 |-------------------|--------------|------------------------------------------|
-| @Gyimothy2005      | metrics validation | performance of object-oriented metrics |
+| @Gyimothy2005 | metrics validation | performance of object-oriented metrics |
 | @Catal2009review | literature review | comparison of metrics, methods, datasets |
 | @Arisholm2010  | literature review | comparison of models, metrics, performance measures |
-| @DAmbros2010 | BP performance | benchmark for bug prediction, 
+| @DAmbros2010 | BP performance | benchmark for bug prediction, <br>
                                   evaluation of approaches using the benchmark|
 | @Hall2012 | literature review | influence of model context, methods, metrics on performance  |
 | @Lewis2013 | case study | BP deployment in industry |
@@ -63,15 +63,7 @@ The title also had to contain at least one of following keywords: *metrics*, *mo
 
 4. Exploring other impactful publications by the same authors.
 
-The papers chosen had to fulfill the above and additional criteria 
-which we summarise in Table 1 below.
-
-_Table 1. Inclusion and exclusion criteria._
-
-| Inclusion criteria                      |Exclusion criteria     |
-|-----------------------------------------|-----------------------|
-| Discuss software metrics, prediction models, evaluation of models | Discuss bug severity |
-| cited 10 or more times | older than 10 years |
+The papers chosen had to fulfill the above criteria.
 
 _Table 2. Papers found by investigating the authors of other papers._
 
@@ -83,122 +75,117 @@ _Table 2. Papers found by investigating the authors of other papers._
 ## Answers
 
 ### RQ1: Metrics
- To find out what metrics are commonly used to build fault prediction models, we studied the
-  papers that either focus their entirety or at least a section to the discussion of software
-  metrics used for bug prediction. Based on the results and observations made in the relevant
-   studies, we classify the software metrics most commonly used in two groups based on which 
-   aspect of a piece of software they measure:
+To find out what metrics are commonly used to build fault prediction models, 
+we studied the papers that either focus their entirety or 
+at least a section to the discussion of software metrics used for bug prediction. 
+Based on the results and observations made in the relevant studies, 
+we classify the software metrics most commonly used in two groups 
+based on which aspect of a piece of software they measure:
 
- * *the product* - that is, the (static) code itself
- * *the process* - that is, the different aspects that describe how the product developed through
-  time. We include both simpler change-log based metrics that require different versions as well 
+* *The product*: the (static) code itself
+* *The process*: the different aspects that describe how the product developed through time. 
+  We include both simpler changelog based metrics that require different versions as well 
   as metrics that require detailed process recording.
 
-@DAmbros2010 use a slightly different vocabulary and discuss *single-version* and *change log* 
-approaches to building software metrics while @Moser2008 refer to the same concepts as 
-*code metrics* and *change metrics*. 
+#### Product metrics
+Different metrics incur different costs based on whether they require additional efforts 
+in order to collect data and setup an instrumentation infrastructure. 
+Measuring various aspects of what is already available --- a snapshot of source code --- 
+is an obvious starting point when building a set of predictive features 
+and @Catal2009review found code metrics were the most commonly studied metrics in literature. 
+Traditionally, examples of metrics obtained by static analysis include 
+_lines of code_ (LOC) as well as _code complexity_ (for example, McCabe and Halstead complexities), 
+with the latter applicable for languages with a structured control flow and the concept of methods. 
+@DAmbros2012 articulates a rationale behind using code complexity for bug prediction --- 
+if code is complex, it is difficult to change and is therefore fault-prone.
 
-#### Code metrics
-Different metrics incur different costs based on whether they require additional efforts in order 
-to collect data and setup an instrumentation infrastructure. Measuring various aspects of what is 
-already available - a snapshot of source code - is an obvious starting point when building a set 
-of predictive features and @Catal2009review found code metrics were the most commonly studied 
-metrics in literature. Traditionally, examples of metrics obtained by static analysis include 
-the completely language agnostic *lines of code* (LOC) as well as *code complexity* (for example, 
-McCabe and Halstead complexities), with the latter applicable for languages with a structured 
-control flow and the concept of methods. @DAmbros2012 articulates a rationale behind using code 
-complexity for bug prediction - if code is complex, it is difficult to change and is therefore 
-fault-prone.
-
-Another group of more language specific metrics which became popular after 1990 
-(@Catal2009review) are the *object-oriented* or *class* metrics which are based on the idea of 
+Another group of more language specific metrics which became popular after 1990 (@Catal2009review) 
+are the _object-oriented_ or _class_ metrics which are based on the idea of 
 classes and measure class-related concepts like coupling, inheritance and cohesion. 
 @Radjenovic2013, @Malhotra2015 and @Catal2009review found the metrics suite given by Chidamber 
 and Kemerer (CK, see table X) to be the most common among the OO metrics and it was used in 
 @Gyimothy2005 to study the predictive power of object-oriented metrics.
 
-A drawback of static code metrics is identified in @Rahman2013 - the authors find that such 
-metrics have high stasis which means they do not change a lot from release to release. In turn, 
-this can cause stagnation in the prediction models, which classify the same files as 
-fault-prone over and over.
+A drawback of static code metrics is identified in @Rahman2013, 
+the authors find that such metrics have high stasis 
+which means they do not change a lot from release to release. 
+In turn, this can cause stagnation in the prediction models, 
+which classify the same files as fault-prone over and over.
 
 #### Process metrics
-The other prominent group of metrics are the process metrics which are related to the software 
-development process and the changes of the software through time. Additional infrastructure has 
-to be in place in order to capture the process features and typically at least a version control 
-system is required. @DAmbros2012 notes one of the rationales for using these metrics in a 
-predictive model - faults are introduced by changes in software and should be studied. 
+The other prominent group of metrics are the process metrics 
+which are related to the software development process and the changes of the software through time. 
+Additional infrastructure has to be in place in order to capture the process features 
+and typically at least a version control system is required. 
+@DAmbros2012 notes one of the rationales for using these metrics in a predictive model,
+faults are introduced by changes in software and should be studied. 
 
 Some examples of process metrics as used in @Moser2008 and @Rahman2013 include code churn, 
 number of revisions, active developer count, distinct developer count, changed code scattering, 
 average lines of code added per revision and age of a file.
-
-@Radjenovic2013 group metrics that are derived by looking at the source code change history as 
-either **delta metrics** or **code churn** . Delta metrics are not separate new metrics per se, 
-but are derived from other metrics by comparing versions of software to each other.
-
-@Moser2008 compared the power of code and process metrics by analysing the Eclipse project 
-and found the process metrics outperform code metrics. @Rahman2013 observed that process metrics 
-perform better as predictors compared to code metrics and are more stable across releases. 
-However, @DAmbros2012 note that such results should be taken with a grain of salt; when comparing 
-a selection of representative bug prediction approaches, the authors found that the results 
-considering metrics highly depend on the choice of learner and could not be generalised.
-
-@Giger2011 explore potential advantages of using more fine-grained source code changes, capturing 
-them at statement level and including the changes' semantics. They obtained this data by building 
-abstract syntax trees and using the changes required to transform one AST to the other as 
-metrics. They found their models outperformed models based on other coarser metrics such as code 
-churn; however, the gain in performance comes at the cost of extracting these fine-grained 
-changes.
-
-##### Developer-based metrics
-Developer-based process metrics that can be extracted from version control history are 
-specifically studied in @Matsumoto2010, which found modules touched by more developers were 
-likely to contain more faults and that combining developer metrics with either other process or 
-code metrics improved prediction performance. @Lee2011 explore developer factors further by 
-examining how developer direct interaction with software predicts faults. By tracking interaction 
-events like selecting and editing source files, they found that such *micro-interaction metrics* 
-significantly improve prediction accuracy. The most informative metrics proved to be the number 
-of low-degree-of-interest-file editing events, the event pattern of editing and selecting 
-error-prone files consecutively, and time spent on editing.
-Finally, @DiNucci2018 introduce *scattering metrics*, which capture how focused a developer 
-is when working on a piece of code. Structural scattering describes how structurally far apart 
-in the project the code being worked on is and semantic scattering measures how different the 
-code being edited is in terms of implemented responsibilities. The authors find they have 
-relatively high accuracy and perform better than a baseline selection of code and process metrics. 
-
-
-### RQ1: Models
-In the section below we will show different models presented by several studies.
-
-#### Static predictors
-Many older bug-prediction methods [insert refs] use the static code for bug prediction,
-these methods argue that complex code is more difficult to change and 
-therefor introduces more bugs.
-
-#### Code changes
-Predictors based on code changes argue that code changes induce bugs.
-And as it turns out, methods based on code modifications clearly outperform
-static prediction methods @Moser2008.
-
-##### History Complexity Metric (HCM) @hassan2009
-Files that are modified during periods of high change complexity will contain more faults.
-Developers changing code during these periods will make mistakes,
-because they probably will not be aware of the current state of the code.
-
-Useful in practice because companies may not have a full bug history,
-while they probably do have history of code changes.
-
-Outperforms models based on prior faults, 15-38% decrease in prediction errors @hassan2009.
-However, @DAmbros2010 contradicts this statement.
-
-#### Prior faults
-Methods based on prior faults argue that files which in the past contained faults will
-probably have more faults in the future.
+There are also metrics based on prior faults,
+that argue files which in the past contained faults will probably have more faults in the future.
 It is shown that predictors based on previous bugs show better results than 
 predictors based on code changes @rahman2011.
 
-##### FixCache @kim2007
+@Radjenovic2013 group metrics that are derived by looking at the source code change history as 
+either _delta metrics_ or _code churn_. 
+Delta metrics are not separate new metrics per se, 
+but are derived from other metrics by comparing versions of software to each other.
+
+@Moser2008 compared the power of code and process metrics by analysing the Eclipse project 
+and found the process metrics outperform code metrics. 
+@Rahman2013 observed that process metrics perform better as predictors compared to code metrics 
+and are more stable across releases. 
+However, @DAmbros2012 note that such results should be taken with a grain of salt; 
+when comparing a selection of representative bug prediction approaches, 
+the authors found that the results considering metrics highly depend on the choice of learner 
+and could not be generalised.
+
+@Giger2011 explore potential advantages of using more fine-grained source code changes, capturing 
+them at statement level and including the changes' semantics. 
+They obtained this data by building abstract syntax trees 
+and using the changes required to transform one AST to the other as metrics. 
+They found their models outperformed models based on other coarser metrics such as code churn; 
+however, the gain in performance comes at the cost of extracting these fine-grained changes.
+
+##### Developer-based metrics
+Besides metrics from code repositories we can also extract some metrics from developers itself.
+@Matsumoto2010 shows that modules touched by more developers are more likely to contain more bugs.
+They also show that using developer based metrics in combination with other metrics can improve
+prediction results. @rahman2011 has shown that developer experience 
+has no clear correlation with how much faults they introduce.
+
+@Lee2011 tries to predict faults by tracking micro-interactions of developers.
+They find that the most informative metrics are the number of low-degree-of-interest-file
+editing events, editing and selecting error-prone files consecutively, and time spent on editing.
+They find that their prediction results exceed those of some product and process metrics.
+
+@DiNucci2018 shows scattering metrics, which uses data about how focussed a developers work is.
+Structural scattering describes how structurally far apart in the project the code is. 
+Semantic scattering measures how different the code being edited is 
+in terms of implemented responsibilities, this is measured by textually comparing the code. 
+The authors find they have relatively high accuracy 
+and perform better than a baseline selection of code and process metrics. 
+
+
+### RQ1: Models
+In the section above we have seen different kinds of metrics,
+in this section we will show how these metrics are used to create models
+for bug-prediction which can actually be used.
+We will also show some preliminary results of these models,
+however, as we will explain later on, it is not trivial to compare the results of different models.
+
+##### History Complexity Metric [@hassan2009]
+Files that are modified during periods of high change complexity will contain more faults.
+Developers changing code during these periods will make mistakes,
+because they probably will not be aware of the current state of the code.
+This method is useful in practice because companies may not have a full bug history,
+while they probably do have history of code changes.
+Outperforms models based on prior faults, 15-38% decrease in prediction errors.
+However, @DAmbros2010 contradicts this statement.
+
+##### FixCache [@kim2007]
 Maintains a fixed-size cache of files that are most likely to contain bugs.
 Files are added to cache if it meets one of the locality criteria, which are:
 
@@ -210,57 +197,33 @@ If the cache if full the least recently used file is removed from the cache.
 The size of the cache is set at 10% of all files.
 Hit rate of about 73-95% at file level, 46-72% at method level.
 
-##### Rahman @rahman2011
+##### Rahman [@rahman2011]
 The Rahman algorithm is based on the FixCache algorithm,
 in their research they found that the temporal locality was by far the most influential factor.
 The Rahman algorithm is thus implemented based solely on that factor.
 
-##### Time-weighted risk algorithm @Lewis2013
+##### Time-weighted risk algorithm [@Lewis2013]
 An algorithm based on the Rahman algorithm,
 it includes a weight factor based on how old a commit is, 
 older bug fixing commits have less impact on the overall bug-proneness of the file.
 Instead of showing top 10% of bug-prone files, this shows the top 20 files.
 
-#### Other methods
-Besides the more obvious reasonings listed above there are some other possible methods for bug
-prediction.
-
-##### Developer centered
-@DiNucci2018 proposed a method based on the scattering of changes made by a developer.
-These scattering is defined by:
-
-* Structural scattering: based on amount of different components worked on (e.g. packages)
-* Semantic scattering: based on the textual difference between classes 
-  (i.e. classes which have similar behaviour are textually similar)
-
-Developer experience has no clear correlation with how much faults they introduce @rahman2011.
-
 ##### Machine learning
 With machine learning methods bugs can be predicted by software tools,
-these tools train on the code base, code history and other logs.
-
-Machine learning is also useful for reducing the amount of metrics used for 
-bug prediction @shivaji2009.
-
-Downside is that these methods give little insights in why a component is bug-prone @Lewis2013.
-
+these tools train on the code base, code history and other data from software repositories.
+Downside is that these methods give little insights in why a component is bug-prone [@Lewis2013].
 Another downside is that this doesn't work for new projects since cross-project
-defect prediction does not yet give good results @zimmermann2009.
-
-@Shepperd2014
+defect prediction does not yet give good results [@zimmermann2009].
 
 ##### Analysis on Abstract Syntax Trees
 Because ASTs give a more high-level description of the syntax of a program
 it could give more useful insights for bug-prediction than other analysis methods.
-
-@wang2016 uses ASTs in combination with a machine learning approach for bug prediction.
-They also mention that using features from ASTs improves cross-project prediction.
-
 Downside is that ASTs is that dynamic programming languages cannot produce static ASTs.
+@wang2016 uses ASTs in combination with a machine learning approach for bug prediction.
+They also show that using ASTs can imporove cross-project prediction results.
 
 
 ### RQ1: Evaluations
-
 In order to answer this questions we looked at the scientific papers that 
 benchmark prediction models in any way, 
 and specifically looked at the way this are evaluated. 
@@ -297,19 +260,34 @@ while the variability due to the choice of classifier is very small.
 
 
 ### RQ2: Practical usage
-No significant effect on developers @Lewis2013.
-Managers can use bug-prone list for quality assurance @kim2007.
+There seems to be no to very little usage of bug prediction tools in the industry,
+even searching outside the scope of the scientific literature did not come up with anything.
+On GitHub we could only find a handful of repositories which implement a bug prediction tool, 
+however, none of these are actively maintained any longer.
 
-#### Practical problems
+Furthermore, all the tools we did find were based on @Lewis2013 or @rahman2011. 
+Where @Lewis2013 even mentions that their tool had no significant effect on developers.
+@kim2007 says software managers could use a list of bug-prone files to allocate more
+quality assurance in some parts of the code, but again, no industry usage could be found.
 
-* Obvious reasoning @Lewis2013
-* Bias towards the new @Lewis2013
-* Actionable messages @Lewis2013
-* Noise problem @Kim2011
-* Granularity: Most methods we found work on a class- or file-based granularity, 
+We did find some reasons which could explain why there is no practical usage of bug prediction yet.
+Some issues we found with using bug-prediction tools in practice 
+have to do with the following properties that bug-prediction tools should have in some cases:
+
+* _Obvious reasoning_: If a tool has no clear reasoning users might quickly discard the
+  tool, because they don't understand why a file is bug-prone [@Lewis2013].
+* _Bias towards the new_: For some metrics this feature is required,
+  because otherwise it would be impossible to 'fix' a file, 
+  it will remain to be bug-prone even if completely rewritten [@Lewis2013].
+* _Actionable messages_: Messages shown by a bug-prediction tools must be actionable 
+  a user must be able to perform an action to fix the problem with the file,
+  otherwise users won't know what to do with the tool [@Lewis2013].
+* _Noise problem_: It turns out that if data which is used for the historical changes 
+  contains noise this has a large impact on the performance of the model.
+  Since the data is mostly mined from software repositories this will contain noise [@Kim2011].
+* _Granularity_: Most methods we found work on a class- or file-based granularity, 
   having a lower level of granularity could improve the usefulness of the prediction for 
-  developers @giger2012
-* Scalability @Lewis2013
+  developers [@giger2012].
 
 
 ### RQ2: Actionable tools for developers
@@ -333,6 +311,6 @@ of helping developers write code without bugs.
 
 * The role of developer-related factors in the bug prediction field 
   is still a partially explored area
-* Still no strong conclusions - process metrics were found to perform better, but are more 
+* Still no strong conclusions --- process metrics were found to perform better, but are more 
   expensive to obtain. Then again, code metrics have high stasis and might result in stale models. 
 * Defect prediction is a field where external validity is very hard to achieve
