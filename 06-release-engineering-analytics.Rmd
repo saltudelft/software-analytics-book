@@ -346,6 +346,14 @@ of the following components:
     RRs regularly push new releases to users in a regular schedule.
     As an example, FireFox releases a new version every six weeks.
 
+- **DevOps.**
+
+    According to @dyck2015a, DevOps is "an organizational approach
+    that stresses empathy and cross-functional collaboration
+    within and between teams (especially development and IT operations)
+    in software development organizations, in order to operate
+    resilient systems and accelerate delivery of changes.
+
 - **Continuous Integration (CI).**
 
     To quote @adams2016a: CI "refers to the activity of continuously polling the
@@ -363,7 +371,7 @@ of the following components:
     However, the change might not yet be released,
     because it can be hidden using feature toggles [@laukkanen2018a].
 
-Besides these two components, @adams2016a also identified three other concepts
+Besides these four components, @adams2016a also identified three other concepts
 that are used in modern release engineering,
 specifically to release software as often as possible and enable CD:
 
@@ -389,7 +397,7 @@ specifically to release software as often as possible and enable CD:
     can also be automatically configured with code,
     instead of having to configure each server manually.
 
-Besides these six technical components,
+Besides these seven components that are more technical,
 @poo-caamano2016a has identified that there are also social aspects
 to modern release engineering.
 Specifically, most large software projects have a dedicated Release Team
@@ -430,7 +438,7 @@ we have provided an answer to the following three research questions:
 - **RQ1:** _How is modern release engineering done in practice?_
 
     We found that there are six important technical aspects to
-    modern release engineering: Rapid Releases, Continuous Integration,
+    modern release engineering: Rapid Releases, DevOps, Continuous Integration,
     Continuous Deployment, Branching and Merging, Build Configuration and
     Infrastructure-as-code.
     The most important social aspect of modern release engineering is communication.
