@@ -48,7 +48,7 @@ Our review thus aims to answer the following questions.
     This question aims to identify the so-called "state of the practice" in
     release engineering.
     We will summarize practices that have been adopted to drive release
-    engineering forward. In addition we will identify the tools utilized to bring
+    engineering forward. In addition, we will identify the tools utilized to bring
     this about.
 
 - **RQ2:** _What aspects of modern release engineering have been studied
@@ -75,7 +75,7 @@ quality-assessing studies.
 Subsequently, we have extracted data from the selected studies and
 synthesized the answers to our research questions.
 
-All the papers that were found, were stored in a custom built web-based tool for
+All the papers that were found, were stored in a custom-built web-based tool for
 conducting literature reviews.
 The source code of this tool is published in a
 [GitHub repository](https://github.com/jessetilro/research).
@@ -94,7 +94,7 @@ that we have presented in [Section 7.1.1](#research-questions-1).
 
 ### RQ1: Modern Release Engineering Practices
 
-This section will give an answer to the question:
+This section aims to answer to the question:
 _How is modern release engineering done in practice?_
 
 @adams2016a and @karvonen2017a have described release engineering
@@ -130,7 +130,7 @@ of the following components:
 
     When the CI tests pass, the code can be automatically deployed
     to the production environment.
-    The difference between these terms, is that continuous delivery
+    The difference between these terms is that continuous delivery
     does not require that changes are automatically deployed,
     but continuous deployment always automatically deploys changes.
     However, the change might not yet be released,
@@ -170,7 +170,7 @@ that will decide on the release strategies and communicate them to others.
 
 ### RQ2: Studied Parts of Release Engineering
 
-This section will give an answer to the question:
+This section aims to answer to the question:
 _What aspects of modern release engineering
 have been studied in software analytics research so far?_
 
@@ -183,21 +183,22 @@ strategies can give.
 in the case of Mozilla Firefox. The paper has concluded that users do not experience 
 significantly more post-release bugs, bugs are fixed faster, but that users experience bugs 
 earlier in the software execution. @mantyla2015a have also considered data from Mozilla 
-Firefox, and has examined the impact of release engeering on testing efforts. Observations of 
-the paper conclude that the rapid release cycle perform more test executions per day, but 
+Firefox and has examined the impact of release engineering on testing efforts. Observations of 
+the paper conclude that the rapid release cycle performs more test executions per day, but 
 these tests focus on a smaller subset of the test case corpus and that testing happens closer 
 to release and is more continuous. A limitation of this study is that it measures correlation, 
-rather than causation. @da2014a has further zoomed into the integration of addressed issues, 
+rather than causation. @da2014a has further zoomed into the integration of addressed issues
 and has considered data from Mozilla Firefox, as well as data from ArgoUML and Eclipse. The 
 paper found that addressed issues are usually delayed in a rapid release cycle and are often 
-excluded from releases. Similar conclusions based on Mozilla Firefox were made in 2016, when 
-@da2016a found that minor-traditional releases tend to have less integration delay than 
-major/minor-rapid releases.
+excluded from releases.
+Similar conclusions based on Mozilla Firefox were made by @da2016a,
+who found that minor-traditional releases tend to have
+less integration delay than major/minor-rapid releases.
 
 @castelluccio2017a has examined the practice of *patch uplifting* in the release management at 
 Mozilla Firefox where patches that fix critical issues, or implement high-value features are 
 often promoted directly from the development channel to a stabilization channel. The paper 
-evaluated the characteristics of patch uplift decisions, and interviewed three Mozilla release 
+evaluated the characteristics of patch uplift decisions and interviewed three Mozilla release 
 managers. The paper concluded that the majority of patch uplift decisions are made due to a 
 wrong functionality or crash. The specificity and code author of patches that are requested to 
 be uplifted are also a major factor for release managers.
@@ -206,26 +207,28 @@ In response to case studies being done on many prominent open source software pr
 @teixeira2017a has described OpenStack's shift to a liberal six-month release cycle. As this 
 is an ongoing study, the results given by the paper are preliminary and only observe the 
 process. OpenStack's release process can be considered as a hybrid of feature-based and 
-time-based releases. OpenStack encourages regular releases but also attemps to include new 
+time-based releases. OpenStack encourages regular releases but also attempts to include new 
 features at each regular release.
 
 Rather than focussing on topics such as issue and delays, @poo-caamano2016a focusses on the 
 communication in release engineering in the cases of GNOME and OpenStack. Through analyzing 
-over 2.5 years of communication, the paper has made a number of observations. The paper found 
-that developers tend to communicate through blogs, bug trackers, conferences and hackfests, 
-and that a release team is set to define requirements, quality standards and coordination 
-through (direct) communcation. Although only the mailing lists of the projects were studied, 
-defined challenges include keeping everyone informed and engaged, monitoring changes and 
-setting priorities in cross-project coordination.
+over 2.5 years of communication, the paper has made a number of observations.
+The paper found that developers tend to communicate through
+blogs, bug trackers, conferences, and hackfests.
+Another finding is that a release team is set to define
+requirements, quality standards, and coordination through (direct) communication.
+Although only the mailing lists of the projects were studied,
+defined challenges include keeping everyone informed and engaged,
+monitoring changes and setting priorities in cross-project coordination.
 
-@laukkanen2018a has described what effects modern release engineering have on software with 
+@laukkanen2018a have described what effects modern release engineering have on software with 
 different organizational contexts. This study specifically focusses on continuous deployment 
 (CD) practices. The paper has found that high internal quality standards combined with the 
 large distributed organizational context of large corporations slowed the verification process 
 down and therefore had a negative impact on release capability. However, in small 
 corporations, the lack of internal verification measures due to a lack of resources was 
 mitigated by code review, disciplined CI and external verification by customers in customer 
-environments. More about the factors that can play a role are addressed by @rodriguez2017a, 
+environments. More about the factors that can play a role is addressed by @rodriguez2017a, 
 where an overview of contributing factors in continuous deployment are defined and categorized 
 based on literature between 2001 and 2014.
 
@@ -245,7 +248,7 @@ relevant study objects in future software analytics research?_
 
 The body of literature that we analyzed for this survey mostly comprised case
 studies that employed quantitative analysis methods.
-From these studies, interesting conclusions have been drawn about effects of
+From these studies, interesting conclusions have been drawn about the effects of
 release engineering practices on software development processes in specific
 contexts.
 However, the generalizability of the findings in these case studies is very
@@ -263,7 +266,7 @@ engineering [@rodriguez2017a; @laukkanen2018a].
 
 Apart from verifying results, it might be worthwhile to leverage them by
 constructing analysis tools for practitioners.
-For example, @castelluccio2017a suggest to explore possibilities to leverage
+For example, @castelluccio2017a suggest exploring possibilities to leverage
 their research by building classifiers capable of automatically assessing the
 risk associated with patch uplift candidates and recommend patches that can be
 uplifted safely.
@@ -273,12 +276,12 @@ might be developed [@karvonen2017a].
 
 The review by @karvonen2017a makes a number of general suggestions for future
 research.
-In particular, there should be more attention on comprehensively reporting how
+In particular, there should be more attention to comprehensively reporting how
 practices are implemented and in which context they are embedded, instead of
 just stating that they are used.
 Also, the viewpoints of different stakeholders other than developers can be
 taken into account.
-For example the customer perceptions regarding the adoption of a certain
+For example, the customer perceptions regarding the adoption of a certain
 practice can be investigated.
 
 #### Directions for specific practices
@@ -312,8 +315,8 @@ relevant in order to study modern release engineering.
 Research on continuous deployment seems to be still in its infancy, therefore
 @rodriguez2017a have suggested a significant number of different concrete
 opportunities for future research.
-In general they conclude that the topic needs an increase in the number and
-rigour of empirical studies, and thus it presents opportunities for software
+In general, they conclude that the topic needs an increase in the number and
+rigor of empirical studies, and thus it presents opportunities for software
 analytics research.
 In a systematic literature review, @laukkanen2017a identified 40 problems,
 28 causal relationships and 29 solutions related to the adoption of continuous
@@ -328,15 +331,16 @@ investigated to what extent these problems are specific to continuous delivery.
 
 One of the main issues that seems to be obstructing organizations in adopting
 modern release engineering practices is build design [@laukkanen2017a]. In a
-case study by @laukkanen2018a it was found that a complex automated build and
+case study by @laukkanen2018a, it was found that a complex automated build and
 integration system led to a more undisciplined one, which in turn slowed down
 the verification and release processes. Therefore, future research might
 investigate how developers can make their builds more maintainable and of
-higher quality, how anti-patterns in the build design can be refactored,
+higher quality, how anti-patterns in the design of the build can be refactored,
 and how continuous integration can be made faster and more energy efficient
 [@adams2016a].
 
 ## Conclusion
+
 In this literature survey,
 we have provided an answer to the following three research questions:
 
@@ -350,9 +354,10 @@ we have provided an answer to the following three research questions:
 
 - **RQ2:** _What aspects of modern release engineering have been studied
   in software analytics research so far?_
+
     At this point in time, case studies have mainly focussed on the resulting factors of switching 
     from a traditional release cycle to a rapid release cycle, and what effects this has in various
-    organizational contexts. As all included studies suggest, more emperical studies are needed to be
+    organizational contexts. As all included studies suggest, more empirical studies are needed to be
     able to make general conclusions in the novel field of release engineering.
 
 - **RQ3:** _What aspects of modern release engineering make for relevant
