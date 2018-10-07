@@ -424,7 +424,7 @@ but that is probably still part of RRs (even though it's so specific) [@castellu
 
 ### RQ3: Future Research
 
-This section will give an answer to the question:
+This section aims to answer the question:
 _What aspects of modern release engineering make for
 relevant study objects in future software analytics research?_
 
