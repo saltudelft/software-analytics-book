@@ -1,10 +1,15 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # App Store Analytics
 
 ## Motivation
 
 In the year 2008, the first app stores became available. These marketplaces have grown rapidly in size since then with over 3 million apps in the Google Play store alone at the time of writing [REFERENCE]. These app stores together with the large user base associated with them provide software developers and researchers with valuable data. The process of using the data from the app stores to gain valuable insights is what we would call “App Store Analytics”. Because these app marketplaces are relatively new, the research field of App Store Analytics is still not mature. However, because apps are used so much nowadays, it plays an important role in the field of Software Engineering.
  
-In 2015, Martin, William, et al., published "A survey of app store analysis for software engineering." In the paper, 7 main categories are proposed of the field: API Analysis, Review Analytics, Security, Store Ecosystem, Size and Effort Prediction, Release Engineering and Feature Analysis (REFERENCE TO SURVEY). Given that relevant literature on the field of App Store Analytics has been already gathered and analyzed, it makes sense to use this chapter to go a step further.  In this order of ideas, we will delve deeper into the subfield of Review Analysis. We check the literature proposed by (REFERENCE TO SURVEY) and update it with the relevant articles (as defined by the inclusion criteria presented below) that were published after 2015.  We then use the data to answer the following research questions regarding the chosen subcategory.
+In 2015, Martin, William, et al., published "A survey of app store analysis for software engineering." In the paper, 7 main categories are proposed of the field: API Analysis, Review Analytics, Security, Store Ecosystem, Size and Effort Prediction, Release Engineering and Feature Analysis @martin2015survey. Given that relevant literature on the field of App Store Analytics has been already gathered and analyzed, it makes sense to use this chapter to go a step further.  In this order of ideas, we will delve deeper into the subfield of Review Analysis. We check the literature proposed by @martin2015survey and update it with the relevant articles (as defined by the inclusion criteria presented below) that were published after 2015.  We then use the data to answer the following research questions regarding the chosen subcategory.
 
 * **RQ1** What is the state of the art in Review Analysis? Specifically:
     - Which topics that are being explored?
@@ -23,7 +28,7 @@ TODO: write intro to search strategy
 
 ### Search Strategy
 
-As stated in the motivation, the survey by [KITCHENHAM ET HAL] gave us a starting point. Instead of gathering everything related to App Store Analytics we decided to focus on updating the work done by the the authors and using to answer the research questions specifically for the subcategory of Review Analytics. In this order of ideas, all the papers that [KITCHENHAM ET HAL] found related Review Analytics were retrieved and inspected to get a sense of their specific keywords and content. 
+As stated in the motivation, the survey by Martin et al @martin2015survey gave us a starting point. Instead of gathering everything related to App Store Analytics we decided to focus on updating the work done by the the authors and using to answer the research questions specifically for the subcategory of Review Analytics. In this order of ideas, all the papers that @martin2015survey found related Review Analytics were retrieved and inspected to get a sense of their specific keywords and content. 
 
 After doing this, the following search queries were generated:
 ```
@@ -54,15 +59,18 @@ Taking into account that the papers considered in this survey were published fro
 
 For the *relevance* score, we took into account how much the paper actually involved the analysis of user reviews. Next we present three examples: 1) a highly relevant paper (score=10), 2) a somewhat relevant paper (score=5) and 3) a non relevant paper (score=0). 
 
-**What would users change in my app? summarizing app reviews for recommending software changes [@CITATION]** 
-- Relevance score: 10
-- Remarks: TODO
+**What would users change in my app? summarizing app reviews for recommending software changes [@di2016would]** 
 
-**Fault in your stars: an analysis of Android app reviews [@CITATION]** 
+ - Relevance score: 10
+ - Remarks: TODO
+
+**Fault in your stars: an analysis of Android app reviews [@aralikatte2018fault]** 
+
 - Relevance score: 5
 - Remarks: TODO
 
-**Why are Android apps removed from Google Play?: a large-scale empirical study [@CITATION]** 
+**Why are Android apps removed from Google Play?: a large-scale empirical study [@wang2018android]** 
+
 - Relevance score: 0
 - Remarks: TODO
 
@@ -103,7 +111,7 @@ Techniques used for doing the analysis
     - Which research methods, tools, and datasets being used?
     - Which are the main research findings (aggregated)?
 
-Since 2015 some interesting research has been done in the field of Review Analytics. To answer the question at hand we looked at the novel ideas and the research that has been done in this field since that time. In their survey [KITCHENHAM ET AL] proposed “Classification”, “Content”, “Requirements Engineering”, “Sentiment”, “Summarization” and “Surveys and Methodological Aspects of App Store Analysis” as a way to categorize the existing literature. After analyzing posterior work we propose new categories that reflect better the state of the art in this field. These are: “Review Manipulation”, “Mapping user reviews to the source code”, “Privacy / App Permissions”, “Responding to reviews”, “Comparing Apps and App stores and Wearables”. In the following sections, we expand on each one of these with the revised literature.
+Since 2015 some interesting research has been done in the field of Review Analytics. To answer the question at hand we looked at the novel ideas and the research that has been done in this field since that time. In their survey @martin2015survey proposed “Classification”, “Content”, “Requirements Engineering”, “Sentiment”, “Summarization” and “Surveys and Methodological Aspects of App Store Analysis” as a way to categorize the existing literature. After analyzing posterior work we propose new categories that reflect better the state of the art in this field. These are: “Review Manipulation”, “Mapping user reviews to the source code”, “Privacy / App Permissions”, “Responding to reviews”, “Comparing Apps and App stores and Wearables”. In the following sections, we expand on each one of these with the revised literature.
 
 
 **Review Manipulation**
@@ -159,7 +167,7 @@ Bullets for read papers:
 
 ### Li, Shanshan, et al. "Crowdsourced App Review Manipulation." Proceedings of the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval. ACM, 2017.
 
-**Complete reference:** @li2017crowdsourced
+**Complete reference:** @i2017crowdsourced
 
 - Analysis of apps that have manipulated by reviews. Specifically the use of crowdsourcing platforms to achieve this goal. 
 - Took a sample of 114 targeted apps from a crowdsourcing platform to run their analysis. And also a randomly selected control group from the App Store. 
