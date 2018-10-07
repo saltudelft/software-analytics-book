@@ -137,11 +137,12 @@ The results of the reference analysis are listed in Table 1.
 
 _Table 1. Papers found indirectly by investigating citations of/by other papers._
 
-| Starting point | Type        | Result                                |
-|----------------|-------------|---------------------------------------|
-| @souza2015a    | has cited   | @plewnia2014a     <br> @mantyla2015a  |
-| @khomh2015a    | is cited by | @poo-caamano2016a <br> @teixeira2017a |
-| @mantyla2015a  | is cited by | @rodriguez2017a   <br> @cesar2017a    |
+| Starting point  | Type        | Result                                |
+|-----------------|-------------|---------------------------------------|
+| @souza2015a     | has cited   | @plewnia2014a     <br> @mantyla2015a  |
+| @khomh2015a     | is cited by | @poo-caamano2016a <br> @teixeira2017a |
+| @mantyla2015a   | is cited by | @rodriguez2017a   <br> @cesar2017a    |
+| @laukkanen2018a | has cited   | @laukkanen2017a                       |
 
 All the papers that were found, were stored in a custom built web-based tool for
 conducting literature reviews.
