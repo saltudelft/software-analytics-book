@@ -531,7 +531,16 @@ we have provided an answer to the following three research questions:
 - **RQ3:** _What aspects of modern release engineering make for relevant
   study objects in future software analytics research?_
 
-    <!-- TODO -->
+    In general, more empirical research is required to validate and generalize
+    the results of many previous case studies within the field of release
+    engineering.
+    In addition to performing case studies involving quantitative analyses,
+    it may be beneficial triangulate results using various research methods.
+    Also, future research should more comprehensively describe how practices
+    are implemented, and consider different stakeholders.
+    For each practice, future research is suggested on the one hand to further
+    investigate their effects on the development process, and on the other hand
+    to investigate problems involved with their adoption.
 
 ## Raw extracted data
 
