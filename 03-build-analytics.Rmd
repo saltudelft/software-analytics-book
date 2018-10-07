@@ -87,21 +87,21 @@ software repositories, open-source software.
 | 12. @vassallo2018break            | Ref 2,3             | RQ1, RQ3 |       |
 | 13. @zampetti2017open             | Ref by 12           | -        |       |
 | 14. @baltes2018no                 | GScholar Search     | RQ1, RQ3 | 3     |      
-| 15. @bisong2017built              | GScholar Search     | RQ1, RQ3 | 3     |
+| 15. @bisong2017built              | GScholar Search     | RQ1, RQ3 | 4     |
 | 16. @santolucito2018statically    | GScholar Search     | RQ1      | 3     |
-| 17. @ni2018acona                  | GScholar Search     | RQ1      | 3     |
-| 18. @fowler2006continuous         | GScholar Search     | RQ2      | 4     |
-| 19. @stolberg2009enabling         | GScholar Search     | RQ2      | 4     |
-
-
+| 17. @ni2018acona                  | GScholar Search     | RQ1      | 5     |
+| 18. @fowler2006continuous         | GScholar Search     | RQ2      | 6     |
+| 19. @stolberg2009enabling         | GScholar Search     | RQ2      | 6     |
 
 
 **Notes**
 
- 1. US patent.
+ 1. US patent owned by Microsoft.
  2. Collaboration between universities in China, The Netherlands and The USA.
  3. Using search term "Github Continuous Integration".
- 4. Using search term "Current practices in Continuous Integration"
+ 4. Using search term "Predicting build time"
+ 5. Using search term "Predicting build failures"
+ 6. Using search term "Current practices in Continuous Integration"
 
 
 ## Answers
