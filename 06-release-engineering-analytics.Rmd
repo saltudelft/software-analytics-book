@@ -35,25 +35,28 @@ existing modern release engineering practices should still be studied in
 software analytics research.
 Our review thus aims to answer the following questions.
 
-<!-- TODO -->
-- **RQ 1:** _How is modern release engineering done in practice?_<br>
-  This question aims to identify the so-called "state of the practice" in
-  release engineering.
-  We will summarize practices that have been adopted to drive release
-  engineering forward. In addition we will identify the tools utilized to bring
-  this about. Case studies will also be analyzed to this end.
+- **RQ1:** _How is modern release engineering done in practice?_
 
-- **RQ 2:** _What aspects of modern release engineering have been studied
-  in software analytics research so far?_<br>
-  In order to answer this question we investigate the practices that previous
-  empirical studies have focused on. In doing so, we identify the associated
-  costs and benefits that have been found, and the analysis methods used.
+    This question aims to identify the so-called "state of the practice" in
+    release engineering.
+    We will summarize practices that have been adopted to drive release
+    engineering forward. In addition we will identify the tools utilized to bring
+    this about.
 
-- **RQ 3:** _What aspects of modern release engineering make for relevant
-  study objects in future software analytics research?_<br>
-  In answering this question we aim to identify the gap between practice and
-  research in release engineering. This way, our intent is not only to guide
-  but also to motivate future research.
+- **RQ2:** _What aspects of modern release engineering have been studied
+  in software analytics research so far?_
+
+    In order to answer this question, we investigate the practices that previous
+    empirical case studies have focused on.
+    In doing so, we identify the associated costs and benefits
+    that have been found, and the analysis methods used.
+
+- **RQ3:** _What aspects of modern release engineering make for relevant
+  study objects in future software analytics research?_
+
+    In answering this question, we aim to identify the gap between practice and
+    research in release engineering.
+    This way, our intent is not only to guide but also to motivate future research.
 
 ## Research Protocol
 
@@ -321,27 +324,134 @@ iteratively and planned for four weekly milestones.
 
 ## Answers
 
+In this section, we will give an answer to each of the research questions
+that we have presented in [Section 7.1.1](#research-questions-1).
+
+### RQ1: Modern Release Engineering Practices
+
+This section will give an answer to the question:
+_How is modern release engineering done in practice?_
+
+@adams2016a and @karvonen2017a have described release engineering
+practices that are currently in use in the industry.
+@adams2016a focused on modern release engineering,
+while @karvonen2017a investigated agile release engineering,
+which is a subset of all modern release engineering.
+Both studies agreed that modern release engineering consists
+of the following components:
+
+- **Rapid Releases (RR).**
+
+    In contrast with traditional release cycles,
+    RRs regularly push new releases to users in a regular schedule.
+    As an example, FireFox releases a new version every six weeks.
+
+- **DevOps.**
+
+    According to @dyck2015a, DevOps is "an organizational approach
+    that stresses empathy and cross-functional collaboration
+    within and between teams (especially development and IT operations)
+    in software development organizations, in order to operate
+    resilient systems and accelerate delivery of changes.
+
+- **Continuous Integration (CI).**
+
+    To quote @adams2016a: CI "refers to the activity of continuously polling the
+    [version control system] for new commits or merges,
+    checking these revisions out on dedicated build machines,
+    compiling them and running an initial set of tests to check for regressions."
+
+- **Continuous Deployment or Continuous Delivery (CD).**
+
+    When the CI tests pass, the code can be automatically deployed
+    to the production environment.
+    The difference between these terms, is that continuous delivery
+    does not require that changes are automatically deployed,
+    but continuous deployment always automatically deploys changes.
+    However, the change might not yet be released,
+    because it can be hidden using feature toggles [@laukkanen2018a].
+
+Besides these four components, @adams2016a also identified three other concepts
+that are used in modern release engineering,
+specifically to release software as often as possible and enable CD:
+
+- **Branching and Merging.**
+
+    There are several possible strategies of branching and merging.
+    Typically, in order to enable CD, merging must be done as often as possible.
+
+- **Build System.**
+
+    Building the software must be done in a consistent way,
+    such that each build produces the same result.
+    With the build configuration stored inside the project,
+    every developer (or automated tool) only needs to issue a single command
+    in order to build the project,
+    instead of manually having to configure the build process every time.
+
+- **Infrastructure-as-Code.**
+
+    In the same alley of "storing configuration",
+    infrastructure-as-code means that the server (or virtual machine)
+    on which the software product is running,
+    can also be automatically configured with code,
+    instead of having to configure each server manually.
+
+Besides these seven components that are more technical,
+@poo-caamano2016a has identified that there are also social aspects
+to modern release engineering.
+Specifically, most large software projects have a dedicated Release Team
+that will decide on the release strategies and communicate them to others.
+
+### RQ2: Studied Parts of Release Engineering
+
+This section will give an answer to the question:
+_What aspects of modern release engineering
+have been studied in software analytics research so far?_
+
 <!-- TODO -->
 
-### RQ1: ...
+_Most case studies handle RRs.
+
+There are two case studies specifically targeting CD [@laukkanen2018a; @rodriguez2017a].
+
+One case study handles communication with the release team [@poo-caamano2016a].
+
+One case study specifically handles patch uplifting,
+but that is probably still part of RRs (even though it's so specific) [@castelluccio2017a]._
 
 <!-- TODO -->
 
-### RQ2: ...
+### RQ3: Future Research
 
-<!-- TODO -->
-
-### RQ3: ...
-
-<!-- TODO -->
-
-## Discussion
+This section will give an answer to the question:
+_What aspects of modern release engineering make for
+relevant study objects in future software analytics research?_
 
 <!-- TODO -->
 
 ## Conclusion
 
-<!-- TODO -->
+In this literature survey,
+we have provided an answer to the following three research questions:
+
+- **RQ1:** _How is modern release engineering done in practice?_
+
+    We found that there are six important technical aspects to
+    modern release engineering: Rapid Releases, DevOps, Continuous Integration,
+    Continuous Deployment, Branching and Merging, Build Configuration and
+    Infrastructure-as-code.
+    The most important social aspect of modern release engineering is communication.
+
+- **RQ2:** _What aspects of modern release engineering have been studied
+  in software analytics research so far?_
+
+    <!-- TODO -->
+
+- **RQ3:** _What aspects of modern release engineering make for relevant
+  study objects in future software analytics research?_
+
+    <!-- TODO -->
 
 ## Raw extracted data
 
