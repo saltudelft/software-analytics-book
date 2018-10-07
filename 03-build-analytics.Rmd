@@ -35,7 +35,7 @@ following research questions.
 
 **RQ1**: What is the current state of the art in the field of build analytics?
 
-In order to answer to the first reseacrh question, we need to present the current topics that
+In order to answer to the first research question, we need to present the current topics that
 are being explored in the build analytics domain alogside with the research methods, tools 
 and datasets acquired for the problems in hand and aggregate and reflect about the main 
 research findings that the state-of-the-art papers display.
@@ -82,26 +82,27 @@ software repositories, open-source software.
 | 6. @zhao2017impact                | Initial seed        | RQ3      | 2     |
 | 7. @widder2018m                   | Initial seed        | RQ1      |       |                   
 | 8. @hilton2016usage               | Initial seed        | RQ2      |       |
-| 9. @vassallo2017tale              | Ref 2               | -        |       |
+| 9. @vassallo2017tale              | Ref 2               | -        | 3     |
 | 11. @hassan2018hirebuild          | Ref 4               | RQ1      |       |
 | 12. @vassallo2018break            | Ref 2,3             | RQ1, RQ3 |       |
-| 13. @zampetti2017open             | Ref by 12           | -        |       |
-| 14. @baltes2018no                 | GScholar Search     | RQ1, RQ3 | 3     |      
-| 15. @bisong2017built              | GScholar Search     | RQ1, RQ3 | 4     |
-| 16. @santolucito2018statically    | GScholar Search     | RQ1      | 3     |
-| 17. @ni2018acona                  | GScholar Search     | RQ1      | 5     |
-| 18. @fowler2006continuous         | GScholar Search     | RQ2      | 6     |
-| 19. @stolberg2009enabling         | GScholar Search     | RQ2      | 6     |
+| 13. @zampetti2017open             | Ref by 12           | -        | 3     |
+| 14. @baltes2018no                 | GScholar Search     | RQ1, RQ3 | 4     |      
+| 15. @bisong2017built              | GScholar Search     | RQ1, RQ3 | 5     |
+| 16. @santolucito2018statically    | GScholar Search     | RQ1      | 4     |
+| 17. @ni2018acona                  | GScholar Search     | RQ1      | 6     |
+| 18. @fowler2006continuous         | GScholar Search     | RQ2      | 7     |
+| 19. @stolberg2009enabling         | GScholar Search     | RQ2      | 7     |
 
 
 **Notes**
 
  1. US patent owned by Microsoft.
  2. Collaboration between universities in China, The Netherlands and The USA.
- 3. Using search term "Github Continuous Integration".
- 4. Using search term "Predicting build time"
- 5. Using search term "Predicting build failures"
- 6. Using search term "Current practices in Continuous Integration"
+ 3. Not included in this survey as it did not introduce a new technique or practice.
+ 4. Using search term "Github Continuous Integration".
+ 5. Using search term "Predicting build time"
+ 6. Using search term "Predicting build failures"
+ 7. Using search term "Current practices in Continuous Integration"
  
  Most of the papers we found were linked to our research questions being reference in the sections bellow.
  From the identified papers, we choose to not include in our research two papers: @vassallo2017tale and 
