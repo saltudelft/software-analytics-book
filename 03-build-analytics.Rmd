@@ -17,7 +17,7 @@ contains amongst others, build logs from continuous integration such as Travis&n
 https://travis-ci.org/], Circle&nbsp;CI^[See https://circleci.com/], Jenkins^[See https://jenkins.io/], 
 AppVeyor^[See\ https://www.appveyor.com/] and TeamCity^[See https://www.jetbrains.com/teamcity/] or
 surveys among developers about their usage of Continuous Integration or build systems. This
-information is often paired with data from Version Control Systems (VCS) such as git. 
+information is often paired with data from Version Control Systems (VCS) such as Git. 
 
 <!--
  - Define build
