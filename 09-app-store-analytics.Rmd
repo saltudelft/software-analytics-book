@@ -1,6 +1,3 @@
----
-output: pdf_document: default html_document: default
----
 # App Store Analytics
 
 ## Motivation
