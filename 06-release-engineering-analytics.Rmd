@@ -409,7 +409,7 @@ This section will give an answer to the question:
 _What aspects of modern release engineering
 have been studied in software analytics research so far?_
 
-Over the years, the software industry has come up with inventive approach to deliver new 
+Over the years, the software industry has come up with inventive approaches to deliver new 
 features and fixes in a more efficient and faster manner. This has resulted in case studies 
 being done to assess the associated risk and cost factors, and what benefits certain 
 strategies can give.
@@ -464,7 +464,7 @@ environments. More about the factors that can play a role are addressed by @rodr
 where an overview of contributing factors in continuous deployment are defined and categorized 
 based on literature between 2001 and 2014.
 
-As rapid release cycles and continous deployment are topics that are new and emerging, not 
+As rapid release cycles and continuous deployment are topics that are new and emerging, not 
 enough research has been done to generalize any conclusions that are made in the case studies 
 discussed in this section. This is why all the empirical studies in this survey have one major 
 sidenote in common: more case studies are needed. Open challenges such as these will be 
