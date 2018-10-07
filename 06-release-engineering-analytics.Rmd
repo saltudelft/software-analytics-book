@@ -94,7 +94,7 @@ that we have presented in [Section 7.1.1](#research-questions-1).
 
 ### RQ1: Modern Release Engineering Practices
 
-This section will give an answer to the question:
+This section aims to answer to the question:
 _How is modern release engineering done in practice?_
 
 @adams2016a and @karvonen2017a have described release engineering
@@ -170,7 +170,7 @@ that will decide on the release strategies and communicate them to others.
 
 ### RQ2: Studied Parts of Release Engineering
 
-This section will give an answer to the question:
+This section aims to answer to the question:
 _What aspects of modern release engineering
 have been studied in software analytics research so far?_
 
