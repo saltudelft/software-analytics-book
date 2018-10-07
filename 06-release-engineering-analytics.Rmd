@@ -479,11 +479,12 @@ this research consists of case studies (which mostly only concerned Mozilla
 Firefox due to the availability of data).
 To this end, there are opportunities to further investigate the effects of
 switching to rapid releases on:
-code integration [@da2014a; @da2016a; @souza2015a; @castelluccio2017a],
-testing efforts [@mantyla2015a],
-software quality [@khomh2015a; @khomh2012a],
-(library) adoption [@fujibayashi2017a] and
-time pressure and work patterns [@claes2017a].
+
+- code integration [@da2014a; @da2016a; @souza2015a; @castelluccio2017a],
+- testing efforts [@mantyla2015a],
+- software quality [@khomh2015a; @khomh2012a],
+- (library) adoption [@fujibayashi2017a]
+- time pressure and work patterns [@claes2017a].
 
 **DevOps**
 
