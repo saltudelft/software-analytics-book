@@ -1110,6 +1110,7 @@ Quantitative research publications:
       engineers with up-to-date information on the process
 
 Interview triangulation
+
 - Explanations of quantitative outcomes:
     - larger code base and more products -> more conflicts
     - evolution of automated testing toolset -> earlier and more backouts
