@@ -121,8 +121,8 @@ The tools that are being proposed are:
   * HireBuild to automatically fix build failures based on previous changes @hassan2018hirebuild
   * VeriCI capable of checking the errors in CI configurations files before the developer 
   push a commit and without needing to wait for the build result @santolucito2018statically
-  * ACONA capable of predicting build failure prediction in CI environment for newer projects 
-  with less data available @ni2018acona
+  * ACONA capable of predicting build failure in CI environment for newer projects with less 
+  data available @ni2018acona
 
 
 The build process is important part of a project that uses VCS in the way that based on the findings
