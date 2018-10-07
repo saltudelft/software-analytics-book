@@ -24,5 +24,8 @@
         "summarizer",
         "tosem",
         "xplore"
-    ]
+    ],
+    "files.associations": {
+        "*.Rmd": "markdown"
+    }
 }
