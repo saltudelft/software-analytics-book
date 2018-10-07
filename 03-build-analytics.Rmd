@@ -62,7 +62,7 @@ In this section we will explore where new challenges lie in the field of build a
 also show what open research items are described in the papers. This section ends with research
 questions based on the open research and challenges in current research.
 
-## Research protocol
+## Research protocol {#build-analytics-research-protocol}
 
 Using the initial seed consisting of @bird2017predicting, @beller2017oops, @rausch2017empirical,
 @beller2017travistorrent, @pinto2018work, @zhao2017impact, @widder2018m and @hilton2016usage we
@@ -347,10 +347,21 @@ to find and remove. The above practises are important for the smooth functioning
     - Case studies and their findings -->
 
 **RQ3**: What future research can we expect in the field of build analytics?
-<!-- List of challenges -->
 
 Currently research on build analytics is limited by some challenges, some are specific to
 build analytics and some are applicable to the entire field of software engineering.
+
+The papers identified using the research protocol defined in section
+\@ref(build-analytics-research-protocol) that give us an overview of challenges and future research
+in the field of build analytics are:
+
+ * @bisong2017built
+ * @pinto2018work
+ * @santolucito2018statically
+ * @baltes2018no
+ * @zhao2017impact
+ * @vassallo2018break
+ * @beller2017oops
 
 In @bisong2017built the main limitation was the performance of the machine learning algorithm used.
 In the implementation R was used and it proved not capable of processing the amounts of data
@@ -360,9 +371,7 @@ needed. This shows that it is important to choose the right tool when analyzing 
 still a lot of possibilities for researching on proprietary software projects.
 
 Tools presented in papers might require a more large scale and long term study to verify that the
-tool presented keeps up when it is actually used (@santolucito2018statically).
-
-<!-- An aggregated set of open research items, as described in the papers -->
+tool presented keeps up when it is actually used [@santolucito2018statically].
 
 Future research in build analytics branches in a couple of different topics. @pinto2018work
 proposes to focus on getting a better understanding of the users and why they might choose to
@@ -375,11 +384,9 @@ of more qualitative research.
 Some open research questions from recent papers are the following:
 
   * How do teams change their pull request review practices in response to the introduction of
-  continuous integration? (@zhao2017impact)
-  * How can we detect if fixing a build configuration requires changes in the remote environment? (@vassallo2018break) 
-  * Does breaking the build often translate to worse project quality and decreased productivity? (@beller2017oops)
-
-<!-- Research questions that emerge from the synthesis of the presented works -->
+  continuous integration? [@zhao2017impact]
+  * How can we detect if fixing a build configuration requires changes in the remote environment? [@vassallo2018break]
+  * Does breaking the build often translate to worse project quality and decreased productivity? [@beller2017oops]
 
 From the synthesis of the works discussed in this section the following research questions emerged:
 
