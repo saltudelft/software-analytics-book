@@ -226,7 +226,6 @@ The practice that are being proposed are:
   * Make it Easy for Anyone to Get the Latest Executable
   * Everyone can see what's happening
   * Automate Deployment
-<<<<<<< HEAD
 
 A survey conduced in open-source projects by @hilton2016usage indicated that 40% of all projects used CI. 
 It observed that a median project introduces CI a year into development. Furthermore, the paper claims that 
@@ -303,7 +302,6 @@ It is important to write a script to deploy the application to a live test serve
 It is important to note that CI does not get rid of bugs, but it does make them dramatically easier
 to find and remove. The above practises are important for the smooth functioning of CI framework.
   
->>>>>>> ae521f786862f1ed2395e8cbf7451b21dc14bc9c
 
 <!--
     - Tools and companies creating / employing them
