@@ -3,8 +3,8 @@
 ## Motivation
 
 In the year 2008, the first app stores became available. These marketplaces have grown rapidly in
-size since then with over 3 million apps in the Google Play store alone at the time of writing
-[REFERENCE]. These app stores together with the large user base associated with them provide
+size since then with over 3.8 million apps in the Google Play store alone as of first quarter of
+2018 [@appNumber]. These app stores together with the large user base associated with them provide
 software developers and researchers with valuable data. The process of using the data from the app
 stores to gain valuable insights is what we would call “App Store Analytics”. Because these app
 marketplaces are relatively new, the research field of App Store Analytics is still not mature.
