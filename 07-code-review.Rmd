@@ -124,8 +124,7 @@ list, respectively.
 
 ### By reference
 The following table lists all candidates that have been found by being referenced by another paper
-we found. They are listed in alphabetical order of the first author's name, and then by publish
-year.
+we found. 
 
 | Title                                                                                  | Year | Reference               | Referenced by | In survey? (Y/N) |
 |----------------------------------------------------------------------------------------|------|-------------------------|---------------|------------------|
@@ -134,7 +133,8 @@ year.
 | The influence of non-technical factors on code review                                  | 2013 | @baysal2013influence    |               |                  |
 | Impact of peer code review on peer impression formation: A survey                      | 2013 | @bosu2013impact         |               |                  |
 | Software Reviews: The State of the Practice                                            | 2003 | @ciolkowski2003software |               |                  |
-| Code reviews do not find bugs: how the current code review best practice slows us down | 2015 | @czerwonka2015code      |  Zequn        | Y                |
+| Code reviews do not find bugs: how the current code review best practice slows us down | 2015 | @czerwonka2015code      |  Zequn                 |     Y            |
+| The Influence of Non-technical Factors on Code Review                                  | 2013 | @baysal2013influence    |  Zequn  |Y|
 
 ## Collected data
 This section contains data collected from all resources included in the survey, according to the
@@ -451,6 +451,40 @@ suggesting that the amount of discussion generated during review should be consi
 #### Notes
 There exists an extended and improved version of this paper [@mcintosh2016empirical]. Only the
 original version of the paper has been included in this survey.
+
+### The influence of non-technical factors on code review
+Reference:@baysal2013influence
+
+#### Summary
+
+This paper focus on the influence of several non-technical factors on code review response time and outcome. An empirical study of code review process for WebKit, 
+a large open source project was described to see the influence. Specifically, the authors replicated some previously studied factors and extended several more factors that had not beed explored. 
+
+#### For answering **RQ1**
+* *Sub-topic*: open-source, impact
+* *Research method*: empirical study
+* *Tools*: WebKit
+* *Datasets*:  WebKit code review data extracted from Bugzilla.
+
+#### Research questions and answers
+
+* *What factors can influence how long it takes for a patch to be reviewed?* 
+The organizational and personal factors influence review timeliness. Some factors that influenced the time required to review a patch, such as the size of the patch itself or the part of the code base being modified,
+ are unsurprising and are likely related to the technical complexity of a given change. The most influential factors of the code review
+process on review time are the organization a patch writer is affiliated with and their level of participation within the project.
+
+* *What factors influence the outcome of the review process?*
+The organizational and personal factors influence the likelihood of a patch being accepted. 
+The most influential factors of the code review process on patch acceptance are the organization a patch writer is affiliated with and their level of participation within the project.
+
+#### For answering **RQ2**
+Not applicable
+
+#### For answering **RQ3**
+#### Future research challenges
+* Research on studying how best to interpret empirical software engineering research within the context of contextual factors.
+Understanding the reasons behind observable developer behaviour requires an understanding of the contexts, processes, organizational and individual factors that can influence code review and its outcome.
+
 
 ### Who should review my code? A file location-based code-reviewer recommendation approach for modern code review
 Reference: @thongtanunam2015should
