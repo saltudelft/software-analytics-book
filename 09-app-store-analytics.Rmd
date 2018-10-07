@@ -86,9 +86,9 @@ somewhat relevant paper (score=5) and 3) a non relevant paper (score=0).
 [@di2016would]** 
 
  - Relevance score: 10
- - Remarks: the authors applied classification and summarization techniques on app reviews in order to reduce
-   the effort required to analyze feedback from users. As can be seen, the paper was focused in
-   using the reviews to improve the development process.
+ - Remarks: the authors applied classification and summarization techniques on app reviews in order
+   to reduce the effort required to analyze feedback from users. As can be seen, the paper was
+   focused in using the reviews to improve the development process.
 
 **Fault in your stars: an analysis of Android app reviews [@aralikatte2018fault]** 
 
@@ -185,7 +185,14 @@ main purpose is to investigate the later.
 
 **Privacy / app permissions**
 
-Since Android Marshmallow the Android operating system uses a run-time permission based security system. Apple's iOS also uses run-time permissions on top of a set of permissions enabled by default. Scoccia et al. did a large-scale empirical study on this new system by inspecting 4.3 million user reviews from 5572 Google Play store apps [@scoccia2018investigation]. Using different techniques they extracted 3574 user reviews that relate to permissions. They found that users like the minimal permissions as most apps only ask for permissions they strictly need. Some of the negative user concerns were apps asking for too many permission or a bad timing asking for permissions.
+Since Android Marshmallow the Android operating system uses a run-time permission based security
+system. Apple's iOS also uses run-time permissions on top of a set of permissions enabled by
+default. Scoccia et al. did a large-scale empirical study on this new system by inspecting 4.3
+million user reviews from 5572 Google Play store apps [@scoccia2018investigation]. Using different
+techniques they extracted 3574 user reviews that relate to permissions. They found that users like
+the minimal permissions as most apps only ask for permissions they strictly need. Some of the
+negative user concerns were apps asking for too many permission or a bad timing asking for
+permissions.
 
 Challenges & Future Research:
 * A
@@ -231,8 +238,11 @@ such as PhoneGap. [@hu2018studying] With this approach they found that in 33 of 
 the star rating was not consistent across platforms. 
 
 Challenges & Future Research:
-* One of the open challenges is including indirect relationships in the comparisons as only direct relationships were used in work by Li et al.
-* Hu et al. noticed that apps that have been developed using hybrid development tools had relatively low ratings. Future studies should be done to investigate the quality of hybrid apps and compare them with the quality of native apps.
+* One of the open challenges is including indirect relationships in the comparisons as only direct
+  relationships were used in work by Li et al.
+* Hu et al. noticed that apps that have been developed using hybrid development tools had
+  relatively low ratings. Future studies should be done to investigate the quality of hybrid apps
+  and compare them with the quality of native apps.
 * A detailed approach grouping topics with more granularity.
 * Market-scale analysis using a large amount of apps and reviews.  
 * Testing and analysis of apps across multiple platforms and hardware.
