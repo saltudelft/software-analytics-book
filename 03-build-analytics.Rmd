@@ -7,9 +7,13 @@ fast and without any errors. Unfortunately, this is not always the case and auto
 builds results notify developers of compile errors, missing dependencies, broken functionality 
 and many other problems. This chapter is aimed to give an overview of the effort made 
 in Build Analytics field and Continuous Integration (CI) as an increasingly common 
-development practice in many projects. Continuous Integration in a term used in
-software engineering to describe a practice of merging all developer working copies to a 
-shared mainline several times a day.
+development practice in many projects. 
+
+Continuous Integration in a term used in software engineering to describe a practice of merging 
+all developer working copies to a shared mainline several times a day. CI is in general used 
+together with Version control System (VCS). Version Control System is an application for
+revision control that ensures the managment of changes to documents, source code and other
+collections of information.
 
 <!-- The following paragraph is prone to errors when auto formatting. After a ..^[..] or ..^[..],
 there _must_ be a space, else it is interpreted as superscript. --> 
