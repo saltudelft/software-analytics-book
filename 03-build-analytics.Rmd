@@ -102,8 +102,17 @@ software repositories, open-source software.
  4. Using search term "Predicting build time"
  5. Using search term "Predicting build failures"
  6. Using search term "Current practices in Continuous Integration"
+ 
+ Most of the papers we found were linked to our research questions being reference in the sections bellow.
+ From the identified papers, we choose to not include in our research two papers: @vassallo2017tale and 
+ @zampetti2017open. @vassallo2017tale is a case study of difference in failures on continuous integration 
+ between open source software (OSS) and industrial software projects from ING Netherlands and we consider 
+ that it does not fit in any of the research question our chapter proposed. @zampetti2017open is again a
+ case study of the usage of static analysis tools in 20 Java open source software projects hosted on GitHub 
+ that use Travic CI. Taking into account the small generalization degree of the findings highlighted by the
+ article, we decide to remove this article from our research as well.
 
-
+ 
 ## Answers
 
 **RQ1**: What is the current state of the art in the field of build analytics?
