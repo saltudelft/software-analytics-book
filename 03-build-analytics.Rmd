@@ -97,12 +97,13 @@ newer projects with less training data available.
 
 The papers identified using the research protocol defined in the previous section that give as an
 overview of the current state of the art in build analytics domain are:
-* Hassan et al. 2018 
-* Vassallo et al. 2018
-* Baltes et al. 2018
-* Bisong et al. 2017
-* Santolucito et al. 2018
-* Ni et al. 2018
+
+ * Hassan et al. 2018 
+ * Vassallo et al. 2018
+ * Baltes et al. 2018
+ * Bisong et al. 2017
+ * Santolucito et al. 2018
+ * Ni et al. 2018
 
 
 The topics that are being explored are:
@@ -122,6 +123,7 @@ The tools that are being proposed are:
   push a commit and without needing to wait for the build result @santolucito2018statically
   * ACONA capable of predicting build failure prediction in CI environment for newer projects 
   with less data available @ni2018acona
+
 
 The build process is important part of a project that uses VCS in the way that based on the findings
 from @hassan2018hirebuild 22% of code commits include changes in build script files for either
