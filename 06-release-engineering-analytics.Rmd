@@ -428,7 +428,45 @@ This section aims to answer the question:
 _What aspects of modern release engineering make for
 relevant study objects in future software analytics research?_
 
-<!-- TODO -->
+#### General
+
+The body of literature that we analyzed for this survey mostly comprised case
+studies that employed quantitative analysis methods.
+From these studies, interesting conclusions have been drawn about effects of
+release engineering practices on software development processes in specific
+contexts.
+However, the generalizability of the findings in these case studies is very
+limited.
+Therefore, in general many studies suggest that future research efforts focus on
+performing additional case studies, both to verify existing findings and to
+study new relationships and new contexts @karvonen2017a @teixeira2017a
+@khomh2015a @claes2017a @laukkanen2018a @adams2016a @castelluccio2017a.
+It also seems worthwhile to triangulate findings by complementing data analyses
+with other quantitative (e.g. a survey) or qualitative (e.g. an interview)
+methods @karvonen2017a.
+Finally, additional literature reviews will allow researchers to keep an
+overview of the most recent developments and findings in the area of release
+engineering @rodriguez2017a @laukkanen2018a.
+
+Apart from verifying results, it might be worthwhile to leverage them by
+constructing analysis tools for practitioners.
+For example, @castelluccio2017a suggest to explore possibilities to leverage
+their research by building classifiers capable of automatically assessing the
+risk associated with patch uplift candidates and recommend patches that can be
+uplifted safely.
+Also, companies seem to be struggling with the adoption of continuous delivery
+and deployment, so a checklist for analyzing readiness for these practices
+might be developed @karvonen2017a.
+
+The review by @karvonen2017a makes a number of general suggestions for future
+research.
+In particular, there should be more attention on comprehensively reporting how
+practices are implemented and in which context they are embedded, instead of
+just stating that they are used.
+Also, the viewpoints of different stakeholders other than developers can be
+taken into account.
+For example the customer perceptions regarding the adoption of a certain
+practice can be investigated.
 
 ## Conclusion
 
