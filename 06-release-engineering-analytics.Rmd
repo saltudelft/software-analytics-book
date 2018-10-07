@@ -346,18 +346,22 @@ of the following components:
     RRs regularly push new releases to users in a regular schedule.
     As an example, FireFox releases a new version every six weeks.
 
-- **Continuous Deployment or Continuous Delivery (CD).**
-
-    These two terms describe the ability to deploy (or deliver)
-    a software product to the end user automatically
-    whenever new code is committed or merged.
-
 - **Continuous Integration (CI).**
 
     To quote @adams2016a: CI "refers to the activity of continuously polling the
     [version control system] for new commits or merges,
     checking these revisions out on dedicated build machines,
     compiling them and running an initial set of tests to check for regressions."
+
+- **Continuous Deployment or Continuous Delivery (CD).**
+
+    When the CI tests pass, the code can be automatically deployed
+    to the production environment.
+    The difference between these terms, is that continuous delivery
+    does not require that changes are automatically deployed,
+    but continuous deployment always automatically deploys changes.
+    However, the change might not yet be released,
+    because it can be hidden using feature toggles [@laukkanen2018a].
 
 Besides these two components, @adams2016a also identified three other concepts
 that are used in modern release engineering,
