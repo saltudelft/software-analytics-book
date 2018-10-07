@@ -89,20 +89,23 @@ somewhat relevant paper (score=5) and 3) a non relevant paper (score=0).
 [@di2016would]** 
 
  - Relevance score: 10
- - Remarks: applied classification and summarization techniques on app reviews in order to reduce
+ - Remarks: the authors applied classification and summarization techniques on app reviews in order to reduce
    the effort required to analyze feedback from users. As can be seen, the paper was focused in
    using the reviews to improve the development process.
 
 **Fault in your stars: an analysis of Android app reviews [@aralikatte2018fault]** 
 
 - Relevance score: 5
-- Remarks: TODO
+- Remarks: the authors analyzed the problem of the potential mismatch between the app reviews and
+  the star ratings that the app receives. Although it is related to reviews it is not its main
+  focus. It also does not pushes the state of the art in terms of the datasets that they used. 
 
 **Why are Android apps removed from Google Play?: a large-scale empirical study
 [@wang2018android]** 
 
 - Relevance score: 0
-- Remarks: TODO
+- Remarks: in this case, the paper did not have to do with app reviews even though the title
+  suggested otherwise.
 
 At the end, only the articles that had a score of 5 or more were used for the fact extraction and
 the subsequent answering of the research questions.
