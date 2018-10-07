@@ -17,8 +17,6 @@ In 2015, Martin, William, et al., published "A survey of app store analysis for 
 
 * **RQ3** Which are the challenges and future research that the field is facing or will face?
 
-
-
 ## Research Protocol
 
 TODO: write intro to search strategy
@@ -51,23 +49,20 @@ inspected.
 
 After the relevant articles were selected, their metadata was gathered and they were included in a database. This is the input for the next step of the survey, article selection.
 
-
-
 ### Article selection
 Taking into account that the papers considered in this survey were published from 2015, it is no surprise that most of them are not highly cited. As a consequence, the selection of the filtered articles does not take this into consideration. In contrast, each member of the group was in charge of delving into a third of the database and finding, for each study, the *relevance* with respect to Review Analytics and the proposed research questions. Then, this score was peer-reviewed by other team member in order to achieve a consensus. 
 
 For the *relevance* score, we took into account how much the paper actually involved the analysis of user reviews. Next we present three examples: 1) a highly relevant paper (score=10), 2) a somewhat relevant paper (score=5) and 3) a non relevant paper (score=0). 
 
-
-** What would users change in my app? summarizing app reviews for recommending software changes [@CITATION] ** 
+**What would users change in my app? summarizing app reviews for recommending software changes [@CITATION]** 
 - Relevance score: 10
 - Remarks: TODO
 
-** Fault in your stars: an analysis of Android app reviews [@CITATION] ** 
+**Fault in your stars: an analysis of Android app reviews [@CITATION]** 
 - Relevance score: 5
 - Remarks: TODO
 
-** Why are Android apps removed from Google Play?: a large-scale empirical study [@CITATION] ** 
+**Why are Android apps removed from Google Play?: a large-scale empirical study [@CITATION]** 
 - Relevance score: 0
 - Remarks: TODO
 
@@ -111,7 +106,7 @@ Techniques used for doing the analysis
 Since 2015 some interesting research has been done in the field of Review Analytics. To answer the question at hand we looked at the novel ideas and the research that has been done in this field since that time. In their survey [KITCHENHAM ET AL] proposed “Classification”, “Content”, “Requirements Engineering”, “Sentiment”, “Summarization” and “Surveys and Methodological Aspects of App Store Analysis” as a way to categorize the existing literature. After analyzing posterior work we propose new categories that reflect better the state of the art in this field. These are: “Review Manipulation”, “Mapping user reviews to the source code”, “Privacy / App Permissions”, “Responding to reviews”, “Comparing Apps and App stores and Wearables”. In the following sections, we expand on each one of these with the revised literature.
 
 
-** Review Manipulation **
+**Review Manipulation**
 
 Recently, significant attention has been paid to how the reviews and ratings can be used in order to influence the number of downloads of a particular app in the App Store. In their paper, @i2017crowdsourced analyzed the use of crowdsourcing platforms such as Microworkers to manipulate the ratings. Is interesting to see how the authors merged data from two different sources, App Store and crowdsourcing site, in order to identify manipulated reviews.
 
@@ -119,11 +114,12 @@ In @chen2017toward the authors propose an approach to identify attackers of coll
 
 In these works, it is interesting to see how the percentage of manipulated apps in the app stores is not the majority of the used samples (@xie2016you found that less than 1% of the apps were suspicious). Regarding the datasets, the work by @i2017crowdsourced used the smaller amount of app store data. This, taking into account that they manage to merge it from data from an external crowdsourcing site. In the case of the other two papers, they can be characterized by the small number of considered apps (compared to the total number of apps in the main marketplaces), but the significant number of reviews that were taken into account. This makes sense, considering that the main purpose is to investigate the later. 
 
-** Mapping user reviews to source code **
+**Mapping user reviews to source code**
 
-** Privacy / app permissions **
+**Privacy / app permissions**
 
-** Responding to reviews **
+**Responding to reviews**
+
 Since 2013 developers can respond to reviews in the Google Play store and Apple introduced the same feature in 2017. In previous work McIlroy [Empirical studies of the distribution and feedback mechanisms of mobile app stores] studied whether responding to user reviews has a positive effect on the rating users give. Building on previous work McIlroy et al. studied how likely it is for users to change their rating for an app when a developer responds to their review[Is It Worth Responding to Reviews? Studying the Top Free Apps in Google Play]. They found that users change their rating 38.7 percent of the time when a developer responds to their review, with a median increase of 20 percent in rating for the app.
 
 Hassan et al. [Studying the dialogue between users and developers of free apps in the Google Play Store] used 2328 top free apps from the Google Play store to study whether users are more likely to update their review if a developer responds to their review. They extracted 126686 dialogues between developers and users and concluded that responding to a review increases the chances of users updating their given rating for an app can increase by up to six times when compared to not responding. Next to this, they also studied the characteristics, likelihood and the incentives of user-developer dialogues in app stores.
@@ -133,7 +129,7 @@ in depth study how developers and users are using the review mechanism to find o
 Investigate whether a limit of 500 responses is sufficient to ban useless responses from the store such as thanking every user.
 Clustering reviews
 
-** Comparing Apps and App stores **
+**Comparing Apps and App stores**
 
 Papers that compare apps or app stores are discussed in this section.  Li et  al. mined user reviews from Google Play to find comparisons between apps[Mining User Reviews for Mobile App Comparisons]. They tried to identify comparative reviews to extract differences between apps on different topics. For example, a user says in a review that this app is not as good regarding power consumption than another app. Li et al. created a method that with reasonable accuracy extracts these opinions and provides comparisons between apps. 
 
@@ -141,15 +137,13 @@ Ali et al. did a comparative study on cross-platform apps. They took a sample of
 In a related study Hu et al. compared app-pairs that are created using hybrid development tools such as PhoneGap. [REFERENCE] With this approach they found that in 33 of the 68 app-pairs the star rating was not consistent across platforms.
 Challenges & Future Research:
 
-** Wearables **
+**Wearables**
 
 * **RQ2** What is the state of practice in Review Analysis? Specifically:
     - Which are the tools and the companies that create/employ them?
     - Case studies and their findings.
 
 Best practices for responding to reviews based on millions of reviews: https://support.appbot.co/help-docs/best-practices-replying-to-ios-and-google-play-reviews/
-
-* **RQ3** Open challenges and future research required
 
 TODO
 
@@ -165,7 +159,7 @@ Bullets for read papers:
 
 ### Li, Shanshan, et al. "Crowdsourced App Review Manipulation." Proceedings of the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval. ACM, 2017.
 
-** Complete reference: ** @li2017crowdsourced
+**Complete reference:** @li2017crowdsourced
 
 - Analysis of apps that have manipulated by reviews. Specifically the use of crowdsourcing platforms to achieve this goal. 
 - Took a sample of 114 targeted apps from a crowdsourcing platform to run their analysis. And also a randomly selected control group from the App Store. 
@@ -179,7 +173,7 @@ Bullets for read papers:
 
 ### Chen, Hao, et al. "Toward detecting collusive ranking manipulation attackers in mobile app markets." Proceedings of the 2017 ACM on Asia Conference on Computer and Communications Security. ACM, 2017.
 
-** Complete reference: ** @chen2017toward
+**Complete reference:** @chen2017toward
 
 - Approach to identify attackers of collusive promotion groups in an app store. 
 - Use app ranking changes, measure pairwise similarity, forms targeted app clusters (TACs), and identifies the collusive group members. 
@@ -187,7 +181,7 @@ Bullets for read papers:
 
 ### Xie, Zhen, et al. "You can promote, but you can't hide: large-scale abused app detection in mobile app stores." Proceedings of the 32nd Annual Conference on Computer Security Applications. ACM, 2016.
 
-** Complete reference: ** @xie2016you
+**Complete reference:** @xie2016you
 
 - Identification of manipulated app ratings by analyzing attack signatures. 
 - Development of an algorithm (graph-based) to identify these attackers in linear time.
@@ -198,7 +192,7 @@ Bullets for read papers:
 
 ### Di Sorbo, Andrea, et al. "What would users change in my app? summarizing app reviews for recommending software changes." Proceedings of the 2016 24th ACM SIGSOFT International Symposium on Foundations of Software Engineering. ACM, 2016.
 
-** Complete reference: ** @di2016would
+**Complete reference:** @di2016would
 
 - Automated approaches with the aim of reducing the effort required for analyzing feedback contained in user reviews via automatic classification/prioritization according to specific topics [reference to the paper].
 - Introduced SURF (Summarizer of User Reviews Feedback). An approach to condense a large number of user reviews. Main features are summarization and classification.
@@ -219,7 +213,7 @@ Bullets for read papers:
 
 ### Simmons, Andrew, and Leonard Hoon. "Agree to disagree: on labelling helpful app reviews." Proceedings of the 28th Australian Conference on Computer-Human Interaction. ACM, 2016.
 
-** Complete reference: ** @simmons2016agree
+**Complete reference:** @simmons2016agree
 
 - Explored the “helpfulness” of app reviews. 
 - Used a pre-made dataset of app reviews (Socrates App Review Dataset). This contains App Store reviews from the top 400 free and top 400 paid apps of each category. Then from this, selected a random sample of 167 reviews from the Health & Fitness category. 
@@ -229,7 +223,7 @@ Bullets for read papers:
 
 ### Aralikatte, Rahul, et al. "Fault in your stars: an analysis of Android app reviews." Proceedings of the ACM India Joint International Conference on Data Science and Management of Data. ACM, 2018.
 
-** Complete reference: ** @aralikatte2018fault
+**Complete reference:** @aralikatte2018fault
 
 - Study of the potential mismatch between an app review and its associated rating.
 - Manually examined 8600 reviews from 10 popular android apps. For apps with less reviews these mismatches can strongly alter their ratings.
@@ -240,7 +234,7 @@ Bullets for read papers:
 
 ### Gao, Cuiyun, et al. "Online app review analysis for identifying emerging issues." 2018 IEEE/ACM 40th International Conference on Software Engineering (ICSE). IEEE, 2018.
 
-** Complete reference: ** @gao2018online
+**Complete reference:** @gao2018online
 
 - Propose a new framework (IDEA) for identifying emerging app issues effectively based on an online review analysis. 
 - Propose a method called AOLDA for online review analysis, combining the topics from previous versions. 
@@ -251,7 +245,7 @@ Bullets for read papers:
 
 ### Panichella, Sebastiano, et al. "Ardoc: App reviews development oriented classifier." Proceedings of the 2016 24th ACM SIGSOFT International Symposium on Foundations of Software Engineering. ACM, 2016.
 
-** Complete reference: ** @panichella2016ardoc
+**Complete reference:** @panichella2016ardoc
 
 - Present a tool for automatically classifying useful feedback contained in app reviews in the context of software maintenance and evolution. 
 - Used NLP, text analysis and sentiment analysis. 
@@ -259,7 +253,7 @@ Bullets for read papers:
 
 ### Anchiêta, Rafael T., and Raimundo S. Moura. "Exploring Unsupervised Learning Towards Extractive Summarization of User Reviews." Proceedings of the 23rd Brazillian Symposium on Multimedia and the Web. ACM, 2017.
 
-** Complete reference: ** @anchieta2017exploring
+**Complete reference:** @anchieta2017exploring
 
 - Unsupervised approach to categorize the reviews aiming to generate a summary of the main bugs and new features pointed by users. 
 - Clustered the reviews and used an algorithm for topic modeling. 
