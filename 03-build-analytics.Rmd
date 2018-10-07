@@ -76,12 +76,12 @@ software repositories, open-source software.
 | --------------------------------  | ------------------- | -------- | ----- |                
 | 1. @bird2017predicting            | Initial seed        | RQ1      | 1     |         
 | 2. @beller2017oops                | Initial seed        | RQ3      |       |                
-| 3. @rausch2017empirical           | Initial seed        | RQ2      | 4     |
-| 4. @beller2017travistorrent       | Initial seed        | RQ2      | 4     |
+| 3. @rausch2017empirical           | Initial seed        | RQ2      |       |
+| 4. @beller2017travistorrent       | Initial seed        | RQ2      |       |
 | 5. @pinto2018work                 | Initial seed        | RQ3      |       |
 | 6. @zhao2017impact                | Initial seed        | RQ3      | 2     |
 | 7. @widder2018m                   | Initial seed        | RQ1      |       |                   
-| 8. @hilton2016usage               | Initial seed        | RQ2      | 4     |
+| 8. @hilton2016usage               | Initial seed        | RQ2      |       |
 | 9. @vassallo2017tale              | Ref 2               | -        |       |
 | 11. @hassan2018hirebuild          | Ref 4               | RQ1      |       |
 | 12. @vassallo2018break            | Ref 2,3             | RQ1, RQ3 |       |
