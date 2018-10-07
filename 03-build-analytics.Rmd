@@ -6,8 +6,14 @@ Ideally, when building a project from source code to executable, the process sho
 fast and without any errors. Unfortunately, this is not always the case and automated 
 builds results notify developers of compile errors, missing dependencies, broken functionality 
 and many other problems. This chapter is aimed to give an overview of the effort made 
-in build analytics field and Continuous Integration (CI) as an increasingly common 
-development practice in many projects.
+in Build Analytics field and Continuous Integration (CI) as an increasingly common 
+development practice in many projects. 
+
+Continuous Integration in a term used in software engineering to describe a practice of merging 
+all developer working copies to a shared mainline several times a day. CI is in general used 
+together with Version control System (VCS). Version Control System is an application for
+revision control that ensures the managment of changes to documents, source code and other
+collections of information.
 
 <!-- The following paragraph is prone to errors when auto formatting. After a ..^[..] or ..^[..],
 there _must_ be a space, else it is interpreted as superscript. --> 
@@ -66,24 +72,30 @@ The keywords used were: build analytics, machine learning, build time, predictio
 continuous integration, build failures, active learning, build errors, mining, 
 software repositories, open-source software.
 
-| Paper                   | Source              |  Reference                 |  RQ  | Obs.              |
-| -----------------       | ----------------    |  ------------------------- | ---- | ------------------|                
-| 1. Bird et al.          | Initial seed        | @bird2017predicting        | RQ1  |  US patent        |         
-| 2. Beller et al.        | Initial seed        | @beller2017oops            | RQ3  |                   |                
-| 3. Rausch et al.        | Initial seed        | @rausch2017empirical       |      |                   |
-| 4. Beller et al.        | Initial seed        | @beller2017travistorrent   |      |                   |
-| 5. Pinto et al.         | Initial seed        | @pinto2018work             | RQ3  |                   |
-| 6. Zhao et al.          | Initial seed        | @zhao2017impact            | RQ3  | Collab China, Netherlands, USA Univ |
-| 7. Widder et al.        | Initial seed        | @widder2018m               | RQ1  ||                   
-| 8. Hilton et al.        | Initial seed        | @hilton2016usage           |      ||
-| 9. Vassallo et al.      | Ref 2               | @vassallo2017tale          |      ||
-| 11. Hassan et al.       | Ref 4               | @hassan2018hirebuild       |  RQ1 ||
-| 12. Vassallo et al.     | Ref 2,3             | @vassallo2018break         |  RQ1, RQ3 ||   
-| 13. Zampetti et al.     | Ref by 12           | @zampetti2017open          |      ||
-| 14. Baltes et al.       | GScholar Search     | @baltes2018no              |  RQ1, RQ3 | Search term "Github Continuous Integration"|      
-| 15. Bisong et al.       | GScholar Search     | @bisong2017built           |  RQ1, RQ3 ||
-| 16. Santolucito et al.  | GScholar Search     | @santolucito2018statically |  RQ1 ||
-| 17. Ni et al.           | GScholar Search     | @ni2018acona               |  RQ1 ||
+| Paper with reference              | Source              |  RQ      | Notes |
+| --------------------------------  | ------------------- | -------- | ----- |                
+| 1. @bird2017predicting            | Initial seed        | RQ1      | 1     |         
+| 2. @beller2017oops                | Initial seed        | RQ3      |       |                
+| 3. @rausch2017empirical           | Initial seed        | RQ2      |       |
+| 4. @beller2017travistorrent       | Initial seed        | RQ2      |       |
+| 5. @pinto2018work                 | Initial seed        | RQ3      |       |
+| 6. @zhao2017impact                | Initial seed        | RQ3      | 2     |
+| 7. @widder2018m                   | Initial seed        | RQ1      |       |                   
+| 8. @hilton2016usage               | Initial seed        | RQ2      |       |
+| 9. @vassallo2017tale              | Ref 2               | -        |       |
+| 11. @hassan2018hirebuild          | Ref 4               | RQ1      |       |
+| 12. @vassallo2018break            | Ref 2,3             | RQ1, RQ3 |       |
+| 13. @zampetti2017open             | Ref by 12           | -        |       |
+| 14. @baltes2018no                 | GScholar Search     | RQ1, RQ3 | 3     |      
+| 15. @bisong2017built              | GScholar Search     | RQ1, RQ3 | 3     |
+| 16. @santolucito2018statically    | GScholar Search     | RQ1      | 3     |
+| 17. @ni2018acona                  | GScholar Search     | RQ1      | 3     |
+
+**Notes**
+
+ 1. US patent.
+ 2. Collaboration between universities in China, The Netherlands and The USA.
+ 3. Using search term "Github Continuous Integration".
 
 
 ## Answers
@@ -214,6 +226,7 @@ The practice that are being proposed are:
   * Make it Easy for Anyone to Get the Latest Executable
   * Everyone can see what's happening
   * Automate Deployment
+<<<<<<< HEAD
 
 A survey conduced in open-source projects by @hilton2016usage indicated that 40% of all projects used CI. 
 It observed that a median project introduces CI a year into development. Furthermore, the paper claims that 
@@ -286,9 +299,11 @@ It should be easy to find out whether the build breaks and what/who made relevan
 *Automate Deployment*
 It is important to write a script to deploy the application to a live test server that everyone can look at. 
 
-
-It is important to note that CI does not get rid of bugs, but it does make them dramatically easier to find and remove. 
-The above practises are important for the smooth functioning of CI framework.
+  
+It is important to note that CI does not get rid of bugs, but it does make them dramatically easier
+to find and remove. The above practises are important for the smooth functioning of CI framework.
+  
+>>>>>>> ae521f786862f1ed2395e8cbf7451b21dc14bc9c
 
 <!--
     - Tools and companies creating / employing them
@@ -304,15 +319,23 @@ In @bisong2017built the main limitation was the performance of the machine learn
 In the implementation R was used and it proved not capable of processing the amounts of data
 needed. This shows that it is important to choose the right tool when analyzing data.
 
+@pinto2018work notes that it's research and many others are done on open source software. There are
+still a lot of possibilities for researching on proprietary software projects.
+
+Tools presented in papers might require a more large scale and long term study to verify that the
+tool presented keeps up when it is actually used (@santolucito2018statically).
+
 <!-- An aggregated set of open research items, as described in the papers -->
 
 Future research in build analytics branches in a couple of different topics. @pinto2018work
 proposes to focus on getting a better understanding of the users and why they might choose to
 abandon an automatic build platform.
 
-According to @baltes2018no future work could look into more perspectives when analyzing commit
-data, for instance partitioning commits by developer. It also notes the importance of more
-qualitative research.
+@baltes2018no suggests that in future research more perspectives when analyzing commit data should
+be taken into account, for instance partitioning commits by developer. It also notes the importance
+of more qualitative research.
+
+Some open research questions from recent papers are the following:
 
   * How do teams change their pull request review practices in response to the introduction of
   continuous integration? (@zhao2017impact)
@@ -325,7 +348,7 @@ From the synthesis of the works discussed in this section the following research
 
  * What is the impact of the choice of Continuos Integration platform? Most of the research is done
  on users using Travis&nbsp;CI, there are many other platforms out there. Every platform has their own
- characteristics.
+ characteristics and this could impact the effectiveness for a specific kind of project.
 
 <!--Commented part to extract info from and add it on the final structure -->
 
