@@ -383,8 +383,8 @@ TODO
   versions. 
 - They include a preprocessing step, topic detection, topic interpretation and visualization of the
   results.
-- A sample of 6 popular apps from (4) Google Play and (2) App Store. Employed app’s changelogs as the
-  ground truth.
+- A sample of 6 popular apps from (4) Google Play and (2) App Store. Employed app’s changelogs as
+  the ground truth.
 - The presented framework is being used in several Tencent products.
 - Conducted an actual survey in Tencent to corroborate the validity of their findings. 
 
