@@ -140,12 +140,13 @@ TODO
 
 ## Answers 
 
-* **RQ1** What is the state of the art in Review Analysis? Specifically:
-    - Which topics that are being explored?
-    - Which research methods, tools, and datasets being used?
-    - Which are the main research findings (aggregated)?
+### **RQ1** What is the state of the art in Review Analysis? Specifically:
 
-To answer thequestion at hand we looked at the novel ideas and the research that has been done in
+  - Which topics that are being explored?
+  - Which research methods, tools, and datasets being used?
+  - Which are the main research findings (aggregated)?
+
+To answer the question at hand we looked at the novel ideas and the research that has been done in
 this field since that time. In their survey, @martin2015survey proposed “Classification”,
 “Content”, “Requirements Engineering”, “Sentiment”, “Summarization” and “Surveys and Methodological
 Aspects of App Store Analysis” to categorize the existing literature. After analyzing posterior
@@ -155,7 +156,7 @@ work, we propose new categories that reflect better the state of the art in this
 we expand on each one of these with the revised literature.
 
 
-**Review Manipulation**
+#### Review Manipulation
 
 Recently, significant attention has been paid to how the reviews and ratings can be used to
 influence the number of downloads of a particular app in the App Store. In their paper,
@@ -178,9 +179,9 @@ of the other two papers, they can be characterized by the small number of consid
 to the total number of apps in the main marketplaces), but the significant number of reviews that
 were analyzed. This makes sense, considering that the main purpose is to investigate the later. 
 
-**Mapping user reviews to the source code**
+#### Mapping user reviews to the source code
 
-**Privacy / app permissions**
+#### Privacy / app permissions
 
 Since Android Marshmallow the Android operating system uses a run-time permission-based security
 system. Apple's iOS also uses run-time permissions on top of a set of permissions enabled by
@@ -191,11 +192,12 @@ the minimal permissions as most apps only ask for permissions they strictly need
 negative user concerns were apps asking for too many permissions or a bad timing asking for
 permissions.
 
+
 Challenges & Future Research:
 
-* A
+* TODO
 
-**Responding to reviews**
+#### Responding to reviews
 
 Since 2013 developers can respond to reviews in the Google Play store and Apple introduced the same
 feature in 2017. In previous work, McIlroy [@mcilroy2014empirical] studied whether responding to
@@ -220,7 +222,7 @@ Challenges & Future Research:
   store such as thanking every user.
 * Clustering reviews
 
-**Comparing Apps and App stores**
+#### Comparing Apps and App stores
 
 Papers that compare apps or app stores are discussed in this section.  Li et  al. mined user
 reviews from Google Play to find comparisons between apps [@li2017mining]. They set out to identify
@@ -247,14 +249,17 @@ Challenges & Future Research:
 * Market-scale analysis using a large number of apps and reviews.  
 * Testing and analysis of apps across multiple platforms and hardware.
 
-**Wearables**
+#### Wearables
 
-* **RQ2** What is the state of practice in Review Analysis? Specifically:
-    - Which are the tools and the companies that create/employ them?
-    - Case studies and their findings.
+TODO
+
+### **RQ2** What is the state of practice in Review Analysis? Specifically:
+
+  - Which are the tools and the companies that create/employ them?
+  - Case studies and their findings.
 
 * Best practices for responding to reviews based on millions of reviews:
-  https://support.appbot.co/help-docs/best-practices-replying-to-ios-and-google-play-reviews/.
+  [^1]:https://support.appbot.co/help-docs/best-practices-replying-to-ios-and-google-play-reviews/.
   There are also tools such as AppSee which contain guides for responding to reviews and perform
   sentiment analysis of the user reviews. 
 * To this day there are, to the best of our knowledge, no tools that compare apps and app stores
@@ -263,13 +268,11 @@ Challenges & Future Research:
 
 TODO
 
-* **RQ3** Which are the challenges and future research that the field is facing or will face?
+### **RQ3** Which are the challenges and future research that the field is facing or will face?
 
 TODO
 
-## Appendix
-
-## Paper’s Extracted Data
+## Appendix - Paper’s Extracted Data
 
 ### Li, Shanshan, et al. "Crowdsourced App Review Manipulation." Proceedings of the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval. ACM, 2017.
 
@@ -446,7 +449,7 @@ agenda of recommended software changes, which is actionable for developers. [@di
 
 ### API change and fault proneness: A threat to the success of Android apps
 
-**Source:** Conference ESEC/FSE'17 Joint Meeting of the European Software Engineering Conference
+**Complete reference:** Conference ESEC/FSE'17 Joint Meeting of the European Software Engineering Conference
 and the ACM SIGSOFT Symposium on the Foundations of Software Engineering
 
 **Main topic area:** using user feedback/reviews, API changes
@@ -476,7 +479,7 @@ degree of success in Android apps.
 
 ### App Store, Marketplace, Play! An Analysis of Multi-Homing in Mobile Software Ecosystems
  
-**Source:** Proceedings of the Fourth International Workshops on Software Ecosystems **Main topic
+**Complete reference:** Proceedings of the Fourth International Workshops on Software Ecosystems **Main topic
 area:** App store ecosystem
 
 **Authors information (full names, institution, and country):** Sami Hyrynsalmi, University of
@@ -503,7 +506,7 @@ by developers and is there a difference in popularity?
 
 ### A systematic literature review: Opinion mining studies from mobile app store user reviews
 
-**Source:** Journal of Systems and Software
+**Complete reference:** Journal of Systems and Software
  
 **Main topic area:** Opinion Mining and Requirement Engineering
  
