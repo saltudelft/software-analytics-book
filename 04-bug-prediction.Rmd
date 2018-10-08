@@ -5,7 +5,7 @@ Minimizing the number of bugs in software is an effort central to software engin
 code fails to fulfill the purpose it was written for, its impact ranges from slightly
 embarrassing to disastrous and dangerous, and last but not least --- fixing it 
 costs time and money. 
-Resources in a software development lifecycles are almost always limited and 
+Resources in a software development lifecycle are almost always limited and 
 therefore should be allocated to where  they are needed most --- in order to avoid bugs, 
 they should be focused on the most fault-prone areas of the project. 
 Being able to predict where such areas might be would allow more development and 
@@ -279,8 +279,8 @@ have to do with the following properties that bug-prediction tools should have i
 * _Bias towards the new_: For some metrics this feature is required,
   because otherwise it would be impossible to 'fix' a file, 
   it will remain to be bug-prone even if completely rewritten [@Lewis2013].
-* _Actionable messages_: Messages shown by a bug-prediction tools must be actionable 
-  a user must be able to perform an action to fix the problem with the file,
+* _Actionable messages_: Messages shown by bug-prediction tools must be actionable. 
+  The user must be able to perform an action to fix the problem with the file,
   otherwise users won't know what to do with the tool [@Lewis2013].
 * _Noise problem_: It turns out that if data which is used for the historical changes 
   contains noise this has a large impact on the performance of the model.
