@@ -148,8 +148,8 @@ acceptance tests, the number of defects in the last week, or defects per Line of
 testing. For example, according to @Beller:2015:DT:2819009.2819101 a code coverage of 75% can 
 possibly be
 reached with only spending less than a tenth of the total development time on testing. Another
-concern of using test coverage as a metric is the concept of treating the metric @bouwers2012,
-where developers try to uplift the value of code coverage by hitting many lines with only a few
+concern of using test coverage as a metric is the concept of treating the metric @bouwers2012getting
+, where developers try to uplift the value of code coverage by hitting many lines with only a few
 test cases. In @marsavina2014 it was observed that test cases were rarely updated when changes
 related to attributes or methods in the production code were made. Possible explanations for this
 are that these changes were not significant or the tests were too simple and were likely to pass.
