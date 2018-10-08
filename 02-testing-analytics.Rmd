@@ -71,29 +71,29 @@ this chapter in section _'Extracted paper information'_.
 
 |Category             |Reference                                   | Query| Relevant to |
 |---------------------|------------------|-----------------------------------------------------------|----|
-|Test evolution       |@supportingtestsuite  | Google Scholar query: test-suite evolution | RQ2, RQ3 |
-|Test evolution       |@pinto2013 | Referenced by: Understanding myths and realities of test-suite evolution | RQ1  |
-|Test evolution       |@bevan2005 | Referenced by: Understanding myths and realities of test-suite evolution | Discarded |
-|Test evolution       | @pinto2012understanding | Initial Paper Seed | RQ1  |
-|Co-evolution         | @marsavina2014 | Google Scholar keywords: Maintain developer tests, in ‘cited by’ of “Aiding Software Developers to Maintain Developer Tests” on IEEE| RQ1 |
-|Co-evolution         | @zaidman2011studying | Initial Paper Seed| RQ1  |
-|Co-evolution         | @greiler2013 | In ‘cited by’ of “Understanding myths and realities of test-suite evolution” on Scopus | RQ2, RQ3 |
-|Co-evolution         | @hurdugaci2012 | Keywords: Maintain developer tests, ‘cited by’ in “Studying the co-evolution of production and test code in open source and industrial developer test processes through repository mining” on IEEE | RQ2  |
-|Production evolution | @eick2001 | Referenced by: Testing analytics on software variability | Discarded |
-|Production evolution |@leung2015testing | Initial Paper Seed | RQ3 |
-| Test generation     | @robinson2011 | Referenced in Supporting Test Suite Evolution through Test Case Adaptation | RQ2 |
-|Test generation      | @bowring2014obsidian| Springer: Reverse search on “Automatically generating maintainable regression unit tests for programs” | RQ2, RQ3 |
-|Test generation      | @shamshiri2018automatically | Google Scholar query: Automatically generating unit tests | RQ3 |
-|Test generation      | @dulz2013model | Scopus query: “software development” AND Computer Science AND Software Engineering | RQ2 |
-| Testing practices   | @GAROUSI20131354 | Google Scholar query: Survey software testing | RQ1  |
-| Testing practices   | @beller2017developer | Initial Paper Seed | RQ1 |
-| Testing practices   | @beller2015 | In ‘cited by’ of “Understanding myths and realities of test-suite evolution”. | RQ1 |
-| Testing practices   | @moiz2017uncertainty | Springer query: software testing | RQ3 |
-| Risk-driven testing | @hemmati2018 | In ‘cited by’ of “Test case analytics: Mining test case traces to improve risk-driven testing” | RQ3 |
-| Risk-driven testing | @schneidewind2007 | Scopus query: risk-driven testing | RQ3 |
-| Risk-driven testing | @vernotte2015 | Scopus query: “risk-driven” AND testing | RQ2, RQ3  |
-| Risk-driven testing | @atifi2017 | In ‘cited by’ of “Risk-driven software testing and reliability” | RQ2, RQ3 |
-| Risk-driven testing | @noor2015test | Initial Paper Seed | RQ2, RQ3 |
+|Test evolution       |Mirzaaghaei et al. @supportingtestsuite  | Google Scholar query: test-suite evolution | RQ2, RQ3 |
+|Test evolution       |Pinto et al. @pinto2013 | Referenced by: Understanding myths and realities of test-suite evolution | RQ1  |
+|Test evolution       |Bevan et al. @bevan2005 | Referenced by: Understanding myths and realities of test-suite evolution | Discarded |
+|Test evolution       | Pinto et al. @pinto2012understanding | Initial Paper Seed | RQ1  |
+|Co-evolution         | Marsavina et al. @marsavina2014 | Google Scholar keywords: Maintain developer tests, in ‘cited by’ of “Aiding Software Developers to Maintain Developer Tests” on IEEE| RQ1 |
+|Co-evolution         | Zaidman et al. @zaidman2011studying | Initial Paper Seed| RQ1  |
+|Co-evolution         | Greiler et al. @greiler2013 | In ‘cited by’ of “Understanding myths and realities of test-suite evolution” on Scopus | RQ2, RQ3 |
+|Co-evolution         | Hurdugaci and Zaidman @hurdugaci2012 | Keywords: Maintain developer tests, ‘cited by’ in “Studying the co-evolution of production and test code in open source and industrial developer test processes through repository mining” on IEEE | RQ2  |
+|Production evolution | Eick et al. @eick2001 | Referenced by: Testing analytics on software variability | Discarded |
+|Production evolution | Leung and Lui @leung2015testing | Initial Paper Seed | RQ3 |
+| Test generation     | Robinson et al. @robinson2011 | Referenced in Supporting Test Suite Evolution through Test Case Adaptation | RQ2 |
+|Test generation      | Bowring and Hegler @bowring2014obsidian| Springer: Reverse search on “Automatically generating maintainable regression unit tests for programs” | RQ2, RQ3 |
+|Test generation      | Shamshiri et al. @shamshiri2018automatically | Google Scholar query: Automatically generating unit tests | RQ3 |
+|Test generation      | Dulz @dulz2013model | Scopus query: “software development” AND Computer Science AND Software Engineering | RQ2 |
+| Testing practices   | Garousi and Zhi @GAROUSI20131354 | Google Scholar query: Survey software testing | RQ1  |
+| Testing practices   | Beller et al. @beller2017developer | Initial Paper Seed | RQ1 |
+| Testing practices   | Beller et al. @beller2015 | In ‘cited by’ of “Understanding myths and realities of test-suite evolution”. | RQ1 |
+| Testing practices   | Moiz @moiz2017uncertainty | Springer query: software testing | RQ3 |
+| Risk-driven testing | Hemmati and Sharifi @hemmati2018 | In ‘cited by’ of “Test case analytics: Mining test case traces to improve risk-driven testing” | RQ3 |
+| Risk-driven testing | Schneidewind @schneidewind2007 | Scopus query: risk-driven testing | RQ3 |
+| Risk-driven testing | Vernotte et al. @vernotte2015 | Scopus query: “risk-driven” AND testing | RQ2, RQ3  |
+| Risk-driven testing | Atifi et al. @atifi2017 | In ‘cited by’ of “Risk-driven software testing and reliability” | RQ2, RQ3 |
+| Risk-driven testing | Noor and Hemmati @noor2015test | Initial Paper Seed | RQ2, RQ3 |
 
 ## Answers
 In this section the research questions will be answered. To answer these questions, informtion from 
