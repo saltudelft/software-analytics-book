@@ -37,7 +37,12 @@ answer the following research questions regarding the chosen subcategory.
 
 ## Research Protocol
 
-TODO: write intro to search strategy
+In this section we present the process that we followed to systematically extract the articles for
+the literature survey. First, the search strategy includes the queries that were used, as well as
+the initial criteria that was taken into account for the first filtering of the articles. Then, the
+way how the relevance of the remaining papers was assessed and the second filtering are explained
+in the article selection section. In the last two parts, we describe the data that was extracted
+from each study and the initial grouping that was constructed based on this.
 
 ### Search Strategy
 
