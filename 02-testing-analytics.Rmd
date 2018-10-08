@@ -23,7 +23,7 @@ and extract information for the survey. Second, the actual findings for each of 
 questions will be explained.
 
 ## Research protocol
-For this paper, Kitchenham's survey method was applied. For this method, a protocol has to be
+For this paper, Kitchenham's survey method \cite{Kitchenham2004} was applied. For this method, a protocol has to be
 specified. This protocol is defined for the research questions given above. Below the inclusion
 and exclusion criteria are given, which helped finding the rightful papers. After these criteria,
 the actual search for papers is described. The papers that were found are listed and after they
@@ -60,7 +60,7 @@ were Scopus, Google Scholar and Springer.
 The keywords used to find papers were: software, test*, analytics, test-suite, evolution, software development,
 computer science, software engineering, risk-driven, survey software testing
 
-The table below describes for each paper, which Query resulted in which paper being found.
+The table below describes for each paper, which search query resulted in which paper being found.
 
 |Category          |Reference                                   | Query|
 |------------------|----------------------------------------|-------------------------------|
@@ -133,6 +133,9 @@ below.
 	- @atifi2017
 
 ## Answers
+In this section the research questions will be answered. To answer these questions, informtion from 
+the relevant papers are aggregated. The answers to each research questions are summurized in the 
+conclusion.
 
 ### How do developers currently test?
 To answer the first research question "how do developers currently test?", this research question
@@ -270,7 +273,8 @@ developer can start fixing the faulty code right away.
 
 
 ### What future developments can be expected?  
-
+This section will elaborate on which furture developments can be expected in the field of software
+analytics.
 
 #### Co-evolution and test generation  
 For understanding how test- and production code co-evolve and how tests can be generated to support
