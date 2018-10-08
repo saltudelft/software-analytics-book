@@ -13,10 +13,10 @@ testing efforts to be allocated on the right places.
 
 However, as noted in @DAmbros2012, reliably predicting which parts of source code are the most 
 fault-prone is one of the holy-grails of software engineering. 
-Thus it is not surprising that bug-prediction continues to 
+Thus it is not surprising that bug prediction continues to 
 garner a widespread research interest in software analytics, 
 now equipped with the ever-expanding toolbox of data-mining and machine learning techniques. 
-In this survey we  investigate the current efforts in bug-prediction 
+In this survey we  investigate the current efforts in bug prediction 
 in the light of the advances in software analytics methods and 
 focus our attention on answering the following research questions:
 
@@ -46,7 +46,7 @@ We started by studying the initial 6 seed papers which were selected based on do
 
 We looked for additional papers by making searches based on the following elements:
 
-1. Keyword search using search engines (Scopus, ACM Digital Library, IEEE Explorer).
+1. Keyword search using search engines (Google Scholar, Scopus, ACM Digital Library, IEEE Explorer).
 The search query was constructed so that the paper title had to contain the phrase bug prediction,
  but also the other more general variants used in literature: *bug/defect/fault prediction*. 
 The title also had to contain at least one of following keywords: *metrics*, *models*,
@@ -172,7 +172,7 @@ and perform better than a baseline selection of code and process metrics.
 ### RQ1: Models
 In the section above we have seen different kinds of metrics,
 in this section we will show how these metrics are used to create models
-for bug-prediction which can actually be used.
+for bug prediction which can actually be used.
 We will also show some preliminary results of these models,
 however, as we will explain later on, it is not trivial to compare the results of different models.
 
@@ -205,7 +205,7 @@ The Rahman algorithm is thus implemented based solely on that factor.
 ##### Time-weighted risk algorithm [@Lewis2013]
 An algorithm based on the Rahman algorithm,
 it includes a weight factor based on how old a commit is, 
-older bug fixing commits have less impact on the overall bug-proneness of the file.
+older bug fixing commits have less impact on the overall bug proneness of the file.
 Instead of showing top 10% of bug-prone files, this shows the top 20 files.
 
 ##### Machine learning
@@ -217,7 +217,7 @@ defect prediction does not yet give good results [@zimmermann2009].
 
 ##### Analysis on Abstract Syntax Trees
 Because ASTs give a more high-level description of the syntax of a program
-it could give more useful insights for bug-prediction than other analysis methods.
+it could give more useful insights for bug prediction than other analysis methods.
 Downside is that ASTs is that dynamic programming languages cannot produce static ASTs.
 @wang2016 uses ASTs in combination with a machine learning approach for bug prediction.
 They also show that using ASTs can imporove cross-project prediction results.
@@ -253,7 +253,7 @@ for comparative studies in software defect prediction since it separates predict
 from class and cost distributions, which are project-specific characteristics that may be unknown 
 or subject to change.”
 
-It is also worth noting the interesting conclusion of @Shepperd2014, 
+It is also worth noting the conclusion of @Shepperd2014, 
 in which they found that 30 percent of the variance of the algorithm’s performance 
 can be “explained” based on the research group, 
 while the variability due to the choice of classifier is very small.
@@ -271,15 +271,15 @@ Where @Lewis2013 even mentions that their tool had no significant effect on deve
 quality assurance in some parts of the code, but again, no industry usage could be found.
 
 We did find some reasons which could explain why there is no practical usage of bug prediction yet.
-Some issues we found with using bug-prediction tools in practice 
-have to do with the following properties that bug-prediction tools should have in some cases:
+Some issues we found with using bug prediction tools in practice 
+have to do with the following properties that bug prediction tools should have in some cases:
 
 * _Obvious reasoning_: If a tool has no clear reasoning users might quickly discard the
   tool, because they don't understand why a file is bug-prone [@Lewis2013].
 * _Bias towards the new_: For some metrics this feature is required,
   because otherwise it would be impossible to 'fix' a file, 
   it will remain to be bug-prone even if completely rewritten [@Lewis2013].
-* _Actionable messages_: Messages shown by bug-prediction tools must be actionable. 
+* _Actionable messages_: Messages shown by bug prediction tools must be actionable. 
   The user must be able to perform an action to fix the problem with the file,
   otherwise users won't know what to do with the tool [@Lewis2013].
 * _Noise problem_: It turns out that if data which is used for the historical changes 
@@ -301,8 +301,8 @@ fault-prediction does not provide actionable tools for developers.
 To answer this questions we found no more information in scientific papers, 
 so we had to look outside of the academic world in order to see if this techniques are 
 being used by developers. 
-After some research we concluded that bug-prediction is not currently being used on developers, 
-and we, as in @Lewis2013, think that maybe bug-prediction is supposed to be used for software 
+After some research we concluded that bug prediction is not currently being used on developers, 
+and we, as in @Lewis2013, think that maybe bug prediction is supposed to be used for software 
 quality in order to find the places where we should invest the project resources instead 
 of helping developers write code without bugs.
 
