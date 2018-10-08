@@ -198,7 +198,9 @@ permissions.
 
 Challenges & Future Research:
 
-* A
+* One of the directions for further research regarding permissions is the idea of giving permissions to individual app functionalities instead of giving permissions to the app as a whole. This could lead to users better understanding why an app needs a certain permission and could reduce the amount of permissions an app needs.
+* Another possible future direction is researching and creating tools that help developers put permission requests in the right place to avoid bugs related to permissions and permission requests.
+* Quantifying and understanding the effects of run-time permission requests on the user experience is still an open research area which can help increasing the quality of apps.
 
 **Responding to reviews**
 
