@@ -1,7 +1,8 @@
 # Testing Analytics
 ## Motivation
 Testing is an important aspect in software engineering, as it forms the first line of
-defence against the introduction of software faults\cite{pinto2012understanding}. However, in
+defence against the introduction of software faults Pinto et al. \cite{pinto2012understanding}.
+However, in
 practice it seems that not all developers test actively. In this paper we will survey on the use of 
 testing and the tools that make this possible. We will also look into the future development of
 tools that is done or required in order to improve testing practices in real-world applications.
@@ -97,7 +98,8 @@ table above, the categories per paper were added based on their general topic.
 These broad topics will be assigned to a corresponding research question. All papers per research
 question are ordered on their relevance, which in most cases means that a newer paper is considered
 as more relevant than an older paper. A lower ranking may also be caused by a lower quality of 
-writing (e.g. @greiler2013 in RQ2). The categorizations are based on the bullet points extracted
+writing (e.g. Greiler et al. @greiler2013 in RQ2). The categorizations are based on the bullet
+points extracted
 from each paper. These bullet points can be found below in section _'Extracted paper information'_
 below.
 
@@ -141,23 +143,28 @@ into.
 #### How do we test?
 For the quality of code, test coverage is a popular metric. Alternatives are, for example,
 acceptance tests, the number of defects in the last week, or defects per Line of Code (LOC)
-[@GAROUSI20131354]. However, code coverage might not be the best indicator for the extensiveness of
-testing. For example, according to @Beller:2015:DT:2819009.2819101 a code coverage of 75% can possibly be
+@GAROUSI20131354. However, code coverage might not be the best indicator for the extensiveness of
+testing. For example, according to Beller et al. @Beller:2015:DT:2819009.2819101 a code coverage of
+75% can possibly be
 reached with only spending less than a tenth of the total development time on testing. Another
 concern of using test coverage as a metric is the concept of treating the metric @bouwers2012,
 where developers try to uplift the value of code coverage by hitting many lines with only a few
-test cases. In @marsavina2014 it was observed that test cases were rarely updated when changes
+test cases. In Marsavina et al. @marsavina2014 it was observed that test cases were rarely
+updated when changes
 related to attributes or methods in the production code were made. Possible explanations for this
 are that these changes were not significant or the tests were too simple and were likely to pass.
-This also fits with the findings of @ROMANO201764, where they claim that "[d]evelopers write
+This also fits with the findings of Romano et al. @ROMANO201764, where they
+claim that "[d]evelopers write
 quick-and-dirty production code to pass the tests, do not update their tests often, and ignore
 refactoring."
 
 Besides older tests rarely being updated for changed code, even new tests do not necessarily have
-the purpose of validating new production code lines. It was observed by @pinto2012understanding 
+the purpose of validating new production code lines. It was observed by Pinto et al.
+@pinto2012understanding 
 that a significant number of new tests that are added, were not necessarily
 added to cover new code but rather to exercise the changed parts of the code after the program is
-modified. This finding fits with the observation of @marsavina2014, who found that test cases are
+modified. This finding fits with the observation of Marsavina et al. @marsavina2014,
+who found that test cases are
 created or deleted in order to address the modified branches whenever numerous
 condition related changes are conducted in the production code base.
 Older production code lines, therefore, may stay
@@ -167,33 +174,39 @@ they missed lines of their production code with any tests. It, thus, seems to be
 action, by most developers, to not cover older production code lines. These lines might be
 'too hard' to test, other lines may be easier to test, or developers do not seem to see the
 relevance of testing these uncovered lines of code. However, the most commonly used coverage
-metrics are branch coverage and conditional coverage [@GAROUSI20131354]. As both branch coverage
+metrics are branch coverage and conditional coverage @GAROUSI20131354. As both branch coverage
 and conditional coverage require multiple different conditions for if-statements, it may possibly
 be that the absolute number of missed lines of production code by tests is very low but rather the
 number of missed conditions is higher.
 
 #### Co-evolution
-In a case study conducted by @zaidman2011studying, there was no evidence found for an increased
+In a case study conducted by Zaidman et al. @zaidman2011studying, there was no evidence found for
+an increased
 activity of testing before a release. However, the study was able to detect periods of increased
 test writing activity. These increased activities of writing test cases were found to be after
-longer periods of writing production code [@zaidman2011studying]. With a longer timespan of not
+longer periods of writing production code @zaidman2011studying. With a longer timespan of not
 writing tests, it can be concluded for these cases that the production code and test code do not
-gracefully co-evolve [@zaidman2011studying; @marsavina2014]. 
+gracefully co-evolve @zaidman2011studying @marsavina2014. 
 
 #### Test-Driven Development (TDD)
-Different definitions for TDD were used across different documents. According to
+Different definitions for TDD were used across different documents. According to Zaidman et al.
 @zaidman2011studying, evidence of TDD was found where test code was committed alongside production
 code, meaning that the methodology of TDD is used when production code was written before the
-respective test code. This is in contrast with the originally proposed constraint by @beck2003test,
+respective test code. This is in contrast with the originally proposed constraint 
+by Beck @beck2003test,
 where a line of production code should only be written after a failing automated test was written
 in advance. The confusion for the definition of TDD can also be traced back by the finding of
-@beller2015, where programmers who claim they practice TDD neither follow it strictly nor
-practice it for all of their modification. A survey conveyed by @GAROUSI20131354 on 196 respondents
+Beller et al. @beller2015, where programmers who claim they practice TDD neither 
+follow it strictly nor
+practice it for all of their modification. A survey conveyed by Garousi and Zhi @GAROUSI20131354
+on 196 respondents
 (amongst them managers and developers) indicated that with a ratio of 3:1 use Test-last development
 and Test-driven development respectively. This found ratio is in contrast with the numbers found by
-@beller2015; only 1.7% of the observed developers seemed to follow the strict TDD definition, where
+Beller et al. @beller2015; only 1.7% of the observed developers seemed to follow the strict
+TDD definition, where
 most of these developers only practice this strict definition in less than 20% of their time.
-However, it must be mentioned that the survey done by @GAROUSI20131354 only surveyed the subjects,
+However, it must be mentioned that the survey done by Garousi and Zhi @GAROUSI20131354 only
+surveyed the subjects,
 which allows the confusion for the definition of TDD to play a major role in the results found.
 
 
@@ -202,34 +215,41 @@ We will cover two research fields regarding testing analytics: test evolution an
 risk-driven testing. 
 
 #### Test evolution and generation
-@pinto2012understanding found the investigation of automated test repairing is not a 
+Pinto et al. @pinto2012understanding found the investigation of automated test repairing is not a 
 promising research avenue, as these techniques would require manual guidance which could end up 
-being similar to traditional refactoring tools. Nonetheless, more research is performed in this field since then. 
+being similar to traditional refactoring tools. Nonetheless, more research is performed in this
+field since then. 
 An approach for automatically repairing and generating test cases during software evolution is 
-proposed by @supportingtestsuite. This approach uses information available in existing test cases, 
+proposed by Mirzaaghaei et al. @supportingtestsuite. This approach uses information available in
+existing test cases, 
 defines a set of heuristics to repair test cases invalidated by changes in the software, and 
 generate new test cases for evolved software. This properly repairs 90% of the compilation errors 
 addressed and covers the same amount of instructions. The results show that the approach can 
 effectively maintain evolving test suites and perform well compared to competing approaches.
 
-While full automated test suite generation can not replace human testing entirely yet, @bowring2014obsidian introduced a 
+While full automated test suite generation can not replace human testing entirely yet, Bowring and
+Hegler @bowring2014obsidian introduced a 
 tool that generates the templates for tests, which guarantees compilation, supports exception 
 handling and finds a suitable location for the test. Developers still need to fix the test oracles 
 themselves, but the template is there. The technique looks at the context in order to decide what 
-template to use. @robinson2011 created a regression unit tests generation tool. It is a suite of 
+template to use. Robinson et al. @robinson2011 created a regression unit tests generation tool.
+It is a suite of 
 techniques for enhancing an existing unit test generation system. Experiments are performed using 
 an industrial system. The generated tests from these experiments achieved good coverage and mutation 
 kill score, were readable by the product developers and required few edits as the system under test 
-evolved. @dulz2013model found that by directed adjusting specific probability values in the usage 
+evolved. Dulz @dulz2013model found that by directed adjusting specific probability values in the
+usage 
 profile of a Markov chain usage model, it is relatively easy to generate abstract test suites for 
 different user classes and test purposes in an automated approach. By using proper tools, such as the 
 TestUS Testplayer, even less experienced test engineers will be able to efficiently generate 
 abstract testcases and to graphically assess quality characteristics of different test suites.
-@hurdugaci2012 introduces TestNForce (Visual Studio only), a tool to help developers to identify 
+Hurdugaci and Zaidman @hurdugaci2012 introduces TestNForce (Visual Studio only), a tool to help
+developers to identify 
 unit tests that need to be altered and executed after code change.
 
 #### Risk-driven testing
-The paper by @vernotte2015 introduces and reports on an original tooled risk-driven security 
+The paper by Vernotte et al. @vernotte2015 introduces and reports on an original tooled risk-driven
+security 
 testing process called Pattern-driven and Model-based Vulnerability Testing. This fully automated 
 testing process, relying on risk-driven strategies and Model-Based Testing (MBT) techniques, aims 
 to improve the capability of detection of various Web application vulnerabilities, in particular 
@@ -238,7 +258,8 @@ shows that this novel process is appropriate for automatically generating and ex
 risk-driven vulnerability test cases and is promising to be deployed for large-scale Web 
 applications.
 
-A new risk measure is defined by @noor2015test, which assigns a risk factor to a test case if it 
+A new risk measure is defined by Noor and Hemmati @noor2015test, which assigns a risk factor to a
+test case if it 
 is similar to a failing test case from history. The new risk measure is by far more effective in 
 identifying failing test cases compared to the traditional risk measure. Using this method for 
 identifying test cases with a high risk factor, these test cases can for example be ran in the 
@@ -253,18 +274,18 @@ developer can start fixing the faulty code right away.
 
 #### Co-evolution and test generation  
 For understanding how test- and production code co-evolve and how tests can be generated to support
-developers, studies have been conducted [@pinto2012understanding; @marsavina2014;
-@zaidman2011studying]. Additionally a tool has been made in order to analyze and, consequently,
-better understand test-suite evolution [@pinto2013]. For the time being the practical
+developers, studies have been conducted @pinto2012understanding @marsavina2014
+@zaidman2011studying. Additionally a tool has been made in order to analyze and, consequently,
+better understand test-suite evolution @pinto2013. For the time being the practical
 implications of
 this subtopic have mainly been sought in the repairing and generation of tests. 
 
 
-According to Pinto [@pinto2012understanding] test repairs occur often enough to justify the
+According to Pinto et al. @pinto2012understanding test repairs occur often enough to justify the
 development and research for automated repair techniques. M. Mirzaaghaei et al.
-[@supportingtestsuite] argue that evolving test cases is an expensive and time-consuming activity,
+@supportingtestsuite argue that evolving test cases is an expensive and time-consuming activity,
 for which automated approaches reduce the pressure on developers. Shamshiri et al. 
-[@shamshiri2018automatically] argue that automated generation of unit tests does not end up
+@shamshiri2018automatically argue that automated generation of unit tests does not end up
 generating realistic tests and that the effectivity of developers writing manual tests is equal
 to developers using automatically generated tests. Therefore, they call for the use of more
 realistic tests. This suggests that automated test generation is still a topic of future interest,
@@ -273,10 +294,10 @@ will likely be researched in order to find a way to generate realistic tests.
 
 #### Risk-driven testing
 Risk-driven testing is an area of recent attention. Researchers have been looking for
-methods that can either detect potential risks within the same project [@noor2015test; 
+methods that can either detect potential risks within the same project @noor2015test 
 @hemmati2018
-; @vernotte2015] or that can detect risks based on models carried over from one project to another 
-[@leung2015testing; @atifi2017]. These techniques have been implementing history based prediction
+ @vernotte2015 or that can detect risks based on models carried over from one project to another 
+@leung2015testing @atifi2017. These techniques have been implementing history based prediction
 approaches.
 
 In the future, we can expect more interest and research into risk-driven testing as allocating
@@ -289,12 +310,12 @@ research
 later on.  
 
 #### Testing practices
-Research various papers [@GAROUSI20131354; @beller2017developer; @beller2015] has indicated
+Research of several papers @GAROUSI20131354 @beller2017developer @beller2015 has indicated
 that testing of any
 form is not as widely practiced as the status quo suggests. How the current state of the practice
 will change depends on various developments within the field. Tools will be created to assist the
 developer in writing quality code and tests, such as TestEvoHound as suggested by M. Greiler. 
-[@greiler2013]. As
+@greiler2013. As
 automated test generation becomes more effective this may reduce the need for developers to spend a
 lot of time on writing and maintaining tests. With the development of risk-driven testing, 
 developers may also be able to focus on the parts that are likely to be the most important to 
