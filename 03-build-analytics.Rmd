@@ -12,14 +12,14 @@ development practice in many projects.
 Continuous Integration in a term used in software engineering to describe a practice of merging 
 all developer working copies to a shared mainline several times a day. CI is in general used 
 together with Version control System (VCS). Version Control System is an application for
-revision control that ensures the managment of changes to documents, source code and other
+revision control that ensures the management of changes to documents, source code and other
 collections of information.
 
 <!-- The following paragraph is prone to errors when auto formatting. After a ..^[..] or ..^[..],
 there _must_ be a space, else it is interpreted as superscript. --> 
 
 Build analytics covers research done on data extracted from a build process inside a project. This
-contains amongst others, build logs from continuous integration such as Travis&nbsp;CI^[See
+contains among others, build logs from continuous integration such as Travis&nbsp;CI^[See
 https://travis-ci.org/], Circle&nbsp;CI^[See https://circleci.com/], Jenkins^[See https://jenkins.io/], 
 AppVeyor^[See\ https://www.appveyor.com/] and TeamCity^[See https://www.jetbrains.com/teamcity/] or
 surveys among developers about their usage of Continuous Integration or build systems. This
@@ -36,7 +36,7 @@ following research questions.
 **RQ1**: What is the current state of the art in the field of build analytics?
 
 In order to answer to the first research question, we need to present the current topics that
-are being explored in the build analytics domain alogside with the research methods, tools 
+are being explored in the build analytics domain alongside with the research methods, tools 
 and datasets acquired for the problems in hand and aggregate and reflect about the main 
 research findings that the state-of-the-art papers display.
 <!--
@@ -110,7 +110,7 @@ software repositories, open-source software.
  between open source software (OSS) and industrial software projects from ING Netherlands and we consider 
  that it does not fit in any of the research question our chapter proposed. @zampetti2017open is again a
  case study of the usage of static analysis tools in 20 Java open source software projects hosted on GitHub 
- that use Travic CI. Taking into account the small generalization degree of the findings highlighted by the
+ that use Travis CI. Taking into account the small generalization degree of the findings highlighted by the
  article, we decide to remove this article from our research as well.
 
  
@@ -119,7 +119,7 @@ software repositories, open-source software.
 **RQ1**: What is the current state of the art in the field of build analytics?
 
 The current state-of-the-art in the build analytics domain refers to the use of machine learning techniques
-to increase the productivity when using Continuos Integration (CI), to generate constraints on the 
+to increase the productivity when using Continuous Integration (CI), to generate constraints on the 
 configuration of the CI that could improve build success rate and to predict build failures even for 
 newer projects with less training data available.
 
@@ -170,7 +170,7 @@ and knowledge dispersion in the project do not affect the rate of abandonment.
 
 *Patent for predicting build errors*
 
-@bird2017predicting introduce a method for predicting sofware build errors. This US patent is owned
+@bird2017predicting introduce a method for predicting software build errors. This US patent is owned
 by Microsoft. Having logistic regression as machine learning technique, the paper is able to compute 
 the probability of a build to fail. Using this method build errors can be better anticipated, 
 which decreases the time between working builds.
@@ -179,7 +179,7 @@ which decreases the time between working builds.
 *Predicting build time*
 
 Another important aspect is the impact of CI on the development process efficiency. One of the
-papers that adresses this matters is @bisong2017built. This paper aims to find a balance between
+papers that addresses this matters is @bisong2017built. This paper aims to find a balance between
 the frequency of integration and developer's productivity by proposing machine learning models
 that were able to predict the build taking advantage of the 56 features presented in TravisTorrent 
 build records. Their models performed quite well with an R-Squared of around 80%, meaning that they
@@ -224,7 +224,7 @@ the results presented in the poster shows an F-Measure (harmonic average of reca
     - Main research findings, aggregated -->
 **RQ2**: What is the current state of practice in the field of build analytics?
 
-Continuous Integration (CI) is a development practise that requires developers to integrate code into a 
+Continuous Integration (CI) is a development practice that requires developers to integrate code into a 
 share repository several times a day. Each check-in is then verified by an automated build which allows 
 engineers to detect any bugs early. 
 
@@ -267,18 +267,18 @@ The practice that are being proposed are:
 
 A survey conduced in open-source projects by @hilton2016usage indicated that 40% of all projects used CI. 
 It observed that a median project introduces CI a year into development. Furthermore, the paper claims that 
-CI is widely used in practise nowadays. The paper by @rausch2017empirical explores how CI is widely available 
+CI is widely used in practice nowadays. The paper by @rausch2017empirical explores how CI is widely available 
 for projects of every size with the introduction of Version Control Systems (VCS) such as GitHub, and hosted 
 build automation platforms such as Travis. In this way, CI adoption rates will increase further in the future. 
 
 This is an overview of CI and how it works in daily life. Maintaining this system requires engineers to follow 
-fundamental practises presented by @fowler2006continuous. The practises presented by @fowler2006continuous are 
+fundamental practices presented by @fowler2006continuous. The practices presented by @fowler2006continuous are 
 still commonly used today, particularly in the agile software industry as suggested by @stolberg2009enabling.
 Below is an explanation of each of the practices suggested by @fowler2006continuous.
 
 *Maintain a Single Source Repository*
 
-The practice advocates the use of a revision control system for the project's source code. All artefacts required 
+The practice advocates the use of a revision control system for the project's source code. All artifacts required 
 to build the project should be placed in a single repository. This ensures that the system does not require 
 additional dependencies. It is preferred for changes to be integrated at least once a day. This makes it 
 easier to find and remove bugs. 
@@ -304,7 +304,7 @@ integral practice of the CI framework. In addition, performing nightly builds in
 
 The system should build commits to the current working version to ensure that they integrate correctly. 
 A "nightly build" should also execute at a scheduled time every night. This build should include more 
-verifications than the ones on other branches. It takes longer to run and is executed less frequently.
+verification than the ones on other branches. It takes longer to run and is executed less frequently.
 
 *Fix Broken Builds Immediately*
 
@@ -339,7 +339,7 @@ It is important to write a script to deploy the application to a live test serve
 
   
 It is important to note that CI does not get rid of bugs, but it does make them dramatically easier
-to find and remove. The above practises are important for the smooth functioning of CI framework.
+to find and remove. The above practices are important for the smooth functioning of CI framework.
   
 
 <!--
@@ -390,6 +390,6 @@ Some open research questions from recent papers are the following:
 
 From the synthesis of the works discussed in this section the following research questions emerged:
 
- * What is the impact of the choice of Continuos Integration platform? Most of the research is done
+ * What is the impact of the choice of Continuous Integration platform? Most of the research is done
  on users using Travis&nbsp;CI, there are many other platforms out there. Every platform has their own
  characteristics and this could impact the effectiveness for a specific kind of project.
