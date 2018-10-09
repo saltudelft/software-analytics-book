@@ -128,6 +128,7 @@ techniques or applications.
  
 ## Answers
 
+### Build analytics state of the art
 **RQ1**: What is the current state of the art in the field of build analytics?
 
 The current state-of-the-art in the build analytics domain refers to the use of machine learning techniques
@@ -234,6 +235,7 @@ the results presented in the poster shows an F-Measure (harmonic average of reca
     - Topics that are being explored
     - Research methods, tools and datasets being used
     - Main research findings, aggregated -->
+### Build analytics state of practice
 **RQ2**: What is the current state of practice in the field of build analytics?
 
 Continuous Integration (CI) is a development practice that requires developers to integrate code into a 
@@ -357,7 +359,7 @@ to find and remove. The above practices are important for the smooth functioning
 <!--
     - Tools and companies creating / employing them
     - Case studies and their findings -->
-
+### Build analytics future research
 **RQ3**: What future research can we expect in the field of build analytics?
 
 Currently research on build analytics is limited by some challenges, some are specific to
