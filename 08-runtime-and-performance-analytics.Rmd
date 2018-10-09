@@ -8,7 +8,7 @@ For inspiration, we started reading five recent papers on runtime and performanc
 published at top conferences. These five were selected because the papers handle the software side
 of performance and runtime analytics which is more in line with the other chapters of this book.
 However, focussing on only software, the field is still very broad. We have chosen to focus on the 
-field of performance vs. Energy consumption. This chioce was made due to it being a very current and
+field of performance vs. Energy consumption. This choice was made due to it being a very current and
 thriving domain within Runtime and performance analysis.
 
 ## Introduction
@@ -16,15 +16,15 @@ Energy consumption plays a big role in day-to-day usage of software. Especially 
 software development for mobile devices, for which energy consumption results in a negative effect 
 on the battery duration and hence limiting the usage time of the device. Although the importance of 
 energy efficient software is clear, programmers lack the knowledge of the best practices to reduce 
-software energy consumption, and education is not focused on this field either [ref:PHA2016]. In an 
+software energy consumption, and education is not focused on this field either [@PHA2016]. In an 
 analysis of questions posted on StackOverflow on the topic of energy efficiency performed by Pinto 
-et. al. [ref:PCL2014] it was found that although programmers had questions related to energy 
+et. al. [@PCL2014] it was found that although programmers had questions related to energy 
 efficiency, they rarely got the appropriate advice. 
-With over 2 billion daily smartphone and tablet users worldwide [ref:NPPPZL2017] it is clear that 
+With over 2 billion daily smartphone and tablet users worldwide [@NPPPZL2017] it is clear that 
 this lack of knowledge needs to be addressed. To help the programmers close this knowledge gap, 
 hardware-based tools have been introduced. These tools can determine the energy profile of an 
 application with high precision, but it means the costly hardware components need to be 
-acquired[ref:NPPPZL2017]. Software-based solutions solve the problem of requiring expensive 
+acquired[@NPPPZL2017]. Software-based solutions solve the problem of requiring expensive 
 hardware, and are easier to use, but also less precise. 
 
 In this chapter the current state of energy efficiency in software development for mobile devices 
@@ -72,18 +72,17 @@ complete picture. All papers are also checked for relevance to the topic.
 
 To answer **RQ1** a more in-depth look at available tools for the energy efficiency is performed. 
 The focus for **RQ2** is on what is currently used in Android application that are actively used. 
-**RQ3** is answered by the finding of the papers used for both RQ1 and RQ2.
+**RQ3** is answered by the finding of the papers used for both **RQ1** and **RQ2**.
 
 ## State of the Art
 
 Many researchers found that there is increasing demand for energy efficient software. In their 
 research they often propose state of the art approaches to assisting developers. These approaches 
 can be separated into two main categories: tools and guidelines. This section will contain an 
-overview of all state of the art tools and guidelines that satisfy our search criteria 
-[REFERENCE TO METHODOLOGY]. This overview is used to  answer RQ1.
+overview of all state of the art tools and guidelines that satisfy our search criteria. This overview is used to  answer **RQ1**.
 
 ### Tools
-In the table below the tools that will be discussed are mentioned. These the tools will be discussed in more detail in order to answer the RQ1.
+In the table below the tools that will be discussed are mentioned. These the tools will be discussed in more detail in order to answer the **RQ1**.
 
   |Reference   |  Tool                |  Description                            |
   |------------|-----------------------|------------------------------------------|
@@ -123,7 +122,7 @@ _APOA_
 
 A recommendation system which can be implemented in any marketplace for helping users and
 developers to compare apps in terms of performance. As an input APOA uses a set of metrics
-and rating of apps in csv format as well as metrics to optimize (context of usage). The
+and rating of apps in Comma Separated Value (CSV) format as well as metrics to optimize (context of usage). The
 result is a Pareto optimal front, from which the user selects the most preferred solution.
 
 _Energy Patch_
@@ -146,7 +145,7 @@ _jStanley_
 Eclipse plugin that helps developers detect energy bugs. jStanley scans the open Java
 collection for the usage of methods and functions that have more efficient alternatives.
 Not only are energy leaks highlighted, but better alternatives are provided. The tool is
-driven by a set of csv files which contains energy consumption and run time of a wide
+driven by a set of CSV files which contains energy consumption and run time of a wide
 variety of methods. These values are harvested on a specific device of the researchers.
 With the help of these values the possible performance boost is calculated.
 
@@ -175,11 +174,11 @@ explain how to involve energy efficiency in a specific domain.
 ## State of Practice
 Now that we have an overview of the state of the art regarding energy consumption on Android driven 
 mobile devices, we investigate what the current state of practice is. In this section, we try to 
-find an answer to RQ2 stated in the introduction by going through the papers we have retrieved using
+find an answer to **RQ2** stated in the introduction by going through the papers we have retrieved using
 the methodology described in Section 2. First, we study how different software engineering 
 approaches affect energy consumption and if developers have any knowledge or training regarding 
 energy saving programming techniques. Furthermore, we try to see if there are any tools being used 
-which help decreasing energy consumption. To make this more specific, we divide RQ2 into several 
+which help decreasing energy consumption. To make this more specific, we divide **RQ2** into several 
 sub-research questions:
 
 * **SQ1:** What are the current development approaches used in practice and how does that affect 
@@ -218,7 +217,7 @@ repository.
 The above two papers are examples of research that suggest that the current state of practice, 
 developing applications in Java only, is not in line with the current state of the art on energy 
 efficiency. In spite of these research papers, developers are still working mostly with Java. One 
-possible explanation is that Java is simply compatible with almost every system due to the JVM. We 
+possible explanation is that Java is simply compatible with almost every system due to the Java Virtual Machine (JVM). We 
 suggest that further research should investigate why developers are sticking to Java. For example, 
 looking at available libraries, coding difficulty and available tools and knowledge might have a 
 significant impact on this choice.
