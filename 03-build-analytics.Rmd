@@ -2,6 +2,7 @@
 
 ## Motivation
 
+### Introduction
 Ideally, when building a project from source code to executable, the process should be 
 fast and without any errors. Unfortunately, this is not always the case and automated 
 builds results notify developers of compile errors, missing dependencies, broken functionality 
@@ -9,6 +10,7 @@ and many other problems. This chapter is aimed to give an overview of the effort
 build analytics field and Continuous Integration (CI) as an increasingly common development 
 practice in many projects. 
 
+### Continuous Integration and Version Control System
 Continuous Integration in a term used in software engineering to describe a practice of merging 
 all developer working copies to a shared mainline several times a day. CI is in general used 
 together with Version Control System (VCS), an application for revision control that ensures 
@@ -17,6 +19,7 @@ the management of changes to documents, source code and other collections of inf
 <!-- The following paragraph is prone to errors when auto formatting. After a ..^[..] or ..^[..],
 there _must_ be a space, else it is interpreted as superscript. --> 
 
+### Build definition
 Build analytics covers research done on data extracted from a build process inside a project. This
 contains among others, build logs from Continuous Integration such as Travis&nbsp;CI^[See
 https://travis-ci.org/], Circle&nbsp;CI^[See https://circleci.com/], Jenkins^[See https://jenkins.io/], 
@@ -29,6 +32,7 @@ information is often paired with data from Version Control Systems such as Git.
  - Define context
  -->
 
+### Research questions
 We aimed to make a complete overview of build analytics field from analyzing current both  
 state of the art and state of practice to inspecting the future research that could be done 
 and finally conclude our survey with the research questions that emerged after this exhaustive
@@ -66,13 +70,14 @@ questions based on the open research and challenges in current research.
 
 ## Research protocol {#build-analytics-research-protocol}
 
-Using the initial seed consisting of @bird2017predicting, @beller2017oops, @rausch2017empirical,
-@beller2017travistorrent, @pinto2018work, @zhao2017impact, @widder2018m and @hilton2016usage we
-used references to find new papers to analyze. Moreover, we used academical search engines like
-_GoogleScholar_ to perform a keyword based search for other relevant build analytics domain papers.
-The keywords used were: build analytics, machine learning, build time, prediction, 
-continuous integration, build failures, active learning, build errors, mining, 
-software repositories, open-source software.
+Taking advantage of the initial seed consisting of Bird and Zimmermann @bird2017predicting, 
+Beller et al. @beller2017oops, Rausch et al. @rausch2017empirical, Beller et al. TravisTorrent @beller2017travistorrent, 
+Pinto et al. @pinto2018work, Zhao et al. @zhao2017impact, Widder et al. @widder2018m and 
+Hilton et al. @hilton2016usage, we used references to find new papers to analyze. 
+Moreover, we used academical search engines like _GoogleScholar_ to perform a keyword based 
+search for other relevant build analytics domain papers. The keywords used were: 
+build analytics, machine learning, build time, prediction, continuous integration, build failures, 
+active learning, build errors, mining, software repositories, open-source software.
 
 | Paper with reference              | Source              |  RQ      | Notes |
 | --------------------------------  | ------------------- | -------- | ----- |                
