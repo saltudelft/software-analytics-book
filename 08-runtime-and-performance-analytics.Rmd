@@ -188,6 +188,7 @@ sub-research questions:
 * **SQ1:** What are the current development approaches used in practice and how does that affect 
 energy consumption?
 * **SQ2:** What do programmers currently know and do about energy saving app development?
+* **SQ3:** How certain are researchers and developers about the validity of research and tools?
 
 ### Answering SQ1
 Under development approaches, the language used to write the app is one of the things that is taken 
@@ -243,14 +244,19 @@ consumption. These include correctness, responsiveness and performance. Another 
 research addressed is whether software developers were certain of their energy saving commits. The 
 paper suggests that there are definitely cases where developers are not certain about their energy 
 saving change. This might be caused by the fact that there are few user friendly tools available for
-aiding developers in making energy-aware decisions. 
+aiding developers in making energy-aware decisions. One example of such a tool that attempts to assist the developer in making energy friendly descisions is JStanley [@PSCS2018]. However, both the paper itslef and our own replication of that study indicate that this work is not anywhere close to ideal. It only concerns static analysis of the code and is very limited in usibility. This prevents such tools of being used in practice. Additionally, there is the problem of how to actually measure the energy being consumed. A number of papers explains how this is not actually an easy task. Moura et al. also alude to the fact that developers that do use third-party energy-management tools often lack trust in the accuracy of the tools that they are using.
+
+###Aswering SQ3
+Dit stukje is mischien handig voor de papers over het meten van consumption?????
+
+As discussed in the previous paragraph, the measuring of energy-consumption is not actually as straight-forwad as one may think. In a number of papers it is explained how hardware-based solutions are accurate, but require expensive components. This is especially in the field of mobile devices a serious issue. ON the other hand, software-based solutions are cheaper but less accurate. Now there is work being done on creating more accurate software solutions [@@NPPPZL2017].
 
 ## RQ3: Future research
 In this section we will take a look at the suggested future research directions that have been 
-mentioned in the papers used in this survey. We attempt to extract some general trend from the 
-future research suggestions that are included. One of the fields of research we looked at in the 
-previous sections was the relation between programming languages and energy consumption. Multiple 
-papers suggest that the programming language used for implementation has an influence on the energy 
+mentioned in the papers used in this survey. We attempt to extract some general trends from the 
+future research suggestions that are included. A similiarity between almost all of the papers discussed in this section is that they agree the research field is still not very mature. The conclusions of the majority of papers is that more research is required. However, in this survey we found that the consnesus was that it is hard to make strong claims, mainly due to having doubts about both the measurement methods as well as the research methodologies. 
+
+One of the fields of research we looked at in the previous sections was the relation between programming languages and energy consumption. Multiple papers suggest that the programming language used for implementation has an influence on the energy 
 consumption and performance [@GKLS2018; @OOC2017]. These papers however do not look into the 
 influence of specific features of the programming languages on energy consumption and performance. 
 Or rather the specific characteristics of a programming language that cause the differences, as 
@@ -270,3 +276,4 @@ Similarly, a lot of the papers reporting on tools that could be used in practice
 tested with benchmarks. However, it is always the question whether these benchmarks are 
 representative enough of the real world to hold actual merit.
 
+Even though, to our knowledge, there have not been any studies into whether the tools described in the research are actually been used in practice, there have been some studies into energy-saving practices on Github. For instance, studies into the commit messages [@BLXWT2016; @MPEC2015], have shed some light into the state of practice. These studies looked into the commit messages containing keywords related to energy consumption and classified the corresponding code. The future research directions that are indicated by such papers is that it will be important to verify that the enegy-saving commits actually have an impact on the overall performance of the software. That is both in terms of energy-consumption as well as metrics for the performance related to usebility. Similarly, an other direction is verifying that the enery-saving techniques are consistent acrosss platforms.
