@@ -1,6 +1,6 @@
 # Runtime and Performance Analytics
 
-In this chapter, we discuss the field of performance and runtime analytics. This chapter does not
+In this chapter, we discuss the field of performance and runtime analytics. This chapter however does not
 cover the entire field because it is too broad. Using Kitchenham’s method
 [@kitchenham2004procedures], we have narrowed down the scope of this survey.
 
@@ -236,15 +236,13 @@ paper suggests that there are definitely cases where developers are not certain 
 saving change. This might be caused by the fact that there are few user friendly tools available for
 aiding developers in making energy-aware decisions. One example of such a tool that attempts to assist the developer in making energy friendly descisions is JStanley [@PSCS2018]. However, both the paper itslef and our own replication of that study indicate that this work is not anywhere close to ideal. It only concerns static analysis of the code and is very limited in usibility. This prevents such tools of being used in practice. Additionally, there is the problem of how to actually measure the energy being consumed. A number of papers explains how this is not actually an easy task. Moura et al. also alude to the fact that developers that do use third-party energy-management tools often lack trust in the accuracy of the tools that they are using.
 
-###Aswering SQ3
-Dit stukje is mischien handig voor de papers over het meten van consumption?????
-
+### Answering SQ3
 As discussed in the previous paragraph, the measuring of energy-consumption is not actually as straight-forwad as one may think. In a number of papers it is explained how hardware-based solutions are accurate, but require expensive components. This is especially in the field of mobile devices a serious issue. ON the other hand, software-based solutions are cheaper but less accurate. Now there is work being done on creating more accurate software solutions [@@NPPPZL2017].
 
 ## RQ3: Future research
 In this section we will take a look at the suggested future research directions that have been 
 mentioned in the papers used in this survey. We attempt to extract some general trends from the 
-future research suggestions that are included. A similiarity between almost all of the papers discussed in this section is that they agree the research field is still not very mature. The conclusions of the majority of papers is that more research is required. However, in this survey we found that the consnesus was that it is hard to make strong claims, mainly due to having doubts about both the measurement methods as well as the research methodologies. 
+future research suggestions that are included. A similarity between almost all of the papers discussed in this section is that they agree the research field is still not very mature. The conclusions of the majority of papers is that more research is required. However, in this survey we found that the consensus is that it is hard to make strong claims, mainly due to having doubts about both the measurement methods as well as the research methodologies. 
 
 One of the fields of research we looked at in the previous sections was the relation between programming languages and energy consumption. Multiple papers suggest that the programming language used for implementation has an influence on the energy 
 consumption and performance [@GKLS2018; @OOC2017]. These papers however do not look into the 
@@ -262,8 +260,15 @@ optimization [@PSCS2018]. We faced the issue that this tool cannot implement the
 improvements in an easy and efficient way. For example, we took the AssertJ open source project from 
 GitHub and there were more than 300 energy saving suggestions. A user has to click on every 
 suggestion to actually implement the improvement which is tedious work.
-Similarly, a lot of the papers reporting on tools that could be used in practice are currently being
+Similarly, a lot of the papers reporting on tools that could be used in practice, are currently being
 tested with benchmarks. However, it is always the question whether these benchmarks are 
 representative enough of the real world to hold actual merit.
+Furthermore, the outcomes of the papers introducing these tools are not comparable. Testing all these tools on the same project would give better insights in what tools are actually useful for the developers to use in terms of gaining as much energy efficiency as possible. 
 
 Even though, to our knowledge, there have not been any studies into whether the tools described in the research are actually been used in practice, there have been some studies into energy-saving practices on Github. For instance, studies into the commit messages [@BLXWT2016; @MPEC2015], have shed some light into the state of practice. These studies looked into the commit messages containing keywords related to energy consumption and classified the corresponding code. The future research directions that are indicated by such papers is that it will be important to verify that the enegy-saving commits actually have an impact on the overall performance of the software. That is both in terms of energy-consumption as well as metrics for the performance related to usebility. Similarly, an other direction is verifying that the enery-saving techniques are consistent acrosss platforms.
+
+Finally it is to be noted that nearly all research is based on open-source projects from Github repositories. Research on proprietary and closed-source software could possibly lead to different results, and would therefore be interesting to conduct. 
+
+## Conclusion
+Having answered the research questions of this chapter in the sections above, we can conclude that energy awareness in regards to developing applications for mobile devices, and more specific Android, needs more attention. A lot of research is done in the field, resulting guidelines and tools to help developers. But these guidelines are very generic, and also conclude that energy awarness is project specific. The tools presented by papers hold claims to improvements, but for example the tested tool JStanley is not as easy to use as claimed by the authors. More research into the claims made by the authors of these tools is needed.
+In practice it is observed that the main language for creating Android apps (Java) isn't the most energy efficient option. Furthermore developers often do not give enough priority to energy saving options, and when they do they are often unsure about the effects of their changes. 
