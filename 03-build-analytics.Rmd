@@ -138,7 +138,7 @@ newer projects with less training data available.
 The papers identified using the research protocol defined in the previous section that give us an
 overview of the current state of the art in build analytics field are:
 
- * HireBuild: an automatic approach to history-driven repair of build scripts @hassan2018hirebuild 
+ * HireBuild: an automatic approach to history-driven repair of build scripts [@hassan2018hirebuild] 
  * A tale of CI build failures: An open source and a financial organization perspective [@vassallo2017tale]
  * (No) Influence of Continuous Integration on the Commit Activity in GitHub Projects [@baltes2018no]
  * Built to last or built too fast?: evaluating prediction models for build times [@bisong2017built]
@@ -158,7 +158,7 @@ The tools that are being proposed are:
 
   * BART to help developers fix build errors by generating a summary of the failures
   with useful information, thus eliminating the need to browse error logs  [@vassallo2018break]
-  * HireBuild to automatically fix build failures based on previous changes [re@hassan2018hirebuild]
+  * HireBuild to automatically fix build failures based on previous changes [@hassan2018hirebuild]
   * VeriCI capable of checking the errors in CI configurations files before the developer 
   pushes a commit and without needing to wait for the build result [@santolucito2018statically]
   * ACONA capable of predicting build failure in CI environment for newer projects with less 
