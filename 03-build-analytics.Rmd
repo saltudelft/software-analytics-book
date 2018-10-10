@@ -71,11 +71,11 @@ questions based on the open research and challenges in current research.
 ## Research Protocol {#build-analytics-research-protocol}
 
 ### Search Strategy
-Taking advantage of the initial seed consisting of Bird and Zimmermann @bird2017predicting,
-Beller et al. @beller2017oops, Rausch et al. @rausch2017empirical, Beller et al. TravisTorrent @beller2017travistorrent,
-Pinto et al. @pinto2018work, Zhao et al. @zhao2017impact, Widder et al. @widder2018m and
-Hilton et al. @hilton2016usage, we used references to find new papers to analyze.
-Moreover, we used academical search engines like _GoogleScholar_ to perform a keyword based
+Taking advantage of the initial seed consisting of Bird and Zimmermann [@bird2017predicting],
+Beller et al. [@beller2017oops], Rausch et al. [@rausch2017empirical], Beller et al. TravisTorrent [@beller2017travistorrent],
+Pinto et al. [@pinto2018work], Zhao et al. [@zhao2017impact], Widder et al. [@widder2018m] and
+Hilton et al. [@hilton2016usage], we used references to find new papers to analyze.
+Moreover, we used academical search engines like _Google_ _Scholar_ to perform a keyword based
 search for other relevant build analytics domain papers. The keywords used were:
 build analytics, machine learning, build time, prediction, continuous integration, build failures,
 active learning, build errors, mining, software repositories, open-source software.
@@ -96,24 +96,24 @@ techniques or applications.
 
 | Paper with reference              							              | Source              |  RQ      | Notes |
 | ------------------------------------------------------------ 	| ------------------- | -------- | ----- |                
-| 1. Bird and Zimmermann 2017 @bird2017predicting           	  | Initial seed        | RQ1      | 1     |         
-| 2. Beller et al. 2017 @beller2017oops                			    | Initial seed        | RQ3      | -     |                
-| 3. Rausch et al. 2017 @rausch2017empirical           			    | Initial seed        | RQ2      | -     |
-| 4. Beller et al. TravisTorrent 2017 @beller2017travistorrent  | Initial seed        | RQ2      | -     |
-| 5. Pinto et al. 2018 @pinto2018work                 			    | Initial seed        | RQ3      | -     |
-| 6. Zhao et al. 2017 @zhao2017impact                			      | Initial seed        | RQ3      | 2     |
-| 7. Widder et al. 2018	@widder2018m                   			    | Initial seed        | RQ1      | -     |                   
-| 8. Hilton et al. 2016	@hilton2016usage               			    | Initial seed        | RQ2      | -     |
-| 9. Vassallo et al. 2017 @vassallo2017tale              		    | Ref 2               | -        | 3     |
-| 11. Hassan and Wang 2018@hassan2018hirebuild          		    | Ref 4               | RQ1      | -     |
-| 12. Vassallo et al. 2018 @vassallo2018break            		    | Ref 2,3             | RQ1, RQ3 | -     |
-| 13. Zampetti et al. 2017 @zampetti2017open             		    | Ref by 12           | -        | 3     |
-| 14. Baltes et al. 2018 @baltes2018no                 			    | GScholar Search     | RQ1, RQ3 | 4     |      
-| 15. Bisong et al. 2017 @bisong2017built              			    | GScholar Search     | RQ1, RQ3 | 5     |
-| 16. Santolucito et al. 2018 @santolucito2018statically    	  | GScholar Search     | RQ1      | 4     |
-| 17. Ni and Li 2018 @ni2018acona                  				      | GScholar Search     | RQ1      | 6     |
-| 18. Fowler and Foemmel 2006 @fowler2006continuous         	  | GScholar Search     | RQ2      | 7     |
-| 19. Stolberg 2009 @stolberg2009enabling         				      | GScholar Search     | RQ2      | 7     |
+| 1. Bird et al. 2017 [@bird2017predicting]           	        | Initial seed        | RQ1      | 1     |         
+| 2. Beller et al. 2017 [@beller2017oops]                			  | Initial seed        | RQ3      | -     |                
+| 3. Rausch et al. 2017 [@rausch2017empirical]           			  | Initial seed        | RQ2      | -     |
+| 4. Beller et al. TravisTorrent 2017 [@beller2017travistorrent]| Initial seed        | RQ2      | -     |
+| 5. Pinto et al. 2018 [@pinto2018work]                 			  | Initial seed        | RQ3      | -     |
+| 6. Zhao et al. 2017 [@zhao2017impact]                			    | Initial seed        | RQ3      | 2     |
+| 7. Widder et al. 2018	[@widder2018m]                   			  | Initial seed        | RQ1      | -     |                   
+| 8. Hilton et al. 2016	[@hilton2016usage]               			  | Initial seed        | RQ2      | -     |
+| 9. Vassallo et al. 2017 [@vassallo2017tale]              		  | Ref 2               | -        | 3     |
+| 11. Hassan and Wang 2018 [@hassan2018hirebuild]          		  | Ref 4               | RQ1      | -     |
+| 12. Vassallo et al. 2018 [@vassallo2018break]            		  | Ref 2,3             | RQ1, RQ3 | -     |
+| 13. Zampetti et al. 2017 [@zampetti2017open]             		  | Ref by 12           | -        | 3     |
+| 14. Baltes et al. 2018 [@baltes2018no]                 			  | GScholar Search     | RQ1, RQ3 | 4     |      
+| 15. Bisong et al. 2017 [@bisong2017built]              			  | GScholar Search     | RQ1, RQ3 | 5     |
+| 16. Santolucito et al. 2018 [@santolucito2018statically]    	| GScholar Search     | RQ1      | 4     |
+| 17. Ni and Li 2018 [@ni2018acona]                  				    | GScholar Search     | RQ1      | 6     |
+| 18. Fowler and Foemmel 2006 [@fowler2006continuous]         	| GScholar Search     | RQ2      | 7     |
+| 19. Stolberg 2009 [@stolberg2009enabling]         				    | GScholar Search     | RQ2      | 7     |
 
 
 **Notes**
@@ -140,79 +140,79 @@ The papers identified using the research protocol defined in the previous sectio
 overview of the current state of the art in build analytics field are:
 
  * HireBuild: an automatic approach to history-driven repair of build scripts @hassan2018hirebuild 
- * A tale of CI build failures: An open source and a financial organization perspective @vassallo2017tale
- * (No) Influence of Continuous Integration on the Commit Activity in GitHub Projects @baltes2018no
- * Built to last or built too fast?: evaluating prediction models for build times @bisong2017built
- * Statically Verifying Continuous Integration Configurations @santolucito2018statically
- * ACONA: active online model adaptation for predicting continuous integration build failures @ni2018acona
+ * A tale of CI build failures: An open source and a financial organization perspective [@vassallo2017tale]
+ * (No) Influence of Continuous Integration on the Commit Activity in GitHub Projects [@baltes2018no]
+ * Built to last or built too fast?: evaluating prediction models for build times [@bisong2017built]
+ * Statically Verifying Continuous Integration Configurations [@santolucito2018statically]
+ * ACONA: active online model adaptation for predicting continuous integration build failures [@ni2018acona]
 
 
 The topics that are being explored are:
 
-  * the importance of the build process in a VCS project @hassan2018hirebuild
-  * the impact factors of user satisfaction for using a CI tools @widder2018m
-  * methods from helping the developer to fix bugs @hassan2018hirebuild, @vassallo2018break
-  * predicting build time @bisong2017built
-  * predicting build failures @santolucito2018statically, @ni2018acona
+  * the importance of the build process in a VCS project in reference @hassan2018hirebuild
+  * the impact factors of user satisfaction for using a CI tools in reference @widder2018m
+  * methods from helping the developer to fix bugs in references @hassan2018hirebuild, @vassallo2018break
+  * predicting build time in reference @bisong2017built
+  * predicting build failures in references @santolucito2018statically, @ni2018acona
 
 The tools that are being proposed are:
 
   * BART to help developers fix build errors by generating a summary of the failures
-  with useful information, thus eliminating the need to browse error logs @vassallo2018break
-  * HireBuild to automatically fix build failures based on previous changes @hassan2018hirebuild
+  with useful information, thus eliminating the need to browse error logs  [@vassallo2018break]
+  * HireBuild to automatically fix build failures based on previous changes [re@hassan2018hirebuild]
   * VeriCI capable of checking the errors in CI configurations files before the developer 
-  pushes a commit and without needing to wait for the build result @santolucito2018statically
+  pushes a commit and without needing to wait for the build result [@santolucito2018statically]
   * ACONA capable of predicting build failure in CI environment for newer projects with less 
-  data available @ni2018acona
+  data available [@ni2018acona]
 
 
 #### Importance of the Build Process
 
 The build process is an important part of a project that uses VCS in the way that based on the findings
-from @hassan2018hirebuild 22% of code commits include changes in build script files for either
+of Hassan et al. [@hassan2018hirebuild], 22% of code commits include changes in build script files for either
 build working or build fixing purposes. 
 
 #### CI Users Satisfaction
 
-Moreover, recent studies have focused on how satisfied the 
-users of CI tools are, one particular paper @widder2018m analyzing what factors have an impact on
-abandonment of Travis&nbsp;CI. The paper finds that increased build complexity reduces the chance 
-of abandonment, but larger projects abandon at a higher rate and that a project's language has 
-significant but varying effect. A surprising result is that metrics of configuration attempts 
-and knowledge dispersion in the project do not affect the rate of abandonment.
+Moreover, recent studies have focused on how satisfied the users of CI tools are, one particular paper 
+by Widder et al. [@widder2018m] analyzing what factors have an impact on abandonment of Travis&nbsp;CI. 
+This paper finds that increased build complexity reduces the chance of abandonment, but larger projects 
+abandon at a higher rate and that a project's language has significant but varying effect. A surprising 
+result is that metrics of configuration attempts and knowledge dispersion in the project do not affect 
+the rate of abandonment.
 
 #### Patent for Predicting Build Errors
 
-@bird2017predicting introduce a method for predicting software build errors. This US patent is owned
-by Microsoft. Having logistic regression as machine learning technique, the paper is able to compute 
-the probability of a build to fail. Using this method build errors can be better anticipated, 
-which decreases the time between working builds.
+In reference [@bird2017predicting], Bird et al. introduce a method for predicting software build errors. 
+This US patent is owned by Microsoft. Having logistic regression as machine learning technique, 
+the paper is able to compute the probability of a build to fail. Using this method build errors can be 
+better anticipated, which decreases the time between working builds.
 
 
 #### Predicting Build Time
 
 Another important aspect is the impact of CI on the development process efficiency. One of the
-papers that addresses this matters is @bisong2017built. This paper aims to find a balance between
-the frequency of integration and developer's productivity by proposing machine learning models
-that were able to predict the build taking advantage of the 56 features presented in TravisTorrent 
-build records. Their models performed quite well with an R-Squared of around 80%, meaning that they
-were able to capture the variation of build time over multiple projects. Their research could be 
-useful on one hand for software developers and project managers for a better time management scheme 
+papers that addresses this matters is the one written by Bisong et al. [@bisong2017built]. This paper 
+aims to find a balance between the frequency of integration and developer's productivity by proposing 
+machine learning models that were able to predict the build taking advantage of the 56 features presented
+in TravisTorrent build records. Their models performed quite well with an R-Squared of around 80%, 
+meaning that they were able to capture the variation of build time over multiple projects. Their research 
+could be useful on one hand for software developers and project managers for a better time management scheme 
 and on the other hand for other researchers that may improve their proposed models. 
 
 #### Predicting Build Failures
 
 Moreover, the usage of automation build tools introduces a delay in the development cycle generated by
-the waiting time until the build finish successfully. One of the most recent papers analyzed 
-@santolucito2018statically presents a tool VeriCI capable of checking the errors in CI configurations 
-files before the developer pushes a commit and without needing to wait for the build result. This paper
-focuses on prediction of build failure without using metadata like number of commits, code churn also 
-in the learning process, but relying on the actual user programs and configuration scripts. This fact 
-makes the identification of the error cause possible. VeriCI achieves 83% accuracy of predicting build 
-failure on real data from GitHub projects and 30-48% of time the error justification provided by the 
-tool matched the actual error cause. These results seem promising, but there is a need in focusing
-more on producing the error justification fact that could make the use of machine learning tools in
-real build analytics tools achievable and tolerated.
+the waiting time until the build finish successfully. One of the most recent analyzed papers by
+Santolucito et al. [@santolucito2018statically] presents a tool VeriCI capable of checking the errors 
+in CI configurations files before the developer pushes a commit and without needing to wait for the 
+build result. This paper focuses on prediction of build failure without using metadata like number of 
+commits, code churn also in the learning process, but relying on the actual user programs and configuration 
+scripts. This fact makes the identification of the error cause possible. VeriCI achieves 83% accuracy of 
+predicting build failure on real data from GitHub projects and 30-48% of time the error justification provided
+by the tool matched the actual error cause. These results seem promising, but there is a need in focusing
+more on producing the error justification fact that could make the use of machine learning tools in real
+build analytics tools achievable and tolerated.
 
 #### Prediction with Less Data Available
 
@@ -221,9 +221,9 @@ for predicting the outcome of builds, most of this techniques cannot be trained 
 large project past data. The problem that resulted from this is newer project being unable to take 
 advantage of the research conducted before and having to wait until enough data from their project
 is generated in order to sufficiently train machine learning models from predicting the build outcome.
-The most recent paper of this survey which is only published as a poster in June 2018, @ni2018acona,
-addresses the problem of build failure prediction in CI environment for newer projects with less 
-data available. It is using already trained models from other project with more data available and 
+In reference @ni2018acona, the most recent paper of this survey which is only published as a poster 
+in June 2018, Ni et al. address the problem of build failure prediction in CI environment for newer projects 
+with less data available. It is using already trained models from other project with more data available and 
 combined them by the means of active learning in order to find which of that models generalized better 
 from the problem in hand and to update the models weights accordingly. It is also aimed to cut the expense 
 that CI introduce by reducing the label data necessarily for training. Even if the method seems promising, 
