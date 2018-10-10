@@ -86,7 +86,7 @@ can be separated into two main categories: tools and guidelines. This section wi
 overview of all state of the art tools and guidelines that satisfy our search criteria. This overview is used to answer **RQ1**.
 
 ### Tools
-In the table below the tools that will be discussed are mentioned. These the tools will be discussed in more detail in order to answer the **RQ1**.
+The table below shows a quick overview of the tools used to answer **RQ1**.
 
   |Reference   |  Tool                |  Description                            |
   |------------|-----------------------|------------------------------------------|
@@ -160,20 +160,10 @@ possibility, with growing demand for energy efficiency, that the amount and qual
 increase in the near future. 
 
 ### Guidelines
+Another aspect of the state of the art are the currently proposed guidelines for energy awerness and improvements. To answer **RQ1**, seven papers have been selected who present guidelines. The research by Cruz et. al. [@CA2017] shows that, interesting enough, the best practices provided by Google fall short in addressing energy consumption. However they come up with guidelines that do give improvements. Their guideline shows that correct usage of Android methods such as _iewHolder_, _DrawAllocation_, _WakeLock_, _ObsoleteLayoutParam_, and _Recycle_ improved energy efficiency.
+From the research by McIntosh et. al.[@MSA2018] it is noted that machine learning is now also implemented by excited developers into their apps, having an impact on the mobile device's battery life. They have combined empirical measurements of different machine learning algorithm implementations with complexity theory to provide the guideline that some implementations of algorithms, such as J48, MLP and SMO, generally perform better than others. However they also recommend that for optimal results developers must consider their own specific application since many factors, e.g. dataset size, can influence the performance.
+Finally Li et. al.[@LH2014] researched commonly recommended energy saving practices, to see if they are valid. The topics they investigated included optimizing the sending of HTTP packets, memory usage, array lengths, static invocations, and field access. Their work gives guidance for mobile app developers. Especially bundling network packets up to a certain size and using certain coding practices for reading array length information, accessing class fields, and performing invocations all led to reduced energy consumption.
 
-  |Reference | Area  | Description|
-  |--------|---------------------------------|--------------------------------------------------------------|
-  |@MSA2018 | Energy saving coding practices  | Guidelines for energy saving mobile apps |
-  |@CA2017  | Energy saving coding practices  | Evaluating effectiveness of several energy saving practices  |
-  |@AKG2015 | Cloud applications  | Guidelines for balancing quality of service and energy consumption |
-  |@BAW2017 | Parameter optimization  | Learn hardware specific energy models  |
-  |@MPF2018 & MPF2017 | Cryptography  | Energy consumption of cryptographic primitives |
-  |@BSB2017 | Software structure  | Relate software structural metric to power consumption |
-  |@LH2014  | Energy saving coding practices  | Empirical evaluation of commonly suggested practices"  |
-  
-
-The guidelines presented in these papers aim to either provide general coding practices or they 
-explain how to involve energy efficiency in a specific domain.
 
 ## RQ2: State of Practice
 Now that we have an overview of the state of the art regarding energy consumption on Android driven 
