@@ -19,7 +19,7 @@ the management of changes to documents, source code and other collections of inf
 <!-- The following paragraph is prone to errors when auto formatting. After a ..^[..] or ..^[..],
 there _must_ be a space, else it is interpreted as superscript. --> 
 
-### Build definition
+### Build Definition
 Build analytics covers research done on data extracted from a build process inside a project. This
 contains among others, build logs from Continuous Integration such as Travis&nbsp;CI^[See
 https://travis-ci.org/], Circle&nbsp;CI^[See https://circleci.com/], Jenkins^[See https://jenkins.io/], 
@@ -32,7 +32,7 @@ information is often paired with data from Version Control Systems such as Git.
  - Define context
  -->
 
-### Research questions
+### Research `Questions
 We aimed to make a complete overview of build analytics field from analyzing current both
 state of the art and state of practice to inspecting the future research that could be done
 and finally conclude our survey with the research questions that emerged after this exhaustive
@@ -68,9 +68,9 @@ In this section we will explore where new challenges lie in the field of build a
 also show what open research items are described in the papers. This section ends with research
 questions based on the open research and challenges in current research.
 
-## Research protocol {#build-analytics-research-protocol}
+## Research Protocol {#build-analytics-research-protocol}
 
-### Search strategy
+### Search Strategy
 Taking advantage of the initial seed consisting of Bird and Zimmermann @bird2017predicting,
 Beller et al. @beller2017oops, Rausch et al. @rausch2017empirical, Beller et al. TravisTorrent @beller2017travistorrent,
 Pinto et al. @pinto2018work, Zhao et al. @zhao2017impact, Widder et al. @widder2018m and
@@ -80,7 +80,7 @@ search for other relevant build analytics domain papers. The keywords used were:
 build analytics, machine learning, build time, prediction, continuous integration, build failures,
 active learning, build errors, mining, software repositories, open-source software.
 
-### Selection criteria
+### Selection Criteria
 In order to provide a valid current overview of build analytics field, we selected only the
 relevant papers that were published after 2008, in other words we have not included papers older than
 10 years. We had chosen 10 years as our threshold being inspired by "ICSE-Most Influential Paper
@@ -92,7 +92,7 @@ research two papers, as they are case studies on a couple of project and do not 
 techniques or applications.
 
 
-### Selected papers
+### Selected Papers
 
 | Paper with reference              							              | Source              |  RQ      | Notes |
 | ------------------------------------------------------------ 	| ------------------- | -------- | ----- |                
@@ -128,7 +128,7 @@ techniques or applications.
  
 ## Answers
 
-### Build analytics state of the art
+### Build Analytics State of the Art
 **RQ1**: What is the current state of the art in the field of build analytics?
 
 The current state-of-the-art in the build analytics domain refers to the use of machine learning techniques
@@ -166,13 +166,13 @@ The tools that are being proposed are:
   data available @ni2018acona
 
 
-*Importance of the build process* 
+*Importance of the Build Process* 
 
 The build process is an important part of a project that uses VCS in the way that based on the findings
 from @hassan2018hirebuild 22% of code commits include changes in build script files for either
 build working or build fixing purposes. 
 
-*CI users satisfaction*
+*CI Users Satisfaction*
 
 Moreover, recent studies have focused on how satisfied the 
 users of CI tools are, one particular paper @widder2018m analyzing what factors have an impact on
@@ -181,7 +181,7 @@ of abandonment, but larger projects abandon at a higher rate and that a project'
 significant but varying effect. A surprising result is that metrics of configuration attempts 
 and knowledge dispersion in the project do not affect the rate of abandonment.
 
-*Patent for predicting build errors*
+*Patent for Predicting Build Errors*
 
 @bird2017predicting introduce a method for predicting software build errors. This US patent is owned
 by Microsoft. Having logistic regression as machine learning technique, the paper is able to compute 
@@ -189,7 +189,7 @@ the probability of a build to fail. Using this method build errors can be better
 which decreases the time between working builds.
 
 
-*Predicting build time*
+*Predicting Build Time*
 
 Another important aspect is the impact of CI on the development process efficiency. One of the
 papers that addresses this matters is @bisong2017built. This paper aims to find a balance between
@@ -200,7 +200,7 @@ were able to capture the variation of build time over multiple projects. Their r
 useful on one hand for software developers and project managers for a better time management scheme 
 and on the other hand for other researchers that may improve their proposed models. 
 
-*Predicting build failures*
+*Predicting Build Failures*
 
 Moreover, the usage of automation build tools introduces a delay in the development cycle generated by
 the waiting time until the build finish successfully. One of the most recent papers analyzed 
@@ -214,7 +214,7 @@ tool matched the actual error cause. These results seem promising, but there is 
 more on producing the error justification fact that could make the use of machine learning tools in
 real build analytics tools achievable and tolerated.
 
-*Prediction with less data available*
+*Prediction with Less Data Available*
 
 Even if there were considerable efforts in developing powerful and accurate machine learning models
 for predicting the outcome of builds, most of this techniques cannot be trained properly without
@@ -235,7 +235,7 @@ the results presented in the poster shows an F-Measure (harmonic average of reca
     - Topics that are being explored
     - Research methods, tools and datasets being used
     - Main research findings, aggregated -->
-### Build analytics state of practice
+### Build Analytics State of Practice
 **RQ2**: What is the current state of practice in the field of build analytics?
 
 Continuous Integration (CI) is a development practice that requires developers to integrate code into a 
@@ -359,7 +359,7 @@ to find and remove. The above practices are important for the smooth functioning
 <!--
     - Tools and companies creating / employing them
     - Case studies and their findings -->
-### Build analytics future research
+### Build Analytics Future Research
 **RQ3**: What future research can we expect in the field of build analytics?
 
 Currently research on build analytics is limited by some challenges, some are specific to
