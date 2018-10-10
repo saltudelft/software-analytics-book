@@ -14,12 +14,16 @@ thriving domain within Runtime and performance analysis.
 ## Introduction
 Energy consumption plays a big role in day-to-day usage of software. Especially in the field of 
 software development for mobile devices, for which energy consumption results in a negative effect 
-on the battery duration and hence limiting the usage time of the device. Although the importance of 
-energy efficient software is clear, programmers lack the knowledge of the best practices to reduce 
-software energy consumption, and education is not focused on this field either [@PHA2016]. In an 
-analysis of questions posted on StackOverflow on the topic of energy efficiency performed by Pinto 
-et. al. [@PCL2014] it was found that although programmers had questions related to energy 
-efficiency, they rarely got the appropriate advice. 
+on the battery duration and hence limiting the usage time of the device. Even more so battery life 
+is seen as very important to most smartphone owners. Ninety two percent Of potential smartphone 
+buyers consider battery life as a significant factor in their selection criteria[@OOC2017]. 
+From the same research it is also found that 66% of smartphone owners would pay more for a device 
+with longer battery life, and 63% is unsatisfied with theirs devices' battery life. 
+Although the importance of energy efficient software is clear, programmers lack the knowledge of
+the best practices to reduce software energy consumption, and education is not focused on this 
+field either [@PHA2016]. In an analysis of questions posted on StackOverflow on the topic of 
+energy efficiency performed by Pinto et. al. [@PCL2014] it was found that although programmers 
+had questions related to energy efficiency, they rarely got the appropriate advice. 
 With over 2 billion daily smartphone and tablet users worldwide [@NPPPZL2017] it is clear that 
 this lack of knowledge needs to be addressed. To help the programmers close this knowledge gap, 
 hardware-based tools have been introduced. These tools can determine the energy profile of an 
@@ -27,19 +31,19 @@ application with high precision, but it means the costly hardware components nee
 acquired[@NPPPZL2017]. Software-based solutions solve the problem of requiring expensive 
 hardware, and are easier to use, but also less precise. 
 
-In this chapter the current state of energy efficiency in software development for mobile devices 
-will be analysed. This research will be conducted by following three research questions:
+In this chapter we represent the current state of energy efficiency in software development for 
+apps. For this we set up the following three research questions:
 
 * **RQ1:** What is the state of the art of energy efficiency in software development for mobile 
-devices?
+apps?
 * **RQ2:** What is the state of practice for energy efficiency in software development for mobile 
-devices?
-* **RQ3:** What future work needs to be researched in the field of energy efficiency in software 
-development for mobile devices?
+apps?
+* **RQ3:** What future work needs to be done in the field of energy efficiency in software 
+development for mobile apps?
 
-In the following paragraph the methodology of the research will be elaborated. After that each 
-research questions will be answered in a separate paragraph. In the last paragraph of this chapter 
-the conclusion on energy efficiency in software development for mobile devices will be made.
+In the following paragraph the methodology of the study we have followed will be presented. 
+After that each research questions will be answered. In the last paragraph of this chapter 
+the conclusion on energy efficiency in software development for apps will be made.
 
 
 ## Methodology
@@ -74,12 +78,12 @@ To answer **RQ1** a more in-depth look at available tools for the energy efficie
 The focus for **RQ2** is on what is currently used in Android application that are actively used. 
 **RQ3** is answered by the finding of the papers used for both **RQ1** and **RQ2**.
 
-## State of the Art
+## RQ1: State of the Art
 
 Many researchers found that there is increasing demand for energy efficient software. In their 
 research they often propose state of the art approaches to assisting developers. These approaches 
 can be separated into two main categories: tools and guidelines. This section will contain an 
-overview of all state of the art tools and guidelines that satisfy our search criteria. This overview is used to  answer **RQ1**.
+overview of all state of the art tools and guidelines that satisfy our search criteria. This overview is used to answer **RQ1**.
 
 ### Tools
 In the table below the tools that will be discussed are mentioned. These the tools will be discussed in more detail in order to answer the **RQ1**.
@@ -171,7 +175,7 @@ increase in the near future.
 The guidelines presented in these papers aim to either provide general coding practices or they 
 explain how to involve energy efficiency in a specific domain.
 
-## State of Practice
+## RQ2: State of Practice
 Now that we have an overview of the state of the art regarding energy consumption on Android driven 
 mobile devices, we investigate what the current state of practice is. In this section, we try to 
 find an answer to **RQ2** stated in the introduction by going through the papers we have retrieved using
@@ -241,7 +245,7 @@ paper suggests that there are definitely cases where developers are not certain 
 saving change. This might be caused by the fact that there are few user friendly tools available for
 aiding developers in making energy-aware decisions. 
 
-## Future research
+## RQ3: Future research
 In this section we will take a look at the suggested future research directions that have been 
 mentioned in the papers used in this survey. We attempt to extract some general trend from the 
 future research suggestions that are included. One of the fields of research we looked at in the 
