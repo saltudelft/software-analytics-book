@@ -13,8 +13,9 @@ contemporary and thriving domain within runtime and performance analysis.
 
 ## Introduction
 Energy consumption is an important factor in the day-to-day usage of software. Especially in the
-field of software development for mobile devices, considering energy consumption determines the battery-life and limites the usage time of the device. Additionally, battery life is seen as very
-important to most smartphone owners. Ninety two percent Of potential smartphone
+field of software development for mobile devices, considering energy consumption determines the 
+battery-life and limites the usage time of the device. Additionally, battery life is seen as very
+important to most smartphone owners. Ninety two percent of potential smartphone
 buyers consider battery life as a significant factor in their selection criteria[@OOC2017]. 
 From the same research it is also found that 66% of smartphone owners would pay more for a device 
 with longer battery life, and 63% is unsatisfied with theirs devices' battery life. 
@@ -28,14 +29,14 @@ this lack of knowledge needs to be addressed. To help the programmers close this
 hardware-based tools have been introduced. These tools can determine the energy profile of an 
 application with high precision, but it means the costly hardware components need to be 
 acquired[@NPPPZL2017]. Software-based solutions solve the problem of requiring expensive 
-hardware, and are easier to use, but also less precise. 
+hardware and are easier to use, but also less precise. 
 
 In this chapter we represent the current state of energy efficiency in software development for 
 apps. For this we set up the following three research questions:
 
 * **RQ1:** What is the state of the art of energy efficiency in software development for mobile 
 apps?
-* **RQ2:** What is the state of practice for energy efficiency in software development for mobile 
+* **RQ2:** What is the state of practice of energy efficiency in software development for mobile 
 apps?
 * **RQ3:** What future work needs to be done in the field of energy efficiency in software 
 development for mobile apps?
@@ -46,9 +47,9 @@ the conclusion on energy efficiency in software development for apps will be mad
 
 
 ## Methodology
-In order to answers the research questions, over 30 papers in the selected field have been
-selected. These papers have been found by searching on Google Scholar with a set of filters. First
-off, only papers from the following journals and conference are selected:
+In order to answer the research questions, we have retrieved over 30 papers from the selected 
+field. These papers have been found by searching on Google Scholar with a set of filters. 
+First off, only papers from the following journals and conferences are selected:
 
 * ACM Transactions on Software Engineering Methodology (TOSEM),
 * Empirical Software Engineering (EMSE),
@@ -70,12 +71,13 @@ Given these two criteria the following search queries have been used:
 * "Android AND Energy Efficiency AND Software"
 * "Energy AND Android AND Runtime AND Analysis AND performance AND Software"
 
-From the selected papers some backward and forward references have also been selected, to get a 
+From the selected papers some backward and forward references have also been selected to get a 
 complete picture. All papers are also checked for relevance to the topic.
 
-To answer **RQ1** a more in-depth look at available tools for the energy efficiency is performed. 
-The focus for **RQ2** is on what is currently used in Android application that are actively used. 
-**RQ3** is answered by the finding of the papers used for both **RQ1** and **RQ2**.
+To answer **RQ1**, a more in-depth investigation into available tools and guidelines for the 
+energy efficiency is performed. For **RQ2**, the focus lies on what tools, guidelines and best 
+practices are currently being used in mobile software development. **RQ3** is answered by the 
+finding of the papers used for both **RQ1** and **RQ2**.
 
 ## RQ1: State of the Art
 
