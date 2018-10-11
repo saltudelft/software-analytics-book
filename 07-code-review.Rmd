@@ -119,7 +119,6 @@ list, respectively.
 | Review participation in modern code review                                                                    | 2017 | @thongtanunam2017review     | 29-09-2018  | 10            |                  |
 | Mining the Modern Code Review Repositories: A Dataset of People, Process and Product                          | 2016 | @yang2016mining             | 29-09-2018  | 12            |                  |
 | Automatically recommending peer reviewers in modern code review                                               | 2016 | @zanjani2016automatically   | 29-09-2018  | 7             |                  |
- 
 
 ### By reference
 The following table lists all candidates that have been found by being referenced by another paper
@@ -333,7 +332,6 @@ Not applicable
 understood, systematized and applied to software engineering workflow with more precision than the
 best practice currently prescribes. 
 
-
 ### Design and code inspections to reduce errors in program development
 Reference: @fagan2002design
 
@@ -454,7 +452,6 @@ original version of the paper has been included in this survey.
 Reference:@baysal2013influence
 
 #### Summary
-
 This paper focus on the influence of several non-technical factors on code review response time and outcome. An empirical study of code review process for WebKit, 
 a large open source project was described to see the influence. Specifically, the authors replicated some previously studied factors and extended several more factors that had not beed explored. 
 
@@ -465,7 +462,6 @@ a large open source project was described to see the influence. Specifically, th
 * *Datasets*:  WebKit code review data extracted from Bugzilla.
 
 #### Research questions and answers
-
 * *What factors can influence how long it takes for a patch to be reviewed?* 
 The organizational and personal factors influence review timeliness. Some factors that influenced the time required to review a patch, such as the size of the patch itself or the part of the code base being modified,
  are unsurprising and are likely related to the technical complexity of a given change. The most influential factors of the code review
@@ -482,7 +478,6 @@ Not applicable
 #### Future research challenges
 * Research on studying how best to interpret empirical software engineering research within the context of contextual factors.
 Understanding the reasons behind observable developer behaviour requires an understanding of the contexts, processes, organizational and individual factors that can influence code review and its outcome.
-
 
 ### Who should review my code? A file location-based code-reviewer recommendation approach for modern code review
 Reference: @thongtanunam2015should
