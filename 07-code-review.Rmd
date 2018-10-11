@@ -129,11 +129,10 @@ we found.
 |----------------------------------------------------------------------------------------|------|-------------------------|---------------|------------------|
 | A Faceted Classification Scheme for Change-Based Industrial Code Review Processes      | 2016 | @baum2016faceted        |               |                  |
 | The Choice of Code Review Process: A Survey on the State of the Practice               | 2017 | @baum2017choice         |               |                  |
-| The influence of non-technical factors on code review                                  | 2013 | @baysal2013influence    |               |                  |
+| The influence of non-technical factors on code review                                  | 2013 | @baysal2013influence    |               | Y                |
 | Impact of peer code review on peer impression formation: A survey                      | 2013 | @bosu2013impact         |               |                  |
 | Software Reviews: The State of the Practice                                            | 2003 | @ciolkowski2003software |               |                  |
-| Code reviews do not find bugs: how the current code review best practice slows us down | 2015 | @czerwonka2015code      |  Zequn                 |     Y            |
-| The Influence of Non-technical Factors on Code Review                                  | 2013 | @baysal2013influence    |  Zequn  |Y|
+| Code reviews do not find bugs: how the current code review best practice slows us down | 2015 | @czerwonka2015code      | Zequn         | Y                |
 
 ## Collected data
 This section contains data collected from all resources included in the survey, according to the
