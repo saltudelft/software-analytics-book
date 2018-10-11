@@ -88,7 +88,7 @@ included in the survey in the end or if it has been excluded for some reason. If
 excluded, the reason will be stated in the section *Excluded papers*.
 
 ### Initial seed
-These following table lists all initial seed papers provided by the course instructor that conform to the
+The following table lists all initial seed papers provided by the course instructor that conform to the
 stated criteria. They are listed in alphabetical order of the first author's name, and then by publish year.
 
 | Title                                                                                                                               | Year | Reference                  | In survey? (Y/N) |
