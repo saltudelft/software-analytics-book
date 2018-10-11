@@ -77,15 +77,15 @@ synthesized the answers to our research questions.
 
 All the papers that were found, were stored in a custom-built web-based tool for
 conducting literature reviews.
-The source code of this tool is published in a
-[GitHub repository](https://github.com/jessetilro/research).
+The source code of this tool is published in a GitHub repository.
+^[See https://github.com/jessetilro/research]
 The tool was hosted on a virtual private server, such that all retrieved
 publications were stored centrally, accessible to all reviewers.
 
 In order to save space in this chapter of the book,
 we have omitted the full research protocol from this chapter.
-The interested can find our research protocol in detail on
-[this wiki](https://github.com/nsalminen/software-analytics-book/wiki).
+The interested can find our research protocol in detail in
+[Section 7.5](#appendix).
 
 ## Answers
 
@@ -485,10 +485,10 @@ _Table 1. Papers found indirectly by investigating citations of/by other papers.
 | @mantyla2015a   | is cited by | @rodriguez2017a   <br> @cesar2017a    |
 | @laukkanen2018a | has cited   | @laukkanen2017a                       |
 
-All the papers that were found, were stored in a custom built web-based tool for
+All the papers that were found, were stored in a custom-built web-based tool for
 conducting literature reviews.
-The source code of this tool is published in a
-[GitHub repository](https://github.com/jessetilro/research).
+The source code of this tool is published in a GitHub repository.
+^[See https://github.com/jessetilro/research]
 The tool was hosted on a virtual private server, such that all retrieved
 publications were stored centrally, accessible to all reviewers.
 
