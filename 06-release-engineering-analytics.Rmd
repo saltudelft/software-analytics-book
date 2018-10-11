@@ -5,7 +5,7 @@
 Release engineering is a software engineering discipline
 concerned with the development, implementation, and improvement of
 processes to deploy high-quality software reliably and predictably [@dyck2015a].
-Efforts spent within the development environment of a software system
+The changes made by developers of a software system
 should eventually be integrated and deployed such that end users may benefit
 from them.
 In recent years, release engineers have developed and
