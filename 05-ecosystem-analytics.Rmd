@@ -1,13 +1,15 @@
 # Ecosystem Analytics
 
 ## Motivation
-In the modern day and age, the majority of software products make use of external software or
-libraries to use the functionality (for example parsing JSON) of these libraries, without having
-to develop this functionality itself. Moreover, multiple languages, such as Python and Rust,
-provide package managers (pip[^1] and Cargo[^2] respectively) which can be used to easily manage
-this third-party functionality, as well as distribute it.
+In the modern day and age, it is popular to make use of external software or libraries in software
+projects to use the functionality (for example parsing JSON) of these libraries, without having
+to develop this functionality itself. For example, in 2016, the package manager npm recorded 18
+billion package downloads in one month @Linux2016. Moreover, multiple languages, such as Python
+and Rust, provide package managers (pip[^1] and Cargo[^2] respectively) which can be used to
+easily manage this third-party functionality, as well as distribute it.
 
-In parallel to this, the popularity of creating open source projects is on the rise as well. On
+In parallel to this, the popularity of creating open source projects is on the rise as well. At
+the package repository npm only, 4,685 libraries were added in one week in 2016 @Linux2016. On
 platforms such as GitHub[^3], it is easy and quick to create a new software project, which can be
 developed, reviewed and used by the whole community. This development leads to more libraries
 being developed and being available for public use.
@@ -138,7 +140,9 @@ The most common used ecosystem in the studied papers is _npm_[^5], as used by Ab
 @Abdalkareem2017, Bogart et al. @Bogart2016, Decan, Mens, and Claes @Decan2017, Kikas et al.
 @Kikas2017, and Decan, Mens and Grosjean @Decan2018. There are a few reasons why this is the most
 common used ecosystem throughout the papers. Firstly, npm is the largest software registry,
-according to their website[^5]. Moreover, npm is the package manager of JavaScript. Kikas et al.
+containing more than double of the next most populated package registry in 2016 @Linux2016.
+Moreover, npm is the package manager of JavaScript, which is the
+most used programming language according to a RedMonk survey @RedMonk2018. Kikas et al.
 @Kikas2017 explain that it is beneficial to use this ecosystem, because the majority of their
 packages are hosted on GitHub and Developers specify required packages in their project's
 dependency files. There are more ecosystems which have the same properties, such as RubyGems
@@ -210,7 +214,7 @@ most users use to manage their dependencies is lacking. Whether it be updating l
 updating at all, there are many risks bound to this. Dietrich, Jezek, and Brada @Dietrich2014 have
 also found that there are a lot of problems in the Java ecosystem, and has posed a set of
 relatively minor changes to both development tools and the Java language itself that could be very
-effective.
+effective. These improvements are highlighted by answering the last research question.
 
 ### RQ3: What are the open challenges in ecosystem analytics, for which future research is required?
 <!--List of challenges, research questions and an aggregated set of open research items -->
@@ -354,4 +358,3 @@ _Table 4.4: Papers selected which are referenced in previously selected papers. 
 [^2]: <https://crates.io/>
 [^3]: <https://github.com:>
 [^4]: <https://scholar.google.com>
-[^5]: <https://www.npmjs.com/>
