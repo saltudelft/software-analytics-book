@@ -291,67 +291,67 @@ by Fowler and Foemmel [@fowler2006continuous] are still commonly used today, par
 software industry as suggested by Stolberg [@stolberg2009enabling]. Below is an explanation of each of the practices suggested 
 by Fowler and Foemmel [@fowler2006continuous.]
 
-####Maintain a Single Source Repository
+#### Maintain a Single Source Repository
 
 The practice advocates the use of a revision control system for the project's source code. All artifacts required 
 to build the project should be placed in a single repository. This ensures that the system does not require 
 additional dependencies. It is preferred for changes to be integrated at least once a day. This makes it 
 easier to find and remove bugs. 
 
-####Automate the Build
+#### Automate the Build
 
 A single command should have the capability of building the system. A build script should be able to compile code, 
 execute unit tests and automate integration. Many build tools are frequently used in continuous integration 
 environments. Other functions that the build may include are code quality checks, semantic checks and
 measuring technical debt etc. 
 
-####Make Your Build Self-Testing
+#### Make Your Build Self-Testing
 
 Once the code is built, all tests should run to confirm that it behaves as the developer would expect it to behave.
 
-####Everyone Commits To the Mainline Every Day
+#### Everyone Commits To the Mainline Every Day
 
 This is one of the most important rules presented by Fowler and Foemmel [@fowler2006continuous]. By committing 
 regularly, every developer can reduce the number of conflicting changes. Checking in large data runs thee risk 
 of conflicting with other features and can be very challenging to resolve. Committing all changes at least once 
 a day is an integral practice of the CI framework. In addition, performing nightly builds in recommended. 
 
-####Every Commit Should Build the Mainline on an Integration Machine
+#### Every Commit Should Build the Mainline on an Integration Machine
 
 The system should build commits to the current working version to ensure that they integrate correctly. 
 A "nightly build" should also execute at a scheduled time every night. This build should include more 
 verification than the ones on other branches. It takes longer to run and is executed less frequently.
 
-####Fix Broken Builds Immediately
+#### Fix Broken Builds Immediately
 
 A broken build is anything that prevents the build from reporting success. This could be a compilation error, 
 failed test or inspection, problem with the database or failed deployment. In the CI environment, it is 
 important that these problems are fixed immediately. 
 
-####Keep the Build Fast
+#### Keep the Build Fast
 
 The build should complete rapidly, so if there is an issue with integration, it can be identified quickly. 
 A good practice is to have more fast-executing tests than slow tests. This means that you need to have more
 unit tests than other types of tests. 
 
-####Test in a Clone of the Production Environment
+#### Test in a Clone of the Production Environment
 
 Having a test environment can lead to failures in tested systems when they deploy in the production environment. 
 This is because the production environment may differ from the test environment. However, building a replica of 
 a production environment is cost effective. Thereby, testing in a clone of the production environment ensures 
 that your project is improving and not decaying.  
 
-####Make it Easy for Anyone to Get the Latest Executable
+#### Make it Easy for Anyone to Get the Latest Executable
 
 Builds should be readily available to stakeholders and testers as this can reduce the amount of rework required 
 when rebuilding a feature that does not meet requirements. In general, all programmers should start the day by 
 updating the project from the repository to ensure everyone is up to date. 
 
-####Everyone can see what's happening
+#### Everyone can see what's happening
 It should be easy to find out whether the build breaks and what/who made relevant changes. This ensures that 
 communication trickels down to all programmers and that everyone can see what's happening. 
 
-####Automate Deployment
+#### Automate Deployment
 It is important to write a script to deploy the application to a live test server that everyone can look at. 
   
 It is important to note that CI does not get rid of bugs, but it does make them dramatically easier
