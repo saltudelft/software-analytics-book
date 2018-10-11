@@ -126,7 +126,7 @@ of the following components:
     checking these revisions out on dedicated build machines,
     compiling them and running an initial set of tests to check for regressions."
 
-- **Continuous Deployment or Continuous Delivery (CD).**
+- **Continuous Deployment or Continuous Delivery.**
 
     When the CI tests pass, the code can be automatically deployed
     to the production environment.
@@ -138,12 +138,14 @@ of the following components:
 
 Besides these four components, @adams2016a also identified three other concepts
 that are used in modern release engineering,
-specifically to release software as often as possible and enable CD:
+specifically to release software as often as possible
+and thus enable continuous deployment or delivery:
 
 - **Branching and Merging.**
 
     There are several possible strategies of branching and merging.
-    Typically, in order to enable CD, merging must be done as often as possible.
+    Typically, merging must be done as often as possible
+    in order to release as often as possible.
 
 - **Build System.**
 
@@ -221,9 +223,10 @@ Although only the mailing lists of the projects were studied,
 defined challenges include keeping everyone informed and engaged,
 monitoring changes and setting priorities in cross-project coordination.
 
-@laukkanen2018a have described what effects modern release engineering have on software with 
-different organizational contexts. This study specifically focusses on continuous deployment 
-(CD) practices. The paper has found that high internal quality standards combined with the 
+@laukkanen2018a have described what effects modern release engineering
+have on software with different organizational contexts.
+This study specifically focusses on continuous deployment practices.
+The paper has found that high internal quality standards combined with the
 large distributed organizational context of large corporations slowed the verification process 
 down and therefore had a negative impact on release capability. However, in small 
 corporations, the lack of internal verification measures due to a lack of resources was 
