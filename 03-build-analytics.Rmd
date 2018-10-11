@@ -380,21 +380,22 @@ in the field of build analytics are:
  * @vassallo2018break
  * @beller2017oops
 
-In @bisong2017built the main limitation was the performance of the machine learning algorithm used.
-In the implementation R was used and it proved not capable of processing the amounts of data
-needed. This shows that it is important to choose the right tool when analyzing data.
+In Bisong et al.[@bisong2017built] the main limitation was the performance of the machine learning
+algorithm used. In the implementation R was used and it proved not capable of processing the
+amounts of data needed. This shows that it is important to choose the right tool when analyzing
+data.
 
-@pinto2018work notes that it's research and many others are done on open source software. There are
-still a lot of possibilities for researching on proprietary software projects.
+In Pinto and Rebouças[@pinto2018work] it is noted that research is often done on open source
+software. There are still a lot of possibilities for researching on proprietary software projects.
 
 Tools presented in papers might require a more large scale and long term study to verify that the
-tool presented keeps up when it is actually used [@santolucito2018statically].
+tool presented keeps up when it is actually used[@santolucito2018statically].
 
-Future research in build analytics branches in a couple of different topics. @pinto2018work
+Future research in build analytics branches in a couple of different topics. Pinto and Rebouças[@pinto2018work]
 proposes to focus on getting a better understanding of the users and why they might choose to
 abandon an automatic build platform.
 
-@baltes2018no suggests that in future research more perspectives when analyzing commit data should
+Baltes et al.[@baltes2018no] suggests that in future research more perspectives when analyzing commit data should
 be taken into account, for instance partitioning commits by developer. It also notes the importance
 of more qualitative research.
 
