@@ -164,7 +164,6 @@ we propose new categories that reflect better the state of the art in this field
 “Responding to reviews”, “Comparing Apps and App stores and Wearables”. In the following sections,
 we expand on each one of these with the revised literature.
 
-
 **Review Manipulation**
 
 Recently, significant attention has been paid to how the reviews and ratings can be used in order
@@ -189,9 +188,22 @@ number of considered apps (compared to the total number of apps in the main mark
 significant number of reviews that were taken into account. This makes sense, considering that the
 main purpose is to investigate the later. 
 
+Challenges & Future Research:
+* It is important to mix multiple sources of data in order to better identify suspicious
+  individuals. These include not only app stores, but also crowdsourcing sites and even social
+  networks. 
+* As the number of suspicious apps is not large, taking into account the size of the marketplace,
+  is important to correctly select the sample so there is enough information for the algorithms to
+  “learn”. 
+
+**Requirements Engineering**
+TODO
+
 **Mapping user reviews to source code**
+TODO
 
 **Privacy / app permissions**
+TODO
 
 **Responding to reviews**
 
