@@ -88,15 +88,14 @@ included in the survey in the end or if it has been excluded for some reason. If
 excluded, the reason will be stated in the section *Excluded papers*.
 
 ### Initial seed
-These following table lists all initial seed papers provided by the course intructor. They are
-listed in alphabetical order of the first author's name, and then by publish year.
+These following table lists all initial seed papers provided by the course instructor that conform to the
+stated criteria. They are listed in alphabetical order of the first author's name, and then by publish year.
 
 | Title                                                                                                                               | Year | Reference                  | In survey? (Y/N) |
 |-------------------------------------------------------------------------------------------------------------------------------------|------|----------------------------|------------------|
 | Expectations, outcomes, and challenges of modern code review                                                                        | 2013 | @bacchelli2013expectations | Y                |
 | Modern code reviews in open-source projects: Which problems do they fix?                                                            | 2014 | @beller2014modern          | Y                |
 | Lessons learned from building and deploying a code review analytics platform                                                        | 2015 | @bird2015lessons           | Y                |
-| Design and code inspections to reduce errors in program development                                                                 | 2002 | @fagan2002design           |                  |
 | An exploratory study of the pull-based software development model                                                                   | 2014 | @gousios2014exploratory    | Y                |
 | The impact of code review coverage and code review participation on software quality: A case study of the qt, vtk, and itk projects | 2014 | @mcintosh2014impact        | Y                |
 
@@ -506,3 +505,5 @@ been added to the final survey for the stated reason.
   Online, and hence we could not read it to include it in the survey.
 * @mcintosh2016empirical: This is an extended and improved version of a paper already included in
   the survey. Because of time constraints we will not reconsider this version.
+* @fagan2002design: This paper does not conform to our exclusion criterion saying that it should be published in 2008 or later.
+  Though it was included as a candidate bec
