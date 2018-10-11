@@ -158,7 +158,7 @@ specifically to release software as often as possible and enable CD:
 
     In the same alley of "storing configuration",
     infrastructure-as-code means that the server (or virtual machine)
-    on which the software product is running,
+    on which the software product is running
     can also be automatically configured with code,
     instead of having to configure each server manually.
 
@@ -244,7 +244,7 @@ This section aims to answer the question:
 _What aspects of modern release engineering make for
 relevant study objects in future software analytics research?_
 
-#### General suggestions
+#### General Suggestions
 
 The body of literature that we analyzed for this survey mostly comprised case
 studies that employed quantitative analysis methods.
@@ -284,7 +284,7 @@ taken into account.
 For example, the customer perceptions regarding the adoption of a certain
 practice can be investigated.
 
-#### Directions for specific practices
+#### Directions for Specific Practices
 
 **Rapid Releases**
 
@@ -408,8 +408,8 @@ and which we have found, but excluded from the review for a specific reason.
 Since release engineering is a relatively new research topic,
 we took an exploratory approach in collecting any literature revolving around
 the topic of release engineering from the perspective of software analytics.
-This aided us in determining a more narrow scope for our survey,
-subsequently allowing us to find additional literature fitting this scope.
+This aided us to determine a more narrow scope for our survey,
+subsequently to allow us to find additional literature to fit this scope.
 
 At the start of this project, we were provided with an initial seed of five
 papers as a starting point for our literature survey
@@ -555,6 +555,7 @@ This information can be used during the Data Synthesis phase
 to weigh the importance of individual studies [@kitchenham2004procedures].
 
 #### Data Extraction
+
 To accurately capture the information contributed by each publication in our
 survey, we will use a systematic approach to extracting data.
 To guide this process, we will be using a data extraction form which describes
@@ -604,6 +605,7 @@ Notes:
 ```
 
 #### Data Synthesis
+
 To summarize the contributions and limitations of each of the included
 publications, we will apply a descriptive synthesis approach.
 In this part of our survey, we will compare the data that was extracted of the
