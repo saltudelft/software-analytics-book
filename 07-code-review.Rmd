@@ -487,6 +487,46 @@ Understanding the reasons behind observable developer behaviour requires an unde
 ### Who should review my code? A file location-based code-reviewer recommendation approach for modern code review
 Reference: @thongtanunam2015should
 
+#### Summary
+This paper presents (1) research on how often a reviewer cannot be found for a code change and the
+influence of this on the time it takes to process a code change, (2) a tool (*RevFinder*) for automatically
+suggesting reviewers based on files reviewed previously, and (3) an empirical evaluation
+of that tool on four open-source projects.
+
+Of the researched projects, up to 30% of the code changes have problems finding a
+reviewer. These reviews take on average 12 days longer. Also, it is found that RevFinder works 3 to
+4 times better than an existing tool.
+
+#### For answering **RQ1**
+* *Sub-topic*: reviewers; tools
+* *Research method*: quantitative; empirical
+* *Tools*: Custom
+* *Datasets*: Custom: Gerrit review data from Android, OpenStack, Qt and LibreOffice
+
+#### Research questions and answers
+* *How do reviews with code-reviewer assignment problem impact reviewing time?* "4%-30% of reviews
+  have code-reviewer assignment problem. These reviews significantly take 12 days longer to approve
+  a code change. A code-reviewer recommendation tool is necessary in distributed software
+  development to speed up a code review process."
+* *Does RevFinder accurately recommend code-reviewers?* "RevFinder correctly recommended 79% of
+  reviews with a top-10 recommendation. RevFinder is 4 times more accurate than ReviewBot. This
+  indicates that leveraging a similarity of previously reviewed file path can accurately recommend
+  code-reviewers."
+* *Does RevFinder provide better ranking of recommended code-reviewers?* "RevFinder recommended the
+  correct code-reviewers with a median rank of 4. The code-reviewers ranking of RevFinder is 3
+  times better than that of ReviewBot, indicating that RevFinder provides a better ranking of
+  correct code-reviewers."
+
+#### For answering **RQ2**
+* *Tools*: Gerrit
+* *Company/Organization*: Google (Android), OpenStack, Qt, The Document Foundation (LibreOffice)
+* *Evaluation*: N/A
+
+#### For answering **RQ3**
+#### Future research challenges
+Researching how RevFinder works in practice, in terms of how effectively and practically it helps
+developers in recommending code-reviewers, when deployed in a live development environment.
+
 ### Revisiting code ownership and its relationship with software quality in the scope of modern code review 
 Reference: @thongtanunam2016revisiting
 
