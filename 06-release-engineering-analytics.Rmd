@@ -498,15 +498,17 @@ We selected the studies that we wanted to include in the survey
 with aid of the aforementioned tool for storing the papers.
 In this tool,
 it is possible to label papers with tags and leave comments and ratings.
-Every paper is reviewed based on the selection criteria.
+Every paper is reviewed based on the inclusion and exclusion criteria.
 Based on this, the tool allowed to filter out all papers
 that appeared not to be relevant for this literature survey.
 
-The selection criteria are as follows:
+We only used one exclusion criteria: studies that are published before 2014,
+will not be included in our survey (this is enforced by our search query).
+The inclusion criteria are as follows:
 
-1. The study must show (at least) one release engineering technique.
-2. The study must not just show a release engineering technique,
-   but analyze its performance compared to other techniques.
+- The study must show (at least) one release engineering technique.
+- The study must not just show a release engineering technique,
+  but analyze its performance compared to other techniques.
 
 The last subsection of this appendix lists which studies
 were selected and which were discareded.
