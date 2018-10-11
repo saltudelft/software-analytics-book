@@ -256,6 +256,8 @@ overview of the current state of the art in build analytics domain are:
  * Continuous Integration [@fowler2006continuous]
  * Enabling Agile Testing Through Continuous Integration [@stolberg2009enabling]
  * Travistorrent: Synthesizing Travis Ci and Github for Full-Stack Research on Continuous Integration [@beller2017travistorrent]
+ * I’im Leaving You, Travis: A Continuous Integration Breakup Story [@widder2018m]
+
 
  
  The topics that are being explored are:
@@ -293,10 +295,11 @@ by Fowler and Foemmel [@fowler2006continuous.]
 
 #### Maintain a Single Source Repository
 
-The practice advocates the use of a revision control system for the project's source code. All artifacts required 
-to build the project should be placed in a single repository. This ensures that the system does not require 
-additional dependencies. It is preferred for changes to be integrated at least once a day. This makes it 
-easier to find and remove bugs. 
+The practice advocates the use of a revision control system for the project’s source code. All artefacts 
+required to build the project should be placed in a single repository. This ensures that the system does not
+require additional dependencies. It is preferred for changes to be integrated at least once a day. This makes 
+it easier to find and remove bugs. The framework is not difficult to implement with the growing popularity of 
+Version Control Systems (VCS) such as GitHub, and hosted build automation platforms such as Travis (@beller2017travistorrent).
 
 #### Automate the Build
 
@@ -307,7 +310,9 @@ measuring technical debt etc.
 
 #### Make Your Build Self-Testing
 
-Once the code is built, all tests should run to confirm that it behaves as the developer would expect it to behave.
+Once the code is built, all tests should run to confirm that it behaves as the developer would expect it to behave. 
+In this way, we are finding and eradicating software bugs earlier. This saves copious amounts of time in
+the integrating phase. 
 
 #### Everyone Commits To the Mainline Every Day
 
@@ -331,8 +336,9 @@ important that these problems are fixed immediately.
 #### Keep the Build Fast
 
 The build should complete rapidly, so if there is an issue with integration, it can be identified quickly. 
-A good practice is to have more fast-executing tests than slow tests. This means that you need to have more
-unit tests than other types of tests. 
+As explored by Widder et al.[ @widder2018m], one of the factors that lead to companies abandoning the CI 
+framework is the complexity of the build. A good practice is to have more fast-executing tests than slow tests. 
+This means that you need to have more unit tests than other types of tests. 
 
 #### Test in a Clone of the Production Environment
 
@@ -348,11 +354,15 @@ when rebuilding a feature that does not meet requirements. In general, all progr
 updating the project from the repository to ensure everyone is up to date. 
 
 #### Everyone can see what's happening
-It should be easy to find out whether the build breaks and what/who made relevant changes. This ensures that 
-communication trickels down to all programmers and that everyone can see what's happening. 
+It should be easy to find out whether the build breaks and what/who made relevant changes. Continuous Integration
+is all about communication, so it is important to ensure that everyone can easily see the current state of the
+system. This is also another reason why CI works really well in the agile industry [@stolberg2009enabling]. 
+Both techniques stress the importance of good communication. 
 
 #### Automate Deployment
 It is important to write a script to deploy the application to a live test server that everyone can look at. 
+This is an integral aspect of CI as you are moving executables between different environments several times a day.
+Automating this process will save time and allow you to deploy the application into any environment easily. 
   
 It is important to note that CI does not get rid of bugs, but it does make them dramatically easier
 to find and remove. The above practices are important for the smooth functioning of CI framework. These practices
