@@ -113,15 +113,15 @@ of the following components:
 
 - **DevOps.**
 
-    According to @dyck2015a, DevOps is "an organizational approach
+    According to @dyck2015a: "DevOps is an organizational approach
     that stresses empathy and cross-functional collaboration
     within and between teams (especially development and IT operations)
     in software development organizations, in order to operate
-    resilient systems and accelerate delivery of changes.
+    resilient systems and accelerate delivery of changes."
 
 - **Continuous Integration (CI).**
 
-    To quote @adams2016a: CI "refers to the activity of continuously polling the
+    To quote @adams2016a: "[CI] refers to the activity of continuously polling the
     [version control system] for new commits or merges,
     checking these revisions out on dedicated build machines,
     compiling them and running an initial set of tests to check for regressions."
