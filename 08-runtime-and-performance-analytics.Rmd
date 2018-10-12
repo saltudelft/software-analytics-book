@@ -62,9 +62,9 @@ First off, only papers from the following journals and conferences are selected:
 * Working Conference on Mining Software Repositories (MSR)
 * Symposium on Operating Systems Design and Implementation (OSDI)
 
-The following criteria is given by the activity and how relatively new the field is. The
-preference is given to papers which are published not too long ago, preferably after 2012. But if
-well cited, and with interesting findings, older papers can also be used.
+Furthermore, the preference is given to papers which are published not too long ago, preferably 
+after 2012. But if the paper is cited a lot and if it contains interesting findings, older 
+papers can also be used.
 
 Given these two criteria the following search queries have been used:
 
@@ -81,11 +81,11 @@ finding of the papers used for both **RQ1** and **RQ2**.
 
 ## RQ1: State of the Art
 
-Many researchers found that there is increasing demand for energy efficient software. In their 
-research they often propose state of the art approaches to assisting developers. These approaches 
-can be separated into two main categories: tools and guidelines. This section will contain an 
-overview of all state of the art tools and guidelines that satisfy our search criteria. This 
-overview is used to answer **RQ1**.
+Many researchers found that there is an increasing demand for energy efficient software. In 
+their research they often propose state of the art approaches which assist developers. These 
+approaches can be separated into two main categories: tools and guidelines. This section will 
+contain an overview of all state of the art tools and guidelines that satisfy our search 
+criteria. This overview is used to answer **RQ1**.
 
 ### Tools
 The table below shows a quick overview of the tools used to answer **RQ1**.
@@ -98,7 +98,7 @@ The table below shows a quick overview of the tools used to answer **RQ1**.
   |@SKHA2018    | APOA                  | Compare energy consumption of apps       |
   |@BCBR2017    | Energy Patch          | Detect, validate and repair energy leaks |
   |@NPPPZL2017B | PETrA                 | Measure energy consumption of apps       |
-  |@PSCS2018    | jStanley              | Detect and improve energy bugs in java   |
+  |@PSCS2018    | jStanley              | Detect and improve energy bugs in Java   |
 
 _Leafactor_
 
@@ -112,14 +112,14 @@ energy optimizations.
 _NavyDroid_
 
 NavyDroid is a tool created on top of the Java Pathfinder (JPF). Being constructed as a
-strengthened DFA (deterministic finite automaton) it can accurately simulate the paused
+strengthened DFA (deterministic finite automaton), it can accurately simulate the paused
 state, the killed state and related state transitions of an activity. This way it can
 detect complex patterns of wake lock misuses (for example multiple lock aquisitions). 
 
 _Static analysis tool_
 
 The proposed static analysis is a novel static optimization technique for eliminating
-drawing commands to produce energy-efficient apps. The technique is explointing the
+drawing commands to produce energy-efficient apps. The technique is exploiting the
 insight that static analysis is able to predict future behavior of the app. With the
 examples of _loop invariant texture analysis_, _packing_ and _identical frames detection_
 it indicates total energy savings up to 44% of the total energy consumption of the device.
@@ -134,10 +134,10 @@ preferred solution.
 
 _Energy Patch_
 
-Framework that can systematically detect and fix energy bugs in mobile apps in a scalable
+A framework that can systematically detect and fix energy bugs in mobile apps in a scalable
 fashion. It uses a combination of static and dynamic analysis techniques to detect, validate
 and repair energy bugs in Android apps. This enables EnergyPatch to quickly narrow down to
-the potential program paths along which energy bugs that may occur.
+the potential program paths along which energy bugs may occur.
 
 _PETrA_
 
@@ -165,23 +165,23 @@ will increase in the near future.
 ### Guidelines
 Another aspect of the state of the art are the currently proposed guidelines for energy awareness 
 and improvements. To answer **RQ1**, seven papers have been selected that present guidelines. The 
-research by Cruz et. al. [@CA2017] shows that, interestingly enough, the best practices provided by 
+research by Cruz et al. [@CA2017] shows that, interestingly enough, the best practices provided by 
 Google fall short in addressing energy consumption. However they come up with guidelines that do 
 give improvements. Their guideline shows that correct usage of Android methods such as 
 _iewHolder_, _DrawAllocation_, _WakeLock_, _ObsoleteLayoutParam_, and _Recycle_ improved energy 
-efficiency. From the research by McIntosh et. al.[@MSA2018] it is noted that machine learning is
+efficiency. From the research by McIntosh et al.[@MSA2018] it is noted that machine learning is
 now also implemented by excited developers into their apps, having an impact on the mobile device's
 battery life. They have combined empirical measurements of different machine learning algorithm 
 implementations with complexity theory to provide the guideline that some implementations of 
 algorithms, such as J48, MLP and SMO, generally perform better than others. However they also 
 recommend that for optimal results developers must consider their own specific application since 
 many factors, e.g. dataset size, can influence the performance.
-Finally Li et. al.[@LH2014] researched commonly recommended energy saving practices, to see if they
-are valid. The topics they investigated included optimizing the sending of HTTP packets, memory 
-usage, array lengths, static invocations, and field access. Their work gives guidance for mobile 
-app developers. Especially bundling network packets up to a certain size and using certain coding 
-practices for reading array length information, accessing class fields, and performing invocations 
-all led to reduced energy consumption.
+Finally Li et al.[@LH2014] researched commonly recommended energy saving practices, to see if they
+are valid. The topics investigated in this paper included optimizing the sending of HTTP packets, 
+memory usage, array lengths, static invocations, and field access. This work gives guidance for 
+mobile app developers. Especially bundling network packets up to a certain size and using certain 
+coding practices for reading array length information, accessing class fields, and performing 
+invocations all led to reduced energy consumption.
 
 
 ## RQ2: State of Practice
