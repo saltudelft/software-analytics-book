@@ -115,7 +115,7 @@ list, respectively.
 | A Study of the Quality-Impacting Practices of Modern Code Review at Sony Mobile                               | 2016 | @shimagaki2016study         | 29-09-2018  | 11            |                  |
 | Reda: A web-based visualization tool for analyzing modern code review dataset                                 | 2014 | @thongtanunam2014reda       | 29-09-2018  | 8             |                  |
 | Who should review my code? A file location-based code-reviewer recommendation approach for modern code review | 2015 | @thongtanunam2015should     | 29-09-2018  | 5             | Y                |
-| Revisiting code ownership and its relationship with software quality in the scope of modern code review       | 2016 | @thongtanunam2016revisiting | 29-09-2018  | 6             |                  |
+| Revisiting code ownership and its relationship with software quality in the scope of modern code review       | 2016 | @thongtanunam2016revisiting | 29-09-2018  | 6             | Y                |
 | Review participation in modern code review                                                                    | 2017 | @thongtanunam2017review     | 29-09-2018  | 10            |                  |
 | Mining the Modern Code Review Repositories: A Dataset of People, Process and Product                          | 2016 | @yang2016mining             | 29-09-2018  | 12            |                  |
 | Automatically recommending peer reviewers in modern code review                                               | 2016 | @zanjani2016automatically   | 29-09-2018  | 7             |                  |
@@ -524,6 +524,48 @@ developers in recommending code-reviewers, when deployed in a live development e
 
 ### Revisiting code ownership and its relationship with software quality in the scope of modern code review 
 Reference: @thongtanunam2016revisiting
+
+#### Summary
+This paper researches the effect code reviews have on code ownership. This question is answered by
+looking at two open-source projects. It was found that a lot of contributors do not submit code
+changes for a specific ticket, but still do quite some reviewing. It was also found that code
+that contains post-release errors has often been reviewed or authored by people who neither author
+or review often.
+
+#### For answering **RQ1**
+* *Sub-topic*: code ownership
+* *Research method*: empirical; quantitative
+* *Tools*: R; Custom
+* *Datasets*: Review dataset from Hamasaki et al. [@hamasaki2013does]. Code dataset from the Qt
+  system from McIntosh et al. [@mcintosh2014the]. Ammended with custom datasets for Qt and
+  OpenStack.
+
+#### Research questions and answers
+* *How do code authoring and reviewing contributions differ?* "The developers who only contribute
+  to a module by reviewing code changes account for the largest set of contributors to that module.
+  Moreover, 18%-50% of these review-only developers are documented core developers of the studied
+  systems, suggesting that code ownership heuristics that only consider authorship activity are
+  missing the activity of these major contributors."
+
+* *Should code review activity be used to refine traditional code ownership heuristics?* "Many
+  minor authors are major reviewers who actually make large contributions to the evolution of
+  modules by reviewing   code changes. Code review activity can be used to refine traditional code
+  ownership heuristics to more accurately identify the defect-prone modules."
+
+* *Is there a relationship between review-specific and review-aware code ownership heuristics and
+  defect-proneness?* "Even when we control for several confounding factors, the proportion of
+  developers in the minor author & minor reviewer category shares a strong relationship with
+  defectproneness. Indeed, modules with a larger proportion of developers without authorship or
+  reviewing expertise are more likely to be defect-prone."
+
+#### For answering **RQ2**
+* *Tools*: Gerrit
+* *Company/Organization*: The Qt, OpenStack, VTK and ITK projects
+* *Evaluation*: N/A
+
+#### For answering **RQ3**
+#### Future research challenges
+Not stated
 
 ### Who should review this change?: Putting text and file location analyses together for more accurate recommendations
 Reference: @xia2015should
