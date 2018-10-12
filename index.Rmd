@@ -1,4 +1,4 @@
---- 
+---
 title: "A Literature Survey of Software Analytics"
 author: "IN4334 2018 TU Delft"
 date: "`r Sys.Date()`"
@@ -6,7 +6,6 @@ site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
 bibliography: [book.bib]
-biblio-style: apalike
 link-citations: yes
 github-repo: saltudelft/software-analytics-book
 description: "A systematic literature survey on Software Analytics."
