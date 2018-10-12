@@ -197,8 +197,6 @@ TODO
 TODO
 
 **Privacy / app permissions**
-TODO
-
 Since Android Marshmallow the Android operating system uses a run-time permission-based security
 system. Apple's iOS also uses run-time permissions on top of a set of permissions enabled by
 default. Scoccia et al. did a large-scale empirical study on this new system by inspecting 4.3
