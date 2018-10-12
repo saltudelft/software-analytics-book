@@ -377,13 +377,13 @@ The papers identified using the research protocol defined in section
 \@ref(build-analytics-research-protocol) that give us an overview of challenges and future research
 in the field of build analytics are:
 
- * @bisong2017built
- * @pinto2018work
- * @santolucito2018statically
- * @baltes2018no
- * @zhao2017impact
- * @vassallo2018break
- * @beller2017oops
+ * Built to last or built too fast?: evaluating prediction models for build times [@bisong2017built]
+ * Work Practices and Challenges in Continuous Integration: A Survey with Travis CI Users [@pinto2018work]
+ * Statically Verifying Continuous Integration Configurations [@santolucito2018statically]
+ * (No) Influence of Continuous Integration on the Commit Activity in GitHub Projects [@baltes2018no]
+ * The impact of continuous integration on other software development practices: a large-scale empirical study [@zhao2017impact]
+ * Un-Break My Build: Assisting Developers with Build Repair Hints [@vassallo2018break]
+ * Oops, my tests broke the build: An explorative analysis of Travis CI with GitHub [@beller2017oops]
 
 In Bisong et al.[@bisong2017built] the main limitation was the performance of the machine learning
 algorithm used. In the implementation R was used and it proved not capable of processing the
