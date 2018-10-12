@@ -4,12 +4,12 @@
 In the modern day and age, it is popular to make use of external software or libraries in software
 projects to use the functionality (for example parsing JSON) of these libraries, without having
 to develop this functionality itself. For example, in 2016, the package manager npm recorded 18
-billion package downloads in one month @Linux2016. Moreover, multiple languages, such as Python
+billion package downloads in one month, according to @Linux2016. Moreover, multiple languages, such as Python
 and Rust, provide package managers (pip[^1] and Cargo[^2] respectively) which can be used to
 easily manage this third-party functionality, as well as distribute it.
 
 In parallel to this, the popularity of creating open source projects is on the rise as well. At
-the package repository npm only, 4,685 libraries were added in one week in 2016 @Linux2016. On
+the package repository npm only, 4,685 libraries were added in one week in 2016, according to @Linux2016. On
 platforms such as GitHub[^3], it is easy and quick to create a new software project, which can be
 developed, reviewed and used by the whole community. This development leads to more libraries
 being developed and being available for public use.
@@ -18,19 +18,19 @@ As a result of these two developments, software projects are increasingly becomi
 on each other. Inspecting the dependency relations between projects leads to a graph-like
 structure of software projects. In this structure,the nodes are the projects and the edges
 represent a dependency between two software projects. This structure is known as a _software
-ecosystem_. Messerschmitt and Szyperski @Messerschmitt2003 state that a _software ecosystem_ is "a
+ecosystem_. Messerschmitt and Szyperski in @Messerschmitt2003 state that a _software ecosystem_ is "a
 collection of software products that have some given degree of symbiotic relationships." Another,
-similar definition is given by Lungu @Lungu2009: "A software ecosystem is a collection of software
-projects which are developed and co-evolve in the same environment." Mens et al. @Mens2013 extend
+similar definition is given by Lungu in @Lungu2009: "A software ecosystem is a collection of software
+projects which are developed and co-evolve in the same environment." Mens et al. in @Mens2013 extend
 this definition, "by explicitly considering the communities involved (e.g. user and developer
-communities) as being part of the software ecosystem." Stallman @Stallman2002 opposes the overall
+communities) as being part of the software ecosystem." Stallman in @Stallman2002 opposes the overall
 notion of calling this structure a software ecosystem: "It is inadvisable to describe the free
 software community, or any human community, as an ecosystem, because that word implies the absence
 of ethical judgment."
 
-Although Stallman @Stallman2002 disagrees with the use of the term ecosystem, he does not
+Although Stallman in @Stallman2002 disagrees with the use of the term ecosystem, he does not
 necessarily disagree with the definition of the term. The definition which will be used in
-this chapter is the definition of Mens et al. @Mens2013, since it captures the essence of the
+this chapter is the definition of Mens et al. in @Mens2013, since it captures the essence of the
 other two definitions, while adding the notion of the human communities alongside as well.
 
 By performing analysis on these software ecosystems, the aim is to generate meaningful insights.
@@ -59,7 +59,7 @@ are answered using the previously stated set of papers.
 ## Research Protocol
 
 In order to review literature to answer the research questions given in the previous section, the
-survey method suggested by Kitchenham @Kitchenham2004 is used. This method creates a systematic
+survey method suggested by Kitchenham is used, conform to @Kitchenham2004. This method creates a systematic
 way to select a set of papers, which is relevant to the research question(s).
 
 The search strategy, as described by Kitchenham @Kitchenham2004, are usually iterative and benefit
@@ -280,6 +280,7 @@ refinements on this metric which could still be researched.
 | + | Raemaekers, van Deursen, Visser @Raemaekers2017   | Semantic versioning and impact of breaking changes in the Maven repository                    | 2017 | Semantic versioning, Breaking changes, Software libraries                                                   |
 | + | Robbes, Lungu, Röthlisberger @Robbes2012       | How do developers react to API deprecation? The case of a smalltalk ecosystem                 | 2012 | Ecosystems, Mining Software Repositories, Empirical Studies                                                 |
 | + | Trockman @Trockman2018     | Adding sparkle to social coding: An empirical study of repository badges in the npm ecosystem | 2018 |                                                                                                             |
+
 _Table 4.1: Papers provided by MSc. Joseph Hejderup. The first column describes whether the paper
 of the row will be used. A '+' means it will be used, a '-' means it will not._
 
@@ -337,6 +338,8 @@ _Table 4.4: Papers selected which are referenced in previously selected papers. 
 | @Dittrich2014 | The article provides a holistic understanding of the observed and reported practices as a starting point to device specific support for the development in software ecosystems | Qualitative interview study | - | - | - | The main contribution of this article is the presentation of common features of product development and evolution in four companies. Although size, kind of software and business models differ |
 | @Izquierdo2018 | Code review analysis | Virtualization of process | - | Xen Github data | Xen | Analysis of code review has lead to more reviews and a more thoughtful and participatory review process. Also providing accommodations for new software developers on OSS by easy access is very important. |
 
+_Table 4.5: Papers and findings for RQ1._
+
 | Reference | Explored topic(s) | Research method(s) | Dataset(s) | Ecosystem(s) | Conclusion |
 | --------- | ----------------- | ------------------ | ---------- | ------------ | ---------- |
 | @Hora2016 | Exploratory study aimed at observing API evolution and its impact | Empirical study | 3600 distinct systems | Pharo | After API changes, clients need time to react and rarely react at all. Replacements cannot be resolved in a uniform manner throughout the ecosystem. API changes and depreciation can present different characteristics.
@@ -346,6 +349,8 @@ _Table 4.4: Papers selected which are referenced in previously selected papers. 
 | @Malloy2018 | Analysis of the transition from Python 2 to Python 3 | Empirical impact study | 51 applications in the Qualitas suite for Python | Python | Most Python developers choose to maintain compatibility with Python 2 and 3, thereby only using a subset of the Python 3 language and not using the new features but instead limiting themselves to a language that is no longer under active development. |
 | @Dietrich2014 | Java | Empirical study into evolution problems caused by library upgrades | Qualitas corpus (Java OSS) | Java | There are currently a lot of problems caused, but some relatively minor changes to developments tools and the language could be very effective.  |
 
+_Table 4.6: Papers and findings for RQ2._
+
 | Reference | Open Challenges Found |
 | --------- | --------------------- |
 | @Abdalkareem2017 | Examine relationship between team experience and project maturity and usage of trivial packages |
@@ -354,7 +359,12 @@ _Table 4.4: Papers selected which are referenced in previously selected papers. 
 | @Decan2018 | Findings for one ecosystem cannot necessarily be generalized to another |
 | @Decan2018 | Transitive dependencies are very frequent, meaning that package failures can affect a large number of other packages in the ecosystem |
 | @Jansen2014 | Determining the health of a system from an ecosystem perspective instead of project level is needed to determine which systems to use. This paper provides an initial approach but a lot more research could and should be done to determine system health. |
-[^1]: <https://pypi.org/project/pip/>
-[^2]: <https://crates.io/>
-[^3]: <https://github.com:>
-[^4]: <https://scholar.google.com>
+
+_Table 4.7: Papers and findings for RQ1._
+
+|      | References                    |
+|------|-------------------------------|
+| [^1] | https://pypi.org/project/pip/ |
+| [^2] | https://crates.io/            |
+| [^3] | https://github.com            |
+| [^4] |  https://scholar.google.com   |
