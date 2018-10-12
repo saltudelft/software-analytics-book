@@ -265,6 +265,8 @@ Challenges & Future Research:
 * Testing and analysis of apps across multiple platforms and hardware.
 
 **Wearables**
+User reviews can also be mined to understand user complaints, Mujahid et al. did this in a case study on Android Wear [@mujahid2017examining]. More specifically, they sampled 589 reviews from 6 Android wearable apps and found that there were 15 unique complaint types that could be extracted from the sample. The sample was created from mining the reviews of 4722 wearable apps and selecting the apps that have more than 100 reviews with a rating of one or two stars. After manually assigning categories to the reviews in the sample they concluded that the most frequent complaints in this relatively small sample were complaints related to cost, functional errors and a lack of functionality.
+
 
 * **RQ2** What is the state of practice in Review Analysis? Specifically:
     - Which are the tools and the companies that create/employ them?
@@ -287,13 +289,13 @@ subcategories that were identified in previous sections.
 
 An important component of the research process is the validation of the proposed tools and
 frameworks and the assessment of how generalizable they are. For this, it is necessary to have
-bigger reviews datasets and more representative and robust samples. In terms of the techniques
+bigger review datasets and more representative and robust samples. In terms of the techniques
 being used, machine learning is a being trend and in the future approaches that are better tailored
 to the problem at hand must be devised. Also, most of the studies rely on correlation relationships
 to validate the effectiveness of their approaches. There is a need to apply causation techniques so
 confounding factors can be ruled out.
 
-Taking into account the practical aspect of reviews analytics, there is a difficulty to translate
+Taking into account the practical aspect of review analytics, there is a difficulty to translate
 the research into actual tools that are used in real settings. Of all the works that were
 considered, only @gao2018online by Gao et al. presented a case study and most of the tools have
 either disappeared or are inactive.
