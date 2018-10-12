@@ -88,8 +88,9 @@ included in the survey in the end or if it has been excluded for some reason. If
 excluded, the reason will be stated in the section *Excluded papers*.
 
 ### Initial seed
-The following table lists all initial seed papers provided by the course instructor that conform to the
-stated criteria. They are listed in alphabetical order of the first author's name, and then by publish year.
+The following table lists all initial seed papers provided by the course instructor that conform
+to the stated criteria. They are listed in alphabetical order of the first author's name, and then
+by publish year.
 
 | Title                                                                                                                               | Year | Reference                  | In survey? (Y/N) |
 |-------------------------------------------------------------------------------------------------------------------------------------|------|----------------------------|------------------|
@@ -369,8 +370,8 @@ lines long and processed (merged or discarded) in less than 1 day. The discussio
 to 3 comments, while code reviews affect the time to merge a pull request. Inclusion of test code
 does not affect the time or the decision to merge a pull request. Pull requests receive no special
 treatment, irrespective whether they come from contributors or the core team."
-* *What factors affect the decision and the time required to merge a pull request?* "The decision to
-merge a pull request is mainly influenced by whether the pull request modifies recently modified
+* *What factors affect the decision and the time required to merge a pull request?* "The decision
+to merge a pull request is mainly influenced by whether the pull request modifies recently modified
 code. The time to merge is influenced by the developer’s previous track record, the size of the
 project and its test coverage and the project’s openness to external contributions."
 * *Why are some pull requests not merged?* "53% of pull requests are rejected for reasons having to
@@ -420,20 +421,23 @@ looked into, that are of significant importance for the review process.
 
 #### For answering **RQ1**
 * *Sub-topic*: open-source, in practice, impact
-* *Research method*: qualitative for finding out the impact of code review coverage and code review participation on software quality
-  rest quantitative.
+* *Research method*: qualitative for finding out the impact of code review coverage and code review
+participation on software quality rest quantitative.
 * *Tools*: N/A
-* *Datasets*: Data extracted from Qt, VTK and ITK code review dataset and necessary metrics including version control metrics, coverage metrics and participation metrics.
+* *Datasets*: Data extracted from Qt, VTK and ITK code review dataset and necessary metrics
+including version control metrics, coverage metrics and participation metrics.
 
 #### Research questions and answers
 * *Is there a relationship between code review coverage and post-release defects?*
  Although review coverage is negatively associated with software quality in our models, 
- several defect-prone components have high coverage rates, suggesting that other properties of the code review process are at play.
- 
+ several defect-prone components have high coverage rates, suggesting that other properties of the
+ code review process are at play.
+
 * *Is there a relationship between code review participation and post-release defects?*
 Lack of participation in code review has a negative impact on software quality. 
 Reviews without discussion are associated with higher post-release defect counts, 
-suggesting that the amount of discussion generated during review should be considered when making integration decisions.
+suggesting that the amount of discussion generated during review should be considered when making
+integration decisions.
 
 #### For answering **RQ2**
 * *Tools*: Gerrit
@@ -442,7 +446,8 @@ suggesting that the amount of discussion generated during review should be consi
 
 #### For answering **RQ3**
 #### Future research challenges
-* Research on other properties of modern code review such as code ownership. Inspired by this paper, other properties of modern code review can also be explored.
+* Research on other properties of modern code review such as code ownership. Inspired by this
+paper, other properties of modern code review can also be explored.
 
 #### Notes
 There exists an extended and improved version of this paper [@mcintosh2016empirical]. Only the
@@ -452,8 +457,11 @@ original version of the paper has been included in this survey.
 Reference:@baysal2013influence
 
 #### Summary
-This paper focus on the influence of several non-technical factors on code review response time and outcome. An empirical study of code review process for WebKit, 
-a large open source project was described to see the influence. Specifically, the authors replicated some previously studied factors and extended several more factors that had not beed explored. 
+This paper focus on the influence of several non-technical factors on code review response time and
+outcome. An empirical study of code review process for WebKit, 
+a large open source project was described to see the influence. Specifically, the authors
+replicated some previously studied factors and extended several more factors that had not beed
+explored. 
 
 #### For answering **RQ1**
 * *Sub-topic*: open-source, impact
@@ -463,30 +471,35 @@ a large open source project was described to see the influence. Specifically, th
 
 #### Research questions and answers
 * *What factors can influence how long it takes for a patch to be reviewed?* 
-The organizational and personal factors influence review timeliness. Some factors that influenced the time required to review a patch, such as the size of the patch itself or the part of the code base being modified,
- are unsurprising and are likely related to the technical complexity of a given change. The most influential factors of the code review
-process on review time are the organization a patch writer is affiliated with and their level of participation within the project.
+The organizational and personal factors influence review timeliness. Some factors that influenced
+the time required to review a patch, such as the size of the patch itself or the part of the code
+base being modified,  are unsurprising and are likely related to the technical complexity of a
+given change. The most influential factors of the code review process on review time are the
+organization a patch writer is affiliated with and their level of participation within the project.
 
 * *What factors influence the outcome of the review process?*
 The organizational and personal factors influence the likelihood of a patch being accepted. 
-The most influential factors of the code review process on patch acceptance are the organization a patch writer is affiliated with and their level of participation within the project.
+The most influential factors of the code review process on patch acceptance are the organization a
+patch writer is affiliated with and their level of participation within the project.
 
 #### For answering **RQ2**
 Not applicable
 
 #### For answering **RQ3**
 #### Future research challenges
-* Research on studying how best to interpret empirical software engineering research within the context of contextual factors.
-Understanding the reasons behind observable developer behaviour requires an understanding of the contexts, processes, organizational and individual factors that can influence code review and its outcome.
+* Research on studying how best to interpret empirical software engineering research within the
+context of contextual factors. Understanding the reasons behind observable developer behaviour
+requires an understanding of the contexts, processes, organizational and individual factors that
+can influence code review and its outcome.
 
 ### Who should review my code? A file location-based code-reviewer recommendation approach for modern code review
 Reference: @thongtanunam2015should
 
 #### Summary
 This paper presents (1) research on how often a reviewer cannot be found for a code change and the
-influence of this on the time it takes to process a code change, (2) a tool (*RevFinder*) for automatically
-suggesting reviewers based on files reviewed previously, and (3) an empirical evaluation
-of that tool on four open-source projects.
+influence of this on the time it takes to process a code change, (2) a tool (*RevFinder*) for
+automatically suggesting reviewers based on files reviewed previously, and (3) an empirical
+evaluation of that tool on four open-source projects.
 
 Of the researched projects, up to 30% of the code changes have problems finding a
 reviewer. These reviews take on average 12 days longer. Also, it is found that RevFinder works 3 to
@@ -581,5 +594,5 @@ been added to the final survey for the stated reason.
   Online, and hence we could not read it to include it in the survey.
 * @mcintosh2016empirical: This is an extended and improved version of a paper already included in
   the survey. Because of time constraints we will not reconsider this version.
-* @fagan2002design: This paper does not conform to our exclusion criterion saying that it should be published in 2008 or later.
-  Though it was included as a candidate bec
+* @fagan2002design: This paper does not conform to our exclusion criterion saying that it should be
+published in 2008 or later. Though it was included as a candidate bec
