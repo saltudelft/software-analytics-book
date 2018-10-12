@@ -265,6 +265,40 @@ TODO
 
 * **RQ3** Which are the challenges and future research that the field is facing or will face?
 
+In this section, we present challenges and future trends for the field of Review Analytics and the
+subcategories that were identified in previous sections. 
+
+An important component of the research process is the validation of the proposed tools and
+frameworks and the assessment of how generalizable they are. For this, it is necessary to have
+bigger reviews datasets and more representative and robust samples. In terms of the techniques
+being used, machine learning is a being trend and in the future approaches that are better tailored
+to the problem at hand must be devised. Also, most of the studies rely on correlation relationships
+to validate the effectiveness of their approaches. There is a need to apply causation techniques so
+confounding factors can be ruled out.
+
+Taking into account the practical aspect of reviews analytics, there is a difficulty to translate
+the research into actual tools that are used in real settings. Of all the works that were
+considered, only @gao2018online by Gao et al. presented a case study and most of the tools have
+either disappeared or are inactive.
+
+*Review Manipulation:*
+It is important to combine multiple sources of data to better identify suspicious individuals.
+These include not only app stores, but also crowdsourcing sites and even social networks. Also, the
+sample should be carefully selected, given that the number of suspicious apps is not large (around
+1% of all apps), taking into account the size of the app stores.
+
+*Requirements Engineering:* 
+
+*Mapping user reviews to source code:*
+There is a need to better understand the “language of source code” as this will be important to
+join the reviews and source code datasets. A likely future trend is the analysis of update-level
+changes. Regarding this, there is still a need to obtain update-categorized reviews as this is
+still a challenge with the current review-retrieving approaches.
+
+*Privacy / app permissions:*
+*Responding to reviews:*
+*Comparing Apps and App stores:*
+
 TODO
 
 ## Appendix
