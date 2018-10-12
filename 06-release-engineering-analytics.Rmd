@@ -709,7 +709,7 @@ What research gaps does this publication contain?
 
 Are these research gaps filled by any other publications in this survey?
 
-- Not yet known **TODO**
+-
 
 Quantitative research publications:
 
@@ -762,7 +762,7 @@ What research gaps does this publication contain?
 
 Are these research gaps filled by any other publications in this survey?
 
-- Not yet known **TODO**
+-
 
 Quantitative research publications:
 
@@ -819,7 +819,7 @@ What research gaps does this publication contain?
 
 Are these research gaps filled by any other publications in this survey?
 
-- Not yet known **TODO**
+-
 
 Quantitative research publications:
 
@@ -921,7 +921,7 @@ What research gaps does this publication contain?
 
 Are these research gaps filled by any other publications in this survey?
 
-- Not yet known **TODO**
+-
 
 Quantitative research publications (GNOME):
 
@@ -1034,7 +1034,7 @@ What research gaps does this publication contain?
 
 Are these research gaps filled by any other publications in this survey?
 
-- Not yet known **TODO**
+-
 
 Quantitative research publications:
 
@@ -1086,7 +1086,6 @@ What open challenges in release engineering does this publication mention?
 
 - Release effectiveness: minimize system failure and customer impact
 - Problems with releasing encountered in practice
-    - **TODO** list problems if of interest
 
 What research gaps does this publication contain?
 
@@ -1107,7 +1106,6 @@ Quantitative research publications:
 - Outcomes:
     1.
 - Limitations:
-    -
 - Future research:
 
 Notes:
@@ -1227,7 +1225,7 @@ What research gaps does this publication contain?
 
 Are these research gaps filled by any other publications in this survey?
 
-- **TODO**
+-
 
 Quantitative research publications:
 
@@ -1510,7 +1508,6 @@ Quantitative research publications:
 - Limitations:
     - Only a case study, so difficult to generalize
 - Future research:
-    -
 
 Notes:
 
