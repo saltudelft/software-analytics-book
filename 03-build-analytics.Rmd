@@ -385,7 +385,7 @@ From the synthesis of the works discussed in this section the following research
  characteristics and this could impact the effectiveness for a specific kind of project.
 
 
-# Appendix: Build Analytics
+# Appendix: Build Analytics {-}
 
 Table: (\#tab:build-analytics-selected-papers) Selected papers
 
