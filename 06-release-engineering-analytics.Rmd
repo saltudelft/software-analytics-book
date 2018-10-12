@@ -390,12 +390,20 @@ and the raw extracted data from the selected studies.
 
 The literature review was conducted over the course of four weeks. We worked iteratively and planned for four weekly milestones.
 
-| Milestone | Deadline | Goals |
-|-----------|----------|-------|
-| 1 | 16/9/18 | - Develop the search strategy<br>- Collect initial publications |
-| 2 | 23/9/18 | Write full research protocol |
-| 3 | 30/9/18 | - Collect additional literature according to the protocol<br>- Perform data extraction |
-| 4 | 7/10/18 | - Perform data synthesis<br>- Write final version of the chapter |
++-----------+----------+-------------------------------------------------------+
+| Milestone | Deadline | Goals                                                 |
++===========+==========+=======================================================+
+| 1         | 16/9/18  | - Develop the search strategy  |
+|           |          | - Collect initial publications |
++-----------+----------+---+
+| 2         | 23/9/18  | - Write full research protocol |
++-----------+----------+---+
+| 3         | 30/9/18  | - Collect additional literature according to the protocol |
+|           |          | - Perform data extraction |
++-----------+----------+---+
+| 4         | 7/10/18  | - Perform data synthesis |
+|           |          | - Write final version of the chapter |
++-----------+----------+---+
 
 ### Research Protocol
 
@@ -481,12 +489,20 @@ The results of the reference analysis are listed in Table 1.
 
 _Table 1. Papers found indirectly by investigating citations of/by other papers._
 
-| Starting point  | Type        | Result                                |
-|-----------------|-------------|---------------------------------------|
-| @souza2015a     | has cited   | @plewnia2014a     <br> @mantyla2015a  |
-| @khomh2015a     | is cited by | @poo-caamano2016a <br> @teixeira2017a |
-| @mantyla2015a   | is cited by | @rodriguez2017a   <br> @cesar2017a    |
-| @laukkanen2018a | has cited   | @laukkanen2017a                       |
++-----------------+-------------+-------------------+
+| Starting point  | Type        | Result            |
++=================+=============+===================+
+| @souza2015a     | has cited   | @plewnia2014a     |
+|                 |             | @mantyla2015a     |
++-----------------+-------------+-------------------+
+| @khomh2015a     | is cited by | @poo-caamano2016a |
+|                 |             | @teixeira2017a    |
++-----------------+-------------+-------------------+
+| @mantyla2015a   | is cited by | @rodriguez2017a   |
+|                 |             | @cesar2017a       |
++-----------------+-------------+-------------------+
+| @laukkanen2018a | has cited   | @laukkanen2017a   |
++-----------------+-------------+-------------------+
 
 All the papers that were found, were stored in a custom-built web-based tool for
 conducting literature reviews.
