@@ -20,17 +20,12 @@ the management of changes to documents, source code and other collections of inf
 there _must_ be a space, else it is interpreted as superscript. --> 
 
 ### Build Definition
-Build analytics covers research done on data extracted from a build process inside a project. This
+Build analytics covers research on data extracted from a build process inside a project. This
 contains among others, build logs from Continuous Integration such as Travis&nbsp;CI^[See
 https://travis-ci.org/], Circle&nbsp;CI^[See https://circleci.com/], Jenkins^[See https://jenkins.io/], 
 AppVeyor^[See\ https://www.appveyor.com/] and TeamCity^[See https://www.jetbrains.com/teamcity/] or
 surveys among developers about their usage of Continuous Integration or build systems. This
 information is often paired with data from Version Control Systems such as Git. 
-
-<!--
- - Define build
- - Define context
- -->
 
 ### Research Questions
 We aimed to make a complete overview of build analytics field from analyzing current both
@@ -74,7 +69,7 @@ Taking advantage of the initial seed consisting of Bird and Zimmermann [@bird201
 Beller et al. [@beller2017oops], Rausch et al. [@rausch2017empirical], Beller et al. TravisTorrent [@beller2017travistorrent],
 Pinto et al. [@pinto2018work], Zhao et al. [@zhao2017impact], Widder et al. [@widder2018m] and
 Hilton et al. [@hilton2016usage], we used references to find new papers to analyze.
-Moreover, we used academical search engines like _Google_ _Scholar_ to perform a keyword based
+Moreover, we used academical search engine _Google Scholar_ to perform a keyword-based
 search for other relevant build analytics domain papers. The keywords used were:
 build analytics, machine learning, build time, prediction, continuous integration, build failures,
 active learning, build errors, mining, software repositories, open-source software.
@@ -405,7 +400,7 @@ Future research in build analytics branches in a couple of different topics. Pin
 proposes to focus on getting a better understanding of the users and why they might choose to
 abandon an automatic build platform.
 
-Baltes et al.[@baltes2018no] suggests that in future research more perspectives when analyzing commit data should
+Baltes et al.[@baltes2018no] suggest that in future research more perspectives when analyzing commit data should
 be taken into account, for instance partitioning commits by developer. It also notes the importance
 of more qualitative research.
 
