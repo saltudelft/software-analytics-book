@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-
-<link rel="next" href="a-contemporary-view-on-software-analytics.html">
+<link rel="prev" href="a-contemporary-view-on-software-analytics.html">
+<link rel="next" href="build-analytics.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -268,20 +268,487 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">A Literature Survey of Software Analytics</h1>
-<p class="author"><em>IN4334 2018 TU Delft</em></p>
-<p class="date"><em>2018-10-12</em></p>
+<div id="testing-analytics" class="section level1">
+<h1><span class="header-section-number">Chapter 3</span> Testing Analytics</h1>
+<div id="motivation" class="section level2">
+<h2><span class="header-section-number">3.1</span> Motivation</h2>
+<p>Testing is an important aspect in software engineering, as it forms the first line of defence against the introduction of software faults. However, in practice it seems that not all developers test actively. In this paper we will survey on the use of testing and the tools that make this possible. We will also look into the future development of tools that is done or required in order to improve testing practices in real-world applications. The above example could have been prevented by making tests but is not guaranteed to do so. Testing is not the holy grail for completely removing all bugs from a program but it can decrease the chances for a user to encounter a bug. We believe that extra research is needed to ease the life of developers by making testing more efficient, easier to maintain and more effective. Therefore, we wanted to write a survey on the testing behavior, current practices and future developments of testing. In order to perform our survey, we formulated three Research Questions (RQs):</p>
+<ul>
+<li><strong>RQ1</strong> How do developers currently test?</li>
+<li><strong>RQ2</strong> What state of the art technologies are being used?</li>
+<li><strong>RQ3</strong> What future developments can be expected? In this paper we will first elaborate on the research protocol that was used in order to find papers and extract information for the survey. Second, the actual findings for each of the research questions will be explained.</li>
+</ul>
 </div>
-<div id="intro" class="section level1">
-<h1><span class="header-section-number">Chapter 1</span> Preamble</h1>
-<p>The book you see in front of you is the outcome of an eight week seminar run by the Software Engineering Research Group (SERG) at TU Delft. We have split up the novel area of Software Analytics into several sub topics. Every chapter addresses one such sub-topic of Software Analytics and is the outcome of a systematic literature review a laborious team of 3-4 students performed.</p>
-<p>With this book, we hope to structure the new field of Software Analytics and show how it is related to many long existing research fields.</p>
-<p><em>The IN4334 – Software Analytics class of 2018</em></p>
-<div id="license" class="section level2">
-<h2><span class="header-section-number">1.1</span> License</h2>
-<p><img src="figures/cc-nc-sa.png" alt="Creative Commons" /> This book is copyrighted 2018 by TU Delft and its respective authors and distributed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a></p>
+<div id="research-protocol" class="section level2">
+<h2><span class="header-section-number">3.2</span> Research protocol</h2>
+<p>For this paper, Kitchenham’s survey method was applied. For this method, a protocol has to be specified. This protocol is defined for the research questions given above. Below the inclusion and exclusion criteria are given, which helped finding the rightful papers. After these criteria, the actual search for papers is described. The papers that were found are listed and after they are tested against the criteria that are given. The data that is extracted from these papers are list afterward. Some papers that were left out will be listed and the reasons for leaving them out will be given to make clear why some papers do not meet the required desire.</p>
+<p>Each of the papers found was tested using our inclusion and exclusion criteria. These criteria were introduced to make sure the papers have the information required to answser the RQs while also being relevant with respect to their quality and age. Below a list of inclusion and exclusion criteria is given. In general, for all criteria, the exclusion criteria take precedence over inclusion criteria. The following inclusion and exclusion criteria were used:</p>
+<ul>
+<li>Papers published before 2008 are excluded from the research, unless a reference/citation is used for an unchanged concept.</li>
+<li>Papers referring to less than 15 other papers, excluding self-references, are excluded from the research.</li>
+<li>Selected papers should have an abstract, introduction and conclusion section.</li>
+<li>Papers stating the developers’ testing behavior are included.</li>
+<li>Papers stating the developers’ problems related to testing are included.</li>
+<li>Papers stating the technologies, related to testing analytics, which developers use are included.</li>
+<li>Papers writing about the expected advantage of current findings in testing analytics are included.</li>
+<li>Papers with recommendations for future development in the software testing field are included.</li>
+</ul>
+<p>The papers used in this paper were found by using a given initial seed of papers (query defined below as ‘Initial Paper Seed’). From this initial seed of papers we used the keywords used by those papers to construct queries, additionally the references (‘referenced by’) and the citations (‘cited in’) of the papers were used to find papers. The query row of the tables describing the references, as found below, indicates how a paper was found. For queries the default search sites were Scopus, Google Scholar and Springer.</p>
+<p>The keywords used to find papers were: software, test*, analytics, test-suite, evolution, software development, computer science, software engineering, risk-driven, survey software testing</p>
+<p>The table below describes for each paper, which Query resulted in which paper being found.</p>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="44%" />
+<col width="34%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Reference</th>
+<th>Query</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Test evolution</td>
+<td><span class="citation">Mirzaaghaei, Pastore, and Pezze (<a href="#ref-supportingtestsuite">2012</a>)</span></td>
+<td>Google Scholar query: test-suite evolution</td>
+</tr>
+<tr class="even">
+<td>Test evolution</td>
+<td><span class="citation">Pinto, Sinha, and Orso (<a href="#ref-pinto2013">2013</a>)</span></td>
+<td>Referenced by: Understanding myths and realities of test-suite evolution</td>
+</tr>
+<tr class="odd">
+<td>Test evolution</td>
+<td><span class="citation">Bevan et al. (<a href="#ref-bevan2005">2005</a>)</span></td>
+<td>Referenced by: Understanding myths and realities of test-suite evolution</td>
+</tr>
+<tr class="even">
+<td>Test evolution</td>
+<td><span class="citation">Pinto, Sinha, and Orso (<a href="#ref-pinto2012understanding">2012</a>)</span></td>
+<td>Initial Paper Seed</td>
+</tr>
+<tr class="odd">
+<td>Co-evolution</td>
+<td><span class="citation">Marsavina, Romano, and Zaidman (<a href="#ref-marsavina2014">2014</a>)</span></td>
+<td>Google Scholar keywords: Maintain developer tests, in ‘cited by’ of “Aiding Software Developers to Maintain Developer Tests” on IEEE</td>
+</tr>
+<tr class="even">
+<td>Co-evolution</td>
+<td><span class="citation">Zaidman et al. (<a href="#ref-zaidman2011studying">2011</a>)</span></td>
+<td>Initial Paper Seed</td>
+</tr>
+<tr class="odd">
+<td>Co-evolution</td>
+<td><span class="citation">Greiler et al. (<a href="#ref-greiler2013">2013</a>)</span></td>
+<td>In ‘cited by’ of “Understanding myths and realities of test-suite evolution” on Scopus</td>
+</tr>
+<tr class="even">
+<td>Co-evolution</td>
+<td><span class="citation">Hurdugaci and Zaidman (<a href="#ref-hurdugaci2012">2012</a>)</span></td>
+<td>Keywords: Maintain developer tests, ‘cited by’ in “Studying the co-evolution of production and test code in open source and industrial developer test processes through repository mining” on IEEE</td>
+</tr>
+<tr class="odd">
+<td>Production evolution</td>
+<td><span class="citation">Eick et al. (<a href="#ref-eick2001">2001</a>)</span></td>
+<td>Referenced by: Testing analytics on software variability</td>
+</tr>
+<tr class="even">
+<td>Production evolution</td>
+<td>@leung2015testing</td>
+<td>Initial Paper Seed</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Test generation</td>
+<td><span class="citation">Robinson et al. (<a href="#ref-robinson2011">2011</a>)</span></td>
+<td>Referenced in Supporting Test Suite Evolution through Test Case Adaptation</td>
+</tr>
+<tr class="odd">
+<td>Test generation</td>
+<td><span class="citation">Bowring and Hegler (<a href="#ref-bowring2014obsidian">2014</a>)</span></td>
+<td>Springer: Reverse search on “Automatically generating maintainable regression unit tests for programs”</td>
+</tr>
+<tr class="even">
+<td>Test generation</td>
+<td><span class="citation">Shamshiri et al. (<a href="#ref-shamshiri2018automatically">2018</a>)</span></td>
+<td>Google Scholar query: Automatically generating unit tests</td>
+</tr>
+<tr class="odd">
+<td>Test generation</td>
+<td>@dulz2013model</td>
+<td>Scopus query: “software development” AND Computer Science AND Software Engineering</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Testing practices</td>
+<td><span class="citation">Garousi and Zhi (<a href="#ref-GAROUSI20131354">2013</a>)</span></td>
+<td>Google Scholar query: Survey software testing</td>
+</tr>
+<tr class="even">
+<td>Testing practices</td>
+<td><span class="citation">Beller et al. (<a href="#ref-beller2017developer">2017</a>)</span></td>
+<td>Initial Paper Seed</td>
+</tr>
+<tr class="odd">
+<td>Testing practices</td>
+<td><span class="citation">Beller et al. (<a href="#ref-beller2015">2015</a>)</span></td>
+<td>In ‘cited by’ of “Understanding myths and realities of test-suite evolution”.</td>
+</tr>
+<tr class="even">
+<td>Testing practices</td>
+<td><span class="citation">Moiz (<a href="#ref-moiz2017uncertainty">2017</a>)</span></td>
+<td>Springer query: software testing</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Risk-driven testing</td>
+<td><span class="citation">Hemmati and Sharifi (<a href="#ref-hemmati2018">2018</a>)</span></td>
+<td>In ‘cited by’ of “Test case analytics: Mining test case traces to improve risk-driven testing”</td>
+</tr>
+<tr class="odd">
+<td>Risk-driven testing</td>
+<td><span class="citation">Schneidewind (<a href="#ref-schneidewind2007">2007</a>)</span></td>
+<td>Scopus query: risk-driven testing</td>
+</tr>
+<tr class="even">
+<td>Risk-driven testing</td>
+<td><span class="citation">Vernotte et al. (<a href="#ref-vernotte2015">2015</a>)</span></td>
+<td>Scopus query: “risk-driven” AND testing</td>
+</tr>
+<tr class="odd">
+<td>Risk-driven testing</td>
+<td><span class="citation">Atifi, Mamouni, and Marzak (<a href="#ref-atifi2017">2017</a>)</span></td>
+<td>In ‘cited by’ of “Risk-driven software testing and reliability”</td>
+</tr>
+<tr class="even">
+<td>Risk-driven testing</td>
+<td><span class="citation">Noor and Hemmati (<a href="#ref-noor2015test">2015</a>)</span></td>
+<td>Initial Paper Seed</td>
+</tr>
+</tbody>
+</table>
+<div id="papers-per-research-question" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> Papers per research question</h3>
+<p>In this section, each of the papers is categorized with a corresponding research question. In the table above, the categories per paper were added based on their general topic. These broad topics will be assigned to a corresponding research question. All papers per research question are ordered on their relevance, which in most cases means that a newer paper is considered as more relevant than an older paper. A lower ranking may also be caused by a lower quality of writing (e.g. <span class="citation">Greiler et al. (<a href="#ref-greiler2013">2013</a>)</span> in RQ2). The categorizations are based on the bullet points extracted from each paper. These bullet points can be found below in section <em>‘Extracted paper information’</em> below.</p>
+<ul>
+<li><strong>RQ1</strong> (<em>How do developers currently test?</em>):
+<ul>
+<li><span class="citation">Beller et al. (<a href="#ref-beller2017developer">2017</a>)</span></li>
+<li><span class="citation">Beller et al. (<a href="#ref-beller2015">2015</a>)</span></li>
+<li><span class="citation">Marsavina, Romano, and Zaidman (<a href="#ref-marsavina2014">2014</a>)</span></li>
+<li><span class="citation">Pinto, Sinha, and Orso (<a href="#ref-pinto2013">2013</a>)</span></li>
+<li><span class="citation">Garousi and Zhi (<a href="#ref-GAROUSI20131354">2013</a>)</span></li>
+<li><span class="citation">Pinto, Sinha, and Orso (<a href="#ref-pinto2012understanding">2012</a>)</span></li>
+<li><span class="citation">Zaidman et al. (<a href="#ref-zaidman2011studying">2011</a>)</span></li>
+</ul></li>
+<li><strong>RQ2</strong> (<em>What state of the art technologies are being used?</em>):
+<ul>
+<li><span class="citation">Mirzaaghaei, Pastore, and Pezze (<a href="#ref-supportingtestsuite">2012</a>)</span></li>
+<li><span class="citation">Vernotte et al. (<a href="#ref-vernotte2015">2015</a>)</span></li>
+<li><span class="citation">Bowring and Hegler (<a href="#ref-bowring2014obsidian">2014</a>)</span></li>
+<li><span class="citation">Hurdugaci and Zaidman (<a href="#ref-hurdugaci2012">2012</a>)</span></li>
+<li><span class="citation">Robinson et al. (<a href="#ref-robinson2011">2011</a>)</span></li>
+<li><span class="citation">Greiler et al. (<a href="#ref-greiler2013">2013</a>)</span></li>
+<li><span class="citation">Dulz (<a href="#ref-dulz2013model">2013</a>)</span></li>
+<li><span class="citation">Atifi, Mamouni, and Marzak (<a href="#ref-atifi2017">2017</a>)</span></li>
+<li><span class="citation">Noor and Hemmati (<a href="#ref-noor2015test">2015</a>)</span></li>
+</ul></li>
+<li><strong>RQ3</strong> (<em>What future developments can be expect?</em>):
+<ul>
+<li><span class="citation">Hemmati and Sharifi (<a href="#ref-hemmati2018">2018</a>)</span></li>
+<li><span class="citation">Shamshiri et al. (<a href="#ref-shamshiri2018automatically">2018</a>)</span></li>
+<li><span class="citation">Vernotte et al. (<a href="#ref-vernotte2015">2015</a>)</span></li>
+<li><span class="citation">Noor and Hemmati (<a href="#ref-noor2015test">2015</a>)</span></li>
+<li><span class="citation">Mirzaaghaei, Pastore, and Pezze (<a href="#ref-supportingtestsuite">2012</a>)</span></li>
+<li><span class="citation">Bowring and Hegler (<a href="#ref-bowring2014obsidian">2014</a>)</span></li>
+<li><span class="citation">Leung and Lui (<a href="#ref-leung2015testing">2015</a>)</span></li>
+<li><span class="citation">Greiler et al. (<a href="#ref-greiler2013">2013</a>)</span></li>
+<li><span class="citation">Atifi, Mamouni, and Marzak (<a href="#ref-atifi2017">2017</a>)</span></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="extracted-paper-information" class="section level2">
+<h2><span class="header-section-number">3.3</span> Extracted paper information</h2>
+<p>The papers retrieved using the research protocol are reviewed for their quality and useful information is extracted to be able to answer the research questions. This information can be found in this section as a list of bullet-points. If a paper is perceived as ‘bad’ or irrelevant for answering the research questions, this is elaborated.</p>
+<div id="test-evolution" class="section level3">
+<h3><span class="header-section-number">3.3.1</span> Test evolution</h3>
+<p>Supporting Test Suite Evolution through Test Case Adaptation (<span class="citation">Mirzaaghaei, Pastore, and Pezze (<a href="#ref-supportingtestsuite">2012</a>)</span>)</p>
+<ul>
+<li>Test case evolution.</li>
+<li>Automatic test repairing using information available in existing test cases.</li>
+<li>Identifies a set of common actions for adapting test cases by developers.</li>
+<li>Properly repairs 90% of the compilation errors addressed and covers the same amount of instructions.</li>
+<li>Not all prototypes were tested.</li>
+<li>Claims that many test cases designed for the early versions of the system become obsolete during the software lifecycle.</li>
+<li>An approach is proposed for automatically repairing and generating test cases during software evolution.</li>
+<li>This approach uses information available in existing test cases, defines a set of heuristics to repair test cases invalidated by changes in the software, and generate new test cases for evolved software.</li>
+<li>The results show that the approach can effectively maintain evolving test suites, and perform well compared to competing approaches.</li>
+<li>Frequent actions for adapting test cases that developers commonly adopt to repair and generate test cases are identified.</li>
+<li>In general: automated test case evolution seems fairly possible. (in 2012)</li>
+</ul>
+<p>TestEvol: A tool for analyzing test-suite evolution (<span class="citation">Pinto, Sinha, and Orso (<a href="#ref-pinto2013">2013</a>)</span>)</p>
+<ul>
+<li>Test case evolution.</li>
+<li>Tool for systematic investigating the evolution of the test-suite.</li>
+<li>Motivation: understand test maintenance in general.</li>
+<li>Only for Java and JUnit.</li>
+</ul>
+<p>Facilitating software evolution research with kenyon (<span class="citation">Bevan et al. (<a href="#ref-bevan2005">2005</a>)</span>) This paper is too old based on our exclusion criteria.</p>
+<p>Understanding myths and realities of test-suite evolution (<span class="citation">Pinto, Sinha, and Orso (<a href="#ref-pinto2012understanding">2012</a>)</span>)</p>
+<ul>
+<li>Systematic measurement of how test-suites evolve</li>
+<li>Test repairs occur in practice. avg 16 repairs per version –&gt; often enough to warrant the development of automated techniques.</li>
+<li>Test repairs are not the primary reason for test modification. Non-test repair related modifications occur about 4 times as frequently.</li>
+<li>Only 10% of the tests consider fixed assert tests (oracle tests)</li>
+<li>Test repairs frequently consider repairs to method call chains.</li>
+<li>Test deletions and additions are often due to refactoring</li>
+<li>A considerable portion of the additions is due to augmenting tests to make it more *adequate.</li>
+<li>General: automated techniques may be useful.</li>
+</ul>
+</div>
+<div id="co-evolution" class="section level3">
+<h3><span class="header-section-number">3.3.2</span> Co-Evolution</h3>
+<p>Studying Fine-Grained Co-evolution Patterns of Production and Test Code (<span class="citation">Marsavina, Romano, and Zaidman (<a href="#ref-marsavina2014">2014</a>)</span>)</p>
+<ul>
+<li>Co-evolution of production and test code.</li>
+<li>Generally co-evolving test and production code is a difficult tass.</li>
+<li>Mines fine-grained changes from the evolution of 5 open-source systems.</li>
+<li>Also uses an association rule mining algorithm to generate co-evolution patterns.</li>
+<li>The patterns are interpreted by performing a qualitative analysis.</li>
+<li>Meant to gain a deeper understanding of the way in which tests evolve as a result of changes in the production classes and identify possible gaps to signal developers for missed production code parts that have not been addressed adequately by tests.</li>
+<li>Some patterns that were found:</li>
+<li>Tests are mostly removed when production classes they cover are deleted. Programmers are careful not to leave non-compiling tests.</li>
+<li>Only limited effort is done on updating test cases after production classes are modified; tests are rarely changed when attributes or methods are changed in the production classes.</li>
+<li>A pattern indicates that mostly when numerous condition related changes are made in the production methods, test cases are created/deleted in order to address the branches that were removed/added.</li>
+<li>Test cases are rarely updated when changes related to attributes or methods are made in the production code.</li>
+<li>Test methods are in several cases created/deleted when conditional statements are altered in the production code.</li>
+<li>Future work should include the co-evolution patterns of different coding methodologies, for example, Test-Driven Development and their possible respective differences.</li>
+<li>Future work should include intent-preserving techniques, which could help ensure test repairs address the same production code functionalities as before the tests were broken.</li>
+</ul>
+<p>Studying the co-evolution of production and test code (<span class="citation">Zaidman et al. (<a href="#ref-zaidman2011studying">2011</a>)</span>)</p>
+<ul>
+<li>Testing is phased and co-evolution is synchronous</li>
+<li>No increase in testing activity before major releases. Intense phases were detected.</li>
+<li>Evidence for TDD discovered in 2/6 test cases.</li>
+<li>The fraction of test code (wrt prod code) increases as coverage increases</li>
+</ul>
+<p>Strategies for avoiding text fixture smells during software evolution (<span class="citation">Greiler et al. (<a href="#ref-greiler2013">2013</a>)</span>)</p>
+<ul>
+<li>Knowledge about how and when smells in test fixtures are produced.</li>
+<li>Test fixture smells do not continuously develop over time.</li>
+<li>A correlation between the number of tests and smells.</li>
+<li>Few test cases contribute to the majority of the smells.</li>
+<li>Not the highest quality paper, the title even contains a typo, where ‘text’ should be ‘test’.</li>
+</ul>
+<p>Aiding Software Developers to Maintain Developer Tests (<span class="citation">Hurdugaci and Zaidman (<a href="#ref-hurdugaci2012">2012</a>)</span>)</p>
+<ul>
+<li>Support for co-evolution of testing code with production code.</li>
+<li>Introduces TestNForce (Visual Studio only), a tool to help developers to identify unit tests that need to be altered and executed after code change.</li>
+<li>Gives a broad explanation for the need for the co-evolution of test code.</li>
+<li>Three scenarios: show covering tests, enforcing self-contained commits and what tests need to run?</li>
+<li>Used an experimental setup with only eight participants from the Delft University of Technology of which two participants did not use Unit testing. Hard to generalize.</li>
+<li>On average, the participants considered 80 code coverage as “good”.</li>
+</ul>
+</div>
+<div id="production-evolution" class="section level3">
+<h3><span class="header-section-number">3.3.3</span> Production evolution</h3>
+<p>Does code decay? Assessing the evidence from change management data (<span class="citation">Eick et al. (<a href="#ref-eick2001">2001</a>)</span>) This paper is too old based on our exclusion criteria.</p>
+<p>Testing analytics on software variability (<span class="citation">Leung and Lui (<a href="#ref-leung2015testing">2015</a>)</span>)</p>
+<ul>
+<li>Variability-aware testing.</li>
+<li>System integration testing has to be manually executed to evaluate the system’s compliance with its specified requirement and performance.</li>
+<li>Aids testers and developers to reduce their product time-to-market by utilizing historical testing results and similarity among systems.</li>
+</ul>
+</div>
+<div id="test-generation" class="section level3">
+<h3><span class="header-section-number">3.3.4</span> Test generation</h3>
+<p>Scaling up automated test generation: Automatically generating maintainable regression unit tests for programs (<span class="citation">Robinson et al. (<a href="#ref-robinson2011">2011</a>)</span>)</p>
+<ul>
+<li>A system that has good coverage and mutation kill score, made readable code and required few edits as the system under test evolved. (stable)</li>
+<li>Statement: The costs of unit tests are not perceived to outweigh the benefits.</li>
+<li>Previous techniques: hard to understand / maintain / brittle and only tested on libraries → not real software development code.</li>
+<li>They claim they made a pretty well working test-generation tool.</li>
+</ul>
+<p>Obsidian: Pattern-Based Unit Test Implementations (<span class="citation">Bowring and Hegler (<a href="#ref-bowring2014obsidian">2014</a>)</span>)</p>
+<ul>
+<li>A tool that generates the templates for tests: guarantee compilation, support exception handling, find suitable location… etc.</li>
+<li>Developers still need to fix the oracle tests, but the implementation/template is there.</li>
+<li>Looks at the context in order to decide what template to use.</li>
+<li>Distinguishes implementations from test cases</li>
+</ul>
+<p>How Do Automatically Generated Unit Tests Influence Software Maintenance? (<span class="citation">Shamshiri et al. (<a href="#ref-shamshiri2018automatically">2018</a>)</span>)</p>
+<ul>
+<li>Automatically generated tests are usually not based on realistic scenarios, and are therefore generally considered to be less readable.</li>
+<li>Every time a test fails, a developer has to decide whether this failure has revealed a regression fault in the program under test, or whether the test itself needs to be updated.</li>
+<li>Whilst maintenance activities take longer when working with automatically generated tests, they found developers to be equally effective with manually written and automatically generated tests.</li>
+<li>There is a need for research into the generation of more realistic tests.</li>
+</ul>
+<p>Model-Based Strategies for Reducing the Complexity of Statistically Generated Test Suites (<span class="citation">Dulz (<a href="#ref-dulz2013model">2013</a>)</span>)</p>
+<ul>
+<li>By directed adjusting specific probability values in the usage profile of a Markov chain usage model it is relatively easy to generate abstract test suites for different user classes and test purposes in an automated approach.</li>
+<li>By using proper tools, like the TestUS Testplayer even less experienced test engineers will be able to efficiently generate abstract test cases and to graphically assess quality characteristics of different test suites.</li>
+</ul>
+</div>
+<div id="testing-practices" class="section level3">
+<h3><span class="header-section-number">3.3.5</span> Testing Practices</h3>
+<p>A survey of software testing practices in Canada (<span class="citation">Garousi and Zhi (<a href="#ref-GAROUSI20131354">2013</a>)</span>)</p>
+<ul>
+<li>The importance of testing-related training is increasing</li>
+<li>Functional and unit-testing receive the most effort and attention</li>
+<li>The mutation testing approach is getting attention amongst Canadian firms</li>
+<li>Test last approach is still dominant, few companies try TDD</li>
+<li>In terms of popularity: NUnit and Web application testing overtook JUnit and IBM Rational tools</li>
+<li>Coverage metrics, to most commonly used: branch and conditional coverage</li>
+<li>Number of passing test / defects per day is used as the most popular metric in order to determine a release</li>
+<li>Ratio of testers : developers is somewhere around 1:2 and 1:5. The total effort is estimated to be less than 40%</li>
+<li>More than 70% of the respondents participated in a forum related to testing on a regular basis</li>
+<li>In general: more attention to testing (in 2012)</li>
+</ul>
+<p>Developer testing in the IDE: Patterns, beliefs and behavior (<span class="citation">Beller et al. (<a href="#ref-beller2017developer">2017</a>)</span>)</p>
+<ul>
+<li>Java C# developer testing behavior</li>
+<li>Little support for TDD</li>
+<li>Developers execute tests phased</li>
+<li>Only half of the developers practice testing actively</li>
+<li>Testing time is overestimated twofold.</li>
+<li>12% of the test cases show flaky behavior</li>
+<li>Correlation between test flakiness and CI error-proneness?</li>
+<li>Few (25%) tests detect 75% of the execution failures.</li>
+<li>Tests and production code do not co-evolve gracefully.</li>
+</ul>
+<p>When, how, and why developers (do not) test in their IDEs (<span class="citation">Beller et al. (<a href="#ref-beller2015">2015</a>)</span>)</p>
+<ul>
+<li>Developers largely do not run tests in the IDE. However, when they do, they do it heftily.</li>
+<li>Tests run in the IDE take a short amount of time</li>
+<li>Developers run selective tests (often 1)</li>
+<li>Most test executions fail</li>
+<li>A typical reaction is to dive into offending code</li>
+<li>TDD is not widely practiced, even by those who say they do (strict definition)</li>
+<li>The way people test is different from how they believe they test.</li>
+</ul>
+<p>Uncertainty in Software Testing (<span class="citation">Moiz (<a href="#ref-moiz2017uncertainty">2017</a>)</span>)</p>
+<ul>
+<li>Mechanisms are needed to address uncertainty in each of the deliverables produced during software development process. The uncertainty metrics can help in assessing the degree of uncertainty.</li>
+</ul>
+</div>
+<div id="risk-driven-testing" class="section level3">
+<h3><span class="header-section-number">3.3.6</span> Risk-driven testing</h3>
+<p>Investigating NLP-Based Approaches for Predicting Manual Test Case Failure (<span class="citation">Hemmati and Sharifi (<a href="#ref-hemmati2018">2018</a>)</span>)</p>
+<ul>
+<li>System-level manual acceptance testing is one of the most expensive testing activities.</li>
+<li>A new test case failure prediction approach is proposed, which does not rely on source code or specification of the software under test.</li>
+<li>The approach uses basic Information Retrieval (IR) methods on the test case descriptions, written in natural language, based on the frequency of terms in the manual test scripts.</li>
+<li>The test fail prediction is accurate and the NLP-based feature can improve the prediction models.</li>
+<li>“To the best of our knowledge, this work is the first use of NLP on manual test case scripts for test failure prediction and has shown promising results, which we are planning to replicate on different systems and expand on different NLP-based features to more accurately extract features keywords from test cases.”</li>
+</ul>
+<p>Risk-driven software testing and reliability (<span class="citation">Schneidewind (<a href="#ref-schneidewind2007">2007</a>)</span>)</p>
+<p>This paper is discarded from the survey, because it uses weak models to validate the claims made and is too old based on our exclusion criteria.</p>
+<p>Risk-driven vulnerability testing: Results from eHealth experiments using patterns and model-based approach (<span class="citation">Vernotte et al. (<a href="#ref-vernotte2015">2015</a>)</span>)</p>
+<ul>
+<li>This paper introduces and reports on an original tooled risk-driven security testing process called Pattern-driven and Model-based Vulnerability Testing. This fully automated testing process, drawing on risk-driven strategies and Model-Based Testing (MBT) techniques, aims to improve the capability of detection of various Web application vulnerabilities, in particular SQL injections, Cross-Site Scripting, and Cross-Site Request Forgery.</li>
+<li>An empirical evaluation, conducted on a complex and freely-accessible eHealth system developed by Info World, shows that this novel process is appropriate for automatically generating and executing risk-driven vulnerability test cases and is promising to be deployed for large-scale Web applications.</li>
+</ul>
+<p>A comparative study of software testing techniques (<span class="citation">Atifi, Mamouni, and Marzak (<a href="#ref-atifi2017">2017</a>)</span>)</p>
+<ul>
+<li>They highlight two software testing techniques considered among the most used techniques to perform software tests, and then perform a comparative study of these techniques, the approaches that support studied techniques, and the tools used for each technique.</li>
+<li>The first technique is Model-based-testing, the second Risk-based testing.</li>
+</ul>
+<p>Test case analytics: Mining test case traces to improve risk-driven testing (<span class="citation">Noor and Hemmati (<a href="#ref-noor2015test">2015</a>)</span>)</p>
+<ul>
+<li>In risk-driven testing, test cases are generated and/or prioritized based on different risk measures. *The most basic risk measure would analyze the history of the software and assigns higher risk to the test cases that used to detect bugs in the past.</li>
+<li>A new risk measure is defined which assigns a risk factor to a test case, if it is similar to a failing test case from history. *The new risk measure is by far more effective in identifying failing test cases compared to the traditional risk measure.</li>
+<li>“Though our initial and simple implementation in this paper was very promising, we are planning to investigate other similarity functions, specifically those that account for the method orders in the trace. In addition, this project is a sub-project of a bigger research on risk-driven model-based testing, where we are planning to extract specification models of the system and augment them with the similarity-based risk measures. Those models can later be used in both risk-driven test generation and prioritization.”</li>
+</ul>
 
+</div>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-supportingtestsuite">
+<p>Mirzaaghaei, M., F. Pastore, and M. Pezze. 2012. “Supporting Test Suite Evolution Through Test Case Adaptation.” In <em>2012 Ieee Fifth International Conference on Software Testing, Verification and Validation</em>, 231–40. doi:<a href="https://doi.org/10.1109/ICST.2012.103">10.1109/ICST.2012.103</a>.</p>
+</div>
+<div id="ref-pinto2013">
+<p>Pinto, L. S., S. Sinha, and A. Orso. 2013. “TestEvol: A Tool for Analyzing Test-Suite Evolution.” In <em>Proceedings - International Conference on Software Engineering</em>, 1303–6. <a href="www.scopus.com" class="uri">www.scopus.com</a>.</p>
+</div>
+<div id="ref-bevan2005">
+<p>Bevan, J., E. J. Whitehead Jr., S. Kim, and M. Godfrey. 2005. “Facilitating Software Evolution Research with Kenyon.” In <em>ESEC/Fse’05 - Proceedings of the Joint 10th European Software Engineering Conference (Esec) and 13th Acm Sigsoft Symposium on the Foundations of Software Engineering (Fse-13)</em>, 177–86. <a href="www.scopus.com" class="uri">www.scopus.com</a>.</p>
+</div>
+<div id="ref-pinto2012understanding">
+<p>Pinto, Leandro Sales, Saurabh Sinha, and Alessandro Orso. 2012. “Understanding Myths and Realities of Test-Suite Evolution.” In <em>Proceedings of the Acm Sigsoft 20th International Symposium on the Foundations of Software Engineering</em>, 33. ACM.</p>
+</div>
+<div id="ref-marsavina2014">
+<p>Marsavina, C., D. Romano, and A. Zaidman. 2014. “Studying Fine-Grained Co-Evolution Patterns of Production and Test Code.” In <em>2014 Ieee 14th International Working Conference on Source Code Analysis and Manipulation</em>, 195–204. doi:<a href="https://doi.org/10.1109/SCAM.2014.28">10.1109/SCAM.2014.28</a>.</p>
+</div>
+<div id="ref-zaidman2011studying">
+<p>Zaidman, Andy, Bart Van Rompaey, Arie van Deursen, and Serge Demeyer. 2011. “Studying the Co-Evolution of Production and Test Code in Open Source and Industrial Developer Test Processes Through Repository Mining.” <em>Empirical Software Engineering</em> 16 (3). Springer: 325–64.</p>
+</div>
+<div id="ref-greiler2013">
+<p>Greiler, M., A. Zaidman, A. Van Deursen, and M. -. Storey. 2013. “Strategies for Avoiding Text Fixture Smells During Software Evolution.” In <em>IEEE International Working Conference on Mining Software Repositories</em>, 387–96. <a href="www.scopus.com" class="uri">www.scopus.com</a>.</p>
+</div>
+<div id="ref-hurdugaci2012">
+<p>Hurdugaci, V., and A. Zaidman. 2012. “Aiding Software Developers to Maintain Developer Tests.” In <em>2012 16th European Conference on Software Maintenance and Reengineering</em>, 11–20. doi:<a href="https://doi.org/10.1109/CSMR.2012.12">10.1109/CSMR.2012.12</a>.</p>
+</div>
+<div id="ref-eick2001">
+<p>Eick, S. G., T. L. Graves, A. F. Karr, J. S. Marron, and A. Mockus. 2001. “Does Code Decay? Assessing the Evidence from Change Management Data.” <em>IEEE Transactions on Software Engineering</em> 27 (1): 1–12. doi:<a href="https://doi.org/10.1109/32.895984">10.1109/32.895984</a>.</p>
+</div>
+<div id="ref-robinson2011">
+<p>Robinson, B., M. D. Ernst, J. H. Perkins, V. Augustine, and N. Li. 2011. “Scaling up Automated Test Generation: Automatically Generating Maintainable Regression Unit Tests for Programs.” In <em>2011 26th Ieee/Acm International Conference on Automated Software Engineering (Ase 2011)</em>, 23–32. doi:<a href="https://doi.org/10.1109/ASE.2011.6100059">10.1109/ASE.2011.6100059</a>.</p>
+</div>
+<div id="ref-bowring2014obsidian">
+<p>Bowring, James, and Hunter Hegler. 2014. “Obsidian: Pattern-Based Unit Test Implementations.” <em>Journal of Software Engineering and Applications</em> 7 (02). Scientific Research Publishing: 94.</p>
+</div>
+<div id="ref-shamshiri2018automatically">
+<p>Shamshiri, Sina, José Miguel Rojas, Juan Pablo Galeotti, Neil Walkinshaw, and Gordon Fraser. 2018. “How Do Automatically Generated Unit Tests Influence Software Maintenance?” In <em>Software Testing, Verification and Validation (Icst), 2018 Ieee 11th International Conference on</em>, 250–61. IEEE. doi:<a href="https://doi.org/10.1109/ICST.2018.00033">10.1109/ICST.2018.00033</a>.</p>
+</div>
+<div id="ref-GAROUSI20131354">
+<p>Garousi, Vahid, and Junji Zhi. 2013. “A Survey of Software Testing Practices in Canada.” <em>Journal of Systems and Software</em> 86 (5): 1354–76. doi:<a href="https://doi.org/https://doi.org/10.1016/j.jss.2012.12.051">https://doi.org/10.1016/j.jss.2012.12.051</a>.</p>
+</div>
+<div id="ref-beller2017developer">
+<p>Beller, Moritz, Gousios Georgios, Annibale Panichella, Sebastian Proksch, Sven Amann, and Andy Zaidman. 2017. “Developer Testing in the Ide: Patterns, Beliefs, and Behavior.” <em>IEEE Transactions on Software Engineering</em>, no. 1. IEEE: 1–1.</p>
+</div>
+<div id="ref-beller2015">
+<p>Beller, M., G. Gousios, A. Panichella, and A. Zaidman. 2015. “When, How, and Why Developers (Do Not) Test in Their Ides.” In <em>2015 10th Joint Meeting of the European Software Engineering Conference and the Acm Sigsoft Symposium on the Foundations of Software Engineering, Esec/Fse 2015 - Proceedings</em>, 179–90. <a href="www.scopus.com" class="uri">www.scopus.com</a>.</p>
+</div>
+<div id="ref-moiz2017uncertainty">
+<p>Moiz, Salman Abdul. 2017. “Uncertainty in Software Testing.” In <em>Trends in Software Testing</em>, 67–87. Springer.</p>
+</div>
+<div id="ref-hemmati2018">
+<p>Hemmati, H., and F. Sharifi. 2018. “Investigating Nlp-Based Approaches for Predicting Manual Test Case Failure.” In <em>Proceedings - 2018 Ieee 11th International Conference on Software Testing, Verification and Validation, Icst 2018</em>, 309–19. <a href="www.scopus.com" class="uri">www.scopus.com</a>.</p>
+</div>
+<div id="ref-schneidewind2007">
+<p>Schneidewind, N. F. 2007. “Risk-Driven Software Testing and Reliability.” <em>International Journal of Reliability, Quality and Safety Engineering</em> 14 (2): 99–132. <a href="www.scopus.com" class="uri">www.scopus.com</a>.</p>
+</div>
+<div id="ref-vernotte2015">
+<p>Vernotte, A., C. Botea, B. Legeard, A. Molnar, and F. Peureux. 2015. <em>Risk-Driven Vulnerability Testing: Results from eHealth Experiments Using Patterns and Model-Based Approach</em>. Vol. 9488. Lecture Notes in Computer Science (Including Subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics). <a href="www.scopus.com" class="uri">www.scopus.com</a>.</p>
+</div>
+<div id="ref-atifi2017">
+<p>Atifi, M., A. Mamouni, and A. Marzak. 2017. <em>A Comparative Study of Software Testing Techniques</em>. Vol. 10299 LNCS. Lecture Notes in Computer Science (Including Subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics). <a href="www.scopus.com" class="uri">www.scopus.com</a>.</p>
+</div>
+<div id="ref-noor2015test">
+<p>Noor, Tanzeem Bin, and Hadi Hemmati. 2015. “Test Case Analytics: Mining Test Case Traces to Improve Risk-Driven Testing.” In <em>Software Analytics (Swan), 2015 Ieee 1st International Workshop on</em>, 13–16. IEEE.</p>
+</div>
+<div id="ref-dulz2013model">
+<p>Dulz, Winfried. 2013. “Model-Based Strategies for Reducing the Complexity of Statistically Generated Test Suites.” In <em>International Conference on Software Quality</em>, 89–103. Springer.</p>
+</div>
+<div id="ref-leung2015testing">
+<p>Leung, Hareton KN, and Kim Man Lui. 2015. “Testing Analytics on Software Variability.” In <em>Software Analytics (Swan), 2015 Ieee 1st International Workshop on</em>, 17–20. IEEE.</p>
 </div>
 </div>
             </section>
@@ -289,8 +756,8 @@
           </div>
         </div>
       </div>
-
-<a href="a-contemporary-view-on-software-analytics.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="a-contemporary-view-on-software-analytics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="build-analytics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -320,7 +787,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/saltudelft/software-analytics-book/edit/master/index.Rmd",
+"link": "https://github.com/saltudelft/software-analytics-book/edit/master/02-testing-analytics.Rmd",
 "text": "Edit"
 },
 "download": ["software-analytics-survey.pdf", "software-analytics-survey.epub"],

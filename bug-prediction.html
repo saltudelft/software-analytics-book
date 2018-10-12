@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-
-<link rel="next" href="a-contemporary-view-on-software-analytics.html">
+<link rel="prev" href="build-analytics.html">
+<link rel="next" href="ecosystem-analytics.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -268,20 +268,101 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">A Literature Survey of Software Analytics</h1>
-<p class="author"><em>IN4334 2018 TU Delft</em></p>
-<p class="date"><em>2018-10-12</em></p>
+<div id="bug-prediction" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> Bug Prediction</h1>
+<div id="motivation-2" class="section level2">
+<h2><span class="header-section-number">5.1</span> Motivation</h2>
+<p>Minimizing the number of bugs in software is an effort central to software engineering - faulty code fails to fullfill the purpose it was written for, its impact ranges from sligthly embarrassing to disastrous and dangerous, and last but not least - fixing it costs time and money. Resources in a software development lifecycle are almost always limited and therefore should be allocated to where they are needed most - in order to avoid bugs, they should be focused on the most fault-prone areas of the project. Being able to predict where such areas might be would allow more development and testing efforts to be allocated on the right places.</p>
+<p>However, as noted in <span class="citation">D’Ambros, Lanza, and Robbes (<a href="#ref-DAmbros2012">2012</a>)</span>, reliably predicting which parts of source code are the most fault-prone is one of the holy-grails of software engineering. Thus it is not surprising that bug-prediction continues to garner a widespread research interest in software analytics, now equipped with the ever-expanding toolbox of data-mining and machine learning techniques. In this survey we investigate the current efforts in bug-prediction in the light of the advances in software analytics methods and focus our attention on answering the following research questions:</p>
+<ul>
+<li><strong>RQ1</strong> What is the current state of the art in bug prediction? More specifically, we aim to answer the following:
+<ul>
+<li>What software or other metrics does bug prediction rely on and how good are they?</li>
+<li>What kind prediction models are predominantly used?</li>
+<li>How are bug prediction models and results validated and evaluated?</li>
+</ul></li>
+<li><strong>RQ2</strong> What is the current state of practice in bug prediction?
+<ul>
+<li>Are bug prediction techniques applied in practice and if so, how?</li>
+<li>Are the current developments in the field able to provide actionable tools for developers?</li>
+</ul></li>
+<li><strong>RQ3</strong> What are some of the open challenges and directions for future research?</li>
+</ul>
 </div>
-<div id="intro" class="section level1">
-<h1><span class="header-section-number">Chapter 1</span> Preamble</h1>
-<p>The book you see in front of you is the outcome of an eight week seminar run by the Software Engineering Research Group (SERG) at TU Delft. We have split up the novel area of Software Analytics into several sub topics. Every chapter addresses one such sub-topic of Software Analytics and is the outcome of a systematic literature review a laborious team of 3-4 students performed.</p>
-<p>With this book, we hope to structure the new field of Software Analytics and show how it is related to many long existing research fields.</p>
-<p><em>The IN4334 – Software Analytics class of 2018</em></p>
-<div id="license" class="section level2">
-<h2><span class="header-section-number">1.1</span> License</h2>
-<p><img src="figures/cc-nc-sa.png" alt="Creative Commons" /> This book is copyrighted 2018 by TU Delft and its respective authors and distributed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a></p>
+<div id="research-protocol-2" class="section level2">
+<h2><span class="header-section-number">5.2</span> Research protocol</h2>
+<p>We started by studying the initial 6 seed papers which were selected based on domain knowledge:</p>
+<ul>
+<li><span class="citation">Gyimothy, Ferenc, and Siket (<a href="#ref-Gyimothy2005">2005</a>)</span></li>
+<li><span class="citation">Cagatay Catal and Diri (<a href="#ref-Catal2009review">2009</a>)</span></li>
+<li><span class="citation">Arisholm, Briand, and Johannessen (<a href="#ref-Arisholm2010">2010</a>)</span></li>
+<li><span class="citation">D’Ambros, Lanza, and Robbes (<a href="#ref-DAmbros2010">2010</a>)</span></li>
+<li><span class="citation">Hall et al. (<a href="#ref-Hall2012">2012</a>)</span></li>
+<li><span class="citation">Lewis et al. (<a href="#ref-Lewis2013">2013</a>)</span></li>
+</ul>
+<p>Our searches were based on the following elements:</p>
+<ol style="list-style-type: decimal">
+<li><p>Keyword search using search engines (Scopus, ACM Digital Library, IEEE Explorer). The search query was constructed so that the paper title had to contain the phrase bug prediction, but also the other more general variants used in literature: <em>bug/defect/fault prediction</em>. The title also had to contain at least one of following keywords: <em>metrics</em>, <em>models</em>, <em>validation</em>, <em>evaluation</em>, <em>developers</em>. To remain within the bug prediction field we required <em>software</em> to appear in the abstract.</p></li>
+<li><p>Filtering search results by publication date. We excluded papers older than 10 years; that is, published before 2008.</p></li>
+<li><p>Filtering by the number of citations. We selected papers with 10 or more citations in order to focus on the ones that already have some visibility within the field.</p></li>
+<li><p>Exploring other impactful publications by the same authors.</p></li>
+</ol>
+<p><em>Table 1. Papers found by investigating the authors of other papers.</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Starting point</th>
+<th>Type</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="citation">D’Ambros, Lanza, and Robbes (<a href="#ref-DAmbros2010">2010</a>)</span></td>
+<td>is author of</td>
+<td><span class="citation">D’Ambros, Lanza, and Robbes (<a href="#ref-DAmbros2012">2012</a>)</span></td>
+</tr>
+<tr class="even">
+<td><span class="citation">Cagatay Catal and Diri (<a href="#ref-Catal2009review">2009</a>)</span></td>
+<td>is author of</td>
+<td><span class="citation">Catal (<a href="#ref-Catal2011">2011</a>)</span> <br> <span class="citation">C. Catal and Diri (<a href="#ref-Catal2009investigating">2009</a>)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="answers-1" class="section level2">
+<h2><span class="header-section-number">5.3</span> Answers</h2>
 
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-DAmbros2012">
+<p>D’Ambros, M., M. Lanza, and R. Robbes. 2012. “Evaluating Defect Prediction Approaches: A Benchmark and an Extensive Comparison.” <em>Empirical Software Engineering</em> 17 (4-5): 531–77. <a href="www.scopus.com" class="uri">www.scopus.com</a>.</p>
+</div>
+<div id="ref-Gyimothy2005">
+<p>Gyimothy, T., R. Ferenc, and I. Siket. 2005. “Empirical validation of object-oriented metrics on open source software for fault prediction.” <em>IEEE Transactions on Software Engineering</em> 31 (10): 897–910. doi:<a href="https://doi.org/10.1109/TSE.2005.112">10.1109/TSE.2005.112</a>.</p>
+</div>
+<div id="ref-Catal2009review">
+<p>Catal, Cagatay, and Banu Diri. 2009. “A systematic review of software fault prediction studies.” doi:<a href="https://doi.org/10.1016/j.eswa.2008.10.027">10.1016/j.eswa.2008.10.027</a>.</p>
+</div>
+<div id="ref-Arisholm2010">
+<p>Arisholm, Erik, Lionel C Briand, and Eivind B Johannessen. 2010. “A systematic and comprehensive investigation of methods to build and evaluate fault prediction models.” <em>Journal of Systems and Software</em> 83 (1): 2–17. doi:<a href="https://doi.org/10.1016/j.jss.2009.06.055">10.1016/j.jss.2009.06.055</a>.</p>
+</div>
+<div id="ref-DAmbros2010">
+<p>D’Ambros, Marco, Michele Lanza, and Romain Robbes. 2010. “An extensive comparison of bug prediction approaches.” <em>Proceedings - International Conference on Software Engineering</em>, 31–41. doi:<a href="https://doi.org/10.1109/MSR.2010.5463279">10.1109/MSR.2010.5463279</a>.</p>
+</div>
+<div id="ref-Hall2012">
+<p>Hall, T., S. Beecham, D. Bowes, D. Gray, and S. Counsell. 2012. “A Systematic Literature Review on Fault Prediction Performance in Software Engineering.” <em>IEEE Transactions on Software Engineering</em> 38 (6): 1276–1304. doi:<a href="https://doi.org/10.1109/TSE.2011.103">10.1109/TSE.2011.103</a>.</p>
+</div>
+<div id="ref-Lewis2013">
+<p>Lewis, Chris, Zhongpeng Lin, Caitlin Sadowski, Xiaoyan Zhu, Rong Ou, and E. James Whitehead. 2013. “Does bug prediction support human developers? Findings from a Google case study.” In <em>2013 35th International Conference on Software Engineering (Icse)</em>, 372–81. IEEE. doi:<a href="https://doi.org/10.1109/ICSE.2013.6606583">10.1109/ICSE.2013.6606583</a>.</p>
+</div>
+<div id="ref-Catal2011">
+<p>Catal, C. 2011. “Software Fault Prediction: A Literature Review and Current Trends.” <em>Expert Systems with Applications</em> 38 (4): 4626–36. <a href="www.scopus.com" class="uri">www.scopus.com</a>.</p>
+</div>
+<div id="ref-Catal2009investigating">
+<p>Catal, C., and B. Diri. 2009. “Investigating the Effect of Dataset Size, Metrics Sets, and Feature Selection Techniques on Software Fault Prediction Problem.” <em>Information Sciences</em> 179 (8): 1040–58. <a href="www.scopus.com" class="uri">www.scopus.com</a>.</p>
 </div>
 </div>
             </section>
@@ -289,8 +370,8 @@
           </div>
         </div>
       </div>
-
-<a href="a-contemporary-view-on-software-analytics.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="build-analytics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ecosystem-analytics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -320,7 +401,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/saltudelft/software-analytics-book/edit/master/index.Rmd",
+"link": "https://github.com/saltudelft/software-analytics-book/edit/master/04-bug-prediction.Rmd",
 "text": "Edit"
 },
 "download": ["software-analytics-survey.pdf", "software-analytics-survey.epub"],

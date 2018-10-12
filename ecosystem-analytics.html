@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="final-words.html">
-
+<link rel="prev" href="bug-prediction.html">
+<link rel="next" href="release-engineering-analytics.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -268,400 +268,652 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="references" class="section level1 unnumbered">
-<h1>References</h1>
+<div id="ecosystem-analytics" class="section level1">
+<h1><span class="header-section-number">Chapter 6</span> Ecosystem Analytics</h1>
+<div id="motivation-3" class="section level2">
+<h2><span class="header-section-number">6.1</span> Motivation</h2>
+<p>In the modern day and age, the majority of software products make use of external software or libraries to use the functionality (for example parsing JSON) of these products, without having to develop this functionality itself. Moreover, multiple languages, such as Python and Rust, provide package managers (pip<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> and Cargo<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a> respectively) which can be used to easily manage this third-party functionality, as well as distribute it.</p>
+<p>In parallel to this, the popularity of creating open source projects is on the rise as well. On platforms such as GitHub<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a>, it is easy and quick to create a new software project, which can be developed, reviewed and used by the whole community. This development leads to more libraries being developed and being available for public use.</p>
+<p>Because of these two developments, further inspection of the dependency relations between projects leads to a graph-like structure of software projects, where the nodes are the projects and the edges represent a dependency between two software projects. This structure is known as a <em>software ecosystem</em>. As stated by <span class="citation">Messerschmitt and Szyperski (<a href="#ref-Messerschmitt2003">2003</a>)</span>, a <em>software ecosystem</em> is “a collection of software products that have some given degree of symbiotic relationships.” Another, similar definition is given by <span class="citation">Lungu (<a href="#ref-Lungu2009">2009</a>)</span>: “A software ecosystem is a collection of software projects which are developed and co-evolve in the same environment.” <span class="citation">Mens et al. (<a href="#ref-Mens2013">2013</a>)</span> extends this definition, “by explicitly considering the communities involved (e.g. user and developer communities) as being part of the software ecosystem.” <span class="citation">Stallman (<a href="#ref-Stallman2002">2002</a>)</span> opposes the overall notion of calling this structure a software ecosystem: “It is inadvisable to describe the free software community, or any human community, as an ecosystem, because that word implies the absence of ethical judgment.”</p>
+<p>Although <span class="citation">Stallman (<a href="#ref-Stallman2002">2002</a>)</span> thinks that the term software ecosystem itself is incorrect, it does not necessarily disagree with the definition of the term. The definition which will be used in this chapter is the definition of <span class="citation">Mens et al. (<a href="#ref-Mens2013">2013</a>)</span>, since it captures the essence of the other two definitions, while adding the notion of the human communities alongside as well.</p>
+<p>By performing analysis on these software ecosystems, the aim is to generate meaningful insights. These insights can then be used to improve the efficiency and effectivity of the software development process, as well as to learn to identify and inform about potential problems. For example, a warning could be displayed if a dependency has a security vulnerability.</p>
+<p>The field of research on software ecosystems, <em>ecosystem analytics</em>, focuses on performing such analysis. This chapter discovers what the current progress is in this field of research through a literature survey. This discovery is not limited to the theoretical perspective, but will uncover practical implications as well as the open challenges of the field. In order to describe each covered aspect, we have formulated three research questions:</p>
+<ul>
+<li><strong>RQ1</strong>: What is the current state of the art in software analytics for ecosystem analytics?</li>
+<li><strong>RQ2</strong>: What are the practical implications from the state of the art?</li>
+<li><strong>RQ3</strong>: What are the open challenges in ecosystem analytics, for which future research is required?</li>
+</ul>
+<p>Each of these research questions will be answered using recent papers written in this field of research.</p>
+<p>This chapter is structured as follows. First, the research protocol is described in detail. This includes decisions on which papers are included in the review. After this, the research questions are answered using the previously stated set of papers.</p>
+</div>
+<div id="research-protocol-3" class="section level2">
+<h2><span class="header-section-number">6.2</span> Research Protocol</h2>
+<p>In order to select literature to answer the research questions given in the previous section, the survey method suggested by <span class="citation">B. Kitchenham (<a href="#ref-Kitchenham2004">2004</a><a href="#ref-Kitchenham2004">a</a>)</span> is used. This method creates a systematic way to select a set of papers, which is relevant to the research question(s).</p>
+<p>The search strategy, as described by <span class="citation">B. Kitchenham (<a href="#ref-Kitchenham2004">2004</a><a href="#ref-Kitchenham2004">a</a>)</span>, are usually iterative and benefit from consultations with experts in the field, amongst other things. Our search strategy can be split in three different types:</p>
+<ul>
+<li>the initial seed, given by an expert in the field, MSc. Joseph Hejderup</li>
+<li>a search using a digital search engine, namely Google Scholar<a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a></li>
+<li>a selection of referenced papers within papers selected before in the above two searches</li>
+</ul>
+<p>In order to select literature to answer the research questions given in the previous section, the survey method suggested by <span class="citation">B. Kitchenham (<a href="#ref-Kitchenham2004">2004</a><a href="#ref-Kitchenham2004">a</a>)</span> is used. This method creates a systematic way to select a set of papers, which is relevant to the research question(s).</p>
+<p>The search strategy, as described by <span class="citation">B. Kitchenham (<a href="#ref-Kitchenham2004">2004</a><a href="#ref-Kitchenham2004">a</a>)</span>, are usually iterative and benefit from consultations with experts in the field, amongst other things. Our search strategy can be split in three different types:</p>
+<ul>
+<li>the initial seed, given by an expert in the field, MSc. Joseph Hejderup</li>
+<li>a search using a digital search engine, namely Google Scholar<a href="#fn6" class="footnoteRef" id="fnref6"><sup>6</sup></a></li>
+<li>a selection of referenced papers within papers selected before in the above two searches</li>
+</ul>
+<div id="initial-seed" class="section level3">
+<h3><span class="header-section-number">6.2.1</span> Initial seed</h3>
+<p>MSc. Joseph Hejderup has provided us with a total of thirteen papers, as shown in Table 1.</p>
+<p>As each of these papers come from an expert in the field, each paper is assumed to be relevant to atleast the field of software ecosystems. Because of this, each of these papers were judged on their relevance to either of the research questions. In Table 1, this relevance judgment is shown in the left column, since a paper is only selected, if the paper is indeed relevant. Table 2 describes the reason for which each particular paper is not selected for the literature survey.</p>
+<table style="width:100%;">
+<colgroup>
+<col width="1%" />
+<col width="9%" />
+<col width="39%" />
+<col width="2%" />
+<col width="45%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Selected</th>
+<th>Author(s)</th>
+<th>Title</th>
+<th>Year</th>
+<th>Keywords</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>-</td>
+<td><span class="citation">Abate et al. (<a href="#ref-Abate2009">2009</a>)</span></td>
+<td>Strong dependencies between software components</td>
+<td>2009</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>-</td>
+<td><span class="citation">Abate and Cosmo (<a href="#ref-Abate2011">2011</a>)</span></td>
+<td>Predicting upgrade failures using dependency analysis</td>
+<td>2011</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>+</td>
+<td><span class="citation">Abdalkareem et al. (<a href="#ref-Abdalkareem2017">2017</a>)</span></td>
+<td>Why do developers use trivial packages? An empirical case study on NPM</td>
+<td>2017</td>
+<td>JavaScript; Node.js; Code Reuse; Empirical Studies</td>
+</tr>
+<tr class="even">
+<td>+</td>
+<td><span class="citation">Bogart et al. (<a href="#ref-Bogart2016">2016</a>)</span></td>
+<td>How to break an api: Cost negotiation and community values in three software ecosystem</td>
+<td>2016</td>
+<td>Software ecosystems; Dependency management; semantic versioning; Collaboration; Qualitative research</td>
+</tr>
+<tr class="odd">
+<td>+</td>
+<td><span class="citation">Claes et al. (<a href="#ref-Claes2015">2015</a>)</span></td>
+<td>A historical analysis of Debian package incompatibilities</td>
+<td>2015</td>
+<td>debian, conflict, empirical, analysis, software, evolution, distribution, package, dependency, maintenance</td>
+</tr>
+<tr class="even">
+<td>+</td>
+<td><span class="citation">Constantinou and Mens (<a href="#ref-Constantinou2017">2017</a>)</span></td>
+<td>An empirical comparison of developer retention in the RubyGems and NPM software ecosystems</td>
+<td>2017</td>
+<td>Software ecosystem, Socio-technical interaction, Software evolution, Empirical analysis, Survival analysis</td>
+</tr>
+<tr class="odd">
+<td>+</td>
+<td><span class="citation">Hejderup, Deursen, and Gousios (<a href="#ref-Hejderup2018">2018</a>)</span></td>
+<td>Software Ecosystem Call Graph for Dependency Management</td>
+<td>2018</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>+</td>
+<td><span class="citation">Kikas et al. (<a href="#ref-Kikas2017">2017</a>)</span></td>
+<td>Structure and evolution of package dependency networks</td>
+<td>2017</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>+</td>
+<td><span class="citation">R. G. Kula, German, Ouni, et al. (<a href="#ref-Kula2017">2017</a>)</span></td>
+<td>Do developers update their library dependencies?</td>
+<td>2017</td>
+<td>Software reuse, Software maintenance, Security vulnerabilities</td>
+</tr>
+<tr class="even">
+<td>-</td>
+<td><span class="citation">Mens et al. (<a href="#ref-Mens2013">2013</a>)</span></td>
+<td>Studying Evolving Software Ecosystems based on Ecological Models</td>
+<td>2013</td>
+<td>Coral Reef, Natural Ecosystem, Open Source Software, Ecological Model, Software Project</td>
+</tr>
+<tr class="odd">
+<td>+</td>
+<td><span class="citation">Raemaekers, Deursen, and Visser (<a href="#ref-Raemaekers2017">2017</a>)</span></td>
+<td>Semantic versioning and impact of breaking changes in the Maven repository</td>
+<td>2017</td>
+<td>Semantic versioning, Breaking changes, Software libraries</td>
+</tr>
+<tr class="even">
+<td>+</td>
+<td><span class="citation">Robbes, Lungu, and Röthlisberger (<a href="#ref-Robbes2012">2012</a>)</span></td>
+<td>How do developers react to API deprecation? The case of a smalltalk ecosystem</td>
+<td>2012</td>
+<td>Ecosystems, Mining Software Repositories, Empirical Studies</td>
+</tr>
+<tr class="odd">
+<td>+</td>
+<td><span class="citation">Trockman (<a href="#ref-Trockman2018">2018</a>)</span></td>
+<td>Adding sparkle to social coding: An empirical study of repository badges in the npm ecosystem</td>
+<td>2018</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>Table: 1. Papers provided by MSc. Joseph Hejderup. The first column describes whether the paper of the row will be used. A ‘+’ means it will be used, a ‘-’ means it will not.</em></p>
+<table style="width:11%;">
+<colgroup>
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Paper Reference</th>
+<th>Reason not selected</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="citation">Abate et al. (<a href="#ref-Abate2009">2009</a>)</span></td>
+<td>This paper seems to delve more into one software project itself whereas we are more interested in the relationship between different software projects</td>
+</tr>
+<tr class="even">
+<td><span class="citation">Abate and Cosmo (<a href="#ref-Abate2011">2011</a>)</span></td>
+<td>Similarly to <span class="citation">Abate et al. (<a href="#ref-Abate2009">2009</a>)</span>, we are more interested in the relationship between different software projects</td>
+</tr>
+<tr class="odd">
+<td><span class="citation">Mens et al. (<a href="#ref-Mens2013">2013</a>)</span></td>
+<td>We were in doubt over this one, it could be useful but we weren’t convinced that it was. Since we already had a lot of material we decided to not use this</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table: 2. Papers from the initial seed that were not selected for the literature survey, along with a specification of the reason why this is the case.</em></p>
+</div>
+<div id="digital-search-engine" class="section level3">
+<h3><span class="header-section-number">6.2.2</span> Digital Search Engine</h3>
+<p>The second strategy type which is used to select relevant papers for this literature study, is by a digital search engine. In this literature survey, Google Scholar<a href="#fn7" class="footnoteRef" id="fnref7"><sup>7</sup></a> is used. From the initial seed, common keywords were retrieved and the following queries have been used to search for relevant papers:</p>
+<ul>
+<li>“software ecosystems” AND “empirical analysis” <em>(2018)</em></li>
+<li>“engineering software ecosystems” <em>(2014)</em></li>
+<li>“software ecosystem” AND “empirical” <em>(2014)</em></li>
+<li>“software ecosystem analytics” <em>(2014)</em></li>
+<li>“software ecosystem” AND “analysis” <em>(2017)</em></li>
+<li>“software ecosystem” AND “empirical” <em>(2018)</em></li>
+</ul>
+<p>For each of these queries, the results were first filtered by the publish year. These are described by the italic year after each query above. The papers that are filtered are published earlier than the set publish year. These specific years were chosen since the survey focuses on the state of the art within the ecosystem analytics.</p>
+<p>After this filtering, we first determined whether a paper was relevant to the literature survey by examining the title. If it was unclear whether the paper was indeed relevant by only looking at the title, the abstract of the paper was examined closely. On these two criteria, each of the selected papers were judged and ultimately selected. The selected paper using these method can be found in Table 3.</p>
+<table>
+<colgroup>
+<col width="6%" />
+<col width="36%" />
+<col width="2%" />
+<col width="40%" />
+<col width="15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>First Author</th>
+<th>Title</th>
+<th>Year</th>
+<th>Keywords</th>
+<th>Query Used</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="citation">Decan, Mens, and Grosjean (<a href="#ref-Decan2018">2018</a>)</span></td>
+<td>An empirical comparison of dependency network evolution in seven software packaging ecosystems</td>
+<td>2018</td>
+<td>Software repository mining, Software ecosystem, Package manager, Dependency network, Software evolution</td>
+<td>“software ecosystems” AND “empirical analysis”</td>
+</tr>
+<tr class="even">
+<td><span class="citation">Dittrich (<a href="#ref-Dittrich2014">2014</a>)</span></td>
+<td>Software engineering beyond the project – Sustaining software ecosystems</td>
+<td>2014</td>
+<td></td>
+<td>engineering software ecosystems</td>
+</tr>
+<tr class="odd">
+<td><span class="citation">Hora et al. (<a href="#ref-Hora2016">2016</a>)</span></td>
+<td>How do developers react to API evolution? A large-scale empirical study</td>
+<td>2016</td>
+<td>API evolution, API deprecation, Software ecosystem, Empirical study</td>
+<td>“software ecosystem” AND “empirical”</td>
+</tr>
+<tr class="even">
+<td><span class="citation">Izquierdo et al. (<a href="#ref-Izquierdo2018">2018</a>)</span></td>
+<td>Software Development Analytics for Xen: Why and How</td>
+<td>2018</td>
+<td>Companies, Ecosystems, Software, Measurement, Object recognition, Monitoring, Virtualization</td>
+<td>software ecosystem analytics</td>
+</tr>
+<tr class="odd">
+<td><span class="citation">Jansen (<a href="#ref-Jansen2014">2014</a>)</span></td>
+<td>Measuring the Health of Open Source Software Ecosystems: Beyond the Scope of Project Health</td>
+<td>2014</td>
+<td></td>
+<td>“open source software ecosystems”</td>
+</tr>
+<tr class="even">
+<td><span class="citation">R. G. Kula, German, Ishio, et al. (<a href="#ref-Kula2017-2">2017</a>)</span></td>
+<td>An exploratory study on library aging by monitoring client usage in a software ecosystem</td>
+<td>2017</td>
+<td></td>
+<td>“software ecosystem” AND “analysis”</td>
+</tr>
+<tr class="odd">
+<td><span class="citation">Malloy and Power (<a href="#ref-Malloy2018">2018</a>)</span></td>
+<td>An empirical analysis of the transition from Python 2 to Python 3</td>
+<td>2018</td>
+<td>Python programming, Programming language evolution, Compliance</td>
+<td>“software ecosystem” AND “empirical”</td>
+</tr>
+<tr class="even">
+<td><span class="citation">Manikas (<a href="#ref-Manikas2016">2016</a>)</span></td>
+<td>Revisiting software ecosystems Research: A longitudinal literature study</td>
+<td>2016</td>
+<td>Software ecosystems; Longitudinal literature study; Software ecosystem maturity</td>
+<td>“Software ecosystems” OR “Dependency management” OR “semantic version”</td>
+</tr>
+<tr class="odd">
+<td><span class="citation">Rajlich (<a href="#ref-Rajlich2014">2014</a>)</span></td>
+<td>Software evolution and maintenance</td>
+<td>2014</td>
+<td></td>
+<td>Software Evolution and Maintenance</td>
+</tr>
+<tr class="even">
+<td><span class="citation">Teixeira, Robles, and González-Barahona (<a href="#ref-Teixeira2015">2015</a>)</span></td>
+<td>Lessons learned from applying social network analysis on an industrial Free/Libre/Open Source Software Ecosystem</td>
+<td>2015</td>
+<td>Social network analysis Open source Open-coopetition Software ecosystems Business models Homophily Cloud computing OpenStack</td>
+<td>“software ecosystem analytics”</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table: 3. Papers selected from searches using Google Scholar. The column “Query Used” describes which of the queries is used to retrieve the paper.</em></p>
+</div>
+<div id="referenced-papers" class="section level3">
+<h3><span class="header-section-number">6.2.3</span> Referenced papers</h3>
+<p>Finally, a selection of papers has been made by looking at the references found in papers selected using the two methods above. For these papers, the selection process is similar to that of the selected papers using the digital search engine; it is selected when both the title and the abstract are deemed relevant to the research questions. This has led to the papers in Table 4. being selected.</p>
+<table style="width:100%;">
+<colgroup>
+<col width="14%" />
+<col width="36%" />
+<col width="2%" />
+<col width="28%" />
+<col width="18%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>First Author</th>
+<th>Title</th>
+<th>Year</th>
+<th>Keywords</th>
+<th>Referenced In</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="citation">Bavota et al. (<a href="#ref-Bavota2014">2014</a>)</span></td>
+<td>How the Apache community upgrades dependencies: an evolutionary study</td>
+<td>2014</td>
+<td>Software Ecosystems · Project dependency upgrades · Mining software repositories</td>
+<td><span class="citation">R. G. Kula, German, Ouni, et al. (<a href="#ref-Kula2017">2017</a>)</span></td>
+</tr>
+<tr class="even">
+<td><span class="citation">Blincoe, Harrison, and Damian (<a href="#ref-Blincoe2015">2015</a>)</span></td>
+<td>Ecosystems in GitHub and a method for ecosystem identification using reference coupling.</td>
+<td>2015</td>
+<td></td>
+<td><span class="citation">Constantinou and Mens (<a href="#ref-Constantinou2017">2017</a>)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="citation">Cox et al. (<a href="#ref-Cox2015">2015</a>)</span></td>
+<td>Measuring Dependency Freshness in Software Systems</td>
+<td>2015</td>
+<td></td>
+<td><span class="citation">Kikas et al. (<a href="#ref-Kikas2017">2017</a>)</span></td>
+</tr>
+<tr class="even">
+<td><span class="citation">Decan, Mens, and Claes (<a href="#ref-Decan2017">2017</a>)</span></td>
+<td>An empirical comparison of dependency issues in OSS packaging ecosystems</td>
+<td>2017</td>
+<td></td>
+<td><span class="citation">Abdalkareem et al. (<a href="#ref-Abdalkareem2017">2017</a>)</span>, <span class="citation">Constantinou and Mens (<a href="#ref-Constantinou2017">2017</a>)</span>, <span class="citation">Decan, Mens, and Grosjean (<a href="#ref-Decan2018">2018</a>)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="citation">Dietrich, Jezek, and Brada (<a href="#ref-Dietrich2014">2014</a>)</span></td>
+<td>Broken Promises - An Empirical Study into Evolution Problems in Java Programs Caused by Library Upgrades</td>
+<td>2014</td>
+<td></td>
+<td><span class="citation">Raemaekers, Deursen, and Visser (<a href="#ref-Raemaekers2017">2017</a>)</span></td>
+</tr>
+<tr class="even">
+<td><span class="citation">Malloy and Power (<a href="#ref-Malloy2017">2017</a>)</span></td>
+<td>Quantifying the transition from Python 2 to 3: an empirical study of Python applications.</td>
+<td>2017</td>
+<td></td>
+<td><span class="citation">Malloy and Power (<a href="#ref-Malloy2018">2018</a>)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="citation">McDonnell, Ray, and Kim (<a href="#ref-McDonnell2013">2013</a>)</span></td>
+<td>An empirical study of api stability and adoption in the android ecosystem</td>
+<td>2013</td>
+<td></td>
+<td><span class="citation">Manikas (<a href="#ref-Manikas2016">2016</a>)</span></td>
+</tr>
+</tbody>
+</table>
+<p><em>Table: 4. Papers selected which are referenced in previously selected papers. The column “Referenced In” describes in which selected paper the paper is referenced.</em></p>
+</div>
+</div>
+<div id="answers-2" class="section level2">
+<h2><span class="header-section-number">6.3</span> Answers</h2>
+<p>In this section, an aggregation of information, found in the papers, is presented. Each subsection of this section focuses on one of the three research questions posed in Section 1.</p>
+<div id="what-is-the-current-state-of-the-art-in-software-analytics-for-ecosystem-analytics" class="section level3">
+<h3><span class="header-section-number">6.3.1</span> What is the current state of the art in software analytics for ecosystem analytics?</h3>
+<!-- Topics that are being explored, research methods, tools and datasets being used -->
+<p>To answer this research question, we examine the explored topics in ecosystem analytics. Moreover, we summarize which research methods, tools and datasets are being used to explore this topics.</p>
+<p>The main topic explored in the selected papers are related to the dependencies within the software ecosystem. One of the main subjects related to these dependencies is the subject of breaking changes between different versions of a package. <span class="citation">Bogart et al. (<a href="#ref-Bogart2016">2016</a>)</span> researched the attitude of developers of Eclipse, CRAN and NPM packages towards making breaking changes.</p>
+<table>
+<colgroup>
+<col width="11%" />
+<col width="20%" />
+<col width="21%" />
+<col width="8%" />
+<col width="12%" />
+<col width="14%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Reference</th>
+<th>Explored topic(s)</th>
+<th>Research method(s)</th>
+<th>Tool(s)</th>
+<th>Dataset(s)</th>
+<th>Ecosystem(s)</th>
+<th>Conclusion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="citation">Abdalkareem et al. (<a href="#ref-Abdalkareem2017">2017</a>)</span></td>
+<td>Empirical study on the use of trivial packages, as well as the reasoning behind this</td>
+<td>Quantitative frequency, Survey</td>
+<td>-</td>
+<td>NPM, GitHub</td>
+<td>NPM</td>
+<td>Used because it is assumed to be well implemented and tested (only 45% actually has tests) and increases productivity. Quantitative research has shown that 10% of NodeJS uses trivial packages, where 16.8% are trivial packages in NPM</td>
+</tr>
+<tr class="even">
+<td><span class="citation">Bogart et al. (<a href="#ref-Bogart2016">2016</a>)</span></td>
+<td>Attitude of towards breaking changes and how do ecosystems influence this</td>
+<td>Interviews</td>
+<td>-</td>
+<td>-</td>
+<td>Eclipse, CRAM, NPM</td>
+<td>There are numerous ways of dealing with breaking changes and ecosystems play an essential role in the chosen way.</td>
+</tr>
+<tr class="odd">
+<td><span class="citation">Decan, Mens, and Grosjean (<a href="#ref-Decan2018">2018</a>)</span></td>
+<td>Quantative empirical analysis of differences and similarities between the evolution of 7 varying ecosystems</td>
+<td>Survival analysis</td>
+<td>-</td>
+<td>libraries.io</td>
+<td>Cargo, CPAN, CRAN, npm, NuGet, Packagist, RubyGems</td>
+<td>Package updates, which may cause dependent package failrues, are done on average every few months. Many packages in the analyzed package dependency networks were found to have a high number of transitive reverse dependencies, implying that package failures can affect a large number of other packages in the ecosystem.</td>
+</tr>
+<tr class="even">
+<td><span class="citation">Dittrich (<a href="#ref-Dittrich2014">2014</a>)</span></td>
+<td>The article provides a holistic understanding of the observed and reported practices as a starting point to device specific support for the development in software ecosystems</td>
+<td>Qualitative interview study</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>The main contribution of this article is the presentation of common features of product development and evolution in four companies. Although size, kind of software and business models differ</td>
+</tr>
+<tr class="odd">
+<td><span class="citation">Izquierdo et al. (<a href="#ref-Izquierdo2018">2018</a>)</span></td>
+<td>Code review analysis</td>
+<td>Virtualization of process</td>
+<td>-</td>
+<td>Xen Github data</td>
+<td>Xen</td>
+<td>Analysis of code review has lead to more reviews and a more thoughtful and participary review process. Also providing accomodations for new software developers on OSS by easy access is very important.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="what-are-the-practical-implications-from-the-state-of-the-art" class="section level3">
+<h3><span class="header-section-number">6.3.2</span> What are the practical implications from the state of the art?</h3>
+<!-- Rather than theoretical, actual case studies done with findings -->
+<table>
+<colgroup>
+<col width="12%" />
+<col width="21%" />
+<col width="23%" />
+<col width="13%" />
+<col width="15%" />
+<col width="13%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Reference</th>
+<th>Explored topic(s)</th>
+<th>Research method(s)</th>
+<th>Dataset(s)</th>
+<th>Ecosystem(s)</th>
+<th>Conclusion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="citation">Hora et al. (<a href="#ref-Hora2016">2016</a>)</span></td>
+<td>Exploratory study aimed at observing API evolution and its impact</td>
+<td>Empirical study</td>
+<td>3600 distinct systems</td>
+<td>Pharo</td>
+<td>After API changes, clients need time to react and rarely react at all. Replacements cannot be resolved in a uniform manner throughout the ecosystem. API changes and deprication can present different characteristics.</td>
+</tr>
+<tr class="even">
+<td><span class="citation">R. G. Kula, German, Ouni, et al. (<a href="#ref-Kula2017">2017</a>)</span></td>
+<td>An Empirical Study on the Impact of Security Advisories on Library Migration</td>
+<td>Empirical study</td>
+<td>4,600 GitHub software projects and 2,700 library dependencies</td>
+<td>Github, Maven</td>
+<td>Currently, developers do not actively update their libraries, leading to security risks.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="what-are-the-open-challenges-in-ecosystem-analytics-for-which-future-research-is-required" class="section level3">
+<h3><span class="header-section-number">6.3.3</span> What are the open challenges in ecosystem analytics, for which future research is required?</h3>
+<!--List of challenges, research questions and an aggregated set of open research items -->
+<table style="width:44%;">
+<colgroup>
+<col width="13%" />
+<col width="30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Reference</th>
+<th>Open Challenges Found</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="citation">Abdalkareem et al. (<a href="#ref-Abdalkareem2017">2017</a>)</span></td>
+<td>Examine relationship between team experience and project maturity and usage of trivial packages</td>
+</tr>
+<tr class="even">
+<td><span class="citation">Abdalkareem et al. (<a href="#ref-Abdalkareem2017">2017</a>)</span></td>
+<td>Compare use of code snippets on Q&amp;A sites and trivial packages</td>
+</tr>
+<tr class="odd">
+<td><span class="citation">Abdalkareem et al. (<a href="#ref-Abdalkareem2017">2017</a>)</span></td>
+<td>How to manage and help developers choose the best packages</td>
+</tr>
+<tr class="even">
+<td><span class="citation">Decan, Mens, and Grosjean (<a href="#ref-Decan2018">2018</a>)</span></td>
+<td>Findings for one ecosystem cannot necessarily be generalized to another</td>
+</tr>
+<tr class="odd">
+<td><span class="citation">Decan, Mens, and Grosjean (<a href="#ref-Decan2018">2018</a>)</span></td>
+<td>Transitive dependencies are very frequent, meaning that package failrues can affect a large number of other packages in the ecosystem</td>
+</tr>
+<tr class="even">
+<td><span class="citation">Jansen (<a href="#ref-Jansen2014">2014</a>)</span></td>
+<td>Determing the health of a system from an ecosystem perspective instead of project level is needed to determine which systems to use. This paper provides an initial approach but a lot more research could and should be done to determine system health.</td>
+</tr>
+</tbody>
+</table>
 
+</div>
+</div>
+</div>
+<h3>References</h3>
 <div id="refs" class="references">
-<div>
-<p>Abate, Pietro, and Roberto Di Cosmo. 2011. “Predicting Upgrade Failures Using Dependency Analysis.” In <em>2011 IEEE 27th International Conference on Data Engineering Workshops</em>. IEEE. doi:<a href="https://doi.org/10.1109/icdew.2011.5767626">10.1109/icdew.2011.5767626</a>.</p>
-</div>
-<div>
-<p>Abate, Pietro, Roberto Di Cosmo, Jaap Boender, and Stefano Zacchiroli. 2009. “Strong Dependencies Between Software Components.” In <em>2009 3rd International Symposium on Empirical Software Engineering and Measurement</em>. IEEE. doi:<a href="https://doi.org/10.1109/esem.2009.5316017">10.1109/esem.2009.5316017</a>.</p>
-</div>
-<div>
-<p>Abdalkareem, Rabe, Olivier Nourry, Sultan Wehaibi, Suhaib Mujahid, and Emad Shihab. 2017. “Why Do Developers Use Trivial Packages? An Empirical Case Study on Npm.” In <em>Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering - ESEC/FSE 2017</em>. ACM Press. doi:<a href="https://doi.org/10.1145/3106237.3106267">10.1145/3106237.3106267</a>.</p>
-</div>
-<div>
-<p>Adams, Bram, and Shane McIntosh. 2016. “Modern Release Engineering in a Nutshell–why Researchers Should Care.” In <em>Software Analysis, Evolution, and Reengineering (Saner), 2016 Ieee 23rd International Conference on</em>, 5:78–90. IEEE. <a href="https://doi.org/10.1109/SANER.2016.108" class="uri">https://doi.org/10.1109/SANER.2016.108</a>.</p>
-</div>
-<div>
-<p>Arisholm, Erik, Lionel C Briand, and Eivind B Johannessen. 2010. “A systematic and comprehensive investigation of methods to build and evaluate fault prediction models.” <em>Journal of Systems and Software</em> 83 (1): 2–17. doi:<a href="https://doi.org/10.1016/j.jss.2009.06.055">10.1016/j.jss.2009.06.055</a>.</p>
-</div>
-<div>
-<p>Atifi, M., A. Mamouni, and A. Marzak. 2017. <em>A Comparative Study of Software Testing Techniques</em>. Vol. 10299 LNCS. Lecture Notes in Computer Science (Including Subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics). <a href="www.scopus.com" class="uri">www.scopus.com</a>.</p>
-</div>
-<div>
-<p>Bacchelli, Alberto, and Christian Bird. 2013. “Expectations, Outcomes, and Challenges of Modern Code Review.” In <em>Proceedings of the 2013 International Conference on Software Engineering</em>, 712–21. IEEE Press.</p>
-</div>
-<div>
-<p>Baltes, Sebastian, Jascha Knack, Daniel Anastasiou, Ralf Tymann, and Stephan Diehl. 2018. “(No) Influence of Continuous Integration on the Commit Activity in Github Projects.” <em>arXiv Preprint arXiv:1802.08441</em>.</p>
-</div>
-<div>
-<p>Baum, Tobias, Hendrik Leßmann, and Kurt Schneider. 2017. “The Choice of Code Review Process: A Survey on the State of the Practice.” In <em>International Conference on Product-Focused Software Process Improvement</em>, 111–27. Springer.</p>
-</div>
-<div>
-<p>Baum, Tobias, Olga Liskin, Kai Niklas, and Kurt Schneider. 2016. “A Faceted Classification Scheme for Change-Based Industrial Code Review Processes.” In <em>Software Quality, Reliability and Security (Qrs), 2016 Ieee International Conference on</em>, 74–85. IEEE.</p>
-</div>
-<div>
-<p>Bavota, Gabriele, Gerardo Canfora, Massimiliano Di Penta, Rocco Oliveto, and Sebastiano Panichella. 2014. “How the Apache Community Upgrades Dependencies: An Evolutionary Study.” <em>Empirical Software Engineering</em> 20 (5). Springer Nature: 1275–1317. doi:<a href="https://doi.org/10.1007/s10664-014-9325-9">10.1007/s10664-014-9325-9</a>.</p>
-</div>
-<div>
-<p>Baysal, Olga, Oleksii Kononenko, Reid Holmes, and Michael W Godfrey. 2013. “The Influence of Non-Technical Factors on Code Review.” In <em>Reverse Engineering (Wcre), 2013 20th Working Conference on</em>, 122–31. IEEE.</p>
-</div>
-<div>
-<p>———. 2016. “Investigating Technical and Non-Technical Factors Influencing Modern Code Review.” <em>Empirical Software Engineering</em> 21 (3). Springer: 932–59.</p>
-</div>
-<div>
-<p>Beller, M., G. Gousios, A. Panichella, and A. Zaidman. 2015. “When, How, and Why Developers (Do Not) Test in Their Ides.” In <em>2015 10th Joint Meeting of the European Software Engineering Conference and the Acm Sigsoft Symposium on the Foundations of Software Engineering, Esec/Fse 2015 - Proceedings</em>, 179–90. <a href="www.scopus.com" class="uri">www.scopus.com</a>.</p>
-</div>
-<div>
-<p>Beller, Moritz, Alberto Bacchelli, Andy Zaidman, and Elmar Juergens. 2014. “Modern Code Reviews in Open-Source Projects: Which Problems Do They Fix?” In <em>Proceedings of the 11th Working Conference on Mining Software Repositories</em>, 202–11. ACM.</p>
-</div>
-<div>
-<p>Beller, Moritz, Gousios Georgios, Annibale Panichella, Sebastian Proksch, Sven Amann, and Andy Zaidman. 2017. “Developer Testing in the Ide: Patterns, Beliefs, and Behavior.” <em>IEEE Transactions on Software Engineering</em>, no. 1. IEEE: 1–1.</p>
-</div>
-<div>
-<p>Beller, Moritz, Georgios Gousios, and Andy Zaidman. 2017a. “Oops, My Tests Broke the Build: An Explorative Analysis of Travis Ci with Github.” In <em>Mining Software Repositories (Msr), 2017 Ieee/Acm 14th International Conference on</em>, 356–67. IEEE.</p>
-</div>
-<div>
-<p>———. 2017b. “Travistorrent: Synthesizing Travis Ci and Github for Full-Stack Research on Continuous Integration.” In <em>Proceedings of the 14th International Conference on Mining Software Repositories</em>, 447–50. IEEE press.</p>
-</div>
-<div>
-<p>Bevan, J., E. J. Whitehead Jr., S. Kim, and M. Godfrey. 2005. “Facilitating Software Evolution Research with Kenyon.” In <em>ESEC/Fse’05 - Proceedings of the Joint 10th European Software Engineering Conference (Esec) and 13th Acm Sigsoft Symposium on the Foundations of Software Engineering (Fse-13)</em>, 177–86. <a href="www.scopus.com" class="uri">www.scopus.com</a>.</p>
-</div>
-<div>
-<p>Bird, Christian, and Thomas Zimmermann. 2017. “Predicting Software Build Errors.” Google Patents.</p>
-</div>
-<div>
-<p>Bird, Christian, Trevor Carnahan, and Michaela Greiler. 2015. “Lessons Learned from Building and Deploying a Code Review Analytics Platform.” In <em>Proceedings of the 12th Working Conference on Mining Software Repositories</em>, 191–201. IEEE Press.</p>
-</div>
-<div>
-<p>Bisong, Ekaba, Eric Tran, and Olga Baysal. 2017. “Built to Last or Built Too Fast?: Evaluating Prediction Models for Build Times.” In <em>Proceedings of the 14th International Conference on Mining Software Repositories</em>, 487–90. IEEE Press.</p>
-</div>
-<div>
-<p>Blincoe, Kelly, Francis Harrison, and Daniela Damian. 2015. “Ecosystems in GitHub and a Method for Ecosystem Identification Using Reference Coupling.” In <em>2015 IEEE/ACM 12th Working Conference on Mining Software Repositories</em>. IEEE. doi:<a href="https://doi.org/10.1109/msr.2015.26">10.1109/msr.2015.26</a>.</p>
-</div>
-<div>
-<p>Bogart, Christopher, Christian Kästner, James Herbsleb, and Ferdian Thung. 2016. “How to Break an API: Cost Negotiation and Community Values in Three Software Ecosystems.” In <em>Proceedings of the 2016 24th ACM SIGSOFT International Symposium on Foundations of Software Engineering - FSE 2016</em>. ACM Press. doi:<a href="https://doi.org/10.1145/2950290.2950325">10.1145/2950290.2950325</a>.</p>
-</div>
-<div>
-<p>Bosu, Amiangshu, and Jeffrey C Carver. 2013. “Impact of Peer Code Review on Peer Impression Formation: A Survey.” In <em>Empirical Software Engineering and Measurement, 2013 Acm/Ieee International Symposium on</em>, 133–42. IEEE.</p>
-</div>
-<div>
-<p>Bowring, James, and Hunter Hegler. 2014. “Obsidian: Pattern-Based Unit Test Implementations.” <em>Journal of Software Engineering and Applications</em> 7 (02). Scientific Research Publishing: 94.</p>
-</div>
-<div>
-<p>Castelluccio, M., L. An, and F. Khomh. 2017. “Is It Safe to Uplift This Patch? An Empirical Study on Mozilla Firefox.” In <em>Proceedings - 2017 IEEE International Conference on Software Maintenance and Evolution, ICSME 2017</em>, 411–21. <a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85040634374&amp;doi=10.1109%2fICSME.2017.82&amp;partnerID=40&amp;md5=db36b40c2534743b53a2379157b50a59">https://www.scopus.com/inward/record.uri?eid=2-s2.0-85040634374&amp;doi=10.1109%2fICSME.2017.82&amp;partnerID=40&amp;md5=db36b40c2534743b53a2379157b50a59</a>.</p>
-</div>
-<div>
-<p>Catal, C. 2011. “Software Fault Prediction: A Literature Review and Current Trends.” <em>Expert Systems with Applications</em> 38 (4): 4626–36. <a href="www.scopus.com" class="uri">www.scopus.com</a>.</p>
-</div>
-<div>
-<p>Catal, C., and B. Diri. 2009. “Investigating the Effect of Dataset Size, Metrics Sets, and Feature Selection Techniques on Software Fault Prediction Problem.” <em>Information Sciences</em> 179 (8): 1040–58. <a href="www.scopus.com" class="uri">www.scopus.com</a>.</p>
-</div>
-<div>
-<p>Catal, Cagatay, and Banu Diri. 2009. “A systematic review of software fault prediction studies.” doi:<a href="https://doi.org/10.1016/j.eswa.2008.10.027">10.1016/j.eswa.2008.10.027</a>.</p>
-</div>
-<div>
-<p>Cesar Brandão Gomes da Silva, Antonio, Glauco de Figueiredo Carneiro, Fernando Brito e Abreu, and Miguel Pessoa Monteiro. 2017. “Frequent Releases in Open Source Software: A Systematic Review.” <em>Information</em> 8 (3). Multidisciplinary Digital Publishing Institute: 109.</p>
-</div>
-<div>
-<p>Ciolkowski, Marcus, Oliver Laitenberger, and Stefan Biffl. 2003. “Software Reviews: The State of the Practice.” <em>IEEE Software</em>, no. 6. IEEE: 46–51.</p>
-</div>
-<div>
-<p>Claes, M., M. Mantyla, M. Kuutila, and B. Adams. 2017. “Abnormal Working Hours: Effect of Rapid Releases and Implications to Work Content.” In <em>IEEE International Working Conference on Mining Software Repositories</em>, 243–47. <a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85026506528&amp;doi=10.1109%2fMSR.2017.3&amp;partnerID=40&amp;md5=2da8fa8a15b9ffb4b1969663af15ecac">https://www.scopus.com/inward/record.uri?eid=2-s2.0-85026506528&amp;doi=10.1109%2fMSR.2017.3&amp;partnerID=40&amp;md5=2da8fa8a15b9ffb4b1969663af15ecac</a>.</p>
-</div>
-<div>
-<p>Claes, Maelick, Tom Mens, Roberto Di Cosmo, and Jerome Vouillon. 2015. “A Historical Analysis of Debian Package Incompatibilities.” In <em>2015 IEEE/ACM 12th Working Conference on Mining Software Repositories</em>. IEEE. doi:<a href="https://doi.org/10.1109/msr.2015.27">10.1109/msr.2015.27</a>.</p>
-</div>
-<div>
-<p>Constantinou, Eleni, and Tom Mens. 2017. “An Empirical Comparison of Developer Retention in the RubyGems and Npm Software Ecosystems.” <em>Innovations in Systems and Software Engineering</em> 13 (2-3). Springer Nature: 101–15. doi:<a href="https://doi.org/10.1007/s11334-017-0303-4">10.1007/s11334-017-0303-4</a>.</p>
-</div>
-<div>
-<p>Costa, D. A. da, S. L. Abebe, S. Mcintosh, U. Kulesza, and A. E. Hassan. 2014. “An Empirical Study of Delays in the Integration of Addressed Issues.” In <em>2014 Ieee International Conference on Software Maintenance and Evolution</em>, 281–90. <a href="https://doi.org/10.1109/ICSME.2014.50" class="uri">https://doi.org/10.1109/ICSME.2014.50</a>.</p>
-</div>
-<div>
-<p>Costa, D. A. da, S. McIntosh, U. Kulesza, and A. E. Hassan. 2016. “The Impact of Switching to a Rapid Release Cycle on the Integration Delay of Addressed Issues - an Empirical Study of the Mozilla Firefox Project.” In <em>2016 Ieee/Acm 13th Working Conference on Mining Software Repositories (Msr)</em>, 374–85. <a href="https://doi.org/10.1109/MSR.2016.045" class="uri">https://doi.org/10.1109/MSR.2016.045</a>.</p>
-</div>
-<div>
-<p>Cox, Joel, Eric Bouwers, Marko van Eekelen, and Joost Visser. 2015. “Measuring Dependency Freshness in Software Systems.” In <em>2015 IEEE/ACM 37th IEEE International Conference on Software Engineering</em>. IEEE. doi:<a href="https://doi.org/10.1109/icse.2015.140">10.1109/icse.2015.140</a>.</p>
-</div>
-<div>
-<p>Czerwonka, Jacek, Michaela Greiler, and Jack Tilford. 2015. “Code Reviews Do Not Find Bugs: How the Current Code Review Best Practice Slows Us down.” In <em>Proceedings of the 37th International Conference on Software Engineering-Volume 2</em>, 27–28. IEEE Press.</p>
-</div>
-<div>
-<p>Decan, Alexandre, Tom Mens, and Maelick Claes. 2017. “An Empirical Comparison of Dependency Issues in OSS Packaging Ecosystems.” In <em>2017 IEEE 24th International Conference on Software Analysis, Evolution and Reengineering (SANER)</em>. IEEE. doi:<a href="https://doi.org/10.1109/saner.2017.7884604">10.1109/saner.2017.7884604</a>.</p>
-</div>
-<div>
-<p>Decan, Alexandre, Tom Mens, and Philippe Grosjean. 2018. “An Empirical Comparison of Dependency Network Evolution in Seven Software Packaging Ecosystems.” <em>Empirical Software Engineering</em>, February. Springer Nature. doi:<a href="https://doi.org/10.1007/s10664-017-9589-y">10.1007/s10664-017-9589-y</a>.</p>
-</div>
-<div>
-<p>Dietrich, Jens, Kamil Jezek, and Premek Brada. 2014. “Broken Promises: An Empirical Study into Evolution Problems in Java Programs Caused by Library Upgrades.” In <em>2014 Software Evolution Week - IEEE Conference on Software Maintenance, Reengineering, and Reverse Engineering (CSMR-WCRE)</em>. IEEE. doi:<a href="https://doi.org/10.1109/csmr-wcre.2014.6747226">10.1109/csmr-wcre.2014.6747226</a>.</p>
-</div>
-<div>
-<p>Dittrich, Yvonne. 2014. “Software Engineering Beyond the Project Sustaining Software Ecosystems.” <em>Information and Software Technology</em> 56 (11). Elsevier BV: 1436–56. doi:<a href="https://doi.org/10.1016/j.infsof.2014.02.012">10.1016/j.infsof.2014.02.012</a>.</p>
-</div>
-<div>
-<p>Dulz, Winfried. 2013. “Model-Based Strategies for Reducing the Complexity of Statistically Generated Test Suites.” In <em>International Conference on Software Quality</em>, 89–103. Springer.</p>
-</div>
-<div>
-<p>Dyck, Andrej, Ralf Penners, and Horst Lichter. 2015. “Towards Definitions for Release Engineering and Devops.” In <em>Release Engineering (Releng), 2015 Ieee/Acm 3rd International Workshop on</em>, 3–3. IEEE. <a href="https://www2.swc.rwth-aachen.de/docs/RELENG2015/DevOpsVsRelEng.pdf" class="uri">https://www2.swc.rwth-aachen.de/docs/RELENG2015/DevOpsVsRelEng.pdf</a>.</p>
-</div>
-<div>
-<p>D’Ambros, M., M. Lanza, and R. Robbes. 2012. “Evaluating Defect Prediction Approaches: A Benchmark and an Extensive Comparison.” <em>Empirical Software Engineering</em> 17 (4-5): 531–77. <a href="www.scopus.com" class="uri">www.scopus.com</a>.</p>
-</div>
-<div>
-<p>D’Ambros, Marco, Michele Lanza, and Romain Robbes. 2010. “An extensive comparison of bug prediction approaches.” <em>Proceedings - International Conference on Software Engineering</em>, 31–41. doi:<a href="https://doi.org/10.1109/MSR.2010.5463279">10.1109/MSR.2010.5463279</a>.</p>
-</div>
-<div>
-<p>Eick, S. G., T. L. Graves, A. F. Karr, J. S. Marron, and A. Mockus. 2001. “Does Code Decay? Assessing the Evidence from Change Management Data.” <em>IEEE Transactions on Software Engineering</em> 27 (1): 1–12. doi:<a href="https://doi.org/10.1109/32.895984">10.1109/32.895984</a>.</p>
-</div>
-<div>
-<p>Fagan, Michael. 2002. “Design and Code Inspections to Reduce Errors in Program Development.” In <em>Software Pioneers</em>, 575–607. Springer.</p>
-</div>
-<div>
-<p>Fowler, Martin, and Matthew Foemmel. 2006. “Continuous Integration.” <em>Thought-Works) Http://Www. Thoughtworks. Com/Continuous Integration. Pdf</em> 122: 14.</p>
-</div>
-<div>
-<p>Fujibayashi, D., A. Ihara, H. Suwa, R.G. Kula, and K. Matsumoto. 2017. “Does the Release Cycle of a Library Project Influence When It Is Adopted by a Client Project?” In <em>SANER 2017 - 24th IEEE International Conference on Software Analysis, Evolution, and Reengineering</em>, 569–70. <a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85018384049&amp;doi=10.1109%2fSANER.2017.7884681&amp;partnerID=40&amp;md5=83955b8bec9726f3eb1bc751b3c5f2f8">https://www.scopus.com/inward/record.uri?eid=2-s2.0-85018384049&amp;doi=10.1109%2fSANER.2017.7884681&amp;partnerID=40&amp;md5=83955b8bec9726f3eb1bc751b3c5f2f8</a>.</p>
-</div>
-<div>
-<p>Garousi, Vahid, and Junji Zhi. 2013. “A Survey of Software Testing Practices in Canada.” <em>Journal of Systems and Software</em> 86 (5): 1354–76. doi:<a href="https://doi.org/https://doi.org/10.1016/j.jss.2012.12.051">https://doi.org/10.1016/j.jss.2012.12.051</a>.</p>
-</div>
-<div>
-<p>Gousios, Georgios, Martin Pinzger, and Arie van Deursen. 2014. “An Exploratory Study of the Pull-Based Software Development Model.” In <em>Proceedings of the 36th International Conference on Software Engineering</em>, 345–55. ACM.</p>
-</div>
-<div>
-<p>Greiler, M., A. Zaidman, A. Van Deursen, and M. -. Storey. 2013. “Strategies for Avoiding Text Fixture Smells During Software Evolution.” In <em>IEEE International Working Conference on Mining Software Repositories</em>, 387–96. <a href="www.scopus.com" class="uri">www.scopus.com</a>.</p>
-</div>
-<div>
-<p>Gyimothy, T., R. Ferenc, and I. Siket. 2005. “Empirical validation of object-oriented metrics on open source software for fault prediction.” <em>IEEE Transactions on Software Engineering</em> 31 (10): 897–910. doi:<a href="https://doi.org/10.1109/TSE.2005.112">10.1109/TSE.2005.112</a>.</p>
-</div>
-<div>
-<p>Hall, T., S. Beecham, D. Bowes, D. Gray, and S. Counsell. 2012. “A Systematic Literature Review on Fault Prediction Performance in Software Engineering.” <em>IEEE Transactions on Software Engineering</em> 38 (6): 1276–1304. doi:<a href="https://doi.org/10.1109/TSE.2011.103">10.1109/TSE.2011.103</a>.</p>
-</div>
-<div>
-<p>Hassan, Foyzul, and Xiaoyin Wang. 2018. “HireBuild: An Automatic Approach to History-Driven Repair of Build Scripts.” In <em>Proceedings of the 40th International Conference on Software Engineering</em>, 1078–89. ACM.</p>
-</div>
-<div>
-<p>Hejderup, Joseph, Arie van Deursen, and Georgios Gousios. 2018. “Software Ecosystem Call Graph for Dependency Management.” In <em>Proceedings of the 40th International Conference on Software Engineering New Ideas and Emerging Results - ICSE-NIER 18</em>. ACM Press. doi:<a href="https://doi.org/10.1145/3183399.3183417">10.1145/3183399.3183417</a>.</p>
-</div>
-<div>
-<p>Hemmati, H., and F. Sharifi. 2018. “Investigating Nlp-Based Approaches for Predicting Manual Test Case Failure.” In <em>Proceedings - 2018 Ieee 11th International Conference on Software Testing, Verification and Validation, Icst 2018</em>, 309–19. <a href="www.scopus.com" class="uri">www.scopus.com</a>.</p>
-</div>
-<div>
-<p>Hilton, Michael, Timothy Tunnell, Kai Huang, Darko Marinov, and Danny Dig. 2016. “Usage, Costs, and Benefits of Continuous Integration in Open-Source Projects.” In <em>Proceedings of the 31st Ieee/Acm International Conference on Automated Software Engineering</em>, 426–37. ACM.</p>
-</div>
-<div>
-<p>Hora, André, Romain Robbes, Marco Tulio Valente, Nicolas Anquetil, Anne Etien, and Stéphane Ducasse. 2016. “How Do Developers React to API Evolution? A Large-Scale Empirical Study.” <em>Software Quality Journal</em> 26 (1). Springer Nature: 161–91. doi:<a href="https://doi.org/10.1007/s11219-016-9344-4">10.1007/s11219-016-9344-4</a>.</p>
-</div>
-<div>
-<p>Hurdugaci, V., and A. Zaidman. 2012. “Aiding Software Developers to Maintain Developer Tests.” In <em>2012 16th European Conference on Software Maintenance and Reengineering</em>, 11–20. doi:<a href="https://doi.org/10.1109/CSMR.2012.12">10.1109/CSMR.2012.12</a>.</p>
-</div>
-<div>
-<p>Izquierdo, Daniel, Jesus Gonzalez-Barahona, Lars Kurth, and Gregorio Robles. 2018. “Software Development Analytics for Xen: Why and How.” <em>IEEE Software</em>. Institute of Electrical; Electronics Engineers (IEEE), 1–1. doi:<a href="https://doi.org/10.1109/ms.2018.290101357">10.1109/ms.2018.290101357</a>.</p>
-</div>
-<div>
-<p>Jansen, Slinger. 2014. “Measuring the Health of Open Source Software Ecosystems: Beyond the Scope of Project Health.” <em>Information and Software Technology</em> 56 (11). Elsevier BV: 1508–19. doi:<a href="https://doi.org/10.1016/j.infsof.2014.04.006">10.1016/j.infsof.2014.04.006</a>.</p>
-</div>
-<div>
-<p>Karvonen, T., W. Behutiye, M. Oivo, and P. Kuvaja. 2017. “Systematic Literature Review on the Impacts of Agile Release Engineering Practices.” <em>Information and Software Technology</em> 86: 87–100. <a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85028272067&amp;doi=10.1016%2fj.infsof.2017.01.009&amp;partnerID=40&amp;md5=001c120eea2481c21dae5a551b44dd39">https://www.scopus.com/inward/record.uri?eid=2-s2.0-85028272067&amp;doi=10.1016%2fj.infsof.2017.01.009&amp;partnerID=40&amp;md5=001c120eea2481c21dae5a551b44dd39</a>.</p>
-</div>
-<div>
-<p>Kaur, A., and V. Vig. 2019. “On Understanding the Release Patterns of Open Source Java Projects.” <em>Advances in Intelligent Systems and Computing</em> 711: 9–18. <a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85049941993&amp;doi=10.1007%2f978-981-10-8055-5_2&amp;partnerID=40&amp;md5=7a255f14762205c60f618cfb97569650">https://www.scopus.com/inward/record.uri?eid=2-s2.0-85049941993&amp;doi=10.1007%2f978-981-10-8055-5_2&amp;partnerID=40&amp;md5=7a255f14762205c60f618cfb97569650</a>.</p>
-</div>
-<div>
-<p>Kerzazi, N., and P.N. Robillard. 2013. “Kanbanize the Release Engineering Process.” In <em>2013 1st International Workshop on Release Engineering, RELENG 2013 - Proceedings</em>, 9–12. <a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-84886059813&amp;doi=10.1109%2fRELENG.2013.6607689&amp;partnerID=40\&amp;md5=73eb9fc8ca1f9b6568975ff0c054308c">https://www.scopus.com/inward/record.uri?eid=2-s2.0-84886059813&amp;doi=10.1109%2fRELENG.2013.6607689&amp;partnerID=40\&amp;md5=73eb9fc8ca1f9b6568975ff0c054308c</a>.</p>
-</div>
-<div>
-<p>Khomh, Foutse, Bram Adams, Tejinder Dhaliwal, and Ying Zou. 2015. “Understanding the Impact of Rapid Releases on Software Quality.” <em>Empirical Software Engineering</em> 20 (2): 336–73. <a href="https://doi.org/10.1007/s10664-014-9308-x" class="uri">https://doi.org/10.1007/s10664-014-9308-x</a>.</p>
-</div>
-<div>
-<p>Khomh, Foutse, Tejinder Dhaliwal, Ying Zou, and Bram Adams. 2012. “Do Faster Releases Improve Software Quality?: An Empirical Case Study of Mozilla Firefox.” In <em>Proceedings of the 9th Ieee Working Conference on Mining Software Repositories</em>, 179–88. MSR ’12. Piscataway, NJ, USA: IEEE Press. <a href="http://dl.acm.org/citation.cfm?id=2664446.2664475" class="uri">http://dl.acm.org/citation.cfm?id=2664446.2664475</a>.</p>
-</div>
-<div>
-<p>Kikas, Riivo, Georgios Gousios, Marlon Dumas, and Dietmar Pfahl. 2017. “Structure and Evolution of Package Dependency Networks.” In <em>2017 IEEE/ACM 14th International Conference on Mining Software Repositories (MSR)</em>. IEEE. doi:<a href="https://doi.org/10.1109/msr.2017.55">10.1109/msr.2017.55</a>.</p>
-</div>
-<div>
-<p>Kitchenham. 2007. “Guidelines for Performing Systematic Literature Reviews in Software Engineering.” Keele University; University of Durham.</p>
-</div>
-<div>
-<p>Kitchenham, Barbara. 2004a. “Procedures for Performing Systematic Reviews.” <em>Keele</em> 33 (1). UK, Keele University: 1–26.</p>
-</div>
-<div>
-<p>———. 2004b. “Procedures for Performing Systematic Reviews.” <em>Keele, UK, Keele University</em> 33 (2004): 1–26.</p>
-</div>
-<div>
-<p>Kula, Raula Gaikovina, Daniel M. German, Takashi Ishio, Ali Ouni, and Katsuro Inoue. 2017. “An Exploratory Study on Library Aging by Monitoring Client Usage in a Software Ecosystem.” In <em>2017 IEEE 24th International Conference on Software Analysis, Evolution and Reengineering (SANER)</em>. IEEE. doi:<a href="https://doi.org/10.1109/saner.2017.7884643">10.1109/saner.2017.7884643</a>.</p>
-</div>
-<div>
-<p>Kula, Raula Gaikovina, Daniel M. German, Ali Ouni, Takashi Ishio, and Katsuro Inoue. 2017. “Do Developers Update Their Library Dependencies?” <em>Empirical Software Engineering</em> 23 (1). Springer Nature: 384–417. doi:<a href="https://doi.org/10.1007/s10664-017-9521-5">10.1007/s10664-017-9521-5</a>.</p>
-</div>
-<div>
-<p>Laukkanen, E., M. Paasivaara, J. Itkonen, and C. Lassenius. 2018. “Comparison of Release Engineering Practices in a Large Mature Company and a Startup.” <em>Empirical Software Engineering</em>, 1–43. <a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85044460784&amp;doi=10.1007%2fs10664-018-9616-7&amp;partnerID=40&amp;md5=dcca7b080050cb81ac889e6eede2b3cc">https://www.scopus.com/inward/record.uri?eid=2-s2.0-85044460784&amp;doi=10.1007%2fs10664-018-9616-7&amp;partnerID=40&amp;md5=dcca7b080050cb81ac889e6eede2b3cc</a>.</p>
-</div>
-<div>
-<p>Leung, Hareton KN, and Kim Man Lui. 2015. “Testing Analytics on Software Variability.” In <em>Software Analytics (Swan), 2015 Ieee 1st International Workshop on</em>, 17–20. IEEE.</p>
-</div>
-<div>
-<p>Lewis, Chris, Zhongpeng Lin, Caitlin Sadowski, Xiaoyan Zhu, Rong Ou, and E. James Whitehead. 2013. “Does bug prediction support human developers? Findings from a Google case study.” In <em>2013 35th International Conference on Software Engineering (Icse)</em>, 372–81. IEEE. doi:<a href="https://doi.org/10.1109/ICSE.2013.6606583">10.1109/ICSE.2013.6606583</a>.</p>
-</div>
-<div>
-<p>Lungu, Mircea. 2009. “Reverse Engineering Software Ecosystems.” PhD thesis, University of Lugano.</p>
-</div>
-<div>
-<p>Malloy, Brian A., and James F. Power. 2017. “Quantifying the Transition from Python 2 to 3: An Empirical Study of Python Applications.” In <em>2017 ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM)</em>. IEEE. doi:<a href="https://doi.org/10.1109/esem.2017.45">10.1109/esem.2017.45</a>.</p>
-</div>
-<div>
-<p>———. 2018. “An Empirical Analysis of the Transition from Python 2 to Python 3.” <em>Empirical Software Engineering</em>, July. Springer Nature. doi:<a href="https://doi.org/10.1007/s10664-018-9637-2">10.1007/s10664-018-9637-2</a>.</p>
-</div>
-<div>
-<p>Manikas, Konstantinos. 2016. “Revisiting Software Ecosystems Research: A Longitudinal Literature Study.” <em>Journal of Systems and Software</em> 117 (July). Elsevier BV: 84–103. doi:<a href="https://doi.org/10.1016/j.jss.2016.02.003">10.1016/j.jss.2016.02.003</a>.</p>
-</div>
-<div>
-<p>Marsavina, C., D. Romano, and A. Zaidman. 2014. “Studying Fine-Grained Co-Evolution Patterns of Production and Test Code.” In <em>2014 Ieee 14th International Working Conference on Source Code Analysis and Manipulation</em>, 195–204. doi:<a href="https://doi.org/10.1109/SCAM.2014.28">10.1109/SCAM.2014.28</a>.</p>
-</div>
-<div>
-<p>Mäntylä, Mika V., Bram Adams, Foutse Khomh, Emelie Engström, and Kai Petersen. 2015. “On Rapid Releases and Software Testing: A Case Study and a Semi-Systematic Literature Review.” <em>Empirical Software Engineering</em> 20 (5): 1384–1425. <a href="https://doi.org/10.1007/s10664-014-9338-4" class="uri">https://doi.org/10.1007/s10664-014-9338-4</a>.</p>
-</div>
-<div>
-<p>McDonnell, Tyler, Baishakhi Ray, and Miryung Kim. 2013. “An Empirical Study of API Stability and Adoption in the Android Ecosystem.” In <em>2013 IEEE International Conference on Software Maintenance</em>. IEEE. doi:<a href="https://doi.org/10.1109/icsm.2013.18">10.1109/icsm.2013.18</a>.</p>
-</div>
-<div>
-<p>McIntosh, Shane, Yasutaka Kamei, Bram Adams, and Ahmed E Hassan. 2014. “The Impact of Code Review Coverage and Code Review Participation on Software Quality: A Case Study of the Qt, Vtk, and Itk Projects.” In <em>Proceedings of the 11th Working Conference on Mining Software Repositories</em>, 192–201. ACM.</p>
-</div>
-<div>
-<p>Mens, Tom, Maálick Claes, Philippe Grosjean, and Alexander Serebrenik. 2013. “Studying Evolving Software Ecosystems Based on Ecological Models.” In <em>Evolving Software Systems</em>, 297–326. Springer Berlin Heidelberg. doi:<a href="https://doi.org/10.1007/978-3-642-45398-4_10">10.1007/978-3-642-45398-4_10</a>.</p>
-</div>
-<div>
+<div id="ref-Messerschmitt2003">
 <p>Messerschmitt, David G., and Clemens Szyperski. 2003. <em>Software Ecosystem: Understanding an Indispensable Technology and Industry (Mit Press)</em>. The MIT Press.</p>
 </div>
-<div>
-<p>Mirzaaghaei, M., F. Pastore, and M. Pezze. 2012. “Supporting Test Suite Evolution Through Test Case Adaptation.” In <em>2012 Ieee Fifth International Conference on Software Testing, Verification and Validation</em>, 231–40. doi:<a href="https://doi.org/10.1109/ICST.2012.103">10.1109/ICST.2012.103</a>.</p>
+<div id="ref-Lungu2009">
+<p>Lungu, Mircea. 2009. “Reverse Engineering Software Ecosystems.” PhD thesis, University of Lugano.</p>
 </div>
-<div>
-<p>Moiz, Salman Abdul. 2017. “Uncertainty in Software Testing.” In <em>Trends in Software Testing</em>, 67–87. Springer.</p>
+<div id="ref-Mens2013">
+<p>Mens, Tom, Maálick Claes, Philippe Grosjean, and Alexander Serebrenik. 2013. “Studying Evolving Software Ecosystems Based on Ecological Models.” In <em>Evolving Software Systems</em>, 297–326. Springer Berlin Heidelberg. doi:<a href="https://doi.org/10.1007/978-3-642-45398-4_10">10.1007/978-3-642-45398-4_10</a>.</p>
 </div>
-<div>
-<p>Ni, Ansong, and Ming Li. 2018. “ACONA: Active Online Model Adaptation for Predicting Continuous Integration Build Failures.” In <em>Proceedings of the 40th International Conference on Software Engineering: Companion Proceeedings</em>, 366–67. ACM.</p>
-</div>
-<div>
-<p>Noor, Tanzeem Bin, and Hadi Hemmati. 2015. “Test Case Analytics: Mining Test Case Traces to Improve Risk-Driven Testing.” In <em>Software Analytics (Swan), 2015 Ieee 1st International Workshop on</em>, 13–16. IEEE.</p>
-</div>
-<div>
-<p>Pinto, Gustavo, and Fernando Castor Rodrigo Bonifacio Marcel Rebouças. 2018. “Work Practices and Challenges in Continuous Integration: A Survey with Travis Ci Users.”</p>
-</div>
-<div>
-<p>Pinto, L. S., S. Sinha, and A. Orso. 2013. “TestEvol: A Tool for Analyzing Test-Suite Evolution.” In <em>Proceedings - International Conference on Software Engineering</em>, 1303–6. <a href="www.scopus.com" class="uri">www.scopus.com</a>.</p>
-</div>
-<div>
-<p>Pinto, Leandro Sales, Saurabh Sinha, and Alessandro Orso. 2012. “Understanding Myths and Realities of Test-Suite Evolution.” In <em>Proceedings of the Acm Sigsoft 20th International Symposium on the Foundations of Software Engineering</em>, 33. ACM.</p>
-</div>
-<div>
-<p>Plewnia, Christian, Andrej Dyck, and Horst Lichter. 2014. “On the Influence of Release Engineering on Software Reputation.” In <em>Mountain View, ca, Usa: In 2nd International Workshop on Release Engineering</em>.</p>
-</div>
-<div>
-<p>Poo-Caamaño, Germán. 2016. “Release Management in Free and Open Source Software Ecosystems.” PhD thesis. <a href="http://dspace.library.uvic.ca/handle/1828/7648" class="uri">http://dspace.library.uvic.ca/handle/1828/7648</a>.</p>
-</div>
-<div>
-<p>Raemaekers, S., A. van Deursen, and J. Visser. 2017. “Semantic Versioning and Impact of Breaking Changes in the Maven Repository.” <em>Journal of Systems and Software</em> 129 (July). Elsevier BV: 140–58. doi:<a href="https://doi.org/10.1016/j.jss.2016.04.008">10.1016/j.jss.2016.04.008</a>.</p>
-</div>
-<div>
-<p>Rajlich, Václav. 2014. “Software Evolution and Maintenance.” In <em>Proceedings of the on Future of Software Engineering - FOSE 2014</em>. ACM Press. doi:<a href="https://doi.org/10.1145/2593882.2593893">10.1145/2593882.2593893</a>.</p>
-</div>
-<div>
-<p>Rausch, Thomas, Waldemar Hummer, Philipp Leitner, and Stefan Schulte. 2017. “An Empirical Analysis of Build Failures in the Continuous Integration Workflows of Java-Based Open-Source Software.” In <em>Proceedings of the 14th International Conference on Mining Software Repositories</em>, 345–55. IEEE Press.</p>
-</div>
-<div>
-<p>Robbes, Romain, Mircea Lungu, and David Röthlisberger. 2012. “How Do Developers React to API Deprecation?” In <em>Proceedings of the ACM SIGSOFT 20th International Symposium on the Foundations of Software Engineering - FSE 12</em>. ACM Press. doi:<a href="https://doi.org/10.1145/2393596.2393662">10.1145/2393596.2393662</a>.</p>
-</div>
-<div>
-<p>Robinson, B., M. D. Ernst, J. H. Perkins, V. Augustine, and N. Li. 2011. “Scaling up Automated Test Generation: Automatically Generating Maintainable Regression Unit Tests for Programs.” In <em>2011 26th Ieee/Acm International Conference on Automated Software Engineering (Ase 2011)</em>, 23–32. doi:<a href="https://doi.org/10.1109/ASE.2011.6100059">10.1109/ASE.2011.6100059</a>.</p>
-</div>
-<div>
-<p>Rodríguez, Pilar, Alireza Haghighatkhah, Lucy Ellen Lwakatare, Susanna Teppola, Tanja Suomalainen, Juho Eskeli, Teemu Karvonen, Pasi Kuvaja, June M Verner, and Markku Oivo. 2017. “Continuous Deployment of Software Intensive Products and Services: A Systematic Mapping Study.” <em>Journal of Systems and Software</em> 123. Elsevier: 263–91.</p>
-</div>
-<div>
-<p>Santolucito, Mark, Jialu Zhang, Ennan Zhai, and Ruzica Piskac. 2018. “Statically Verifying Continuous Integration Configurations.” <em>arXiv Preprint arXiv:1805.04473</em>.</p>
-</div>
-<div>
-<p>Schneidewind, N. F. 2007. “Risk-Driven Software Testing and Reliability.” <em>International Journal of Reliability, Quality and Safety Engineering</em> 14 (2): 99–132. <a href="www.scopus.com" class="uri">www.scopus.com</a>.</p>
-</div>
-<div>
-<p>Shamshiri, Sina, José Miguel Rojas, Juan Pablo Galeotti, Neil Walkinshaw, and Gordon Fraser. 2018. “How Do Automatically Generated Unit Tests Influence Software Maintenance?” In <em>Software Testing, Verification and Validation (Icst), 2018 Ieee 11th International Conference on</em>, 250–61. IEEE. doi:<a href="https://doi.org/10.1109/ICST.2018.00033">10.1109/ICST.2018.00033</a>.</p>
-</div>
-<div>
-<p>Souza, R., C. Chavez, and R.A. Bittencourt. 2015. “Rapid Releases and Patch Backouts: A Software Analytics Approach.” <em>IEEE Software</em> 32 (2): 89–96. <a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-84925218343&amp;doi=10.1109%2fMS.2015.30&amp;partnerID=40&amp;md5=d624ac5b06a61704543a6d72af3981a1">https://www.scopus.com/inward/record.uri?eid=2-s2.0-84925218343&amp;doi=10.1109%2fMS.2015.30&amp;partnerID=40&amp;md5=d624ac5b06a61704543a6d72af3981a1</a>.</p>
-</div>
-<div>
+<div id="ref-Stallman2002">
 <p>Stallman, Richard. 2002. <em>Free Software, Free Society: Selected Essays of Richard M. Stallman</em>. Lulu. com.</p>
 </div>
-<div>
-<p>Stolberg, Sean. 2009. “Enabling Agile Testing Through Continuous Integration.” In <em>Agile Conference, 2009. Agile’09.</em>, 369–74. IEEE.</p>
+<div id="ref-Kitchenham2004">
+<p>Kitchenham, Barbara. 2004a. “Procedures for Performing Systematic Reviews.” <em>Keele</em> 33 (1). UK, Keele University: 1–26.</p>
 </div>
-<div>
-<p>Teixeira, Jose. 2017. “Release Early, Release Often and Release on Time. an Empirical Case Study of Release Management.” In <em>Open Source Systems: Towards Robust Practices</em>, 167–81. Cham: Springer International Publishing. doi:<a href="https://doi.org/10.1007/978-3-319-57735-7_16">10.1007/978-3-319-57735-7_16</a>.</p>
+<div id="ref-Abate2009">
+<p>Abate, Pietro, Roberto Di Cosmo, Jaap Boender, and Stefano Zacchiroli. 2009. “Strong Dependencies Between Software Components.” In <em>2009 3rd International Symposium on Empirical Software Engineering and Measurement</em>. IEEE. doi:<a href="https://doi.org/10.1109/esem.2009.5316017">10.1109/esem.2009.5316017</a>.</p>
 </div>
-<div>
-<p>Teixeira, Jose, Gregorio Robles, and Jesús M. González-Barahona. 2015. “Lessons Learned from Applying Social Network Analysis on an Industrial Free/Libre/Open Source Software Ecosystem.” <em>Journal of Internet Services and Applications</em> 6 (1). Springer Nature. doi:<a href="https://doi.org/10.1186/s13174-015-0028-2">10.1186/s13174-015-0028-2</a>.</p>
+<div id="ref-Abate2011">
+<p>Abate, Pietro, and Roberto Di Cosmo. 2011. “Predicting Upgrade Failures Using Dependency Analysis.” In <em>2011 IEEE 27th International Conference on Data Engineering Workshops</em>. IEEE. doi:<a href="https://doi.org/10.1109/icdew.2011.5767626">10.1109/icdew.2011.5767626</a>.</p>
 </div>
-<div>
-<p>Thongtanunam, Patanamon, Shane McIntosh, Ahmed E Hassan, and Hajimu Iida. 2016. “Revisiting Code Ownership and Its Relationship with Software Quality in the Scope of Modern Code Review.” In <em>Proceedings of the 38th International Conference on Software Engineering</em>, 1039–50. ACM.</p>
+<div id="ref-Abdalkareem2017">
+<p>Abdalkareem, Rabe, Olivier Nourry, Sultan Wehaibi, Suhaib Mujahid, and Emad Shihab. 2017. “Why Do Developers Use Trivial Packages? An Empirical Case Study on Npm.” In <em>Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering - ESEC/FSE 2017</em>. ACM Press. doi:<a href="https://doi.org/10.1145/3106237.3106267">10.1145/3106237.3106267</a>.</p>
 </div>
-<div>
-<p>Thongtanunam, Patanamon, Chakkrit Tantithamthavorn, Raula Gaikovina Kula, Norihiro Yoshida, Hajimu Iida, and Ken-ichi Matsumoto. 2015. “Who Should Review My Code? A File Location-Based Code-Reviewer Recommendation Approach for Modern Code Review.” In <em>Software Analysis, Evolution and Reengineering (Saner), 2015 Ieee 22nd International Conference on</em>, 141–50. IEEE.</p>
+<div id="ref-Bogart2016">
+<p>Bogart, Christopher, Christian Kästner, James Herbsleb, and Ferdian Thung. 2016. “How to Break an API: Cost Negotiation and Community Values in Three Software Ecosystems.” In <em>Proceedings of the 2016 24th ACM SIGSOFT International Symposium on Foundations of Software Engineering - FSE 2016</em>. ACM Press. doi:<a href="https://doi.org/10.1145/2950290.2950325">10.1145/2950290.2950325</a>.</p>
 </div>
-<div>
+<div id="ref-Claes2015">
+<p>Claes, Maelick, Tom Mens, Roberto Di Cosmo, and Jerome Vouillon. 2015. “A Historical Analysis of Debian Package Incompatibilities.” In <em>2015 IEEE/ACM 12th Working Conference on Mining Software Repositories</em>. IEEE. doi:<a href="https://doi.org/10.1109/msr.2015.27">10.1109/msr.2015.27</a>.</p>
+</div>
+<div id="ref-Constantinou2017">
+<p>Constantinou, Eleni, and Tom Mens. 2017. “An Empirical Comparison of Developer Retention in the RubyGems and Npm Software Ecosystems.” <em>Innovations in Systems and Software Engineering</em> 13 (2-3). Springer Nature: 101–15. doi:<a href="https://doi.org/10.1007/s11334-017-0303-4">10.1007/s11334-017-0303-4</a>.</p>
+</div>
+<div id="ref-Hejderup2018">
+<p>Hejderup, Joseph, Arie van Deursen, and Georgios Gousios. 2018. “Software Ecosystem Call Graph for Dependency Management.” In <em>Proceedings of the 40th International Conference on Software Engineering New Ideas and Emerging Results - ICSE-NIER 18</em>. ACM Press. doi:<a href="https://doi.org/10.1145/3183399.3183417">10.1145/3183399.3183417</a>.</p>
+</div>
+<div id="ref-Kikas2017">
+<p>Kikas, Riivo, Georgios Gousios, Marlon Dumas, and Dietmar Pfahl. 2017. “Structure and Evolution of Package Dependency Networks.” In <em>2017 IEEE/ACM 14th International Conference on Mining Software Repositories (MSR)</em>. IEEE. doi:<a href="https://doi.org/10.1109/msr.2017.55">10.1109/msr.2017.55</a>.</p>
+</div>
+<div id="ref-Kula2017">
+<p>Kula, Raula Gaikovina, Daniel M. German, Ali Ouni, Takashi Ishio, and Katsuro Inoue. 2017. “Do Developers Update Their Library Dependencies?” <em>Empirical Software Engineering</em> 23 (1). Springer Nature: 384–417. doi:<a href="https://doi.org/10.1007/s10664-017-9521-5">10.1007/s10664-017-9521-5</a>.</p>
+</div>
+<div id="ref-Raemaekers2017">
+<p>Raemaekers, S., A. van Deursen, and J. Visser. 2017. “Semantic Versioning and Impact of Breaking Changes in the Maven Repository.” <em>Journal of Systems and Software</em> 129 (July). Elsevier BV: 140–58. doi:<a href="https://doi.org/10.1016/j.jss.2016.04.008">10.1016/j.jss.2016.04.008</a>.</p>
+</div>
+<div id="ref-Robbes2012">
+<p>Robbes, Romain, Mircea Lungu, and David Röthlisberger. 2012. “How Do Developers React to API Deprecation?” In <em>Proceedings of the ACM SIGSOFT 20th International Symposium on the Foundations of Software Engineering - FSE 12</em>. ACM Press. doi:<a href="https://doi.org/10.1145/2393596.2393662">10.1145/2393596.2393662</a>.</p>
+</div>
+<div id="ref-Trockman2018">
 <p>Trockman, Asher. 2018. “Adding Sparkle to Social Coding.” In <em>Proceedings of the 40th International Conference on Software Engineering Companion Proceeedings - ICSE 18</em>. ACM Press. doi:<a href="https://doi.org/10.1145/3183440.3190335">10.1145/3183440.3190335</a>.</p>
 </div>
-<div>
-<p>Vassallo, Carmine, Sebastian Proksch, Timothy Zemp, and Harald C Gall. 2018. “Un-Break My Build: Assisting Developers with Build Repair Hints.”</p>
+<div id="ref-Decan2018">
+<p>Decan, Alexandre, Tom Mens, and Philippe Grosjean. 2018. “An Empirical Comparison of Dependency Network Evolution in Seven Software Packaging Ecosystems.” <em>Empirical Software Engineering</em>, February. Springer Nature. doi:<a href="https://doi.org/10.1007/s10664-017-9589-y">10.1007/s10664-017-9589-y</a>.</p>
 </div>
-<div>
-<p>Vassallo, Carmine, Gerald Schermann, Fiorella Zampetti, Daniele Romano, Philipp Leitner, Andy Zaidman, Massimiliano Di Penta, and Sebastiano Panichella. 2017. “A Tale of Ci Build Failures: An Open Source and a Financial Organization Perspective.” In <em>Software Maintenance and Evolution (Icsme), 2017 Ieee International Conference on</em>, 183–93. IEEE.</p>
+<div id="ref-Dittrich2014">
+<p>Dittrich, Yvonne. 2014. “Software Engineering Beyond the Project Sustaining Software Ecosystems.” <em>Information and Software Technology</em> 56 (11). Elsevier BV: 1436–56. doi:<a href="https://doi.org/10.1016/j.infsof.2014.02.012">10.1016/j.infsof.2014.02.012</a>.</p>
 </div>
-<div>
-<p>Vernotte, A., C. Botea, B. Legeard, A. Molnar, and F. Peureux. 2015. <em>Risk-Driven Vulnerability Testing: Results from eHealth Experiments Using Patterns and Model-Based Approach</em>. Vol. 9488. Lecture Notes in Computer Science (Including Subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics). <a href="www.scopus.com" class="uri">www.scopus.com</a>.</p>
+<div id="ref-Hora2016">
+<p>Hora, André, Romain Robbes, Marco Tulio Valente, Nicolas Anquetil, Anne Etien, and Stéphane Ducasse. 2016. “How Do Developers React to API Evolution? A Large-Scale Empirical Study.” <em>Software Quality Journal</em> 26 (1). Springer Nature: 161–91. doi:<a href="https://doi.org/10.1007/s11219-016-9344-4">10.1007/s11219-016-9344-4</a>.</p>
 </div>
-<div>
-<p>Widder, David Gray, Michael Hilton, Christian Kästner, and Bogdan Vasilescu. 2018. “I’im Leaving You, Travis: A Continuous Integration Breakup Story.”</p>
+<div id="ref-Izquierdo2018">
+<p>Izquierdo, Daniel, Jesus Gonzalez-Barahona, Lars Kurth, and Gregorio Robles. 2018. “Software Development Analytics for Xen: Why and How.” <em>IEEE Software</em>. Institute of Electrical; Electronics Engineers (IEEE), 1–1. doi:<a href="https://doi.org/10.1109/ms.2018.290101357">10.1109/ms.2018.290101357</a>.</p>
 </div>
-<div>
-<p>Xia, Xin, David Lo, Xinyu Wang, and Xiaohu Yang. 2015. “Who Should Review This Change?: Putting Text and File Location Analyses Together for More Accurate Recommendations.” In <em>Software Maintenance and Evolution (Icsme), 2015 Ieee International Conference on</em>, 261–70. IEEE.</p>
+<div id="ref-Jansen2014">
+<p>Jansen, Slinger. 2014. “Measuring the Health of Open Source Software Ecosystems: Beyond the Scope of Project Health.” <em>Information and Software Technology</em> 56 (11). Elsevier BV: 1508–19. doi:<a href="https://doi.org/10.1016/j.infsof.2014.04.006">10.1016/j.infsof.2014.04.006</a>.</p>
 </div>
-<div>
-<p>Zaidman, Andy, Bart Van Rompaey, Arie van Deursen, and Serge Demeyer. 2011. “Studying the Co-Evolution of Production and Test Code in Open Source and Industrial Developer Test Processes Through Repository Mining.” <em>Empirical Software Engineering</em> 16 (3). Springer: 325–64.</p>
+<div id="ref-Kula2017-2">
+<p>Kula, Raula Gaikovina, Daniel M. German, Takashi Ishio, Ali Ouni, and Katsuro Inoue. 2017. “An Exploratory Study on Library Aging by Monitoring Client Usage in a Software Ecosystem.” In <em>2017 IEEE 24th International Conference on Software Analysis, Evolution and Reengineering (SANER)</em>. IEEE. doi:<a href="https://doi.org/10.1109/saner.2017.7884643">10.1109/saner.2017.7884643</a>.</p>
 </div>
-<div>
-<p>Zampetti, Fiorella, Simone Scalabrino, Rocco Oliveto, Gerardo Canfora, and Massimiliano Di Penta. 2017. “How Open Source Projects Use Static Code Analysis Tools in Continuous Integration Pipelines.” In <em>Mining Software Repositories (Msr), 2017 Ieee/Acm 14th International Conference on</em>, 334–44. IEEE.</p>
+<div id="ref-Malloy2018">
+<p>Malloy, Brian A., and James F. Power. 2017. “Quantifying the Transition from Python 2 to 3: An Empirical Study of Python Applications.” In <em>2017 ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM)</em>. IEEE. doi:<a href="https://doi.org/10.1109/esem.2017.45">10.1109/esem.2017.45</a>.</p> 2018. “An Empirical Analysis of the Transition from Python 2 to Python 3.” <em>Empirical Software Engineering</em>, July. Springer Nature. doi:<a href="https://doi.org/10.1007/s10664-018-9637-2">10.1007/s10664-018-9637-2</a>.</p>
 </div>
-<div>
-<p>Zanjani, Motahareh Bahrami, Huzefa Kagdi, and Christian Bird. 2016. “Automatically Recommending Peer Reviewers in Modern Code Review.” <em>IEEE Transactions on Software Engineering</em> 42 (6). IEEE: 530–43.</p>
+<div id="ref-Manikas2016">
+<p>Manikas, Konstantinos. 2016. “Revisiting Software Ecosystems Research: A Longitudinal Literature Study.” <em>Journal of Systems and Software</em> 117 (July). Elsevier BV: 84–103. doi:<a href="https://doi.org/10.1016/j.jss.2016.02.003">10.1016/j.jss.2016.02.003</a>.</p>
 </div>
-<div>
-<p>Zhao, Yangyang, Alexander Serebrenik, Yuming Zhou, Vladimir Filkov, and Bogdan Vasilescu. 2017. “The Impact of Continuous Integration on Other Software Development Practices: A Large-Scale Empirical Study.” In <em>Proceedings of the 32nd Ieee/Acm International Conference on Automated Software Engineering</em>, 60–71. IEEE Press.</p>
+<div id="ref-Rajlich2014">
+<p>Rajlich, Václav. 2014. “Software Evolution and Maintenance.” In <em>Proceedings of the on Future of Software Engineering - FOSE 2014</em>. ACM Press. doi:<a href="https://doi.org/10.1145/2593882.2593893">10.1145/2593882.2593893</a>.</p>
+</div>
+<div id="ref-Teixeira2015">
+<p>Teixeira, Jose, Gregorio Robles, and Jesús M. González-Barahona. 2015. “Lessons Learned from Applying Social Network Analysis on an Industrial Free/Libre/Open Source Software Ecosystem.” <em>Journal of Internet Services and Applications</em> 6 (1). Springer Nature. doi:<a href="https://doi.org/10.1186/s13174-015-0028-2">10.1186/s13174-015-0028-2</a>.</p>
+</div>
+<div id="ref-Bavota2014">
+<p>Bavota, Gabriele, Gerardo Canfora, Massimiliano Di Penta, Rocco Oliveto, and Sebastiano Panichella. 2014. “How the Apache Community Upgrades Dependencies: An Evolutionary Study.” <em>Empirical Software Engineering</em> 20 (5). Springer Nature: 1275–1317. doi:<a href="https://doi.org/10.1007/s10664-014-9325-9">10.1007/s10664-014-9325-9</a>.</p>
+</div>
+<div id="ref-Blincoe2015">
+<p>Blincoe, Kelly, Francis Harrison, and Daniela Damian. 2015. “Ecosystems in GitHub and a Method for Ecosystem Identification Using Reference Coupling.” In <em>2015 IEEE/ACM 12th Working Conference on Mining Software Repositories</em>. IEEE. doi:<a href="https://doi.org/10.1109/msr.2015.26">10.1109/msr.2015.26</a>.</p>
+</div>
+<div id="ref-Cox2015">
+<p>Cox, Joel, Eric Bouwers, Marko van Eekelen, and Joost Visser. 2015. “Measuring Dependency Freshness in Software Systems.” In <em>2015 IEEE/ACM 37th IEEE International Conference on Software Engineering</em>. IEEE. doi:<a href="https://doi.org/10.1109/icse.2015.140">10.1109/icse.2015.140</a>.</p>
+</div>
+<div id="ref-Decan2017">
+<p>Decan, Alexandre, Tom Mens, and Maelick Claes. 2017. “An Empirical Comparison of Dependency Issues in OSS Packaging Ecosystems.” In <em>2017 IEEE 24th International Conference on Software Analysis, Evolution and Reengineering (SANER)</em>. IEEE. doi:<a href="https://doi.org/10.1109/saner.2017.7884604">10.1109/saner.2017.7884604</a>.</p>
+</div>
+<div id="ref-Dietrich2014">
+<p>Dietrich, Jens, Kamil Jezek, and Premek Brada. 2014. “Broken Promises: An Empirical Study into Evolution Problems in Java Programs Caused by Library Upgrades.” In <em>2014 Software Evolution Week - IEEE Conference on Software Maintenance, Reengineering, and Reverse Engineering (CSMR-WCRE)</em>. IEEE. doi:<a href="https://doi.org/10.1109/csmr-wcre.2014.6747226">10.1109/csmr-wcre.2014.6747226</a>.</p>
+</div>
+<div id="ref-Malloy2017">
+<p>Malloy, Brian A., and James F. Power. 2017. “Quantifying the Transition from Python 2 to 3: An Empirical Study of Python Applications.” In <em>2017 ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM)</em>. IEEE. doi:<a href="https://doi.org/10.1109/esem.2017.45">10.1109/esem.2017.45</a>.</p>
+</div>
+<div id="ref-McDonnell2013">
+<p>McDonnell, Tyler, Baishakhi Ray, and Miryung Kim. 2013. “An Empirical Study of API Stability and Adoption in the Android Ecosystem.” In <em>2013 IEEE International Conference on Software Maintenance</em>. IEEE. doi:<a href="https://doi.org/10.1109/icsm.2013.18">10.1109/icsm.2013.18</a>.</p>
 </div>
 </div>
+<div class="footnotes">
+<hr />
+<ol start="2">
+<li id="fn2"><p><a href="https://pypi.org/project/pip/" class="uri">https://pypi.org/project/pip/</a><a href="ecosystem-analytics.html#fnref2">↩</a></p></li>
+<li id="fn3"><p><a href="https://crates.io/" class="uri">https://crates.io/</a><a href="ecosystem-analytics.html#fnref3">↩</a></p></li>
+<li id="fn4"><p><a href="https://github.com:" class="uri">https://github.com:</a><a href="ecosystem-analytics.html#fnref4">↩</a></p></li>
+<li id="fn5"><p><a href="https://github.com:" class="uri">https://github.com:</a><a href="ecosystem-analytics.html#fnref5">↩</a></p></li>
+<li id="fn6"><p><a href="https://github.com:" class="uri">https://github.com:</a><a href="ecosystem-analytics.html#fnref6">↩</a></p></li>
+<li id="fn7"><p><a href="https://github.com:" class="uri">https://github.com:</a><a href="ecosystem-analytics.html#fnref7">↩</a></p></li>
+</ol>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
             </section>
 
           </div>
         </div>
       </div>
-<a href="final-words.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="bug-prediction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="release-engineering-analytics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -691,7 +943,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/saltudelft/software-analytics-book/edit/master/11-references.Rmd",
+"link": "https://github.com/saltudelft/software-analytics-book/edit/master/05-ecosystem-analytics.Rmd",
 "text": "Edit"
 },
 "download": ["software-analytics-survey.pdf", "software-analytics-survey.epub"],

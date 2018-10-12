@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-
-<link rel="next" href="a-contemporary-view-on-software-analytics.html">
+<link rel="prev" href="release-engineering-analytics.html">
+<link rel="next" href="runtime-and-performance-analytics.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -268,20 +268,387 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">A Literature Survey of Software Analytics</h1>
-<p class="author"><em>IN4334 2018 TU Delft</em></p>
-<p class="date"><em>2018-10-12</em></p>
+<div id="code-review" class="section level1">
+<h1><span class="header-section-number">Chapter 8</span> Code Review</h1>
+<div id="review-protocol" class="section level2">
+<h2><span class="header-section-number">8.1</span> Review protocol</h2>
+<p>This section describes the review protocol used for the systematic review presented in this section. The protcol has been set up using Kitchenham’s method as described by Kitchenham et al. <span class="citation">(Kitchenham <a href="#ref-kitchenham2007">2007</a>)</span>.</p>
+<div id="research-questions-2" class="section level3">
+<h3><span class="header-section-number">8.1.1</span> Research questions</h3>
+<p>The goal of the review is to summarize the state of the art and identify future challenges in the code review area. The research questions are as follows:</p>
+<ul>
+<li><strong>RQ1</strong>: <em>What is the state of the art in the research area of code review?</em> This question focusses on topics that are researched often, the results of that research, and research methods, tools and datasets that are used.</li>
+<li><strong>RQ2</strong>: <em>What is the current state of practice in the area of code review?</em> This concerns tools and techniques that are developed and used in practice, by open source projects but also by commercial companies.</li>
+<li><strong>RQ3</strong>: <em>What are future challenges in the area of code review?</em> This concerns both research challenges and challenges for use in practice.</li>
+</ul>
 </div>
-<div id="intro" class="section level1">
-<h1><span class="header-section-number">Chapter 1</span> Preamble</h1>
-<p>The book you see in front of you is the outcome of an eight week seminar run by the Software Engineering Research Group (SERG) at TU Delft. We have split up the novel area of Software Analytics into several sub topics. Every chapter addresses one such sub-topic of Software Analytics and is the outcome of a systematic literature review a laborious team of 3-4 students performed.</p>
-<p>With this book, we hope to structure the new field of Software Analytics and show how it is related to many long existing research fields.</p>
-<p><em>The IN4334 – Software Analytics class of 2018</em></p>
-<div id="license" class="section level2">
-<h2><span class="header-section-number">1.1</span> License</h2>
-<p><img src="figures/cc-nc-sa.png" alt="Creative Commons" /> This book is copyrighted 2018 by TU Delft and its respective authors and distributed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a></p>
+<div id="search-process" class="section level3">
+<h3><span class="header-section-number">8.1.2</span> Search process</h3>
+<p>The search process consists of the following:</p>
+<ul>
+<li>A Google Scholar search using the search query <em>“modern code review” OR “modern code reviews”</em>. The results list will be sorted by decreasing relevance by Google Scholar and will be considered by us in order.</li>
+<li>A general Google search for non-scientific reports (e.g., blog posts) and implemented code review tools. For this search queries <em>code review</em> and <em>code review tools</em> are used, respectively. The result list will be considered in order.</li>
+<li>All papers in the initial seed provided by the course instructor will be considered.</li>
+<li>All papers referenced by already collected papers will be considered.</li>
+</ul>
+<p>From now on, all four categories listed above in general will be called <em>resource</em>.</p>
+</div>
+<div id="inclusion-criteria" class="section level3">
+<h3><span class="header-section-number">8.1.3</span> Inclusion criteria</h3>
+<p>From the scientific literature, the following types of papers will be considered:</p>
+<p>Papers researching recent code review</p>
+<ul>
+<li>concepts,</li>
+<li>methodologies,</li>
+<li>tools and platforms,</li>
+<li>and experiments concerning the preceding.</li>
+</ul>
+<p>From non-scientific resources, all resources discussing recent tools and techniques used in practice will be considered.</p>
+</div>
+<div id="exclusion-criteria" class="section level3">
+<h3><span class="header-section-number">8.1.4</span> Exclusion criteria</h3>
+<p>Resources published before 2008 will be excluded from the study.</p>
+</div>
+<div id="primary-study-selection-process" class="section level3">
+<h3><span class="header-section-number">8.1.5</span> Primary study selection process</h3>
+<p>We will select a number of candidate resources based on the criteria stated above. For each resource, each person participating in the review can select it as a candidate.</p>
+<p>From all candidates, resource will be selected that will actually be reviewed. This can also be done by each person participating in the review. All resources that are candidates but are not selected for actual review must be explicitly rejected, with accompanying reasoning, by at least two persons participating in the review.</p>
+</div>
+<div id="data-collection" class="section level3">
+<h3><span class="header-section-number">8.1.6</span> Data collection</h3>
+<p>The following data will be collected from each considered resource:</p>
+<ul>
+<li>Source (for example, the blog website or specific journal)</li>
+<li>Year published</li>
+<li>Type of resource</li>
+<li>Author(s) and organization(s)</li>
+<li>Summary of the resource of a maximum of 100 words</li>
+<li>Data for answering <strong>RQ1</strong>:
+<ul>
+<li>Sub-topic of research</li>
+<li>Research method</li>
+<li>Used tools</li>
+<li>Used datasets</li>
+<li>Research questions and their answers</li>
+</ul></li>
+<li>Data for answering <strong>RQ2</strong>:
+<ul>
+<li>Tools used</li>
+<li>Company/organization using the tool</li>
+<li>Evaluation of the tool</li>
+</ul></li>
+<li>Data for answering <strong>RQ3</strong>:
+<ul>
+<li>Future research challenges posed</li>
+</ul></li>
+</ul>
+<p>All data will be collected by one person participating in the review and checked by another.</p>
+</div>
+</div>
+<div id="candidate-resources" class="section level2">
+<h2><span class="header-section-number">8.2</span> Candidate resources</h2>
+<p>In this section, all candidates that are collected using the described search process are presented. The in survey column in the tables below indicates whether the paper has been included in the survey in the end or if it has been excluded for some reason. If it has been excluded, the reason is stated along with the paper summary.</p>
+<div id="initial-seed-1" class="section level3">
+<h3><span class="header-section-number">8.2.1</span> Initial seed</h3>
+<p>These following table lists all initial seed papers provided by the course intructor. They are listed in alphabetical order of the first author’s name, and then by publish year.</p>
+<table>
+<thead>
+<tr class="header">
+<th>First author</th>
+<th>Year</th>
+<th>Reference</th>
+<th>In survey? (Y/N)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bacchelli, A.</td>
+<td>2013</td>
+<td><span class="citation">Bacchelli and Bird (<a href="#ref-bacchelli2013expectations">2013</a>)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Beller, M.</td>
+<td>2014</td>
+<td><span class="citation">Beller et al. (<a href="#ref-beller2014modern">2014</a>)</span></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Bird, C.</td>
+<td>2015</td>
+<td><span class="citation">Bird, Carnahan, and Greiler (<a href="#ref-bird2015lessons">2015</a>)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Fagan, M.</td>
+<td>2002</td>
+<td><span class="citation">Fagan (<a href="#ref-fagan2002design">2002</a>)</span></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Gousios, G.</td>
+<td>2014</td>
+<td><span class="citation">Gousios, Pinzger, and Deursen (<a href="#ref-gousios2014exploratory">2014</a>)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>McIntosh, S.</td>
+<td>2014</td>
+<td><span class="citation">McIntosh et al. (<a href="#ref-mcintosh2014impact">2014</a>)</span></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="google-scholar" class="section level3">
+<h3><span class="header-section-number">8.2.2</span> Google Scholar</h3>
+<p>The following table lists all candidates that have been collected through the Google Scholar search described in the search process. They are listed in alphabetical order of the first author’s name, and then by publish year. Note that as described in the search process section, papers in the search are considered in order.</p>
+<table>
+<thead>
+<tr class="header">
+<th>First author</th>
+<th>Year</th>
+<th>Reference</th>
+<th>In survey? (Y/N)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Baysal, O.</td>
+<td>2016</td>
+<td><span class="citation">Baysal et al. (<a href="#ref-baysal2016investigating">2016</a>)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Thongtanunam, P.</td>
+<td>2015</td>
+<td><span class="citation">Thongtanunam et al. (<a href="#ref-thongtanunam2015should">2015</a>)</span></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Thongtanunam, P.</td>
+<td>2016</td>
+<td><span class="citation">Thongtanunam et al. (<a href="#ref-thongtanunam2016revisiting">2016</a>)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Xia, X.</td>
+<td>2015</td>
+<td><span class="citation">Xia et al. (<a href="#ref-xia2015should">2015</a>)</span></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Zanjani, M. B.</td>
+<td>2016</td>
+<td><span class="citation">Zanjani, Kagdi, and Bird (<a href="#ref-zanjani2016automatically">2016</a>)</span></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="by-reference" class="section level3">
+<h3><span class="header-section-number">8.2.3</span> By reference</h3>
+<p>The following table lists all candidates that have been found by being referenced by another paper we found. They are listed in alphabetical order of the first author’s name, and then by publish year.</p>
+<table>
+<thead>
+<tr class="header">
+<th>First author</th>
+<th>Year</th>
+<th>Reference</th>
+<th>Referenced by</th>
+<th>In survey? (Y/N)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Baum</td>
+<td>2016</td>
+<td><span class="citation">Baum et al. (<a href="#ref-baum2016faceted">2016</a>)</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Baum</td>
+<td>2017</td>
+<td><span class="citation">Baum, Leßmann, and Schneider (<a href="#ref-baum2017choice">2017</a>)</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Baysal</td>
+<td>2013</td>
+<td><span class="citation">Baysal et al. (<a href="#ref-baysal2013influence">2013</a>)</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Bosu</td>
+<td>2013</td>
+<td><span class="citation">Bosu and Carver (<a href="#ref-bosu2013impact">2013</a>)</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Ciolkowski</td>
+<td>2003</td>
+<td><span class="citation">Ciolkowski, Laitenberger, and Biffl (<a href="#ref-ciolkowski2003software">2003</a>)</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Czerwonka</td>
+<td>2015</td>
+<td><span class="citation">Czerwonka, Greiler, and Tilford (<a href="#ref-czerwonka2015code">2015</a>)</span></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="paper-summaries" class="section level2">
+<h2><span class="header-section-number">8.3</span> Paper summaries</h2>
+<p>This section contains summaries of all papers included in the survey. They are listed in alphabetical order of first author name, and then by year published.</p>
+<div id="expectations-outcomes-and-challenges-of-modern-code-review" class="section level3">
+<h3><span class="header-section-number">8.3.1</span> Expectations, outcomes, and challenges of modern code review</h3>
+<p>Reference: <span class="citation">Bacchelli and Bird (<a href="#ref-bacchelli2013expectations">2013</a>)</span></p>
+<p>This paper describes research about the goals and actual effects of code reviews. Interviews and experiments have been done with people in the programming field.</p>
+<p>One of the main conclusions is that the main effect of doing code reviews is that everyone involved understands the code better. This is opposed to what the goal of code reviews is generally: discovering errors.</p>
+</div>
+<div id="a-faceted-classification-scheme-for-change-based-industrial-code-review-processes" class="section level3">
+<h3><span class="header-section-number">8.3.2</span> A Faceted Classification Scheme for Change-Based Industrial Code Review Processes</h3>
+<p>Reference: <span class="citation">Baum et al. (<a href="#ref-baum2016faceted">2016</a>)</span></p>
+<p>The broad research questions treated in this article are: How is code review performed in industry today? Which commonalities and variations exist between code review processes of different teams and companies? The article describes a classification scheme for change-based code review processes in industry. This scheme is based on descriptions of the code review processes of eleven companies, obtained from interviews with software engineering professionals that were performed during a Grounded Theory study.</p>
+</div>
+<div id="the-choice-of-code-review-process-a-survey-on-the-state-of-the-practice" class="section level3">
+<h3><span class="header-section-number">8.3.3</span> The Choice of Code Review Process: A Survey on the State of the Practice</h3>
+<p>Reference: <span class="citation">Baum, Leßmann, and Schneider (<a href="#ref-baum2017choice">2017</a>)</span></p>
+<p>This paper, published in 2017, is trying to answer 3 RQs. Firstly, how prevalent is change-based review in the industry? Secondly, does the chance that code review remains in use increase if code review is embedded into the process (and its supporting tools) so that it does not require a conscious decision to do a review? Thirdly, are the intended and acceptable levels of review effects a mediator in determining the code review process?</p>
+</div>
+<div id="the-influence-of-non-technical-factors-on-code-review" class="section level3">
+<h3><span class="header-section-number">8.3.4</span> The influence of non-technical factors on code review</h3>
+<p>Reference: <span class="citation">Baysal et al. (<a href="#ref-baysal2013influence">2013</a>)</span></p>
+</div>
+<div id="investigating-technical-and-non-technical-factors-influencing-modern-code-review" class="section level3">
+<h3><span class="header-section-number">8.3.5</span> Investigating technical and non-technical factors influencing modern code review</h3>
+<p>Reference: <span class="citation">Baysal et al. (<a href="#ref-baysal2016investigating">2016</a>)</span></p>
+</div>
+<div id="modern-code-reviews-in-open-source-projects-which-problems-do-they-fix" class="section level3">
+<h3><span class="header-section-number">8.3.6</span> Modern code reviews in open-source projects: Which problems do they fix?</h3>
+<p>Reference: <span class="citation">Beller et al. (<a href="#ref-beller2014modern">2014</a>)</span></p>
+<p>It has been researched what kinds of problems are solved by doing code reviews. The conclusion is that 75% are improvements in evolvability of the code, and 25% in functional aspects.</p>
+<p>It has also been researched which part of the review comments is actually followed up by an action, and which part of the edits after a review are actually caused by review comments.</p>
+</div>
+<div id="lessons-learned-from-building-and-deploying-a-code-review-analytics-platform" class="section level3">
+<h3><span class="header-section-number">8.3.7</span> Lessons learned from building and deploying a code review analytics platform</h3>
+<p>Reference: <span class="citation">Bird, Carnahan, and Greiler (<a href="#ref-bird2015lessons">2015</a>)</span></p>
+<p>A code review data analyzation platform developed and used by Microsoft is discussed. It is mainly presented what users of the system think of it and how its use influences development teams. One of the conclusions is that in general, the platform has a positive influence on development teams and their products.</p>
+</div>
+<div id="impact-of-peer-code-review-on-peer-impression-formation-a-survey" class="section level3">
+<h3><span class="header-section-number">8.3.8</span> Impact of peer code review on peer impression formation: A survey</h3>
+<p>Reference: <span class="citation">Bosu and Carver (<a href="#ref-bosu2013impact">2013</a>)</span></p>
+</div>
+<div id="software-reviews-the-state-of-the-practice" class="section level3">
+<h3><span class="header-section-number">8.3.9</span> Software Reviews: The State of the Practice</h3>
+<p>Reference: <span class="citation">Ciolkowski, Laitenberger, and Biffl (<a href="#ref-ciolkowski2003software">2003</a>)</span></p>
+<p>To investigate how industry carries out software reviews and in what forms, this paper con- ducted a two-part survey in 2002, the first part based on a national initiative in Germany and the second involving companies world- wide. Additionally, this paper also include some fundenmental concepts of code review, such as functionalities of code review.</p>
+</div>
+<div id="code-reviews-do-not-find-bugs-how-the-current-code-review-best-practice-slows-us-down" class="section level3">
+<h3><span class="header-section-number">8.3.10</span> Code reviews do not find bugs: how the current code review best practice slows us down</h3>
+<p>Reference: <span class="citation">Czerwonka, Greiler, and Tilford (<a href="#ref-czerwonka2015code">2015</a>)</span></p>
+<p>As code review has many uses and benefits, the authors hope to find out whether the current code review methods are sufficiently efficient. They also research whether other methods may be more efficient. With experience gained at Microsoft and with support of data, the authors posit (1) that code reviews often do not find functionality issues that should block a code submission; (2) that effective code reviews should be performed by people with a specific set of skills; and (3) that the social aspect of code reviews cannot be ignored.</p>
+</div>
+<div id="design-and-code-inspections-to-reduce-errors-in-program-development" class="section level3">
+<h3><span class="header-section-number">8.3.11</span> Design and code inspections to reduce errors in program development</h3>
+<p>Reference: <span class="citation">Fagan (<a href="#ref-fagan2002design">2002</a>)</span></p>
+<p>This paper describes a method to thoroughly check code quality after each step of the development process, in a heavyweight manner. It does not really concern agile development.</p>
+<p>The authors state that these methods do not affect the developing process negatively, and that they work well for improving software quality.</p>
+</div>
+<div id="an-exploratory-study-of-the-pull-based-software-development-model" class="section level3">
+<h3><span class="header-section-number">8.3.12</span> An exploratory study of the pull-based software development model</h3>
+<p>Reference: <span class="citation">Gousios, Pinzger, and Deursen (<a href="#ref-gousios2014exploratory">2014</a>)</span></p>
+<p>This article focusses on how much pull requests are being used and how they are used, focussing on GitHub. For example, it is concluded that pull-request are not being used that much, that pull-requests are being merged fast after they have been submitted, and that a pull request not being merged is most of the time not caused by technical errors in the pull-request.</p>
+</div>
+<div id="the-impact-of-code-review-coverage-and-code-review-participation-on-software-quality-a-case-study-of-the-qt-vtk-and-itk-projects" class="section level3">
+<h3><span class="header-section-number">8.3.13</span> The impact of code review coverage and code review participation on software quality: A case study of the qt, vtk, and itk projects</h3>
+<p>Reference: <span class="citation">McIntosh et al. (<a href="#ref-mcintosh2014impact">2014</a>)</span></p>
+<p>This paper focusses on the influence of doing light-weight code reviews on software quality. In particular, the effect of review coverage (the part of the code that has been reviewed) and review participation (a measure for how much reviewers are involved in the review process) are being assessed.</p>
+<p>It turns out that both aspects improve software quality when they are higher. Review participation is the most influential. According to the authors there are other aspects, which they have not looked into, that are of significant importance for the review process.</p>
+</div>
+<div id="who-should-review-my-code-a-file-location-based-code-reviewer-recommendation-approach-for-modern-code-review" class="section level3">
+<h3><span class="header-section-number">8.3.14</span> Who should review my code? A file location-based code-reviewer recommendation approach for modern code review</h3>
+<p>Reference: <span class="citation">Thongtanunam et al. (<a href="#ref-thongtanunam2015should">2015</a>)</span></p>
+</div>
+<div id="revisiting-code-ownership-and-its-relationship-with-software-quality-in-the-scope-of-modern-code-review" class="section level3">
+<h3><span class="header-section-number">8.3.15</span> Revisiting code ownership and its relationship with software quality in the scope of modern code review</h3>
+<p>Reference: <span class="citation">Thongtanunam et al. (<a href="#ref-thongtanunam2016revisiting">2016</a>)</span></p>
+</div>
+<div id="who-should-review-this-change-putting-text-and-file-location-analyses-together-for-more-accurate-recommendations" class="section level3">
+<h3><span class="header-section-number">8.3.16</span> Who should review this change?: Putting text and file location analyses together for more accurate recommendations</h3>
+<p>Reference: <span class="citation">Xia et al. (<a href="#ref-xia2015should">2015</a>)</span></p>
+</div>
+<div id="automatically-recommending-peer-reviewers-in-modern-code-review" class="section level3">
+<h3><span class="header-section-number">8.3.17</span> Automatically recommending peer reviewers in modern code review</h3>
+<p>Reference: <span class="citation">Zanjani, Kagdi, and Bird (<a href="#ref-zanjani2016automatically">2016</a>)</span></p>
 
+</div>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-kitchenham2007">
+<p>Kitchenham. 2007. “Guidelines for Performing Systematic Literature Reviews in Software Engineering.” Keele University; University of Durham.</p>
+</div>
+<div id="ref-bacchelli2013expectations">
+<p>Bacchelli, Alberto, and Christian Bird. 2013. “Expectations, Outcomes, and Challenges of Modern Code Review.” In <em>Proceedings of the 2013 International Conference on Software Engineering</em>, 712–21. IEEE Press.</p>
+</div>
+<div id="ref-beller2014modern">
+<p>Beller, Moritz, Alberto Bacchelli, Andy Zaidman, and Elmar Juergens. 2014. “Modern Code Reviews in Open-Source Projects: Which Problems Do They Fix?” In <em>Proceedings of the 11th Working Conference on Mining Software Repositories</em>, 202–11. ACM.</p>
+</div>
+<div id="ref-bird2015lessons">
+<p>Bird, Christian, Trevor Carnahan, and Michaela Greiler. 2015. “Lessons Learned from Building and Deploying a Code Review Analytics Platform.” In <em>Proceedings of the 12th Working Conference on Mining Software Repositories</em>, 191–201. IEEE Press.</p>
+</div>
+<div id="ref-fagan2002design">
+<p>Fagan, Michael. 2002. “Design and Code Inspections to Reduce Errors in Program Development.” In <em>Software Pioneers</em>, 575–607. Springer.</p>
+</div>
+<div id="ref-gousios2014exploratory">
+<p>Gousios, Georgios, Martin Pinzger, and Arie van Deursen. 2014. “An Exploratory Study of the Pull-Based Software Development Model.” In <em>Proceedings of the 36th International Conference on Software Engineering</em>, 345–55. ACM.</p>
+</div>
+<div id="ref-mcintosh2014impact">
+<p>McIntosh, Shane, Yasutaka Kamei, Bram Adams, and Ahmed E Hassan. 2014. “The Impact of Code Review Coverage and Code Review Participation on Software Quality: A Case Study of the Qt, Vtk, and Itk Projects.” In <em>Proceedings of the 11th Working Conference on Mining Software Repositories</em>, 192–201. ACM.</p>
+</div>
+<div id="ref-baysal2016investigating">
+<p>Baysal, Olga, Oleksii Kononenko, Reid Holmes, and Michael W Godfrey. 2016. “Investigating Technical and Non-Technical Factors Influencing Modern Code Review.” <em>Empirical Software Engineering</em> 21 (3). Springer: 932–59.</p>
+</div>
+<div id="ref-thongtanunam2015should">
+<p>Thongtanunam, Patanamon, Chakkrit Tantithamthavorn, Raula Gaikovina Kula, Norihiro Yoshida, Hajimu Iida, and Ken-ichi Matsumoto. 2015. “Who Should Review My Code? A File Location-Based Code-Reviewer Recommendation Approach for Modern Code Review.” In <em>Software Analysis, Evolution and Reengineering (Saner), 2015 Ieee 22nd International Conference on</em>, 141–50. IEEE.</p>
+</div>
+<div id="ref-thongtanunam2016revisiting">
+<p>Thongtanunam, Patanamon, Shane McIntosh, Ahmed E Hassan, and Hajimu Iida. 2016. “Revisiting Code Ownership and Its Relationship with Software Quality in the Scope of Modern Code Review.” In <em>Proceedings of the 38th International Conference on Software Engineering</em>, 1039–50. ACM.</p>
+</div>
+<div id="ref-xia2015should">
+<p>Xia, Xin, David Lo, Xinyu Wang, and Xiaohu Yang. 2015. “Who Should Review This Change?: Putting Text and File Location Analyses Together for More Accurate Recommendations.” In <em>Software Maintenance and Evolution (Icsme), 2015 Ieee International Conference on</em>, 261–70. IEEE.</p>
+</div>
+<div id="ref-zanjani2016automatically">
+<p>Zanjani, Motahareh Bahrami, Huzefa Kagdi, and Christian Bird. 2016. “Automatically Recommending Peer Reviewers in Modern Code Review.” <em>IEEE Transactions on Software Engineering</em> 42 (6). IEEE: 530–43.</p>
+</div>
+<div id="ref-baum2016faceted">
+<p>Baum, Tobias, Olga Liskin, Kai Niklas, and Kurt Schneider. 2016. “A Faceted Classification Scheme for Change-Based Industrial Code Review Processes.” In <em>Software Quality, Reliability and Security (Qrs), 2016 Ieee International Conference on</em>, 74–85. IEEE.</p>
+</div>
+<div id="ref-baum2017choice">
+<p>Baum, Tobias, Hendrik Leßmann, and Kurt Schneider. 2017. “The Choice of Code Review Process: A Survey on the State of the Practice.” In <em>International Conference on Product-Focused Software Process Improvement</em>, 111–27. Springer.</p>
+</div>
+<div id="ref-baysal2013influence">
+<p>Baysal, Olga, Oleksii Kononenko, Reid Holmes, and Michael W Godfrey. 2013. “The Influence of Non-Technical Factors on Code Review.” In <em>Reverse Engineering (Wcre), 2013 20th Working Conference on</em>, 122–31. IEEE.</p>
+</div>
+<div id="ref-bosu2013impact">
+<p>Bosu, Amiangshu, and Jeffrey C Carver. 2013. “Impact of Peer Code Review on Peer Impression Formation: A Survey.” In <em>Empirical Software Engineering and Measurement, 2013 Acm/Ieee International Symposium on</em>, 133–42. IEEE.</p>
+</div>
+<div id="ref-ciolkowski2003software">
+<p>Ciolkowski, Marcus, Oliver Laitenberger, and Stefan Biffl. 2003. “Software Reviews: The State of the Practice.” <em>IEEE Software</em>, no. 6. IEEE: 46–51.</p>
+</div>
+<div id="ref-czerwonka2015code">
+<p>Czerwonka, Jacek, Michaela Greiler, and Jack Tilford. 2015. “Code Reviews Do Not Find Bugs: How the Current Code Review Best Practice Slows Us down.” In <em>Proceedings of the 37th International Conference on Software Engineering-Volume 2</em>, 27–28. IEEE Press.</p>
 </div>
 </div>
             </section>
@@ -289,8 +656,8 @@
           </div>
         </div>
       </div>
-
-<a href="a-contemporary-view-on-software-analytics.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="release-engineering-analytics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="runtime-and-performance-analytics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -320,7 +687,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/saltudelft/software-analytics-book/edit/master/index.Rmd",
+"link": "https://github.com/saltudelft/software-analytics-book/edit/master/07-code-review.Rmd",
 "text": "Edit"
 },
 "download": ["software-analytics-survey.pdf", "software-analytics-survey.epub"],
