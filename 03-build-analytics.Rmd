@@ -3,6 +3,7 @@
 ## Motivation
 
 ### Introduction
+
 Ideally, when building a project from source code to executable, the process should be 
 fast and without any errors. Unfortunately, this is not always the case and automated 
 builds results notify developers of compile errors, missing dependencies, broken functionality 
@@ -11,6 +12,7 @@ build analytics field and Continuous Integration (CI) as an increasingly common 
 practice in many projects. 
 
 ### Continuous Integration and Version Control System
+
 Continuous Integration in a term used in software engineering to describe a practice of merging 
 all developer working copies to a shared mainline several times a day. CI is in general used 
 together with Version Control System (VCS), an application for revision control that ensures 
@@ -20,6 +22,7 @@ the management of changes to documents, source code and other collections of inf
 there _must_ be a space, else it is interpreted as superscript. --> 
 
 ### Build Definition
+
 Build analytics covers research on data extracted from a build process inside a project. This
 contains among others, build logs from Continuous Integration such as Travis&nbsp;CI^[See
 https://travis-ci.org/], Circle&nbsp;CI^[See https://circleci.com/], Jenkins^[See https://jenkins.io/], 
@@ -28,6 +31,7 @@ surveys among developers about their usage of Continuous Integration or build sy
 information is often paired with data from Version Control Systems such as Git. 
 
 ### Research Questions
+
 We aimed to make a complete overview of build analytics field from analyzing current both
 state of the art and state of practice to inspecting the future research that could be done
 and finally conclude our survey with the research questions that emerged after this exhaustive
@@ -36,38 +40,41 @@ following research questions:
 
 **RQ1**: What is the current state of the art in the field of build analytics?
 
-In order to answer to the first research question, we need to present the current topics that
-are being explored in the build analytics domain alongside with the research methods, tools 
-and datasets acquired for the problems in hand and aggregate and reflect about the main 
-research findings that the state-of-the-art papers display.
+In section \@ref(build-analytics-state-of-the-art) we present the current topics that are being
+explored in the build analytics domain alongside with the research methods, tools and datasets
+acquired for the problems in hand and aggregate and reflect about the main research findings that
+the state-of-the-art papers display.
 
 **RQ2**: What is the current state of practice in the field of build analytics?
 
-This section examines scientific papers to analyse the current trend of build analytics
-in the software development industry. We look at the popularity of CI in the industry and 
-also explore the increase in the use of Continuous Integration (CI) by discussing its ample benefits.
-Furthermore, it will discuss the practices used by engineers in the industry to ensure that 
-their code is improving and not decaying. 
+Section \@ref(build-analytics-state-of-practice) examines scientific papers to analyse the current
+trend of build analytics in the software development industry. We look at the popularity of CI in
+the industry and also explore the increase in the use of Continuous Integration (CI) by discussing
+its ample benefits. Furthermore, it will discuss the practices used by engineers in the industry to
+ensure that their code is improving and not decaying. 
 
 **RQ3**: What future research can we expect in the field of build analytics?
 
-In this section we will explore where new challenges lie in the field of build analytics. We will
-also show what open research items are described in the papers. This section ends with research
-questions based on the open research and challenges in current research.
+In section \@ref(build-analytics-future-research) we will explore where new challenges lie in the
+field of build analytics. We will also show what open research items are described in the papers.
+This section ends with research questions based on the open research and challenges in current
+research.
 
 ## Research Protocol {#build-analytics-research-protocol}
 
 ### Search Strategy
-Taking advantage of the initial seed consisting of Bird and Zimmermann [@bird2017predicting],
-Beller et al. [@beller2017oops], Rausch et al. [@rausch2017empirical], Beller et al. TravisTorrent [@beller2017travistorrent],
-Pinto et al. [@pinto2018work], Zhao et al. [@zhao2017impact], Widder et al. [@widder2018m] and
-Hilton et al. [@hilton2016usage], we used references to find new papers to analyze.
-Moreover, we used academical search engine _Google Scholar_ to perform a keyword-based
-search for other relevant build analytics domain papers. The keywords used were:
-build analytics, machine learning, build time, prediction, continuous integration, build failures,
-active learning, build errors, mining, software repositories, open-source software.
+
+Taking advantage of the initial seed consisting of Bird and Zimmermann[@bird2017predicting], Beller
+et al. [@beller2017oops], Rausch et al. [@rausch2017empirical], Beller et al. TravisTorrent
+[@beller2017travistorrent], Pinto et al. [@pinto2018work], Zhao et al. [@zhao2017impact], Widder et
+al. [@widder2018m] and Hilton et al. [@hilton2016usage], we used references to find new papers to
+analyze. Moreover, we used academical search engine _Google Scholar_ to perform a keyword-based
+search for other relevant build analytics domain papers. The keywords used were: build analytics,
+machine learning, build time, prediction, continuous integration, build failures, active learning,
+build errors, mining, software repositories, open-source software.
 
 ### Selection Criteria
+
 In order to provide a valid current overview of build analytics field, we selected only the
 relevant papers that were published after 2008, in other words we have not included papers older than
 10 years. We had chosen 10 years as our threshold being inspired by "ICSE-Most Influential Paper
@@ -84,6 +91,7 @@ selected for this survey.
 ## Answers
 
 ### Build Analytics State of the Art
+
 **RQ1**: What is the current state of the art in the field of build analytics?
 
 The current state-of-the-art in the build analytics domain refers to the use of machine learning techniques
@@ -201,7 +209,7 @@ The papers identified using the research protocol defined in section
 in build analytics domain are:
 
  * Usage, Costs, and Benefits of Continuous Integration in Open-Source Projects [@hilton2016usage]
- * An Empirical Analysis of Build Failures in the Continuous Integration Workflows of Java-Based Open-Source Software                [@rausch2017empirical]
+ * An Empirical Analysis of Build Failures in the Continuous Integration Workflows of Java-Based Open-Source Software [@rausch2017empirical]
  * Continuous Integration [@fowler2006continuous]
  * Enabling Agile Testing Through Continuous Integration [@stolberg2009enabling]
  * Travistorrent: Synthesizing Travis Ci and Github for Full-Stack Research on Continuous Integration [@beller2017travistorrent]
@@ -228,17 +236,19 @@ The practice that are being proposed are:
   * Everyone can see what's happening
   * Automate Deployment
 
-A survey conduced in open-source projects by Hilton et al. [@hilton2016usage] indicated that 40% of all projects used CI. 
-It observed that a median project introduces CI a year into development. Furthermore, the paper claims that 
-CI is widely used in practice nowadays. The paper by Rausch et al. [@rausch2017empirical] explores how CI is widely 
-available for projects of every size with the introduction of Version Control Systems (VCS) such as GitHub, and hosted 
-build automation platforms such as Travis. In this way, CI adoption rates will increase further in the future. 
+A survey conduced in open-source projects by Hilton et al. [@hilton2016usage] indicated that 40% of
+all projects used CI. It observed that a median project introduces CI a year into development.
+Furthermore, the paper claims that CI is widely used in practice nowadays. The paper by Rausch et
+al. [@rausch2017empirical] explores how CI is widely available for projects of every size with the
+introduction of Version Control Systems (VCS) such as GitHub, and hosted build automation platforms
+such as Travis. In this way, CI adoption rates will increase further in the future. 
 
-This is an overview of CI and how it works in daily life. Maintaining this system requires engineers to follow 
-fundamental practices presented by Fowler and Foemmel [@fowler2006continuous]. The practices presented 
-by Fowler and Foemmel [@fowler2006continuous] are still commonly used today, particularly in the agile 
-software industry as suggested by Stolberg [@stolberg2009enabling]. Below is an explanation of each of the practices suggested 
-by Fowler and Foemmel [@fowler2006continuous.]
+This is an overview of CI and how it works in daily life. Maintaining this system requires
+engineers to follow fundamental practices presented by Fowler and Foemmel [@fowler2006continuous].
+The practices presented by Fowler and Foemmel [@fowler2006continuous] are still commonly used
+today, particularly in the agile software industry as suggested by Stolberg
+[@stolberg2009enabling]. Below is an explanation of each of the practices suggested by Fowler and
+Foemmel [@fowler2006continuous.]
 
 #### Maintain a Single Source Repository
 
@@ -316,6 +326,7 @@ to find and remove. The above practices are important for the smooth functioning
 are still relevant today and used by professionals in the industry. 
 
 ### Build Analytics Future Research
+
 **RQ3**: What future research can we expect in the field of build analytics?
 
 Currently research on build analytics is limited by some challenges, some are specific to
