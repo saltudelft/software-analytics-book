@@ -40,10 +40,6 @@ In order to answer to the first research question, we need to present the curren
 are being explored in the build analytics domain alongside with the research methods, tools 
 and datasets acquired for the problems in hand and aggregate and reflect about the main 
 research findings that the state-of-the-art papers display.
-<!--
-  - Topics that are being explored
-  - Research methods, tools and datasets being used
-  - Main research findings, aggregated -->
 
 **RQ2**: What is the current state of practice in the field of build analytics?
 
@@ -52,9 +48,6 @@ in the software development industry. We look at the popularity of CI in the ind
 also explore the increase in the use of Continuous Integration (CI) by discussing its ample benefits.
 Furthermore, it will discuss the practices used by engineers in the industry to ensure that 
 their code is improving and not decaying. 
-<!--
-  - Tools and companies creating / employing them
-  - Case studies and their findings -->
 
 **RQ3**: What future research can we expect in the field of build analytics?
 
@@ -85,7 +78,8 @@ being reference in the sections bellow. From the selected papers, we choose to n
 research two papers, as they are case studies on a couple of project and do not introduce new
 techniques or applications.
 
-See table \@ref(tab:build-analytics-selected-papers) for an overview of the papers which were selected for this survey.
+See table \@ref(tab:build-analytics-selected-papers) for an overview of the papers which were
+selected for this survey.
 
 ## Answers
 
@@ -97,8 +91,9 @@ to increase the productivity when using Continuous Integration (CI), to generate
 configuration of the CI that could improve build success rate and to predict build failures even for 
 newer projects with less training data available.
 
-The papers identified using the research protocol defined in the previous section that give us an
-overview of the current state of the art in build analytics field are:
+The papers identified using the research protocol defined section
+\@ref(build-analytics-research-protocol) that give us an overview of the current state of the art
+in build analytics field are:
 
  * HireBuild: an automatic approach to history-driven repair of build scripts [@hassan2018hirebuild] 
  * A tale of CI build failures: An open source and a financial organization perspective [@vassallo2017tale]
@@ -106,7 +101,6 @@ overview of the current state of the art in build analytics field are:
  * Built to last or built too fast?: evaluating prediction models for build times [@bisong2017built]
  * Statically Verifying Continuous Integration Configurations [@santolucito2018statically]
  * ACONA: active online model adaptation for predicting continuous integration build failures [@ni2018acona]
-
 
 The topics that are being explored are:
 
@@ -125,7 +119,6 @@ The tools that are being proposed are:
   pushes a commit and without needing to wait for the build result [@santolucito2018statically]
   * ACONA capable of predicting build failure in CI environment for newer projects with less 
   data available [@ni2018acona]
-
 
 #### Importance of the Build Process
 
@@ -148,7 +141,6 @@ In reference [@bird2017predicting], Bird et al. introduce a method for predictin
 This US patent is owned by Microsoft. Having logistic regression as machine learning technique, 
 the paper is able to compute the probability of a build to fail. Using this method build errors can be 
 better anticipated, which decreases the time between working builds.
-
 
 #### Predicting Build Time
 
@@ -191,11 +183,6 @@ that CI introduce by reducing the label data necessarily for training. Even if t
 the results presented in the poster shows an F-Measure (harmonic average of recall and precision) of around 
 40% that could be better improved.
 
-
-<!--
-    - Topics that are being explored
-    - Research methods, tools and datasets being used
-    - Main research findings, aggregated -->
 ### Build Analytics State of Practice
 
 **RQ2**: What is the current state of practice in the field of build analytics?
@@ -209,9 +196,9 @@ can be seen in the figure bellow:
 
 ![CI overview.](figures/build-analytics/state_pr.png)
 
-
-The papers identified using the research protocol defined in the previous section that give us an
-overview of the current state of the art in build analytics domain are:
+The papers identified using the research protocol defined in section
+\@ref(build-analytics-research-protocol) that give us an overview of the current state of the art
+in build analytics domain are:
 
  * Usage, Costs, and Benefits of Continuous Integration in Open-Source Projects [@hilton2016usage]
  * An Empirical Analysis of Build Failures in the Continuous Integration Workflows of Java-Based Open-Source Software                [@rausch2017empirical]
@@ -220,9 +207,7 @@ overview of the current state of the art in build analytics domain are:
  * Travistorrent: Synthesizing Travis Ci and Github for Full-Stack Research on Continuous Integration [@beller2017travistorrent]
  * I’im Leaving You, Travis: A Continuous Integration Breakup Story [@widder2018m]
 
-
- 
- The topics that are being explored are:
+The topics that are being explored are:
 
   * Usage of CI in the industry by @hilton2016usage
   * Growing popularity of CI due to the introduction of VCS as suggested by @rausch2017empirical
@@ -329,11 +314,7 @@ Automating this process will save time and allow you to deploy the application i
 It is important to note that CI does not get rid of bugs, but it does make them dramatically easier
 to find and remove. The above practices are important for the smooth functioning of CI framework. These practices
 are still relevant today and used by professionals in the industry. 
-  
 
-<!--
-    - Tools and companies creating / employing them
-    - Case studies and their findings -->
 ### Build Analytics Future Research
 **RQ3**: What future research can we expect in the field of build analytics?
 
@@ -390,7 +371,7 @@ From the synthesis of the works discussed in this section the following research
 Table: (\#tab:build-analytics-selected-papers) Selected papers
 
 | Paper with reference              							              | Source              |  RQ      | Notes |
-| ------------------------------------------------------------ 	| ------------------- | -------- | ----- |                
+| ----------------------------------------------- | ------------------- | ------------- | ----- |
 | 1. Bird et al. 2017 [@bird2017predicting]           	        | Initial seed        | RQ1      | 1     |         
 | 2. Beller et al. 2017 [@beller2017oops]                			  | Initial seed        | RQ3      | -     |                
 | 3. Rausch et al. 2017 [@rausch2017empirical]           			  | Initial seed        | RQ2      | -     |
