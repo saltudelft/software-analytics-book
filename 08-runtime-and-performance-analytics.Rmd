@@ -253,7 +253,7 @@ research addressed is whether software developers were certain of their energy s
 paper suggests that there are definitely cases where developers are not certain about their energy 
 saving change. This might be caused by the fact that there are few user friendly tools available 
 for aiding developers in making energy-aware decisions. One example of such a tool that attempts to 
-assist the developer in making energy friendly descisions is jStanley [@PSCS2018]. However, both 
+assist the developer in making energy friendly decisions is jStanley [@PSCS2018]. However, both 
 the paper itself and our own replication of that study indicate that this work is not anywhere 
 close to ideal. It only concerns static analysis of the code and is very limited in usability. 
 This prevents such tools of being used in practice. Additionally, there is the problem of how to 
