@@ -3,10 +3,9 @@
 Testing is an important aspect in software engineering, as it forms the first line of
 defence against the introduction of software faults Pinto et al. \cite{pinto2012understanding}.
 However, in
-practice it seems that not all developers test actively. In this paper we will survey on the use of 
+practice it seems that not all developers test actively. In this chapter we will survey on the use of 
 testing and the tools that make this possible. We will also look into the future development of
 tools that is done or required in order to improve testing practices in real-world applications.
-The above example could have been prevented by making tests but is not guaranteed to do so. 
 Testing is not the holy grail for completely removing all bugs from a program but it can decrease
 the chances
 for a user to encounter a bug. We believe that extra research is needed to ease the life of
@@ -18,13 +17,14 @@ In order to perform our survey, we formulated three Research Questions (RQs):
 * **RQ1** How do developers currently test?
 * **RQ2** What state of the art technologies are being used?
 * **RQ3** What future developments can be expected?
-In this paper we will first elaborate on the research protocol that was used in order to find 
+
+In this chapter we will first elaborate on the research protocol that was used in order to find 
 papers
 and extract information for the survey. Second, the actual findings for each of the research
 questions will be explained.
 
-## Research protocol
-For this paper, Kitchenham's survey method \cite{Kitchenham2004} was applied. For this method, a protocol has to be
+## Research Protocol
+For this chapter, Kitchenham's survey method \cite{Kitchenham2004} was applied. For this method, a protocol has to be
 specified. This protocol is defined for the research questions given above. Below the inclusion
 and exclusion criteria are given, which helped finding the rightful papers. After these criteria,
 the actual search for papers is described. The papers that were found are listed and after they
@@ -33,7 +33,7 @@ list afterward. Some papers that were left out will be listed and the reasons fo
 will be given to make clear why some papers do not meet the required desire.
 
 Each of the papers found was tested using our inclusion and exclusion criteria. These criteria
-were introduced to make sure the papers have the information required to answser the RQs while also
+were introduced to make sure the papers have the information required to answer the RQs while also
 being relevant with respect to their quality and age. Below a list of inclusion and exclusion
 criteria is given. In general, for all criteria, the exclusion criteria take precedence over
 inclusion criteria.
@@ -52,14 +52,14 @@ included.
 * Papers with recommendations for future development in the software testing field are included.
 
 
-The papers used in this paper were found by using a given initial seed of papers (query defined 
+The papers used in this chapter were found by using a given initial seed of papers (query defined 
 below as 'Initial Paper Seed'). From this initial seed of papers we used the keywords used by those
-papers to construct queries, additionally the references (‘referenced by’) and the citations
+papers to construct queries. Additionally, the references (‘referenced by’) and the citations
 (‘cited in’) of the papers were used to find papers. The query row of the tables describing the
 references, as found below, indicates how a paper was found. For queries the default search sites
-were Scopus, Google Scholar and Springer.
+were Scopus ^[https://www.scopus.com/], Google Scholar ^[https://scholar.google.com/] and Springer ^[https://www.springer.com].
 
-The keywords used to find papers were: software, test*, analytics, test-suite, evolution, software 
+The keywords used to construct queries in order to find papers were: software, test*, analytics, test-suite, evolution, software 
 development, computer science, software engineering, risk-driven, survey software testing
 
 The table below describes for each paper, which Query resulted in which paper being found.
@@ -71,40 +71,37 @@ this chapter in section _'Extracted paper information'_.
 
 |Category             |Reference                                   | Query| Relevant to |
 |---------------------|------------------|-----------------------------------------------------------|----|
-|Test evolution       |Mirzaaghaei et al. @supportingtestsuite  | Google Scholar query: test-suite evolution | RQ2, RQ3 |
-|Test evolution       |Pinto et al. @pinto2013 | Referenced by: Understanding myths and realities of test-suite evolution | RQ1  |
-|Test evolution       |Bevan et al. @bevan2005 | Referenced by: Understanding myths and realities of test-suite evolution | Discarded |
-|Test evolution       | Pinto et al. @pinto2012understanding | Initial Paper Seed | RQ1  |
-|Co-evolution         | Marsavina et al. @marsavina2014 | Google Scholar keywords: Maintain developer tests, in ‘cited by’ of “Aiding Software Developers to Maintain Developer Tests” on IEEE| RQ1 |
-|Co-evolution         | Zaidman et al. @zaidman2011studying | Initial Paper Seed| RQ1  |
 |Co-evolution         | Greiler et al. @greiler2013 | In ‘cited by’ of “Understanding myths and realities of test-suite evolution” on Scopus | RQ2, RQ3 |
 |Co-evolution         | Hurdugaci and Zaidman @hurdugaci2012 | Keywords: Maintain developer tests, ‘cited by’ in “Studying the co-evolution of production and test code in open source and industrial developer test processes through repository mining” on IEEE | RQ2  |
-|Production evolution | Eick et al. @eick2001 | Referenced by: Testing analytics on software variability | Discarded |
+|Co-evolution         | Marsavina et al. @marsavina2014 | Google Scholar keywords: Maintain developer tests, in ‘cited by’ of “Aiding Software Developers to Maintain Developer Tests” on IEEE| RQ1 |
+|Co-evolution         | Zaidman et al. @zaidman2011studying | Initial Paper Seed| RQ1  |
+|Production evolution | Eick et al. @eick2001 | Referenced by: @leung2015testing | Discarded |
 |Production evolution | Leung and Lui @leung2015testing | Initial Paper Seed | RQ3 |
-| Test generation     | Robinson et al. @robinson2011 | Referenced in Supporting Test Suite Evolution through Test Case Adaptation | RQ2 |
+|Risk-driven testing | Atifi et al. @atifi2017 | In ‘cited by’ of “Risk-driven software testing and reliability” | RQ2, RQ3 |
+|Risk-driven testing | Hemmati and Sharifi @hemmati2018 | In ‘cited by’ of “Test case analytics: Mining test case traces to improve risk-driven testing” | RQ3 |
+|Risk-driven testing | Noor and Hemmati @noor2015test | Initial Paper Seed | RQ2, RQ3 |
+|Risk-driven testing | Schneidewind @schneidewind2007 | Scopus query: risk-driven testing | RQ3 |
+|Risk-driven testing | Vernotte et al. @vernotte2015 | Scopus query: “risk-driven” AND testing | RQ2, RQ3  |
+|Test evolution       |Bevan et al. @bevan2005 | Referenced by: @pinto2012understanding | Discarded |
+|Test evolution       |Mirzaaghaei et al. @supportingtestsuite  | Google Scholar query: test-suite evolution | RQ2, RQ3 |
+|Test evolution       | Pinto et al. @pinto2012understanding | Initial Paper Seed | RQ1  |
+|Test evolution       |Pinto et al. @pinto2013 | Referenced by: @pinto2012understanding | RQ1  |
 |Test generation      | Bowring and Hegler @bowring2014obsidian| Springer: Reverse search on “Automatically generating maintainable regression unit tests for programs” | RQ2, RQ3 |
-|Test generation      | Shamshiri et al. @shamshiri2018automatically | Google Scholar query: Automatically generating unit tests | RQ3 |
 |Test generation      | Dulz @dulz2013model | Scopus query: “software development” AND Computer Science AND Software Engineering | RQ2 |
-| Testing practices   | Garousi and Zhi @GAROUSI20131354 | Google Scholar query: Survey software testing | RQ1  |
-| Testing practices   | Beller et al. @beller2017developer | Initial Paper Seed | RQ1 |
-| Testing practices   | Beller et al. @beller2015 | In ‘cited by’ of “Understanding myths and realities of test-suite evolution”. | RQ1 |
-| Testing practices   | Moiz @moiz2017uncertainty | Springer query: software testing | RQ3 |
-| Risk-driven testing | Hemmati and Sharifi @hemmati2018 | In ‘cited by’ of “Test case analytics: Mining test case traces to improve risk-driven testing” | RQ3 |
-| Risk-driven testing | Schneidewind @schneidewind2007 | Scopus query: risk-driven testing | RQ3 |
-| Risk-driven testing | Vernotte et al. @vernotte2015 | Scopus query: “risk-driven” AND testing | RQ2, RQ3  |
-| Risk-driven testing | Atifi et al. @atifi2017 | In ‘cited by’ of “Risk-driven software testing and reliability” | RQ2, RQ3 |
-| Risk-driven testing | Noor and Hemmati @noor2015test | Initial Paper Seed | RQ2, RQ3 |
+|Test generation     | Robinson et al. @robinson2011 | Referenced by @supportingtestsuite | RQ2 |
+|Test generation      | Shamshiri et al. @shamshiri2018automatically | Google Scholar query: Automatically generating unit tests | RQ3 |
+|Testing practices   | Beller et al. @beller2015 | In ‘cited by’ of “Understanding myths and realities of test-suite evolution”. | RQ1 |
+|Testing practices   | Beller et al. @beller2017developer | Initial Paper Seed | RQ1 |
+|Testing practices   | Garousi and Zhi @GAROUSI20131354 | Google Scholar query: Survey software testing | RQ1  |
+|Testing practices   | Moiz @moiz2017uncertainty | Springer query: software testing | RQ3 |
 
-## Answers
-In this section the research questions will be answered. To answer these questions, informtion from 
+## Results
+In this section the research questions will be answered. To answer these questions, information from 
 the relevant papers are aggregated. The answers to each research questions are summurized in the 
 conclusion.
 
-### How do developers currently test?
-To answer the first research question "how do developers currently test?", this research question
-is answered first by getting a general idea of test practices, then the general co-evolution of 
-code is discussed, and finally, the use of Test Driven Development amongst developers is looked 
-into.
+### (RQ1) How do developers currently test?
+To answer RQ1, "How do developers currently test?", we first outline general test practices, then discuss the co-evolution of test and production code and finally, look into the use of Test Driven Development among developers.
 
 #### How do we test?
 For the quality of code, test coverage is a popular metric. Alternatives are, for example,
@@ -115,7 +112,7 @@ testing. For example, according to Beller et al. @Beller:2015:DT:2819009.2819101
 reached with only spending less than a tenth of the total development time on testing. Another
 concern of using test coverage as a metric is the concept of treating the metric @
 , where developers try to uplift the value of code coverage by hitting many lines with only a few
-test cases. In Marsavina et al. @marsavina2014 it was observed that test cases were rarely
+test cases. Marsavina et al. @marsavina2014 observed that test cases were rarely
 updated when changes related to attributes or methods in the production code were made. Possible 
 explanations for this
 are that these changes were not significant or the tests were too simple and were likely to pass.
@@ -125,8 +122,8 @@ quick-and-dirty production code to pass the tests, do not update their tests oft
 refactoring."
 
 Besides older tests rarely being updated for changed code, even new tests do not necessarily have
-the purpose of validating new production code lines. It was observed by Pinto et al.
-@pinto2012understanding 
+the purpose of validating new production code lines. Pinto et al.
+@pinto2012understanding observed 
 that a significant number of new tests that are added, were not necessarily
 added to cover new code but rather to exercise the changed parts of the code after the program is
 modified. This finding fits with the observation of Marsavina et al. @marsavina2014,
@@ -136,8 +133,8 @@ condition related changes are conducted in the production code base.
 Older production code lines, therefore, may stay
 untouched by any test cases. Lines uncovered by any traditional code coverage tool should be
 indicated and signaled to the developer. Therefore, developers should be aware of the fact that
-they missed lines of their production code with any tests. It, thus, seems to be a deliberate
-action, by most developers, to not cover older production code lines. These lines might be
+they did not cover some lines of their production code with any tests. It seems to be a deliberate
+action by most developers to not cover older production code lines. These lines might be
 'too hard' to test, other lines may be easier to test, or developers do not seem to see the
 relevance of testing these uncovered lines of code. However, the most commonly used coverage
 metrics are branch coverage and conditional coverage @GAROUSI20131354. As both branch coverage
@@ -148,14 +145,16 @@ number of missed conditions is higher.
 #### Co-evolution
 In a case study conducted by Zaidman et al. @zaidman2011studying, there was no evidence found for
 an increased
-activity of testing before a release. However, the study was able to detect periods of increased
-test writing activity. These increased activities of writing test cases were found to be after
+activity of testing before a release. 
+
+However, the study detected periods of increased test writing activity. 
+These increased activities of writing test cases were found to be after
 longer periods of writing production code @zaidman2011studying. With a longer timespan of not
 writing tests, it can be concluded for these cases that the production code and test code do not
 gracefully co-evolve @zaidman2011studying @marsavina2014. 
 
 #### Test-Driven Development (TDD)
-Different definitions for TDD were used across different documents. According to Zaidman et al.
+We found different definitions for TDD across multiple studies. According to Zaidman et al.
 @zaidman2011studying, evidence of TDD was found where test code was committed alongside production
 code, meaning that the methodology of TDD is used when production code was written before the
 respective test code. This is in contrast with the originally proposed constraint 
@@ -171,16 +170,16 @@ and Test-driven development respectively. This found ratio is in contrast with t
 Beller et al. @beller2015; only 1.7% of the observed developers seemed to follow the strict
 TDD definition, where
 most of these developers only practice this strict definition in less than 20% of their time.
-However, it must be mentioned that the survey done by Garousi and Zhi @GAROUSI20131354 only
+However, it is important to mention that the survey done by Garousi and Zhi @GAROUSI20131354 only
 surveyed the subjects,
 which allows the confusion for the definition of TDD to play a major role in the results found.
 
 
-### What state of the art technologies are being used?
+### (RQ2) What state of the art technologies are being used?
 We will cover two research fields regarding testing analytics: test evolution and generation, and 
 risk-driven testing. 
 
-#### Test evolution and generation
+#### Test Evolution and Generation
 Pinto et al. @pinto2012understanding found the investigation of automated test repairing is not a 
 promising research avenue, as these techniques would require manual guidance which could end up 
 being similar to traditional refactoring tools. Nonetheless, more research is performed in this
@@ -203,18 +202,18 @@ It is a suite of
 techniques for enhancing an existing unit test generation system. Experiments are performed using 
 an industrial system. The generated tests from these experiments achieved good coverage and mutation 
 kill score, were readable by the product developers and required few edits as the system under test 
-evolved. Dulz @dulz2013model found that by directed adjusting specific probability values in the
+evolved. Dulz @dulz2013model found that by directly adjusting specific probability values in the
 usage 
 profile of a Markov chain usage model, it is relatively easy to generate abstract test suites for 
 different user classes and test purposes in an automated approach. By using proper tools, such as the 
 TestUS Testplayer, even less experienced test engineers will be able to efficiently generate 
 abstract testcases and to graphically assess quality characteristics of different test suites.
 Hurdugaci and Zaidman @hurdugaci2012 introduces TestNForce (Visual Studio only), a tool to help
-developers to identify 
+developers identify 
 unit tests that need to be altered and executed after code change.
 
-#### Risk-driven testing
-The paper by Vernotte et al. @vernotte2015 introduces and reports on an original tooled risk-driven
+#### Risk-driven Testing
+The paper by Vernotte et al. @vernotte2015 introduces and reports on an original tool-supported, risk-driven
 security 
 testing process called Pattern-driven and Model-based Vulnerability Testing. This fully automated 
 testing process, relying on risk-driven strategies and Model-Based Testing (MBT) techniques, aims 
@@ -235,14 +234,13 @@ developer can start fixing the faulty code right away.
 
 
 
-### What future developments can be expected?  
-This section will elaborate on which furture developments can be expected in the field of software
+### (RQ3) What Future Developments Can Be Expected? 
+This section will elaborate on which future developments can be expected in the field of software
 analytics.
 
-#### Co-evolution and test generation  
+#### Co-Evolution and Test Generation
 For understanding how test- and production code co-evolve and how tests can be generated to support
-developers, studies have been conducted @pinto2012understanding @marsavina2014
-@zaidman2011studying. Additionally a tool has been made in order to analyze and, consequently,
+developers, studies have been conducted [@pinto2012understanding; @marsavina2014; @zaidman2011studying]. Additionally a tool has been made in order to analyze and, consequently,
 better understand test-suite evolution @pinto2013. For the time being the practical
 implications of
 this subtopic have mainly been sought in the repairing and generation of tests. 
@@ -259,7 +257,7 @@ realistic tests. This suggests that automated test generation is still a topic o
 which
 will likely be researched in order to find a way to generate realistic tests. 
 
-#### Risk-driven testing
+#### Risk-driven Testing
 Risk-driven testing is an area of recent attention. Researchers have been looking for
 methods that can either detect potential risks within the same project @noor2015test 
 @hemmati2018
@@ -276,7 +274,7 @@ history based implementations, it is likely that these techniques will be subjec
 research
 later on.  
 
-#### Testing practices
+#### Testing Practices
 Research of several papers @GAROUSI20131354 @beller2017developer @beller2015 has indicated
 that testing of any
 form is not as widely practiced as the status quo suggests. How the current state of the practice
@@ -291,19 +289,19 @@ expected to be spent on testing may also change, given automated test repair and
 techniques become effective and accessible.
 
 ## Conclusion
-In this survey, three different research questions about software testing analytics were answered. 
+In this chapter, three different research questions about software testing analytics were answered. 
 (1) How do developers currently test? (2) What state of the art technologies are being used? (3) 
 What future developments can be expected?
 
-Regarding the current testing practices of developers, it was found that developers do not seem to 
+Regarding the current testing practices of developers, we found that developers do not seem to 
 update their tests very often and when they do, it is because of a changed condition in production 
 code lines. Furthermore, older uncovered production code lines are not likely to be covered in the 
 end. Developers, thus, seem to ignore indications of their code coverage tools or do not seem to use
 any code coverage tool at all. Furthermore, developers do not seem to put a lot of effort into 
 making sure the co-evolution of their production- and test code is done gracefully. They do, on the 
 other hand, make sure their test code compiles when production code classes have been removed. 
-However, testing is mostly done in longer periods of increased testing. Also, the methodology of TDD
-seems to be a confusing term for developers, as there is not enough clear guidance in the 
+However, testing is mostly done in longer periods of increased testing. The methodology of TDD
+also seems to be a confusing term for developers, as there is not enough clear guidance in the 
 implementation of it. The actual ratio of TLD and TDD is, therefore, unknown but can be guessed with
 great certainty to be much lower for TDD than for TDD.
 
@@ -318,7 +316,7 @@ able while running the entire test-suite, which could make the suite detect fail
 For future developments, further research can be expected on the front of automated test generation.
 Even with some discussion regarding the effectiveness of test generation, the field currently agrees
 that conducting research in order to find, especially, realistic ways of generating tests is 
-worthwhile. It was also found that risk-driven testing has been given more attention in the form of 
+worthwhile. We also found that risk-driven testing has been given more attention in the form of 
 research recently. This subtopic is still in its research phase. It can be expected that research on
 the front of history based risk prediction methods will continue.
 
