@@ -97,7 +97,7 @@ this chapter in section _'Extracted paper information'_.
 
 ## Results
 In this section the research questions will be answered. To answer these questions, information from 
-the relevant papers are aggregated. The answers to each research questions are summurized in the 
+the relevant papers are aggregated. The answers to each research questions are summarized in the 
 conclusion.
 
 ### (RQ1) How do developers currently test?
@@ -207,7 +207,7 @@ usage
 profile of a Markov chain usage model, it is relatively easy to generate abstract test suites for 
 different user classes and test purposes in an automated approach. By using proper tools, such as the 
 TestUS Testplayer, even less experienced test engineers will be able to efficiently generate 
-abstract testcases and to graphically assess quality characteristics of different test suites.
+abstract test cases and to graphically assess quality characteristics of different test suites.
 Hurdugaci and Zaidman @hurdugaci2012 introduces TestNForce (Visual Studio only), a tool to help
 developers identify 
 unit tests that need to be altered and executed after code change.
