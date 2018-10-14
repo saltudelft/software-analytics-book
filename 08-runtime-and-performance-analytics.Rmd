@@ -220,9 +220,8 @@ where E is the total energy used to complete a task, T the time and w is a value
 how important energy saving is with regard to time. The advantage of using this function is that 
 performance is not neglected. The results in the paper show that the programming language should be 
 chosen depending on the task. From these results, it is clear that Java is not performing well when 
-comparing it to other languages as can be seen Table [ref:to table nr].  However, it should be 
-noted that the paper does not test this on actual Android applications but rather the Rosetta Code 
-repository.
+comparing it to other languages as can be seen in the table below. However, it should be noted that
+the paper does not test this on actual Android applications but rather the Rosetta Code repository.
 
 ![Programming Languages Average Weighted EDP Ranking, retrieved from [@GKLS2018]](figures/EDPranking.jpeg)
 
