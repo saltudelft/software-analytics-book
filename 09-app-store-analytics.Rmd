@@ -36,35 +36,34 @@ questions:
 
 ## Research Protocol
 
-In this section we present the process that we followed to systematically extract the articles for
-the literature survey. First, the search strategy includes the queries that were used, as well as
-the initial criteria that was taken into account for the first filtering of the articles. Then, the
-way how the relevance of the remaining papers was assessed and the second filtering are explained
-in the article selection section. In the last two parts, we describe the data that was extracted
-from each study and the initial grouping that was constructed based on this.
+In this section, we explain the process that we followed to systematically extract the facts from
+the articles for the literature survey. The search strategy section includes the queries that were
+used, as well as the initial criteria that ware taken into account for the initial filtering of the
+articles. Article selection explains how the relevance of the papers was assessed, and how the
+final filtering was done. The last section describes the data extracted from each article.
 
 ### Search Strategy
 
-As stated in the motivation, the survey by Martin et al @martin2015survey gave us a starting point.
-Instead of gathering everything related to App Store Analytics we decided to focus on expanding the
-work done by the authors and to answer the research questions specifically for the
+As stated in the motivation, the survey by Martin et al. gave us a starting point.
+Instead of gathering everything related to App Store Analytics we decided to focus on extending the
+work done by the authors and answering the research questions specifically for the
 subcategory of Review Analytics. All the papers that @martin2015survey
-found related Review Analytics were retrieved and inspected to get a sense of their specific
+found related with Review Analytics were retrieved and inspected to get a sense of their specific
 keywords and content. 
 
 After doing this, the following search queries were generated:
 ```
 “app store analytics” 
-“app store analytics” AND mining 
+“app store analytics” AND “mining” 
 “app store analytics” AND “user reviews” 
 “app store analytics” AND “reviews”, “app reviews”
 ```
 
 Google Scholar[^9], ACM Digital Library[^10], and IEEE Xplore[^11] were used for the searching
-process with the aforementioned queries. In order to keep a database with only the relevant
-articles, the following inclusion criteria were applied to all the hits. It is important to notice
-that in addition to the results obtained by searching with the specific query, the first page of
-the “related articles”link for the top cited articles was also inspected. 
+process with the queries mentioned above. In order to build a database using only the relevant
+articles, the following inclusion criteria were applied to the found articles. In addition to the
+results obtained by searching with the specific query, the first page of the “related articles”
+link for the top cited articles was also inspected. 
 
 | Criteria | Value        | 
 |----------------|-------------|
@@ -73,20 +72,21 @@ the “related articles”link for the top cited articles was also inspected.
 | keywords in title | user reviews OR app store reviews |
 | keywords in abstract | user reviews OR app store reviews |
 
-After the relevant articles were selected, their metadata was gathered, and they were included in a
-database. This was the input for the next step of the survey, article selection.
+After the relevant articles were selected, their metadata was gathered, and they were entered into
+a database. That was the input for the next step of the survey, article selection.
 
 ### Article selection
 Taking into account that the papers considered in this survey were published from 2015, it is no
 surprise that most of them are not highly cited. As a consequence, the selection of the filtered
 articles does not take this into consideration. In contrast, each member of the group was in charge
 of delving into a third of the database and finding, for each study, the *relevance* with respect
-to Review Analytics and the proposed research questions. Then, this score was peer-reviewed by
-another team member to achieve a consensus. 
+to Review Analytics and the proposed research questions. Then, this score was peer-reviewed by the
+other two team members to achieve a consensus. 
 
-For the *relevance* score, we considered how much the paper actually involved the analysis
-of user reviews. Next, we present three examples: 1) a highly relevant paper (score=10), 2) a
-somewhat relevant paper (score=5) and 3) a non-relevant paper (score=0). 
+For the *relevance* score, we considered how much the paper used the analysis of user reviews.
+Next, we present three examples: 1) a highly relevant paper  score=10), 2) a somewhat relevant
+paper (score=5) and 3) a non-relevant paper (score=0). 
+
 
 **What would users change in my app? summarizing app reviews for recommending software changes
 [@di2016would]** 
@@ -100,8 +100,8 @@ somewhat relevant paper (score=5) and 3) a non-relevant paper (score=0).
 
 - Relevance score: 5
 - Remarks: the authors analyzed the problem of the potential mismatch between the app reviews and
-  the star ratings that the app receives. Although it is related to reviews it is not its main
-  focus. It also does not push the state of the art in terms of the datasets that they used. 
+  the star ratings that the app receives. Although it is related to reviews, it is not its primary
+  focus. It also does not push the state of the art regarding the datasets that they used. 
 
 **Why are Android apps removed from Google Play? A large-scale empirical study
 [@wang2018android]** 
@@ -115,7 +115,7 @@ the subsequent answering of the research questions.
 
 ### Fact extraction
 
-As was mentioned before, the articles were indexed in a database in a structured fashion. The data
+As was mentioned before, the articles were listed in a database in a structured fashion. The data
 that was extracted has the following fields:
 
 ```
@@ -135,7 +135,7 @@ that answered the following questions were generated:
 
 ```
 Paper type
-Research question of the paper
+Research questions of the paper
 Contributions
 Datasets: size and sampling methodologies
 Techniques used for doing the analysis 
