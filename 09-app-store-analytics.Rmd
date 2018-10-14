@@ -5,7 +5,7 @@
 In the year 2008, the first app stores became available [@appStoreLaunch][@androidMarketLaunch].
 These marketplaces have grown rapidly in size since then with over 3.8 million apps in the Google
 Play store alone as of first quarter of 2018 [@appNumber]. These app stores together with the large
-amount of user generated data associated with them presents an unprecedented source of information
+amount of user-generated data associated with them present an unprecedented source of information
 about the app ecosystem. Software developers and researchers use this valuable data to gain new
 insights about how users use their app, what they like and the difficulties they encounter. The
 same data can also be used by the store operators to detect malicious or misbehaving apps whose
