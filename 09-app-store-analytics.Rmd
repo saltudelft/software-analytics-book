@@ -15,13 +15,12 @@ nowadays, it plays a vital role in the field of Software Engineering.
  
 In 2015, Martin, William, et al., published "A survey of app store analysis for software
 engineering" [@martin2015survey]. The paper divides the field of App Store Analytics into seven
-categories: API Analysis, Review Analytics, Security, Store Ecosystem, Size and Effort
-Prediction, Release Engineering, and Feature Analysis. Given that relevant literature on the field
-of App Store Analytics has been already gathered and analyzed, it makes sense to use this chapter
-to go a step further. We delve deeper into the subfield of Review Analysis.
-We started with the literature proposed by Martin et al. in [@martin2015survey] and extended it with the relevant
-articles that were published after 2015.  We then used the data to answer the following research
-questions:
+categories: API Analysis, Review Analytics, Security, Store Ecosystem, Size and Effort Prediction,
+Release Engineering, and Feature Analysis. Given that relevant literature on the field of App Store
+Analytics has been already gathered and analyzed, it makes sense to use this chapter to go a step
+further. We delve deeper into the subfield of Review Analysis. We started with the literature
+proposed by Martin et al. in [@martin2015survey] and extended it with the relevant articles that
+were published after 2015.  We then used the data to answer the following research questions:
 
 * **RQ1** What is the state of the art in Review Analysis? Specifically:
     - Which topics that are being explored?
@@ -335,62 +334,60 @@ using user reviews. Some tools analyze apps and app performance, but no tools fo
 
 ### **RQ3** Which are the challenges and future research that the field is facing or will face?
 
-In this section, we present challenges and future research directions for the field of Review Analytics and the
-subcategories that were identified in previous sections. 
+RQ3 Which are the challenges and future research that the field is facing or will face? In this
+section, we present challenges and future research directions for the field of Review Analytics and
+the subcategories that were identified in previous sections.
 
-An important aspect of the research process is the validation of the proposed tools and
-frameworks and the assessment of how generalizable they are. To accomplish these assessments it is necessary to have
-bigger datasets of reviews and more representative and robust samples. Machine learning has seen a steady increase in popularity, however, not so much in the field of Review Analytics. Also, most of the studies rely on correlation relationships
-to validate the effectiveness of their approaches. There is a need to apply causation techniques so
-confounding factors can be ruled out.
+A significant aspect of the research process is the validation of the proposed tools and frameworks
+and the assessment of how generalizable they are. To accomplish this, it is necessary to have
+bigger datasets of reviews and more representative and sound samples. Machine learning has seen a
+steady increase in popularity, however, not so much in the field of Review Analytics. Also, most of
+the studies rely on correlation relationships to validate the effectiveness of their approaches.
+There is a need to apply causation techniques so confounding factors can be ruled out.
 
-Taking into account the practical aspect of review analytics, there is a difficulty to translate
-the research into actual tools that are used in real settings. Of all the works that were
-considered, only @gao2018online by Gao et al. presented a case study and most of the tools have
-either disappeared or are not being actively used.
+There is a difficulty in translating the research into actual tools that are used in a real-world
+setting. Of all the works that were considered, only [@gao2018online] by Gao et al. presented a
+case study, and most of the tools from other papers have either disappeared or are not being
+actively used.
 
-*Review Manipulation:*
-It is important to combine multiple sources of data to better identify suspicious individuals.
-Not just from app stores alone, but also crowdsourcing sites and even social networks. Also, the
-sample should be carefully selected, given that the number of suspicious apps is not large (around
-1% of all apps), taking into account the size of the app stores.
+*Review Manipulation:* It is important to combine multiple sources of data to identify suspicious
+individuals better. Not just from app stores alone, but also crowdsourcing sites and even social
+networks. Also, the sample should be carefully selected, given that the number of suspicious apps
+is not significant (around 1% of all apps), taking into account the size of the app stores.
 
-*Requirements Engineering:* 
-More case studies are needed in order to validate how useful the extracted requirements are in the
-context of software development. Also, as machine learning is starting to be heavily used, models
-that are tailored to the review data will be created. The large amounts of noise that is present
-in the reviews is still a challenge that needs careful studying of the preprocessing steps that are
-used while assembling the datasets.
+*Requirements Engineering:* More case studies are needed in order to validate how useful the
+extracted requirements are in the context of software development. Also, as machine learning is
+starting to be heavily used, models that are tailored to the review data will be created. The large
+amounts of noise that is present in the reviews is still a challenge that needs careful studying of
+the preprocessing steps that are used while assembling the datasets.
 
-*Mapping user reviews to source code:*
-There is a need to better understand the “language of source code” as this will be important to
-combine the review and source code datasets. A likely future trend is the analysis of update-level
-changes. Regarding this, there is still a need to obtain update-categorized reviews as this is
-still a challenge with the current review-retrieving approaches.
+*Mapping user reviews to source code:* There is a need to understand the “language of source code"
+better as this will be essential in combining the review and source code datasets. A likely future
+trend is the analysis of update-level changes. Regarding this, there is still a need to obtain
+update-categorized reviews as this is still a challenge with the current review-retrieving
+approaches.
 
-*Privacy / app permissions:*
-Quantifying and understanding the effects of run-time permission requests on the user experience is
-still an open research area which can help increasing the quality of apps. One of the directions
-for further research regarding permissions is the idea of giving permissions to individual app
-functionalities instead of giving permissions to the app as a whole. This could lead to users
-better understanding why an app needs a certain permission and could reduce the amount of
-permissions an app needs. Another possible future direction is researching and creating tools that
-help developers put permission requests in the right place to avoid bugs related to permissions and
-permission requests.
+*Privacy/app permissions:* Quantifying and understanding the effects of run-time permission requests
+on the user experience is still an open research area which can help to increase the quality of
+apps. One of the directions for further research regarding permissions is the idea of giving
+permissions to specific app functionalities instead of giving permissions to the app as a whole.
+That could lead to better user-understanding why an app needs certain permission and could reduce
+the number of permissions an app needs. Another possible future direction is researching and
+creating tools that help developers put permission requests in the right place to avoid bugs
+related to permissions and permission requests.
 
-*Responding to reviews:*
-There is a need for an in-depth study of how developers and users are using the review mechanism
-right now to find out how the mechanism can be improved. Right now developers can respond to 500
-user reviews per day using the Google Play API[^7]. It could be worth investigating whether a limit
-of 500 responses is sufficient to ban useless responses from the store such as thanking every user.
+*Responding to reviews:* There is a need for an in-depth study of how developers and users are using
+the review mechanism right now to find out how the mechanism can be improved. Right now developers
+can respond to 500 user reviews per day using the Google Play API^7. It could be worth
+investigating whether a limit of 500 responses is sufficient to ban useless responses from the
+store such as thanking every user.
 
-*Comparing Apps and App stores:*
-One of the open challenges is including indirect relationships in the comparisons as only direct
-relationships were used in work by Li et al. [@li2017mining]. Next to this, it has been noted that
-apps that have been developed using hybrid development tools had relatively low ratings. Future
-studies should be done to investigate the quality of hybrid apps and compare them with the quality
-of native apps. Furthermore, to get more complete results research should focus on a market-scale
-analysis using a large number of apps and reviews.  
+*Comparing Apps and App stores:* One of the open challenges is including indirect relationships in
+the comparisons as only direct relationships were used in work by Li et al. [@li2017mining]. Next,
+to this, it has been noted that apps that have been developed using hybrid development tools had
+relatively low ratings. Future studies should be done to investigate the quality of hybrid apps and
+compare them with the quality of native apps. Furthermore, to get more complete results, the
+research should focus on a market-scale analysis using a large number of apps and reviews.
 
 
 ## Appendix
