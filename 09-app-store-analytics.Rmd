@@ -4,14 +4,14 @@
 
 In the year 2008, the first app stores became available [@appStoreLaunch][@androidMarketLaunch].
 These marketplaces have grown rapidly in size since then with over 3.8 million apps in the Google
-Play store alone as of first quarter of 2018 [@appNumber]. These app stores, together with the large
-amount of user-generated data associated with them present an unprecedented source of information
-about the app ecosystem. Software developers and researchers use this valuable data to gain new
-insights about how users use their app, what they like and the difficulties they encounter. The
-same data can also be used by the store operators to detect malicious or misbehaving apps whose
-behavior does not match the description. Because these app stores are relatively new, the
-research field of App Store Analytics is still not mature. However, because apps are used so much
-nowadays, it plays a vital role in the field of Software Engineering.
+Play store alone as of first quarter of 2018 [@appNumber]. These app stores, together with the
+large amount of user-generated data associated with them present an unprecedented source of
+information about the app ecosystem. Software developers and researchers use this valuable data to
+gain new insights about how users use their app, what they like and the difficulties they
+encounter. The same data can also be used by the store operators to detect malicious or misbehaving
+apps whose behavior does not match the description. Because these app stores are relatively new,
+the research field of App Store Analytics is still not mature. However, because apps are used so
+much nowadays, it plays a vital role in the field of Software Engineering.
  
 In 2015, Martin, William, et al., published "A survey of app store analysis for software
 engineering" [@martin2015survey]. The paper divides the field of App Store Analytics into seven
@@ -162,7 +162,8 @@ literature.
 **Review Manipulation**
 
 Recently, significant attention has been paid to how the reviews and ratings can be used to
-influence the number of downloads of a particular app in the App Store. The paper by Li et al. [@i2017crowdsourced] analyzed the use of crowdsourcing platforms such as Microworkers[^8] to
+influence the number of downloads of a particular app in the App Store. The paper by Li et al.
+[@i2017crowdsourced] analyzed the use of crowdsourcing platforms such as Microworkers[^8] to
 manipulate the ratings. The authors merged data from two different sources, App Store and
 crowdsourcing site, to identify manipulated reviews.
 
