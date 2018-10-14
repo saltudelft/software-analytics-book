@@ -297,7 +297,7 @@ techniques become effective and accessible.
 
 ## Conclusion
 In this chapter, three different research questions about software testing analytics were answered. 
-(1) How do developers currently test? (2) What state of the art technologies are being used? (3) 
+(RQ1) How do developers currently test? (RQ2) What state of the art technologies are being used? (RQ3) 
 What future developments can be expected?
 
 Regarding the current testing practices of developers (RQ1), we found that developers do not seem to 
