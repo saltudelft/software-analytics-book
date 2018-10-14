@@ -300,11 +300,10 @@ functionality.
   - Case studies and their findings.
 
 A Large amount of work has been published in the field of app store analytics (The Survey by Martin
-et al. was done on over 250 papers, and our study analyzed additional 80 papers), only a tiny
-amount of them were case studies. After applying the article selection criteria, we were left with
-30 papers from which only two conducted a case study. First case study, done by Mujahid et al.
-[@mujahid2017examining] examines issues that bother the users of Android Wear, and the second one
-done by Gao et al. [@gao2018online] reports on the performance of their review analytics tool which
+et al. was done on over 250 papers, and our study analyzed additional 80 papers), only a few of them were case studies. After applying the article selection criteria, we were left with
+30 papers from which only two conducted a case study. The first case study of this selection, done by Mujahid et al.
+[@mujahid2017examining], examines issues that bother the users of Android Wear. The second one,
+done by Gao et al. [@gao2018online], reports on the performance of their review analytics tool which
 was deployed at Tencent. This creates a large gap between the number of proposed solutions by the
 researchers and the number of studies done on the solutions that had been deployed in practice.
 
@@ -323,15 +322,15 @@ Many third-party services focus on app store analysis. They usually focus on sho
 statistics from the app stores and some of them also analyze the user review. Tools such as
 AppBot[^5] or TheTool[^6] perform sentiment analysis on the reviews and show it as an additional
 metric next to the star rating. AppBot also categorizes reviews based on the keywords inside them.
-It may seem like a low-tech approach, but it makes it easy for the users to reason about  why a
+It may seem like a low-tech approach, but it makes it easy for the users to reason about why a
 certain review is assigned to a specific category. We were not able to find any third-party tools
-that would use any of the advanced ML algorithms from the papers we analyzed. This finding combined
+that would use any of the advanced Machine Learning algorithms from the papers we analyzed. This finding combined
 with Google hiding their Review Highlights may show that most of the algorithms proposed by the
-researchers, do not generalize very well in the real-world application and are hard to comprehend
+researchers do not generalize very well in the real-world application and are hard to comprehend
 by regular users.
 
 To this day there are, to the best of our knowledge, no tools that compare apps and app stores
-using user reviews. Some tools analyze apps and app performance, but no tools for comparison.
+using user reviews. Some tools analyze apps and app performance, but no tools that do comparisons.
 
 ### **RQ3** Which are the challenges and future research that the field is facing or will face?
 
