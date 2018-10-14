@@ -322,13 +322,9 @@ Challenges & Future Research:
 * Market-scale analysis using a large number of apps and reviews.  
 * Testing and analysis of apps across multiple platforms and hardware.
 
-<<<<<<< HEAD
-#### Wearables
-=======
 **Wearables**
 User reviews can also be mined to understand user complaints, Mujahid et al. did this in a case study on Android Wear [@mujahid2017examining]. More specifically, they sampled 589 reviews from 6 Android wearable apps and found that there were 15 unique complaint types that could be extracted from the sample. The sample was created from mining the reviews of 4722 wearable apps and selecting the apps that have more than 100 reviews with a rating of one or two stars. After manually assigning categories to the reviews in the sample they concluded that the most frequent complaints in this relatively small sample were complaints related to cost, functional errors and a lack of functionality.
 
->>>>>>> origin/Week5Gijs
 
 TODO
 
