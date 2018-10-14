@@ -123,6 +123,8 @@ To answer this research question, we examine the explored topics in ecosystem an
 we summarize which research methods, tools and datasets are being used to explore this topics.
 
 #### Explored Topics
+The main topics we explored in ecosystem analytics are the usage of trivial packages, (breaking)
+changes in dependencies and their impacts, quality of dependencies and dependency networks.
 
 #### Used Research Methods
 The studied papers cover a plethora of research methods. These methods can be divided into two
@@ -164,7 +166,22 @@ Röthlisberger @Robbes2012 opted for the Squeak/Pharo ecosystem, as they stated 
 would provide support for answering their research questions.
 
 #### Main research findings
+Based on the findings of Abdalkareem et al. @Abdalkareem2017 trivial packages make up 16.8% of the
+NPM packages. Even though 10% of NPM uses trivial packages only 45% of these trivial packages have
+tests.
 
+Robbes et al. @Robbes2012 mentions the large impact API changes can have on an ecosystem.
+Developers take a very long time to adapt to these changes.
+Bogart et al. @Bogart2016 studied the attitude of developers towards breaking changes in
+dependencies. Their main findings were that an ecosystem plays an essential role in
+the way we can deal with breaking changes.
+
+Attempts have also been made to find a metric that establishes the 'health' of a 
+depenency. Cox et al. @Cox2015 contributes to this by providing a metric
+to establish the freshness of a dependency.
+
+An interesting finding in the topic of package dependency networks by Kikas et al.
+@Kikas2017 is that ecosystems, over time, become less dependent on a single popular package.
 
 ### RQ2: What are the practical implications of the state of the art?
 <!-- Rather than theoretical, actual case studies done with findings -->
