@@ -105,15 +105,8 @@ excluded, the reason will be stated in the section *Excluded papers*.
 ### Initial seed
 The following table lists all initial seed papers provided by the course instructor that conform
 to the stated criteria. They are listed in alphabetical order of the first author's name, and then
-by publish year.
+by publish year in Table 1 in appendix.
 
-| Title                                                                                                                               | Year | Reference                  | In survey? (Y/N) |
-|-------------------------------------------------------------------------------------------------------------------------------------|------|----------------------------|------------------|
-| Expectations, outcomes, and challenges of modern code review                                                                        | 2013 | @bacchelli2013expectations | Y                |
-| Modern code reviews in open-source projects: Which problems do they fix?                                                            | 2014 | @beller2014modern          | Y                |
-| Lessons learned from building and deploying a code review analytics platform                                                        | 2015 | @bird2015lessons           | Y                |
-| An exploratory study of the pull-based software development model                                                                   | 2014 | @gousios2014exploratory    | Y                |
-| The impact of code review coverage and code review participation on software quality: A case study of the qt, vtk, and itk projects | 2014 | @mcintosh2014impact        | Y                |
 
 ### Google Scholar
 The following table lists all candidates that have been collected through the Google Scholar search
@@ -121,33 +114,11 @@ described in the search process. They are listed in alphabetical order of the fi
 and then by publish year. Note that as described in the search process section, papers in the
 search are considered in order of search result number. The *Search date* and *Result number*
 columns indicate the date on which the search was executed and the position in the search result
-list, respectively.
-
-| Title                                                                                                         | Year | Reference                   | Search date | Result number | In survey? (Y/N) |
-|---------------------------------------------------------------------------------------------------------------|------|-----------------------------|-------------|---------------|------------------|
-| Investigating technical and non-technical factors influencing modern code review                              | 2016 | @baysal2016investigating    | 29-09-2018  | 9             |                  |
-| Modern code review                                                                                            | 2010 | @cohen2010modern            | 25-09-2018  | 1             | N                |
-| An empirical study of the impact of modern code review practices on software quality                          | 2016 | @mcintosh2016empirical      | 25-09-2018  | 4             | N                |
-| A Study of the Quality-Impacting Practices of Modern Code Review at Sony Mobile                               | 2016 | @shimagaki2016study         | 29-09-2018  | 11            |                  |
-| Reda: A web-based visualization tool for analyzing modern code review dataset                                 | 2014 | @thongtanunam2014reda       | 29-09-2018  | 8             |                  |
-| Who should review my code? A file location-based code-reviewer recommendation approach for modern code review | 2015 | @thongtanunam2015should     | 29-09-2018  | 5             | Y                |
-| Revisiting code ownership and its relationship with software quality in the scope of modern code review       | 2016 | @thongtanunam2016revisiting | 29-09-2018  | 6             | Y                |
-| Review participation in modern code review                                                                    | 2017 | @thongtanunam2017review     | 29-09-2018  | 10            |                  |
-| Mining the Modern Code Review Repositories: A Dataset of People, Process and Product                          | 2016 | @yang2016mining             | 29-09-2018  | 12            |                  |
-| Automatically recommending peer reviewers in modern code review                                               | 2016 | @zanjani2016automatically   | 29-09-2018  | 7             | Y                |
+list, respectively. Details can be found in Table 2 in appendix.
 
 ### By reference
-The following table lists all candidates that have been found by being referenced by another paper
-we found. 
-
-| Title                                                                                  | Year | Reference               | Referenced by | In survey? (Y/N) |
-|----------------------------------------------------------------------------------------|------|-------------------------|---------------|------------------|
-| A Faceted Classification Scheme for Change-Based Industrial Code Review Processes      | 2016 | @baum2016faceted        |               |                  |
-| The Choice of Code Review Process: A Survey on the State of the Practice               | 2017 | @baum2017choice         |               |                  |
-| The influence of non-technical factors on code review                                  | 2013 | @baysal2013influence    |               | Y                |
-| Impact of peer code review on peer impression formation: A survey                      | 2013 | @bosu2013impact         |               |                  |
-| Software Reviews: The State of the Practice                                            | 2003 | @ciolkowski2003software |               |                  |
-| Code reviews do not find bugs: how the current code review best practice slows us down | 2015 | @czerwonka2015code      | Zequn         | Y                |
+We list all candidates that have been found by being referenced by another paper
+we found in Table 3 in appendix. 
 
 ## Collected data
 This section contains data collected from all resources included in the survey, according to the
@@ -193,15 +164,6 @@ discovering errors.
 * *Company/organization*: Microsoft
 * *Evaluation*: At the time of this paper, it still focusses mainly on fixing errors, and not on
   the more often ocurring results of doing code review.
-
-To answer the second research question, we split into 3 sub questions according to our researches of related papers.
-* *Is code review popular in industries currently?* 
-By collecting information from papers, we know that around one fourth of researched companies regard code review process as a regular process and about 60 percent of respondents are implementing tool-based code review from different companies who are selling code review tools.
-* *What are current situations for application of code review tools in indurstries?* From statistics in our researched papers, most of the teams use at least one specialized review tool. One third teams use only general software development
-tools, like ticket system and version control system, for review. Some develop teams indicate no tool has been used in their review.
-* *What are popular choices as code review tools?*
-Usually there are two groups. For some teams, there are no specialized review software is in use. Instead, the teams use a combination of IDE, source code management system (SCM) and ticket system/bug tracker. For others, the following tools were used or mentioned: Gerrit, Crucible, Stash, GitHub pull requests, Upsource, Collaborator, ReviewClipse and CodeFlow.
-
 
 #### For answering **RQ3**
 #### Future research challenges
@@ -658,7 +620,50 @@ been added to the final survey for the stated reason.
 published in 2008 or later. Though it was included as a candidate bec
 
 ## Answers
+### RQ1
+### RQ2
+Still need to be modified.
+To answer the second research question, we split into 3 sub questions according to our researches of related papers.
+* *Is code review popular in industries currently?* 
+By collecting information from papers, we know that around one fourth of researched companies regard code review process as a regular process and about 60 percent of respondents are implementing tool-based code review from different companies who are selling code review tools.
+* *What are current situations for application of code review tools in indurstries?* From statistics in our researched papers, most of the teams use at least one specialized review tool. One third teams use only general software development
+tools, like ticket system and version control system, for review. Some develop teams indicate no tool has been used in their review.
+* *What are popular choices as code review tools?*
+Usually there are two groups. For some teams, there are no specialized review software is in use. Instead, the teams use a combination of IDE, source code management system (SCM) and ticket system/bug tracker. For others, the following tools were used or mentioned: Gerrit, Crucible, Stash, GitHub pull requests, Upsource, Collaborator, ReviewClipse and CodeFlow.
+### RQ3
 
 ## Conclusions
 
 ## Appendix
+### Table 1
+| Title                                                                                                                               | Year | Reference                  | In survey? (Y/N) |
+|-------------------------------------------------------------------------------------------------------------------------------------|------|----------------------------|------------------|
+| Expectations, outcomes, and challenges of modern code review                                                                        | 2013 | @bacchelli2013expectations | Y                |
+| Modern code reviews in open-source projects: Which problems do they fix?                                                            | 2014 | @beller2014modern          | Y                |
+| Lessons learned from building and deploying a code review analytics platform                                                        | 2015 | @bird2015lessons           | Y                |
+| An exploratory study of the pull-based software development model                                                                   | 2014 | @gousios2014exploratory    | Y                |
+| The impact of code review coverage and code review participation on software quality: A case study of the qt, vtk, and itk projects | 2014 | @mcintosh2014impact        | Y                |
+
+### Table 2
+| Title                                                                                                         | Year | Reference                   | Search date | Result number | In survey? (Y/N) |
+|---------------------------------------------------------------------------------------------------------------|------|-----------------------------|-------------|---------------|------------------|
+| Investigating technical and non-technical factors influencing modern code review                              | 2016 | @baysal2016investigating    | 29-09-2018  | 9             |                  |
+| Modern code review                                                                                            | 2010 | @cohen2010modern            | 25-09-2018  | 1             | N                |
+| An empirical study of the impact of modern code review practices on software quality                          | 2016 | @mcintosh2016empirical      | 25-09-2018  | 4             | N                |
+| A Study of the Quality-Impacting Practices of Modern Code Review at Sony Mobile                               | 2016 | @shimagaki2016study         | 29-09-2018  | 11            |                  |
+| Reda: A web-based visualization tool for analyzing modern code review dataset                                 | 2014 | @thongtanunam2014reda       | 29-09-2018  | 8             |                  |
+| Who should review my code? A file location-based code-reviewer recommendation approach for modern code review | 2015 | @thongtanunam2015should     | 29-09-2018  | 5             | Y                |
+| Revisiting code ownership and its relationship with software quality in the scope of modern code review       | 2016 | @thongtanunam2016revisiting | 29-09-2018  | 6             | Y                |
+| Review participation in modern code review                                                                    | 2017 | @thongtanunam2017review     | 29-09-2018  | 10            |                  |
+| Mining the Modern Code Review Repositories: A Dataset of People, Process and Product                          | 2016 | @yang2016mining             | 29-09-2018  | 12            |                  |
+| Automatically recommending peer reviewers in modern code review                                               | 2016 | @zanjani2016automatically   | 29-09-2018  | 7             | Y                |
+
+### Table 3
+| Title                                                                                  | Year | Reference               | Referenced by | In survey? (Y/N) |
+|----------------------------------------------------------------------------------------|------|-------------------------|---------------|------------------|
+| A Faceted Classification Scheme for Change-Based Industrial Code Review Processes      | 2016 | @baum2016faceted        |   Zina        | Y                |
+| The Choice of Code Review Process: A Survey on the State of the Practice               | 2017 | @baum2017choice         |   Zina        | Y                |
+| The influence of non-technical factors on code review                                  | 2013 | @baysal2013influence    |   Zina       | Y                |
+| Impact of peer code review on peer impression formation: A survey                      | 2013 | @bosu2013impact         |               |                  |
+| Software Reviews: The State of the Practice                                            | 2003 | @ciolkowski2003software |               |                  |
+| Code reviews do not find bugs: how the current code review best practice slows us down | 2015 | @czerwonka2015code      | Zequn         | Y                |
