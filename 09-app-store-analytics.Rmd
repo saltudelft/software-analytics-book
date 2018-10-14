@@ -1,8 +1,8 @@
 # App Store Analytics
 
-## Motivation
+## Motivation 
 
-In the year 2008, the first app stores became available[@appStoreLaunch][@androidMarketLaunch].
+In the year 2008, the first app stores became available [@appStoreLaunch][@androidMarketLaunch].
 These marketplaces have grown rapidly in size since then with over 3.8 million apps in the Google
 Play store alone as of first quarter of 2018 [@appNumber]. These app stores together with the large
 user base associated with them provide software developers and researchers with valuable data. The
@@ -283,9 +283,9 @@ between apps.
 
 Ali et al. did a comparative study on cross-platform apps. They took a sample of 80.000 app-pairs
 to quantitatively compare the same apps across different platforms and identify the differences
-between the platforms. [@ali2017same]  
+between the platforms [@ali2017same].  
 In a related study Hu et al. compared app-pairs that are created using hybrid development tools
-such as PhoneGap. [@hu2018studying] With this approach they found that in 33 of the 68 app-pairs
+such as PhoneGap [@hu2018studying]. With this approach they found that in 33 of the 68 app-pairs
 the star rating was not consistent across platforms. 
 
 
@@ -390,7 +390,7 @@ of 500 responses is sufficient to ban useless responses from the store such as t
 
 *Comparing Apps and App stores:*
 One of the open challenges is including indirect relationships in the comparisons as only direct
-relationships were used in work by Li et al[@li2017mining]. Next to this, it has been noted that
+relationships were used in work by Li et al. [@li2017mining]. Next to this, it has been noted that
 apps that have been developed using hybrid development tools had relatively low ratings. Future
 studies should be done to investigate the quality of hybrid apps and compare them with the quality
 of native apps. Furthermore, to get more complete results research should focus on a market-scale
@@ -571,7 +571,7 @@ following: (i) determine for a large number of reviews the specific topic discus
 (e.g., UI improvements, security/licensing issues, etc.), (ii) identify the maintenance task to
 perform for addressing the request stated in the review (e.g., bug fixing, feature enhancement,
 etc.), and (iii) present such information in the form of a condensed, interactive and structured
-agenda of recommended software changes, which is actionable for developers. [@di2016would]
+agenda of recommended software changes, which is actionable for developers [@di2016would].
 
 
 ### API change and fault proneness: A threat to the success of Android apps
