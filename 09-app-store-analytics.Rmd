@@ -180,13 +180,6 @@ of the other two papers, they can be characterized by the small number of consid
 to the total number of apps in the main marketplaces), but the significant number of reviews that
 were analyzed. This makes sense, considering that the main purpose is to investigate the later. 
 
-Challenges & Future Research:
-* It is important to mix multiple sources of data in order to better identify suspicious
-  individuals. These include not only app stores, but also crowdsourcing sites and even social
-  networks. 
-* As the number of suspicious apps is not large, taking into account the size of the marketplace,
-  is important to correctly select the sample so there is enough information for the algorithms to
-  “learn”. 
 
 **Requirements Engineering**
 Users use reviews as a way to express their attitude (positive and negative) towards an app. Most
