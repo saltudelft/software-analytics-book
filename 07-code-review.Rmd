@@ -1,4 +1,13 @@
 # Code Review
+
+## Motivation
+
+Code review is a mannual assessment process of changed codes by other developers instead of the author, in order to improve code quality and reduce software defects. As a common a software engineering practice, code review is applied in industry and many open-source projects. 
+In research area, code review becomes a popular topic recently according to the number of published paper. 
+As note in @bacchelli2013expectations, the concept of modern code review was proposed in 2013. Since then, many researchers not only explore the modern code review process and its impact on software quality, but also point out the possible methods to improve the application of code review.
+
+In this survey, by collecting and reading the related paper we focus on the following research questions and hope to provide an overview of the current research progress on code view.
+
 ## Review protocol
 This section describes the review protocol used for the systematic review presented in this
 chapter. The protocol has been set up using Kitchenham's method as described by @kitchenham2007.
