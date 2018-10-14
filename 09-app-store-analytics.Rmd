@@ -90,14 +90,12 @@ paper (score=5) and 3) a non-relevant paper (score=0).
 
 **What would users change in my app? summarizing app reviews for recommending software changes
 [@di2016would]** 
-
  - Relevance score: 10
  - Remarks: the authors applied classification and summarization techniques on app reviews to
    reduce the effort required to analyze feedback from users. As can be seen, the paper was focused
    on using the reviews to improve the development process.
 
 **Fault in your stars: an analysis of Android app reviews [@aralikatte2018fault]** 
-
 - Relevance score: 5
 - Remarks: the authors analyzed the problem of the potential mismatch between the app reviews and
   the star ratings that the app receives. Although it is related to reviews, it is not its primary
@@ -105,7 +103,6 @@ paper (score=5) and 3) a non-relevant paper (score=0).
 
 **Why are Android apps removed from Google Play? A large-scale empirical study
 [@wang2018android]** 
-
 - Relevance score: 0
 - Remarks: in this case, the paper did not have to do with app reviews even though the title
   suggested otherwise.
