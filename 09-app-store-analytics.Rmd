@@ -1,8 +1,3 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
 # App Store Analytics
 
 ## Motivation
@@ -339,7 +334,7 @@ Large amount of work has been published in the field of app store analytics (The
 et al. was done on over 250 papers and our study analyzed additional 80 papers), only a tiny amount
 of them were case studies. After applying the article selection criteria, we were left with 30
 papers from which only two conducted a case study. First case study, done by Mujahid et al.
-[@mujahid2017] examines issues that bother the users of Android Ware, and the second one done by
+[@mujahid2017examining] examines issues that bother the users of Android Ware, and the second one done by
 Gao et al. [@gao2018online] reports on the performance of their review analytics tool which was
 deployed at Tencent. This creates a large gap between the number of proposed solutions by the
 researchers and number of studies done on the solutions that had been deployed in the practice.
@@ -348,20 +343,16 @@ researchers and number of studies done on the solutions that had been deployed i
 
 We weren’t able to find any academic publication on the solutions used by the actual app stores
 (Google Play and App Store), but we have found that both app stores automatically detect fake
-reviews [^1]: https://www.macrumors.com/2016/10/10/apple-dash-developer-fraudulent-reviews/ [^2]:
-https://android-developers.googleblog.com/2016/11/keeping-it-real-improving-reviews-and-ratings-in-google-play.html
-. In 2016 Google deployed their review analytics solution, called Review Highlights[^3]:
-https://android-developers.googleblog.com/2016/02/new-tools-for-ratings-reviews-on-google.html,
+reviews [^1],[^2]. In 2016 Google deployed their review analytics solution, called Review Highlights[^3],
 into production for both developers and customers, but at the time of writing this survey (October
 2018), the Review Highlights no longer show up in the public facing part of Google Play Store and
-are only accessible in the developer console[^4]:
-https://support.google.com/googleplay/android-developer/answer/138230?hl=en .
+are only accessible in the developer console[^4].
 
 
 #### State of the third-party tools
 Many third-party services focus on app store analysis. They usually focus on showing aggregated
 statistics from the app stores and some of them also analyze the user review. Tools such as
-AppBot[^1]:https://appbot.co/ or TheTool[^2]: https://thetool.io/ perform sentiment analysis on the
+AppBot[^5] or TheTool[^6] perform sentiment analysis on the
 reviews and show it as an additional metric next to the star rating. AppBot also categorizes
 reviews based on the keywords inside them. It may seem as a low-tech approach, but it makes it easy
 for the users to reason about why certain review is assigned to certain category. We were not able
@@ -659,3 +650,11 @@ Supérieure (ETS) - Université du Québec, Canada
 **Research question/issue:** What are the proposed solutions for mining online opinions in app
 store user reviews, challenges and unsolved problems in the domain, new contributions to software
 requirements evolution and future research direction.
+
+[^1]: <https://www.macrumors.com/2016/10/10/apple-dash-developer-fraudulent-reviews/>
+[^2]: <https://android-developers.googleblog.com/2016/11/keeping-it-real-improving-reviews-and-ratings-in-google-play.html>
+[^3]:
+<https://android-developers.googleblog.com/2016/02/new-tools-for-ratings-reviews-on-google.html>
+[^4]: <https://support.google.com/googleplay/android-developer/answer/138230?hl=en>
+[^5]: <https://appbot.co/>
+[^6]: <https://thetool.io/>
