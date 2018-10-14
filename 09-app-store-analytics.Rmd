@@ -4,21 +4,21 @@
 
 In the year 2008, the first app stores became available [@appStoreLaunch][@androidMarketLaunch].
 These marketplaces have grown rapidly in size since then with over 3.8 million apps in the Google
-Play store alone as of first quarter of 2018 [@appNumber]. These app stores together with the large
+Play store alone as of first quarter of 2018 [@appNumber]. These app stores, together with the large
 amount of user-generated data associated with them present an unprecedented source of information
 about the app ecosystem. Software developers and researchers use this valuable data to gain new
 insights about how users use their app, what they like and the difficulties they encounter. The
 same data can also be used by the store operators to detect malicious or misbehaving apps whose
-behavior does not match the description. Because these app marketplaces are relatively new, the
+behavior does not match the description. Because these app stores are relatively new, the
 research field of App Store Analytics is still not mature. However, because apps are used so much
 nowadays, it plays a vital role in the field of Software Engineering.
  
 In 2015, Martin, William, et al., published "A survey of app store analysis for software
 engineering" [@martin2015survey]. The paper divides the field of App Store Analytics into seven
-main categories: API Analysis, Review Analytics, Security, Store Ecosystem, Size and Effort
+categories: API Analysis, Review Analytics, Security, Store Ecosystem, Size and Effort
 Prediction, Release Engineering, and Feature Analysis. Given that relevant literature on the field
 of App Store Analytics has been already gathered and analyzed, it makes sense to use this chapter
-to go a step further. In this order of ideas, we delve deeper into the subfield of Review Analysis.
+to go a step further. We delve deeper into the subfield of Review Analysis.
 We started with the literature proposed by @martin2015survey and extended it with the relevant
 articles that were published after 2015.  We then used the data to answer the following research
 questions:
