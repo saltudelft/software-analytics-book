@@ -346,7 +346,7 @@ confounding factors can be ruled out.
 
 Taking into account the practical aspect of review analytics, there is a difficulty to translate
 the research into actual tools that are used in real settings. Of all the works that were
-considered, only @gao2018online by Gao et al. presented a case study and most of the tools have
+considered, only Gao et al. presented a case study[@gao2018online] and most of the tools have
 either disappeared or are not being actively used.
 
 *Review Manipulation:*
