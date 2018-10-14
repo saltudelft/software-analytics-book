@@ -224,8 +224,7 @@ comparing it to other languages as can be seen Table [ref:to table nr].  However
 noted that the paper does not test this on actual Android applications but rather the Rosetta Code 
 repository.
 
-![Programming Languages Average Weighted EDP Ranking, retrieved from [@GKLS2018]]
-(figures/EDPranking.jpeg)
+![Programming Languages Average Weighted EDP Ranking, retrieved from [@GKLS2018]](figures/EDPranking.jpeg)
 
 The above two papers are examples of research that suggest that the current state of practice, 
 developing applications in Java only, is not in line with the current state of the art on energy 
