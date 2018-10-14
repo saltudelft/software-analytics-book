@@ -364,10 +364,11 @@ we have provided an answer to the following three research questions:
 - **RQ2:** _What aspects of modern release engineering have been studied
   in software analytics research so far?_
 
-    At this point in time, case studies have mainly focussed on the resulting factors of switching 
-    from a traditional release cycle to a rapid release cycle, and what effects this has in various
-    organizational contexts. As all included studies suggest, more empirical studies are needed to 
-be
+    At this point in time, case studies have mainly focussed on
+    the resulting factors of switching from a traditional release cycle
+    to a rapid release cycle, and what effects this has in various
+    organizational contexts.
+    As all included studies suggest, more empirical studies are needed to be
     able to make general conclusions in the novel field of release engineering.
 
 - **RQ3:** _What aspects of modern release engineering make for relevant
@@ -801,8 +802,8 @@ General information:
 
 - Name of person extracting data: Maarten Sijm
 - Date form completed: 28-09-2018
-- Author information: Mäntylä, Mika V. and Adams, Bram and Khomh, Foutse and Engström, Emelie and 
-Petersen, Kai
+- Author information: Mäntylä, Mika V. and Adams, Bram and Khomh, Foutse and Engström, Emelie
+  and Petersen, Kai
 - Publication type: Journal/Magazine Article
 - Journal: Empirical Software Engineering
 - Type of study: Empirical case study and semi-systematic literature review
@@ -1012,8 +1013,7 @@ Notes:
        to increase awareness and participation
     3. The release managers need social and technical skills
 
-#### Release Early, Release Often and Release on Time. An Empirical Case Study of Release 
-Management
+#### Release Early, Release Often and Release on Time. An Empirical Case Study of Release Management
 
 Reference: @teixeira2017a
 
@@ -1133,8 +1133,8 @@ General information:
 - Date form completed: 29-09-2018
 - Author information: Castelluccio, M. and An, L. and Khomh, F.
 - Publication type: Paper in Conference Proceedings
-- Journal: Proceedings - 2017 IEEE International Conference on Software Maintenance and Evolution, 
-ICSME 2017
+- Journal: Proceedings - 2017 IEEE International Conference on Software Maintenance and Evolution,
+  ICSME 2017
 - Type of study: Case study, both quantitative (data analysis) and qualitative
   (interviews)
 
@@ -1329,8 +1329,8 @@ General information:
 - Date form completed: 29-09-2018
 - Author information: Fujibayashi, D. and Ihara, A. and Suwa, H. and Kula, R.G. and Matsumoto, K.
 - Publication type: Paper in Conference Proceedings
-- Journal: SANER 2017 - 24th IEEE International Conference on Software Analysis, Evolution, and 
-Reengineering
+- Journal: SANER 2017 -
+  24th IEEE International Conference on Software Analysis, Evolution, and Reengineering
 - Type of study: Quantitative study
 
 What practices in release engineering does this publication mention?
@@ -1982,8 +1982,8 @@ What practices in release engineering does this publication mention?
 Are these practices to be classified under dated, state of the art or state of
 the practice? Why?
 
-- The practices discussed are a combination of state of the art and state of the practice 
-approaches.
+- The practices discussed are a combination of state of the art
+  and state of the practice approaches.
 
 What open challenges in release engineering does this publication mention?
 
