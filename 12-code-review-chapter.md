@@ -1,12 +1,12 @@
-** Motivation
+## Motivation
 
-** Protocol
+## Protocol
 
-** Answers for research questions
-** RQ1 **
-** RQ2 **
-** RQ3 **
+## Answers for research questions
+### RQ1 
+### RQ2 
+### RQ3
 
-** Conclusions
+## Conclusions
 
-** Appendix
+## Appendix
