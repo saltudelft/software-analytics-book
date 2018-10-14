@@ -218,27 +218,31 @@ used a structured sampling procedure to mix reviews from different datasets. The
 and 4 from Google Play), and the final dataset contained 164,026 reviews, one of the largest that
 had been used.
 
-**Mapping user reviews to source code** Another research direction that has become active in the
-past years is combining the results of mining  the app reviews with the source code to directly
-provide developers with valuable and actionable information to improve their products. In
-@palomba2017recommending, Palomba et al. presented a new approach called ChangeAdvisor. It extracts
-useful feedback from reviews and recommends developers changes to specific software artifacts. In
-the paper, metric distances such as the Dice coefficient are used in order to map a specific subset
-of reviews to a section of the source code. A complementary work was presented in
-@palomba2018crowdsourcing. In this study, Palomba et al. investigated the extent to which app
-developers take app reviews into account. To achieve this, they introduced CRISTAL. An approach for
-tracing informative crowd reviews onto source code changes, and for monitoring the extent to which
-developers accommodate crowd requests and follow-up user reactions as reflected in their ratings.
-Linting mechanisms and their effectivity have also been studied. In @wei2017oasis, Wei et al.
-proposed  an approach, OASIS, for prioritizing the Android Lint warnings. It uses NLP techniques
+**Mapping user reviews to source code** 
+Another research direction that has become active in the past years is combining the results of
+mining the app reviews with the source code to directly provide developers with valuable and
+actionable information to improve their products. 
+
+In [@palomba2017recommending], Palomba et al. presented a new approach called ChangeAdvisor. It
+extracts useful feedback from reviews and recommends developers changes to specific code artifacts.
+In the paper, metric distances such as the Dice coefficient are used in order to map a specific
+subset of reviews to a section of the source code. Complementary work was presented in
+[@palomba2018crowdsourcing]. In this study, Palomba et al. investigated the extent to which app
+developers take app reviews into account.  To achieve this, they introduced CRISTAL.  It pairs
+informative reviews with source code changes and monitors the extent to which developers
+accommodate crowd requests from the reviews. 
+
+Linting mechanisms and their effectivity have also been studied. Wei et al.  [@wei2017oasis]
+proposed a method, OASIS, for prioritizing the Android Lint warnings. It uses NLP techniques
 (tokenization, word removing, word stemming, and TF-IDF distance) to find the links between the
 user reviews and the Lint warnings. According to the paper, this is relevant given that one of the
-problems of linters is the number of false alarms they provide. Regarding the datasets that were
-used for validation even though the analyzed papers use a reduced amount of apps (except
-@palomba2018crowdsourcing that used 100), as in the previous section, they use more reviews (more
-than 20,000). Additionally, as the aim of the works in this section directly involve the
-developers, they complement the quantitatively apps-reviews-based experiments with qualitative
-ones. 
+problems of linters is the number of false alarms they provide. 
+
+Regarding the datasets that were used for validation even though the analyzed papers use a reduced
+amount of apps (except [@palomba2018crowdsourcing] that used 100), as stated in the previous
+section, they use numerous reviews (more than 20,000). Additionally, as the aim of the works in
+this section directly involve the developers, they complement the quantitatively apps-reviews-based
+experiments with qualitative ones. 
 
 **Privacy / app permissions**
 Since Android Marshmallow the Android operating system uses a run-time permission-based security
@@ -257,16 +261,16 @@ Since 2013 developers can respond to reviews in the Google Play store and Apple 
 feature in 2017. In previous work, McIlroy [@mcilroy2014empirical] studied whether responding to
 user reviews has a positive effect on the rating users give. Building on previous work McIlroy et
 al. studied how likely it is for users to change their rating for an app when a developer responds
-to their review [@mcilroy2017worth]. They found that users change
-their rating 38.7 percent of the time when a developer responds to their review, with a median
-increase of 20 percent in rating for the app.
+to their review [@mcilroy2017worth]. They found that users change their rating 38.7 percent of the
+time when a developer responds to their review, with a median increase of 20 percent in rating for
+the app.
 
 Hassan et al. [@hassan2018studying] used 2328 top free apps from the Google Play store to study
 whether users are more likely to update their review if a developer responds to their review. They
 extracted 126686 dialogues between developers and users and concluded that responding to a review
 increases the chances of users updating their given rating for an app can increase by up to six
-times when compared to not responding. Next, to this they also studied the characteristics,
-likelihood, and the incentives of user-developer dialogues in app stores.
+times when compared to not responding. They also studied the characteristics, likelihood, and the
+incentives of user-developer dialogues in app stores.
 
 
 **Comparing Apps and App stores**
@@ -282,19 +286,18 @@ Ali et al. did a comparative study on cross-platform apps. They took a sample of
 to quantitatively compare the same apps across different platforms and identify the differences
 between the platforms [@ali2017same].  
 In a related study Hu et al. compared app-pairs that are created using hybrid development tools
-such as PhoneGap [@hu2018studying]. With this approach they found that in 33 of the 68 app-pairs
+such as PhoneGap [@hu2018studying]. With this approach, they found that in 33 of the 68 app-pairs
 the star rating was not consistent across platforms. 
 
 
 **Wearables**
-User reviews can also be mined to understand user complaints, Mujahid et al. did this in a case
+User reviews can also be mined to understand user complaints. Mujahid et al. did this in a case
 study on Android Wear [@mujahid2017examining]. More specifically, they sampled 589 reviews from 6
-Android wearable apps and found that there were 15 unique complaint types that could be extracted
-from the sample. The sample was created from mining the reviews of 4722 wearable apps and selecting
-the apps that have more than 100 reviews with a rating of one or two stars. After manually
-assigning categories to the reviews in the sample they concluded that the most frequent complaints
-in this relatively small sample were complaints related to cost, functional errors and a lack of
-functionality.
+Android wearable apps and found that 15 unique complaint types could be extracted from the sample.
+The sample was created from mining the reviews of 4722 wearable apps and selecting the apps that
+have more than 100 reviews with a rating of one or two stars. After manually assigning categories
+to the reviews in the sample they concluded that the most frequent complaints in this relatively
+small sample were complaints related to cost, functional errors and a lack of functionality.
 
 ### **RQ2** What is the state of practice in Review Analysis? Specifically:
 
