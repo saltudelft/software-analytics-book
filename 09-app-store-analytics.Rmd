@@ -2,7 +2,7 @@
 
 ## Motivation
 
-In the year 2008, the first app stores became available. These marketplaces have grown rapidly in
+In the year 2008, the first app stores became available[@appStoreLaunch][@androidMarketLaunch]. These marketplaces have grown rapidly in
 size since then with over 3.8 million apps in the Google Play store alone as of first quarter of
 2018 [@appNumber]. These app stores together with the large user base associated with them provide
 software developers and researchers with valuable data. The process of using the data from the app
@@ -12,7 +12,7 @@ However, because apps are used so much nowadays, it plays an important role in t
 Software Engineering.
  
 In 2015, Martin, William, et al., published "A survey of app store analysis for software
-engineering." In the paper, 7 main categories are proposed of the field: API Analysis, Review
+engineering" [@martin2015survey]. In the paper, 7 main categories are proposed of the field: API Analysis, Review
 Analytics, Security, Store Ecosystem, Size and Effort Prediction, Release Engineering and Feature
 Analysis @martin2015survey. Given that relevant literature on the field of App Store Analytics has
 been already gathered and analyzed, it makes sense to use this chapter to go a step further.  In
@@ -58,7 +58,7 @@ After doing this, the following search queries were generated:
 “app store analytics” AND “reviews”, “app reviews”
 ```
 
-Google Scholar, ACM Digital Library, and IEEE Xplore were used for the searching process with the
+Google Scholar[^9], ACM Digital Library[^10], and IEEE Xplore[^11] were used for the searching process with the
 aforementioned queries. In order to keep a database with only the relevant articles, the following
 inclusion criteria were applied to all the hits. It is important to notice that in addition to the
 results obtained by searching with the specific query, the first page of the “related articles”
@@ -139,6 +139,8 @@ Datasets: size and sampling methodologies
 Techniques used for doing the analysis 
 ```
 
+The bullet points can be found in the appendix of this chapter.
+
 ### Initial grouping of papers
 
 TODO
@@ -163,7 +165,7 @@ we expand on each one of these with the revised literature.
 
 Recently, significant attention has been paid to how the reviews and ratings can be used to
 influence the number of downloads of a particular app in the App Store. In their paper,
-@i2017crowdsourced analyzed the use of crowdsourcing platforms such as Microworkers to manipulate
+@i2017crowdsourced analyzed the use of crowdsourcing platforms such as Microworkers[^8] to manipulate
 the ratings. The authors merged data from two different sources, App Store and crowdsourcing site,
 to identify manipulated reviews.
 
@@ -659,3 +661,7 @@ requirements evolution and future research direction.
 [^5]: <https://appbot.co/>
 [^6]: <https://thetool.io/>
 [^7]: <https://developers.google.com/android-publisher/reply-to-reviews>
+[^8]: <https://www.microworkers.com/>
+[^9]: <https://scholar.google.com/>
+[^10]: <https://dl.acm.org/>
+[^11]: <https://ieeexplore.ieee.org/>
