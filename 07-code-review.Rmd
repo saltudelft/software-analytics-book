@@ -14,7 +14,7 @@ application of code review.
 We collected and read relevant papers, and will present an overview of current research progress
 in code review in this survey chapter.
 
-## Review protocol
+## Protocol
 This section describes the review protocol used for the systematic review presented in this
 chapter. The protocol has been set up using Kitchenham's method as described by @kitchenham2007.
 
@@ -646,7 +646,7 @@ statistically equivalent to RevCom which requires both past reviews and commits.
 The authors plan to include textual analysis of review comments and additional measures of
 reviewers' contributions and impact in their approach.
 
-## Excluded papers
+### Excluded papers
 The following papers have been excluded from the survey. These papers are candidates, but have not
 been added to the final survey for the stated reason.
 
@@ -656,3 +656,9 @@ been added to the final survey for the stated reason.
   the survey. Because of time constraints we will not reconsider this version.
 * @fagan2002design: This paper does not conform to our exclusion criterion saying that it should be
 published in 2008 or later. Though it was included as a candidate bec
+
+## Answers
+
+## Conclusions
+
+## Appendix
