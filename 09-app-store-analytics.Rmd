@@ -345,9 +345,9 @@ the studies rely on correlation relationships to validate the effectiveness of t
 There is a need to apply causation techniques so confounding factors can be ruled out.
 
 There is a difficulty in translating the research into actual tools that are used in a real-world
-setting. Of all the works that were considered, only [@gao2018online] by Gao et al. presented a
-case study, and most of the tools from other papers have either disappeared or are not being
-actively used.
+setting. Of all the works that were considered, only Gao et al. presented a case
+study[@gao2018online], and most of the tools from other papers have either disappeared or are not
+being actively used.
 
 *Review Manipulation:* It is important to combine multiple sources of data to identify suspicious
 individuals better. Not just from app stores alone, but also crowdsourcing sites and even social
