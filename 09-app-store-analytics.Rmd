@@ -34,7 +34,12 @@ answer the following research questions regarding the chosen subcategory.
 
 ## Research Protocol
 
-TODO: write intro to search strategy
+In this section we present the process that we followed to systematically extract the articles for
+the literature survey. First, the search strategy includes the queries that were used, as well as
+the initial criteria that was taken into account for the first filtering of the articles. Then, the
+way how the relevance of the remaining papers was assessed and the second filtering are explained
+in the article selection section. In the last two parts, we describe the data that was extracted
+from each study and the initial grouping that was constructed based on this.
 
 ### Search Strategy
 
@@ -155,8 +160,7 @@ work, we propose new categories that reflect better the state of the art in this
 “Responding to reviews”, “Comparing Apps and App stores and Wearables”. In the following sections,
 we expand on each one of these with the revised literature.
 
-
-#### Review Manipulation
+**Review Manipulation**
 
 Recently, significant attention has been paid to how the reviews and ratings can be used to
 influence the number of downloads of a particular app in the App Store. In their paper,
@@ -179,10 +183,77 @@ of the other two papers, they can be characterized by the small number of consid
 to the total number of apps in the main marketplaces), but the significant number of reviews that
 were analyzed. This makes sense, considering that the main purpose is to investigate the later. 
 
-#### Mapping user reviews to the source code
+Challenges & Future Research:
+* It is important to mix multiple sources of data in order to better identify suspicious
+  individuals. These include not only app stores, but also crowdsourcing sites and even social
+  networks. 
+* As the number of suspicious apps is not large, taking into account the size of the marketplace,
+  is important to correctly select the sample so there is enough information for the algorithms to
+  “learn”. 
 
-#### Privacy / app permissions
+**Requirements Engineering**
+Users use reviews as a way to express their attitude (positive and negative) towards an app. Most
+of the time, these reviews do not have enough information as are mostly composed of a small number
+of uninformative words. Another important portion of reviews contains information that can be used
+in the improvement and evolution of the apps. In the survey @REFERENCE, Martin et al. described
+summarization, classification, and requirements engineering as categories of the subfield of Review
+Analytics. These areas are converging and in recent work (after 2015) it can be observed how
+summarization and classification, among other techniques, are being used to complement development,
+maintenance and evolution tasks.
 
+In 2016, Di Sorbo et al. introduced SURF @di2016would, an approach to condense a large number of
+reviews, extracting useful information from them. In a subsequent paper (@panichella2016ardoc),
+Panichella et al presented techniques for classifying useful feedback in the context of maintenance
+and evolution of the apps. In their work, the authors make use of machine learning supervised
+methods in conjunction with natural language processing (NLP), sentiment analysis (SA), and text
+analysis (TA) techniques. Unsupervised methods for review clustering were explored in @anchieta2017
+by Anchiêta et al. In the article, the authors introduced a technique to categorize reviews in
+order to generate a summary of the main bugs and features. 
+
+Taking into account the high dimensionality of the datasets that are used for review mining, in
+@jha2017mining, Jha et al. proposed a semantic approach for app review classification. By using
+semantic role labeling, the authors could make the classification process more efficient. In
+@gao2018online, Gao et al. presented IDEA. A framework for identifying emerging app issues
+effectively based on an online review analysis. To achieve this, the paper uses information from
+different time slices (versions). And use the changelogs of the studied apps as the ground truth
+for the validation of their approach. This is one of the only studies in the reviewed literature
+that presents a case study (Tencent) as an example to the viability of IDEA.
+
+Most of the datasets used in the papers analyzed in this section can be characterized by a small
+number of apps and a considerable amount of reviews. Di Sorbo et al. @di2016would used 17 apps and
+3439 reviews. Anchiêta et al. @anchieta2017 gathered more than 50000 reviews from 3 apps, but after
+the preprocessing step the dataset was reduced to 924 records. Jha et al. @jha2017mining used a
+structured sampling procedure to mix reviews from different datasets. Its final size was 2917
+reviews. Finally, Gao et al. @gao2018online used reviews from 6 apps (2 from the App Store and 4
+from Google Play) and the final dataset contained 164,026 reviews, one of the largest that has been
+used.
+
+**Mapping user reviews to source code**
+Another research direction that has become active in the past years is combining the results of
+mining  the app reviews with the source code to directly provide developers with valuable and
+actionable information to improve their products. In @palomba2017recommending, Palomba et al.
+presented a new approach called ChangeAdvisor. It extracts useful feedback from reviews and
+recommends developers changes to specific software artifacts. In the paper, metric distances such
+as the Dice coefficient are used in order to map a specific subset of reviews to a section of the
+source code. A complementary work was presented in @palomba2018crowdsourcing. In this study,
+Palomba et al. investigated the extent to which app developers take app reviews into account. To
+achieve this, they introduced CRISTAL. An approach for tracing informative crowd reviews onto
+source code changes, and for monitoring the extent to which developers accommodate crowd requests
+and follow-up user reactions as reﬂected in their ratings.
+
+Linting mechanisms and their effectivity have also been studied. In @wei2017oasis, Wei et al.
+proposed  an approach, OASIS, for prioritizing the Android Lint warnings. It uses NLP techniques
+(tokenization, word removing, word stemming, and TF-IDF distance) to find the links between the
+user reviews and the Lint warnings. According to the paper, this is relevant given that one of the
+problems of linters is the number of false alarms they provide. 
+
+Regarding the datasets that were used for validation even though the analyzed papers use a reduced
+amount of apps (except @palomba2018crowdsourcing that used 100), as in the previous section, they
+use more reviews (more than 20,000). Additionally, as the aim of the works in this section directly
+involve the developers, they complement the quantitively apps-reviews-based experiments with
+qualitative ones. 
+
+**Privacy / app permissions**
 Since Android Marshmallow the Android operating system uses a run-time permission-based security
 system. Apple's iOS also uses run-time permissions on top of a set of permissions enabled by
 default. Scoccia et al. did a large-scale empirical study on this new system by inspecting 4.3
@@ -195,7 +266,9 @@ permissions.
 
 Challenges & Future Research:
 
-* TODO
+* One of the directions for further research regarding permissions is the idea of giving permissions to individual app functionalities instead of giving permissions to the app as a whole. This could lead to users better understanding why an app needs a certain permission and could reduce the amount of permissions an app needs.
+* Another possible future direction is researching and creating tools that help developers put permission requests in the right place to avoid bugs related to permissions and permission requests.
+* Quantifying and understanding the effects of run-time permission requests on the user experience is still an open research area which can help increasing the quality of apps.
 
 #### Responding to reviews
 
@@ -269,6 +342,40 @@ TODO
 TODO
 
 ### **RQ3** Which are the challenges and future research that the field is facing or will face?
+
+In this section, we present challenges and future trends for the field of Review Analytics and the
+subcategories that were identified in previous sections. 
+
+An important component of the research process is the validation of the proposed tools and
+frameworks and the assessment of how generalizable they are. For this, it is necessary to have
+bigger reviews datasets and more representative and robust samples. In terms of the techniques
+being used, machine learning is a being trend and in the future approaches that are better tailored
+to the problem at hand must be devised. Also, most of the studies rely on correlation relationships
+to validate the effectiveness of their approaches. There is a need to apply causation techniques so
+confounding factors can be ruled out.
+
+Taking into account the practical aspect of reviews analytics, there is a difficulty to translate
+the research into actual tools that are used in real settings. Of all the works that were
+considered, only @gao2018online by Gao et al. presented a case study and most of the tools have
+either disappeared or are inactive.
+
+*Review Manipulation:*
+It is important to combine multiple sources of data to better identify suspicious individuals.
+These include not only app stores, but also crowdsourcing sites and even social networks. Also, the
+sample should be carefully selected, given that the number of suspicious apps is not large (around
+1% of all apps), taking into account the size of the app stores.
+
+*Requirements Engineering:* 
+
+*Mapping user reviews to source code:*
+There is a need to better understand the “language of source code” as this will be important to
+join the reviews and source code datasets. A likely future trend is the analysis of update-level
+changes. Regarding this, there is still a need to obtain update-categorized reviews as this is
+still a challenge with the current review-retrieving approaches.
+
+*Privacy / app permissions:*
+*Responding to reviews:*
+*Comparing Apps and App stores:*
 
 TODO
 
