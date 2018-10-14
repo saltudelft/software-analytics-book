@@ -178,7 +178,6 @@ characterized by the small number of considered apps (compared to the total numb
 main marketplaces), but the significant number of reviews that were analyzed. That makes sense,
 considering that the main purpose is to investigate the later. 
 
-
 **Requirements Engineering**
 
 Users use reviews as a way to express their attitude (positive and negative) towards an app. The
@@ -287,6 +286,7 @@ such as PhoneGap [@hu2018studying]. With this approach, they found that in 33 of
 the star rating was not consistent across platforms. 
 
 **Wearables**
+
 User reviews can also be mined to understand user complaints. Mujahid et al. did this in a case
 study on Android Wear [@mujahid2017examining]. More specifically, they sampled 589 reviews from 6
 Android wearable apps and found that 15 unique complaint types could be extracted from the sample.
@@ -318,6 +318,7 @@ survey (October 2018), the Review Highlights no longer show up in the public fac
 Play Store and are only accessible in the developer console[^8].
 
 #### State of the third-party tools
+
 Many third-party services focus on app store analysis. They usually focus on showing aggregated
 statistics from the app stores and some of them also analyze the user review. Tools such as
 AppBot[^9] or TheTool[^10] perform sentiment analysis on the reviews and show it as an additional
