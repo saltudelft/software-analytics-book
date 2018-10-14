@@ -239,7 +239,7 @@ source code. A complementary work was presented in @palomba2018crowdsourcing. In
 Palomba et al. investigated the extent to which app developers take app reviews into account. To
 achieve this, they introduced CRISTAL. An approach for tracing informative crowd reviews onto
 source code changes, and for monitoring the extent to which developers accommodate crowd requests
-and follow-up user reactions as reﬂected in their ratings.
+and follow-up user reactions as reflected in their ratings.
 
 Linting mechanisms and their effectivity have also been studied. In @wei2017oasis, Wei et al.
 proposed  an approach, OASIS, for prioritizing the Android Lint warnings. It uses NLP techniques
@@ -250,7 +250,7 @@ problems of linters is the number of false alarms they provide.
 Regarding the datasets that were used for validation even though the analyzed papers use a reduced
 amount of apps (except @palomba2018crowdsourcing that used 100), as in the previous section, they
 use more reviews (more than 20,000). Additionally, as the aim of the works in this section directly
-involve the developers, they complement the quantitively apps-reviews-based experiments with
+involve the developers, they complement the quantitatively apps-reviews-based experiments with
 qualitative ones. 
 
 **Privacy / app permissions**
