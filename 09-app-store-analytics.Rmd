@@ -2,24 +2,24 @@
 
 ## Motivation
 
-In the year 2008, the first app stores became available[@appStoreLaunch][@androidMarketLaunch]. These marketplaces have grown rapidly in
-size since then with over 3.8 million apps in the Google Play store alone as of first quarter of
-2018 [@appNumber]. These app stores together with the large user base associated with them provide
-software developers and researchers with valuable data. The process of using the data from the app
-stores to gain valuable insights is what we would call “App Store Analytics”. Because these app
-marketplaces are relatively new, the research field of App Store Analytics is still not mature.
-However, because apps are used so much nowadays, it plays an important role in the field of
-Software Engineering.
+In the year 2008, the first app stores became available[@appStoreLaunch][@androidMarketLaunch].
+These marketplaces have grown rapidly in size since then with over 3.8 million apps in the Google
+Play store alone as of first quarter of 2018 [@appNumber]. These app stores together with the large
+user base associated with them provide software developers and researchers with valuable data. The
+process of using the data from the app stores to gain valuable insights is what we would call “App
+Store Analytics”. Because these app marketplaces are relatively new, the research field of App
+Store Analytics is still not mature. However, because apps are used so much nowadays, it plays an
+important role in the field of Software Engineering.
  
 In 2015, Martin, William, et al., published "A survey of app store analysis for software
-engineering" [@martin2015survey]. In the paper, 7 main categories are proposed of the field: API Analysis, Review
-Analytics, Security, Store Ecosystem, Size and Effort Prediction, Release Engineering and Feature
-Analysis @martin2015survey. Given that relevant literature on the field of App Store Analytics has
-been already gathered and analyzed, it makes sense to use this chapter to go a step further.  In
-this order of ideas, we will delve deeper into the subfield of Review Analysis. We check the
-literature proposed by @martin2015survey and update it with the relevant articles (as defined by
-the inclusion criteria presented below) that were published after 2015.  We then use the data to
-answer the following research questions regarding the chosen subcategory.
+engineering" [@martin2015survey]. In the paper, 7 main categories are proposed of the field: API
+Analysis, Review Analytics, Security, Store Ecosystem, Size and Effort Prediction, Release
+Engineering and Feature Analysis @martin2015survey. Given that relevant literature on the field of
+App Store Analytics has been already gathered and analyzed, it makes sense to use this chapter to
+go a step further.  In this order of ideas, we will delve deeper into the subfield of Review
+Analysis. We check the literature proposed by @martin2015survey and update it with the relevant
+articles (as defined by the inclusion criteria presented below) that were published after 2015.  We
+then use the data to answer the following research questions regarding the chosen subcategory.
 
 * **RQ1** What is the state of the art in Review Analysis? Specifically:
     - Which topics that are being explored?
@@ -58,11 +58,11 @@ After doing this, the following search queries were generated:
 “app store analytics” AND “reviews”, “app reviews”
 ```
 
-Google Scholar[^9], ACM Digital Library[^10], and IEEE Xplore[^11] were used for the searching process with the
-aforementioned queries. In order to keep a database with only the relevant articles, the following
-inclusion criteria were applied to all the hits. It is important to notice that in addition to the
-results obtained by searching with the specific query, the first page of the “related articles”
-link for the top cited articles was also inspected. 
+Google Scholar[^9], ACM Digital Library[^10], and IEEE Xplore[^11] were used for the searching
+process with the aforementioned queries. In order to keep a database with only the relevant
+articles, the following inclusion criteria were applied to all the hits. It is important to notice
+that in addition to the results obtained by searching with the specific query, the first page of
+the “related articles”link for the top cited articles was also inspected. 
 
 | Criteria | Value        | 
 |----------------|-------------|
@@ -141,10 +141,6 @@ Techniques used for doing the analysis
 
 The bullet points can be found in the appendix of this chapter.
 
-### Initial grouping of papers
-
-TODO
-
 ## Answers 
 
 ### **RQ1** What is the state of the art in Review Analysis? Specifically:
@@ -165,9 +161,9 @@ we expand on each one of these with the revised literature.
 
 Recently, significant attention has been paid to how the reviews and ratings can be used to
 influence the number of downloads of a particular app in the App Store. In their paper,
-@i2017crowdsourced analyzed the use of crowdsourcing platforms such as Microworkers[^8] to manipulate
-the ratings. The authors merged data from two different sources, App Store and crowdsourcing site,
-to identify manipulated reviews.
+@i2017crowdsourced analyzed the use of crowdsourcing platforms such as Microworkers[^8] to
+manipulate the ratings. The authors merged data from two different sources, App Store and
+crowdsourcing site, to identify manipulated reviews.
 
 In @chen2017toward the authors propose an approach to identify attackers of collusive promotion
 groups in the app store. They use ranking changes and measurements of pairwise similarity to form
@@ -196,58 +192,56 @@ Challenges & Future Research:
 Users use reviews as a way to express their attitude (positive and negative) towards an app. Most
 of the time, these reviews do not have enough information as are mostly composed of a small number
 of uninformative words. Another important portion of reviews contains information that can be used
-in the improvement and evolution of the apps. In the survey @REFERENCE, Martin et al. described
-summarization, classification, and requirements engineering as categories of the subfield of Review
-Analytics. These areas are converging and in recent work (after 2015) it can be observed how
-summarization and classification, among other techniques, are being used to complement development,
-maintenance and evolution tasks.
- In 2016, Di Sorbo et al. introduced SURF @di2016would, an approach to condense a large number of
-reviews, extracting useful information from them. In a subsequent paper (@panichella2016ardoc),
-Panichella et al presented techniques for classifying useful feedback in the context of maintenance
-and evolution of the apps. In their work, the authors make use of machine learning supervised
-methods in conjunction with natural language processing (NLP), sentiment analysis (SA), and text
-analysis (TA) techniques. Unsupervised methods for review clustering were explored in @anchieta2017
-by Anchiêta et al. In the article, the authors introduced a technique to categorize reviews in
-order to generate a summary of the main bugs and features. 
- Taking into account the high dimensionality of the datasets that are used for review mining, in
-@jha2017mining, Jha et al. proposed a semantic approach for app review classification. By using
-semantic role labeling, the authors could make the classification process more efficient. In
-@gao2018online, Gao et al. presented IDEA. A framework for identifying emerging app issues
+in the improvement and evolution of the apps. In the survey [@martin2015survey], Martin et al.
+described summarization, classification, and requirements engineering as categories of the subfield
+of Review Analytics. These areas are converging and in recent work (after 2015) it can be observed
+how summarization and classification, among other techniques, are being used to complement
+development, maintenance and evolution tasks. In 2016, Di Sorbo et al. introduced SURF
+@di2016would, an approach to condense a large number of reviews, extracting useful information from
+them. In a subsequent paper (@panichella2016ardoc), Panichella et al presented techniques for
+classifying useful feedback in the context of maintenance and evolution of the apps. In their work,
+the authors make use of machine learning supervised methods in conjunction with natural language
+processing (NLP), sentiment analysis (SA), and text analysis (TA) techniques. Unsupervised methods
+for review clustering were explored in @anchieta2017 by Anchiêta et al. In the article, the authors
+introduced a technique to categorize reviews in order to generate a summary of the main bugs and
+features. Taking into account the high dimensionality of the datasets that are used for review
+mining, in @jha2017mining, Jha et al. proposed a semantic approach for app review classification.
+By using semantic role labeling, the authors could make the classification process more efficient.
+In @gao2018online, Gao et al. presented IDEA. A framework for identifying emerging app issues
 effectively based on an online review analysis. To achieve this, the paper uses information from
 different time slices (versions). And use the changelogs of the studied apps as the ground truth
 for the validation of their approach. This is one of the only studies in the reviewed literature
-that presents a case study (Tencent) as an example to the viability of IDEA.
- Most of the datasets used in the papers analyzed in this section can be characterized by a small
-number of apps and a considerable amount of reviews. Di Sorbo et al. @di2016would used 17 apps and
-3439 reviews. Anchiêta et al. @anchieta2017 gathered more than 50000 reviews from 3 apps, but after
-the preprocessing step the dataset was reduced to 924 records. Jha et al. @jha2017mining used a
+that presents a case study (Tencent) as an example to the viability of IDEA. Most of the datasets
+used in the papers analyzed in this section can be characterized by a small number of apps and a
+considerable amount of reviews. Di Sorbo et al. @di2016would used 17 apps and 3439 reviews.
+Anchiêta et al. @anchieta2017 gathered more than 50000 reviews from 3 apps, but after the
+preprocessing step the dataset was reduced to 924 records. Jha et al. @jha2017mining used a
 structured sampling procedure to mix reviews from different datasets. Its final size was 2917
 reviews. Finally, Gao et al. @gao2018online used reviews from 6 apps (2 from the App Store and 4
 from Google Play) and the final dataset contained 164,026 reviews, one of the largest that has been
 used.
 
-**Mapping user reviews to source code**
-Another research direction that has become active in the past years is combining the results of
-mining  the app reviews with the source code to directly provide developers with valuable and
-actionable information to improve their products. In @palomba2017recommending, Palomba et al.
-presented a new approach called ChangeAdvisor. It extracts useful feedback from reviews and
-recommends developers changes to specific software artifacts. In the paper, metric distances such
-as the Dice coefficient are used in order to map a specific subset of reviews to a section of the
-source code. A complementary work was presented in @palomba2018crowdsourcing. In this study,
-Palomba et al. investigated the extent to which app developers take app reviews into account. To
-achieve this, they introduced CRISTAL. An approach for tracing informative crowd reviews onto
-source code changes, and for monitoring the extent to which developers accommodate crowd requests
-and follow-up user reactions as reflected in their ratings.
- Linting mechanisms and their effectivity have also been studied. In @wei2017oasis, Wei et al.
+**Mapping user reviews to source code** Another research direction that has become active in the
+past years is combining the results of mining  the app reviews with the source code to directly
+provide developers with valuable and actionable information to improve their products. In
+@palomba2017recommending, Palomba et al. presented a new approach called ChangeAdvisor. It extracts
+useful feedback from reviews and recommends developers changes to specific software artifacts. In
+the paper, metric distances such as the Dice coefficient are used in order to map a specific subset
+of reviews to a section of the source code. A complementary work was presented in
+@palomba2018crowdsourcing. In this study, Palomba et al. investigated the extent to which app
+developers take app reviews into account. To achieve this, they introduced CRISTAL. An approach for
+tracing informative crowd reviews onto source code changes, and for monitoring the extent to which
+developers accommodate crowd requests and follow-up user reactions as reflected in their ratings.
+Linting mechanisms and their effectivity have also been studied. In @wei2017oasis, Wei et al.
 proposed  an approach, OASIS, for prioritizing the Android Lint warnings. It uses NLP techniques
 (tokenization, word removing, word stemming, and TF-IDF distance) to find the links between the
 user reviews and the Lint warnings. According to the paper, this is relevant given that one of the
-problems of linters is the number of false alarms they provide. 
- Regarding the datasets that were used for validation even though the analyzed papers use a reduced
-amount of apps (except @palomba2018crowdsourcing that used 100), as in the previous section, they
-use more reviews (more than 20,000). Additionally, as the aim of the works in this section directly
-involve the developers, they complement the quantitatively apps-reviews-based experiments with
-qualitative ones. 
+problems of linters is the number of false alarms they provide. Regarding the datasets that were
+used for validation even though the analyzed papers use a reduced amount of apps (except
+@palomba2018crowdsourcing that used 100), as in the previous section, they use more reviews (more
+than 20,000). Additionally, as the aim of the works in this section directly involve the
+developers, they complement the quantitatively apps-reviews-based experiments with qualitative
+ones. 
 
 **Privacy / app permissions**
 Since Android Marshmallow the Android operating system uses a run-time permission-based security
