@@ -243,7 +243,6 @@ the star rating was not consistent across platforms.
 
 
 **Wearables**
-<<<<<<< HEAD
 User reviews can also be mined to understand user complaints, Mujahid et al. did this in a case study on Android Wear [@mujahid2017examining]. More specifically, they sampled 589 reviews from 6 Android wearable apps and found that there were 15 unique complaint types that could be extracted from the sample. The sample was created from mining the reviews of 4722 wearable apps and selecting the apps that have more than 100 reviews with a rating of one or two stars. After manually assigning categories to the reviews in the sample they concluded that the most frequent complaints in this relatively small sample were complaints related to cost, functional errors and a lack of functionality.
 
 ### **RQ2** What is the state of practice in Review Analysis? Specifically:
@@ -287,24 +286,6 @@ using user reviews. There are tools that analyze apps and app performance, but n
 comparing.
 
 ### **RQ3** Which are the challenges and future research that the field is facing or will face?
-=======
-
-* **RQ2** What is the state of practice in Review Analysis? Specifically:
-    - Which are the tools and the companies that create/employ them?
-    - Case studies and their findings.
-
-* Best practices for responding to reviews based on millions of reviews:
-  https://support.appbot.co/help-docs/best-practices-replying-to-ios-and-google-play-reviews/.
-  There are also tools such as AppSee which contain guides for responding to reviews and perform
-  sentiment analysis of the user reviews. 
-* To this day there are, to the best of our knowledge, no tools that compare apps and app stores
-  using user reviews. There are tools that analyze apps and app performance, but no tools for
-  comparing.
-
-TODO
-
-* **RQ3** Which are the challenges and future research that the field is facing or will face?
->>>>>>> RQ3Gijs
 
 In this section, we present challenges and future trends for the field of Review Analytics and the
 subcategories that were identified in previous sections. 
@@ -341,7 +322,7 @@ Quantifying and understanding the effects of run-time permission requests on the
 
 *Responding to reviews:*
 There is a need for an in-depth study of how developers and users are using the review mechanism right now to find out how the mechanism can be improved.
-Right now developers can respond to 500 user reviews per day using the Google Play API, it is worth investigating whether a limit of 500 responses is sufficient to ban useless responses from the
+Right now developers can respond to 500 user reviews per day using the Google Play API[^7]. It could be worth investigating whether a limit of 500 responses is sufficient to ban useless responses from the
   store such as thanking every user.
 
 *Comparing Apps and App stores:*
@@ -610,3 +591,4 @@ requirements evolution and future research direction.
 [^4]: <https://support.google.com/googleplay/android-developer/answer/138230?hl=en>
 [^5]: <https://appbot.co/>
 [^6]: <https://thetool.io/>
+[^7]: <https://developers.google.com/android-publisher/reply-to-reviews>
