@@ -300,7 +300,7 @@ In this chapter, three different research questions about software testing analy
 (1) How do developers currently test? (2) What state of the art technologies are being used? (3) 
 What future developments can be expected?
 
-Regarding the current testing practices of developers, we found that developers do not seem to 
+Regarding the current testing practices of developers (RQ1), we found that developers do not seem to 
 update their tests very often and when they do, it is because of a changed condition in production 
 code lines. Furthermore, older uncovered production code lines are not likely to be covered in the 
 end. Developers, thus, seem to ignore indications of their code coverage tools or do not seem to use
@@ -312,7 +312,7 @@ also seems to be a confusing term for developers, as there is not enough clear g
 implementation of it. The actual ratio of TLD and TDD is, therefore, unknown but can be guessed with
 great certainty to be much lower for TDD than for TDD.
 
-The current state of the art in testing analytics consists of research in co-evolution and 
+The current state of the art in testing analytics (RQ2) consists of research in co-evolution and 
 generation of tests, and risk-driven testing. Approaches are proposed for automatically repairing 
 and generating test cases during software evolution. While fully automated test suite generation is 
 not there yet, a tool is introduced that generates the templates for tests, which guarantees 
@@ -320,7 +320,7 @@ compilation, supports exception handling and finds a suitable location for the t
 risk-driven testing, new risk measures are defined which make prioritizing certain high-risk tests 
 able while running the entire test-suite, which could make the suite detect failing tests earlier.
 
-For future developments, further research can be expected on the front of automated test generation.
+For future developments (RQ3), further research can be expected on the front of automated test generation.
 Even with some discussion regarding the effectiveness of test generation, the field currently agrees
 that conducting research in order to find, especially, realistic ways of generating tests is 
 worthwhile. We also found that risk-driven testing has been given more attention in the form of 
