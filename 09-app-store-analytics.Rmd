@@ -363,6 +363,11 @@ sample should be carefully selected, given that the number of suspicious apps is
 1% of all apps), taking into account the size of the app stores.
 
 *Requirements Engineering:* 
+More case studies are needed in order to validate how useful the extracted requirements are in the
+context of software development. Also, as machine learning is starting to be heavily used, models
+that are tailored to the reviews data will be created. The large amounts of noise that is present
+in the reviews is still a challenge that needs a careful study of the preprocessing steps that are
+used while assembling the datasets.
 
 *Mapping user reviews to source code:*
 There is a need to better understand the “language of source code” as this will be important to
@@ -380,13 +385,11 @@ permissions an app needs. Another possible future direction is researching and c
 help developers put permission requests in the right place to avoid bugs related to permissions and
 permission requests.
 
-
 *Responding to reviews:*
 There is a need for an in-depth study of how developers and users are using the review mechanism
 right now to find out how the mechanism can be improved. Right now developers can respond to 500
 user reviews per day using the Google Play API[^7]. It could be worth investigating whether a limit
 of 500 responses is sufficient to ban useless responses from the store such as thanking every user.
-
 
 *Comparing Apps and App stores:*
 One of the open challenges is including indirect relationships in the comparisons as only direct
