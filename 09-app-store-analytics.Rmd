@@ -19,7 +19,7 @@ categories: API Analysis, Review Analytics, Security, Store Ecosystem, Size and 
 Prediction, Release Engineering, and Feature Analysis. Given that relevant literature on the field
 of App Store Analytics has been already gathered and analyzed, it makes sense to use this chapter
 to go a step further. We delve deeper into the subfield of Review Analysis.
-We started with the literature proposed by @martin2015survey and extended it with the relevant
+We started with the literature proposed by Martin et al. in [@martin2015survey] and extended it with the relevant
 articles that were published after 2015.  We then used the data to answer the following research
 questions:
 
@@ -151,36 +151,36 @@ The bullet points can be found in the appendix of this chapter.
   - Which are the main research findings (aggregated)?
 
 To answer the question at hand we looked at the novel ideas and the research that has been done in
-this field since that time. In their survey, @martin2015survey proposed “Classification”,
-“Content”, “Requirements Engineering”, “Sentiment”, “Summarization” and “Surveys and Methodological
-Aspects of App Store Analysis” to categorize the existing literature. After analyzing posterior
-work, we propose new categories that reflect better the state of the art in this field. These are:
-“Review Manipulation”, “Mapping user reviews to the source code”, “Privacy / App Permissions”,
-“Responding to reviews”, “Comparing Apps and App stores and Wearables”. In the following sections,
-we expand on each one of these with the revised literature.
+this field since that time. In their survey [@martin2015survey] Martin et al. proposed
+“Classification”,“Content”,“Requirements Engineering”, “Sentiment”, “Summarization” and “Surveys
+and Methodological Aspects of App Store Analysis” to categorize the existing literature. After
+analyzing the subsequent work, we suggest new categories that reflect the state of the art in this
+field. These are:“Review Manipulation”, “Requirements Engineering”, “Mapping user reviews to the
+source code”, “Privacy / App Permissions”, “Responding to reviews”, “Comparing Apps and App Stores”
+and “Wearables”. In the following sections, we expand on each one of these with the revised
+literature.
 
 **Review Manipulation**
 
 Recently, significant attention has been paid to how the reviews and ratings can be used to
-influence the number of downloads of a particular app in the App Store. In their paper,
-@i2017crowdsourced analyzed the use of crowdsourcing platforms such as Microworkers[^8] to
+influence the number of downloads of a particular app in the App Store. The paper by Li et al. [@i2017crowdsourced] analyzed the use of crowdsourcing platforms such as Microworkers[^8] to
 manipulate the ratings. The authors merged data from two different sources, App Store and
 crowdsourcing site, to identify manipulated reviews.
 
-In @chen2017toward the authors propose an approach to identify attackers of collusive promotion
+Chen at al. [@chen2017toward] proposes an approach to identify attackers of collusive promotion
 groups in the app store. They use ranking changes and measurements of pairwise similarity to form
 targeted app clusters (TAC) that they later use to pinpoint attackers. A different approach to the
-same problem was proposed by @xie2016you. In the paper, the authors identify manipulated app
+same problem was proposed in [@xie2016you]. In the paper, Xie et al., identify manipulated app
 ratings based on the so-called attack signatures. They present a graph-based algorithm for
 achieving this purpose in linear time. 
 
-These papers also show that the percentage of manipulated apps in the app stores is not the
-majority of the used samples (@xie2016you found that less than 1% of the apps were suspicious).
-Regarding the datasets, the work by @i2017crowdsourced used the smaller amount of app store data.
-Considering that they manage to merge it from data from an external crowdsourcing site. In the case
-of the other two papers, they can be characterized by the small number of considered apps (compared
-to the total number of apps in the main marketplaces), but the significant number of reviews that
-were analyzed. This makes sense, considering that the main purpose is to investigate the later. 
+These papers also show that the percentage of apps that manipulate their reviews in the app stores
+is small --- less than 1 % of the apps were suspicious [@xie2016you]. Regarding the datasets, the
+work by Li et al. [@i2017crowdsourced] used a smaller amount of app store data, but they merged it
+with data from an external crowdsourcing site. In the case of the other two papers, they can be
+characterized by the small number of considered apps (compared to the total number of apps in the
+main marketplaces), but the significant number of reviews that were analyzed. That makes sense,
+considering that the main purpose is to investigate the later. 
 
 
 **Requirements Engineering**
