@@ -115,7 +115,7 @@ acceptance tests, the number of defects in the last week, or defects per Line of
 testing. For example, according to Beller et al. @Beller:2015:DT:2819009.2819101 a code coverage of
 75% can possibly be
 reached with only spending less than a tenth of the total development time on testing. Another
-concern of using test coverage as a metric is the concept of treating the metric @
+concern of using test coverage as a metric is the concept of treating the metric @bouwers2012a
 , where developers try to uplift the value of code coverage by hitting many lines with only a few
 test cases. Marsavina et al. @marsavina2014 observed that test cases were rarely
 updated when changes related to attributes or methods in the production code were made. Possible 
@@ -204,7 +204,7 @@ handling and finds a suitable location for the test. Developers still need to fi
 themselves, but the template is there. The technique looks at the context in order to decide what 
 template to use. Robinson et al. @robinson2011 created a regression unit tests generation tool.
 It is a suite of 
-techniques for enhancing an existing unit test generation system. Experiments are performed using 
+techniques for enhancing an existing unit test generation system. The authors performed experiments using 
 an industrial system. The generated tests from these experiments achieved good coverage and mutation 
 kill score, were readable by the product developers and required few edits as the system under test 
 evolved. Dulz @dulz2013model found that by directly adjusting specific probability values in the
