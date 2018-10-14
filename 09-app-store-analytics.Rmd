@@ -58,7 +58,7 @@ After doing this, the following search queries were generated:
 “app store analytics” AND “reviews”, “app reviews”
 ```
 
-Google Scholar[^9], ACM Digital Library[^10], and IEEE Xplore[^11] were used for the searching
+Google Scholar[^1], ACM Digital Library[^2], and IEEE Xplore[^3] were used for the searching
 process with the queries mentioned above. In order to build a database using only the relevant
 articles, the following inclusion criteria were applied to the found articles. In addition to the
 results obtained by searching with the specific query, the first page of the “related articles”
@@ -163,7 +163,7 @@ literature.
 
 Recently, significant attention has been paid to how the reviews and ratings can be used to
 influence the number of downloads of a particular app in the App Store. The paper by Li et al.
-[@i2017crowdsourced] analyzed the use of crowdsourcing platforms such as Microworkers[^8] to
+[@i2017crowdsourced] analyzed the use of crowdsourcing platforms such as Microworkers[^4] to
 manipulate the ratings. The authors merged data from two different sources, App Store and
 crowdsourcing site, to identify manipulated reviews.
 
@@ -317,16 +317,16 @@ the researchers and the number of studies done on the solutions that had been de
 
 We were not able to find any academic publication on the solutions used by the actual app stores
 (Google Play and App Store), but we have found that both app stores automatically detect fake
-reviews [^1],[^2]. In 2016 Google deployed their review analytics solution, called Review
-Highlights[^3], into production for both developers and customers, but at the time of writing this
+reviews [^5],[^6]. In 2016 Google deployed their review analytics solution, called Review
+Highlights[^7], into production for both developers and customers, but at the time of writing this
 survey (October 2018), the Review Highlights no longer show up in the public facing part of Google
-Play Store and are only accessible in the developer console[^4].
+Play Store and are only accessible in the developer console[^8].
 
 
 #### State of the third-party tools
 Many third-party services focus on app store analysis. They usually focus on showing aggregated
 statistics from the app stores and some of them also analyze the user review. Tools such as
-AppBot[^5] or TheTool[^6] perform sentiment analysis on the reviews and show it as an additional
+AppBot[^9] or TheTool[^10] perform sentiment analysis on the reviews and show it as an additional
 metric next to the star rating. AppBot also categorizes reviews based on the keywords inside them.
 It may seem like a low-tech approach, but it makes it easy for the users to reason about why a
 certain review is assigned to a specific category. We were not able to find any third-party tools
@@ -383,9 +383,9 @@ related to permissions and permission requests.
 
 *Responding to reviews:* There is a need for an in-depth study of how developers and users are
 using the review mechanism right now to find out how the mechanism can be improved. Right now
-developers can respond to 500 user reviews per day using the Google Play API[^7]. It could be worth
-investigating whether a limit of 500 responses is sufficient to ban useless responses from the
-store such as thanking every user.
+developers can respond to 500 user reviews per day using the Google Play API[^11]. It could be
+worth investigating whether a limit of 500 responses is sufficient to ban useless responses from
+the store such as thanking every user.
 
 *Comparing Apps and App stores:* One of the open challenges is including indirect relationships in
 the comparisons as only direct relationships were used in work by Li et al. [@li2017mining]. Next,
@@ -645,15 +645,15 @@ Supérieure (ETS) - Université du Québec, Canada
 store user reviews, challenges and unsolved problems in the domain, new contributions to software
 requirements evolution and future research direction.
 
-[^1]: <https://www.macrumors.com/2016/10/10/apple-dash-developer-fraudulent-reviews/>
-[^2]: <https://android-developers.googleblog.com/2016/11/keeping-it-real-improving-reviews-and-ratings-in-google-play.html>
-[^3]:
+[^1]: <https://scholar.google.com/>
+[^2]: <https://dl.acm.org/>
+[^3]: <https://ieeexplore.ieee.org/>
+[^4]: <https://www.microworkers.com/>
+[^5]: <https://www.macrumors.com/2016/10/10/apple-dash-developer-fraudulent-reviews/>
+[^6]: <https://android-developers.googleblog.com/2016/11/keeping-it-real-improving-reviews-and-ratings-in-google-play.html>
+[^7]:
 <https://android-developers.googleblog.com/2016/02/new-tools-for-ratings-reviews-on-google.html>
-[^4]: <https://support.google.com/googleplay/android-developer/answer/138230?hl=en>
-[^5]: <https://appbot.co/>
-[^6]: <https://thetool.io/>
-[^7]: <https://developers.google.com/android-publisher/reply-to-reviews>
-[^8]: <https://www.microworkers.com/>
-[^9]: <https://scholar.google.com/>
-[^10]: <https://dl.acm.org/>
-[^11]: <https://ieeexplore.ieee.org/>
+[^8]: <https://support.google.com/googleplay/android-developer/answer/138230?hl=en>
+[^9]: <https://appbot.co/>
+[^10]: <https://thetool.io/>
+[^]: <https://developers.google.com/android-publisher/reply-to-reviews>
