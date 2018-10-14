@@ -334,9 +334,8 @@ using user reviews. Some tools analyze apps and app performance, but no tools fo
 
 ### **RQ3** Which are the challenges and future research that the field is facing or will face?
 
-RQ3 Which are the challenges and future research that the field is facing or will face? In this
-section, we present challenges and future research directions for the field of Review Analytics and
-the subcategories that were identified in previous sections.
+In this section, we present challenges and future research directions for the field of Review
+Analytics and the subcategories that were identified in previous sections.
 
 A significant aspect of the research process is the validation of the proposed tools and frameworks
 and the assessment of how generalizable they are. To accomplish this, it is necessary to have
@@ -378,7 +377,7 @@ related to permissions and permission requests.
 
 *Responding to reviews:* There is a need for an in-depth study of how developers and users are using
 the review mechanism right now to find out how the mechanism can be improved. Right now developers
-can respond to 500 user reviews per day using the Google Play API^7. It could be worth
+can respond to 500 user reviews per day using the Google Play API[^7]. It could be worth
 investigating whether a limit of 500 responses is sufficient to ban useless responses from the
 store such as thanking every user.
 
