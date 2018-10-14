@@ -184,37 +184,39 @@ considering that the main purpose is to investigate the later.
 
 
 **Requirements Engineering**
-Users use reviews as a way to express their attitude (positive and negative) towards an app. Most
-of the time, these reviews do not have enough information as are mostly composed of a small number
-of uninformative words. Another important portion of reviews contains information that can be used
-in the improvement and evolution of the apps. In the survey [@martin2015survey], Martin et al.
-described summarization, classification, and requirements engineering as categories of the subfield
-of Review Analytics. These areas are converging and in recent work (after 2015) it can be observed
-how summarization and classification, among other techniques, are being used to complement
-development, maintenance and evolution tasks. In 2016, Di Sorbo et al. introduced SURF
-@di2016would, an approach to condense a large number of reviews, extracting useful information from
-them. In a subsequent paper (@panichella2016ardoc), Panichella et al presented techniques for
-classifying useful feedback in the context of maintenance and evolution of the apps. In their work,
-the authors make use of machine learning supervised methods in conjunction with natural language
-processing (NLP), sentiment analysis (SA), and text analysis (TA) techniques. Unsupervised methods
-for review clustering were explored in @anchieta2017 by Anchiêta et al. In the article, the authors
-introduced a technique to categorize reviews in order to generate a summary of the main bugs and
-features. Taking into account the high dimensionality of the datasets that are used for review
-mining, in @jha2017mining, Jha et al. proposed a semantic approach for app review classification.
-By using semantic role labeling, the authors could make the classification process more efficient.
-In @gao2018online, Gao et al. presented IDEA. A framework for identifying emerging app issues
-effectively based on an online review analysis. To achieve this, the paper uses information from
-different time slices (versions). And use the changelogs of the studied apps as the ground truth
-for the validation of their approach. This is one of the only studies in the reviewed literature
-that presents a case study (Tencent) as an example to the viability of IDEA. Most of the datasets
-used in the papers analyzed in this section can be characterized by a small number of apps and a
-considerable amount of reviews. Di Sorbo et al. @di2016would used 17 apps and 3439 reviews.
-Anchiêta et al. @anchieta2017 gathered more than 50000 reviews from 3 apps, but after the
-preprocessing step the dataset was reduced to 924 records. Jha et al. @jha2017mining used a
-structured sampling procedure to mix reviews from different datasets. Its final size was 2917
-reviews. Finally, Gao et al. @gao2018online used reviews from 6 apps (2 from the App Store and 4
-from Google Play) and the final dataset contained 164,026 reviews, one of the largest that has been
-used.
+Users use reviews as a way to express their attitude (positive and negative) towards an app. The
+informative value of individual reviews is usually low, but as a whole, they can be mined for
+knowledge usable in the improvement and advancement of the apps. The survey by Martin et al.
+[@martin2015survey] described summarization, classification, and requirements engineering as
+categories of the subfield of Review Analytics. These areas are converging and in recent work
+(after 2015) summarization and classification, among other techniques, are being used to complement
+the development, maintenance, and evolution of the apps.
+
+In 2016, Di Sorbo et al. introduced SURF [@di2016would], an approach to condense a large number of
+reviews and extracting useful information from them. In a subsequent paper Panichella et al.
+[@panichella2016ardoc] presented techniques for classifying useful feedback in the context of
+maintenance and evolution of the apps. In their work, the authors make use of machine learning
+supervised methods in conjunction with natural language processing (NLP), sentiment analysis (SA),
+and text analysis (TA) techniques. Unsupervised methods for review clustering were explored in a
+paper by Anchiêta et al. [@anchieta2017]. The authors introduced a technique to categorize reviews
+in order to generate a summary of the main bugs and features. Taking into account the high
+dimensionality of the datasets that are used for review mining, Jha et al. [@jha2017mining]
+proposed a semantic approach for app review classification. By using semantic role labeling, the
+authors could make the classification process more efficient. Gao et al. presented IDEA
+[@gao2018online]; a framework for identifying emerging app issues based on an online review
+analysis. IDEA uses information from different time slices (versions) for identification of the
+issues, and the changelogs of the studied apps as the ground truth for the validation of their
+approach. It is the only paper in the reviewed literature that presents a case study (of deployment
+in Tencent) as an example of the viability of IDEA. 
+
+Most of the datasets used in the papers analyzed in this section can be characterized by a small
+number of apps and a substantial amount of reviews. Di Sorbo et al. [@di2016would] used 17 apps and
+3439 reviews. Anchiêta et al. [@anchieta2017] gathered more than 50000 reviews from 3 apps, but
+after the preprocessing step the dataset was reduced to 924 records. Jha et al. [@jha2017mining]
+used a structured sampling procedure to mix reviews from different datasets. The final size was
+2917 reviews. Finally, Gao et al. [@gao2018online] used reviews from 6 apps (2 from the App Store
+and 4 from Google Play), and the final dataset contained 164,026 reviews, one of the largest that
+had been used.
 
 **Mapping user reviews to source code** Another research direction that has become active in the
 past years is combining the results of mining  the app reviews with the source code to directly
