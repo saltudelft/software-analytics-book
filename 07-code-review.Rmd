@@ -622,14 +622,9 @@ published in 2008 or later. Though it was included as a candidate bec
 ## Answers
 ### RQ1
 ### RQ2
-Still need to be modified.
-To answer the second research question, we split into 3 sub questions according to our researches of related papers.
-* *Is code review popular in industries currently?* 
-By collecting information from papers, we know that around one fourth of researched companies regard code review process as a regular process and about 60 percent of respondents are implementing tool-based code review from different companies who are selling code review tools.
-* *What are current situations for application of code review tools in indurstries?* From statistics in our researched papers, most of the teams use at least one specialized review tool. One third teams use only general software development
-tools, like ticket system and version control system, for review. Some develop teams indicate no tool has been used in their review.
-* *What are popular choices as code review tools?*
-Usually there are two groups. For some teams, there are no specialized review software is in use. Instead, the teams use a combination of IDE, source code management system (SCM) and ticket system/bug tracker. For others, the following tools were used or mentioned: Gerrit, Crucible, Stash, GitHub pull requests, Upsource, Collaborator, ReviewClipse and CodeFlow.
+When it comes to application of code review in industries, we collect information from three perspectives, namely, popularity, variety and choices of tools. By collecting information from papers, we know that around one fourth of researched companies regard code review process as a regular process and about 60 percent of respondents are implementing tool-based code review based on analysis from different companies who are selling code review tools. Most of the teams use at least one specialized review tool. One third teams use only general software development tools, like ticket system and version control system, for review. Some develop teams indicate no tool has been used in their review. Considering that there are various tools of code review, we find there are two groups. Specifically, for some teams, there are no specialized review software is in use. Instead, the teams use a combination of IDE, source code management system (SCM) and ticket system/bug tracker. For others, the following tools were used or mentioned: Gerrit, Crucible, Stash, GitHub pull requests, Upsource, Collaborator, ReviewClipse and CodeFlow.
+
+Conclusively, based on different enterprises' expectation and requirments, they apply various ways for code review. It is hard to say which tool is generally better than others. We have to admit that code review is commonly applied in industries and also it is a nice way to guarantee quality of software.
 ### RQ3
 
 *What are future challenges in the area of code review?*
