@@ -196,7 +196,7 @@ discovering errors.
 
 To answer the second research question, we split into 3 sub questions according to our researches of related papers.
 * *Is code review popular in industries currently?* 
-By collecting information from different companies who are selling code review tools in papers, we know that around one fourth of researched companies regard code review process as a regular process and about 60 percent of respondents are implementing tool-based code review.
+By collecting information from papers, we know that around one fourth of researched companies regard code review process as a regular process and about 60 percent of respondents are implementing tool-based code review from different companies who are selling code review tools.
 * *What are current situations for application of code review tools in indurstries?* From statistics in our researched papers, most of the teams use at least one specialized review tool. One third teams use only general software development
 tools, like ticket system and version control system, for review. Some develop teams indicate no tool has been used in their review.
 * *What are popular choices as code review tools?*
