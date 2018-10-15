@@ -126,6 +126,23 @@ we summarize which research methods, tools and datasets are being used to explor
 The main topics we explored in ecosystem analytics are the usage of trivial packages, (breaking)
 changes in dependencies and their impacts, quality of dependencies and dependency networks.
 
+Trivial packages are a recurring topic in the area of software analyitics, notably incidents
+like Left-pad stress the possible impact trivial packages can have on a software ecosystem.
+Research in this topic explores the usage of trivial packages both quantitively and qualitively
+by analysing the usage of the trivial packages and the reasons why developers choose to use them
+respectively.
+
+Breaking changes is a major topic researched by some papers. Much like trivial packages research
+is done both quantitively and qualitively in this topic. The impact of breaking changes and the
+way in which developers react to these changes are considered to be the notable problems in 
+this topic.
+
+Establishing a metric for the health of an ecosystem dependency is also a heavily explored topic.
+Researchers are trying to find ways in which a metric can be used to establish the quality of
+dependencies.
+
+Dependency networks allow us to gain insight in the way in which ecosystems evolve over time.
+
 #### Used Research Methods
 The studied papers cover a plethora of research methods. These methods can be divided into two
 categories: quantitative and qualitative. The first thing that is common in the studied papers is
