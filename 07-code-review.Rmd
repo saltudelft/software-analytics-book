@@ -795,6 +795,34 @@ across subsystems.
 #### Who should review this change?: Putting text and file location analyses together for more accurate recommendations
 Reference: @xia2015should
 
+#### Mining the Modern Code Review Repositories: A Dataset of People, Process and Product
+Reference: @yang2016mining
+
+**Summary**  
+This paper introduces a dataset that has been systematically collected from review data from
+several projects. The subject projects are OpenStack, LibreOffice, AOSP, Qt and Eclipse.
+The dataset is made public for the purpose of doing further research using it. Also, tools may be
+tested on the data in the dataset, in order to have one benchmark dataset to compare different
+tools.
+
+For answering **RQ1**
+* *Sub-topic*: tools; dataset
+* *Research method*: N/A
+* *Tools*: N/A
+* *Datasets*: Review data from the OpenStack, LibreOffice, AOSP, Qt and Eclipse projects
+
+**Research questions and answers**  
+N/A
+
+For answering **RQ2**
+* *Tools*: Gerrit
+* *Company/Organization*: OpenStack, LibreOffice, AOSP, Qt, Eclipse
+* *Evaluation*: N/A
+
+For answering **RQ3**
+**Future research challenges**  
+Research using the dataset that has been created, and tests of tools on the dataset.
+
 #### Automatically recommending peer reviewers in modern code review
 Reference: @zanjani2016automatically
 
@@ -865,7 +893,7 @@ published in 2008 or later. Though it was included as a candidate bec
 | Who should review my code? A file location-based code-reviewer recommendation approach for modern code review | 2015 | @thongtanunam2015should     | 29-09-2018  | 5             | Y                |
 | Revisiting code ownership and its relationship with software quality in the scope of modern code review       | 2016 | @thongtanunam2016revisiting | 29-09-2018  | 6             | Y                |
 | Review participation in modern code review                                                                    | 2017 | @thongtanunam2017review     | 29-09-2018  | 10            | Y                |
-| Mining the Modern Code Review Repositories: A Dataset of People, Process and Product                          | 2016 | @yang2016mining             | 29-09-2018  | 12            |                  |
+| Mining the Modern Code Review Repositories: A Dataset of People, Process and Product                          | 2016 | @yang2016mining             | 29-09-2018  | 12            | Y                |
 | Automatically recommending peer reviewers in modern code review                                               | 2016 | @zanjani2016automatically   | 29-09-2018  | 7             | Y                |
 
 ### Table 3
