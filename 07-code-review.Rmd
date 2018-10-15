@@ -116,6 +116,7 @@ search are considered in order of search result number. The *Search date* and *R
 columns indicate the date on which the search was executed and the position in the search result
 list, respectively. Details can be found in Table 2 in appendix.
 
+
 ### By reference
 We list all candidates that have been found by being referenced by another paper
 we found in Table 3 in appendix. 
@@ -553,6 +554,35 @@ context of contextual factors. Understanding the reasons behind observable devel
 requires an understanding of the contexts, processes, organizational and individual factors that
 can influence code review and its outcome.
 
+### ReDA: A Web-based Visualization Tool for Analyzing Modern Code Review Dataset
+Reference: @thongtanunam2014reda
+
+#### Summary
+This paper intoduces *ReDA*, a web-based visualization tool for code review datasets. It processes
+data from Gerrit, presents statistics about the data, visualizes it, and points the user towards
+possible problems occurring during the review process. It was tested briefly on some open-source
+projects.
+
+#### For answering **RQ1**
+* *Sub-topic*: visualization; tools
+* *Research method*: qualitative; empirical
+* *Tools*: ReDA
+* *Datasets*: Android code review data
+
+#### Research questions and answers
+N/A
+
+#### For answering **RQ2**
+* *Tools*: N/A
+* *Company/Organization*: N/A
+* *Evaluation*: N/A
+
+#### For answering **RQ3**
+#### Future research challenges
+The authors aim to develop a live code review monitoring dashboard based on ReDA. They also aim
+to create a more portable version of ReDA that is also compatible with other tools supporting the
+MCR process.
+
 #### Who should review my code? A file location-based code-reviewer recommendation approach for modern code review
 Reference: @thongtanunam2015should
 
@@ -707,7 +737,7 @@ published in 2008 or later. Though it was included as a candidate bec
 | Modern code review                                                                                            | 2010 | @cohen2010modern            | 25-09-2018  | 1             | N                |
 | An empirical study of the impact of modern code review practices on software quality                          | 2016 | @mcintosh2016empirical      | 25-09-2018  | 4             | N                |
 | A Study of the Quality-Impacting Practices of Modern Code Review at Sony Mobile                               | 2016 | @shimagaki2016study         | 29-09-2018  | 11            |                  |
-| Reda: A web-based visualization tool for analyzing modern code review dataset                                 | 2014 | @thongtanunam2014reda       | 29-09-2018  | 8             |                  |
+| Reda: A web-based visualization tool for analyzing modern code review dataset                                 | 2014 | @thongtanunam2014reda       | 29-09-2018  | 8             | Y                |
 | Who should review my code? A file location-based code-reviewer recommendation approach for modern code review | 2015 | @thongtanunam2015should     | 29-09-2018  | 5             | Y                |
 | Revisiting code ownership and its relationship with software quality in the scope of modern code review       | 2016 | @thongtanunam2016revisiting | 29-09-2018  | 6             | Y                |
 | Review participation in modern code review                                                                    | 2017 | @thongtanunam2017review     | 29-09-2018  | 10            |                  |
