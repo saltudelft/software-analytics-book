@@ -372,10 +372,13 @@ This paper also gives us an example a tool which would suggest whether a pull re
 or not, because this can be predicted with fairly high accuracy. Therefore, the development of
 tools to help the core team of a project with prioritizing their work can be explored.
 
-Several code review tools, such as CodeFlow and RevFinder, can still be explored. In reference
+Several code review tools, such as CodeFlow, ReDA and RevFinder, can still be explored. In reference
 [@thongtanunam2015should], further research can focus on how RevFinder works in practice, 
 in terms of how effectively and practically it helps developers in recommending code-reviewers,
-when deployed in a live development environment.
+when deployed in a live development environment. According to reference [@thongtanunam2014reda],
+the authors aim to develop a live code review monitoring dashboard based on ReDA. They also aim
+to create a more portable version of ReDA that is also compatible with other tools supporting the
+MCR process.
 
 ## Conclusions
 While answering **RQ1**, we found that doing code reviews can improve social aspects and improve
