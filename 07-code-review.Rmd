@@ -303,16 +303,16 @@ and also it is a nice way to guarantee quality of software.
 *What are future challenges in the area of code review?*
 This concerns both research challenges and challenges for use in practice.
 
-Since the concept of modern code review was proposed in 2013 in [@bacchelli2013expectations], 
+Since the concept of modern code review was proposed in 2013 [@bacchelli2013expectations], 
 plenty of researchers spend their efforts on exploring code review. 
 According to reference [@beller2014modern; @mcintosh2014impact], modern code review 
-can be regarded as a lightweight variant of the code inspections. 
+can be regarded as a lightweight variant of formal code inspections. 
 However, code inspections mandates strict review research criteria and has been proved to improve
 the software quality. 
-Therefore, in this stage, many paper aim at increasing the understanding of modern code review and 
+Therefore, in this stage, many papers aim at increasing the understanding of modern code review and 
 figuring out how it improves the software quality. 
-During these study process, to find out the practical application and impact, 
-qualitative and quantitative methods are applied and some suggested challenges and improved are
+During these study processes, to find out the practical application and impact, 
+qualitative and quantitative methods are applied and some suggested challenges and improvements are
 found.
 
 * Future research challenges
@@ -328,24 +328,26 @@ Specifically, some properties of modern code review such as code ownership can b
 inspired by the reference [@mcintosh2014impact] which proposed a workflow 
 to quantitatively research the relationship between code review coverage and software quality.
 
-In reference[@bacchelli2013expectations], awareness and learning during code review are cited as 
+In reference [@bacchelli2013expectations], awareness and learning during code review are cited as 
 motivations for code review by developers. Future research could research these aspects more
 explicitly.
 
 Inspired by the progress of the understanding of modern code review, researchers also propose some
-possible topic that can be explored to obtain more findings.
+possible topics that can be explored to obtain more findings.
  
-Bacchelli et al.[@bacchelli2013expectations] suggest further research on code comprehension during
+Bacchelli et al. [@bacchelli2013expectations] suggest further research on code comprehension during
 code review. 
 According to the paper research has been done on this with new developers in mind, 
 but it would also be applicable to code reviews. 
-The authors note that IDEs often include tools for code comprehension, but code review tools do not.
+The authors note that IDEs often include tools for code comprehension, but code review tools do
+not.
 
-According to reference[@czerwonka2015code]prior research has neglected the impact of undocumented
+According to reference [@czerwonka2015code] prior research has neglected the impact of undocumented
 changes on code review.
-Future research can focus on this and figure out whether the undocumented changes make a difference.
+Future research can focus on this and figure out whether the undocumented changes make a
+difference.
 
-The authors of reference[@gousios2014exploratory] propose to research on the effect of the
+The authors of reference [@gousios2014exploratory] propose to research on the effect of the
 democratization of the develoment process, which
 occurs for example through the use of pull requests. Democratization could for example lead to a
 substantially stronger commons ecosystem.
@@ -357,7 +359,7 @@ not take these issues into consideration.
 
 Besides, research on studying how best to interpret empirical software engineering research within
 the 
-context of contextual factors in reference[@baysal2013influence].
+context of contextual factors in reference [@baysal2013influence].
 Understanding the reasons behind observable developer behaviour
 requires an understanding of the contexts, processes, organizational and individual factors, which
 can be helpful to realize their influence on code review and the outcome.
@@ -374,7 +376,7 @@ and assess the usefulness of comments. This was specifically requested by an int
 still an open challenge regarding CodeFlow, an in-house code review tool. They also propose to
 research on methods to automatically recommend reviewers for changes in the system.
 
-In reference[@gousios2014exploratory], the ways to managing tasks in the pull-based development
+In reference [@gousios2014exploratory], the ways to managing tasks in the pull-based development
 model can be explored, in order to increase the efficiency and readability.
 
 This paper also gives us an example a tool which would suggest whether a pull request can be merged
