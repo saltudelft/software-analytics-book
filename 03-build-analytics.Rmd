@@ -316,9 +316,8 @@ From the synthesis of the works discussed in this section the following research
  characteristics and this could impact the effectiveness for a specific kind of project.
  * How does the platform or programming language influence effectiveness or adoption of continuous
  integration systems?
- * How can machine learning methods be improved in the field of build analytics (build time and failure prediction)
- in order to generate predictions that can be used in practice, since it is hard to understand why a machine
- learning and especially deep learning model provides an accurate build outcome prediction?
+ * How can machine learning methods be better applied in the field of build analytics in order to 
+ generate predictions that are easier to explain and thus that can be used in practice?
 
 # Appendix: Build Analytics {-}
 
