@@ -701,6 +701,54 @@ For answering **RQ2**
 * *Company/Organization*: The Qt, OpenStack, VTK and ITK projects
 * *Evaluation*: N/A
 
+#### Review participation in modern code review
+Reference: @thongtanunam2017review
+
+**Summary**  
+This paper discusses the factors that influence review participation in code review. Previous
+studies identified that review participation influences the code review process significantly,
+but did not study the factors that actually influence review participation.
+
+It was most importantly found that "(...) the review participation history, the description
+length, the number of days since the last modification of files, the past involvement of an
+author, and the past involvement of reviewers share a strong relationship with the likelihood
+that a patch will suffer from poor review participation."
+
+For answering **RQ1**
+* *Sub-topic*: review participation
+* *Research method*: empirical; quantitative
+* *Tools*: N/A
+* *Datasets*: Review data for the Android, Qt and OpenStack projects
+
+**Research questions and answers**
+* *What patch characteristics share a relationship with the likelihood of a patch
+not being selected by reviewers?* "We find that the number of reviewers of prior patches, the number
+of days since the last modification of the patched files share a strong increasing relationship
+with the likelihood that a patch will have at least one reviewer. The description length
+is also a strong indicator of a patch that is likely to not be selected by reviewers."
+
+* *What patch characteristics share a relationship with the likelihood of a patch
+not being discussed?* "We find that the description length, churn, and the discussion length of
+prior patches share an increasing relationship with the likelihood that a patch will be
+discussed. We also find that the past involvement of reviewers shares an increasing
+relationship with the likelihood. On the other hand, the past involvement of an
+author shares an inverse relationship with the likelihood."
+
+* *What patch characteristics share a relationship with the likelihood of a patch
+receiving slow initial feedback?* "We find that the feedback delay of prior patches shares a strong
+relationship with the likelihood that a patch will receive slow initial feedback. Furthermore, a
+patch is likely to receive slow initial feedback if its purpose is to introduces new features."
+
+For answering **RQ2**
+* *Tools*: Gerrit
+* *Company/Organization*: Android, Qt and OpenStack
+* *Evaluation*: N/A
+
+For answering **RQ3**
+**Future research challenges**
+The paper notes that it assumes that the review process is the same for a whole project, even for
+larger projects. Future work should examine whether there are differences in review processes
+across subsystems.
 
 #### Who should review this change?: Putting text and file location analyses together for more accurate recommendations
 Reference: @xia2015should
@@ -774,7 +822,7 @@ published in 2008 or later. Though it was included as a candidate bec
 | Reda: A web-based visualization tool for analyzing modern code review dataset                                 | 2014 | @thongtanunam2014reda       | 29-09-2018  | 8             | Y                |
 | Who should review my code? A file location-based code-reviewer recommendation approach for modern code review | 2015 | @thongtanunam2015should     | 29-09-2018  | 5             | Y                |
 | Revisiting code ownership and its relationship with software quality in the scope of modern code review       | 2016 | @thongtanunam2016revisiting | 29-09-2018  | 6             | Y                |
-| Review participation in modern code review                                                                    | 2017 | @thongtanunam2017review     | 29-09-2018  | 10            |                  |
+| Review participation in modern code review                                                                    | 2017 | @thongtanunam2017review     | 29-09-2018  | 10            | Y                |
 | Mining the Modern Code Review Repositories: A Dataset of People, Process and Product                          | 2016 | @yang2016mining             | 29-09-2018  | 12            |                  |
 | Automatically recommending peer reviewers in modern code review                                               | 2016 | @zanjani2016automatically   | 29-09-2018  | 7             | Y                |
 
