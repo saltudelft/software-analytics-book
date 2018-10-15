@@ -387,12 +387,13 @@ significantly influence the code review process, along with technical and non-te
 the submitter and patch, like experience or patch description length. On another note, most changes
 done during code review are done for maintainability, not for resolving errors, and often the
 number of comments that are done during review are small. Last, we discussed two tools for
-recommending reviewers that aim to reduce the time to find appropriate reviewers. As for **RQ2**, 
-we noticed that tools like Gerrit, Crucible, Stash, GitHub pull requests, Upsource, Collaborator, 
-ReviewClipse and CodeFlow are commonly used in practice. Most reseaches prove that code 
-review do help share knowledge and develop defect-free software. It is not very reasonable to rank 
-various tools as code review itself is much more important for quality of software compared to the 
-choice of a specific tool. 
+recommending reviewers that aim to reduce the time to find appropriate reviewers.
+
+As for **RQ2**, we noticed that tools like Gerrit, Crucible, Stash, GitHub pull requests, Upsource,
+Collaborator, ReviewClipse and CodeFlow are commonly used in practice. Most reseach proves that
+code review helps share knowledge and develop defect-free software. It is not very reasonable to
+rank various tools, as code review itself is much more important for quality of software compared
+to the choice of a specific tool.
 
 ## Appendix
 
