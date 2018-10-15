@@ -1,25 +1,28 @@
 # Bug Prediction
 
 ## Motivation
-Minimizing the number of bugs in software is an effort central to software engineering - faulty
-code fails to fullfill the purpose it was written for, its impact ranges from sligthly
-embarrassing to disastrous and dangerous, and last but not least - fixing it 
-costs time and money. Resources in a 
-software development lifecycle are almost always limited and therefore should be allocated to where
- they are needed most - in order to avoid bugs, they should be focused on the most fault-prone
- areas of the project. Being able to predict where such areas might be would allow more development and 
+Minimizing the number of bugs in software is an effort central to software engineering --- faulty
+code fails to fulfill the purpose it was written for, its impact ranges from slightly
+embarrassing to disastrous and dangerous, and last but not least --- fixing it 
+costs time and money. 
+Resources in a software development life cycle are almost always limited and 
+therefore should be allocated to where they are needed most --- in order to avoid bugs, 
+they should be focused on the most fault-prone areas of the project. 
+Being able to predict where such areas might be would allow more development and 
 testing efforts to be allocated on the right places.
 
-However, as noted in @DAmbros2012, reliably predicting which parts of source code are the most 
-fault-prone is one of the holy-grails of software engineering. Thus it is not surprising that bug-prediction continues
- to garner a widespread research interest in software analytics, now equipped with the 
- ever-expanding toolbox of data-mining and machine learning techniques. In this survey we 
- investigate the current efforts in bug-prediction in the light of the advances in software analytics methods and focus our attention on answering the
-  following research questions:
+However, reliably predicting which parts of source code are the most 
+fault-prone is one of the holy grails of software engineering [@DAmbros2012].
+Thus it is not surprising that bug prediction continues to 
+garner a widespread research interest in software analytics, 
+now equipped with the ever-expanding toolbox of data-mining and machine learning techniques. 
+In this survey we  investigate the current efforts in bug prediction 
+in the light of the advances in software analytics methods and 
+focus our attention on answering the following research questions:
 
 * **RQ1** What is the current state of the art in bug prediction?
-More specifically, we aim to answer the following:
-    * What software or other metrics does bug prediction rely on and how good are they?
+    More specifically, we aim to answer the following:
+    * What software or other metrics does bug prediction models rely on and how good are they?
     * What kind prediction models are predominantly used?
     * How are bug prediction models and results validated and evaluated?
 * **RQ2** What is the current state of practice in bug prediction?
@@ -31,34 +34,288 @@ More specifically, we aim to answer the following:
 ## Research protocol
 We started by studying the initial 6 seed papers which were selected based on domain knowledge:
 
-* @Gyimothy2005
-* @Catal2009review
-* @Arisholm2010
-* @DAmbros2010
-* @Hall2012
-* @Lewis2013
+| Reference    | Topic         | Summary                                   |
+|-------------------|--------------|------------------------------------------|
+| @Gyimothy2005 | metrics validation | performance of object-oriented metrics |
+| @Catal2009review | literature review | comparison of metrics, methods, datasets |
+| @Arisholm2010  | literature review | comparison of models, metrics, performance measures |
+| @DAmbros2010 | BP performance | benchmark for bug prediction, evaluation of approaches using the benchmark|
+| @Hall2012 | literature review | influence of model context, methods, metrics on performance  |
+| @Lewis2013 | case study | BP deployment in industry |
 
-Our searches were based on the following elements:
+We looked for additional papers with the following queries:
 
-1. Keyword search using search engines (Scopus, ACM Digital Library, IEEE Explorer).
-The search query was constructed so that the paper title had to contain the phrase bug prediction,
- but also the other more general variants used in literature: *bug/defect/fault prediction*. 
-The title also had to contain at least one of following keywords: *metrics*, *models*,
- *validation*, *evaluation*, *developers*. To remain within the bug prediction field we required
-  *software* to appear in the abstract.
+1. Keyword search using search engines 
+   (Google Scholar, Scopus, ACM Digital Library, IEEE Explorer).
+   The search query was constructed so that the paper had to contain the phrase bug prediction,
+   but also the other more general variants used in literature: *bug/defect/fault prediction*. 
+   The paper also had to contain at least one of following keywords: *metrics*, *models*,
+   *validation*, *evaluation*, *developers*.
 
-2. Filtering search results by publication date. We excluded papers older than 10 years; that is, published before 2008. 
+2. Filtering search results by publication date. We narrow the scope to *recent* papers, 
+   which we define as "published within the last 10 years" for the purposes of this review. 
+   Therefore we excluded papers published before 2008.
+   However, there were a few exceptions for papers which had very high impact.
 
-3. Filtering by the number of citations. We selected papers with 10 or more citations in order to focus on the ones that already have some visibility within the field.
+3. Filtering by the number of citations. 
+   We selected papers with 10 or more citations in order to focus on 
+   the ones that already have some visibility within the field.
+   Also, there were some exceptions for every recently published papers.
 
 4. Exploring other impactful publications by the same authors.
 
-_Table 1. Papers found by investigating the authors of other papers._
+The papers chosen had to fulfill the above criteria.
 
-| Starting point    | Type         | Result                                   |
+_Table 2. Papers found by investigating the authors of other papers._
+
+| Starting paper    | Relationship | Result                                   |
 |-------------------|--------------|------------------------------------------|
 | @DAmbros2010      | is author of | @DAmbros2012                             |
 | @Catal2009review  | is author of | @Catal2011 <br> @Catal2009investigating  |
+| @rahman2011       | is author of | @Rahman2013                              |
+| @Giger2011        | is author of | @giger2012                               |
 
 ## Answers
 
+### RQ1: Metrics
+To find out what metrics are commonly used to build bug prediction models, 
+we studied the papers that either focus their entirety or 
+at least a section to the discussion of software metrics used for bug prediction. 
+Based on the results and observations made in the relevant studies, 
+we classify the software metrics most commonly used in two groups 
+based on which aspect of a piece of software they measure:
+
+* *The product*: the (static) code itself.
+* *The process*: the different aspects that describe how the product developed through time. 
+  We include both simpler changelog based metrics that require different versions as well 
+  as metrics that require detailed process recording.
+
+#### Product metrics
+Different metrics incur different costs based on whether they require additional efforts 
+in order to collect data and setup an instrumentation infrastructure. 
+Measuring various aspects of what is already available --- a snapshot of source code --- 
+is an obvious starting point when building a set of predictive features and it turns out 
+code metrics were the most commonly studied metrics in literature [@Catal2009review].
+Traditionally, examples of metrics obtained by static analysis include 
+_lines of code_ (LOC) as well as _code complexity_ (for example, McCabe and Halstead complexities),
+with the latter applicable for languages with a structured control flow and the concept of methods.
+The rationale behind using code complexity as a metric for bug prediction is that
+if code is complex, it is difficult to change and is therefore bug-prone [@DAmbros2012].
+
+Another group of more language specific metrics which became popular after 1990 
+are the _object-oriented_ or _class_ metrics which are based on the idea of classes 
+and measure class-related concepts like _amount of methods_, _coupling_, _inheritance_ and 
+_cohesion_ [@Gyimothy2005, @Radjenovic2013, @Malhotra2015, @Catal2009review].
+
+A drawback of static code metrics is that, the authors find that such metrics have high stasis 
+which means they do not change a lot from release to release [@Rahman2013].
+In turn, this can cause stagnation in the prediction models, 
+which classify the same files as bug-prone over and over.
+
+#### Process metrics
+The other prominent group of metrics are the process metrics 
+which are related to the software development process and the changes of the software through time. 
+Additional infrastructure has to be in place in order to capture the process features 
+and typically at least a version control system is required. 
+One of the rationales behind using these metric in a predictive model 
+is that bugs are introduced by changes in software and should be studied [@DAmbros2012].
+
+Some examples of process metrics include _code churn_, _number of revisions_, 
+_active developer count_, _distinct developer count_, _changed code scattering_, 
+_average lines of code added per revision_ and _age of a file_ [@Moser2008, @Rahman2013].
+There are also metrics based on _prior faults_,
+that argue files which in the past contained faults will probably have more faults in the future.
+It is shown that predictors based on previous bugs show better results than 
+predictors based on code changes [@rahman2011].
+
+Other metrics are derived by looking at the source code change history as 
+either _delta metrics_ or _code churn_ [@Radjenovic2013]. 
+Delta metrics are not separate new metrics per se, 
+but are derived from other metrics by comparing versions of software to each other.
+
+Some studies found that process metrics outperform code metrics by comparing prediction results
+of both metrics [@Moser2008, @Rahman2013].
+It was also shown that process metrics are more stable across releases [@Rahman2013].
+However, note that such results should be taken with a grain of salt; 
+it was found that when comparing a selection of representative bug prediction approaches, 
+the results considering metrics highly depend on the choice of learner 
+and could not necessarily be generalized [@DAmbros2012].
+
+There are potential advantages of using more fine-grained source code changes, capturing 
+them at statement level and including the changes' semantics [@Giger2011]. 
+This data can be obtained by building abstract syntax trees (ASTs)
+and using the changes required to transform one AST to the other as metrics. 
+These models were found to outperform models based on other coarser metrics such as code churn; 
+however, the gain in performance comes at the cost of extracting these fine-grained changes.
+
+##### Developer-based metrics
+Besides metrics from code repositories we can also extract some metrics from developers itself.
+It was shown that modules touched by more developers are more likely to contain more bugs
+[@Matsumoto2010].
+Also, using developer based metrics in combination with other metrics can improve
+prediction results [@Matsumoto2010]. 
+Furthermore, it turns out that developer experience has no clear correlation
+with how much faults they introduce [@rahman2011].
+
+Faults can also be predicted by tracking micro-interactions of developers [@Lee2011].
+The authors find that the most informative metrics are the _number of low-degree-of-interest-file 
+editing events_, _editing and selecting bug-prone files consecutively_, 
+and _time spent on editing_.
+They find that their prediction results exceed those of some product and process metrics.
+
+Another set of metrics are scattering metrics, 
+which uses data about how focussed a developers work is [@DiNucci2018].
+Structural scattering describes how structurally far apart in the project the code is. 
+Semantic scattering measures how different the code being edited is 
+in terms of implemented responsibilities, this is measured by textually comparing the code. 
+The authors find they have relatively high accuracy 
+and perform better than a baseline selection of code and process metrics. 
+
+
+### RQ1: Models
+In the section above we have seen different kinds of metrics,
+in this section we will show how these metrics are used to create models
+for bug prediction which can actually be used.
+We will also show some preliminary results of these models,
+however, as we will explain later on, it is not trivial to compare the results of different models.
+
+##### History Complexity Metric [@hassan2009]
+Files that are modified during periods of high change complexity will contain more faults.
+Developers changing code during these periods will make mistakes,
+because they probably will not be aware of the current state of the code.
+This method is useful in practice because companies may not have a full bug history,
+while they probably do have history of code changes.
+Outperforms models based on prior faults, 15-38% decrease in prediction errors.
+However, D'Ambros et al. contradict this statement [@DAmbros2010].
+
+##### FixCache [@kim2007]
+Maintains a fixed-size cache of files that are most likely to contain bugs.
+Files are added to cache if it meets one of the locality criteria, which are:
+
+* Churn locality: if a file is recently modified it is likely to contain faults
+* Temporal locality: if a file contains a fault, it is more likely to contain more faults
+* Spatial locality: files that change alongside faulty files are more likely to contain faults
+
+If the cache if full the least recently used file is removed from the cache.
+The size of the cache is set at 10% of all files.
+Hit rate of about 73-95% at file level, 46-72% at method level.
+
+##### Rahman [@rahman2011]
+The Rahman algorithm is based on the FixCache algorithm,
+in their research they found that the temporal locality was by far the most influential factor.
+The Rahman algorithm is thus implemented based solely on that factor.
+
+##### Time-weighted risk algorithm [@Lewis2013]
+An algorithm based on the Rahman algorithm,
+it includes a weight factor based on how old a commit is, 
+older bug fixing commits have less impact on the overall bug-proneness of the file.
+Instead of showing top 10% of bug-prone files, this shows the top 20 files.
+
+##### Machine learning
+With machine learning methods bugs can be predicted by software tools,
+these tools train on the code base, code history and other data from software repositories.
+Downside is that these methods give little insights in why a component is bug-prone [@Lewis2013].
+Another downside is that this does not work for new projects since cross-project
+defect prediction does not yet give good results [@zimmermann2009].
+
+##### Analysis on Abstract Syntax Trees
+Because ASTs give a more high-level description of the syntax of a program
+it could give more useful insights for bug prediction than other analysis methods.
+Downside is that ASTs is that dynamic programming languages cannot produce static ASTs.
+Wang et al. uses ASTs in combination with a machine learning approach for bug prediction.
+They also show that using ASTs can improve cross-project prediction results [@wang2016].
+
+
+### RQ1: Evaluations
+In order to answer this questions we looked at the scientific papers that 
+benchmark prediction models in any way, 
+and specifically looked at the way these are evaluated. 
+We found that most papers use a simple yet logical approach to 
+benchmark an algorithm’s performance. 
+This approach is called Area Under the Curve (commonly referred as AUC), 
+it consists of measuring the area under a curve 
+which is known as Receiver Operating Characteristic (ROC).
+This process graphically draws the relationship between the accuracy, 
+which is the ability of an algorithm to find all existing bug-prone files, and precision, 
+which is how accurate the algorithm is at finding them (optimal would be no false negatives)
+[@DAmbros2012, @Arisholm2010, @Jiang2008, @Malhotra2015, @Lessman2008]. 
+
+Other authors use different methodologies in order to rank the algorithm’s performance. 
+Jiang et al. focuses solely on how to evaluate the algorithm’s performance, 
+and the researchers used the accuracy and 
+precision metrics in numerical and graphical form, 
+but they also bring to the table a graphic that helps identify where to spend 
+the project resources in order to get a greater software quality [@Jiang2008].
+Finally, another method is to use linear regression in order to 
+qualify the fault prediction method’s prediction power [@DAmbros2010].
+
+In conclusion, we can see that the most used methodology is AUC, this is because, 
+citing Lessman et al.: “The AUC was recommended as the primary accuracy indicator 
+for comparative studies in software defect prediction since it separates predictive performance 
+from class and cost distributions, which are project-specific characteristics that may be unknown 
+or subject to change.” [@Lessman2008].
+
+It is also worth noting the conclusion of Shepperd et al., 
+in which they found that 30 percent of the variance of the algorithm’s performance 
+can be “explained” based on the research group, 
+while the variability due to the choice of classifier is very small [@Shepperd2014].
+
+
+### RQ2: Practical usage
+There seems to be none to very little usage of bug prediction tools in the industry,
+even searching outside the scope of the scientific literature did not come up with anything.
+On GitHub we could only find a handful of repositories which implement a bug prediction tool, 
+however, none of these are actively maintained any longer.
+
+Furthermore, all the tools we did find were based on references @Lewis2013 or @rahman2011. 
+Lewis et al. even mentions that their tool had no significant effect on developers [@Lewis2013].
+Kim et al. says software managers could use a list of bug-prone files to allocate more quality 
+assurance in some parts of the code, but again, no industry usage could be found [@kim2007].
+
+We did find some reasons which could explain why there is no practical usage of bug prediction yet.
+Some issues we found with using bug prediction tools in practice 
+have to do with the following properties that bug prediction tools should have in some cases:
+
+* _Obvious reasoning_: If a tool has no clear reasoning users might quickly discard the
+  tool, because they do not understand why a file is bug-prone [@Lewis2013].
+* _Bias towards the new_: For some metrics this feature is required,
+  because otherwise it would be impossible to 'fix' a file, 
+  it will remain to be bug-prone even if completely rewritten [@Lewis2013].
+* _Actionable messages_: Messages shown by bug prediction tools must be actionable. 
+  The user must be able to perform an action to fix the problem with the file,
+  otherwise users will not know what to do with the tool [@Lewis2013].
+* _Noise problem_: It turns out that if data which is used for the historical changes 
+  contains noise this has a large impact on the performance of the model.
+  Since the data is mostly mined from software repositories this will contain noise [@Kim2011].
+* _Granularity_: Most methods we found work on a class- or file-based granularity, 
+  having a lower level of granularity could improve the usefulness of the prediction for 
+  developers [@giger2012].
+
+
+### RQ2: Actionable tools for developers
+The only paper that tackles this question is by Lewis et al., 
+in which the authors deploy bug predicting software to developers 
+workspaces and evaluate developers behaviour after and before having the software [@Lewis2013]. 
+In this study they conclude currently, 
+fault prediction does not provide actionable tools for developers.
+
+To answer this questions we found no more information in scientific papers, 
+so we had to look outside of the academic world in order to see if this techniques are 
+being used by developers. 
+After some research we concluded that bug prediction is not currently being used on developers, 
+and we, as in reference @Lewis2013, 
+think that maybe bug prediction is supposed to be used for software quality in order to find 
+the places where we should invest the project resources 
+instead of helping developers write code without bugs.
+
+
+### RQ3: Open challenges and future work
+We believe that the bug prediction field still has a lot
+of open challenges, for example, the use of developer-related factors in the predictions.
+Still no strong conclusions have been found, so this field requires a lot of further investigation
+to be able to find better models and useful applications of this techniques.
+All this challenges are anchored to a very hard to prove external validity.
+
+In conclusion, bug prediction is still a partially explored area, 
+and even though some algorithms have proven to be successful to some degree, 
+we still lack more evidence and more reliable algorithms so they can be applied in the real world.
