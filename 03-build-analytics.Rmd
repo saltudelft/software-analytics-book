@@ -195,7 +195,7 @@ the results presented in the poster shows an F-Measure (harmonic average of reca
 
 **RQ2**: What is the current state of practice in the field of build analytics?
 
-Continuous Integration is a software engineering practise that requires developers to integrate code into a
+Continuous Integration is a software engineering practice that requires developers to integrate code into a
 shared repository several times a day. Each check-in is then verified by an automated build which allows 
 engineers to detect any bugs early.
 
@@ -230,7 +230,7 @@ The topics that are being explored are:
   
 A survey conduced in open-source projects by Hilton et al. [@hilton2016usage] indicated that 40% of all 
 projects used CI. It observed that a median project introduces CI a year into development. Furthermore, 
-the paper claims that CI is widely used in practise nowadays. One of many factors contributing to this 
+the paper claims that CI is widely used in practice nowadays. One of many factors contributing to this 
 is explored by Rausch et al. [@rausch2017empirical]. The growing popularity of Version Control Systems (VCS) 
 such as GitHub, and hosting build automation platforms such as Travis have enabled any business of size to 
 adopt the CI framework. As suggested by Hilton et al. [@hilton2016usage], the cost and time associated with
@@ -238,10 +238,10 @@ introducing the CI framework is not enormous and the copious benefits far outwei
 
 #### Build Analytics Practices
 
-The CI concept, often attributed to Martin Fowler [@fowler2006continuous] , is recommended as best practise 
+The CI concept, often attributed to Martin Fowler [@fowler2006continuous] , is recommended as best practice 
 of agile software development methods such as extreme Programming [@stolberg2009enabling]. He introduced many 
 practices that are essential in maintaining the CI framework. Fowler and Foemmel [@fowler2006continuous] urges
-engineers to keep all artefacts required to build the project in a single repository. This ensures that the 
+engineers to keep all artifacts required to build the project in a single repository. This ensures that the 
 system does not require additional dependencies. In addition, he advises creating a build script that can compile
 the code, execute unit tests and automate integration. Once the code is built, all tests should run to confirm
 that it behaves as the developer would expect it to behave. In this way, we are finding and eradicating software
