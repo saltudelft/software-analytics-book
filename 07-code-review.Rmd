@@ -402,7 +402,7 @@ possible topics based on the prior work that can be explored to obtain more find
 In the practical area, more applications of code review, such as automating code
 review tasks, are proposed by researchers, 
 which can increase the efficiency.
-And the code review tools can also be improved according to the current application
+And the code review tools can also be improved according to the current application.
 
 ## Appendix
 
