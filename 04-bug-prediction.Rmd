@@ -99,7 +99,7 @@ code metrics were the most commonly studied metrics in literature [@Catal2009rev
 Traditionally, examples of metrics obtained by static analysis include 
 _lines of code_ (LOC) as well as _code complexity_ (for example, McCabe and Halstead complexities),
 with the latter applicable for languages with a structured control flow and the concept of methods.
-The retionale behind using code complexity as a metric for bug prediction is that
+The rationale behind using code complexity as a metric for bug prediction is that
 if code is complex, it is difficult to change and is therefore bug-prone [@DAmbros2012].
 
 Another group of more language specific metrics which became popular after 1990 
@@ -221,7 +221,7 @@ Because ASTs give a more high-level description of the syntax of a program
 it could give more useful insights for bug prediction than other analysis methods.
 Downside is that ASTs is that dynamic programming languages cannot produce static ASTs.
 Wang et al. uses ASTs in combination with a machine learning approach for bug prediction.
-They also show that using ASTs can imporove cross-project prediction results [@wang2016].
+They also show that using ASTs can improve cross-project prediction results [@wang2016].
 
 
 ### RQ1: Evaluations
