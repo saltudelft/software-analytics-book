@@ -130,11 +130,11 @@ topics will be discussed in the answer to this question.
 #### Research methods
 First, let us consider the research methods that are generally being used by the papers we
 incorporated in the survey. The majority of the papers we considered do quantitative research
-(@baysal2016investigating, @beller2014modern, @czerwonka2015code, @gousios2014exploratory,
-@mcintosh2014impact, @baysal2013influence, @shimagaki2016study, @thongtanunam2015should,
-@thongtanunam2016revisiting, @thongtanunam2017review, @zanjani2016automatically) and some
-qualitative research has also been done (@bacchelli2013expectations, @bird2015lessons,
-@gousios2014exploratory, @mcintosh2014impact, @shimagaki2016study, @thongtanunam2014reda).
+[@baysal2016investigating; @beller2014modern; @czerwonka2015code; @gousios2014exploratory;
+@mcintosh2014impact; @baysal2013influence; @shimagaki2016study; @thongtanunam2015should,
+@thongtanunam2016revisiting; @thongtanunam2017review; @zanjani2016automatically] and some
+qualitative research has also been done [@bacchelli2013expectations; @bird2015lessons;
+@gousios2014exploratory; @mcintosh2014impact; @shimagaki2016study; @thongtanunam2014reda].
 The quantitative research mainly concerns itself with research on open-source projects, while the
 qualitative research often also considers closed source projects. This is probably the case because
 the development history, and hence also the code history, is far easier to access for open-source
@@ -149,20 +149,20 @@ has been done on existing situations.
 #### Tools and datasets
 All papers that do quantitative research use some tools for processing the data. None of the papers
 in this survey use pre-built tools. All of them have created some custom tools to process the data
-(@baysal2016investigating, @beller2014modern, @czerwonka2015code, @gousios2014exploratory,
-@baysal2013influence, @shimagaki2016study, @thongtanunam2015should, @thongtanunam2016revisiting,
-@thongtanunam2017review, @zanjani2016automatically). This mostly concerns custom code in the R
+[@baysal2016investigating; @beller2014modern; @czerwonka2015code; @gousios2014exploratory;
+@baysal2013influence; @shimagaki2016study; @thongtanunam2015should; @thongtanunam2016revisiting;
+@thongtanunam2017review; @zanjani2016automatically]. This mostly concerns custom code in the R
 programming language that is created for this specific use case only. Some of the papers make the
 source code of the tools they use available online, so it can be used by other people. The paper
 by Gousios et al. [@gousios2014exploratory] does this, for example.
 
 As for datasets that are used: there are a few open-source projects that are used very often for
-quantitative research, notably the following projects: Qt (@mcintosh2014impact,
-@thongtanunam2015should, @thongtanunam2016revisiting, @thongtanunam2017review, @yang2016mining),
-Android (@thongtanunam2014reda, @thongtanunam2015should, @thongtanunam2017review, @yang2016mining,
-@zanjani2016automatically), OpenStack (@thongtanunam2015should, @thongtanunam2016revisiting,
-@thongtanunam2017review, @yang2016mining), LibreOffice (@thongtanunam2015should, @yang2016mining),
-Eclipse (@yang2016mining, @zanjani2016automatically). Apart from these, mostly other open-source
+quantitative research, notably the following projects: Qt [@mcintosh2014impact;
+@thongtanunam2015should; @thongtanunam2016revisiting; @thongtanunam2017review; @yang2016mining],
+Android [@thongtanunam2014reda; @thongtanunam2015should; @thongtanunam2017review; @yang2016mining;
+@zanjani2016automatically], OpenStack [@thongtanunam2015should; @thongtanunam2016revisiting;
+@thongtanunam2017review; @yang2016mining], LibreOffice [@thongtanunam2015should; @yang2016mining],
+Eclipse [@yang2016mining; @zanjani2016automatically]. Apart from these, mostly other open-source
 projects have been used, along with a few closed-source projects, for example from Sony Mobile
 [@shimagaki2016study] or from Microsoft [@zanjani2016automatically]. What is used from these
 projects is often only the data from the code reviewing system, possibly along with the code that
@@ -200,7 +200,7 @@ This concerns both research challenges and challenges for use in practice.
 
 Since the concept of modern code review was proposed in 2013 in [@bacchelli2013expectations], 
 plenty of researchers spend their efforts on exploring code review. 
-According to reference [@beller2014modern] and [@mcintosh2014impact], modern code review 
+According to reference [@beller2014modern; @mcintosh2014impact], modern code review 
 can be regarded as a lightweight variant of the code inspections. 
 However, code inspections mandates strict review research criteria and has been proved to improve
 the software quality. 
