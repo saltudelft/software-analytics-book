@@ -900,7 +900,7 @@ been added to the final survey for the stated reason.
 * @mcintosh2016empirical: This is an extended and improved version of a paper already included in
   the survey. Because of time constraints we will not reconsider this version.
 * @fagan2002design: This paper does not conform to our exclusion criterion saying that it should be
-published in 2008 or later. Though it was included as a candidate bec
+published in 2008 or later.
 
 ### Table 1
 | Title                                                                                                                               | Year | Reference                  | In survey? (Y/N) |
