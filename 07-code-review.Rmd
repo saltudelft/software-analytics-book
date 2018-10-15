@@ -475,6 +475,48 @@ effects a mediator in determining the code review process?
 #### The influence of non-technical factors on code review
 Reference: @baysal2013influence
 
+**Summary**  
+This paper focus on the influence of several non-technical factors on code review response time and
+outcome. An empirical study of code review process for WebKit, 
+a large open source project was described to see the influence. Specifically, the authors
+replicated some previously studied factors and extended several more factors that had not beed
+explored. 
+
+For answering **RQ1**:
+
+* *Sub-topic*: open-source, impact
+* *Research method*: empirical study
+* *Tools*: WebKit
+* *Datasets*:  WebKit code review data extracted from Bugzilla.
+
+**Research questions and answers**:
+
+* *What factors can influence how long it takes for a patch to be reviewed?* 
+The organizational and personal factors influence review timeliness. Some factors that influenced
+the time required to review a patch, such as the size of the patch itself or the part of the code
+base being modified,  are unsurprising and are likely related to the technical complexity of a
+given change. The most influential factors of the code review process on review time are the
+organization a patch writer is affiliated with and their level of participation within the project.
+
+* *What factors influence the outcome of the review process?*
+The organizational and personal factors influence the likelihood of a patch being accepted. 
+The most influential factors of the code review process on patch acceptance are the organization a
+patch writer is affiliated with and their level of participation within the project.
+
+
+For answering **RQ3**:
+
+**Future research challenges**:
+
+* Research on studying how best to interpret empirical software engineering research within the
+context of contextual factors. Understanding the reasons behind observable developer behaviour
+requires an understanding of the contexts, processes, organizational and individual factors that
+can influence code review and its outcome.
+
+**Notes**:
+
+This paper has an extended version [@baysal2016investigating].
+
 #### Investigating technical and non-technical factors influencing modern code review
 Reference: @baysal2016investigating
 
@@ -768,51 +810,6 @@ paper, other properties of modern code review can also be explored.
 
 There exists an extended and improved version of this paper [@mcintosh2016empirical]. Only the
 original version of the paper has been included in this survey.
-
-#### The influence of non-technical factors on code review
-Reference:@baysal2013influence
-
-**Summary**  
-This paper focus on the influence of several non-technical factors on code review response time and
-outcome. An empirical study of code review process for WebKit, 
-a large open source project was described to see the influence. Specifically, the authors
-replicated some previously studied factors and extended several more factors that had not beed
-explored. 
-
-For answering **RQ1**:
-
-* *Sub-topic*: open-source, impact
-* *Research method*: empirical study
-* *Tools*: WebKit
-* *Datasets*:  WebKit code review data extracted from Bugzilla.
-
-**Research questions and answers**:
-
-* *What factors can influence how long it takes for a patch to be reviewed?* 
-The organizational and personal factors influence review timeliness. Some factors that influenced
-the time required to review a patch, such as the size of the patch itself or the part of the code
-base being modified,  are unsurprising and are likely related to the technical complexity of a
-given change. The most influential factors of the code review process on review time are the
-organization a patch writer is affiliated with and their level of participation within the project.
-
-* *What factors influence the outcome of the review process?*
-The organizational and personal factors influence the likelihood of a patch being accepted. 
-The most influential factors of the code review process on patch acceptance are the organization a
-patch writer is affiliated with and their level of participation within the project.
-
-
-For answering **RQ3**:
-
-**Future research challenges**:
-
-* Research on studying how best to interpret empirical software engineering research within the
-context of contextual factors. Understanding the reasons behind observable developer behaviour
-requires an understanding of the contexts, processes, organizational and individual factors that
-can influence code review and its outcome.
-
-**Notes**:
-
-This paper has an extended version [@baysal2016investigating].
 
 #### A Study of the Quality-Impacting Practices of Modern Code Review at Sony Mobile
 Reference: @shimagaki2016study
