@@ -97,28 +97,27 @@ The following data will be collected from each considered resource:
 All data will be collected by one person participating in the review and checked by another.
 
 ## Candidate resources
-In this section, all candidates that are collected using the described search process are
-presented. The `In survey` column in the tables below indicates whether the paper has been
+In the appendix, all candidates that are collected using the described search process are
+presented. The `In survey` column in the tables indicates whether the paper has been
 included in the survey in the end or if it has been excluded for some reason. If it has been
 excluded, the reason will be stated in the section *Excluded papers*.
 
 ### Initial seed
-The following table lists all initial seed papers provided by the course instructor that conform
+This table lists all initial seed papers provided by the course instructor that conform
 to the stated criteria. They are listed in alphabetical order of the first author's name, and then
-by publish year in Table 1 in appendix.
-
+by publish year in Table 1 in the appendix.
 
 ### Google Scholar
-The following table lists all candidates that have been collected through the Google Scholar search
+This table lists all candidates that have been collected through the Google Scholar search
 described in the search process. They are listed in alphabetical order of the first author's name,
 and then by publish year. Note that as described in the search process section, papers in the
 search are considered in order of search result number. The *Search date* and *Result number*
 columns indicate the date on which the search was executed and the position in the search result
-list, respectively. Details can be found in Table 2 in appendix.
+list, respectively. The table can be found in Table 2 in appendix.
 
 ### By reference
-We list all candidates that have been found by being referenced by another paper
-we found in Table 3 in appendix. 
+We list all candidates that have been found by being referenced by another paper we found in Table
+3 in appendix. 
 
 ## Answers
 ### RQ1
