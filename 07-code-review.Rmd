@@ -268,16 +268,6 @@ RevFinder recommends correct reviewers with a median rank of 4 (i.e., a good rev
 is on position 4 on average) based on empirical evaluation. For cHRev, less than 2 recommendations
 are necessary to find a good reviewer candidate.
 
-#### Summary
-We found that doing code reviews can improve social aspects and improve code rubustness against
-errors. Additionally, finding a reviewer and the experience of a reviewer significantly influence
-the code review process, along with technical and non-technical aspects of the submitter and patch,
-like experience or patch description length. On another note, most changes done during code review
-are done for maintainability, not for resolving errors, and often the number of comments that are
-done during review are small. Last, we discussed two tools for recommending reviewers that aim to
-reduce the time to find appropriate reviewers.
-
-
 ### RQ2
 When it comes to application of code review in industry, we collect information from three
 perspectives, namely popularity, variety and choices of tools. From collecting information from
@@ -389,6 +379,13 @@ in terms of how effectively and practically it helps developers in recommending 
 when deployed in a live development environment.
 
 ## Conclusions
+While answering **RQ1**, we found that doing code reviews can improve social aspects and improve
+code rubustness against errors. Additionally, finding a reviewer and the experience of a reviewer
+significantly influence the code review process, along with technical and non-technical aspects of
+the submitter and patch, like experience or patch description length. On another note, most changes
+done during code review are done for maintainability, not for resolving errors, and often the
+number of comments that are done during review are small. Last, we discussed two tools for
+recommending reviewers that aim to reduce the time to find appropriate reviewers.
 
 ## Appendix
 
