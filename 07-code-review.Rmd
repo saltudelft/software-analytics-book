@@ -858,7 +858,7 @@ For answering **RQ1**:
 * *Research method*: empirical; quantitative
 * *Tools*: R; Custom
 * *Datasets*: Review dataset from Hamasaki et al. [@hamasaki2013does]. Code dataset from the Qt
-  system from McIntosh et al. [@mcintosh2014the]. Ammended with custom datasets for Qt and
+  system from McIntosh et al. [@mcintosh2014impact]. Ammended with custom datasets for Qt and
   OpenStack.
 
 **Research questions and answers**:
