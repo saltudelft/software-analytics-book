@@ -225,7 +225,7 @@ amount of past activity of the reviewer. Bacchelli and Bird [@bacchelli2013expec
 the last point that understanding the code that is to be reviewed, by the reviewer, is an important
 challenge. Gousios et al. [@gousios2014exploratory] add to this that the size of the project, its
 test coverage, and the projects track record on accepting external contributions are also relevant.
-Thongtanunam et al. [@thongtanunum2015should] add that not being able to find a reviewer for a
+Thongtanunam et al. [@thongtanunam2015should] add that not being able to find a reviewer for a
 patch can significantly increase the time required to merge a patch, with an average of 12 days
 longer. In their research 4%-30% of reviews had this problem, depending on the project.
 Thongtanunam et al. [@thongtanunam2017review] also note that if a previous path of a submitter took
