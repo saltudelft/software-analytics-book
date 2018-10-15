@@ -413,8 +413,10 @@ For answering **RQ2**:
 
 This paper has a shorter version [@baysal2013influence].
 
-#### For answering **RQ3**
-#### Future research challenges
+For answering **RQ3**:
+
+**Future research challenges**:
+
 Not stated
 
 #### Modern code reviews in open-source projects: Which problems do they fix?
