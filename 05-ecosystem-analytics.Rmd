@@ -126,14 +126,14 @@ we summarize which research methods, tools and datasets are being used to explor
 The main topics we explored in ecosystem analytics are the usage of trivial packages, (breaking)
 changes in dependencies and their impacts, quality of dependencies and dependency networks.
 
-Trivial packages are a recurring topic in the area of software analyitics, notably incidents
+Trivial packages are a recurring topic in the area of software analytics, notably incidents
 like Left-pad, Schleuter @NPM2016, stress the possible impact trivial packages can have on a software ecosystem.
-Research in this topic explores the usage of trivial packages both quantitively and qualitively
+Research in this topic explores the usage of trivial packages both quantitatively and qualitatively
 by analysing the usage of the trivial packages and the reasons why developers choose to use them
 respectively.
 
 Breaking changes is a major topic researched by some papers. Much like trivial packages research
-is done both quantitively and qualitively in this topic. The impact of breaking changes and the
+is done both quantitatively and qualitatively in this topic. The impact of breaking changes and the
 way in which developers react to these changes are considered to be the notable problems in 
 this topic.
 
@@ -148,17 +148,17 @@ The studied papers cover a plethora of research methods. These methods can be di
 categories: quantitative and qualitative.
 
 Many quantitative research papers analyse the data in a statistical manner, using software
-ecosystems as their data. The types of data depend heavily on the eco system used for analysis.
+ecosystems as their data. The types of data depend heavily on the ecosystem used for analysis.
 Some papers go as far as using the source code of packages @Abdalkareem2017. While other
-resarch focusses on the meta-data of software ecosystems, such as dependency networks @Kikas2017.
+research focusses on the meta-data of software ecosystems, such as dependency networks @Kikas2017.
 Another recurring research method is survival analysis, as used by @Decan2018, which can be used
 to estimate the survival rate of a population over time. In software engineering this has
-been successfully aplied to open source projects.
+been successfully applied to open source projects.
 
-Some qualitive research has been done in software ecosystems to gain a better understanding
+Some qualitative research has been done in software ecosystems to gain a better understanding
 in to the behaviour of the interactions between developers and software ecosystems. Some
-papers solely rely on the results of qualitive research whereas some papers use both quantitative
-research and qualitative research to traingulate their findings.
+papers solely rely on the results of qualitative research whereas some papers use both quantitative
+research and qualitative research to triangulate their findings.
 
 #### Used Ecosystems
 As has been said above, the most common explored topic within the body of studied papers are
@@ -208,13 +208,13 @@ a large impact on a software ecosystem. This conclusion is reinforced by the fin
 Decan et al. @Decan2018, where frequent changes can lead to an unstable dependency network
 due to transitive dependencies.
 
-Not only do developers not react in a timely fashing to breaking changes, Robbes et al.
-@Robbes2012 also found that developers are also not quick to respond to API deprication.
+Not only do developers not react in a timely fashion to breaking changes, Robbes et al.
+@Robbes2012 also found that developers are also not quick to respond to API deprecationn.
 @Bavota et al. suggests that updates should only be done when they consist of bug fixes,
 not API changes, to combat this issue. 
 
 Attempts have also been made to find a metric that establishes the 'health' of a 
-depenency. Cox et al. @Cox2015 contributes to this by providing a metric
+dependency. Cox et al. @Cox2015 contributes to this by providing a metric
 to establish the freshness of a dependency.
 
 An interesting finding in the topic of package dependency networks by Kikas et al.
@@ -242,10 +242,10 @@ an empirically study conducted by McDonnell, Ray and Kim @McDonnell2013 on the a
 also do not update their codebase with respect to the changes introduced by dependencies.
 
 Regarding ecosystem health, Constantinou and Mens @Constantinou2017 have researched which factors
-indicate that a developer is likely to abandon an ecosystem. Their study, which analyzed
+indicate that a developer is likely to abandon an ecosystem. Their study, which analysed
 GitHub[^3] issues and commits, has found that developers are more likely to abandon a system when
 they 1) do not communicate with their fellow developers, 2) do not participate often in social or
-technical activities and 3) for an extended period of time do not react or commit anymore. Another
+technical activities and 3) for an extended period of time do not react or commit any more. Another
 interesting characteristic about ecosystem health, studied by Kula et al. @Kula2017-2, is the way
 in which projects age over time. Their study found that the usage over time of 81.7% of 4,659
 popular GitHub projects can be fitted on a function with an order higher than two.
@@ -415,10 +415,7 @@ _Table 4.6: Papers and findings for RQ2._
 | @Jansen2014 | Determining the health of a system from an ecosystem perspective instead of project level is needed to determine which systems to use. This paper provides an initial approach but a lot more research could and should be done to determine system health. |
 
 _Table 4.7: Papers and findings for RQ1._
-
-|      | References                    |
-|------|-------------------------------|
-| [^1] | https://pypi.org/project/pip/ |
-| [^2] | https://crates.io/            |
-| [^3] | https://github.com            |
-| [^4] |  https://scholar.google.com   |
+[^1] : https://pypi.org/project/pip/ 
+[^2] : https://crates.io/            
+[^3] : https://github.com            
+[^4] : https://scholar.google.com    
