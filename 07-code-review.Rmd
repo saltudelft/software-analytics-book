@@ -179,7 +179,7 @@ process influences, factors that influence the code review process, general char
 code review process, and the performance of tools assisting the code review process. These subjects
 will be discussed below.
 
-*Factors that the code review process influences*: Bacchelli and Bird [@bacchelli2013expectations]
+**Factors that the code review process influences**: Bacchelli and Bird [@bacchelli2013expectations]
 found that code improvement is the most prevalent result of code reviews, followed by code
 understanding among the development team and social communication within the development team. They
 note that finding errors is not a prevalent result of doing code reviews, as opposed to what most
@@ -205,7 +205,7 @@ changes in the relevant part of code, but still review much can deliver good cod
 Only when the developer does not author much and does not review much, the code quality can
 decrease significantly.
 
-*Factors that influence the code review process*: To start, Baysal et al.
+**Factors that influence the code review process**: To start, Baysal et al.
 [@baysal2016investigating] found that mainly the experience of the writer of a patch influences
 the outcome (i.e., accepted or not) of the review. Gousios et al. [@gousios2014exploratory] do not
 fully agree with this in the context of GitHub pull-requests. They found that only 13% of
@@ -238,7 +238,7 @@ code churn, and a small discussion length decrease the chance that a patch will 
 Czerwonka, Greiler, and Tilford [@czerwonka2015code] add to this that when the number of changed
 files gets above 20, the amount of useful feedback gets lower.
 
-*Characteristics of the code review process*: Beller et al. [@beller2014modern] found that 75% of
+**Characteristics of the code review process**: Beller et al. [@beller2014modern] found that 75% of
 the changes in code under review are related to evolvability of the system, and only 25% to its
 functionality. They also note that the amount of code churn, the number of changed files, and task
 type determine the number of changes that is done when a patch is under review. According to
@@ -256,7 +256,7 @@ that only do reviews are core developers, from which one could infer that most p
 (and also PRs) would come from external contributors. This together leads one to think that
 projects are not yet that open to external contributions.
 
-*Performance of tools assisting in the code review process*: Two tools are proposed in the papers
+**Performance of tools assisting in the code review process**: Two tools are proposed in the papers
 that have been surveyed: *RevFinder* [@thongtanunam2015should] and *cHRev*
 [@zanjani2016automatically]. Both tools aim to automatically recommend reviewers to a patch
 submission, in order to make patch processing faster. RevFinder works by looking at the paths of
