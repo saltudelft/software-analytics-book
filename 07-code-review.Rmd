@@ -351,6 +351,9 @@ amount of participation of the patch writer in the project.
 * *Company/Organization*: N/A
 * *Evaluation*: N/A
 
+**Notes**
+This paper has a shorter version [@baysal2013influence].
+
 #### For answering **RQ3**
 #### Future research challenges
 Not stated
@@ -617,6 +620,9 @@ For answering **RQ3**
 context of contextual factors. Understanding the reasons behind observable developer behaviour
 requires an understanding of the contexts, processes, organizational and individual factors that
 can influence code review and its outcome.
+
+**Notes**
+This paper is has an extended version [@baysal2016investigating].
 
 #### A Study of the Quality-Impacting Practices of Modern Code Review at Sony Mobile
 Reference: @shimagaki2016study
