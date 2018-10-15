@@ -755,7 +755,7 @@ For answering **RQ3**:
 
 Not stated
 
-### ReDA: A Web-based Visualization Tool for Analyzing Modern Code Review Dataset
+#### ReDA: A Web-based Visualization Tool for Analyzing Modern Code Review Dataset
 Reference: @thongtanunam2014reda
 
 **Summary**:
