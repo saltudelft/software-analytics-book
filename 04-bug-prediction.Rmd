@@ -72,7 +72,7 @@ _Table 2. Papers found by investigating the authors of other papers._
 |-------------------|--------------|------------------------------------------|
 | @DAmbros2010      | is author of | @DAmbros2012                             |
 | @Catal2009review  | is author of | @Catal2011 <br> @Catal2009investigating  |
-| @rahman11         | is author of | @Rahman2013                              |
+| @rahman2011       | is author of | @Rahman2013                              |
 | @Giger2011        | is author of | @giger2012                               |
 
 ## Answers
@@ -85,7 +85,7 @@ Based on the results and observations made in the relevant studies,
 we classify the software metrics most commonly used in two groups 
 based on which aspect of a piece of software they measure:
 
-* *The product*: the (static) code itself
+* *The product*: the (static) code itself.
 * *The process*: the different aspects that describe how the product developed through time. 
   We include both simpler changelog based metrics that require different versions as well 
   as metrics that require detailed process recording.
@@ -104,8 +104,8 @@ if code is complex, it is difficult to change and is therefore bug-prone [@DAmbr
 
 Another group of more language specific metrics which became popular after 1990 
 are the _object-oriented_ or _class_ metrics which are based on the idea of classes 
-and measure class-related concepts like amount of methods, coupling, inheritance and cohesion
-[@Gyimothy2005, @Radjenovic2013, @Malhotra2015, @Catal2009review].
+and measure class-related concepts like _amount of methods_, _coupling_, _inheritance_ and 
+_cohesion_ [@Gyimothy2005, @Radjenovic2013, @Malhotra2015, @Catal2009review].
 
 A drawback of static code metrics is that, the authors find that such metrics have high stasis 
 which means they do not change a lot from release to release [@Rahman2013].
@@ -123,7 +123,7 @@ is that bugs are introduced by changes in software and should be studied [@DAmbr
 Some examples of process metrics include _code churn_, _number of revisions_, 
 _active developer count_, _distinct developer count_, _changed code scattering_, 
 _average lines of code added per revision_ and _age of a file_ [@Moser2008, @Rahman2013].
-There are also metrics based on prior faults,
+There are also metrics based on _prior faults_,
 that argue files which in the past contained faults will probably have more faults in the future.
 It is shown that predictors based on previous bugs show better results than 
 predictors based on code changes [@rahman2011].
@@ -143,22 +143,24 @@ and could not necessarily be generalized [@DAmbros2012].
 
 There are potential advantages of using more fine-grained source code changes, capturing 
 them at statement level and including the changes' semantics [@Giger2011]. 
-This data can be obtained by building abstract syntax trees 
+This data can be obtained by building abstract syntax trees (ASTs)
 and using the changes required to transform one AST to the other as metrics. 
 These models were found to outperform models based on other coarser metrics such as code churn; 
 however, the gain in performance comes at the cost of extracting these fine-grained changes.
 
 ##### Developer-based metrics
 Besides metrics from code repositories we can also extract some metrics from developers itself.
-It was shown that modules touched by more developers are more likely to contain more bugs.
+It was shown that modules touched by more developers are more likely to contain more bugs
+[@Matsumoto2010].
 Also, using developer based metrics in combination with other metrics can improve
 prediction results [@Matsumoto2010]. 
-However, it turns out that developer experience has no clear correlation
+Furthermore, it turns out that developer experience has no clear correlation
 with how much faults they introduce [@rahman2011].
 
 Faults can also be predicted by tracking micro-interactions of developers [@Lee2011].
-The authors find that the most informative metrics are the number of low-degree-of-interest-file
-editing events, editing and selecting error-prone files consecutively, and time spent on editing.
+The authors find that the most informative metrics are the _number of low-degree-of-interest-file 
+editing events_, _editing and selecting bug-prone files consecutively_, 
+and _time spent on editing_.
 They find that their prediction results exceed those of some product and process metrics.
 
 Another set of metrics are scattering metrics, 
