@@ -125,9 +125,24 @@ we found in Table 3 in appendix.
 ## Answers
 ### RQ1
 ### RQ2
-When it comes to application of code review in industries, we collect information from three perspectives, namely, popularity, variety and choices of tools. By collecting information from papers, we know that around one fourth of researched companies regard code review process as a regular process and about 60 percent of respondents are implementing tool-based code review based on analysis from different companies who are selling code review tools in [@baum2017choice]. Most of the teams use one specialized review tool. One third teams choose generic software development tools, like ticket system and version control system. Some develop teams indicate no tool has been used in their review[@baum2017choice]. Considering that there are various tools of code review, we find there are two groups. Specifically, for some teams, no specialized review software is used. Instead, the teams use a combination of IDE, source code management system (SCM) and ticket system/bug tracker. For others, lots of open source tools were used or mentioned: Gerrit, Crucible, Stash, GitHub pull requests, Upsource, Collaborator, ReviewClipse and CodeFlow[@baum2016faceted].
+When it comes to application of code review in industries, we collect information from three
+perspectives, namely, popularity, variety and choices of tools. By collecting information from
+papers, we know that around one fourth of researched companies regard code review process as a
+regular process and about 60 percent of respondents are implementing tool-based code review based
+on analysis from different companies who are selling code review tools in [@baum2017choice]. Most
+of the teams use one specialized review tool. One third teams choose generic software development
+tools, like ticket system and version control system. Some develop teams indicate no tool has been
+used in their review[@baum2017choice]. Considering that there are various tools of code review, we
+find there are two groups. Specifically, for some teams, no specialized review software is used.
+Instead, the teams use a combination of IDE, source code management system (SCM) and ticket
+system/bug tracker. For others, lots of open source tools were used or mentioned: Gerrit, Crucible,
+Stash, GitHub pull requests, Upsource, Collaborator, ReviewClipse and CodeFlow[@baum2016faceted].
 
-Conclusively, based on different enterprises' expectation and requirments, they apply various ways for code review. Additionally, we also find different tools are not very comparable as researches mention these tools for different teams, projects and metrics. It is hard to say which tool is generally better than others. We have to admit that code review is commonly applied in industries and also it is a nice way to guarantee quality of software. 
+Conclusively, based on different enterprises' expectation and requirments, they apply various ways
+for code review. Additionally, we also find different tools are not very comparable as researches
+mention these tools for different teams, projects and metrics. It is hard to say which tool is
+generally better than others. We have to admit that code review is commonly applied in industries
+and also it is a nice way to guarantee quality of software. 
 ### RQ3
 
 *What are future challenges in the area of code review?*
@@ -137,11 +152,13 @@ Since the concept of modern code review was proposed in 2013 in [@bacchelli2013e
 plenty of researchers spend their efforts on exploring code review. 
 According to reference [@beller2014modern] and [@mcintosh2014impact], modern code review 
 can be regarded as a lightweight variant of the code inspections. 
-However, code inspections mandates strict review research criteria and has been proved to improve the software quality. 
+However, code inspections mandates strict review research criteria and has been proved to improve
+the software quality. 
 Therefore, in this stage, many paper aim at increasing the understanding of modern code review and 
 figuring out how it improves the software quality. 
 During these study process, to find out the practical application and impact, 
-qualitative and quantitative methods are applied and some suggested challenges and improved are found.
+qualitative and quantitative methods are applied and some suggested challenges and improved are
+found.
 
 * Future research challenges
 
@@ -149,56 +166,68 @@ Firstly, exploration into modern code review is still needed. Many studies sugge
 further understanding of modern code review can be helpful to the future research. 
 As an example, in reference [@czerwonka2015code] it says "Due to its costs, 
 code reviewing practice is a topic deserving to be better understood, systematized 
-and applied to software engineering workflow with more precision than the best practice currently prescribes."
+and applied to software engineering workflow with more precision than the best practice currently
+prescribes."
 
 Specifically, some properties of modern code review such as code ownership can be explored, 
 inspired by the reference [@mcintosh2014impact] which proposed a workflow 
 to quantitatively research the relationship between code review coverage and software quality.
 
 In reference[@bacchelli2013expectations], awareness and learning during code review are cited as 
-motivations for code review by developers. Future research could research these aspects more explicitly.
+motivations for code review by developers. Future research could research these aspects more
+explicitly.
 
-Inspired by the progress of the understanding of modern code review, researchers also propose some possible topic that can be explored to obtain more findings.
+Inspired by the progress of the understanding of modern code review, researchers also propose some
+possible topic that can be explored to obtain more findings.
  
-Bacchelli et al.[@bacchelli2013expectations] suggest further research on code comprehension during code review. 
+Bacchelli et al.[@bacchelli2013expectations] suggest further research on code comprehension during
+code review. 
 According to the paper research has been done on this with new developers in mind, 
 but it would also be applicable to code reviews. 
 The authors note that IDEs often include tools for code comprehension, but code review tools do not.
 
-According to reference[@czerwonka2015code]prior research has neglected the impact of undocumented changes on code review.
+According to reference[@czerwonka2015code]prior research has neglected the impact of undocumented
+changes on code review.
 Future research can focus on this and figure out whether the undocumented changes make a difference.
 
-The authors of reference[@gousios2014exploratory] propose to research on the effect of the democratization of the develoment process, which
-occurs for example through the use of pull requests. Democratization could for example lead to a substantially stronger commons ecosystem.
+The authors of reference[@gousios2014exploratory] propose to research on the effect of the
+democratization of the develoment process, which
+occurs for example through the use of pull requests. Democratization could for example lead to a
+substantially stronger commons ecosystem.
   
-They also suggest research on formation of teams and management hierarchies with respect to open-source projects and 
-research on the motives of developers to work in a highly transparent workspace, as prior work do not take these issues into consideration.
+They also suggest research on formation of teams and management hierarchies with respect to
+open-source projects and 
+research on the motives of developers to work in a highly transparent workspace, as prior work do
+not take these issues into consideration.
 
-Besides, research on studying how best to interpret empirical software engineering research within the 
+Besides, research on studying how best to interpret empirical software engineering research within
+the 
 context of contextual factors in reference[@baysal2013influence].
 Understanding the reasons behind observable developer behaviour
-requires an understanding of the contexts, processes, organizational and individual factors, which can be helpful to realize their influence on code review and the outcome.
+requires an understanding of the contexts, processes, organizational and individual factors, which
+can be helpful to realize their influence on code review and the outcome.
 
 * Future challenges in practice
 
 So far, the code review process is adopted both in industry and communities. 
-In reference [bacchelli2013expectations] the authors propose future research on automating code review tasks, 
-which mainly concerns low-level tasks, like checking boundary conditions or catching common mistakes. 
+In reference [bacchelli2013expectations] the authors propose future research on automating code
+review tasks, which mainly concerns low-level tasks, like checking boundary conditions or catching
+common mistakes. 
 
-Similarly, authors of reference [@bird2015lessons] suggest to explore an automatic way to classify and assess the usefulness of comments.
- This was specifically requested by an interviewees's and is still an open challenge regarding CodeFlow, 
- an in-house code review tool.
-They also propose to research on methods to automatically recommend reviewers for changes in the system.
+Similarly, authors of reference [@bird2015lessons] suggest to explore an automatic way to classify
+and assess the usefulness of comments. This was specifically requested by an interviewees's and is
+still an open challenge regarding CodeFlow, an in-house code review tool. They also propose to
+research on methods to automatically recommend reviewers for changes in the system.
 
-In reference[@gousios2014exploratory], the ways to managing tasks in the pull-based development model can be explored, 
-in order to increase the efficiency and readability.
+In reference[@gousios2014exploratory], the ways to managing tasks in the pull-based development
+model can be explored, in order to increase the efficiency and readability.
 
-This paper also gives us an example a tool which would suggest whether a pull request can be merged or not,
-because this can be predicted with fairly high accuracy. Therefore, the development of tools to 
-help the core team of a project with prioritizing their work can be explored.
+This paper also gives us an example a tool which would suggest whether a pull request can be merged
+or not, because this can be predicted with fairly high accuracy. Therefore, the development of
+tools to help the core team of a project with prioritizing their work can be explored.
 
-Several code review tools, such as CodeFlow and RevFinder, can still be explored. 
-In reference [@thongtanunam2015should], further research can focus on how RevFinder works in practice, 
+Several code review tools, such as CodeFlow and RevFinder, can still be explored. In reference
+[@thongtanunam2015should], further research can focus on how RevFinder works in practice, 
 in terms of how effectively and practically it helps developers in recommending code-reviewers,
 when deployed in a live development environment.
 
@@ -764,10 +793,10 @@ For answering **RQ1**
 
 **Research questions and answers**
 * *What patch characteristics share a relationship with the likelihood of a patch
-not being selected by reviewers?* "We find that the number of reviewers of prior patches, the number
-of days since the last modification of the patched files share a strong increasing relationship
-with the likelihood that a patch will have at least one reviewer. The description length
-is also a strong indicator of a patch that is likely to not be selected by reviewers."
+not being selected by reviewers?* "We find that the number of reviewers of prior patches, the
+number of days since the last modification of the patched files share a strong increasing
+relationship with the likelihood that a patch will have at least one reviewer. The description
+length is also a strong indicator of a patch that is likely to not be selected by reviewers."
 
 * *What patch characteristics share a relationship with the likelihood of a patch
 not being discussed?* "We find that the description length, churn, and the discussion length of
