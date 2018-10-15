@@ -116,7 +116,6 @@ search are considered in order of search result number. The *Search date* and *R
 columns indicate the date on which the search was executed and the position in the search result
 list, respectively. Details can be found in Table 2 in appendix.
 
-
 ### By reference
 We list all candidates that have been found by being referenced by another paper
 we found in Table 3 in appendix. 
@@ -290,6 +289,41 @@ Reference: @baysal2013influence
 
 #### Investigating technical and non-technical factors influencing modern code review
 Reference: @baysal2016investigating
+
+#### Summary
+This article primirarily discusses some non-technical factors that influence the code review
+process. This are factors like review experience, amount of contributions to a project and company
+affiliation.
+
+It is found that the most important factors influencing the code review process, in terms of both
+review time and patch acceptance, are the organization affiliation of the patch writer and the
+amount of participation of the patch writer in the project.
+
+#### For answering **RQ1**
+* *Sub-topic*: non-technical
+* *Research method*: empirical; quantitative
+* *Tools*: Custom
+* *Datasets*: WebKit reviews, Google Blink reviews
+
+#### Research questions and answers
+* *What factors can influence how long it takes for a patch to be reviewed?* "Based on the results
+  of two empirical studies, we found that both technical (patch size and component) , as well as
+  non-technical (organization, patch writer experience, and reviewer activity) factors affect
+  review timeliness when studying the effect of individual variables. While priority appears to
+  influence review time for WebKit, we were not able to confirm this for Blink."
+
+* *What factors influence the outcome of the review process?* "Our findings from both studies
+  suggest that patch writer experience affects code review outcome. For the WebKit project, factors
+  like priority, organization, and review queue also have an effect on the patch acceptance."
+
+#### For answering **RQ2**
+* *Tools*: N/A
+* *Company/Organization*: N/A
+* *Evaluation*: N/A
+
+#### For answering **RQ3**
+#### Future research challenges
+Not stated
 
 #### Modern code reviews in open-source projects: Which problems do they fix?
 Reference: @beller2014modern
@@ -733,7 +767,7 @@ published in 2008 or later. Though it was included as a candidate bec
 ### Table 2
 | Title                                                                                                         | Year | Reference                   | Search date | Result number | In survey? (Y/N) |
 |---------------------------------------------------------------------------------------------------------------|------|-----------------------------|-------------|---------------|------------------|
-| Investigating technical and non-technical factors influencing modern code review                              | 2016 | @baysal2016investigating    | 29-09-2018  | 9             |                  |
+| Investigating technical and non-technical factors influencing modern code review                              | 2016 | @baysal2016investigating    | 29-09-2018  | 9             | Y                |
 | Modern code review                                                                                            | 2010 | @cohen2010modern            | 25-09-2018  | 1             | N                |
 | An empirical study of the impact of modern code review practices on software quality                          | 2016 | @mcintosh2016empirical      | 25-09-2018  | 4             | N                |
 | A Study of the Quality-Impacting Practices of Modern Code Review at Sony Mobile                               | 2016 | @shimagaki2016study         | 29-09-2018  | 11            |                  |
