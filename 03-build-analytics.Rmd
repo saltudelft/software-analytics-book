@@ -78,10 +78,10 @@ build errors, mining, software repositories, open-source software.
 In order to provide a valid current overview of build analytics field, we selected only the
 relevant papers that were published after 2008, in other words we have not included papers older than
 10 years. We had chosen 10 years as our threshold being inspired by "ICSE-Most Influential Paper
-10 Years Later" Award. The only paper that does not obey to this rule is cornerstone description
+10 Years Later" Award. The only paper that does not obey to this rule is the cornerstone description
 of CI practices written by Martin Fowler, as we considered it important for us to see the practices
 evolution in build analytics field. Most of the papers we founded were linked to our research questions
-being reference in the sections bellow. From the selected papers, we choose to not include in our
+being reference in the sections bellow. From the selected papers, we chose not to include in our
 research two papers, as they are case studies on a couple of project and do not introduce new
 techniques or applications.
 
@@ -247,7 +247,7 @@ fast-executing tests than slow tests.
 
 Furthermore, builds should be readily available to stakeholders and testers as this can reduce the amount of rework 
 required when rebuilding a feature that does not meet requirements. In general, all companies should schedule a 
-“nightly build”  to update the project from the repository to ensure everyone is up to date. Continuous Integration 
+"nightly build"  to update the project from the repository to ensure everyone is up to date. Continuous Integration 
 is all about communication, so it is important to ensure that everyone can easily see the current state of the system. 
 This is also another reason why CI works really well in the agile industry [@stolberg2009enabling]. 
 Both techniques stress the importance of good communication.
