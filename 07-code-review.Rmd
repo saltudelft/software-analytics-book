@@ -706,7 +706,7 @@ can influence code review and its outcome.
 
 **Notes**:
 
-This paper is has an extended version [@baysal2016investigating].
+This paper has an extended version [@baysal2016investigating].
 
 #### A Study of the Quality-Impacting Practices of Modern Code Review at Sony Mobile
 Reference: @shimagaki2016study
