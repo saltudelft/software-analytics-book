@@ -392,7 +392,7 @@ we noticed that tools like Gerrit, Crucible, Stash, GitHub pull requests, Upsour
 ReviewClipse and CodeFlow are commonly used in practice. Most reseaches prove that code 
 review do help share knowledge and develop defect-free software. It is not very reasonable to rank 
 various tools as code review itself is much more important for quality of software compared to the 
-choices of a specific tool. 
+choice of a specific tool. 
 
 ## Appendix
 
