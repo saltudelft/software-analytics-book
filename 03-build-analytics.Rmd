@@ -315,7 +315,8 @@ From the synthesis of the works discussed in this section the following research
  * What is the impact of the choice of Continuous Integration platform? Most of the research is done
  on users using Travis&nbsp;CI, there are many other platforms out there. Every platform has their own
  characteristics and this could impact the effectiveness for a specific kind of project.
-
+ * How does the platform or programming language influence effectiveness or adoption of continuous
+ integration systems?
 
 # Appendix: Build Analytics {-}
 
