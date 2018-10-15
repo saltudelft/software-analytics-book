@@ -124,6 +124,7 @@ we found in Table 3 in appendix.
 
 ## Answers
 ### RQ1
+
 ### RQ2
 When it comes to application of code review in industries, we collect information from three
 perspectives, namely, popularity, variety and choices of tools. By collecting information from
@@ -142,9 +143,9 @@ Conclusively, based on different enterprises' expectation and requirments, they 
 for code review. Additionally, we also find different tools are not very comparable as researches
 mention these tools for different teams, projects and metrics. It is hard to say which tool is
 generally better than others. We have to admit that code review is commonly applied in industries
-and also it is a nice way to guarantee quality of software. 
-### RQ3
+and also it is a nice way to guarantee quality of software.
 
+### RQ3
 *What are future challenges in the area of code review?*
 This concerns both research challenges and challenges for use in practice.
 
