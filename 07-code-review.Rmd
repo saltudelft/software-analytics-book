@@ -120,10 +120,59 @@ list, respectively. Details can be found in Table 2 in appendix.
 We list all candidates that have been found by being referenced by another paper
 we found in Table 3 in appendix. 
 
-
-
 ## Answers
 ### RQ1
+**RQ1** is *What is the state of the art in the research area of code review?*. As stated in the
+introduction section, this question concerns itself with topics that are researched often, the
+results of that research, and research methods, tools and datasets that are used. Each of these
+topics will be discussed in the answer to this question.
+
+#### Research methods
+First, let us consider the research methods that are generally being used by the papers we
+incorporated in the survey. The majority of the papers we considered do quantitative research
+(@baysal2016investigating, @beller2014modern, @czerwonka2015code, @gousios2014exploratory,
+@mcintosh2014impact, @baysal2013influence, @shimagaki2016study, @thongtanunam2015should,
+@thongtanunam2016revisiting, @thongtanunam2017review, @zanjani2016automatically) and some
+qualitative research has also been done (@bacchelli2013expectations, @bird2015lessons,
+@gousios2014exploratory, @mcintosh2014impact, @shimagaki2016study, @thongtanunam2014reda).
+The quantitative research mainly concerns itself with research on open-source projects, while the
+qualitative research often also considers closed source projects. This is probably the case because
+the development history, and hence also the code history, is far easier to access for open-source
+projects than for closed-source projects. The qualitative research mainly concerns itself with
+interviews, mostly with developers. This is probably the case because it is more convenient to
+reach developers of proprietary projects, for example because they are often all in one place.
+
+All research that is considered in this survey was done empirically. In other words, no explicit
+experimental setups have been created just for the purpose of doing the research, but all research
+has been done on existing situations.
+
+#### Tools and datasets
+All papers that do quantitative research use some tools for processing the data. None of the papers
+in this survey use pre-built tools. All of them have created some custom tools to process the data
+(@baysal2016investigating, @beller2014modern, @czerwonka2015code, @gousios2014exploratory,
+@baysal2013influence, @shimagaki2016study, @thongtanunam2015should, @thongtanunam2016revisiting,
+@thongtanunam2017review, @zanjani2016automatically). This mostly concerns custom code in the R
+programming language that is created for this specific use case only. Some of the papers make the
+source code of the tools they use available online, so it can be used by other people. The paper
+by Gousios et al. [@gousios2014exploratory] does this, for example.
+
+As for datasets that are used: there are a few open-source projects that are used very often for
+quantitative research, notably the following projects: Qt (@mcintosh2014impact,
+@thongtanunam2015should, @thongtanunam2016revisiting, @thongtanunam2017review, @yang2016mining),
+Android (@thongtanunam2014reda, @thongtanunam2015should, @thongtanunam2017review, @yang2016mining,
+@zanjani2016automatically), OpenStack (@thongtanunam2015should, @thongtanunam2016revisiting,
+@thongtanunam2017review, @yang2016mining), LibreOffice (@thongtanunam2015should, @yang2016mining),
+Eclipse (@yang2016mining, @zanjani2016automatically). Apart from these, mostly other open-source
+projects have been used, along with a few closed-source projects, for example from Sony Mobile
+[@shimagaki2016study] or from Microsoft [@zanjani2016automatically]. What is used from these
+projects is often only the data from the code reviewing system, possibly along with the code that
+is under review. As stated above, the reason that open-source projects are used much more as
+datasets is probably that they are much easier to access.
+
+#### Research subjects
+
+#### Conclusion
+
 
 ### RQ2
 When it comes to application of code review in industries, we collect information from three
