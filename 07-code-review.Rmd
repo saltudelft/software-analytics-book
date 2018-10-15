@@ -268,7 +268,7 @@ RevFinder recommends correct reviewers with a median rank of 4 (i.e., a good rev
 is on position 4 on average) based on empirical evaluation. For cHRev, less than 2 recommendations
 are necessary to find a good reviewer candidate.
 
-#### Conclusion
+#### Summary
 We found that doing code reviews can improve social aspects and improve code rubustness against
 errors. Additionally, finding a reviewer and the experience of a reviewer significantly influence
 the code review process, along with technical and non-technical aspects of the submitter and patch,
