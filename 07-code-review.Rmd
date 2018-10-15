@@ -395,7 +395,7 @@ rank various tools, as code review itself is much more important for quality of 
 to the choice of a specific tool.
 
 Concerning **RQ3**, we found that as the concept of modern code review was proposed 5 year ago,
-most of work aim at increasing the understanding of code review and its impact on software quality. 
+most of the study aim at increasing the understanding of code review and its impact on software quality. 
 However, prior work were still not enough such that some properties of were not taken into consideration.
 Therefore, further study on modern code review is still needed, to obtain more useful information. And learned from the research progress, several
 possible topics based on the prior work that can be explored to obtain more findings. 
