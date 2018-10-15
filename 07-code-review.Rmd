@@ -626,9 +626,6 @@ specifically requested by an interviewees's and is still an open challenge regar
 tools.
 * Research on methods to automatically recommend reviewers for changes in the system.
 
-#### Impact of peer code review on peer impression formation: A survey
-Reference: @bosu2013impact
-
 #### Software Reviews: The State of the Practice
 Reference: @ciolkowski2003software
 
@@ -1039,9 +1036,6 @@ For answering **RQ3**:
 The paper notes that it assumes that the review process is the same for a whole project, even for
 larger projects. Future work should examine whether there are differences in review processes
 across subsystems.
-
-#### Who should review this change?: Putting text and file location analyses together for more accurate recommendations
-Reference: @xia2015should
 
 #### Mining the Modern Code Review Repositories: A Dataset of People, Process and Product
 Reference: @yang2016mining
