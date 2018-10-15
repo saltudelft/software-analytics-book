@@ -223,6 +223,8 @@ The topics that are being explored are:
   * Growing popularity of CI due to the introduction of VCS as suggested by @rausch2017empirical
   * Common practices used in the industry exemplified by @fowler2006continuous
   * Use of common CI practice in the agile approach presented by @stolberg2009enabling
+  * Comparison between pull requests and direct commits to result in successful build as 
+  uncovered by @vasilescu2014continuous
   
 #### Build Analytics Usage 
   
@@ -253,6 +255,14 @@ required when rebuilding a feature that does not meet requirements. In general, 
 is all about communication, so it is important to ensure that everyone can easily see the current state of the system. 
 This is also another reason why CI works really well in the agile industry [@stolberg2009enabling]. 
 Both techniques stress the importance of good communication.
+
+The paper by Vasilescu et al. [@vasilescu2014continuous] studies a sample of large and active GitHub projects 
+developed in Java, Python and Ruby. The paper finds that direct code modifications (commits) and more popular 
+than indirect code modifications (pull request). Additionally, the notion of automated testing is not as 
+widely practised. Most samples in Vasilescu [@vasilescu2014continuous] study were configured to use TRAVIS-CI,
+however, less than half actually do. In terms of languages, Ruby projects are among the early adopters of 
+TRAVIS-CI, while Java projects are late to adopt CI. The paper uncovers that the pull requests are much more
+likely to result in successful builds than direct commits. 
 
 
 ### Build Analytics Future Research
