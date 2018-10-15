@@ -191,7 +191,7 @@ reviews does lead to a significant increase in post-release defects, which sugge
 which developers show much activity actually help in finding defects. They additionally find that
 review coverage, the share of code that has been reviewed, also influences the amount of
 post-release defects, though not as much as review participation. Shimagaki et al.
-[@shimagaki2016study] performed a replication at Sony Mobile study of the justmentioned study by
+[@shimagaki2016study] performed a replication at Sony Mobile study of the just mentioned study by
 McIntosh et al. Their results were the same for review coverage, and partly for review
 participation. Contrary to McIntosh et al., they found that the reviewing time and discussion
 length metrics for review participation did not contribute significantly to the amount of
