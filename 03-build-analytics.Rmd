@@ -306,6 +306,8 @@ Some open research questions from recent papers are the following:
   continuous integration? [@zhao2017impact]
   * How can we detect if fixing a build configuration requires changes in the remote environment? [@vassallo2018break]
   * Does breaking the build often translate to worse project quality and decreased productivity? [@beller2017oops]
+  * Could already trained models on projects with more data available be used to make accurate predictions on newer
+  projects with less data available? [@ni2018acona]
 
 From the synthesis of the works discussed in this section the following research questions emerged:
 
