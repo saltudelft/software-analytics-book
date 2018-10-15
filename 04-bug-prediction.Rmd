@@ -43,7 +43,7 @@ We started by studying the initial 6 seed papers which were selected based on do
 | @Hall2012 | literature review | influence of model context, methods, metrics on performance  |
 | @Lewis2013 | case study | BP deployment in industry |
 
-We looked for additional papers by making searches based on the following elements:
+We looked for additional papers with the following queries:
 
 1. Keyword search using search engines 
    (Google Scholar, Scopus, ACM Digital Library, IEEE Explorer).
@@ -294,7 +294,7 @@ have to do with the following properties that bug prediction tools should have i
 
 ### RQ2: Actionable tools for developers
 The only paper that tackles this question is by Lewis et al., 
-in which they deploy bug predicting software to developers 
+in which the authors deploy bug predicting software to developers 
 workspaces and evaluate developers behaviour after and before having the software [@Lewis2013]. 
 In this study they conclude currently, 
 fault prediction does not provide actionable tools for developers.
