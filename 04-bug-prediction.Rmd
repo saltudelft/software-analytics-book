@@ -213,7 +213,7 @@ Instead of showing top 10% of bug-prone files, this shows the top 20 files.
 With machine learning methods bugs can be predicted by software tools,
 these tools train on the code base, code history and other data from software repositories.
 Downside is that these methods give little insights in why a component is bug-prone [@Lewis2013].
-Another downside is that this doesn't work for new projects since cross-project
+Another downside is that this does not work for new projects since cross-project
 defect prediction does not yet give good results [@zimmermann2009].
 
 ##### Analysis on Abstract Syntax Trees
@@ -227,7 +227,7 @@ They also show that using ASTs can improve cross-project prediction results [@wa
 ### RQ1: Evaluations
 In order to answer this questions we looked at the scientific papers that 
 benchmark prediction models in any way, 
-and specifically looked at the way this are evaluated. 
+and specifically looked at the way these are evaluated. 
 We found that most papers use a simple yet logical approach to 
 benchmark an algorithm’s performance. 
 This approach is called Area Under the Curve (commonly referred as AUC), 
@@ -240,12 +240,12 @@ which is how accurate the algorithm is at finding them (optimal would be no fals
 
 Other authors use different methodologies in order to rank the algorithm’s performance. 
 Jiang et al. focuses solely on how to evaluate the algorithm’s performance, 
-and the researchers used basically the accuracy and 
+and the researchers used the accuracy and 
 precision metrics in numerical and graphical form, 
 but they also bring to the table a graphic that helps identify where to spend 
 the project resources in order to get a greater software quality [@Jiang2008].
 Finally, another method is to use linear regression in order to 
-qualify the fault-prediction method’s prediction power [@DAmbros2010].
+qualify the fault prediction method’s prediction power [@DAmbros2010].
 
 In conclusion, we can see that the most used methodology is AUC, this is because, 
 citing Lessman et al.: “The AUC was recommended as the primary accuracy indicator 
@@ -260,7 +260,7 @@ while the variability due to the choice of classifier is very small [@Shepperd20
 
 
 ### RQ2: Practical usage
-There seems to be no to very little usage of bug prediction tools in the industry,
+There seems to be none to very little usage of bug prediction tools in the industry,
 even searching outside the scope of the scientific literature did not come up with anything.
 On GitHub we could only find a handful of repositories which implement a bug prediction tool, 
 however, none of these are actively maintained any longer.
@@ -275,13 +275,13 @@ Some issues we found with using bug prediction tools in practice
 have to do with the following properties that bug prediction tools should have in some cases:
 
 * _Obvious reasoning_: If a tool has no clear reasoning users might quickly discard the
-  tool, because they don't understand why a file is bug-prone [@Lewis2013].
+  tool, because they do not understand why a file is bug-prone [@Lewis2013].
 * _Bias towards the new_: For some metrics this feature is required,
   because otherwise it would be impossible to 'fix' a file, 
   it will remain to be bug-prone even if completely rewritten [@Lewis2013].
 * _Actionable messages_: Messages shown by bug prediction tools must be actionable. 
   The user must be able to perform an action to fix the problem with the file,
-  otherwise users won't know what to do with the tool [@Lewis2013].
+  otherwise users will not know what to do with the tool [@Lewis2013].
 * _Noise problem_: It turns out that if data which is used for the historical changes 
   contains noise this has a large impact on the performance of the model.
   Since the data is mostly mined from software repositories this will contain noise [@Kim2011].
@@ -295,7 +295,7 @@ The only paper that tackles this question is by Lewis et al.,
 in which they deploy bug predicting software to developers 
 workspaces and evaluate developers behaviour after and before having the software [@Lewis2013]. 
 In this study they conclude currently, 
-fault-prediction does not provide actionable tools for developers.
+fault prediction does not provide actionable tools for developers.
 
 To answer this questions we found no more information in scientific papers, 
 so we had to look outside of the academic world in order to see if this techniques are 
