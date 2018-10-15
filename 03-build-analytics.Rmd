@@ -128,20 +128,16 @@ The tools that are being proposed are:
   * ACONA capable of predicting build failure in CI environment for newer projects with less 
   data available [@ni2018acona]
 
-#### Importance of the Build Process
+#### Importance of the Build Process and CI Users Satisfaction
 
 The build process is an important part of a project that uses VCS in the way that based on the findings
 of Hassan et al. [@hassan2018hirebuild], 22% of code commits include changes in build script files for either
-build working or build fixing purposes. 
-
-#### CI Users Satisfaction
-
-Moreover, recent studies have focused on how satisfied the users of CI tools are, one particular paper 
-by Widder et al. [@widder2018m] analyzing what factors have an impact on abandonment of Travis&nbsp;CI. 
-This paper finds that increased build complexity reduces the chance of abandonment, but larger projects 
-abandon at a higher rate and that a project's language has significant but varying effect. A surprising 
-result is that metrics of configuration attempts and knowledge dispersion in the project do not affect 
-the rate of abandonment.
+build working or build fixing purposes. Moreover, recent studies have focused on how satisfied the users of 
+CI tools are, one particular paper by Widder et al. [@widder2018m] analyzing what factors have an impact 
+on abandonment of Travis&nbsp;CI. This paper finds that increased build complexity reduces the chance of 
+abandonment, but larger projects abandon at a higher rate and that a project's language has significant
+but varying effect. A surprising result is that metrics of configuration attempts and knowledge dispersion 
+in the project do not affect the rate of abandonment.
 
 #### Patent for Predicting Build Errors
 
