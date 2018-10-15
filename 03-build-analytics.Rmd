@@ -208,7 +208,7 @@ in build analytics domain are:
  * An Empirical Analysis of Build Failures in the Continuous Integration Workflows of Java-Based Open-Source Software [@rausch2017empirical]
  * Continuous Integration [@fowler2006continuous]
  * Enabling Agile Testing Through Continuous Integration [@stolberg2009enabling]
- * Travistorrent: Synthesizing Travis Ci and Github for Full-Stack Research on Continuous Integration [@beller2017travistorrent]
+ * Travistorrent: Synthesizing Travis&nbsp;CI and Github for Full-Stack Research on Continuous Integration [@beller2017travistorrent]
  * I'm Leaving You, Travis: A Continuous Integration Breakup Story [@widder2018m]
  * Continuous integration in a social-coding world: Empirical evidence from GITHUB [@vasilescu2014continuous]
  
@@ -255,9 +255,9 @@ Both techniques stress the importance of good communication.
 The paper by Vasilescu et al. [@vasilescu2014continuous] studies a sample of large and active GitHub projects 
 developed in Java, Python and Ruby. The paper finds that direct code modifications (commits) and more popular 
 than indirect code modifications (pull request). Additionally, the notion of automated testing is not as 
-widely practised. Most samples in Vasilescu [@vasilescu2014continuous] study were configured to use Travis CI,
+widely practised. Most samples in Vasilescu [@vasilescu2014continuous] study were configured to use Travis&nbsp;CI,
 however, less than half actually do. In terms of languages, Ruby projects are among the early adopters of 
-Travis CI, while Java projects are late to adopt CI. The paper uncovers that the pull requests are much more
+Travis&nbsp;CI, while Java projects are late to adopt CI. The paper uncovers that the pull requests are much more
 likely to result in successful builds than direct commits. 
 
 
@@ -273,12 +273,12 @@ The papers identified using the research protocol defined in section
 in the field of build analytics are:
 
  * Built to last or built too fast?: evaluating prediction models for build times [@bisong2017built]
- * Work Practices and Challenges in Continuous Integration: A Survey with Travis CI Users [@pinto2018work]
+ * Work Practices and Challenges in Continuous Integration: A Survey with Travis&nbsp;CI Users [@pinto2018work]
  * Statically Verifying Continuous Integration Configurations [@santolucito2018statically]
  * (No) Influence of Continuous Integration on the Commit Activity in GitHub Projects [@baltes2018no]
  * The impact of continuous integration on other software development practices: a large-scale empirical study [@zhao2017impact]
  * Un-Break My Build: Assisting Developers with Build Repair Hints [@vassallo2018break]
- * Oops, my tests broke the build: An explorative analysis of Travis CI with GitHub [@beller2017oops]
+ * Oops, my tests broke the build: An explorative analysis of Travis&nbsp;CI with GitHub [@beller2017oops]
 
 In Bisong et al.[@bisong2017built] the main limitation was the performance of the machine learning
 algorithm used. In the implementation R was used and it proved not capable of processing the
