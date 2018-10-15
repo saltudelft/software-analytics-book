@@ -47,7 +47,7 @@ the state-of-the-art papers display.
 
 **RQ2**: What is the current state of practice in the field of build analytics?
 
-Section \@ref(build-analytics-state-of-practice) examines scientific papers to analyse the current
+Section \@ref(build-analytics-state-of-practice) examines scientific papers to analyze the current
 trend of build analytics in the software development industry. We look at the popularity of CI in
 the industry and explore the increase in the use of Continuous Integration (CI) by discussing its
 ample benefits. Furthermore, it will discuss the practices used by engineers in the industry to
@@ -155,7 +155,7 @@ machine learning models that were able to predict the build taking advantage of 
 in TravisTorrent build records. Their models performed quite well with an R-Squared of around 80%, 
 meaning that they were able to capture the variation of build time over multiple projects. Their research 
 could be useful on one hand for software developers and project managers for a better time management scheme 
-and on the other hand for other researchers that may improve their proposed models. 
+and on the other hand, for other researchers that may improve their proposed models. 
 
 #### Predicting Build Failures
 
