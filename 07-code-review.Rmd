@@ -216,7 +216,8 @@ The resources are listed in alphabetical order of first author name, and then by
 #### Expectations, outcomes, and challenges of modern code review
 Reference: @bacchelli2013expectations
 
-*Summary*
+**Summary**  
+
 This paper describes research about the goals and actual effects of code reviews. Interviews and
 experiments have been done with people in the programming field.
 
@@ -230,7 +231,7 @@ For answering **RQ1**
 * *Tools*: N/A
 * *Datasets*: Data collected from interviews, surveys and code reviews
 
-*Research questions and answers*
+**Research questions and answers**  
 * *What are the motivations and expectations for modern code review? Do they change from managers
   to developers and testers?* The top motivation for code reviews is finding defects, closely
   followed by code improvement. There does not seem to be a large difference between managers,
@@ -252,7 +253,7 @@ For answering **RQ2**
   the more often ocurring results of doing code review.
 
 For answering **RQ3**
-*Future research challenges*
+**Future research challenges**  
 * Research on automating code review tasks. This mainly concerns low-level tasks, like checking
   boundary conditions or catching common mistakes.
 * Research on code comprehension during code review. According to the authors research has been
@@ -265,7 +266,7 @@ For answering **RQ3**
 #### A Faceted Classification Scheme for Change-Based Industrial Code Review Processes
 Reference: @baum2016faceted
 
-*Summary*
+**Summary**  
 The broad research questions answered in this article are: How is code review performed in industry
 today? Which commonalities and variations exist between code review processes of different teams
 and companies? The article describes a classification scheme for change-based code review processes
@@ -276,7 +277,7 @@ Grounded Theory study.
 #### The Choice of Code Review Process: A Survey on the State of the Practice
 Reference: @baum2017choice
 
-*Summary*
+**Summary**  
 This paper, published in 2017, is trying to answer 3 RQs. Firstly, how prevalent is change-based
 review in the industry? Secondly, does the chance that code review remains in use increase if code
 review is embedded into the process (and its supporting tools) so that it does not require a
@@ -292,7 +293,7 @@ Reference: @baysal2016investigating
 #### Modern code reviews in open-source projects: Which problems do they fix?
 Reference: @beller2014modern
 
-*Summary*
+**Summary**  
 It has been researched what kinds of problems are solved by doing code reviews. The conclusion is
 that 75% are improvements in evolvability of the code, and 25% in functional aspects.
 
@@ -305,7 +306,7 @@ For answering **RQ1**
 * *Tools*: R
 * *Datasets*: documented history of ConQAT and GROMACS
 
-*Research questions and answers*
+**Research questions and answers**
 * *Which types of changes occur in code under review?* 75% of changes are related to the
 evolvability of the system, and only 25% to its functionality.
 * *What triggered the changes occurring in code under review?* 
@@ -317,7 +318,7 @@ and task type are the most important factors influencing the number of changes.
 #### Lessons learned from building and deploying a code review analytics platform
 Reference: @bird2015lessons
 
-*Summary*
+**Summary**  
 A code review data analyzation platform developed and used by Microsoft is discussed. It is mainly
 presented what users of the system think of it and how its use influences development teams. One of
 the conclusions is that in general, the platform has a positive influence on development teams and
@@ -339,7 +340,7 @@ However, some parts of the tool still need to improve in terms of user-friendlin
 because some functionality is difficult to find.
 
 For answering **RQ3**
-*Future research challenges*
+**Future research challenges**
 * Research on an automatic way to classify and assess the usefulness of comments. This was
 specifically requested by an interviewees's and is still an open challenge regarding CodeFlow.
 * Research on many aspects of code review based on data from CodeFlow Analytics or other similar
@@ -352,7 +353,7 @@ Reference: @bosu2013impact
 #### Software Reviews: The State of the Practice
 Reference: @ciolkowski2003software
 
-*Summary*
+**Summary**  
 To investigate how industry carries out software reviews and in what forms, this paper conducted
 a two-part survey in 2002, the first part based on a national initiative in Germany and the second
 involving companies worldwide. Additionally, this paper also include some fundamental concepts
@@ -361,7 +362,7 @@ of code review, such as functionalities of code review.
 #### Code reviews do not find bugs: how the current code review best practice slows us down
 Reference: @czerwonka2015code
 
-*Summary*
+**Summary**  
 As code review has many uses and benefits, the authors hope to find out whether the current code
 review methods are sufficiently efficient. They also research whether other methods may be more
 efficient. With experience gained at Microsoft and with support of data, the authors posit (1) that
@@ -375,7 +376,7 @@ For answering **RQ1**
 * *Tools*: not mentioned
 * *Datasets*: data collected from engineering systems
 
-*Research questions and answers*
+**Research questions and answers**
 
 * *In what situations, do code reviews provide more value than others?* 
 Unlike inspections, code reviews do not require participants to be in the same place nor do they
@@ -388,7 +389,7 @@ With 20 or more changed files, the more files there are in a single
 review, the lower the overall rate of useful feedback.
 
 For answering **RQ3**
-*Future research challenges*
+**Future research challenges**  
 * Research on undocumented changes of code review because prior research has neglected.
 
 * Due to its costs, code reviewing practice is a topic deserving to be better
@@ -398,7 +399,7 @@ best practice currently prescribes.
 #### Design and code inspections to reduce errors in program development
 Reference: @fagan2002design
 
-*Summary*
+**Summary**  
 This paper describes a method to thoroughly check code quality after each step of the development
 process, in a heavyweight manner. It does not really concern agile development.
 
@@ -408,7 +409,7 @@ work well for improving software quality.
 #### An exploratory study of the pull-based software development model
 Reference: @gousios2014exploratory
 
-*Summary*
+**Summary**  
 This article focuses on how much pull requests are being used and how they are used, focusing on
 GitHub. For example, it is concluded that pull-requests are not being used that much, that
 pull-requests are being merged fast after they have been submitted, and that a pull request not
@@ -421,8 +422,8 @@ For answering **RQ1**
 * *Tools*: Custom developed tools, available online
 * *Datasets*: GHTorrent dataset, along with data collected by authors. The last is also available
   online
-
-*Research questions and answers*
+ 
+**Research questions and answers**  
 * *How popular is the pull based development model?* "14% of repositories are using pull requests
 on Github. Pull requests and shared repositories are equally used among projects. Pull request
 usage is increasing in absolute numbers, even though the proportion of repositories using pull
@@ -446,7 +447,7 @@ For answering **RQ2**
 * *Evaluation*: N/A
 
 For answering **RQ3**
-*Future research challenges*
+**Future research challenges**  
 * More research is needed on *drive-by commits*, which the paper loosely defines as commits added
   to a repository through a PR by a user that has never contributed to the repository and hence
   does so for the first time. Often this new contributor also has created a fork for the sole
@@ -461,7 +462,7 @@ For answering **RQ3**
 * Research on novel code review practices.
 * Research on ways to managing tasks in the pull-based development model.
 
-*Challenges in practice*
+**Challenges in practice**  
 * Development of tools to help the core team of a project with prioritizing their work. The paper
   gives as an example a tool which would suggest whether a pull request can be merged or not,
   because this can be predicted with fairly high accuracy.
@@ -471,7 +472,7 @@ For answering **RQ3**
 #### The impact of code review coverage and code review participation on software quality: A case study of the qt, vtk, and itk projects
 Reference: @mcintosh2014impact
 
-*Summary*
+**Summary**  
 This paper focuses on the influence of doing light-weight code reviews on software quality. In
 particular, the effect of review coverage (the part of the code that has been reviewed) and review
 participation (a measure for how much reviewers are involved in the review process) are being
@@ -489,7 +490,7 @@ participation on software quality rest quantitative.
 * *Datasets*: Data extracted from Qt, VTK and ITK code review dataset and necessary metrics
 including version control metrics, coverage metrics and participation metrics.
 
-*Research questions and answers*
+**Research questions and answers**  
 * *Is there a relationship between code review coverage and post-release defects?*
  Although review coverage is negatively associated with software quality in our models, 
  several defect-prone components have high coverage rates, suggesting that other properties of the
@@ -507,18 +508,18 @@ For answering **RQ2**
 * *Evaluation*: N/A
 
 For answering **RQ3**
-*Future research challenges*
+**Future research challenges**  
 * Research on other properties of modern code review such as code ownership. Inspired by this
 paper, other properties of modern code review can also be explored.
 
-*Notes*
+**Notes**  
 There exists an extended and improved version of this paper [@mcintosh2016empirical]. Only the
 original version of the paper has been included in this survey.
 
 #### The influence of non-technical factors on code review
 Reference:@baysal2013influence
 
-*Summary*
+**Summary**  
 This paper focus on the influence of several non-technical factors on code review response time and
 outcome. An empirical study of code review process for WebKit, 
 a large open source project was described to see the influence. Specifically, the authors
@@ -531,7 +532,7 @@ For answering **RQ1**
 * *Tools*: WebKit
 * *Datasets*:  WebKit code review data extracted from Bugzilla.
 
-*Research questions and answers*
+**Research questions and answers**  
 * *What factors can influence how long it takes for a patch to be reviewed?* 
 The organizational and personal factors influence review timeliness. Some factors that influenced
 the time required to review a patch, such as the size of the patch itself or the part of the code
@@ -546,7 +547,7 @@ patch writer is affiliated with and their level of participation within the proj
 
 
 For answering **RQ3**
-*Future research challenges*
+**Future research challenges**  
 * Research on studying how best to interpret empirical software engineering research within the
 context of contextual factors. Understanding the reasons behind observable developer behaviour
 requires an understanding of the contexts, processes, organizational and individual factors that
@@ -555,7 +556,7 @@ can influence code review and its outcome.
 #### Who should review my code? A file location-based code-reviewer recommendation approach for modern code review
 Reference: @thongtanunam2015should
 
-*Summary*
+**Summary**  
 This paper presents (1) research on how often a reviewer cannot be found for a code change and the
 influence of this on the time it takes to process a code change, (2) a tool (*RevFinder*) for
 automatically suggesting reviewers based on files reviewed previously, and (3) an empirical
@@ -571,7 +572,7 @@ For answering **RQ1**
 * *Tools*: Custom
 * *Datasets*: Custom: Gerrit review data from Android, OpenStack, Qt and LibreOffice
 
-*Research questions and answers*
+**Research questions and answers**  
 * *How do reviews with code-reviewer assignment problem impact reviewing time?* "4%-30% of reviews
   have code-reviewer assignment problem. These reviews significantly take 12 days longer to approve
   a code change. A code-reviewer recommendation tool is necessary in distributed software
@@ -591,14 +592,14 @@ For answering **RQ2**
 * *Evaluation*: N/A
 
 For answering **RQ3**
-*Future research challenges*
+**Future research challenges**  
 Researching how RevFinder works in practice, in terms of how effectively and practically it helps
 developers in recommending code-reviewers, when deployed in a live development environment.
 
 #### Revisiting code ownership and its relationship with software quality in the scope of modern code review 
 Reference: @thongtanunam2016revisiting
 
-*Summary*
+**Summary**  
 This paper researches the effect code reviews have on code ownership. This question is answered by
 looking at two open-source projects. It was found that a lot of contributors do not submit code
 changes for a specific ticket, but still do quite some reviewing. It was also found that code
@@ -613,7 +614,7 @@ For answering **RQ1**
   system from McIntosh et al. [@mcintosh2014the]. Ammended with custom datasets for Qt and
   OpenStack.
 
-*Research questions and answers*
+**Research questions and answers**  
 * *How do code authoring and reviewing contributions differ?* "The developers who only contribute
   to a module by reviewing code changes account for the largest set of contributors to that module.
   Moreover, 18%-50% of these review-only developers are documented core developers of the studied
@@ -643,7 +644,7 @@ Reference: @xia2015should
 #### Automatically recommending peer reviewers in modern code review
 Reference: @zanjani2016automatically
 
-*Summary*
+**Summary**  
 This paper introduces *cHRev*, a reviewer recommendation approach that, according to the paper,
 works better in most circumstances than *RevFinder* introduces by Thongtanunam et al.
 [@thongtanunam2015should]. It recommends reviewers based on their previous review activity. For
@@ -656,7 +657,7 @@ For answering **RQ1**
 * *Tools*: Custom
 * *Datasets*: Reviewing data for Mylyn, Eclipse, Android, and MS Office
 
-*Research questions and answers*
+**Research questions and answers**  
 * *What is the accuracy of cHRev in recommending reviewers on real software systems across closed
 and open source projects?* "cHRev makes accurate reviewer recommendations in terms of precision and
 recall. On average, less than two recommendations are needed to find the first correct reviewer in
@@ -675,7 +676,7 @@ For answering **RQ2**
 * *Evaluation*: N/A
 
 For answering **RQ3**
-*Future research challenges*
+**Future research challenges**  
 The authors plan to include textual analysis of review comments and additional measures of
 reviewers' contributions and impact in their approach.
 
