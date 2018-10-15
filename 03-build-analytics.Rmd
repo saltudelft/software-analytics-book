@@ -213,7 +213,7 @@ in build analytics domain are:
  * Continuous Integration [@fowler2006continuous]
  * Enabling Agile Testing Through Continuous Integration [@stolberg2009enabling]
  * Travistorrent: Synthesizing Travis Ci and Github for Full-Stack Research on Continuous Integration [@beller2017travistorrent]
- * I’im Leaving You, Travis: A Continuous Integration Breakup Story [@widder2018m]
+ * I'm Leaving You, Travis: A Continuous Integration Breakup Story [@widder2018m]
  * Continuous integration in a social-coding world: Empirical evidence from GITHUB [@vasilescu2014continuous]
  
 
@@ -259,9 +259,9 @@ Both techniques stress the importance of good communication.
 The paper by Vasilescu et al. [@vasilescu2014continuous] studies a sample of large and active GitHub projects 
 developed in Java, Python and Ruby. The paper finds that direct code modifications (commits) and more popular 
 than indirect code modifications (pull request). Additionally, the notion of automated testing is not as 
-widely practised. Most samples in Vasilescu [@vasilescu2014continuous] study were configured to use TRAVIS-CI,
+widely practised. Most samples in Vasilescu [@vasilescu2014continuous] study were configured to use Travis CI,
 however, less than half actually do. In terms of languages, Ruby projects are among the early adopters of 
-TRAVIS-CI, while Java projects are late to adopt CI. The paper uncovers that the pull requests are much more
+Travis CI, while Java projects are late to adopt CI. The paper uncovers that the pull requests are much more
 likely to result in successful builds than direct commits. 
 
 
