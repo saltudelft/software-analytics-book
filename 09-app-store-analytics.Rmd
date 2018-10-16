@@ -4,7 +4,7 @@
 
 In the year 2008, the first app stores became available [@appStoreLaunch][@androidMarketLaunch].
 These marketplaces have grown rapidly in size since then with over 3.8 million apps in the Google
-Play store alone as of first quarter of 2018 [@appNumber]. These app stores, together with the
+Play store alone as of first quarter of 2018 [@appNumber]. These app stores, together with a
 large amount of user-generated data associated with them present an unprecedented source of
 information about the app ecosystem. Software developers and researchers use this valuable data to
 gain new insights about how users use their app, what they like and the difficulties they
@@ -15,7 +15,7 @@ much nowadays, it plays a vital role in the field of Software Engineering.
  
 In 2015, Martin, William, et al., published "A survey of app store analysis for software
 engineering" [@martin2015survey]. The paper divides the field of App Store Analytics into seven
-categories: API Analysis, Review Analytics, Security, Store Ecosystem, Size and Effort Prediction,
+categories: API Analysis, Review Analytics, Security, Store Ecosystem, Size, and Effort Prediction,
 Release Engineering, and Feature Analysis. Given that relevant literature on the field of App Store
 Analytics has been already gathered and analyzed, it makes sense to use this chapter to go a step
 further. We delve deeper into the subfield of Review Analysis. We started with the literature
@@ -147,10 +147,10 @@ Techniques used for doing the analysis
 
 To answer the question at hand we looked at the novel ideas and the research that has been done in
 this field since that time. In their survey [@martin2015survey] Martin et al. proposed
-“Classification”,“Content”,“Requirements Engineering”, “Sentiment”, “Summarization” and “Surveys
+“Classification”, “Content”, “Requirements Engineering”, “Sentiment”, “Summarization” and “Surveys
 and Methodological Aspects of App Store Analysis” to categorize the existing literature. After
 analyzing the subsequent work, we suggest new categories that reflect the state of the art in this
-field. These are:“Review Manipulation”, “Requirements Engineering”, “Mapping user reviews to the
+field. These are: “Review Manipulation”, “Requirements Engineering”, “Mapping user reviews to the
 source code”, “Privacy / App Permissions”, “Responding to reviews”, “Comparing Apps and App Stores”
 and “Wearables”. In the following sections, we expand on each one of these with the revised
 literature.
