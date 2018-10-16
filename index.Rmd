@@ -1,6 +1,6 @@
 ---
 title: "A Literature Survey of Software Analytics"
-author: "IN4334 2018 TU Delft"
+author: "Students and teachers of the 2018 IN4334 (Software Analytics) course @ TU Delft"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
