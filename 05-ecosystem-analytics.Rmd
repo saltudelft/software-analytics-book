@@ -59,10 +59,12 @@ are answered using the previously stated set of papers.
 ## Research Protocol
 
 In order to review literature to answer the research questions given in the previous section, the
-survey method suggested by Kitchenham is used, conform to @Kitchenham2004. This method creates a systematic
+survey method suggested by Kitchenham is used, conform to @kitchenham2004procedures.
+This method creates a systematic
 way to select a set of papers, which is relevant to the research question(s).
 
-The search strategy, as described by Kitchenham @Kitchenham2004, are usually iterative and benefit
+The search strategy, as described by Kitchenham @kitchenham2004procedures,
+are usually iterative and benefit
 from consultations with experts in the field, among other things. Our search strategy can be split
 in three different types:
 
