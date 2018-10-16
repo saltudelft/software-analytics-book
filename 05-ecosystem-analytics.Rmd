@@ -5,12 +5,12 @@ In the modern day and age, it is popular to make use of external software or lib
 projects to use the functionality (for example parsing JSON) of these libraries, without having
 to develop this functionality itself. For example, in 2016, the package manager npm recorded 18
 billion package downloads in one month, according to @Linux2016. Moreover, multiple languages, such as Python
-and Rust, provide package managers (pip[^1] and Cargo[^2] respectively) which can be used to
+and Rust, provide package managers (pip[^5.1] and Cargo[^5.2] respectively) which can be used to
 easily manage this third-party functionality, as well as distribute it.
 
 In parallel to this, the popularity of creating open source projects is on the rise as well. At
 the package repository npm only, 4,685 libraries were added in one week in 2016, according to @Linux2016. On
-platforms such as GitHub[^3], it is easy and quick to create a new software project, which can be
+platforms such as GitHub[^5.3], it is easy and quick to create a new software project, which can be
 developed, reviewed and used by the whole community. This development leads to more libraries
 being developed and being available for public use.
 
@@ -67,7 +67,7 @@ from consultations with experts in the field, among other things. Our search str
 in three different types:
 
 * the initial seed, given by an expert in the field, MSc. Joseph Hejderup
-* a search using a digital search engine, namely Google Scholar[^3]
+* a search using a digital search engine, namely Google Scholar[^5.4]
 * a selection of referenced papers within papers selected before in the above two searches
 
 ### Initial seed
@@ -82,7 +82,7 @@ survey.
 
 ### Digital Search Engine
 The second strategy type which is used to select relevant papers for this literature study, is by
-a digital search engine. In this literature survey, Google Scholar[^3] is used. From the initial
+a digital search engine. In this literature survey, Google Scholar[^5.4] is used. From the initial
 seed, common keywords were retrieved and the following queries have been used to search for
 relevant papers:
 
@@ -167,7 +167,7 @@ of sense that the most common ecosystems used are those of package managers, sin
 managers are central repositories from which the packages, as well as their dependencies, can
 easily be retrieved.
 
-The most common used ecosystem in the studied papers is _npm_[^5], as used by Abdalkareem et al.
+The most common used ecosystem in the studied papers is _npm_[^5.5], as used by Abdalkareem et al.
 @Abdalkareem2017, Bogart et al. @Bogart2016, Decan, Mens, and Claes @Decan2017, Kikas et al.
 @Kikas2017, and Decan, Mens and Grosjean @Decan2018. There are a few reasons why this is the most
 common used ecosystem throughout the papers. Firstly, npm is the largest software registry,
@@ -243,7 +243,7 @@ also do not update their codebase with respect to the changes introduced by depe
 
 Regarding ecosystem health, Constantinou and Mens @Constantinou2017 have researched which factors
 indicate that a developer is likely to abandon an ecosystem. Their study, which analysed
-GitHub[^3] issues and commits, has found that developers are more likely to abandon a system when
+GitHub[^5.3] issues and commits, has found that developers are more likely to abandon a system when
 they 1) do not communicate with their fellow developers, 2) do not participate often in social or
 technical activities and 3) for an extended period of time do not react or commit any more. Another
 interesting characteristic about ecosystem health, studied by Kula et al. @Kula2017-2, is the way
@@ -413,8 +413,8 @@ _Table 4.6: Papers and findings for RQ2._
 
 _Table 4.7: Papers and findings for RQ1._
 
-[^1]: https://pypi.org/project/pip/
-[^2]: https://crates.io/
-[^3]: https://github.com
-[^4]: https://scholar.google.com
-[^5]: https://npmjs.com
+[^5.1]: https://pypi.org/project/pip/
+[^5.2]: https://crates.io/
+[^5.3]: https://github.com
+[^5.4]: https://scholar.google.com
+[^5.5]: https://npmjs.com
