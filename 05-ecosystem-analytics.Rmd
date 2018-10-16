@@ -2,7 +2,7 @@
 
 ## Motivation
 In the modern day and age, the majority of software products make use of external software or
-libraries to use the functionality (for example parsing JSON) of these products, without having to
+libraries to use the functionality (for example parsing JSON) of these libraries, without having to
 develop this functionality itself. Moreover, multiple languages, such as Python and Rust, provide
 package managers (pip[^1] and Cargo[^2] respectively) which can be used to easily manage this
 third-party functionality, as well as distribute it.
@@ -13,8 +13,8 @@ developed, reviewed and used by the whole community. This development leads to m
 being developed and being available for public use.
 
 Because of these two developments, further inspection of the dependency relations between projects
-leads to a graph-like structure of software projects, where the nodes are the projects and the
-edges represent a dependency between two software projects. This structure is known as a
+leads to a graph-like structure of software projects. In this structure,the nodes are the projects
+and the edges represent a dependency between two software projects. This structure is known as a
 _software ecosystem_. As stated by @Messerschmitt2003, a _software ecosystem_ is "a collection of
 software products that have some given degree of symbiotic relationships." Another, similar
 definition is given by @Lungu2009: "A software ecosystem is a collection of software projects
@@ -24,7 +24,7 @@ being part of the software ecosystem." @Stallman2002 opposes the overall notion 
 structure a software ecosystem: "It is inadvisable to describe the free software community, or any
 human community, as an ecosystem, because that word implies the absence of ethical judgment."
 
-Although @Stallman2002 thinks that the term software ecosystem itself is incorrect, it does not
+Although @Stallman2002 disagrees with the use of the term ecosystem, he does not
 necessarily disagree with the definition of the term. The definition which will be used in
 this chapter is the definition of @Mens2013, since it captures the essence of the other two
 definitions, while adding the notion of the human communities alongside as well.
@@ -54,7 +54,7 @@ are answered using the previously stated set of papers.
 
 ## Research Protocol
 
-In order to select literature to answer the research questions given in the previous section, the
+In order to review literature to answer the research questions given in the previous section, the
 survey method suggested by @Kitchenham2004 is used. This method creates a systematic way to select
 a set of papers, which is relevant to the research question(s).
 
@@ -82,7 +82,7 @@ three different types:
 MSc. Joseph Hejderup has provided us with a total of thirteen papers, as shown in Table 1.
 
 As each of these papers come from an expert in the field, each paper is assumed to be relevant to
-atleast the field of software ecosystems. Because of this, each of these papers were judged on
+at least the field of software ecosystems. Because of this, each of these papers were judged on
 their relevance to either of the research questions. In Table 1, this relevance judgment is shown
 in the left column, since a paper is only selected, if the paper is indeed relevant. Table 2
 describes the reason for which each particular paper is not selected for the literature survey.
@@ -186,27 +186,161 @@ of this section focuses on one of the three research questions posed in Section 
 To answer this research question, we examine the explored topics in ecosystem analytics. Moreover,
 we summarize which research methods, tools and datasets are being used to explore this topics.
 
-The main topic explored in the selected papers are related to the dependencies within the software
-ecosystem. One of the main subjects related to these dependencies is the subject of breaking
-changes between different versions of a package. @Bogart2016 researched the attitude of developers
-of Eclipse, CRAN and NPM packages towards making breaking changes.
+#### Explored Topics
+
+#### Used Research Methods
+The studied papers cover a plethora of research methods. These methods can be divided into two
+categories: quantitative and qualitative. The first thing that is common in the studied papers is
+the combination of quantitative and qualitative research methods.
+
+#### Used Ecosystems
+As has been said above, the most common explored topic within the body of studied papers are
+topics relating to dependencies between different software projects. Therefore, it does make a lot
+of sense that the most common ecosystems used are those of package managers, since these package
+managers are central repositories from which the packages, as well as their dependencies, can
+easily be retrieved.
+
+The most common used ecosystem in the studied papers is _npm_[^5], as used by @Abdalkareem2017,
+@Bogart2016, @Decan2017, @Kikas2017, and @Decan2018. There are a few reasons why this is the most
+common used ecosystem throughout the papers. Firstly, npm is the largest software registry,
+according to their website[^5]. Moreover, npm is the package manager of JavaScript. @Kikas2017
+explains that it is beneficial to use this ecosystem, because the majority of their packages are
+hosted on GitHub and Developers specify required packages in their project's dependency files.
+Of course, there are more ecosystems which have the same properties, such as RubyGems (Ruby) and
+Crates.io (Rust)[@Kikas2017].
+
+However, these are not the only used ecosystems. @Decan2018 use the _libraries.io_ dataset for its
+research, which includes seven different packaging ecosystems: Cargo (rust), CPAN (Perl),
+CRAN (R), npm (JavaScript), NuGet (.NET), Packagist (PHP) and RubyGems (Ruby). By doing this,
+@Decan2018 is the paper with the most used ecosystems in one paper in the body of the studied
+papers.
+
+Apart from these datasets based on packages in package repositories, there are papers which use
+other datasets and therefore ecosystems as well. @Bavota2014 researches the Apache Community and
+therefore uses a dataset corresponding to the full Java subset of the Apache ecosystem. @Cox2015
+instead uses the dataset of the Apache Maven Project to validate his created metric. @Claes2015
+researches package incompatibilities and therefore uses a ten year period of the Debian i386
+testing and stable distributions. @Robbes2012 opted for the Squeak/Pharo ecosystem, as they stated
+that this ecosystem would provide support for answering their research questions.
+
+#### Main research findings
 
 | Reference | Explored topic(s) | Research method(s) | Tool(s) | Dataset(s) | Ecosystem(s) | Conclusion |
 | --------- | ----------------- | ------------------ | ------- | ---------- | ------------ | ---------- |
-| @Abdalkareem2017 | Empirical study on the use of trivial packages, as well as the reasoning behind this | Quantitative frequency, Survey | - | NPM, GitHub | NPM | Used because it is assumed to be well implemented and tested (only 45% actually has tests) and increases productivity. Quantitative research has shown that 10% of NodeJS uses trivial packages, where 16.8% are trivial packages in NPM |
-| @Bogart2016 | Attitude of towards breaking changes and how do ecosystems influence this | Interviews | - | - | Eclipse, CRAM, NPM | There are numerous ways of dealing with breaking changes and ecosystems play an essential role in the chosen way. |
-| @Decan2018 | Quantative empirical analysis of differences and similarities between the evolution of 7 varying ecosystems | Survival analysis | - | libraries.io | Cargo, CPAN, CRAN, npm, NuGet, Packagist, RubyGems | Package updates, which may cause dependent package failrues, are done on average every few months. Many packages in the analyzed package dependency networks were found to have a high number of transitive reverse dependencies, implying that package failures can affect a large number of other packages in the ecosystem. |
+| @Abdalkareem2017 | Use of trivial packages | Quantitative, Qualitative (Statistics over data, survey)| - | npm, GitHub | npm | Used because it is assumed to be well implemented and tested (only 45% actually has tests) and increases productivity. Quantitative research has shown that 10% of NodeJS uses trivial packages, where 16.8% are trivial packages in npm |
+| @Bavota2014 | Upgrading of dependencies | Quantitative, Qualitative (Statistics, Looking through mailing lists) | - | Apache | Apache | Upgrade done when bugfixes, but no API changes |
+| @Bogart2016 | Attitude towards breaking changes for different ecosystems | Qualitative (Interviews) | - | - | Eclipse, CRAM, npm | There are numerous ways of dealing with breaking changes and ecosystems play an essential role in the chosen way. |
+| @Claes2015 | Debian Package Incompatibilities | Quantitative | - | Debian i386 testing / stable | Debian | - |
+| @Cox2015 | Metric for dependency freshness of a system | Qualitative / Quantitative (Statistics, Interviews)| - | Maven | Maven | Metric has been found and verified with Maven |
+| @Decan2017 | Dependency Issues in OSS Packaging Ecosystems | Quantitative analysis (Survival analysis, statistics)| - | Eclipse, CRAM, npm | Eclipse, CRAM, npm | In all ecosystems, dependency updates result in issues, however the problems and solutions do vary. |
+| @Kikas2017 | Package dependency networks | Quantitative (Statistics)| - | npm, RubyGems, Crates.io | npm, RubyGems, Crates.io | All ecosystems are growing and over time, ecosystems become less dependent on a single popular package. |
+| @Robbes2012 | Developers response to API deprecation | Quantitative (Statistics)| - | Squeak, Pharo | Squeak, Pharo | API changes can have a large impact on ecosystem. Projects take a long time to adapt to an API change. |
+| @Decan2018 | Quantitative empirical analysis of differences and similarities between the evolution of 7 varying ecosystems | Survival analysis | - | libraries.io | Cargo, CPAN, CRAN, npm, NuGet, Packagist, RubyGems | Package updates, which may cause dependent package failures, are done on average every few months. Many packages in the analyzed package dependency networks were found to have a high number of transitive reverse dependencies, implying that package failures can affect a large number of other packages in the ecosystem. |
 | @Dittrich2014 | The article provides a holistic understanding of the observed and reported practices as a starting point to device specific support for the development in software ecosystems | Qualitative interview study | - | - | - | The main contribution of this article is the presentation of common features of product development and evolution in four companies. Although size, kind of software and business models differ |
-| @Izquierdo2018 | Code review analysis | Virtualization of process | - | Xen Github data | Xen | Analysis of code review has lead to more reviews and a more thoughtful and participary review process. Also providing accomodations for new software developers on OSS by easy access is very important. |
+| @Izquierdo2018 | Code review analysis | Virtualization of process | - | Xen Github data | Xen | Analysis of code review has lead to more reviews and a more thoughtful and participatory review process. Also providing accommodations for new software developers on OSS by easy access is very important. |
 
 ### What are the practical implications from the state of the art?
 <!-- Rather than theoretical, actual case studies done with findings -->
+In this research question we aim to find out the practical implications of the state of the art as
+discussed in the previous section. Rather than a theoretical standpoint, we look at a practical
+angle. The papers discussed in this section are mostly case studies and we will summarize their
+findings. A schematic overview of our findings can be found in the table below. 
+
+From most papers we find that developers are slow when updating their dependencies, or sometimes
+they do not even do it at all. @Hora2016 suggest that a main reason for this is that breaking
+changes cannot be solved in a uniform manner throughout the ecosystem, but rather need a specific
+implementation for each system. We have also found that breaking changes are constantly introduced
+when dependencies are updated. According to @Raemaekers2017 about 33% of releases, either minor or
+major, contain a breaking change that needs looking into. Breaking changes could pose compiling
+errors, thereby breaking the system that depends on it.
+
+Developer tend to reacet poorly to changes in their dependencies; @Kula2017 has found that,
+of the 4600 surveyed projects, 81.5% of the projects contain outdated dependencies which
+can lead to security risks. Not only do developers not update their dependencies, according to
+an empericaly study done by @McDonnell2013 on the android API, they also do not update their 
+codebase with respect to the changes introduced by dependencies.
+
+Regarding ecosystem health, @Constantinou2017 has researched which factors indicate that a
+developer is likely to abandon an ecosystem. Their study, which analyzed Github issues and
+commits, has found that developers are more likely to abandon a system when they 1) do not
+communicate with their fellow developers, 2) do not participate often in social or technical
+activities and 3) for an extended period of time do not react or commit anymore. Another
+interesting characteristic about ecosystem health, studied by @Kula2017-2, is the way in
+which projects age over time. Their study found that the usage over time of 81.7% of 4,659 
+popular GitHub projects follow a higher order function.
+
+@Malloy2018 has studied the transition from Python 2 to Python 3. Python 3 has been out since
+2008, and the final Python 2 release was in 2010. Both are (almost) 10 years ago. Even though,
+during their study they have found that most Python developers choose to maintain compatibility
+with both Python 2 and Python 3 by only using a subset of the Python 3 language. By not using the
+newly developed features they are severely limiting themselves in their language capabilities. 
+
+Another interesting topic of research is the impact tools can have on eco-systems. Among these
+tools are badges. Badges are annotations on software projects which display some information 
+about a software project. One of these badges can warn developers about out-dated packages.
+Based on the results of @Trockman2018, badges can have a positive impact on the speed at
+which developers update their dependencies. 
+
+Overall we can conclude that there are a lot of improvements to be made. The current method that
+most users use to manage their dependencies is lacking. Whether it be updating late or not
+updating at all, there are many risks bound to this. @Dietrich2014 has also found that there are a
+lot of problems in the Java ecosystem, and has posed a set of relatively minor changes to both
+development tools and the Java language itself that could be very effective. 
+
 | Reference | Explored topic(s) | Research method(s) | Dataset(s) | Ecosystem(s) | Conclusion |
 | --------- | ----------------- | ------------------ | ---------- | ------------ | ---------- |
-| @Hora2016 | Exploratory study aimed at observing API evolution and its impact | Empirical study | 3600 distinct systems | Pharo | After API changes, clients need time to react and rarely react at all. Replacements cannot be resolved in a uniform manner throughout the ecosystem. API changes and deprication can present different characteristics.
+| @Hora2016 | Exploratory study aimed at observing API evolution and its impact | Empirical study | 3600 distinct systems | Pharo | After API changes, clients need time to react and rarely react at all. Replacements cannot be resolved in a uniform manner throughout the ecosystem. API changes and depreciation can present different characteristics.
 | @Kula2017 | An Empirical Study on the Impact of Security Advisories on Library Migration  | Empirical study | 4,600 GitHub software projects and 2,700 library dependencies | Github, Maven | Currently, developers do not actively update their libraries, leading to security risks. |
+| @Constantinou2017 | Empirical comparison of developer retention in the RubyGems and NPM software ecosystems | Measurement of frequency and intensity of activity and retention | Github | NPM and RubyGems | Developers are more likely to abandon an ecosystem when they: 1) do not communicate with other developers, 2) do not have strong social and technical activity intensity, 3) communicate or commit less frequently and 4) do not communicate or commit for a longer period of time. |
+| @Raemaekers2017 | To what degree do versioning schemes provide information signals about breaking changes | Snapshot analysis | More than 100.000 jar files from Maven Central | Maven | 1) Minor or major does not matter, both about 33% breaking chances, 2) breaking changes have significant impact and need fix before an upgrade, 3) Bigger libraries introduce more breaking changes, maturity is not a factor |
+| @Malloy2018 | Analysis of the transition from Python 2 to Python 3 | Empirical impact study | 51 applications in the Qualitas suite for Python | Python | Most Python developers choose to maintain compatibility with Python 2 and 3, thereby only using a subset of the Python 3 language and not using the new features but instead limiting themselves to a language that is no longer under active development. |
+| @Dietrich2014 | Java | Empirical study into evolution problems caused by library upgrades | Qualitas corpus (Java OSS) | Java | There are currently a lot of problems caused, but some relatively minor changes to developments tools and the language could be very effective.  |
+
 ### What are the open challenges in ecosystem analytics, for which future research is required?
 <!--List of challenges, research questions and an aggregated set of open research items -->
+This research question gives insight in the current open challenges in the field of ecosystem
+analytics. It focuses on the challenges described in the studied papers.
+
+The most common open challenge across almost all papers is the generalization of results. Most of
+the studied papers only use a single ecosystem on which they base their results. This in turn
+means that it is unsure whether these results hold for other ecosystems as well in a similar
+fashion. For example, @Claes2015 state that a possibility for future work is to investigate to
+what extent the findings can be reused in the framework of other package-based software
+distributions.
+However, even if multiple ecosystems are researched within one paper, it shows to still not be
+enough to provide a generalization for each ecosystem. @Decan2018 state, after researching
+dependency network evolution for seven ecosystems, that they do not make any claims that their
+results can be generalised beyond the main package managers for specific languages. This is
+because @Decan2018 do not expect similar results for networks such as WordPress, as these
+packages tend to be more high-level (e.g. used by end users instead of reused by other packages).
+This overall shows that there is a lot of space for future research to be done in generalizing
+research beyond the already researched ecosystems.
+
+Another persistent open challenge is the ability to determine the health of an ecosystem. Although
+@Jansen2014 have provided OSEHO, "a framework that is used to establish the health of an open
+source ecosystem", @Jansen2014 note that "there is surprisingly little literature available about
+open source ecosystem health". @Kikas2017 agree, stating that a general goal is to provide
+analytics to maintainers about the overall ecosystem trends.
+
+This challenge is related to determining a systems health. @Kikas2017 state that "a measure
+quantifying dependency health in an ecosystem should be developed". Moreover, according to
+@Jansen2014, determining the health of a system from an ecosystem perspective is required to
+determine which systems to use.
+
+Because of this, this challenge ties into the assistance while selecting packages as well. This
+challenge is about selecting the best dependency, according to the functionality needs of the
+existing application. @Abdalkareem2017 state that helping developers find the best packages
+suiting their needs need to be addressed. @Kikas2017 agree that another general goal is to
+provide maintainers with tools to manage their dependencies.
+
+However, whenever these dependencies are chosen, another open challenge is to assist maintainers
+to keep these dependencies up to date. In order to find out when dependencies have to be updated,
+metrics have to be defined. @Bavota2014 state that their observations could be a starting point
+to build recommenders for supporting developers in complex dependency upgrade activity. @Cox2015
+provide "a metric to aid stakeholders in deciding on whether the dependencies of a system should
+be updated". However, @Cox2015 state multiple refinements on this metric which could still be
+researched.
+
 
 | Reference | Open Challenges Found |
 | --------- | --------------------- |
@@ -214,10 +348,11 @@ of Eclipse, CRAN and NPM packages towards making breaking changes.
 | @Abdalkareem2017 | Compare use of code snippets on Q&A sites and trivial packages | 
 | @Abdalkareem2017 | How to manage and help developers choose the best packages |
 | @Decan2018 | Findings for one ecosystem cannot necessarily be generalized to another |
-| @Decan2018 | Transitive dependencies are very frequent, meaning that package failrues can affect a large number of other packages in the ecosystem |
-| @Jansen2014 | Determing the health of a system from an ecosystem perspective instead of project level is needed to determine which systems to use. This paper provides an initial approach but a lot more research could and should be done to determine system health. |
+| @Decan2018 | Transitive dependencies are very frequent, meaning that package failures can affect a large number of other packages in the ecosystem |
+| @Jansen2014 | Determining the health of a system from an ecosystem perspective instead of project level is needed to determine which systems to use. This paper provides an initial approach but a lot more research could and should be done to determine system health. |
 
 [^1]: <https://pypi.org/project/pip/>
 [^2]: <https://crates.io/>
 [^3]: <https://github.com:>
 [^4]: <https://scholar.google.com>
+[^5]: <https://www.npmjs.com/>
