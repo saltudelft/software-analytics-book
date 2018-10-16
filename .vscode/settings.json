@@ -1,0 +1,36 @@
+{
+    //only line break after 99th character
+    "editor.rulers": [
+        99
+    ],
+    "cSpell.enabled": true,
+    "cSpell.language": "en",
+    "cSpell.words": [
+        "changelogs",
+        "crowdsourced",
+        "crowdsourcing",
+        "csur",
+        "dataset",
+        "datasets",
+        "emse",
+        "esec",
+        "i",
+        "icse",
+        "kitchenham",
+        "kitchenham’s",
+        "microworkers",
+        "osdi",
+        "sigsoft",
+        "subfield",
+        "summarizer",
+        "tosem",
+        "xplore"
+    ],
+    "files.associations": {
+        "*.Rmd": "markdown"
+    },
+    "todohighlight.isEnable": true,
+    "todohighlight.keywords": [
+        "TODO", "REFERENCE"
+    ]
+}
