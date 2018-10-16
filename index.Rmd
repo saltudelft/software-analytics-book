@@ -8,6 +8,8 @@ documentclass: book
 bibliography: [book.bib]
 link-citations: yes
 github-repo: saltudelft/software-analytics-book
+colorlinks: yes
+cover-image: figures/cover.jpg
 description: "A systematic literature survey on Software Analytics."
 ---
 
