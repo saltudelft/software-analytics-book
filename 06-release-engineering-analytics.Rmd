@@ -2,9 +2,10 @@
 
 ## Motivation
 
-Release engineering is a discipline involved with making software available for
-end users.
-Efforts spent within the development environment of a software system
+Release engineering is a software engineering discipline
+concerned with the development, implementation, and improvement of
+processes to deploy high-quality software reliably and predictably [@dyck2015a].
+The changes made by developers of a software system
 should eventually be integrated and deployed such that end users may benefit
 from them.
 In recent years, release engineers have developed and
@@ -16,11 +17,18 @@ significantly shorter cycles.
 
 Due to these developments being industry-driven, release engineering forms a
 largely uncharted territory for software engineering research.
-It requires the attention from researchers both because these new practices
-have an often unanticipated impact on software studies and because they require
-empirical validation [@adams2016a].
+Efforts to close this gap would be relevant both for practitioners as well as
+researchers [@adams2016a].
+On the one hand, claims and rationales are presented by the industry to justify
+practices in release engineering, but these are often not empirically validated.
+For this reason, research should aim to build an understanding of the actual
+effects of release engineering practices on the software development process.
+On the other hand, software engineering researchers need to be aware of modern
+release engineering practices in order to account for them in their analyses.
+Otherwise, their lack of familiarity with these practices will likely result
+in biases in their study results.
 
-Therefore, this systematic literature review aims to provide an overview of
+This systematic literature review aims to provide an overview of
 the software analytics research that has been conducted so far on modern
 release engineering.
 Its main purpose is to identify the apparent gap
@@ -35,45 +43,400 @@ existing modern release engineering practices should still be studied in
 software analytics research.
 Our review thus aims to answer the following questions.
 
-<!-- TODO -->
-- **RQ 1:** _How is modern release engineering done in practice?_<br>
-  This question aims to identify the so-called "state of the practice" in
-  release engineering.
-  We will summarize practices that have been adopted to drive release
-  engineering forward. In addition we will identify the tools utilized to bring
-  this about. Case studies will also be analyzed to this end.
+- **RQ1:** _How is modern release engineering done in practice?_
 
-- **RQ 2:** _What aspects of modern release engineering have been studied
-  in software analytics research so far?_<br>
-  In order to answer this question we investigate the practices that previous
-  empirical studies have focused on. In doing so, we identify the associated
-  costs and benefits that have been found, and the analysis methods used.
+    This question aims to identify the so-called "state of the practice" in
+    release engineering.
+    We will summarize practices that have been adopted to drive release
+    engineering forward. In addition, we will identify the tools utilized to bring
+    this about.
 
-- **RQ 3:** _What aspects of modern release engineering make for relevant
-  study objects in future software analytics research?_<br>
-  In answering this question we aim to identify the gap between practice and
-  research in release engineering. This way, our intent is not only to guide
-  but also to motivate future research.
+- **RQ2:** _What aspects of modern release engineering have been studied
+  in software analytics research so far?_
+
+    In order to answer this question, we investigate the practices that previous
+    empirical case studies have focused on.
+    In doing so, we identify the associated costs and benefits
+    that have been found, and the analysis methods used.
+
+- **RQ3:** _What aspects of modern release engineering make for relevant
+  study objects in future software analytics research?_
+
+    In answering this question, we aim to identify the gap between practice and
+    research in release engineering.
+    This way, our intent is not only to guide but also to motivate future research.
 
 ## Research Protocol
 
-<!-- TODO -->
-In this section, we will describe...
+Our research has been performed following the procedures for performing
+systematic reviews by Kitchenham @kitchenham2004procedures.
+In this process, we have set up strategies for searching, selecting and
+quality-assessing studies.
+Subsequently, we have extracted data from the selected studies and
+synthesized the answers to our research questions.
 
-### Search Strategy
+All the papers that were found, were stored in a custom-built web-based tool for
+conducting literature reviews.
+The source code of this tool is published in a GitHub repository.
+^[See https://github.com/jessetilro/research]
+The tool was hosted on a virtual private server, such that all retrieved
+publications were stored centrally, accessible to all reviewers.
+
+In order to save space in this chapter of the book,
+we have omitted the full research protocol from this chapter.
+The interested can find our research protocol in detail in
+[Section 7.5](#appendix).
+
+## Answers
+
+In this section, we will give an answer to each of the research questions
+that we have presented in [Section 7.1.1](#research-questions-1).
+
+### RQ1: Modern Release Engineering Practices
+
+This section aims to answer to the question:
+_How is modern release engineering done in practice?_
+
+Adams et al. @adams2016a and Karvonen et al. @karvonen2017a have described release engineering
+practices that are currently in use in the industry.
+Adams et al. @adams2016a focused on modern release engineering,
+while Karvonen et al. @karvonen2017a investigated agile release engineering,
+which is a subset of all modern release engineering.
+Both studies agreed that modern release engineering consists
+of the following components:
+
+- **Rapid Releases (RR).**
+
+    In contrast with traditional release cycles,
+    RRs regularly push new releases to users in a regular schedule.
+    As an example, FireFox releases a new version every six weeks.
+
+- **DevOps.**
+
+    According to Dyck et al. @dyck2015a: "DevOps is an organizational approach
+    that stresses empathy and cross-functional collaboration
+    within and between teams (especially development and IT operations)
+    in software development organizations, in order to operate
+    resilient systems and accelerate delivery of changes."
+
+- **Continuous Integration (CI).**
+
+    To quote Adams et al. @adams2016a: "[CI] refers to the activity of continuously polling the
+    [version control system] for new commits or merges,
+    checking these revisions out on dedicated build machines,
+    compiling them and running an initial set of tests to check for regressions."
+
+- **Continuous Deployment or Continuous Delivery.**
+
+    When the CI tests pass, the code can be automatically deployed
+    to the production environment.
+    The difference between these terms is that continuous delivery
+    does not require that changes are automatically deployed,
+    but continuous deployment always automatically deploys changes.
+    However, the change might not yet be released,
+    because it can be hidden using feature toggles [@laukkanen2018a].
+
+Besides these four components, Adams et al. @adams2016a also identified three other concepts
+that are used in modern release engineering,
+specifically to release software as often as possible
+and thus enable continuous deployment or delivery:
+
+- **Branching and Merging.**
+
+    There are several possible strategies of branching and merging.
+    Typically, merging must be done as often as possible
+    in order to release as often as possible.
+
+- **Build System.**
+
+    Building the software must be done in a consistent way,
+    such that each build produces the same result.
+    With the build configuration stored inside the project,
+    every developer (or automated tool) only needs to issue a single command
+    in order to build the project,
+    instead of manually having to configure the build process every time.
+
+- **Infrastructure-as-Code.**
+
+    In the same alley of "storing configuration",
+    infrastructure-as-code means that the server (or virtual machine)
+    on which the software product is running
+    can also be automatically configured with code,
+    instead of having to configure each server manually.
+
+Besides these seven components that are more technical, Poo-Caamaño @poo-caamano2016a has 
+identified that there are also social aspects to modern release engineering. Specifically, most 
+large software projects have a dedicated Release Team that will decide on the release strategies 
+and communicate them to others.
+
+### RQ2: Studied Parts of Release Engineering
+
+This section aims to answer to the question:
+_What aspects of modern release engineering
+have been studied in software analytics research so far?_
+
+Over the years, the software industry has come up with inventive approaches to deliver new 
+features and fixes in a more efficient and faster manner. This has resulted in case studies 
+being done to assess the associated risk and cost factors, and what benefits certain 
+strategies can give.
+
+Khomh et al. @khomh2015a have looked into the effects of switching from traditional to rapid 
+release cycles 
+in the case of Mozilla Firefox. The paper has concluded that users do not experience 
+significantly more post-release bugs, bugs are fixed faster, but that users experience bugs 
+earlier in the software execution. Mantyla et al. @mantyla2015a have also considered data from 
+Mozilla 
+Firefox and has examined the impact of release engineering on testing efforts. Observations of 
+the paper conclude that the rapid release cycle performs more test executions per day, but 
+these tests focus on a smaller subset of the test case corpus and that testing happens closer 
+to release and is more continuous. A limitation of this study is that it measures correlation, 
+rather than causation. Da Costa et al. @da2014a has further zoomed into the integration of 
+addressed issues
+and has considered data from Mozilla Firefox, as well as data from ArgoUML and Eclipse. The 
+paper found that addressed issues are usually delayed in a rapid release cycle and are often 
+excluded from releases.
+Similar conclusions based on Mozilla Firefox were made by Da Costa et al. @da2016a,
+who found that minor-traditional releases tend to have
+less integration delay than major/minor-rapid releases.
+
+Castelluccio et al. @castelluccio2017a has examined the practice of *patch uplifting* in the 
+release management at 
+Mozilla Firefox where patches that fix critical issues, or implement high-value features are 
+often promoted directly from the development channel to a stabilization channel. The paper 
+evaluated the characteristics of patch uplift decisions and interviewed three Mozilla release 
+managers. The paper concluded that the majority of patch uplift decisions are made due to a 
+wrong functionality or crash. The specificity and code author of patches that are requested to 
+be uplifted are also a major factor for release managers.
+
+In response to case studies being done on many prominent open source software projects, 
+Teixeira @teixeira2017a has described OpenStack's shift to a liberal six-month release cycle. As 
+this 
+is an ongoing study, the results given by the paper are preliminary and only observe the 
+process. OpenStack's release process can be considered as a hybrid of feature-based and 
+time-based releases. OpenStack encourages regular releases but also attempts to include new 
+features at each regular release.
+
+Rather than focussing on topics such as issue and delays, Poo-Caamaño @poo-caamano2016a focusses 
+on the 
+communication in release engineering in the cases of GNOME and OpenStack. Through analyzing 
+over 2.5 years of communication, the paper has made a number of observations.
+The paper found that developers tend to communicate through
+blogs, bug trackers, conferences, and hackfests.
+Another finding is that a release team is set to define
+requirements, quality standards, and coordination through (direct) communication.
+Although only the mailing lists of the projects were studied,
+defined challenges include keeping everyone informed and engaged,
+monitoring changes and setting priorities in cross-project coordination.
+
+Laukkanen et al. @laukkanen2018a have described what effects modern release engineering
+have on software with different organizational contexts.
+This study specifically focusses on continuous deployment practices.
+The paper has found that high internal quality standards combined with the
+large distributed organizational context of large corporations slowed the verification process 
+down and therefore had a negative impact on release capability. However, in small 
+corporations, the lack of internal verification measures due to a lack of resources was 
+mitigated by code review, disciplined CI and external verification by customers in customer 
+environments. More about the factors that can play a role is addressed by Rodríguez et al. 
+@rodriguez2017a, 
+where an overview of contributing factors in continuous deployment are defined and categorized 
+based on literature between 2001 and 2014.
+
+As rapid release cycles and continuous deployment are topics that are new and emerging, not 
+enough research has been done to generalize any conclusions that are made in the case studies 
+discussed in this section. This is why all the empirical studies in this survey have one major 
+sidenote in common: more case studies are needed. Open challenges such as these will be 
+discussed in the next section.
+
+### RQ3: Future Research
+
+This section aims to answer the question:
+_What aspects of modern release engineering make for
+relevant study objects in future software analytics research?_
+
+#### General Suggestions
+
+The body of literature that we analyzed for this survey mostly comprised case
+studies that employed quantitative analysis methods.
+From these studies, interesting conclusions have been drawn about the effects of
+release engineering practices on software development processes in specific
+contexts.
+However, the generalizability of the findings in these case studies is very
+limited.
+Therefore, in general many studies suggest that future research efforts focus on
+performing additional case studies, both to verify existing findings and to
+study new relationships and new contexts [@karvonen2017a; @teixeira2017a;
+@khomh2015a; @claes2017a; @laukkanen2018a; @adams2016a; @castelluccio2017a].
+It also seems worthwhile to triangulate findings by complementing data analyses
+with other quantitative (e.g. a survey) or qualitative (e.g. an interview)
+methods [@karvonen2017a].
+Finally, additional literature reviews will allow researchers to keep an
+overview of the most recent developments and findings in the area of release
+engineering [@rodriguez2017a; @laukkanen2018a].
+
+Apart from verifying results, it might be worthwhile to leverage them by
+constructing analysis tools for practitioners.
+For example, Castelluccio et al. @castelluccio2017a suggest exploring possibilities to leverage
+their research by building classifiers capable of automatically assessing the
+risk associated with patch uplift candidates and recommend patches that can be
+uplifted safely.
+Also, companies seem to be struggling with the adoption of continuous delivery
+and deployment, so a checklist for analyzing readiness for these practices
+might be developed [@karvonen2017a].
+
+The review by Karvonen et al. @karvonen2017a makes a number of general suggestions for future
+research.
+In particular, there should be more attention to comprehensively reporting how
+practices are implemented and in which context they are embedded, instead of
+just stating that they are used.
+Also, the viewpoints of different stakeholders other than developers can be
+taken into account.
+For example, the customer perceptions regarding the adoption of a certain
+practice can be investigated.
+
+#### Directions for Specific Practices
+
+**Rapid Releases**
+
+As established, rapid releases are a prevalent topic in current research on
+modern release engineering.
+However, it will be useful to verify these results given the fact that this
+research mainly involves case studies (most of which are only concerned with
+Mozilla Firefox due to the availability of data).
+To this end, there are opportunities to further investigate the effects of
+switching to rapid releases on:
+
+- code integration [@da2014a; @da2016a; @souza2015a; @castelluccio2017a],
+- testing efforts [@mantyla2015a],
+- software quality [@khomh2015a; @khomh2012a],
+- (library) adoption [@fujibayashi2017a]
+- time pressure and work patterns [@claes2017a].
+
+**DevOps**
+
+When it comes to DevOps, future research is needed to refine its definition such
+that it is uniform and valid for many situations [@dyck2015a]. According to
+Karvonen et al. @karvonen2017a, it seems that the goals in DevOps are congruent with those
+in release engineering, and future research on this topic is therefore highly
+relevant in order to study modern release engineering.
+
+**Continuous Delivery / Deployment**
+
+Research on continuous deployment seems to be still in its infancy, therefore Rodríguez et al.
+@rodriguez2017a have suggested a significant number of different concrete
+opportunities for future research.
+In general, they conclude that the topic needs an increase in the number and
+rigor of empirical studies, and thus it presents opportunities for software
+analytics research.
+In a systematic literature review, Laukkanen et al. @laukkanen2017a identified 40 problems,
+28 causal relationships and 29 solutions related to the adoption of continuous
+delivery.
+These problems and solutions can be studied further to deepen the
+understanding of the nature of these problems and how to apply their solutions.
+Some of the problems that are more of a human or organizational nature might
+be involved with a broader spectrum of changes, so it should also be
+investigated to what extent these problems are specific to continuous delivery.
+
+**Continuous Integration / Build system**
+
+One of the main issues that seems to be obstructing organizations in adopting
+modern release engineering practices is build design [@laukkanen2017a]. In a
+case study by Laukkanen et al. @laukkanen2018a, it was found that a complex automated build and
+integration system led to a more undisciplined one, which in turn slowed down
+the verification and release processes. Therefore, future research might
+investigate how developers can make their builds more maintainable and of
+higher quality, how anti-patterns in the design of the build can be refactored,
+and how continuous integration can be made faster and more energy efficient
+[@adams2016a].
+
+## Conclusion
+
+In this literature survey,
+we have provided an answer to the following three research questions:
+
+- **RQ1:** _How is modern release engineering done in practice?_
+
+    We found that there are six important technical aspects to
+    modern release engineering: Rapid Releases, DevOps, Continuous Integration,
+    Continuous Deployment, Branching and Merging, Build Configuration and
+    Infrastructure-as-code.
+    The most important social aspect of modern release engineering is communication.
+
+- **RQ2:** _What aspects of modern release engineering have been studied
+  in software analytics research so far?_
+
+    At this point in time, case studies have mainly focussed on
+    the resulting factors of switching from a traditional release cycle
+    to a rapid release cycle, and what effects this has in various
+    organizational contexts.
+    As all included studies suggest, more empirical studies are needed to be
+    able to make general conclusions in the novel field of release engineering.
+
+- **RQ3:** _What aspects of modern release engineering make for relevant
+  study objects in future software analytics research?_
+
+    In general, more empirical research is required to validate and generalize
+    the results of many previous case studies within the field of release
+    engineering.
+    In addition to performing case studies involving quantitative analyses,
+    it may be beneficial to triangulate results using various research methods.
+    Also, future research should more comprehensively describe how practices
+    are implemented, and consider different stakeholders.
+    For each practice, future research is suggested on the one hand to further
+    investigate their effects on the development process, and on the other hand
+    to investigate problems involved with their adoption.
+
+## Appendix
+
+This appendix contains sections that were part of our process during
+this literature survey.
+They are not directly needed to answer the research questions,
+but are still relevant in order to validate our survey.
+This Appendix contains our project timetable, the research protocol in full detail,
+and the raw extracted data from the selected studies.
+
+### Project Timetable
+
+The literature review was conducted over the course of four weeks. We worked iteratively and 
+planned for four weekly milestones.
+
++-----------+----------+-------------------------------------------------------+
+| Milestone | Deadline | Goals                                                 |
++===========+==========+=======================================================+
+| 1         | 16/9/18  | - Develop the search strategy  |
+|           |          | - Collect initial publications |
++-----------+----------+---+
+| 2         | 23/9/18  | - Write full research protocol |
++-----------+----------+---+
+| 3         | 30/9/18  | - Collect additional literature according to the protocol |
+|           |          | - Perform data extraction |
++-----------+----------+---+
+| 4         | 7/10/18  | - Perform data synthesis |
+|           |          | - Write final version of the chapter |
++-----------+----------+---+
+
+### Research Protocol
+
+In this appendix, we will describe in detail how we applied the protocol for
+performing systematic literature reviews by Kitchenham @kitchenham2004procedures.
+In order, we will go over the search strategy, study selection,
+study quality assessment, and data extraction.
+The last subsection will list which studies we included in this review
+and which we have found, but excluded from the review for a specific reason.
+
+#### Search Strategy
 
 Since release engineering is a relatively new research topic,
 we took an exploratory approach in collecting any literature revolving around
 the topic of release engineering from the perspective of software analytics.
-This aided us in determining a more narrow scope for our survey,
-subsequently allowing us to find additional literature fitting this scope.
+This aided us to determine a more narrow scope for our survey,
+subsequently to allow us to find additional literature to fit this scope.
 
 At the start of this project, we were provided with an initial seed of five
-papers as a starting point for our literature survey.
-These initial papers were @adams2016a, @da2016a, @da2014a, @khomh2012a, and
-@khomh2015a.
+papers as a starting point for our literature survey
+[@adams2016a; @da2014a; @da2016a; @khomh2012a; @khomh2015a].
 
-We collected publications using two search engines: Scopus and Google Scholar.
+We collected other publications using two search engines:
+Scopus and Google Scholar.
 Each of the two search engines comprises several databases such as
 ACM Digital Library, Springer, IEEE Xplore and ScienceDirect.
 The main query that we constructed is displayed in Figure 1.
@@ -87,6 +450,7 @@ The publications found using this query were:
 - @fujibayashi2017a
 - @souza2015a
 - @laukkanen2018a
+- @dyck2015a
 
 ```
 TITLE-ABS-KEY(
@@ -134,44 +498,52 @@ The results of the reference analysis are listed in Table 1.
 
 _Table 1. Papers found indirectly by investigating citations of/by other papers._
 
-| Starting point | Type        | Result                                |
-|----------------|-------------|---------------------------------------|
-| @souza2015a    | has cited   | @plewnia2014a     <br> @mantyla2015a  |
-| @khomh2015a    | is cited by | @poo-caamano2016a <br> @teixeira2017a |
-| @mantyla2015a  | is cited by | @rodriguez2017a   <br> @cesar2017a    |
++-----------------+-------------+-------------------+
+| Starting point  | Type        | Result            |
++=================+=============+===================+
+| @souza2015a     | has cited   | @plewnia2014a     |
+|                 |             | @mantyla2015a     |
++-----------------+-------------+-------------------+
+| @khomh2015a     | is cited by | @poo-caamano2016a |
+|                 |             | @teixeira2017a    |
++-----------------+-------------+-------------------+
+| @mantyla2015a   | is cited by | @rodriguez2017a   |
+|                 |             | @cesar2017a       |
++-----------------+-------------+-------------------+
+| @laukkanen2018a | has cited   | @laukkanen2017a   |
++-----------------+-------------+-------------------+
 
-All the papers that were found, were stored in a custom built web-based tool for
+All the papers that were found, were stored in a custom-built web-based tool for
 conducting literature reviews.
-The source code of this tool is published in a
-[GitHub repository](https://github.com/jessetilro/research).
+The source code of this tool is published in a GitHub repository.
+^[See https://github.com/jessetilro/research]
 The tool was hosted on a virtual private server, such that all retrieved
 publications were stored centrally, accessible to all reviewers.
 
-### Study Selection
+#### Study Selection
 
 We selected the studies that we wanted to include in the survey
 with aid of the aforementioned tool for storing the papers.
 In this tool,
 it is possible to label papers with tags and leave comments and ratings.
-Every paper is reviewed based on the selection criteria.
+Every paper is reviewed based on the inclusion and exclusion criteria.
 Based on this, the tool allowed to filter out all papers
 that appeared not to be relevant for this literature survey.
 
-The selection criteria are as follows:
+We only used one exclusion criteria: studies that are published before 2014,
+will not be included in our survey (this is enforced by our search query).
+The inclusion criteria are as follows:
 
-1. The study must show (at least) one release engineering technique.
-2. The study must not just show a release engineering technique,
-   but analyze its performance compared to other techniques.
+- The study must show (at least) one release engineering technique.
+- The study must not just show a release engineering technique,
+  but analyze its performance compared to other techniques.
 
-Based on these selection criteria,
-the following papers appeared to be irrelevant for the scope of this survey:
+The last subsection of this appendix lists which studies
+were selected and which were discareded.
 
-<!-- Example. TODO: actually exclude papers -->
-- [link to paper] - Excluded based on rule 2.
+#### Study Quality Assessment
 
-### Study Quality Assessment
-
-Based on @kitchenham2004procedures, the quality of a paper will be assessed
+Based on Kitchenham @kitchenham2004procedures, the quality of a paper will be assessed
 by the evidence it provides, based on the following scale.
 All levels of quality in this scale will be accepted,
 except for level 5 (evidence obtained from expert opinion).
@@ -197,7 +569,8 @@ except for level 5 (evidence obtained from expert opinion).
 5. Evidence obtained from expert opinion based on theory or consensus.
 
 Also, the studies will be examined to see if they contain any type of bias.
-For this, the same types of biases will be used as described by @kitchenham2004procedures:
+For this, the same types of biases will be used as described by 
+Kitchenham@kitchenham2004procedures:
 
 - Selection/Allocation bias: Systematic difference between comparison groups
   with respect to treatment.
@@ -212,7 +585,8 @@ The studies will be labeled by their quality level and possible biases.
 This information can be used during the Data Synthesis phase
 to weigh the importance of individual studies [@kitchenham2004procedures].
 
-### Data Extraction
+#### Data Extraction
+
 To accurately capture the information contributed by each publication in our
 survey, we will use a systematic approach to extracting data.
 To guide this process, we will be using a data extraction form which describes
@@ -261,7 +635,8 @@ Notes:
 
 ```
 
-### Data Synthesis
+#### Data Synthesis
+
 To summarize the contributions and limitations of each of the included
 publications, we will apply a descriptive synthesis approach.
 In this part of our survey, we will compare the data that was extracted of the
@@ -276,21 +651,22 @@ similarities and differences between publications this we serve as an additional
 form of synthesis. However, this depends on the final included publications of
 this survey.
 
-### Included and Excluded Studies
+#### Included and Excluded Studies
 
 **Included:**
 
 - @adams2016a
-- @castelluccino2017a
+- @castelluccio2017a
 - @cesar2017a
 - @claes2017a
 - @da2014a
 - @da2016a
 - @dyck2015a
-- @fuyibayashi2017a
+- @fujibayashi2017a
 - @karvonen2017a
 - @kerzazi2013a
 - @khomh2015a
+- @laukkanen2017a
 - @laukkanen2018a
 - @mantyla2015a
 - @plewnia2014a
@@ -302,55 +678,14 @@ this survey.
 **Excluded:**
 
 - @khomh2012a has been excluded, because it presents the same results as
-@khomh2015a, while the latter is more extensive because it is a journal article
-instead of a conference article.
+  @khomh2015a, while the latter is more extensive because it is a journal article
+  instead of a conference article.
+- @kaur2019a has been excluded, because we could not obtain the actual paper
+  since it has not yet been officially released.
 
-### Project timetable
+### Raw Extracted Data
 
-The literature review was conducted over the course of four weeks. We worked
-iteratively and planned for four weekly milestones.
-
-| Milestone | Deadline        | Goals                              |
-|----------------|-------------|-------------------------------------|
-| Milestone 1    | 16/9/18  | - Develop the search strategy<br> - Collect initial publications  |
-| Milestone 2    | 23/9/18 | Write full research protocol |
-| Milestone 3  | 30/9/18 | - Collect additional literature according to the protocol<br> - Perform data extraction    |
-| Milestone 4  | 7/10/18 | - Perform data synthesis<br> - Write final version of the chapter |
-
-<!-- TODO -->
-
-## Answers
-
-<!-- TODO -->
-
-### RQ1: ...
-
-<!-- TODO -->
-
-### RQ2: ...
-
-<!-- TODO -->
-
-### RQ3: ...
-
-<!-- TODO -->
-
-## Discussion
-
-<!-- TODO -->
-
-## Conclusion
-
-<!-- TODO -->
-
-## Raw extracted data
-
-This section is not part of the main content of our chapter.
-It can be viewed as an Appendix.
-<!-- We are not sure how we should include this raw data for the final verion
-     of the book, please let us know if you do :) -->
-
-### Understanding the impact of rapid releases on software quality -- The Case of Firefox
+#### Understanding the impact of rapid releases on software quality -- The Case of Firefox
 
 Reference: @khomh2015a
 
@@ -384,7 +719,7 @@ What research gaps does this publication contain?
 
 Are these research gaps filled by any other publications in this survey?
 
-- Not yet known **TODO**
+-
 
 Quantitative research publications:
 
@@ -405,7 +740,7 @@ Quantitative research publications:
 - Limitations: Results are specific to Firefox
 - Future research: More case studies are needed
 
-### On the influence of release engineering on software reputation
+#### On the influence of release engineering on software reputation
 
 Reference: @plewnia2014a
 
@@ -437,7 +772,7 @@ What research gaps does this publication contain?
 
 Are these research gaps filled by any other publications in this survey?
 
-- Not yet known **TODO**
+-
 
 Quantitative research publications:
 
@@ -459,7 +794,7 @@ Quantitative research publications:
     - Identifying software reputation can better be done
       using a qualitative study.
 
-### On rapid releases and software testing: a case study and a semi-systematic literature review
+#### On rapid releases and software testing: a case study and a semi-systematic literature review
 
 Reference: @mantyla2015a
 
@@ -467,7 +802,8 @@ General information:
 
 - Name of person extracting data: Maarten Sijm
 - Date form completed: 28-09-2018
-- Author information: Mäntylä, Mika V. and Adams, Bram and Khomh, Foutse and Engström, Emelie and Petersen, Kai
+- Author information: Mäntylä, Mika V. and Adams, Bram and Khomh, Foutse and Engström, Emelie
+  and Petersen, Kai
 - Publication type: Journal/Magazine Article
 - Journal: Empirical Software Engineering
 - Type of study: Empirical case study and semi-systematic literature review
@@ -494,7 +830,7 @@ What research gaps does this publication contain?
 
 Are these research gaps filled by any other publications in this survey?
 
-- Not yet known **TODO**
+-
 
 Quantitative research publications:
 
@@ -564,11 +900,7 @@ Semi-systematic literature survey:
 - Future research:
     - Systematically search for agile and lean adoption papers
 
-Notes:
-
-- Basically contains all the answers we need 😂
-
-### Release management in free and open source software ecosystems
+#### Release management in free and open source software ecosystems
 
 Reference: @poo-caamano2016a
 
@@ -600,7 +932,7 @@ What research gaps does this publication contain?
 
 Are these research gaps filled by any other publications in this survey?
 
-- Not yet known **TODO**
+-
 
 Quantitative research publications (GNOME):
 
@@ -681,7 +1013,7 @@ Notes:
        to increase awareness and participation
     3. The release managers need social and technical skills
 
-### Release Early, Release Often and Release on Time. An Empirical Case Study of Release Management
+#### Release Early, Release Often and Release on Time. An Empirical Case Study of Release Management
 
 Reference: @teixeira2017a
 
@@ -713,7 +1045,7 @@ What research gaps does this publication contain?
 
 Are these research gaps filled by any other publications in this survey?
 
-- Not yet known **TODO**
+-
 
 Quantitative research publications:
 
@@ -734,7 +1066,7 @@ Quantitative research publications:
 - Future research:
     - Not indicated
 
-### Kanbanize the release engineering process
+#### Kanbanize the release engineering process
 
 Reference: @kerzazi2013a
 
@@ -765,7 +1097,6 @@ What open challenges in release engineering does this publication mention?
 
 - Release effectiveness: minimize system failure and customer impact
 - Problems with releasing encountered in practice
-    - **TODO** list problems if of interest
 
 What research gaps does this publication contain?
 
@@ -786,14 +1117,13 @@ Quantitative research publications:
 - Outcomes:
     1.
 - Limitations:
-    -
 - Future research:
 
 Notes:
 
 -
 
-### Is it safe to uplift this patch? An empirical study on mozilla firefox
+#### Is it safe to uplift this patch? An empirical study on mozilla firefox
 
 Reference: @castelluccio2017a
 
@@ -803,7 +1133,8 @@ General information:
 - Date form completed: 29-09-2018
 - Author information: Castelluccio, M. and An, L. and Khomh, F.
 - Publication type: Paper in Conference Proceedings
-- Journal: Proceedings - 2017 IEEE International Conference on Software Maintenance and Evolution, ICSME 2017
+- Journal: Proceedings - 2017 IEEE International Conference on Software Maintenance and Evolution,
+  ICSME 2017
 - Type of study: Case study, both quantitative (data analysis) and qualitative
   (interviews)
 
@@ -853,7 +1184,7 @@ Notes:
 
 -
 
-### Systematic literature review on the impacts of agile release engineering practices
+#### Systematic literature review on the impacts of agile release engineering practices
 
 Reference: @karvonen2017a
 
@@ -906,7 +1237,7 @@ What research gaps does this publication contain?
 
 Are these research gaps filled by any other publications in this survey?
 
-- **TODO**
+-
 
 Quantitative research publications:
 
@@ -924,7 +1255,7 @@ Notes:
 
 -
 
-### Abnormal Working Hours: Effect of Rapid Releases and Implications to Work Content
+#### Abnormal Working Hours: Effect of Rapid Releases and Implications to Work Content
 
 Reference: @claes2017a
 
@@ -988,7 +1319,7 @@ Notes:
 
 -
 
-### Does the release cycle of a library project influence when it is adopted by a client project?
+#### Does the release cycle of a library project influence when it is adopted by a client project?
 
 Reference: @fujibayashi2017a
 
@@ -998,7 +1329,8 @@ General information:
 - Date form completed: 29-09-2018
 - Author information: Fujibayashi, D. and Ihara, A. and Suwa, H. and Kula, R.G. and Matsumoto, K.
 - Publication type: Paper in Conference Proceedings
-- Journal: SANER 2017 - 24th IEEE International Conference on Software Analysis, Evolution, and Reengineering
+- Journal: SANER 2017 -
+  24th IEEE International Conference on Software Analysis, Evolution, and Reengineering
 - Type of study: Quantitative study
 
 What practices in release engineering does this publication mention?
@@ -1050,7 +1382,7 @@ Notes:
 - Nice that the focus is libraries here, very interesting population because
   most studies focus on end-user targeting software systems
 
-### Rapid releases and patch backouts: A software analytics approach
+#### Rapid releases and patch backouts: A software analytics approach
 
 Reference: @souza2015a
 
@@ -1061,47 +1393,76 @@ General information:
 - Author information: Souza, R. and Chavez, C. and Bittencourt, R.A.
 - Publication type: Journal/Magazine Article
 - Journal: IEEE Software
-- Type of study: Quantitative
+- Type of study: Quantitative case study (Mozilla Firefox)
 
 What practices in release engineering does this publication mention?
 
--
+- Rapid release
+- Backing out of broken patches (patch backouts)
+- Stabilization channels / monitored integration repository
 
 Are these practices to be classified under dated,
 state of the art or state of the practice? Why?
 
--
+- State of the practice (case study)
 
 What open challenges in release engineering does this publication mention?
 
-- How rapid release cycles affect code integration
-
-What research gaps does this publication contain?
-
--
-
-Are these research gaps filled by any other publications in this survey?
-
--
+- How rapid release cycles affect code integration, where patch backouts are
+  a proxy for studying code integration
+- Integrate backout rate analysis in an analytics tool to provide release
+  engineers with up-to-date information on the process
 
 Quantitative research publications:
 
-- Study start date:
-- Study end date or duration:
+- Study start date: first data item 30 june 2009
+- Study end date or duration: last data item 17 september 2013
 - Population description:
 - Method(s) of recruitment of participants:
-- Sample size:
-- Evaluation/measurement description:
+- Sample size: 43198 bug fixes, no further sample sizes of the raw data
+  mentioned anywhere unfortunately. (Data from Mozilla Firefox project.)
+- Evaluation/measurement description: Associate commit log, bug reports and
+  releases. Classify backouts. Measure rate of backouts against all fixed bugs,
+  per month and per release strategy period. Test for statistical significance
+  using Fisher's exact test and Wilcoxon signed-rank test.
 - Outcomes:
-    1.
+    1.  Absolute numbers of bug fixes and backouts increased under rapid
+        releases (probably the increase in regular contributors played a role,
+        cannot conclude anything about workload.)
+    2.  Backout rate increased under rapid releases (sheriff managed integration
+        repositories may have increased the prevalence of backout culture)
+    3.  Higher early backout rate and lower late backout rate indicate a shift
+        towards earlier problem detection (proportion early from 57 to 88 %)
+        The time-to-backout also dropped.
 - Limitations:
+    - Sample size not mentioned
+    - Quite trivial statistics
 - Future research:
+    - Integrate backout rate analysis in an analytics tool to provide release
+      engineers with up-to-date information on the process
+
+Interview triangulation
+
+- Explanations of quantitative outcomes:
+    - larger code base and more products -> more conflicts
+    - evolution of automated testing toolset -> earlier and more backouts
+    - sheriff managed integration repos -> earlier and more backouts
+- Explanations of impact
+    - cultural shift reduced testing efforts beforehand, and higher early
+      backout rate eventually reduced the effort to integrate bug fixes for
+      developers
+    - given the many stabilization channels and the rarity of very late backouts
+      both in traditional and rapid release cycles, changes in backouts do not
+      seem to influence users' perception of quality (even though frequent
+      update notifications and broken compatibilities caused upset users)
 
 Notes:
 
-- Also reviews existing literature very well
+- Also reviews existing literature well.
+- Treats transitional period from traditional to rapid releases as a separate
+  period.
 
-### Comparison of release engineering practices in a large mature company and a startup
+#### Comparison of release engineering practices in a large mature company and a startup
 
 Reference: @laukkanen2018a
 
@@ -1112,11 +1473,15 @@ General information:
 - Author information: Laukkanen, E. and Paasivaara, M. and Itkonen, J. and Lassenius, C.
 - Publication type: Journal/Magazine Article
 - Journal: Empirical Software Engineering
-- Type of study:
+- Type of study: Case study (2 cases)
 
 What practices in release engineering does this publication mention?
 
--
+- Continuous Integration (mainly)
+- Code review
+- Internal Verification Scope
+- Domain Expert Testing
+- Testing with customers
 
 Are these practices to be classified under dated,
 state of the art or state of the practice? Why?
@@ -1125,35 +1490,43 @@ state of the art or state of the practice? Why?
 
 What open challenges in release engineering does this publication mention?
 
--
-
-What research gaps does this publication contain?
-
--
-
-Are these research gaps filled by any other publications in this survey?
-
--
+- The results in this study can be verified by additional case studies or
+  or even surveys to close the of empirical research on release engineering
 
 Quantitative research publications:
 
 - Study start date:
 - Study end date or duration:
+- Data acquisition period: 22 weeks (BigCorp) and 24 weeks (SmallCorp)
 - Population description:
 - Method(s) of recruitment of participants:
-- Sample size:
+- Sample size: 1889 builds (BigCorp) and 760 builds (SmallCorp)
 - Evaluation/measurement description:
 - Outcomes:
-    1.
+    - High internal quality standards combined with the large distributed
+      organizational context of BigCorp slowed the verification process
+      down and therefore had a negative impact on release capability
+    - In SmallCorp, the lack of internal verification measures due to a lack
+      of resources was mitigated by code review, disciplined CI and external
+      verification by customers in customer environments. This allowed for
+      fast release capability and gaining feedback from production.
+    - Variables
+        - Multiple customers -> High quality standards
+        - High quality standards -> Complex CI
+        - High quality standards -> Slow Verification
+        - Complex CI -> Undisciplined CI
+        - Large distributed organization -> Undisciplined CI
+        - Undisciplined CI -> Slow verification
+        - Slow verification -> Slow release capability
 - Limitations:
-    -
+    - Only a case study, so difficult to generalize
 - Future research:
 
 Notes:
 
--
+- Quantitative results triangulated with interviews
 
-### Modern Release Engineering in a Nutshell
+#### Modern Release Engineering in a Nutshell
 
 Reference: @adams2016a
 
@@ -1288,7 +1661,7 @@ Are these research gaps filled by any other publications in this survey?
 
 - An example of further research that expand on this study is @da2016a
 
-### The Impact of Switching to a Rapid Release Cycle on the Integration Delay of Addressed Issues
+#### The Impact of Switching to a Rapid Release Cycle on the Integration Delay of Addressed Issues
 
 Reference: @da2016a
 
@@ -1386,7 +1759,7 @@ Quantitative research publications:
 
 Notes:
 
-### An Empirical Study of Delays in the Integration of Addressed Issues
+#### An Empirical Study of Delays in the Integration of Addressed Issues
 
 Reference: @da2014a
 
@@ -1464,7 +1837,7 @@ Quantitative research publications:
 
 Notes:
 
-### Towards Definitions for Release Engineering and DevOps
+#### Towards Definitions for Release Engineering and DevOps
 
 Reference: @dyck2015a
 
@@ -1517,7 +1890,7 @@ Quantitative research publications:
 
 Notes:
 
-### Continuous deployment of software intensive products and services: A systematic mapping study
+#### Continuous deployment of software intensive products and services: A systematic mapping study
 
 Reference: @rodriguez2017a
 
@@ -1573,7 +1946,7 @@ What research gaps does this publication contain?
 
 Notes:
 
-### Frequent Releases in Open Source Software: A Systematic Review
+#### Frequent Releases in Open Source Software: A Systematic Review
 
 Reference: @cesar2017a
 
@@ -1609,7 +1982,8 @@ What practices in release engineering does this publication mention?
 Are these practices to be classified under dated, state of the art or state of
 the practice? Why?
 
-- The practices discussed are a combination of state of the art and state of the practice approaches.
+- The practices discussed are a combination of state of the art
+  and state of the practice approaches.
 
 What open challenges in release engineering does this publication mention?
 
