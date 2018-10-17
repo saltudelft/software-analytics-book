@@ -7,53 +7,50 @@ output:
 
 ## Motivation 
 
-In the year 2008, the first app stores became available [@appStoreLaunch][@androidMarketLaunch].
+In 2008, the first app stores became available [@appStoreLaunch][@androidMarketLaunch].
 These marketplaces have grown rapidly in size since then with over 3.8 million apps in the Google
-Play store alone as of first quarter of 2018 [@appNumber]. These app stores, together with a
+Play store the first quarter of 2018 [@appNumber]. These app stores, together with a
 large amount of user-generated data associated with them present an unprecedented source of
-information about the ecosystems of modern software platforms (such as Android and iOS) for mobile devices. Software developers and researchers use these valuable data to
+information regarding the ecosystems of modern software platforms, such as Android and iOS. Software developers and researchers use these valuable data to
 gain new insights about how users use their apps, what they like, and what difficulties they
-encounter. The same data can be also used by app store operators in the detection of malicious or misbehaving
-apps, whose behavior does not match their app store description. Because these app stores are relatively new,
-the research field of App Store Analytics is still not mature. However, because apps are used so
-much nowadays, their investigation plays a vital role in the field of Software Engineering.
+encounter. The same data can be also used by app store operators for the detection of malicious or misbehaving
+apps, i.e., whose behavior does not match their app store description. Since these app stores are relatively new,
+the research field of App Store Analytics is still not mature. However, because apps are used to a great extent nowadays, their investigation plays a vital role in the field of Software Engineering.
  
 In 2015, Martin, William, et al., published a survey on app store analytics for software
 engineering [@martin2015survey]. The paper divides the field of App Store Analytics into seven
 categories: API Analysis, Review Analytics, Security, Store Ecosystem, Size, and Effort Prediction,
 Release Engineering, and Feature Analysis. Given that relevant literature on the field of App Store
-Analytics has been already gathered and analyzed, it makes sense to use this chapter to go a step
-further. We delve deeper into the subfield of Review Analysis. We started with the literature
-proposed by Martin et al. in [@martin2015survey] and extended it with the relevant articles that
-were published after 2015.  We then tried to answer the following research questions:
+Analytics has been already gathered and analyzed, it makes sense for us to use this chapter to go a step
+further. We delve deeper into the subfield of Review Analytics. We start with the literature
+proposed by Martin et al. in [@martin2015survey] and extend it with the relevant articles that
+were published after 2015. We then try to answer the following research questions:
 
-* **RQ1** What is the state of the art in Review Analysis? Specifically:
+* **RQ1** What is the state of the art in Review Analytics? Specifically:
     - Which topics are being explored?
     - Which research methods, tools, and datasets are being used?
     - Which are the main research findings (aggregated)?
 
-* **RQ2** What is the state of practice in Review Analysis? Specifically:
+* **RQ2** What is the state of practice in Review Analytics? Specifically:
     - Which are the tools and the companies that create/employ them?
-    - Are there any case studies and which are their findings?
+    - Are there any case studies and which are the findings?
 
-* **RQ3** Which are the challenges and future research that the field is facing or will face?
+* **RQ3** Which are the challenges that the field is facing or will face?
 
 ## Research Protocol
 
-In this section, we explain the process that we followed to systematically extract the facts from
-the articles for the literature survey. The search strategy section includes the queries that were
+In this section, we explain the process that we have followed to systematically extract the appropriate facts from
+the articles for our literature survey. The search strategy section includes the queries that were
 used, as well as the initial criteria that were taken into account for the initial filtering of the
 articles. Article selection explains how the relevance of the papers was assessed, and how the
 final filtering was done. The last section describes the data extracted from each article.
 
 ### Search Strategy
 
-As stated in the motivation, the survey by Martin et al. gave us a starting point.
+As stated in the motivation, the survey by Martin et al. @martin2015survey gave us a starting point.
 Instead of gathering everything related to App Store Analytics we decided to focus on extending the
-work done by the authors and answering the research questions specifically for the
-subcategory of Review Analytics. All the papers that @martin2015survey
-found related with Review Analytics were retrieved and inspected to get a sense of their specific
-keywords and content. 
+work done by the authors and answering the research questions specifically related to the
+subcategory of Review Analytics. We retrieved and inspected all the papers of the Review Analytics category that were mentioned in the aforementioned survey and we identified specific keywords and topics for our survey.
 
 After doing this, the following search queries were generated:
 ```
@@ -65,8 +62,8 @@ After doing this, the following search queries were generated:
 
 Google Scholar[^1], ACM Digital Library[^2], and IEEE Xplore[^3] were used for the searching
 process with the queries mentioned above. In order to build a database using only the relevant
-articles, the following inclusion criteria were applied to the found articles. In addition to the
-results obtained by searching with the specific query, the first page of the “related articles”
+articles, the following inclusion criteria were applied. In addition to the
+results obtained by searching with the specific queries, the first page of the “related articles”
 link for the top cited articles was also inspected. 
 
 | Criteria | Value        | 
@@ -76,7 +73,7 @@ link for the top cited articles was also inspected.
 | keywords in title | user reviews OR app store reviews |
 | keywords in abstract | user reviews OR app store reviews |
 
-After the relevant articles were selected, their metadata was gathered, and they were entered into
+After the selection of the relevant papers, we gathered metadata associated with them, and we entered them into
 a database. That was the input for the next step of the survey, article selection.
 
 ### Article selection
