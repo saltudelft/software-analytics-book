@@ -4,6 +4,10 @@
 
 The following people contributed content to this book.
 
+[Max van Deursen](http://maxvandeursen.nl) is a Master Computer
+Science student at TU Delft, specializing in the Software 
+Technology track.
+
 ## Editors {-}
 
 The following people edited the book and oversaw its production.
