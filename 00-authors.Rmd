@@ -1,0 +1,13 @@
+# Contributors {-}
+
+## Authors {-}
+
+The following people contributed content to this book.
+
+## Editors {-}
+
+The following people edited the book and oversaw its production.
+
+[Georgios Gousios](http://gousios.org) is assistant professor of
+software analytics at TU Delft and the main teacher of the IN4334
+course.

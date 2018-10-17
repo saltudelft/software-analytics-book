@@ -12,7 +12,7 @@ The resources are listed in alphabetical order of first author name, and then by
 #### Expectations, outcomes, and challenges of modern code review
 Reference: @bacchelli2013expectations
 
-**Summary**  
+**Summary**
 
 This paper describes research about the goals and actual effects of code reviews. Interviews and
 experiments have been done with people in the programming field.
@@ -67,7 +67,7 @@ For answering **RQ3**:
 #### A Faceted Classification Scheme for Change-Based Industrial Code Review Processes
 Reference: @baum2016faceted
 
-**Summary**  
+**Summary**
 The broad research questions answered in this article are: How is code review performed in industry
 today? Which commonalities and variations exist between code review processes of different teams
 and companies? The article describes a classification scheme for change-based code review processes
@@ -78,7 +78,7 @@ Grounded Theory study.
 #### The Choice of Code Review Process: A Survey on the State of the Practice
 Reference: @baum2017choice
 
-**Summary**  
+**Summary**
 This paper, published in 2017, is trying to answer 3 RQs. Firstly, how prevalent is change-based
 review in the industry? Secondly, does the chance that code review remains in use increase if code
 review is embedded into the process (and its supporting tools) so that it does not require a
@@ -88,12 +88,12 @@ effects a mediator in determining the code review process?
 #### The influence of non-technical factors on code review
 Reference: @baysal2013influence
 
-**Summary**  
+**Summary**
 This paper focus on the influence of several non-technical factors on code review response time and
-outcome. An empirical study of code review process for WebKit, 
+outcome. An empirical study of code review process for WebKit,
 a large open source project was described to see the influence. Specifically, the authors
 replicated some previously studied factors and extended several more factors that had not beed
-explored. 
+explored.
 
 For answering **RQ1**:
 
@@ -104,7 +104,7 @@ For answering **RQ1**:
 
 **Research questions and answers**:
 
-* *What factors can influence how long it takes for a patch to be reviewed?* 
+* *What factors can influence how long it takes for a patch to be reviewed?*
 The organizational and personal factors influence review timeliness. Some factors that influenced
 the time required to review a patch, such as the size of the patch itself or the part of the code
 base being modified,  are unsurprising and are likely related to the technical complexity of a
@@ -112,10 +112,9 @@ given change. The most influential factors of the code review process on review 
 organization a patch writer is affiliated with and their level of participation within the project.
 
 * *What factors influence the outcome of the review process?*
-The organizational and personal factors influence the likelihood of a patch being accepted. 
+The organizational and personal factors influence the likelihood of a patch being accepted.
 The most influential factors of the code review process on patch acceptance are the organization a
 patch writer is affiliated with and their level of participation within the project.
-
 
 For answering **RQ3**:
 
@@ -181,7 +180,7 @@ Not stated
 #### Modern code reviews in open-source projects: Which problems do they fix?
 Reference: @beller2014modern
 
-**Summary**  
+**Summary**
 It has been researched what kinds of problems are solved by doing code reviews. The conclusion is
 that 75% are improvements in evolvability of the code, and 25% in functional aspects.
 
@@ -199,11 +198,10 @@ For answering **RQ1**:
 
 * *Which types of changes occur in code under review?* 75% of changes are related to the
 evolvability of the system, and only 25% to its functionality.
-* *What triggered the changes occurring in code under review?* 
+* *What triggered the changes occurring in code under review?*
 78-90% of the trigger are review comments and the remaining 10-22% are 'undocumented'.
 * *What influences the number of changes in code under review?* Code churn, number of changed files
 and task type are the most important factors influencing the number of changes.
-
 
 #### Lessons learned from building and deploying a code review analytics platform
 Reference: @bird2015lessons
@@ -243,7 +241,7 @@ tools.
 #### Software Reviews: The State of the Practice
 Reference: @ciolkowski2003software
 
-**Summary**  
+**Summary**
 To investigate how industry carries out software reviews and in what forms, this paper conducted
 a two-part survey in 2002, the first part based on a national initiative in Germany and the second
 involving companies worldwide. Additionally, this paper also include some fundamental concepts
@@ -252,7 +250,7 @@ of code review, such as functionalities of code review.
 #### Code reviews do not find bugs: how the current code review best practice slows us down
 Reference: @czerwonka2015code
 
-**Summary**  
+**Summary**
 As code review has many uses and benefits, the authors hope to find out whether the current code
 review methods are sufficiently efficient. They also research whether other methods may be more
 efficient. With experience gained at Microsoft and with support of data, the authors posit (1) that
@@ -269,12 +267,12 @@ For answering **RQ1**:
 
 **Research questions and answers**:
 
-* *In what situations, do code reviews provide more value than others?* 
+* *In what situations, do code reviews provide more value than others?*
 Unlike inspections, code reviews do not require participants to be in the same place nor do they
-happen at a fixed, prearranged time. 
+happen at a fixed, prearranged time.
 Aligning with a distributed nature of many projects, code reviews are asynchronous and frequently
 supporting geographically distributed reviewers.
-* *What is the value of consistency of applying code reviews equally to all code changes?* 
+* *What is the value of consistency of applying code reviews equally to all code changes?*
 Code review usefulness is negatively correlated with the size of a code review.
 With 20 or more changed files, the more files there are in a single
 review, the lower the overall rate of useful feedback.
@@ -287,12 +285,12 @@ For answering **RQ3**:
 
 * Due to its costs, code reviewing practice is a topic deserving to be better
 understood, systematized and applied to software engineering workflow with more precision than the
-best practice currently prescribes. 
+best practice currently prescribes.
 
 #### Design and code inspections to reduce errors in program development
 Reference: @fagan2002design
 
-**Summary**  
+**Summary**
 This paper describes a method to thoroughly check code quality after each step of the development
 process, in a heavyweight manner. It does not really concern agile development.
 
@@ -302,7 +300,7 @@ work well for improving software quality.
 #### An exploratory study of the pull-based software development model
 Reference: @gousios2014exploratory
 
-**Summary**  
+**Summary**
 This article focuses on how much pull requests are being used and how they are used, focusing on
 GitHub. For example, it is concluded that pull-requests are not being used that much, that
 pull-requests are being merged fast after they have been submitted, and that a pull request not
@@ -316,7 +314,7 @@ For answering **RQ1**:
 * *Tools*: Custom developed tools, available online
 * *Datasets*: GHTorrent dataset, along with data collected by authors. The last is also available
   online
- 
+
 **Research questions and answers**:
 
 * *How popular is the pull based development model?* "14% of repositories are using pull requests
@@ -371,7 +369,7 @@ For answering **RQ3**:
 #### The impact of code review coverage and code review participation on software quality: A case study of the qt, vtk, and itk projects
 Reference: @mcintosh2014impact
 
-**Summary**  
+**Summary**
 This paper focuses on the influence of doing light-weight code reviews on software quality. In
 particular, the effect of review coverage (the part of the code that has been reviewed) and review
 participation (a measure for how much reviewers are involved in the review process) are being
@@ -393,13 +391,13 @@ including version control metrics, coverage metrics and participation metrics.
 **Research questions and answers**:
 
 * *Is there a relationship between code review coverage and post-release defects?*
- Although review coverage is negatively associated with software quality in our models, 
+ Although review coverage is negatively associated with software quality in our models,
  several defect-prone components have high coverage rates, suggesting that other properties of the
  code review process are at play.
 
 * *Is there a relationship between code review participation and post-release defects?*
-Lack of participation in code review has a negative impact on software quality. 
-Reviews without discussion are associated with higher post-release defect counts, 
+Lack of participation in code review has a negative impact on software quality.
+Reviews without discussion are associated with higher post-release defect counts,
 suggesting that the amount of discussion generated during review should be considered when making
 integration decisions.
 
@@ -424,7 +422,7 @@ original version of the paper has been included in this survey.
 #### A Study of the Quality-Impacting Practices of Modern Code Review at Sony Mobile
 Reference: @shimagaki2016study
 
-**Summary**  
+**Summary**
 First the study by McIntosh et al. [@mcintosh2016empirical] is replicated in a proprietary setting
 at Sony Mobile. A qualitative study, including interviews, is also done with the question "Why are
 certain reviewing practices associated with better software quality?"
@@ -435,7 +433,7 @@ the qualitative study.
 
 For answering **RQ1**:
 
-* *Sub-topic*: 
+* *Sub-topic*:
 * *Research method*: replication: empirical, quantitative; qualitative
 * *Tools*: N/A
 * *Datasets*: Review data from Sony Mobile
@@ -552,7 +550,7 @@ For answering **RQ3**:
 Researching how RevFinder works in practice, in terms of how effectively and practically it helps
 developers in recommending code-reviewers, when deployed in a live development environment.
 
-#### Revisiting code ownership and its relationship with software quality in the scope of modern code review 
+#### Revisiting code ownership and its relationship with software quality in the scope of modern code review
 Reference: @thongtanunam2016revisiting
 
 **Summary**:
@@ -600,7 +598,7 @@ For answering **RQ2**:
 #### Review participation in modern code review
 Reference: @thongtanunam2017review
 
-**Summary**  
+**Summary**
 This paper discusses the factors that influence review participation in code review. Previous
 studies identified that review participation influences the code review process significantly,
 but did not study the factors that actually influence review participation.
