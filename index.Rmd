@@ -13,7 +13,7 @@ cover-image: figures/cover.jpg
 description: "A systematic literature survey on Software Analytics."
 ---
 
-# Preamble {#intro}
+# Preamble {-#intro}
 
 The book you see in front of you is the outcome of an eight week seminar run by the Software Engineering Research Group (SERG) at TU Delft. We have split up the novel area of Software Analytics into several sub topics. Every chapter addresses one such sub-topic of Software Analytics and is the outcome of a systematic literature review a laborious team of 3-4 students performed.
 
@@ -23,7 +23,7 @@ With this book, we hope to structure the new field of Software Analytics and sho
 
 
 
-## License
+## License {-}
 
 ![Creative Commons](figures/cc-nc-sa.png)
 This book is copyrighted 2018 by TU Delft and its
