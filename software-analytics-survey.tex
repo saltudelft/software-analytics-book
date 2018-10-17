@@ -107,7 +107,8 @@ TU Delft}
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\chapter{Preamble}\label{intro}
+\chapter*{Preamble}\label{intro}
+\addcontentsline{toc}{chapter}{Preamble}
 
 The book you see in front of you is the outcome of an eight week seminar
 run by the Software Engineering Research Group (SERG) at TU Delft. We
@@ -121,12 +122,30 @@ and show how it is related to many long existing research fields.
 
 \emph{The IN4334 -- Software Analytics class of 2018}
 
-\section{License}\label{license}
+\section*{License}\label{license}
+\addcontentsline{toc}{section}{License}
 
 \includegraphics{figures/cc-nc-sa.png} This book is copyrighted 2018 by
 TU Delft and its respective authors and distributed under the
 \href{https://creativecommons.org/licenses/by-nc-sa/4.0/}{CC BY-NC-SA
 4.0 license}
+
+\chapter*{Contributors}\label{contributors}
+\addcontentsline{toc}{chapter}{Contributors}
+
+\section*{Authors}\label{authors}
+\addcontentsline{toc}{section}{Authors}
+
+The following people contributed content to this book.
+
+\section*{Editors}\label{editors}
+\addcontentsline{toc}{section}{Editors}
+
+The following people edited the book and oversaw its production.
+
+\href{http://gousios.org}{Georgios Gousios} is assistant professor of
+software analytics at TU Delft and the main teacher of the IN4334
+course.
 
 \chapter{A contemporary view on Software
 Analytics}\label{a-contemporary-view-on-software-analytics}
@@ -8855,15 +8874,14 @@ Processes}\label{a-faceted-classification-scheme-for-change-based-industrial-cod
 
 Reference: {[}\protect\hyperlink{ref-baum2016faceted}{16}{]}
 
-\textbf{Summary}\\
-The broad research questions answered in this article are: How is code
-review performed in industry today? Which commonalities and variations
-exist between code review processes of different teams and companies?
-The article describes a classification scheme for change-based code
-review processes in industry. This scheme is based on descriptions of
-the code review processes of eleven companies, obtained from interviews
-with software engineering professionals that were performed during a
-Grounded Theory study.
+\textbf{Summary} The broad research questions answered in this article
+are: How is code review performed in industry today? Which commonalities
+and variations exist between code review processes of different teams
+and companies? The article describes a classification scheme for
+change-based code review processes in industry. This scheme is based on
+descriptions of the code review processes of eleven companies, obtained
+from interviews with software engineering professionals that were
+performed during a Grounded Theory study.
 
 \subsubsection{The Choice of Code Review Process: A Survey on the State
 of the
@@ -8871,26 +8889,25 @@ Practice}\label{the-choice-of-code-review-process-a-survey-on-the-state-of-the-p
 
 Reference: {[}\protect\hyperlink{ref-baum2017choice}{15}{]}
 
-\textbf{Summary}\\
-This paper, published in 2017, is trying to answer 3 RQs. Firstly, how
-prevalent is change-based review in the industry? Secondly, does the
-chance that code review remains in use increase if code review is
-embedded into the process (and its supporting tools) so that it does not
-require a conscious decision to do a review? Thirdly, are the intended
-and acceptable levels of review effects a mediator in determining the
-code review process?
+\textbf{Summary} This paper, published in 2017, is trying to answer 3
+RQs. Firstly, how prevalent is change-based review in the industry?
+Secondly, does the chance that code review remains in use increase if
+code review is embedded into the process (and its supporting tools) so
+that it does not require a conscious decision to do a review? Thirdly,
+are the intended and acceptable levels of review effects a mediator in
+determining the code review process?
 
 \subsubsection{The influence of non-technical factors on code
 review}\label{the-influence-of-non-technical-factors-on-code-review}
 
 Reference: {[}\protect\hyperlink{ref-baysal2013influence}{19}{]}
 
-\textbf{Summary}\\
-This paper focus on the influence of several non-technical factors on
-code review response time and outcome. An empirical study of code review
-process for WebKit, a large open source project was described to see the
-influence. Specifically, the authors replicated some previously studied
-factors and extended several more factors that had not beed explored.
+\textbf{Summary} This paper focus on the influence of several
+non-technical factors on code review response time and outcome. An
+empirical study of code review process for WebKit, a large open source
+project was described to see the influence. Specifically, the authors
+replicated some previously studied factors and extended several more
+factors that had not beed explored.
 
 For answering \textbf{RQ1}:
 
@@ -9026,10 +9043,10 @@ fix?}\label{modern-code-reviews-in-open-source-projects-which-problems-do-they-f
 
 Reference: {[}\protect\hyperlink{ref-beller2014modern}{21}{]}
 
-\textbf{Summary}\\
-It has been researched what kinds of problems are solved by doing code
-reviews. The conclusion is that 75\% are improvements in evolvability of
-the code, and 25\% in functional aspects.
+\textbf{Summary} It has been researched what kinds of problems are
+solved by doing code reviews. The conclusion is that 75\% are
+improvements in evolvability of the code, and 25\% in functional
+aspects.
 
 It has also been researched which part of the review comments is
 actually followed up by an action, and which part of the edits after a
@@ -9128,13 +9145,12 @@ Practice}\label{software-reviews-the-state-of-the-practice}
 
 Reference: {[}\protect\hyperlink{ref-ciolkowski2003software}{42}{]}
 
-\textbf{Summary}\\
-To investigate how industry carries out software reviews and in what
-forms, this paper conducted a two-part survey in 2002, the first part
-based on a national initiative in Germany and the second involving
-companies worldwide. Additionally, this paper also include some
-fundamental concepts of code review, such as functionalities of code
-review.
+\textbf{Summary} To investigate how industry carries out software
+reviews and in what forms, this paper conducted a two-part survey in
+2002, the first part based on a national initiative in Germany and the
+second involving companies worldwide. Additionally, this paper also
+include some fundamental concepts of code review, such as
+functionalities of code review.
 
 \subsubsection{Code reviews do not find bugs: how the current code
 review best practice slows us
@@ -9142,15 +9158,15 @@ down}\label{code-reviews-do-not-find-bugs-how-the-current-code-review-best-pract
 
 Reference: {[}\protect\hyperlink{ref-czerwonka2015code}{52}{]}
 
-\textbf{Summary}\\
-As code review has many uses and benefits, the authors hope to find out
-whether the current code review methods are sufficiently efficient. They
-also research whether other methods may be more efficient. With
-experience gained at Microsoft and with support of data, the authors
-posit (1) that code reviews often do not find functionality issues that
-should block a code submission; (2) that effective code reviews should
-be performed by people with a specific set of skills; and (3) that the
-social aspect of code reviews cannot be ignored.
+\textbf{Summary} As code review has many uses and benefits, the authors
+hope to find out whether the current code review methods are
+sufficiently efficient. They also research whether other methods may be
+more efficient. With experience gained at Microsoft and with support of
+data, the authors posit (1) that code reviews often do not find
+functionality issues that should block a code submission; (2) that
+effective code reviews should be performed by people with a specific set
+of skills; and (3) that the social aspect of code reviews cannot be
+ignored.
 
 For answering \textbf{RQ1}:
 
@@ -9205,10 +9221,9 @@ development}\label{design-and-code-inspections-to-reduce-errors-in-program-devel
 
 Reference: {[}\protect\hyperlink{ref-fagan2002design}{66}{]}
 
-\textbf{Summary}\\
-This paper describes a method to thoroughly check code quality after
-each step of the development process, in a heavyweight manner. It does
-not really concern agile development.
+\textbf{Summary} This paper describes a method to thoroughly check code
+quality after each step of the development process, in a heavyweight
+manner. It does not really concern agile development.
 
 The authors state that these methods do not affect the developing
 process negatively, and that they work well for improving software
@@ -9220,13 +9235,12 @@ model}\label{an-exploratory-study-of-the-pull-based-software-development-model}
 
 Reference: {[}\protect\hyperlink{ref-gousios2014exploratory}{74}{]}
 
-\textbf{Summary}\\
-This article focuses on how much pull requests are being used and how
-they are used, focusing on GitHub. For example, it is concluded that
-pull-requests are not being used that much, that pull-requests are being
-merged fast after they have been submitted, and that a pull request not
-being merged is most of the time not caused by technical errors in the
-pull-request.
+\textbf{Summary} This article focuses on how much pull requests are
+being used and how they are used, focusing on GitHub. For example, it is
+concluded that pull-requests are not being used that much, that
+pull-requests are being merged fast after they have been submitted, and
+that a pull request not being merged is most of the time not caused by
+technical errors in the pull-request.
 
 For answering \textbf{RQ1}:
 
@@ -9344,12 +9358,11 @@ projects}\label{the-impact-of-code-review-coverage-and-code-review-participation
 
 Reference: {[}\protect\hyperlink{ref-mcintosh2014impact}{129}{]}
 
-\textbf{Summary}\\
-This paper focuses on the influence of doing light-weight code reviews
-on software quality. In particular, the effect of review coverage (the
-part of the code that has been reviewed) and review participation (a
-measure for how much reviewers are involved in the review process) are
-being assessed.
+\textbf{Summary} This paper focuses on the influence of doing
+light-weight code reviews on software quality. In particular, the effect
+of review coverage (the part of the code that has been reviewed) and
+review participation (a measure for how much reviewers are involved in
+the review process) are being assessed.
 
 It turns out that both aspects improve software quality when they are
 higher. Review participation is the most influential. According to the
@@ -9428,8 +9441,7 @@ Mobile}\label{a-study-of-the-quality-impacting-practices-of-modern-code-review-a
 
 Reference: {[}\protect\hyperlink{ref-shimagaki2016study}{168}{]}
 
-\textbf{Summary}\\
-First the study by McIntosh et al.
+\textbf{Summary} First the study by McIntosh et al.
 {[}\protect\hyperlink{ref-mcintosh2016empirical}{128}{]} is replicated
 in a proprietary setting at Sony Mobile. A qualitative study, including
 interviews, is also done with the question ``Why are certain reviewing
@@ -9708,11 +9720,10 @@ review}\label{review-participation-in-modern-code-review}
 
 Reference: {[}\protect\hyperlink{ref-thongtanunam2017review}{178}{]}
 
-\textbf{Summary}\\
-This paper discusses the factors that influence review participation in
-code review. Previous studies identified that review participation
-influences the code review process significantly, but did not study the
-factors that actually influence review participation.
+\textbf{Summary} This paper discusses the factors that influence review
+participation in code review. Previous studies identified that review
+participation influences the code review process significantly, but did
+not study the factors that actually influence review participation.
 
 It was most importantly found that ``(\ldots{}) the review participation
 history, the description length, the number of days since the last
