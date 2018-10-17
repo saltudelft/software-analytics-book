@@ -8339,14 +8339,14 @@ input for the next step of the survey, article selection.
 \subsection{Article selection}\label{article-selection}
 
 Taking into account that the papers considered in this survey were
-published from 2015, it is no surprise that most of them are not highly
-cited. As a consequence, the selection of the filtered articles does not
-take the number of citations into consideration. In contrast, each
-member of the group was in charge of delving into a third of the
-database and finding, for each study, the \emph{relevance} with respect
-to Review Analytics and the proposed research questions. Then, this
-score was peer-reviewed by the other two team members to achieve a
-consensus.
+published from 2015 and on, it is not a surprise that most of them are
+not highly cited yet. As a consequence, the selection of the filtered
+articles does not take the number of citations into consideration. In
+contrast, each member of the group was in charge of delving into the
+one-third of the papers of our database and finding, for each study, its
+\emph{relevance} with respect to Review Analytics and the proposed
+research questions. Then, that score was peer-reviewed by the other two
+authors of our survey to achieve a consensus.
 
 For the \emph{relevance} score, we considered how much the paper used
 terms related to the analysis of user reviews. Next, we present three
@@ -8357,30 +8357,28 @@ paper (score=5) and 3) a non-relevant paper (score=0).
 recommending software changes
 {[}\protect\hyperlink{ref-di2016would}{58}{]}} - Relevance score: 10 -
 Remarks: the authors applied classification and summarization techniques
-on app reviews to reduce the effort required to analyze feedback from
-users. As it can be seen, the paper was focused on using the reviews to
-improve the development process.
+on app reviews to reduce the effort required to analyze user feedback.
+As it can be seen, the paper was focused on using the reviews to improve
+the development process.
 
 \textbf{Fault in your stars: an analysis of Android app reviews
 {[}\protect\hyperlink{ref-aralikatte2018fault}{8}{]}} - Relevance score:
 5 - Remarks: the authors analyzed the problem of the potential mismatch
-between the app reviews and the star ratings that the app receives.
-Although it is related to reviews, it is not its primary focus. It also
-does not push the state of the art regarding the datasets that they
-used.
+between the reviews and the star ratings that apps receive. Although the
+paper is related to app reviews, it is not its primary focus.
 
 \textbf{Why are Android apps removed from Google Play? A large-scale
 empirical study {[}\protect\hyperlink{ref-wang2018android}{187}{]}} -
 Relevance score: 0 - Remarks: in this case, the paper did not have to do
-with app reviews even though the title suggested otherwise.
+with app reviews even though the title suggested that.
 
 In the end, only the articles that had a score of 5 or more were used
-for the fact extraction and the subsequent answering of the research
+for the fact extraction and the subsequent investigation of the research
 questions.
 
 \subsection{Fact extraction}\label{fact-extraction}
 
-As was mentioned before, the articles were listed in a database in a
+As it was mentioned before, the articles were listed in a database in a
 structured fashion. The data that was extracted has the following
 fields:
 
@@ -8427,8 +8425,9 @@ Specifically:}{RQ1 What is the state of the art in Review Analytics? Specificall
 
 To answer the questions at hand, we looked at the novel ideas and the
 research that has been done in the field of Review Analytics. In their
-survey {[}\protect\hyperlink{ref-martin2015survey}{121}{]} Martin et al.
-proposed ``Classification'', ``Content'', ``Requirements Engineering'',
+survey, Martin et al.
+{[}\protect\hyperlink{ref-martin2015survey}{121}{]} proposed
+``Classification'', ``Content'', ``Requirements Engineering'',
 ``Sentiment'', ``Summarization'' and ``Surveys and Methodological
 Aspects of App Store Analysis'' to categorize the existing literature.
 After analyzing the subsequent work, we suggest new categories that
@@ -8436,8 +8435,8 @@ reflect the state of the art in Review Analytics. These are: ``Review
 Manipulation'', ``Requirements Engineering'', ``Mapping user reviews to
 the source code'', ``Privacy / App Permissions'', ``Responding to
 reviews'', ``Comparing Apps and App Stores'' and ``Wearables''. In the
-following sections, we expand on each one of these categories with the
-revised literature.
+following sections, we describe each one of these categories using the
+new papers that we have found.
 
 \textbf{Review Manipulation}
 
@@ -8455,31 +8454,32 @@ approach to identify attackers of collusive promotion groups in an app
 store. They use ranking changes and measurements of pairwise similarity
 to form targeted app clusters (TAC) that they later use to pinpoint
 attackers. A different approach to the same problem was proposed in
-{[}\protect\hyperlink{ref-xie2016you}{191}{]}. In the paper, Xie et al.,
+{[}\protect\hyperlink{ref-xie2016you}{191}{]}. In that paper, Xie et al.
 identified manipulated app ratings based on the so-called attack
 signatures. They presented a graph-based algorithm for achieving this
 purpose in linear time.
 
 These papers also show that the percentage of apps that manipulate their
-reviews in the app stores is small --- less than 1 \% of the apps were
-suspicious {[}\protect\hyperlink{ref-xie2016you}{191}{]}. Regarding the
-datasets, the work by Li et al.
+reviews in the app stores is small --- less than 1 \% of the apps found
+to be suspicious {[}\protect\hyperlink{ref-xie2016you}{191}{]}.
+Regarding the datasets used in this category, the work done by Li et al.
 {[}\protect\hyperlink{ref-i2017crowdsourced}{112}{]} used a smaller
 amount of app store data, but they merged it with data from an external
-crowdsourcing site. In the case of the other two papers, they can be
-characterized by the small number of considered apps (compared to the
-total number of apps in the main marketplaces), but the significant
-number of reviews that were analyzed. That makes sense, considering that
-their main purpose was to investigate the later.
+crowdsourcing site. In the case of the other two previously presented
+papers, they can be we can say that the authors have used a small number
+of considered apps (compared to the total number of apps in the main
+marketplaces), but the amount of the analyzed reviews was significant.
+That makes sense, considering that the main purpose of both studies was
+to examine app reviews.
 
 \textbf{Requirements Engineering}
 
 Users use reviews as a way to express their attitude (positive and
-negative) towards an app. The informative value of individual reviews is
-usually low, but as a whole, they can be mined for knowledge usable in
-the improvement and advancement of the apps. The survey by Martin et al.
-{[}\protect\hyperlink{ref-martin2015survey}{121}{]} described
-summarization, classification, and requirements engineering as
+negative) towards an app. The information value of individual reviews is
+usually low, but as a whole, they can be mined and provide useful
+insights for the improvement and advancement of the apps. The survey by
+Martin et al. {[}\protect\hyperlink{ref-martin2015survey}{121}{]}
+described summarization, classification, and requirements engineering as
 categories of the subfield of Review Analytics. These areas are
 converging and in recent work (after 2015) summarization and
 classification, among other techniques, are being used to complement the
@@ -8490,75 +8490,77 @@ In 2016, Di Sorbo et al. introduced SURF
 large number of reviews and extracting useful information from them. In
 a subsequent paper Panichella et al.
 {[}\protect\hyperlink{ref-panichella2016ardoc}{143}{]} presented
-techniques for classifying useful feedback in the context of maintenance
-and evolution of the apps. In their work, the authors make use of
+techniques for classifying useful feedback in the context of app
+maintenance and evolution. In their work, the authors made use of
 machine learning supervised methods in conjunction with natural language
 processing (NLP), sentiment analysis (SA), and text analysis (TA)
 techniques. Unsupervised methods for review clustering were explored in
 a paper by Anchiêta et al.
 {[}\protect\hyperlink{ref-anchieta2017}{6}{]}. The authors introduced a
-technique to categorize reviews in order to generate a summary of the
-main bugs and features of apps. Taking into account the high
-dimensionality of the datasets that are used for review mining, Jha et
-al. {[}\protect\hyperlink{ref-jha2017mining}{90}{]} proposed a semantic
+technique to categorize reviews in order to generate a summary of bugs
+and features of apps. Taking into account the high dimensionality of the
+datasets that are used for review mining, Jha et al.
+{[}\protect\hyperlink{ref-jha2017mining}{90}{]} proposed a semantic
 approach for app review classification. By using semantic role labeling,
 the authors could make the classification process more efficient. Gao et
 al. presented IDEA {[}\protect\hyperlink{ref-gao2018online}{69}{]}; a
 framework for identifying emerging app issues based on an online review
 analysis. IDEA uses information from different time slices (versions)
-for identification of the issues, and the changelogs of the studied apps
-as the ground truth for the validation of their approach. It is the only
-paper in the reviewed literature that presents a case study (of
+for the identification of the issues, and the changelogs of the studied
+apps as the ground truth for the validation of their approach. It is the
+only paper in the reviewed literature that presents a case study (of
 deployment in Tencent) as an example of the viability of IDEA.
 
-Most of the datasets used in the papers analyzed in this section can be
-characterized by a small number of apps and a substantial amount of
-reviews. Di Sorbo et al. {[}\protect\hyperlink{ref-di2016would}{58}{]}
-used 17 apps and 3439 reviews. Anchiêta et al.
-{[}\protect\hyperlink{ref-anchieta2017}{6}{]} gathered more than 50000
-reviews from 3 apps, but after the preprocessing step the dataset was
+Most of the datasets used in the papers we present in this section
+analyze a small number of apps and a substantial amount of reviews. Di
+Sorbo et al. {[}\protect\hyperlink{ref-di2016would}{58}{]} used 17 apps
+and 3,439 reviews. Anchiêta et al.
+{[}\protect\hyperlink{ref-anchieta2017}{6}{]} gathered more than 50,000
+reviews from 3 apps, but after a preprocessing step, the dataset was
 reduced to 924 records. Jha et al.
 {[}\protect\hyperlink{ref-jha2017mining}{90}{]} used a structured
 sampling procedure to mix reviews from different datasets. The final
-size was 2917 reviews. Finally, Gao et al.
+size came to 2917 reviews. Finally, Gao et al.
 {[}\protect\hyperlink{ref-gao2018online}{69}{]} used reviews from 6 apps
 (2 from the App Store and 4 from Google Play), and the final dataset
-contained 164,026 reviews, one of the largest that had been used.
+contained 164,026 reviews. This study used one of the largest numbers of
+reviews that have been ever studied.
 
 \textbf{Mapping user reviews to source code}
 
-Another research direction that has become active in the past years is
-combining the results of mining the app reviews with the source code to
-directly provide developers with valuable and actionable information to
-improve their products.
+Another research direction that has become active over the past years is
+the combination of the mining results of app reviews with the source
+code, to directly provide developers with valuable and actionable
+information for the improvement of their products.
 
-In {[}\protect\hyperlink{ref-palomba2017recommending}{141}{]}, Palomba
-et al. presented a new approach called ChangeAdvisor. It extracts useful
-feedback from reviews and recommends developers changes to specific code
+Palomba et al.
+{[}\protect\hyperlink{ref-palomba2017recommending}{141}{]} presented a
+new approach called ChangeAdvisor. It extracts useful feedback from
+reviews and recommends changes to developers for specific code
 artifacts. In the paper, metric distances such as the Dice coefficient
-are used in order to map a specific subset of reviews to a section of
-the source code. Complementary work was presented in
+are used in order to map a specific subset of reviews to a particular
+section in the source code. Complementary work was presented in
 {[}\protect\hyperlink{ref-palomba2018crowdsourcing}{140}{]}. In this
 study, Palomba et al. investigated the extent to which app developers
 take app reviews into account. To achieve this, they introduced CRISTAL.
 It pairs informative reviews with source code changes and monitors the
 extent to which developers accommodate crowd requests from the reviews.
 
-Linting mechanisms and their effectivity have also been studied. Wei et
+Linting mechanisms and their effectivity have been also studied. Wei et
 al. {[}\protect\hyperlink{ref-wei2017oasis}{189}{]} proposed a method,
 OASIS, for prioritizing the Android Lint warnings. It uses NLP
 techniques (tokenization, word removing, word stemming, and TF-IDF
-distance) to find the links between the user reviews and the Lint
-warnings. According to the paper, this is relevant given that one of the
-problems of linters is the number of false alarms they provide.
+distance) to find links between user reviews and Lint warnings.
+According to the paper, this is relevant given that one of the problems
+of linters is the large number of false alarms they provide.
 
-Regarding the datasets that were used for validation even though the
-analyzed papers use a reduced amount of apps (except for
+Regarding the datasets that were used for validation here, even though
+the analyzed papers use a limited number of apps (except for
 {[}\protect\hyperlink{ref-palomba2018crowdsourcing}{140}{]} that used
 100), as stated in the previous section, they use numerous reviews (more
 than 20,000). Additionally, as the aim of the works in this section
-directly involve the developers, they completed the quantitatively
-apps-reviews-based experiments with qualitative ones.
+directly involve the developers, they have attempted to complete the
+quantitatively apps-reviews-based experiments with qualitative ones.
 
 \textbf{Privacy / app permissions}
 
@@ -8566,14 +8568,14 @@ Permission approaches used by mobile devices' software platforms have
 been changed. Android Marshmallow the Android operating system uses a
 run-time permission-based security system. Also, Apple's iOS also uses
 run-time permissions on top of a set of permissions enabled by default.
-Scoccia et al. did a large-scale empirical study on this new system
-challenges by inspecting 4.3 million user reviews from 5572 Google Play
+Scoccia et al. did a large-scale empirical study on these new system
+challenges by inspecting 4.3 million user reviews from 5,572 Google Play
 store apps {[}\protect\hyperlink{ref-scoccia2018investigation}{165}{]}.
-Using different techniques they extracted 3574 user reviews that relate
-to permissions. They found that users like the minimal permissions as
-most apps only ask for permissions they strictly need. Some of the
-negative user concerns were apps asking for too many permissions or
-asking at a bad timing for permissions.
+Using different techniques they extracted 3,574 user reviews that relate
+to system permissions. They found that users like the minimal
+permissions as most apps only ask for permissions they strictly need.
+Some of the negative user concerns were apps asking for too many
+permissions or asking for permissions at bad timing.
 
 \textbf{Responding to reviews}
 
