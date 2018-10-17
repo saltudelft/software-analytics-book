@@ -8579,27 +8579,26 @@ permissions or asking for permissions at bad timing.
 
 \textbf{Responding to reviews}
 
-Since 2013 developers can respond to reviews in the Google Play store.
-Also, Apple introduced the same feature in 2017. In previous work,
+Developers can respond to reviews in the Google Play store from 2013.
+Also, Apple introduced the same feature in 2017. In a previous work,
 McIlroy {[}\protect\hyperlink{ref-mcilroy2014empirical}{125}{]} studied
 whether responding to user reviews has a positive effect on the rating
-users give. Building on previous work McIlroy et al. studied how likely
+users give. Building on previous work, McIlroy et al. studied how likely
 it is for users to change their rating for an app when a developer
 responds to their review
 {[}\protect\hyperlink{ref-mcilroy2017worth}{126}{]}. They found that
-users change their rating 38.7 percent of the time when a developer
-responds to their review, with a median increase of 20 percent in rating
-for the app.
+users change their rating, with probability 38.7 percent, when a
+developer responds to their review, and with a median increase of 20
+percent in rating for an app.
 
 Hassan et al. {[}\protect\hyperlink{ref-hassan2018studying}{81}{]} used
-2328 top free apps from the Google Play store to study whether users are
-more likely to update their review if a developer responds to their
-review. They extracted 126686 dialogues between developers and users and
+2,328 top free apps from the Google Play store to study whether users
+are more likely to update their reviews if a developer responds to
+these. They extracted 126,686 dialogues between developers and users and
 concluded that responding to a review increases the chances of users
-updating their given rating for an app can increase by up to six times
-when compared to not responding. They also studied the characteristics,
-likelihood, and the incentives of user-developer dialogues in app
-stores.
+updating their given rating for an app by up to six times compared to
+not responding. They also studied the characteristics, likelihood, and
+the incentives of user-developer dialogues in app stores.
 
 \textbf{Comparing Apps and App stores}
 
@@ -8629,28 +8628,28 @@ et al. did this in a case study on Android Wear
 {[}\protect\hyperlink{ref-mujahid2017examining}{136}{]}. More
 specifically, they sampled 589 reviews from 6 Android wearable apps and
 found that 15 unique complaint types could be extracted from the sample.
-The sample was created from mining the reviews of 4722 wearable apps and
-selecting the apps that had more than 100 reviews with a rating of one
-or two stars. After manually assigning categories to the reviews in the
-sample they concluded that the most frequent complaints in this
+The sample was created from mining the reviews of 4,722 wearable apps
+and selecting the apps that had more than 100 reviews with a rating of
+one or two stars. After manually assigning categories to the reviews in
+the sample, they concluded that the most frequent complaints in this
 relatively small sample were complaints related to cost, functional
 errors, and a lack of functionality.
 
 \subsection{\texorpdfstring{\textbf{RQ2} What is the state of practice
-in Review Analysis?
-Specifically:}{RQ2 What is the state of practice in Review Analysis? Specifically:}}\label{rq2-what-is-the-state-of-practice-in-review-analysis-specifically}
+in Review Analytics?
+Specifically:}{RQ2 What is the state of practice in Review Analytics? Specifically:}}\label{rq2-what-is-the-state-of-practice-in-review-analytics-specifically}
 
 \begin{itemize}
 \tightlist
 \item
   Which are the tools and the companies that create/employ them?
 \item
-  Case studies and their findings.
+  Case studies and the findings.
 \end{itemize}
 
-A Large amount of work has been published in the field of app store
-analytics (The Survey by Martin et al. was done on over 250 papers, and
-our study analyzed additional 80 papers), only a few of them were case
+A large amount of work has been published in the field of app store
+analytics (the survey by Martin et al. was done on over 250 papers, and
+our study additionally analyzed 80 papers), only a few of them were case
 studies. After applying the article selection criteria, we were left
 with 30 papers from which only two conducted a case study. The first
 case study of this selection, done by Mujahid et al.
@@ -8672,14 +8671,14 @@ Highlights\footnote{\url{https://android-developers.googleblog.com/2016/02/new-t
 into production for both developers and customers, but at the time of
 writing this survey (October 2018), the Review Highlights no longer show
 up in the public facing part of Google Play Store and are only
-accessible in the developer console\footnote{\url{https://support.google.com/googleplay/android-developer/answer/138230?hl=en}}.
+accessible in the developer's console\footnote{\url{https://support.google.com/googleplay/android-developer/answer/138230?hl=en}}.
 
 \subsubsection{State of the third-party
 tools}\label{state-of-the-third-party-tools}
 
 Many third-party services focus on app store analysis. They usually
 focus on showing aggregated statistics from the app stores and some of
-them also analyze the user review. Tools such as AppBot\footnote{\url{https://appbot.co/}}
+them also analyze user reviews. Tools such as AppBot\footnote{\url{https://appbot.co/}}
 or TheTool\footnote{\url{https://thetool.io/}} perform sentiment
 analysis on the reviews and show it as an additional metric next to the
 star rating. AppBot also categorizes reviews based on the keywords
@@ -8694,11 +8693,11 @@ and are hard to comprehend by regular users.
 
 To this day there are, to the best of our knowledge, no tools that
 compare apps and app stores using user reviews. Some tools analyze apps
-and app performance, but no tools that do comparisons.
+and app performance, but there are no tools that do comparisons.
 
-\subsection{\texorpdfstring{\textbf{RQ3} Which are the challenges and
-future research that the field is facing or will
-face?}{RQ3 Which are the challenges and future research that the field is facing or will face?}}\label{rq3-which-are-the-challenges-and-future-research-that-the-field-is-facing-or-will-face}
+\subsection{\texorpdfstring{\textbf{RQ3} Which are the challenges that
+the field is facing or will
+face?}{RQ3 Which are the challenges that the field is facing or will face?}}\label{rq3-which-are-the-challenges-that-the-field-is-facing-or-will-face}
 
 In this section, we present challenges and future research directions
 for the field of Review Analytics and the subcategories that were
@@ -8706,59 +8705,58 @@ identified in previous sections.
 
 A significant aspect of the research process is the validation of the
 proposed tools and frameworks and the assessment of how generalizable
-they are. To accomplish this, it is necessary to have bigger datasets of
-reviews and more representative and sound samples. Machine learning has
-seen a steady increase in popularity, however, not so much in the field
-of Review Analytics. Also, most of the studies rely on correlation
-relationships to validate the effectiveness of their approaches. There
-is a need to apply causation techniques so confounding factors can be
-ruled out.
+they are. To accomplish this, it is necessary for researchers to have
+large datasets of reviews and more representative and sound samples.
+Machine learning has seen a steady increase in popularity, however, it
+has not been used a lot in the field of Review Analytics. Also, most of
+the studies rely on correlation relationships to validate the
+effectiveness of their approaches. There is a need to apply causation
+techniques so confounding factors can be ruled out.
 
-There is a difficulty in translating the research into actual tools that
-are used in a real-world setting. Of all the works that were considered,
-only Gao et al. presented a case
-study{[}\protect\hyperlink{ref-gao2018online}{69}{]}, and most of the
-tools from other papers have either disappeared or are not being
-actively used.
+There is a difficulty in trasforming research into actual tools that are
+used in a real-world setting. Of all the works that were considered
+here, only Gao et al. presented a case study
+{[}\protect\hyperlink{ref-gao2018online}{69}{]}, and most of the tools
+from other papers are either unavailable or not actively used.
 
 \emph{Review Manipulation:} It is important to combine multiple sources
-of data to identify suspicious individuals better. Not just from app
-stores alone, but also crowdsourcing sites and even social networks.
-Also, the sample should be carefully selected, given that the number of
-suspicious apps is not significant (around 1\% of all apps), taking into
-account the size of the app stores.
+of data to identify suspicious apps. Not just from app stores alone, but
+also from crowdsourcing sites and even from social networks. Also, the
+sample should be carefully selected, given that the number of suspicious
+apps is not significant (around 1\% of all apps), taking into account
+the size of the app stores.
 
 \emph{Requirements Engineering:} More case studies are needed in order
 to validate how useful the extracted requirements are in the context of
 software development. Also, as machine learning is starting to be
-heavily used, models that are tailored to the review data will be
-created. The large amounts of noise that is present in the reviews is
-still a challenge that needs careful studying of the preprocessing steps
-that are used while assembling the datasets.
+heavily used, models that are tailored to the review data are expected
+to be created. The large amounts of noise that is present in the reviews
+is still a challenge that needs careful studying of the preprocessing
+steps that are used while assembling the datasets.
 
-\emph{Mapping user reviews to source code:} There is a need to
-understand the ``language of source code'' better as this will be
-essential in combining the review and source code datasets. A likely
-future trend is the analysis of update-level changes. Regarding this,
-there is still a need to obtain update-categorized reviews as this is
-still a challenge with the current review-retrieving approaches.
+\emph{Mapping user reviews to source code:} There is a need for
+developers to improve their programs by combining reviews with source
+code datasets. A likely future trend is the analysis of update-level
+changes. Regarding this, there is still a need to obtain
+update-categorized reviews as this is still a challenge for the current
+review-retrieving approaches.
 
 \emph{Privacy/app permissions:} Quantifying and understanding the
 effects of run-time permission requests on the user experience is still
-an open research area which can help to increase the quality of apps.
-One of the directions for further research regarding permissions is the
-idea of giving permissions to specific app functionalities instead of
-giving permissions to the app as a whole. That could lead to better
-user-understanding why an app needs certain permission and could reduce
-the number of permissions an app needs. Another possible future
-direction is researching and creating tools that help developers put
-permission requests in the right place to avoid bugs related to
-permissions and permission requests.
+an open research area which can help developers to increase the quality
+of their apps. One of the directions for further research regarding
+permissions is the idea of giving permissions to specific app
+functionalities instead of giving permissions to the app as a whole.
+That could lead to better user-understanding why an app needs certain
+permission and could reduce the number of permissions an app needs.
+Another possible future direction is researching and creating tools that
+help developers put permission requests in the right place to avoid bugs
+related to permissions and permission requests.
 
 \emph{Responding to reviews:} There is a need for an in-depth study of
-how developers and users are using the review mechanism right now to
-find out how the mechanism can be improved. Right now developers can
-respond to 500 user reviews per day using the Google Play API\footnote{\url{https://developers.google.com/android-publisher/reply-to-reviews}}.
+how developers and users are using the review mechanism to find out how
+this mechanism can be improved. Right now developers respond to almost
+500 user reviews per day using the Google Play API\footnote{\url{https://developers.google.com/android-publisher/reply-to-reviews}}.
 It could be worth investigating whether a limit of 500 responses is
 sufficient to ban useless responses from the store such as thanking
 every user.
@@ -8770,9 +8768,9 @@ relationships were used in work by Li et al.
 been noted that apps that have been developed using hybrid development
 tools had relatively low ratings. Future studies should be done to
 investigate the quality of hybrid apps and compare them with the quality
-of native apps. Furthermore, to get more complete results, the research
-should focus on a market-scale analysis using a large number of apps and
-reviews.
+of native apps. Furthermore, to get more complete results, current
+research approaches should focus on a market-scale analysis using a
+large number of apps and reviews.
 
 \chapter{Final Words}\label{final-words}
 
