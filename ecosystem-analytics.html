@@ -25,7 +25,7 @@
 <meta name="author" content="Students and teachers of the 2018 IN4334 (Software Analytics) course @ TU Delft">
 
 
-<meta name="date" content="2018-10-16">
+<meta name="date" content="2018-10-17">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -229,10 +229,10 @@
 <h1><span class="header-section-number">Chapter 6</span> Ecosystem Analytics</h1>
 <div id="motivation-3" class="section level2">
 <h2><span class="header-section-number">6.1</span> Motivation</h2>
-<p>In the modern day and age, it is popular to make use of external software or libraries in software projects to use the functionality (for example parsing JSON) of these libraries, without having to develop this functionality itself. For example, in 2016, the package manager npm recorded 18 billion package downloads in one month, according to <span class="citation">[<a href="#ref-Linux2016">171</a>]</span>. Moreover, multiple languages, such as Python and Rust, provide package managers (pip<a href="#fn9" class="footnoteRef" id="fnref9"><sup>9</sup></a> and Cargo<a href="#fn10" class="footnoteRef" id="fnref10"><sup>10</sup></a> respectively) which can be used to easily manage this third-party functionality, as well as distribute it.</p>
-<p>In parallel to this, the popularity of creating open source projects is on the rise as well. At the package repository npm only, 4,685 libraries were added in one week in 2016, according to <span class="citation">[<a href="#ref-Linux2016">171</a>]</span>. On platforms such as GitHub<a href="#fn11" class="footnoteRef" id="fnref11"><sup>11</sup></a>, it is easy and quick to create a new software project, which can be developed, reviewed and used by the whole community. This development leads to more libraries being developed and being available for public use.</p>
-<p>As a result of these two developments, software projects are increasingly becoming interdependent on each other. Inspecting the dependency relations between projects leads to a graph-like structure of software projects. In this structure,the nodes are the projects and the edges represent a dependency between two software projects. This structure is known as a <em>software ecosystem</em>. Messerschmitt and Szyperski in <span class="citation">[<a href="#ref-Messerschmitt2003">131</a>]</span> state that a <em>software ecosystem</em> is “a collection of software products that have some given degree of symbiotic relationships.” Another, similar definition is given by Lungu in <span class="citation">[<a href="#ref-Lungu2009">115</a>]</span>: “A software ecosystem is a collection of software projects which are developed and co-evolve in the same environment.” Mens et al. in <span class="citation">[<a href="#ref-Mens2013">130</a>]</span> extend this definition, “by explicitly considering the communities involved (e.g. user and developer communities) as being part of the software ecosystem.” Stallman in <span class="citation">[<a href="#ref-Stallman2002">170</a>]</span> opposes the overall notion of calling this structure a software ecosystem: “It is inadvisable to describe the free software community, or any human community, as an ecosystem, because that word implies the absence of ethical judgment.”</p>
-<p>Although Stallman in <span class="citation">[<a href="#ref-Stallman2002">170</a>]</span> disagrees with the use of the term ecosystem, he does not necessarily disagree with the definition of the term. The definition which will be used in this chapter is the definition of Mens et al. in <span class="citation">[<a href="#ref-Mens2013">130</a>]</span>, since it captures the essence of the other two definitions, while adding the notion of the human communities alongside as well.</p>
+<p>In the modern day and age, it is popular to make use of external software or libraries in software projects to use the functionality (for example parsing JSON) of these libraries, without having to develop this functionality itself. For example, in 2016, the package manager npm recorded 18 billion package downloads in one month, according to <span class="citation">[<a href="#ref-Linux2016">170</a>]</span>. Moreover, multiple languages, such as Python and Rust, provide package managers (pip<a href="#fn9" class="footnoteRef" id="fnref9"><sup>9</sup></a> and Cargo<a href="#fn10" class="footnoteRef" id="fnref10"><sup>10</sup></a> respectively) which can be used to easily manage this third-party functionality, as well as distribute it.</p>
+<p>In parallel to this, the popularity of creating open source projects is on the rise as well. At the package repository npm only, 4,685 libraries were added in one week in 2016, according to <span class="citation">[<a href="#ref-Linux2016">170</a>]</span>. On platforms such as GitHub<a href="#fn11" class="footnoteRef" id="fnref11"><sup>11</sup></a>, it is easy and quick to create a new software project, which can be developed, reviewed and used by the whole community. This development leads to more libraries being developed and being available for public use.</p>
+<p>As a result of these two developments, software projects are increasingly becoming interdependent on each other. Inspecting the dependency relations between projects leads to a graph-like structure of software projects. In this structure,the nodes are the projects and the edges represent a dependency between two software projects. This structure is known as a <em>software ecosystem</em>. Messerschmitt and Szyperski in <span class="citation">[<a href="#ref-Messerschmitt2003">130</a>]</span> state that a <em>software ecosystem</em> is “a collection of software products that have some given degree of symbiotic relationships.” Another, similar definition is given by Lungu in <span class="citation">[<a href="#ref-Lungu2009">114</a>]</span>: “A software ecosystem is a collection of software projects which are developed and co-evolve in the same environment.” Mens et al. in <span class="citation">[<a href="#ref-Mens2013">129</a>]</span> extend this definition, “by explicitly considering the communities involved (e.g. user and developer communities) as being part of the software ecosystem.” Stallman in <span class="citation">[<a href="#ref-Stallman2002">169</a>]</span> opposes the overall notion of calling this structure a software ecosystem: “It is inadvisable to describe the free software community, or any human community, as an ecosystem, because that word implies the absence of ethical judgment.”</p>
+<p>Although Stallman in <span class="citation">[<a href="#ref-Stallman2002">169</a>]</span> disagrees with the use of the term ecosystem, he does not necessarily disagree with the definition of the term. The definition which will be used in this chapter is the definition of Mens et al. in <span class="citation">[<a href="#ref-Mens2013">129</a>]</span>, since it captures the essence of the other two definitions, while adding the notion of the human communities alongside as well.</p>
 <p>By performing analysis on these software ecosystems, the aim is to generate meaningful insights. These insights can then be used to improve the efficiency and effectivity of the software development process, as well as to learn to identify and inform about potential problems. For example, a warning could be displayed if a dependency has a security vulnerability.</p>
 <p>The field of research on software ecosystems, <em>ecosystem analytics</em>, focuses on performing such analysis. This chapter discovers what the current progress is in this field of research through a literature survey. This discovery is not limited to the theoretical perspective, but will uncover practical implications as well as the open challenges of the field. In order to describe each covered aspect, we have formulated three research questions:</p>
 <ul>
@@ -245,8 +245,8 @@
 </div>
 <div id="research-protocol-2" class="section level2">
 <h2><span class="header-section-number">6.2</span> Research Protocol</h2>
-<p>In order to review literature to answer the research questions given in the previous section, the survey method suggested by Kitchenham is used, conform to <span class="citation">[<a href="#ref-Kitchenham2004">101</a>]</span>. This method creates a systematic way to select a set of papers, which is relevant to the research question(s).</p>
-<p>The search strategy, as described by Kitchenham <span class="citation">[<a href="#ref-Kitchenham2004">101</a>]</span>, are usually iterative and benefit from consultations with experts in the field, among other things. Our search strategy can be split in three different types:</p>
+<p>In order to review literature to answer the research questions given in the previous section, the survey method suggested by Kitchenham is used, conform to <span class="citation">[<a href="#ref-kitchenham2004procedures">101</a>]</span>. This method creates a systematic way to select a set of papers, which is relevant to the research question(s).</p>
+<p>The search strategy, as described by Kitchenham <span class="citation">[<a href="#ref-kitchenham2004procedures">101</a>]</span>, are usually iterative and benefit from consultations with experts in the field, among other things. Our search strategy can be split in three different types:</p>
 <ul>
 <li>the initial seed, given by an expert in the field, MSc. Joseph Hejderup</li>
 <li>a search using a digital search engine, namely Google Scholar<a href="#fn12" class="footnoteRef" id="fnref12"><sup>12</sup></a></li>
@@ -285,7 +285,7 @@
 <div id="explored-topics" class="section level4">
 <h4><span class="header-section-number">6.3.1.1</span> Explored Topics</h4>
 <p>The main topics we explored in ecosystem analytics are the usage of trivial packages, (breaking) changes in dependencies and their impacts, quality of dependencies and dependency networks.</p>
-<p>Trivial packages are a recurring topic in the area of software analytics, notably incidents like Left-pad, Schleuter <span class="citation">[<a href="#ref-NPM2016">176</a>]</span>, stress the possible impact trivial packages can have on a software ecosystem. Research in this topic explores the usage of trivial packages both quantitatively and qualitatively by analysing the usage of the trivial packages and the reasons why developers choose to use them respectively.</p>
+<p>Trivial packages are a recurring topic in the area of software analytics, notably incidents like Left-pad, Schleuter <span class="citation">[<a href="#ref-NPM2016">175</a>]</span>, stress the possible impact trivial packages can have on a software ecosystem. Research in this topic explores the usage of trivial packages both quantitatively and qualitatively by analysing the usage of the trivial packages and the reasons why developers choose to use them respectively.</p>
 <p>Breaking changes is a major topic researched by some papers. Much like trivial packages research is done both quantitatively and qualitatively in this topic. The impact of breaking changes and the way in which developers react to these changes are considered to be the notable problems in this topic.</p>
 <p>Establishing a metric for the health of an ecosystem dependency is also a heavily explored topic. Researchers are trying to find ways in which a metric can be used to establish the quality of dependencies.</p>
 <p>Dependency networks allow us to gain insight in the way in which ecosystems evolve over time.</p>
@@ -299,15 +299,15 @@
 <div id="used-ecosystems" class="section level4">
 <h4><span class="header-section-number">6.3.1.3</span> Used Ecosystems</h4>
 <p>As has been said above, the most common explored topic within the body of studied papers are topics relating to dependencies between different software projects. Therefore, it does make a lot of sense that the most common ecosystems used are those of package managers, since these package managers are central repositories from which the packages, as well as their dependencies, can easily be retrieved.</p>
-<p>The most common used ecosystem in the studied papers is <em>npm</em><a href="#fn14" class="footnoteRef" id="fnref14"><sup>14</sup></a>, as used by Abdalkareem et al. <span class="citation">[<a href="#ref-Abdalkareem2017">3</a>]</span>, Bogart et al. <span class="citation">[<a href="#ref-Bogart2016">31</a>]</span>, Decan, Mens, and Claes <span class="citation">[<a href="#ref-Decan2017">52</a>]</span>, Kikas et al. <span class="citation">[<a href="#ref-Kikas2017">96</a>]</span>, and Decan, Mens and Grosjean <span class="citation">[<a href="#ref-Decan2018">53</a>]</span>. There are a few reasons why this is the most common used ecosystem throughout the papers. Firstly, npm is the largest software registry, containing more than double of the next most populated package registry in 2016 <span class="citation">[<a href="#ref-Linux2016">171</a>]</span>. Moreover, npm is the package manager of JavaScript, which is the most used programming language according to a RedMonk survey <span class="citation">[<a href="#ref-RedMonk2018">177</a>]</span>. Kikas et al. <span class="citation">[<a href="#ref-Kikas2017">96</a>]</span> explain that it is beneficial to use this ecosystem, because the majority of their packages are hosted on GitHub and Developers specify required packages in their project’s dependency files. There are more ecosystems which have the same properties, such as RubyGems (Ruby) and Crates.io (Rust) <span class="citation">[<a href="#ref-Kikas2017">96</a>]</span>.</p>
+<p>The most common used ecosystem in the studied papers is <em>npm</em><a href="#fn14" class="footnoteRef" id="fnref14"><sup>14</sup></a>, as used by Abdalkareem et al. <span class="citation">[<a href="#ref-Abdalkareem2017">3</a>]</span>, Bogart et al. <span class="citation">[<a href="#ref-Bogart2016">31</a>]</span>, Decan, Mens, and Claes <span class="citation">[<a href="#ref-Decan2017">52</a>]</span>, Kikas et al. <span class="citation">[<a href="#ref-Kikas2017">96</a>]</span>, and Decan, Mens and Grosjean <span class="citation">[<a href="#ref-Decan2018">53</a>]</span>. There are a few reasons why this is the most common used ecosystem throughout the papers. Firstly, npm is the largest software registry, containing more than double of the next most populated package registry in 2016 <span class="citation">[<a href="#ref-Linux2016">170</a>]</span>. Moreover, npm is the package manager of JavaScript, which is the most used programming language according to a RedMonk survey <span class="citation">[<a href="#ref-RedMonk2018">176</a>]</span>. Kikas et al. <span class="citation">[<a href="#ref-Kikas2017">96</a>]</span> explain that it is beneficial to use this ecosystem, because the majority of their packages are hosted on GitHub and Developers specify required packages in their project’s dependency files. There are more ecosystems which have the same properties, such as RubyGems (Ruby) and Crates.io (Rust) <span class="citation">[<a href="#ref-Kikas2017">96</a>]</span>.</p>
 <p>However, these are not the only used ecosystems. Decan, Mens, and Grosjean <span class="citation">[<a href="#ref-Decan2018">53</a>]</span> use the <em>libraries.io</em> dataset for their research, which includes seven different packaging ecosystems: Cargo (rust), CPAN (Perl), CRAN (R), npm (JavaScript), NuGet (.NET), Packagist (PHP) and RubyGems (Ruby). Decan, Mens, and Grosjean <span class="citation">[<a href="#ref-Decan2018">53</a>]</span> therefore study the most different ecosystems in one paper, relative to the papers studied in this survey.</p>
-<p>Apart from these datasets based on packages in package repositories, there are papers which use other datasets and therefore ecosystems as well. Bavota et al. <span class="citation">[<a href="#ref-Bavota2014">16</a>]</span> research the Apache Community and therefore uses a dataset corresponding to the full Java subset of the Apache ecosystem. Cox et al. <span class="citation">[<a href="#ref-Cox2015">48</a>]</span> instead use the dataset of the Apache Maven Project to validate his created metric. Claes et al. <span class="citation">[<a href="#ref-Claes2015">43</a>]</span> research package incompatibilities and therefore uses a ten year period of the Debian i386 testing and stable distributions. Robbes, Lungu, and Röthlisberger <span class="citation">[<a href="#ref-Robbes2012">158</a>]</span> opted for the Squeak/Pharo ecosystem, as they stated that this ecosystem would provide support for answering their research questions.</p>
+<p>Apart from these datasets based on packages in package repositories, there are papers which use other datasets and therefore ecosystems as well. Bavota et al. <span class="citation">[<a href="#ref-Bavota2014">16</a>]</span> research the Apache Community and therefore uses a dataset corresponding to the full Java subset of the Apache ecosystem. Cox et al. <span class="citation">[<a href="#ref-Cox2015">48</a>]</span> instead use the dataset of the Apache Maven Project to validate his created metric. Claes et al. <span class="citation">[<a href="#ref-Claes2015">43</a>]</span> research package incompatibilities and therefore uses a ten year period of the Debian i386 testing and stable distributions. Robbes, Lungu, and Röthlisberger <span class="citation">[<a href="#ref-Robbes2012">157</a>]</span> opted for the Squeak/Pharo ecosystem, as they stated that this ecosystem would provide support for answering their research questions.</p>
 </div>
 <div id="main-research-findings" class="section level4">
 <h4><span class="header-section-number">6.3.1.4</span> Main research findings</h4>
 <p>Based on the findings of Abdalkareem et al. <span class="citation">[<a href="#ref-Abdalkareem2017">3</a>]</span> trivial packages make up 16.8% of the NPM packages. Even though 10% of NPM uses trivial packages only 45% of these trivial packages have tests.</p>
-<p>Robbes et al. <span class="citation">[<a href="#ref-Robbes2012">158</a>]</span> mentions the large impact API changes can have on an ecosystem. Bogart et al. <span class="citation">[<a href="#ref-Bogart2016">31</a>]</span> studied the attitude of developers towards breaking changes in dependencies. Their main findings were that an ecosystem plays an essential role in the way we can deal with breaking changes. Both papers conclude that developers generally do not respond in time to breaking changes and as a result breaking changes can have a large impact on a software ecosystem. This conclusion is reinforced by the findings of Decan et al. <span class="citation">[<a href="#ref-Decan2018">53</a>]</span>, where frequent changes can lead to an unstable dependency network due to transitive dependencies.</p>
-<p>Not only do developers not react in a timely fashion to breaking changes, Robbes et al. <span class="citation">[<a href="#ref-Robbes2012">158</a>]</span> also found that developers are also not quick to respond to API deprecation. Bavota et al. <span class="citation">[<a href="#ref-Bavota2014">16</a>]</span> suggests that updates should only be done when they consist of bug fixes, not API changes, to combat this issue.</p>
+<p>Robbes et al. <span class="citation">[<a href="#ref-Robbes2012">157</a>]</span> mentions the large impact API changes can have on an ecosystem. Bogart et al. <span class="citation">[<a href="#ref-Bogart2016">31</a>]</span> studied the attitude of developers towards breaking changes in dependencies. Their main findings were that an ecosystem plays an essential role in the way we can deal with breaking changes. Both papers conclude that developers generally do not respond in time to breaking changes and as a result breaking changes can have a large impact on a software ecosystem. This conclusion is reinforced by the findings of Decan et al. <span class="citation">[<a href="#ref-Decan2018">53</a>]</span>, where frequent changes can lead to an unstable dependency network due to transitive dependencies.</p>
+<p>Not only do developers not react in a timely fashion to breaking changes, Robbes et al. <span class="citation">[<a href="#ref-Robbes2012">157</a>]</span> also found that developers are also not quick to respond to API deprecation. Bavota et al. <span class="citation">[<a href="#ref-Bavota2014">16</a>]</span> suggests that updates should only be done when they consist of bug fixes, not API changes, to combat this issue.</p>
 <p>Attempts have also been made to find a metric that establishes the ‘health’ of a dependency. Cox et al. <span class="citation">[<a href="#ref-Cox2015">48</a>]</span> contributes to this by providing a metric to establish the freshness of a dependency.</p>
 <p>An interesting finding in the topic of package dependency networks by Kikas et al. <span class="citation">[<a href="#ref-Kikas2017">96</a>]</span> is that ecosystems, over time, become less dependent on a single popular package.</p>
 </div>
@@ -316,11 +316,11 @@
 <h3><span class="header-section-number">6.3.2</span> RQ2: What are the practical implications of the state of the art?</h3>
 <!-- Rather than theoretical, actual case studies done with findings -->
 <p>In this research question we aim to find out the practical implications of the state of the art as discussed in the previous section. The papers discussed in this section are mostly case studies and we will summarize their findings.</p>
-<p>From most papers we find that developers are slow when updating their dependencies, or sometimes they do not even do it at all. Hora et al. <span class="citation">[<a href="#ref-Hora2016">84</a>]</span> suggest that a main reason for this is that breaking changes cannot be solved in a uniform manner throughout the ecosystem, but rather need a specific implementation for each system. We have also found that breaking changes are constantly introduced when dependencies are updated. According to Raemaekers, van Deursen and Visser <span class="citation">[<a href="#ref-Raemaekers2017">153</a>]</span>, about 33% of releases, either minor or major, contain a breaking change that needs looking into. Breaking changes could pose compiling errors, thereby breaking the system that depends on it.</p>
-<p>Developers tend to react poorly to changes in their dependencies; Kula et al. <span class="citation">[<a href="#ref-Kula2017">104</a>]</span> have found that, of the 4600 surveyed projects, 81.5% of the projects contain outdated dependencies which can lead to security risks. Not only do developers not update their dependencies, according to an empirically study conducted by McDonnell, Ray and Kim <span class="citation">[<a href="#ref-McDonnell2013">124</a>]</span> on the android API, they also do not update their codebase with respect to the changes introduced by dependencies.</p>
-<p>Regarding ecosystem health, Constantinou and Mens <span class="citation">[<a href="#ref-Constantinou2017">45</a>]</span> have researched which factors indicate that a developer is likely to abandon an ecosystem. Their study, which analysed GitHub<a href="#fn15" class="footnoteRef" id="fnref15"><sup>15</sup></a> issues and commits, has found that developers are more likely to abandon a system when they 1) do not communicate with their fellow developers, 2) do not participate often in social or technical activities and 3) for an extended period of time do not react or commit any more. Another interesting characteristic about ecosystem health, studied by Kula et al. <span class="citation">[<a href="#ref-Kula2017-2">103</a>]</span>, is the way in which projects age over time. Their study found that the usage over time of 81.7% of 4,659 popular GitHub projects can be fitted on a function with an order higher than two.</p>
-<p>Malloy and Power <span class="citation">[<a href="#ref-Malloy2018">117</a>]</span> have studied the transition from Python 2 to Python 3. Python 3 has been out since 2008, and the final Python 2 release was in 2010. Both are (almost) 10 years ago. Even though, during their study they have found that most Python developers choose to maintain compatibility with both Python 2 and Python 3 by only using a subset of the Python 3 language. Malloy and Power <span class="citation">[<a href="#ref-Malloy2018">117</a>]</span> state that they are severely limiting themselves in their language capabilities, by not using the newly developed features.</p>
-<p>Another interesting topic of research is the impact tools can have on ecosystems. Among these tools are badges. Badges are annotations on software projects which display some information about a software project. One of these badges can warn developers about outdated packages. Based on the results of Trockman <span class="citation">[<a href="#ref-Trockman2018">182</a>]</span>, badges can have a positive impact on the speed at which developers update their dependencies.</p>
+<p>From most papers we find that developers are slow when updating their dependencies, or sometimes they do not even do it at all. Hora et al. <span class="citation">[<a href="#ref-Hora2016">84</a>]</span> suggest that a main reason for this is that breaking changes cannot be solved in a uniform manner throughout the ecosystem, but rather need a specific implementation for each system. We have also found that breaking changes are constantly introduced when dependencies are updated. According to Raemaekers, van Deursen and Visser <span class="citation">[<a href="#ref-Raemaekers2017">152</a>]</span>, about 33% of releases, either minor or major, contain a breaking change that needs looking into. Breaking changes could pose compiling errors, thereby breaking the system that depends on it.</p>
+<p>Developers tend to react poorly to changes in their dependencies; Kula et al. <span class="citation">[<a href="#ref-Kula2017">103</a>]</span> have found that, of the 4600 surveyed projects, 81.5% of the projects contain outdated dependencies which can lead to security risks. Not only do developers not update their dependencies, according to an empirically study conducted by McDonnell, Ray and Kim <span class="citation">[<a href="#ref-McDonnell2013">123</a>]</span> on the android API, they also do not update their codebase with respect to the changes introduced by dependencies.</p>
+<p>Regarding ecosystem health, Constantinou and Mens <span class="citation">[<a href="#ref-Constantinou2017">45</a>]</span> have researched which factors indicate that a developer is likely to abandon an ecosystem. Their study, which analysed GitHub<a href="#fn15" class="footnoteRef" id="fnref15"><sup>15</sup></a> issues and commits, has found that developers are more likely to abandon a system when they 1) do not communicate with their fellow developers, 2) do not participate often in social or technical activities and 3) for an extended period of time do not react or commit any more. Another interesting characteristic about ecosystem health, studied by Kula et al. <span class="citation">[<a href="#ref-Kula2017-2">102</a>]</span>, is the way in which projects age over time. Their study found that the usage over time of 81.7% of 4,659 popular GitHub projects can be fitted on a function with an order higher than two.</p>
+<p>Malloy and Power <span class="citation">[<a href="#ref-Malloy2018">116</a>]</span> have studied the transition from Python 2 to Python 3. Python 3 has been out since 2008, and the final Python 2 release was in 2010. Both are (almost) 10 years ago. Even though, during their study they have found that most Python developers choose to maintain compatibility with both Python 2 and Python 3 by only using a subset of the Python 3 language. Malloy and Power <span class="citation">[<a href="#ref-Malloy2018">116</a>]</span> state that they are severely limiting themselves in their language capabilities, by not using the newly developed features.</p>
+<p>Another interesting topic of research is the impact tools can have on ecosystems. Among these tools are badges. Badges are annotations on software projects which display some information about a software project. One of these badges can warn developers about outdated packages. Based on the results of Trockman <span class="citation">[<a href="#ref-Trockman2018">181</a>]</span>, badges can have a positive impact on the speed at which developers update their dependencies.</p>
 <p>Overall we can conclude that there are a lot of improvements to be made. The current method that most users use to manage their dependencies is lacking. Whether it be updating late or not updating at all, there are many risks bound to this. Dietrich, Jezek, and Brada <span class="citation">[<a href="#ref-Dietrich2014">58</a>]</span> have also found that there are a lot of problems in the Java ecosystem, and has posed a set of relatively minor changes to both development tools and the Java language itself that could be very effective. These improvements are highlighted by answering the last research question.</p>
 </div>
 <div id="rq3-what-are-the-open-challenges-in-ecosystem-analytics-for-which-future-research-is-required" class="section level3">
@@ -413,35 +413,35 @@
 </tr>
 <tr class="odd">
 <td>+</td>
-<td>Kula, German, Ouni, Ishio, Inoue <span class="citation">[<a href="#ref-Kula2017">104</a>]</span></td>
+<td>Kula, German, Ouni, Ishio, Inoue <span class="citation">[<a href="#ref-Kula2017">103</a>]</span></td>
 <td>Do developers update their library dependencies?</td>
 <td>2017</td>
 <td>Software reuse, Software maintenance, Security vulnerabilities</td>
 </tr>
 <tr class="even">
 <td>-</td>
-<td>Mens, Claes, Grosjean, Serebrenik <span class="citation">[<a href="#ref-Mens2013">130</a>]</span></td>
+<td>Mens, Claes, Grosjean, Serebrenik <span class="citation">[<a href="#ref-Mens2013">129</a>]</span></td>
 <td>Studying Evolving Software Ecosystems based on Ecological Models</td>
 <td>2013</td>
 <td>Coral Reef, Natural Ecosystem, Open Source Software, Ecological Model, Software Project</td>
 </tr>
 <tr class="odd">
 <td>+</td>
-<td>Raemaekers, van Deursen, Visser <span class="citation">[<a href="#ref-Raemaekers2017">153</a>]</span></td>
+<td>Raemaekers, van Deursen, Visser <span class="citation">[<a href="#ref-Raemaekers2017">152</a>]</span></td>
 <td>Semantic versioning and impact of breaking changes in the Maven repository</td>
 <td>2017</td>
 <td>Semantic versioning, Breaking changes, Software libraries</td>
 </tr>
 <tr class="even">
 <td>+</td>
-<td>Robbes, Lungu, Röthlisberger <span class="citation">[<a href="#ref-Robbes2012">158</a>]</span></td>
+<td>Robbes, Lungu, Röthlisberger <span class="citation">[<a href="#ref-Robbes2012">157</a>]</span></td>
 <td>How do developers react to API deprecation? The case of a smalltalk ecosystem</td>
 <td>2012</td>
 <td>Ecosystems, Mining Software Repositories, Empirical Studies</td>
 </tr>
 <tr class="odd">
 <td>+</td>
-<td>Trockman <span class="citation">[<a href="#ref-Trockman2018">182</a>]</span></td>
+<td>Trockman <span class="citation">[<a href="#ref-Trockman2018">181</a>]</span></td>
 <td>Adding sparkle to social coding: An empirical study of repository badges in the npm ecosystem</td>
 <td>2018</td>
 <td></td>
@@ -470,7 +470,7 @@
 <td>Similarly to <span class="citation">[<a href="#ref-Abate2009">2</a>]</span>, we are more interested in the relationship between different software projects</td>
 </tr>
 <tr class="odd">
-<td><span class="citation">[<a href="#ref-Mens2013">130</a>]</span></td>
+<td><span class="citation">[<a href="#ref-Mens2013">129</a>]</span></td>
 <td>We were in doubt over this one, it could be useful but we weren’t convinced that it was. Since we already had a lot of material we decided to not use this</td>
 </tr>
 </tbody>
@@ -530,35 +530,35 @@
 <td>“open source software ecosystems”</td>
 </tr>
 <tr class="even">
-<td>Kula, German, Ishio, Inoue <span class="citation">[<a href="#ref-Kula2017-2">103</a>]</span></td>
+<td>Kula, German, Ishio, Inoue <span class="citation">[<a href="#ref-Kula2017-2">102</a>]</span></td>
 <td>An exploratory study on library aging by monitoring client usage in a software ecosystem</td>
 <td>2017</td>
 <td></td>
 <td>“software ecosystem” AND “analysis”</td>
 </tr>
 <tr class="odd">
-<td>Malloy, Power <span class="citation">[<a href="#ref-Malloy2018">117</a>]</span></td>
+<td>Malloy, Power <span class="citation">[<a href="#ref-Malloy2018">116</a>]</span></td>
 <td>An empirical analysis of the transition from Python 2 to Python 3</td>
 <td>2018</td>
 <td>Python programming, Programming language evolution, Compliance</td>
 <td>“software ecosystem” AND “empirical”</td>
 </tr>
 <tr class="even">
-<td>Manikas <span class="citation">[<a href="#ref-Manikas2016">119</a>]</span></td>
+<td>Manikas <span class="citation">[<a href="#ref-Manikas2016">118</a>]</span></td>
 <td>Revisiting software ecosystems Research: A longitudinal literature study</td>
 <td>2016</td>
 <td>Software ecosystems; Longitudinal literature study; Software ecosystem maturity</td>
 <td>“Software ecosystems” OR “Dependency management” OR “semantic version”</td>
 </tr>
 <tr class="odd">
-<td>Rajlich <span class="citation">[<a href="#ref-Rajlich2014">156</a>]</span></td>
+<td>Rajlich <span class="citation">[<a href="#ref-Rajlich2014">155</a>]</span></td>
 <td>Software evolution and maintenance</td>
 <td>2014</td>
 <td></td>
 <td>Software Evolution and Maintenance</td>
 </tr>
 <tr class="even">
-<td>Teixeira, Robles, Gonzalez-Barahona <span class="citation">[<a href="#ref-Teixeira2015">175</a>]</span></td>
+<td>Teixeira, Robles, Gonzalez-Barahona <span class="citation">[<a href="#ref-Teixeira2015">174</a>]</span></td>
 <td>Lessons learned from applying social network analysis on an industrial Free/Libre/Open Source Software Ecosystem</td>
 <td>2015</td>
 <td>Social network analysis Open source Open-coopetition Software ecosystems Business models Homophily Cloud computing OpenStack</td>
@@ -590,7 +590,7 @@
 <td>How the Apache community upgrades dependencies: an evolutionary study</td>
 <td>2014</td>
 <td>Software Ecosystems · Project dependency upgrades · Mining software repositories</td>
-<td><span class="citation">[<a href="#ref-Kula2017">104</a>]</span></td>
+<td><span class="citation">[<a href="#ref-Kula2017">103</a>]</span></td>
 </tr>
 <tr class="even">
 <td>Blincoe, Harrison, Damian <span class="citation">[<a href="#ref-Blincoe2015">30</a>]</span></td>
@@ -618,21 +618,21 @@
 <td>Broken Promises - An Empirical Study into Evolution Problems in Java Programs Caused by Library Upgrades</td>
 <td>2014</td>
 <td></td>
-<td><span class="citation">[<a href="#ref-Raemaekers2017">153</a>]</span></td>
+<td><span class="citation">[<a href="#ref-Raemaekers2017">152</a>]</span></td>
 </tr>
 <tr class="even">
-<td>Malloy, Power <span class="citation">[<a href="#ref-Malloy2017">118</a>]</span></td>
+<td>Malloy, Power <span class="citation">[<a href="#ref-Malloy2017">117</a>]</span></td>
 <td>Quantifying the transition from Python 2 to 3: an empirical study of Python applications.</td>
 <td>2017</td>
 <td>Python, programming language evolution, language features</td>
-<td><span class="citation">[<a href="#ref-Malloy2018">117</a>]</span></td>
+<td><span class="citation">[<a href="#ref-Malloy2018">116</a>]</span></td>
 </tr>
 <tr class="odd">
-<td>McDonnell, Ray, Kim <span class="citation">[<a href="#ref-McDonnell2013">124</a>]</span></td>
+<td>McDonnell, Ray, Kim <span class="citation">[<a href="#ref-McDonnell2013">123</a>]</span></td>
 <td>An empirical study of api stability and adoption in the android ecosystem</td>
 <td>2013</td>
 <td></td>
-<td><span class="citation">[<a href="#ref-Manikas2016">119</a>]</span></td>
+<td><span class="citation">[<a href="#ref-Manikas2016">118</a>]</span></td>
 </tr>
 </tbody>
 </table>
@@ -723,7 +723,7 @@
 <td>All ecosystems are growing and over time, ecosystems become less dependent on a single popular package.</td>
 </tr>
 <tr class="even">
-<td><span class="citation">[<a href="#ref-Robbes2012">158</a>]</span></td>
+<td><span class="citation">[<a href="#ref-Robbes2012">157</a>]</span></td>
 <td>Developers response to API deprecation</td>
 <td>Quantitative (Statistics)</td>
 <td>-</td>
@@ -790,7 +790,7 @@
 <td>After API changes, clients need time to react and rarely react at all. Replacements cannot be resolved in a uniform manner throughout the ecosystem. API changes and depreciation can present different characteristics.</td>
 </tr>
 <tr class="even">
-<td><span class="citation">[<a href="#ref-Kula2017">104</a>]</span></td>
+<td><span class="citation">[<a href="#ref-Kula2017">103</a>]</span></td>
 <td>An Empirical Study on the Impact of Security Advisories on Library Migration</td>
 <td>Empirical study</td>
 <td>4,600 GitHub software projects and 2,700 library dependencies</td>
@@ -806,7 +806,7 @@
 <td>Developers are more likely to abandon an ecosystem when they: 1) do not communicate with other developers, 2) do not have strong social and technical activity intensity, 3) communicate or commit less frequently and 4) do not communicate or commit for a longer period of time.</td>
 </tr>
 <tr class="even">
-<td><span class="citation">[<a href="#ref-Raemaekers2017">153</a>]</span></td>
+<td><span class="citation">[<a href="#ref-Raemaekers2017">152</a>]</span></td>
 <td>To what degree do versioning schemes provide information signals about breaking changes</td>
 <td>Snapshot analysis</td>
 <td>More than 100.000 jar files from Maven Central</td>
@@ -814,7 +814,7 @@
 <td>1) Minor or major does not matter, both about 33% breaking chances, 2) breaking changes have significant impact and need fix before an upgrade, 3) Bigger libraries introduce more breaking changes, maturity is not a factor</td>
 </tr>
 <tr class="odd">
-<td><span class="citation">[<a href="#ref-Malloy2018">117</a>]</span></td>
+<td><span class="citation">[<a href="#ref-Malloy2018">116</a>]</span></td>
 <td>Analysis of the transition from Python 2 to Python 3</td>
 <td>Empirical impact study</td>
 <td>51 applications in the Qualitas suite for Python</td>
@@ -877,25 +877,25 @@
 <h3>References</h3>
 <div id="refs" class="references">
 <div id="ref-Linux2016">
-<p>[171] State of the union: Npm: 2016. <em><a href="https://www.linux.com/news/event/Nodejs/2016/state-union-npm" class="uri">https://www.linux.com/news/event/Nodejs/2016/state-union-npm</a></em>. Accessed: 2018-10-11.</p>
+<p>[170] State of the union: Npm: 2016. <em><a href="https://www.linux.com/news/event/Nodejs/2016/state-union-npm" class="uri">https://www.linux.com/news/event/Nodejs/2016/state-union-npm</a></em>. Accessed: 2018-10-11.</p>
 </div>
 <div id="ref-Messerschmitt2003">
-<p>[131] Messerschmitt, D.G. and Szyperski, C. 2003. <em>Software ecosystem: Understanding an indispensable technology and industry (mit press)</em>. The MIT Press.</p>
+<p>[130] Messerschmitt, D.G. and Szyperski, C. 2003. <em>Software ecosystem: Understanding an indispensable technology and industry (mit press)</em>. The MIT Press.</p>
 </div>
 <div id="ref-Lungu2009">
-<p>[115] Lungu, M. 2009. <em>Reverse engineering software ecosystems</em>. University of Lugano.</p>
+<p>[114] Lungu, M. 2009. <em>Reverse engineering software ecosystems</em>. University of Lugano.</p>
 </div>
 <div id="ref-Mens2013">
-<p>[130] Mens, T. et al. 2013. Studying evolving software ecosystems based on ecological models. <em>Evolving software systems</em>. Springer Berlin Heidelberg. 297–326.</p>
+<p>[129] Mens, T. et al. 2013. Studying evolving software ecosystems based on ecological models. <em>Evolving software systems</em>. Springer Berlin Heidelberg. 297–326.</p>
 </div>
 <div id="ref-Stallman2002">
-<p>[170] Stallman, R. 2002. <em>Free software, free society: Selected essays of richard m. stallman</em>. Lulu. com.</p>
+<p>[169] Stallman, R. 2002. <em>Free software, free society: Selected essays of richard m. stallman</em>. Lulu. com.</p>
 </div>
-<div id="ref-Kitchenham2004">
-<p>[101] Kitchenham, B. 2004. Procedures for performing systematic reviews. <em>Keele</em>. 33, 1 (2004), 1–26.</p>
+<div id="ref-kitchenham2004procedures">
+<p>[101] Kitchenham, B. 2004. Procedures for performing systematic reviews. <em>Keele, UK, Keele University</em>. 33, 2004 (2004), 1–26.</p>
 </div>
 <div id="ref-NPM2016">
-<p>[176] The npm blog: Kik, left-pad and npm: 2016. <em><a href="https://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm" class="uri">https://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm</a></em>. Accessed: 2018-10-15.</p>
+<p>[175] The npm blog: Kik, left-pad and npm: 2016. <em><a href="https://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm" class="uri">https://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm</a></em>. Accessed: 2018-10-15.</p>
 </div>
 <div id="ref-Abdalkareem2017">
 <p>[3] Abdalkareem, R. et al. 2017. Why do developers use trivial packages? An empirical case study on npm. <em>Proceedings of the 2017 11th joint meeting on foundations of software engineering - ESEC/FSE 2017</em> (2017).</p>
@@ -913,7 +913,7 @@
 <p>[52] Decan, A. et al. 2017. An empirical comparison of dependency issues in OSS packaging ecosystems. <em>2017 IEEE 24th international conference on software analysis, evolution and reengineering (SANER)</em> (Feb. 2017).</p>
 </div>
 <div id="ref-RedMonk2018">
-<p>[177] The redmonk programming language rankings: January 2018: 2018. <em><a href="https://redmonk.com/sogrady/2018/03/07/language-rankings-1-18/" class="uri">https://redmonk.com/sogrady/2018/03/07/language-rankings-1-18/</a></em>. Accessed: 2018-10-11.</p>
+<p>[176] The redmonk programming language rankings: January 2018: 2018. <em><a href="https://redmonk.com/sogrady/2018/03/07/language-rankings-1-18/" class="uri">https://redmonk.com/sogrady/2018/03/07/language-rankings-1-18/</a></em>. Accessed: 2018-10-11.</p>
 </div>
 <div id="ref-Bavota2014">
 <p>[16] Bavota, G. et al. 2014. How the apache community upgrades dependencies: An evolutionary study. <em>Empirical Software Engineering</em>. 20, 5 (Sep. 2014), 1275–1317.</p>
@@ -925,31 +925,31 @@
 <p>[43] Claes, M. et al. 2015. A historical analysis of debian package incompatibilities. <em>2015 IEEE/ACM 12th working conference on mining software repositories</em> (May 2015).</p>
 </div>
 <div id="ref-Robbes2012">
-<p>[158] Robbes, R. et al. 2012. How do developers react to API deprecation? <em>Proceedings of the ACM SIGSOFT 20th international symposium on the foundations of software engineering - FSE 12</em> (2012).</p>
+<p>[157] Robbes, R. et al. 2012. How do developers react to API deprecation? <em>Proceedings of the ACM SIGSOFT 20th international symposium on the foundations of software engineering - FSE 12</em> (2012).</p>
 </div>
 <div id="ref-Hora2016">
 <p>[84] Hora, A. et al. 2016. How do developers react to API evolution? A large-scale empirical study. <em>Software Quality Journal</em>. 26, 1 (Oct. 2016), 161–191.</p>
 </div>
 <div id="ref-Raemaekers2017">
-<p>[153] Raemaekers, S. et al. 2017. Semantic versioning and impact of breaking changes in the maven repository. <em>Journal of Systems and Software</em>. 129, (Jul. 2017), 140–158.</p>
+<p>[152] Raemaekers, S. et al. 2017. Semantic versioning and impact of breaking changes in the maven repository. <em>Journal of Systems and Software</em>. 129, (Jul. 2017), 140–158.</p>
 </div>
 <div id="ref-Kula2017">
-<p>[104] Kula, R.G. et al. 2017. Do developers update their library dependencies? <em>Empirical Software Engineering</em>. 23, 1 (May 2017), 384–417.</p>
+<p>[103] Kula, R.G. et al. 2017. Do developers update their library dependencies? <em>Empirical Software Engineering</em>. 23, 1 (May 2017), 384–417.</p>
 </div>
 <div id="ref-McDonnell2013">
-<p>[124] McDonnell, T. et al. 2013. An empirical study of API stability and adoption in the android ecosystem. <em>2013 IEEE international conference on software maintenance</em> (Sep. 2013).</p>
+<p>[123] McDonnell, T. et al. 2013. An empirical study of API stability and adoption in the android ecosystem. <em>2013 IEEE international conference on software maintenance</em> (Sep. 2013).</p>
 </div>
 <div id="ref-Constantinou2017">
 <p>[45] Constantinou, E. and Mens, T. 2017. An empirical comparison of developer retention in the RubyGems and npm software ecosystems. <em>Innovations in Systems and Software Engineering</em>. 13, 2-3 (Aug. 2017), 101–115.</p>
 </div>
 <div id="ref-Kula2017-2">
-<p>[103] Kula, R.G. et al. 2017. An exploratory study on library aging by monitoring client usage in a software ecosystem. <em>2017 IEEE 24th international conference on software analysis, evolution and reengineering (SANER)</em> (Feb. 2017).</p>
+<p>[102] Kula, R.G. et al. 2017. An exploratory study on library aging by monitoring client usage in a software ecosystem. <em>2017 IEEE 24th international conference on software analysis, evolution and reengineering (SANER)</em> (Feb. 2017).</p>
 </div>
 <div id="ref-Malloy2018">
-<p>[117] Malloy, B.A. and Power, J.F. 2018. An empirical analysis of the transition from python 2 to python 3. <em>Empirical Software Engineering</em>. (Jul. 2018).</p>
+<p>[116] Malloy, B.A. and Power, J.F. 2018. An empirical analysis of the transition from python 2 to python 3. <em>Empirical Software Engineering</em>. (Jul. 2018).</p>
 </div>
 <div id="ref-Trockman2018">
-<p>[182] Trockman, A. 2018. Adding sparkle to social coding. <em>Proceedings of the 40th international conference on software engineering companion proceeedings - ICSE 18</em> (2018).</p>
+<p>[181] Trockman, A. 2018. Adding sparkle to social coding. <em>Proceedings of the 40th international conference on software engineering companion proceeedings - ICSE 18</em> (2018).</p>
 </div>
 <div id="ref-Dietrich2014">
 <p>[58] Dietrich, J. et al. 2014. Broken promises: An empirical study into evolution problems in java programs caused by library upgrades. <em>2014 software evolution week - IEEE conference on software maintenance, reengineering, and reverse engineering (CSMR-WCRE)</em> (Feb. 2014).</p>
@@ -973,19 +973,19 @@
 <p>[87] Izquierdo, D. et al. 2018. Software development analytics for xen: Why and how. <em>IEEE Software</em>. (2018), 1–1.</p>
 </div>
 <div id="ref-Manikas2016">
-<p>[119] Manikas, K. 2016. Revisiting software ecosystems research: A longitudinal literature study. <em>Journal of Systems and Software</em>. 117, (Jul. 2016), 84–103.</p>
+<p>[118] Manikas, K. 2016. Revisiting software ecosystems research: A longitudinal literature study. <em>Journal of Systems and Software</em>. 117, (Jul. 2016), 84–103.</p>
 </div>
 <div id="ref-Rajlich2014">
-<p>[156] Rajlich, V. 2014. Software evolution and maintenance. <em>Proceedings of the on future of software engineering - FOSE 2014</em> (2014).</p>
+<p>[155] Rajlich, V. 2014. Software evolution and maintenance. <em>Proceedings of the on future of software engineering - FOSE 2014</em> (2014).</p>
 </div>
 <div id="ref-Teixeira2015">
-<p>[175] Teixeira, J. et al. 2015. Lessons learned from applying social network analysis on an industrial free/libre/open source software ecosystem. <em>Journal of Internet Services and Applications</em>. 6, 1 (Jul. 2015).</p>
+<p>[174] Teixeira, J. et al. 2015. Lessons learned from applying social network analysis on an industrial free/libre/open source software ecosystem. <em>Journal of Internet Services and Applications</em>. 6, 1 (Jul. 2015).</p>
 </div>
 <div id="ref-Blincoe2015">
 <p>[30] Blincoe, K. et al. 2015. Ecosystems in GitHub and a method for ecosystem identification using reference coupling. <em>2015 IEEE/ACM 12th working conference on mining software repositories</em> (May 2015).</p>
 </div>
 <div id="ref-Malloy2017">
-<p>[118] Malloy, B.A. and Power, J.F. 2017. Quantifying the transition from python 2 to 3: An empirical study of python applications. <em>2017 ACM/IEEE international symposium on empirical software engineering and measurement (ESEM)</em> (Nov. 2017).</p>
+<p>[117] Malloy, B.A. and Power, J.F. 2017. Quantifying the transition from python 2 to 3: An empirical study of python applications. <em>2017 ACM/IEEE international symposium on empirical software engineering and measurement (ESEM)</em> (Nov. 2017).</p>
 </div>
 </div>
 <div class="footnotes">
