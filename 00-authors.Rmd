@@ -11,6 +11,9 @@ Technology track.
 Gerben Oolbekkink is a Master Computer Science student at TU Delft, specializing in the Software
 Technology track.
 
+Joost Wooning is a Master Computer Science student at TU Delft,
+specializing in the Software Technology track.
+
 ## Editors {-}
 
 The following people edited the book and oversaw its production.
