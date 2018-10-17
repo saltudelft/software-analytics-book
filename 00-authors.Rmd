@@ -18,3 +18,7 @@ course.
 
 [Moritz Beller](http://inventitech.com) is a post doc working on 
 software analytics at TU Delft and co-taught IN4334.
+
+[Joseph Hejderup](https://jhejderup.github.io/) is a PhD student
+working on analytics for package managers at TU Delft and taught
+the ecosystem analytics lecture of the IN4334 course.
