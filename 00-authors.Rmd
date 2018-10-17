@@ -11,6 +11,15 @@ Technology track.
 Gerben Oolbekkink is a Master Computer Science student at TU Delft, specializing in the Software
 Technology track.
 
+Zequn Zhou is a Master Computer Science student at TU Delft, 
+specializing in the Data Science track.
+
+Björn Evers is a Master Computer Science student at TU Delft, 
+specializing in the Software Technology track.
+
+Zina Wang is a Master Computer Science student at TU Delft, 
+specializing in the Data Science track.
+
 ## Editors {-}
 
 The following people edited the book and oversaw its production.
