@@ -7726,8 +7726,8 @@ the current application.
 Analytics}\label{runtime-and-performance-analytics}
 
 In this chapter, we discuss the field of performance and runtime
-analytics. This chapter however does not cover the entire field because
-it is too broad. Using Kitchenham's method
+analytics. This chapter, however, does not cover the entire field
+because it is too broad. Using Kitchenham's method
 {[}\protect\hyperlink{ref-kitchenham2004procedures}{102}{]}, we have
 narrowed down the scope of this survey.
 
@@ -7745,19 +7745,18 @@ domain within runtime and performance analysis.
 Energy consumption is an important factor in the day-to-day usage of
 software. Especially in the field of software development for mobile
 devices, considering energy consumption determines the battery-life and
-limites the usage time of the device. Additionally, battery life is seen
-as very important to most smartphone owners. Ninety two percent of
-potential smartphone buyers consider battery life as a significant
-factor in their selection
-criteria{[}\protect\hyperlink{ref-OOC2017}{139}{]}. From the same
-research it is also found that 66\% of smartphone owners would pay more
-for a device with longer battery life, and 63\% is unsatisfied with
-theirs devices' battery life. Although the importance of energy
-efficient software is clear, programmers lack the knowledge on the best
-practices to reduce software energy consumption, and education is not
-focused on this field either {[}\protect\hyperlink{ref-PHA2016}{142}{]}.
-In an analysis of questions posted on StackOverflow on the topic of
-energy efficiency performed by Pinto et. al.
+limits the usage time of the device. Additionally, battery life is seen
+as very important to most smartphone owners. 92\% of potential
+smartphone buyers consider battery life as a significant factor in their
+selection criteria{[}\protect\hyperlink{ref-OOC2017}{139}{]}. From the
+same research, it is also found that 66\% of smartphone owners would pay
+more for a device with longer battery life, and 63\% is unsatisfied with
+their devices' battery life. Although the importance of energy efficient
+software is clear, programmers lack the knowledge on the best practices
+to reduce software energy consumption, and education is not focused on
+this field either {[}\protect\hyperlink{ref-PHA2016}{142}{]}. In an
+analysis of questions posted on StackOverflow on the topic of energy
+efficiency performed by Pinto et. al.
 {[}\protect\hyperlink{ref-PCL2014}{147}{]} it was found that although
 programmers had questions related to energy efficiency, they rarely
 received appropriate advice. With over 2 billion daily smartphone and
@@ -7766,12 +7765,12 @@ is clear that this lack of knowledge needs to be addressed. To help the
 programmers close this knowledge gap, hardware-based tools have been
 introduced. These tools can determine the energy profile of an
 application with high precision, but it means the costly hardware
-components need to be
-acquired{[}\protect\hyperlink{ref-NPPPZL2017}{57}{]}. Software-based
-solutions solve the problem of requiring expensive hardware and are
-easier to use, but also less precise.
+components need to be acquired
+{[}\protect\hyperlink{ref-NPPPZL2017}{57}{]}. Software-based solutions
+solve the problem of requiring expensive hardware and are easier to use,
+but also less precise.
 
-In this chapter we represent the current state of energy efficiency in
+In this chapter, we represent the current state of energy efficiency in
 software development for apps. For this we set up the following three
 research questions:
 
@@ -7788,9 +7787,9 @@ research questions:
   efficiency in software development for mobile apps?
 \end{itemize}
 
-In the following paragraph the methodology of the study we have followed
-will be presented. After that each research question will be answered.
-In the last paragraph of this chapter the conclusion on energy
+In the following paragraph, the methodology of the study we have
+followed will be presented. After that, each research question will be
+answered. In the last paragraph of this chapter the conclusion on energy
 efficiency in software development for apps will be made.
 
 \section{Methodology}\label{methodology}
@@ -7891,7 +7890,7 @@ improve energy bugs in Java\tabularnewline
 
 Using static code analysis and automatic refactoring, Leafactor is able
 to apply Android-specific optimizations of energy efficiency. The
-possible optimizations are indicated by a leaf icon, and the fix
+possible optimizations are indicated by a leaf icon, and the fixed
 priority is provided by the official Android lint documentation. This
 priority reflects the severity of the energy performance, from 1 to 10
 with 10 being the most severe energy consumption. Leafactor is able to
@@ -7903,7 +7902,7 @@ NavyDroid is a tool created on top of the Java Pathfinder (JPF). Being
 constructed as a strengthened DFA (deterministic finite automaton), it
 can accurately simulate the paused state, the killed state and related
 state transitions of an activity. This way it can detect complex
-patterns of wake lock misuses (for example multiple lock aquisitions).
+patterns of wake lock misuses (for example multiple lock acquisitions).
 
 \emph{Static analysis tool}
 
@@ -7949,11 +7948,11 @@ have more efficient alternatives. Not only are energy leaks highlighted,
 but better alternatives are provided. The tool is driven by a set of CSV
 files which contains energy consumption and run time of a wide variety
 of methods. These values are harvested on a specific device of the
-researchers. With the help of these values the possible performance
+researchers. With the help of these values, the possible performance
 boost is calculated.
 
 Most of the state of the art tools can be classified as performing
-either measurements of energy consumption or code analysis. Although
+either measurement of energy consumption or code analysis. Although
 plenty of such tools have been proposed, with low citation numbers, none
 of them seem to have had a big influence in the research area. There is,
 however, the possibility, with growing demand for energy efficiency,
@@ -7961,12 +7960,12 @@ that the amount and quality of tools will increase in the near future.
 
 \subsection{Guidelines}\label{guidelines}
 
-Another aspect of the state of the art are the currently proposed
+Another aspect of the state of the art is the currently proposed
 guidelines for energy awareness and improvements. To answer
 \textbf{RQ1}, seven papers have been selected that present guidelines.
 The research by Cruz et al. {[}\protect\hyperlink{ref-CA2017}{50}{]}
 shows that, interestingly enough, the best practices provided by Google
-fall short in addressing energy consumption. However they come up with
+falls short in addressing energy consumption. However, they come up with
 guidelines that do give improvements. Their guideline shows that correct
 usage of Android methods such as \emph{iewHolder},
 \emph{DrawAllocation}, \emph{WakeLock}, \emph{ObsoleteLayoutParam}, and
@@ -7976,12 +7975,12 @@ machine learning is now also implemented by excited developers into
 their apps, having an impact on the mobile device's battery life. They
 have combined empirical measurements of different machine learning
 algorithm implementations with complexity theory to provide the
-guideline that some implementations of algorithms, such as J48, MLP and
-SMO, generally perform better than others. However they also recommend
+guideline that some implementations of algorithms, such as J48, MLP, and
+SMO, generally perform better than others. However, they also recommend
 that for optimal results developers must consider their own specific
 application since many factors, e.g.~dataset size, can influence the
 performance. Finally Li et al.{[}\protect\hyperlink{ref-LH2014}{111}{]}
-researched commonly recommended energy saving practices, to see if they
+researched commonly recommended energy-saving practices, to see if they
 are valid. The topics investigated in this paper included optimizing the
 sending of HTTP packets, memory usage, array lengths, static
 invocations, and field access. This work gives guidance for mobile app
@@ -7993,16 +7992,16 @@ energy consumption.
 \section{RQ2: State of Practice}\label{rq2-state-of-practice}
 
 Now that we have an overview of the state of the art regarding energy
-consumption on Android driven mobile devices, we investigate what the
+consumption on Android-driven mobile devices, we investigate what the
 current state of practice is. In this section, we try to find an answer
 to \textbf{RQ2} stated in the introduction by going through the papers
 we have retrieved using the methodology described in Section 2. First,
 we study how different software engineering approaches affect energy
 consumption and if developers have any knowledge or training regarding
 energy saving programming techniques. Furthermore, we try to see if
-there are any tools being used which help decreasing energy consumption.
-To make this more specific, we divide \textbf{RQ2} into several
-sub-research questions:
+there are any tools being used which help to decrease energy
+consumption. To make this more specific, we divide \textbf{RQ2} into
+several sub-research questions:
 
 \begin{itemize}
 \tightlist
@@ -8068,14 +8067,14 @@ choice.
 
 \subsection{Answering SQ2}\label{answering-sq2}
 
-In the previous sections we have seen examples of the state of the art,
+In the previous sections, we have seen examples of the state of the art,
 as well as development methods that could lead to improvements in energy
 consumption. However, this knowledge only holds value when the community
 can get developers willing to use these. There have been a number of
 studies that look into what is actually happening.
 
 One example is the paper by Moura et al.
-{[}\protect\hyperlink{ref-MPEC2015}{135}{]}. In this paper a study is
+{[}\protect\hyperlink{ref-MPEC2015}{135}{]}. In this paper, a study is
 conducted by looking at a large number of energy-aware commits with
 GitHub as the primary data source. This analysis has yielded a list of
 approaches that are being used by developers in practice. These include:
@@ -8085,27 +8084,27 @@ levels of the software stack. Furthermore, only 16.2\% of the commits
 were related to using more efficient libraries or data structures. There
 are also a number of software qualities that have been shown to take
 precedence of the energy consumption. These include correctness,
-responsiveness and performance. Another point which the research
+responsiveness, and performance. Another point which the research
 addressed is whether software developers were certain of their energy
 saving commits. The paper suggests that there are definitely cases where
 developers are not certain about their energy saving change. This might
-be caused by the fact that there are few user friendly tools available
+be caused by the fact that there are few user-friendly tools available
 for aiding developers in making energy-aware decisions. One example of
 such a tool that attempts to assist the developer in making energy
 friendly decisions is jStanley
 {[}\protect\hyperlink{ref-PSCS2018}{144}{]}. However, both the paper
 itself and our own replication of that study indicate that this work is
-not anywhere close to ideal. It only concerns static analysis of the
+not anywhere close to ideal. It only concerns the static analysis of the
 code and is very limited in usability. This prevents such tools of being
 used in practice. Additionally, there is the problem of how to actually
-measure the energy being consumed. A number of papers explains how hard
+measure the energy being consumed. A number of papers explain how hard
 this task actually is. Moura et al.
-{[}\protect\hyperlink{ref-MPEC2015}{135}{]} also alude to the fact that
+{[}\protect\hyperlink{ref-MPEC2015}{135}{]} also allude to the fact that
 developers that do use third-party energy-management tools often lack
 trust in the accuracy of the tools that they are using. The measuring of
 energy-consumption is not actually as straightforward as one may think.
-In a number of papers it is explained how hardware-based solutions are
-accurate, but require expensive components. This is a serious issue,
+In a number of papers, it is explained how hardware-based solutions are
+accurate but require expensive components. This is a serious issue,
 especially in the field of mobile software development. On the other
 hand, software-based solutions are cheaper but less accurate. Now there
 is work being done on creating more accurate software solutions
@@ -8115,13 +8114,13 @@ results.
 
 \section{RQ3: Future research}\label{rq3-future-research-1}
 
-In this section we will take a look at the suggested future research
+In this section, we will take a look at the suggested future research
 directions that have been mentioned in the papers used in this survey.
 We attempt to extract some general trends from the future research
 suggestions that are included. A similarity between almost all of the
 papers discussed in this section is that they agree the research field
-is still not very mature. The conclusions of the majority of papers is
-that more research is required. However, in this survey we found that
+is still not very mature. The conclusions of the majority of papers are
+that more research is required. However, in this survey, we found that
 the consensus is that it is hard to make strong claims, mainly due to
 having doubts about both the measurement methods as well as the research
 methodologies.
@@ -8131,7 +8130,7 @@ the relation between programming languages and energy consumption.
 Multiple papers suggest that the programming language used for
 implementation has an influence on the energy consumption and
 performance {[}\protect\hyperlink{ref-GKLS2018}{71},
-\protect\hyperlink{ref-OOC2017}{139}{]}. These papers however do not
+\protect\hyperlink{ref-OOC2017}{139}{]}. These papers, however, do not
 look into the influence of specific features of the programming
 languages on energy consumption and performance. Or rather the specific
 characteristics of a programming language that cause the differences, as
@@ -8142,7 +8141,7 @@ In the investigations of this report, we came across a number of tools
 which can be used to aid developers in their management of the energy
 consumption of applications. However, to our knowledge, there are no
 studies reporting on the actual use of such tools. For future research,
-we suggest investigating the amount of developers actually using such
+we suggest investigating the number of developers actually using such
 tools. Furthermore, it is important which features should be included in
 tools for optimal use. For example, we replicated the paper that
 introduces jStanley, a tool which can be used for energy and performance
@@ -8157,7 +8156,7 @@ being tested with benchmarks. However, it is always the question whether
 these benchmarks are representative enough of the real world to hold
 actual merit. Additionally, the outcomes of the papers introducing these
 tools are not comparable. Testing all these tools on the same project
-would give better insights in what tools are actually useful for the
+would give better insights into what tools are actually useful for the
 developers to use in terms of gaining as much energy efficiency as
 possible.
 
@@ -8177,10 +8176,10 @@ metrics for the performance related to usability. Similarly, another
 direction is verifying that the energy-saving techniques are consistent
 across platforms.
 
-Finally it is to be noted that nearly all research is based on
+Finally, it is to be noted that nearly all research is based on
 open-source projects from GitHub repositories. Research on proprietary
 and closed-source software could possibly lead to different results and
-would therefore be interesting to conduct.
+would, therefore, be interesting to conduct.
 
 \section{Conclusion}\label{conclusion-2}
 
@@ -8193,7 +8192,7 @@ generic and also conclude that energy awareness is project specific. The
 tools presented by papers hold claims to improvements, but for example
 the tested tool jStanley is not as easy to use as claimed in the paper.
 More research into the claims made in the papers describing these tools
-is needed. In practice it is observed that the main language for
+is needed. In practice, it is observed that the main language for
 creating Android apps (Java) is not the most energy efficient option.
 Furthermore, developers often do not give enough priority to energy
 saving options and when they do they are often unsure about the effects
