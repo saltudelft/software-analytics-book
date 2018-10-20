@@ -8,7 +8,11 @@ The following people contributed content to this book.
 Science student at TU Delft, specializing in the Software 
 Technology track.
 
-Gerben Oolbekkink is a Master Computer Science student at TU Delft, specializing in the Software
+Gerben Oolbekkink is a Master Computer Science student at TU Delft, 
+specializing in the Software Technology track.
+
+[Andrei Simion-Constantinescu](https://www.linkedin.com/in/andrei-simion-constantinescu/) 
+is a Master Computer Science student at TU Delft, specializing in the Data Science & 
 Technology track.
 
 Zequn Zhou is a Master Computer Science student at TU Delft, 
