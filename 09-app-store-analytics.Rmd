@@ -78,43 +78,41 @@ a database. That was the input for the next step of the survey, article selectio
 
 ### Article selection
 
-Taking into account that the papers considered in this survey were published from 2015, it is no
-surprise that most of them are not highly cited. As a consequence, the selection of the filtered
+Taking into account that the papers considered in this survey were published from 2015 and on, it is not a
+surprise that most of them are not highly cited yet. As a consequence, the selection of the filtered
 articles does not take the number of citations into consideration. In contrast, each member of the group was in charge
-of delving into a third of the database and finding, for each study, the *relevance* with respect
-to Review Analytics and the proposed research questions. Then, this score was peer-reviewed by the
-other two team members to achieve a consensus. 
+of delving into the one-third of the papers of our database and finding, for each study, its *relevance* with respect
+to Review Analytics and the proposed research questions. Then, that score was peer-reviewed by the
+other two authors of our survey to achieve a consensus.
 
 For the *relevance* score, we considered how much the paper used terms related to the analysis of user reviews.
 Next, we present three examples: 1) a highly relevant paper  score=10), 2) a somewhat relevant
 paper (score=5) and 3) a non-relevant paper (score=0). 
 
-
 **What would users change in my app? Summarizing app reviews for recommending software changes
 [@di2016would]** 
  - Relevance score: 10
  - Remarks: the authors applied classification and summarization techniques on app reviews to
-   reduce the effort required to analyze feedback from users. As it can be seen, the paper was focused
+   reduce the effort required to analyze user feedback. As it can be seen, the paper was focused
    on using the reviews to improve the development process.
 
 **Fault in your stars: an analysis of Android app reviews [@aralikatte2018fault]** 
 - Relevance score: 5
-- Remarks: the authors analyzed the problem of the potential mismatch between the app reviews and
-  the star ratings that the app receives. Although it is related to reviews, it is not its primary
-  focus. It also does not push the state of the art regarding the datasets that they used. 
+- Remarks: the authors analyzed the problem of the potential mismatch between the reviews and
+  the star ratings that apps receive. Although the paper is related to app reviews, it is not its primary focus. 
 
 **Why are Android apps removed from Google Play? A large-scale empirical study
 [@wang2018android]** 
 - Relevance score: 0
 - Remarks: in this case, the paper did not have to do with app reviews even though the title
-  suggested otherwise.
+  suggested that.
 
 In the end, only the articles that had a score of 5 or more were used for the fact extraction and
-the subsequent answering of the research questions.
+the subsequent investigation of the research questions.
 
 ### Fact extraction
 
-As was mentioned before, the articles were listed in a database in a structured fashion. The data
+As it was mentioned before, the articles were listed in a database in a structured fashion. The data
 that was extracted has the following fields:
 
 ```
@@ -148,13 +146,12 @@ Techniques used for doing the analysis
   - Which are the main research findings (aggregated)?
 
 To answer the questions at hand, we looked at the novel ideas and the research that has been done in
-the field of Review Analytics. In their survey [@martin2015survey] Martin et al. proposed
+the field of Review Analytics. In their survey, Martin et al. [@martin2015survey] proposed
 “Classification”, “Content”, “Requirements Engineering”, “Sentiment”, “Summarization” and “Surveys
 and Methodological Aspects of App Store Analysis” to categorize the existing literature. After
 analyzing the subsequent work, we suggest new categories that reflect the state of the art in Review Analytics. These are: “Review Manipulation”, “Requirements Engineering”, “Mapping user reviews to the
 source code”, “Privacy / App Permissions”, “Responding to reviews”, “Comparing Apps and App Stores”
-and “Wearables”. In the following sections, we expand on each one of these categories with the revised
-literature.
+and “Wearables”. In the following sections, we describe each one of these categories using the new papers that we have found.
 
 **Review Manipulation**
 
@@ -167,23 +164,22 @@ a crowdsourcing site, to identify manipulated reviews.
 Chen at al. [@chen2017toward] proposed an approach to identify attackers of collusive promotion
 groups in an app store. They use ranking changes and measurements of pairwise similarity to form
 targeted app clusters (TAC) that they later use to pinpoint attackers. A different approach to the
-same problem was proposed in [@xie2016you]. In the paper, Xie et al., identified manipulated app
+same problem was proposed in [@xie2016you]. In that paper, Xie et al. identified manipulated app
 ratings based on the so-called attack signatures. They presented a graph-based algorithm for
 achieving this purpose in linear time. 
 
 These papers also show that the percentage of apps that manipulate their reviews in the app stores
-is small --- less than 1 % of the apps were suspicious [@xie2016you]. Regarding the datasets, the
-work by Li et al. [@i2017crowdsourced] used a smaller amount of app store data, but they merged it
-with data from an external crowdsourcing site. In the case of the other two papers, they can be
-characterized by the small number of considered apps (compared to the total number of apps in the
-main marketplaces), but the significant number of reviews that were analyzed. That makes sense,
-considering that their main purpose was to investigate the later. 
+is small --- less than 1 % of the apps found to be suspicious [@xie2016you]. Regarding the datasets used in this category, the
+work done by Li et al. [@i2017crowdsourced] used a smaller amount of app store data, but they merged it
+with data from an external crowdsourcing site. In the case of the other two previously presented papers, they can be
+we can say that the authors have used a small number of considered apps (compared to the total number of apps in the
+main marketplaces), but the amount of the analyzed reviews was significant. That makes sense,
+considering that the main purpose of both studies was to examine app reviews. 
 
 **Requirements Engineering**
 
 Users use reviews as a way to express their attitude (positive and negative) towards an app. The
-informative value of individual reviews is usually low, but as a whole, they can be mined for
-knowledge usable in the improvement and advancement of the apps. The survey by Martin et al.
+information value of individual reviews is usually low, but as a whole, they can be mined and provide useful insights for the improvement and advancement of the apps. The survey by Martin et al.
 [@martin2015survey] described summarization, classification, and requirements engineering as
 categories of the subfield of Review Analytics. These areas are converging and in recent work
 (after 2015) summarization and classification, among other techniques, are being used to complement
@@ -192,54 +188,52 @@ the development, maintenance, and evolution of the apps.
 In 2016, Di Sorbo et al. introduced SURF [@di2016would], an approach to condense a large number of
 reviews and extracting useful information from them. In a subsequent paper Panichella et al.
 [@panichella2016ardoc] presented techniques for classifying useful feedback in the context of
-maintenance and evolution of the apps. In their work, the authors make use of machine learning
+app maintenance and evolution. In their work, the authors made use of machine learning
 supervised methods in conjunction with natural language processing (NLP), sentiment analysis (SA),
 and text analysis (TA) techniques. Unsupervised methods for review clustering were explored in a
 paper by Anchiêta et al. [@anchieta2017]. The authors introduced a technique to categorize reviews
-in order to generate a summary of the main bugs and features of apps. Taking into account the high
+in order to generate a summary of bugs and features of apps. Taking into account the high
 dimensionality of the datasets that are used for review mining, Jha et al. [@jha2017mining]
 proposed a semantic approach for app review classification. By using semantic role labeling, the
 authors could make the classification process more efficient. Gao et al. presented IDEA
 [@gao2018online]; a framework for identifying emerging app issues based on an online review
-analysis. IDEA uses information from different time slices (versions) for identification of the
+analysis. IDEA uses information from different time slices (versions) for the identification of the
 issues, and the changelogs of the studied apps as the ground truth for the validation of their
 approach. It is the only paper in the reviewed literature that presents a case study (of deployment
 in Tencent) as an example of the viability of IDEA. 
 
-Most of the datasets used in the papers analyzed in this section can be characterized by a small
+Most of the datasets used in the papers we present in this section analyze a small
 number of apps and a substantial amount of reviews. Di Sorbo et al. [@di2016would] used 17 apps and
-3439 reviews. Anchiêta et al. [@anchieta2017] gathered more than 50000 reviews from 3 apps, but
-after the preprocessing step the dataset was reduced to 924 records. Jha et al. [@jha2017mining]
-used a structured sampling procedure to mix reviews from different datasets. The final size was
+3,439 reviews. Anchiêta et al. [@anchieta2017] gathered more than 50,000 reviews from 3 apps, but
+after a preprocessing step, the dataset was reduced to 924 records. Jha et al. [@jha2017mining]
+used a structured sampling procedure to mix reviews from different datasets. The final size came to
 2917 reviews. Finally, Gao et al. [@gao2018online] used reviews from 6 apps (2 from the App Store
-and 4 from Google Play), and the final dataset contained 164,026 reviews, one of the largest that
-had been used.
+and 4 from Google Play), and the final dataset contained 164,026 reviews. This study used one of the largest numbers of reviews that
+have been ever studied.
 
 **Mapping user reviews to source code** 
 
-Another research direction that has become active in the past years is combining the results of
-mining the app reviews with the source code to directly provide developers with valuable and
-actionable information to improve their products. 
+Another research direction that has become active over the past years is the combination of the mining results of app reviews with the source code, to directly provide developers with valuable and
+actionable information for the improvement of their products. 
 
-In [@palomba2017recommending], Palomba et al. presented a new approach called ChangeAdvisor. It
-extracts useful feedback from reviews and recommends developers changes to specific code artifacts.
+Palomba et al. [@palomba2017recommending] presented a new approach called ChangeAdvisor. It
+extracts useful feedback from reviews and recommends changes to developers for specific code artifacts.
 In the paper, metric distances such as the Dice coefficient are used in order to map a specific
-subset of reviews to a section of the source code. Complementary work was presented in
+subset of reviews to a particular section in the source code. Complementary work was presented in
 [@palomba2018crowdsourcing]. In this study, Palomba et al. investigated the extent to which app
 developers take app reviews into account. To achieve this, they introduced CRISTAL. It pairs
 informative reviews with source code changes and monitors the extent to which developers
 accommodate crowd requests from the reviews. 
 
-Linting mechanisms and their effectivity have also been studied. Wei et al.  [@wei2017oasis]
+Linting mechanisms and their effectivity have been also studied. Wei et al.  [@wei2017oasis]
 proposed a method, OASIS, for prioritizing the Android Lint warnings. It uses NLP techniques
-(tokenization, word removing, word stemming, and TF-IDF distance) to find the links between the
-user reviews and the Lint warnings. According to the paper, this is relevant given that one of the
-problems of linters is the number of false alarms they provide. 
+(tokenization, word removing, word stemming, and TF-IDF distance) to find links between user reviews and Lint warnings. According to the paper, this is relevant given that one of the
+problems of linters is the large number of false alarms they provide. 
 
-Regarding the datasets that were used for validation even though the analyzed papers use a reduced
-amount of apps (except for [@palomba2018crowdsourcing] that used 100), as stated in the previous
+Regarding the datasets that were used for validation here, even though the analyzed papers use a limited
+number of apps (except for [@palomba2018crowdsourcing] that used 100), as stated in the previous
 section, they use numerous reviews (more than 20,000). Additionally, as the aim of the works in
-this section directly involve the developers, they completed the quantitatively apps-reviews-based
+this section directly involve the developers, they have attempted to complete the quantitatively apps-reviews-based
 experiments with qualitative ones. 
 
 **Privacy / app permissions**
@@ -247,27 +241,25 @@ experiments with qualitative ones.
 Permission approaches used by mobile devices' software platforms have been changed.
 Android Marshmallow the Android operating system uses a run-time permission-based security
 system. Also, Apple's iOS also uses run-time permissions on top of a set of permissions enabled by
-default. Scoccia et al. did a large-scale empirical study on this new system challenges by inspecting 4.3
-million user reviews from 5572 Google Play store apps [@scoccia2018investigation]. Using different
-techniques they extracted 3574 user reviews that relate to permissions. They found that users like
+default. Scoccia et al. did a large-scale empirical study on these new system challenges by inspecting 4.3
+million user reviews from 5,572 Google Play store apps [@scoccia2018investigation]. Using different
+techniques they extracted 3,574 user reviews that relate to system permissions. They found that users like
 the minimal permissions as most apps only ask for permissions they strictly need. Some of the
-negative user concerns were apps asking for too many permissions or asking at a bad timing for permissions.
+negative user concerns were apps asking for too many permissions or asking for permissions at bad timing.
 
 **Responding to reviews**
 
-Since 2013 developers can respond to reviews in the Google Play store. Also, Apple introduced the same
-feature in 2017. In previous work, McIlroy [@mcilroy2014empirical] studied whether responding to
-user reviews has a positive effect on the rating users give. Building on previous work McIlroy et
+Developers can respond to reviews in the Google Play store from 2013. Also, Apple introduced the same
+feature in 2017. In a previous work, McIlroy [@mcilroy2014empirical] studied whether responding to
+user reviews has a positive effect on the rating users give. Building on previous work, McIlroy et
 al. studied how likely it is for users to change their rating for an app when a developer responds
-to their review [@mcilroy2017worth]. They found that users change their rating 38.7 percent of the
-time when a developer responds to their review, with a median increase of 20 percent in rating for
-the app.
+to their review [@mcilroy2017worth]. They found that users change their rating, with probability 38.7 percent, when a developer responds to their review, and with a median increase of 20 percent in rating for an app.
 
-Hassan et al. [@hassan2018studying] used 2328 top free apps from the Google Play store to study
-whether users are more likely to update their review if a developer responds to their review. They
-extracted 126686 dialogues between developers and users and concluded that responding to a review
-increases the chances of users updating their given rating for an app can increase by up to six
-times when compared to not responding. They also studied the characteristics, likelihood, and the
+Hassan et al. [@hassan2018studying] used 2,328 top free apps from the Google Play store to study
+whether users are more likely to update their reviews if a developer responds to these. They
+extracted 126,686 dialogues between developers and users and concluded that responding to a review
+increases the chances of users updating their given rating for an app by up to six
+times compared to not responding. They also studied the characteristics, likelihood, and the
 incentives of user-developer dialogues in app stores.
 
 **Comparing Apps and App stores**
@@ -291,17 +283,17 @@ the star rating was not consistent across platforms.
 User reviews can be also used for understanding user complaints. Mujahid et al. did this in a case
 study on Android Wear [@mujahid2017examining]. More specifically, they sampled 589 reviews from 6
 Android wearable apps and found that 15 unique complaint types could be extracted from the sample.
-The sample was created from mining the reviews of 4722 wearable apps and selecting the apps that
+The sample was created from mining the reviews of 4,722 wearable apps and selecting the apps that
 had more than 100 reviews with a rating of one or two stars. After manually assigning categories
-to the reviews in the sample they concluded that the most frequent complaints in this relatively
+to the reviews in the sample, they concluded that the most frequent complaints in this relatively
 small sample were complaints related to cost, functional errors, and a lack of functionality.
 
-### **RQ2** What is the state of practice in Review Analysis? Specifically:
+### **RQ2** What is the state of practice in Review Analytics? Specifically:
   - Which are the tools and the companies that create/employ them?
-  - Case studies and their findings.
+  - Case studies and the findings.
 
-A Large amount of work has been published in the field of app store analytics (The Survey by Martin
-et al. was done on over 250 papers, and our study analyzed additional 80 papers), only a few of
+A large amount of work has been published in the field of app store analytics (the survey by Martin
+et al. was done on over 250 papers, and our study additionally analyzed 80 papers), only a few of
 them were case studies. After applying the article selection criteria, we were left with 30 papers
 from which only two conducted a case study. The first case study of this selection, done by Mujahid
 et al. [@mujahid2017examining], examines issues that bother the users of Android Wear. The second
@@ -316,12 +308,12 @@ We were not able to find any academic publication on the solutions used by the a
 reviews [^5],[^6]. In 2016 Google deployed their review analytics solution, called Review
 Highlights[^7], into production for both developers and customers, but at the time of writing this
 survey (October 2018), the Review Highlights no longer show up in the public facing part of Google
-Play Store and are only accessible in the developer console[^8].
+Play Store and are only accessible in the developer's console[^8].
 
 #### State of the third-party tools
 
 Many third-party services focus on app store analysis. They usually focus on showing aggregated
-statistics from the app stores and some of them also analyze the user review. Tools such as
+statistics from the app stores and some of them also analyze user reviews. Tools such as
 AppBot[^9] or TheTool[^10] perform sentiment analysis on the reviews and show it as an additional
 metric next to the star rating. AppBot also categorizes reviews based on the keywords inside them.
 It may seem like a low-tech approach, but it makes it easy for the users to reason about why a
@@ -332,45 +324,43 @@ proposed by the researchers do not generalize very well in the real-world applic
 to comprehend by regular users.
 
 To this day there are, to the best of our knowledge, no tools that compare apps and app stores
-using user reviews. Some tools analyze apps and app performance, but no tools that do comparisons.
+using user reviews. Some tools analyze apps and app performance, but there are no tools that do comparisons.
 
-### **RQ3** Which are the challenges and future research that the field is facing or will face?
+### **RQ3** Which are the challenges that the field is facing or will face?
 
 In this section, we present challenges and future research directions for the field of Review
 Analytics and the subcategories that were identified in previous sections.
 
 A significant aspect of the research process is the validation of the proposed tools and frameworks
-and the assessment of how generalizable they are. To accomplish this, it is necessary to have
-bigger datasets of reviews and more representative and sound samples. Machine learning has seen a
-steady increase in popularity, however, not so much in the field of Review Analytics. Also, most of
+and the assessment of how generalizable they are. To accomplish this, it is necessary for researchers to have
+large datasets of reviews and more representative and sound samples. Machine learning has seen a
+steady increase in popularity, however, it has not been used a lot in the field of Review Analytics. Also, most of
 the studies rely on correlation relationships to validate the effectiveness of their approaches.
 There is a need to apply causation techniques so confounding factors can be ruled out.
 
-There is a difficulty in translating the research into actual tools that are used in a real-world
-setting. Of all the works that were considered, only Gao et al. presented a case
-study[@gao2018online], and most of the tools from other papers have either disappeared or are not
-being actively used.
+There is a difficulty in trasforming research into actual tools that are used in a real-world
+setting. Of all the works that were considered here, only Gao et al. presented a case
+study [@gao2018online], and most of the tools from other papers are either unavailable or not actively used.
 
 *Review Manipulation:* It is important to combine multiple sources of data to identify suspicious
-individuals better. Not just from app stores alone, but also crowdsourcing sites and even social
+apps. Not just from app stores alone, but also from crowdsourcing sites and even from social
 networks. Also, the sample should be carefully selected, given that the number of suspicious apps
 is not significant (around 1% of all apps), taking into account the size of the app stores.
 
 *Requirements Engineering:* More case studies are needed in order to validate how useful the
 extracted requirements are in the context of software development. Also, as machine learning is
-starting to be heavily used, models that are tailored to the review data will be created. The large
+starting to be heavily used, models that are tailored to the review data are expected to be created. The large
 amounts of noise that is present in the reviews is still a challenge that needs careful studying of
 the preprocessing steps that are used while assembling the datasets.
 
-*Mapping user reviews to source code:* There is a need to understand the “language of source code"
-better as this will be essential in combining the review and source code datasets. A likely future
+*Mapping user reviews to source code:* There is a need for developers to improve their programs by combining reviews with source code datasets. A likely future
 trend is the analysis of update-level changes. Regarding this, there is still a need to obtain
-update-categorized reviews as this is still a challenge with the current review-retrieving
+update-categorized reviews as this is still a challenge for the current review-retrieving
 approaches.
 
 *Privacy/app permissions:* Quantifying and understanding the effects of run-time permission
-requests on the user experience is still an open research area which can help to increase the
-quality of apps. One of the directions for further research regarding permissions is the idea of
+requests on the user experience is still an open research area which can help developers to increase the
+quality of their apps. One of the directions for further research regarding permissions is the idea of
 giving permissions to specific app functionalities instead of giving permissions to the app as a
 whole. That could lead to better user-understanding why an app needs certain permission and could
 reduce the number of permissions an app needs. Another possible future direction is researching and
@@ -378,8 +368,8 @@ creating tools that help developers put permission requests in the right place t
 related to permissions and permission requests.
 
 *Responding to reviews:* There is a need for an in-depth study of how developers and users are
-using the review mechanism right now to find out how the mechanism can be improved. Right now
-developers can respond to 500 user reviews per day using the Google Play API[^11]. It could be
+using the review mechanism to find out how this mechanism can be improved. Right now
+developers respond to almost 500 user reviews per day using the Google Play API[^11]. It could be
 worth investigating whether a limit of 500 responses is sufficient to ban useless responses from
 the store such as thanking every user.
 
@@ -387,8 +377,8 @@ the store such as thanking every user.
 the comparisons as only direct relationships were used in work by Li et al. [@li2017mining]. Next,
 to this, it has been noted that apps that have been developed using hybrid development tools had
 relatively low ratings. Future studies should be done to investigate the quality of hybrid apps and
-compare them with the quality of native apps. Furthermore, to get more complete results, the
-research should focus on a market-scale analysis using a large number of apps and reviews.
+compare them with the quality of native apps. Furthermore, to get more complete results, current
+research approaches should focus on a market-scale analysis using a large number of apps and reviews.
 
 [^1]: <https://scholar.google.com/>
 [^2]: <https://dl.acm.org/>
