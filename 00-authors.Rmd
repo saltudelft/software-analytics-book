@@ -4,6 +4,12 @@
 
 The following people contributed content to this book.
 
+Henk Grent is a Master Computer Science student at TU Delft, specializing in the Data Science track.
+
+Mark Haakman is a Master Computer Science student at TU Delft, specializing in the Data Science track.
+
+Frenk van Mil is a Master Computer Science student at TU Delft, specializing in the Data Science track.
+
 [Max van Deursen](http://maxvandeursen.nl) is a Master Computer
 Science student at TU Delft, specializing in the Software 
 Technology track.
