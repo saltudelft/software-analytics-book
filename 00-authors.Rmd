@@ -15,6 +15,13 @@ specializing in the Software Technology track.
 is a Master Computer Science student at TU Delft, specializing in the Data Science & 
 Technology track.
 
+Joost Wooning is a Master Computer Science student at TU Delft,
+specializing in the Software Technology track.
+
+Guillem Bonet is a Computer Science student at TU Delft on exchange from 
+Universitat Politècnica de Catalunya, specializing in the Software 
+Engineering track.
+
 Zequn Zhou is a Master Computer Science student at TU Delft, 
 specializing in the Data Science track.
 
