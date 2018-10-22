@@ -45,6 +45,10 @@ specializing in the Software Technology track.
 is a Master Computer Science student at TU Delft,
 specializing in the Software Technology track.
 
+[Jesse Tilro](https://www.linkedin.com/in/jesse-tilro/)
+is a Master Computer Science student at TU Delft,
+specializing in the Software Technology track.
+
 ## Editors {-}
 
 The following people edited the book and oversaw its production.
