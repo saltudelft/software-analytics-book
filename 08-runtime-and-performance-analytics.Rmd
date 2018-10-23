@@ -13,24 +13,22 @@ of the runtime and performance analytics field.
 ## Introduction
 Energy consumption is an important factor in the day-to-day usage of software. Especially in the
 field of software development for mobile devices, considering energy consumption determines the 
-battery-life and limits the usage time of the device. Additionally, battery life is seen as very
-important to most smartphone owners. 92% of potential smartphone
-buyers consider battery life as a significant factor in their selection criteria[@OOC2017]. 
+battery-life and limits the usage time of the device. Additionally, battery life is seen as a very
+important attribute for most smartphone owners. 92% of potential smartphone
+buyers consider battery life as a significant factor in their selection criteria [@OOC2017]. 
 From the same research, it is also found that 66% of smartphone owners would pay more for a device 
-with longer battery life, and 63% is unsatisfied with their devices' battery life. 
-Although the importance of energy efficient software is clear, programmers lack the knowledge on
-the best practices to reduce software energy consumption, and education is not focused on this 
-field either [@PHA2016]. In an analysis of questions posted on StackOverflow on the topic of energy efficiency performed by Pinto et. al. [@PCL2014] it was found that although programmers 
+with longer battery life, given that, on average, 63% of the users are unsatisfied with their current devices' battery life. Although the importance of energy efficient software is clear, programmers lack the knowledge on
+the best practices in order to reduce software energy consumption. Also, the current educational material is not focused on this field either [@PHA2016]. In an analysis of questions posted on StackOverflow.com, on the topic of energy efficiency, performed by Pinto et. al. [@PCL2014], it was found that although programmers 
 had questions related to energy efficiency, they rarely received appropriate advice. 
-With over 2 billion daily smartphone and tablet users worldwide [@NPPPZL2017] it is clear that 
-this lack of knowledge needs to be addressed. To help the programmers close this knowledge gap, 
+With over 2 billion daily smartphone and tablet users worldwide [@NPPPZL2017] it is evident that 
+this lack of knowledge needs to be addressed. To help programmers close this knowledge gap, 
 hardware-based tools have been introduced. These tools can determine the energy profile of an 
-application with high precision, but it means the costly hardware components need to be 
+application with high precision. However, for these measurements, costly hardware components need to be 
 acquired [@NPPPZL2017]. Software-based solutions solve the problem of requiring expensive 
-hardware and are easier to use, but also less precise. 
+hardware and are easier in use, but also less precise.
 
 In this chapter, we represent the current state of energy efficiency in software development for 
-apps. For this we set up the following three research questions:
+apps. For this, we set up the following three research questions:
 
 * **RQ1:** What is the state of the art of energy efficiency in software development for mobile 
 apps?
@@ -42,7 +40,6 @@ development for mobile apps?
 In the following paragraph, the methodology of the study we have followed will be presented. 
 After that, each research question will be answered. In the last paragraph of this chapter 
 the conclusion on energy efficiency in software development for apps will be made.
-
 
 ## Methodology
 In order to answer the research questions, we have retrieved over 30 papers from the selected 
