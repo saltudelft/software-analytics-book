@@ -42,9 +42,9 @@ After that, each research question will be answered. In the last paragraph of th
 the conclusion on energy efficiency in software development for apps will be made.
 
 ## Methodology
-In order to answer the research questions, we have retrieved over 30 papers from the selected 
+In order to answer our research questions, we have retrieved over 30 papers from the selected 
 field. These papers have been found by searching on Google Scholar with a set of filters. 
-First off, only papers from the following journals and conferences are selected:
+First off, only papers from the following journals and conferences have been selected:
 
 * ACM Transactions on Software Engineering Methodology (TOSEM),
 * Empirical Software Engineering (EMSE),
@@ -52,27 +52,29 @@ First off, only papers from the following journals and conferences are selected:
 * Information and Software Technology (IST),
 * Journal of Systems and Software (JSS),
 * ACM Computing Surveys (CSUR),
+* International Conference on Software Engineering (ICSE),
 * Foundations of Software Engineering (SIGSOFT FSE),
 * International Conference on Automated Software Engineering (ASE),
 * Working Conference on Mining Software Repositories (MSR)
 * Symposium on Operating Systems Design and Implementation (OSDI)
 
-Furthermore, the preference is given to papers which are published not too long ago, preferably 
-after 2012. But if the paper is cited a lot and if it contains interesting findings, older 
-papers can also be used.
+Furthermore, during the selection of the papers,
+we gave priority to papers that are published not too long ago; preferably after 2012.
+But if a paper has been cited many times and its findings are interesting,
+it is also considered in our survey.
 
-Given these two criteria the following search queries have been used:
+Given these two criteria the following search queries have been made:
 
 * "Android AND Energy Efficiency AND Software"
 * "Energy AND Android AND Runtime AND Analysis AND performance AND Software"
 
-From the selected papers some backward and forward references have also been selected to get a 
+From the selected papers some backward and forward references have also been selected for us to get the 
 complete picture. All papers are also checked for relevance to the topic.
 
 To answer **RQ1**, a more in-depth investigation into available tools and guidelines for the 
 energy efficiency is performed. For **RQ2**, the focus lies on what tools, guidelines and best 
-practices are currently being used in mobile software development. **RQ3** is answered by the 
-finding of the papers used for both **RQ1** and **RQ2**.
+practices are currently being used in mobile software development. Finally, **RQ3** is answered by
+finding papers used for both **RQ1** and **RQ2**.
 
 ## RQ1: State of the Art
 
