@@ -8027,16 +8027,16 @@ and performing invocations all led to reduced energy consumption.
 \section{RQ2: State of Practice}\label{rq2-state-of-practice}
 
 Now that we have an overview of the state of the art regarding energy
-consumption on Android-driven mobile devices, we investigate what the
-current state of practice is. In this section, we try to find an answer
-to \textbf{RQ2} stated in the introduction by going through the papers
-we have retrieved using the methodology described in Section 2. First,
+consumption on Android-driven mobile devices, we investigate what is the
+current state of practice. In this section, we try to find an answer to
+\textbf{RQ2} stated in the introduction, by going through the papers we
+have retrieved and using the methodology described in Section 2. First,
 we study how different software engineering approaches affect energy
 consumption and if developers have any knowledge or training regarding
 energy saving programming techniques. Furthermore, we try to see if
-there are any tools being used which help to decrease energy
-consumption. To make this more specific, we divide \textbf{RQ2} into
-several sub-research questions:
+there are any tools being used, which help programmers to decrease
+energy consumption. To make this more specific, we divide \textbf{RQ2}
+into sub-research questions:
 
 \begin{itemize}
 \tightlist
@@ -8050,37 +8050,38 @@ several sub-research questions:
 
 \subsection{Answering SQ1}\label{answering-sq1}
 
-Under development approaches, the language used to write the app is one
-of the things that is taken into consideration. There have been a number
-of studies into the effects of using a certain programming language in
-the applications. Java is still the most used language for Android
+The programming language used by developers when implementing new mobile
+apps is one of the things that is taken into consideration for better
+energy usage and performance. There have been a number of studies into
+the effects of using a certain programming language for building
+software applications. Java is still the most used language for Android
 applications. According to Oliveira et al.
 {[}\protect\hyperlink{ref-OOC2017}{139}{]}, Java is actually not a good
 choice when limiting energy consumption is one of your priorities. One
-of the contributions of the paper is a study where hybrid
+of the contributions of Oliveira's et al. paper is a study where hybrid
 implementations of applications are compared with the original, pure
-Java implementations in terms of energy consumption and performance. The
-paper suggests that hybrid implementations might be a good solution, but
-the problem is that the study was done on just four Android
-applications. The paper did use the Rosetta Code repository, but this
+Java implementations, in terms of energy consumption and performance.
+The paper suggests that hybrid implementations might be a good solution,
+but the problem is that the study was done on just four Android
+applications. The paper did use the Rosetta Code Repository, but this
 does not represent commercial software development.
 
 Another comparable recent research paper investigated the energy-delay
-product (EDP) which is defined as ``a weighted function of the energy
+product (EDP), which is defined as ``a weighted function of the energy
 consumption and run-time performance product''
 {[}\protect\hyperlink{ref-GKLS2018}{71}{]}:
 
 \(E * T^w\)
 
-where E is the total energy used to complete a task, T the time and w is
-a value that represents how important energy saving is with regard to
-time. The advantage of using this function is that performance is not
-neglected. The results in the paper show that the programming language
-should be chosen depending on the task. From these results, it is clear
-that Java is not performing well when comparing it to other languages as
-can be seen in the table below. However, it should be noted that the
-paper does not test this on actual Android applications but rather the
-Rosetta Code repository.
+where \(E\) is the total energy used to complete a task, \(T\) the time
+and \(w\) is a value that represents how important energy savings are
+with regard to time. The advantage of using this function is that
+performance is not neglected. The results in the paper show that the
+programming language should be chosen depending on the programming task.
+From these results, it is clear that Java is not performing well when
+comparing it to other languages, as it can be seen in the table below.
+However, it should be noted that the paper does not test this on actual
+Android applications, but rather on the Rosetta Code Repository.
 
 \begin{figure}
 \centering
@@ -8089,63 +8090,66 @@ Rosetta Code repository.
 from {[}\protect\hyperlink{ref-GKLS2018}{71}{]}}
 \end{figure}
 
-The above two papers are examples of research that suggest that the
-current state of practice, developing applications in Java only, is not
-in line with the current state of the art on energy efficiency. In spite
-of these research papers, developers are still working mostly with Java.
-One possible explanation is that Java is simply compatible with almost
-every system due to the Java Virtual Machine (JVM). We suggest that
-further research should investigate why developers are sticking to Java.
-For example, looking at available libraries, coding difficulty and
-available tools and knowledge might have a significant impact on this
-choice.
+The above two papers are examples of research studies that suggest that
+the current state of practice, i.e.~developing applications in Java
+only, is not in line with the current state of the art on energy
+efficiency. In spite of these research papers, developers are still
+working mostly with Java. One possible explanation is that Java is
+simply compatible with almost every system, because of the Java Virtual
+Machine (JVM). We suggest that further research should investigate why
+developers are sticking to Java. It seems that the availability of
+software libraries, the needed learning time, the available bug-fixing
+tools, and the current expertise of developers might have a significant
+impact on their choices.
 
 \subsection{Answering SQ2}\label{answering-sq2}
 
 In the previous sections, we have seen examples of the state of the art,
-as well as development methods that could lead to improvements in energy
-consumption. However, this knowledge only holds value when the community
-can get developers willing to use these. There have been a number of
-studies that look into what is actually happening.
+as well as software development methods that could lead to improvements
+in energy consumption. However, this knowledge only holds value when the
+community can get developers willing to use these approaches. There have
+been a number of studies that look into what is actually happening.
 
 One example is the paper by Moura et al.
 {[}\protect\hyperlink{ref-MPEC2015}{135}{]}. In this paper, a study is
-conducted by looking at a large number of energy-aware commits with
-GitHub as the primary data source. This analysis has yielded a list of
-approaches that are being used by developers in practice. These include:
-frequency and voltage scaling, using power efficient libraries and more.
-The study notes that the vast majority of the commits focus on the lower
-levels of the software stack. Furthermore, only 16.2\% of the commits
-were related to using more efficient libraries or data structures. There
-are also a number of software qualities that have been shown to take
-precedence of the energy consumption. These include correctness,
-responsiveness, and performance. Another point which the research
-addressed is whether software developers were certain of their energy
-saving commits. The paper suggests that there are definitely cases where
-developers are not certain about their energy saving change. This might
-be caused by the fact that there are few user-friendly tools available
-for aiding developers in making energy-aware decisions. One example of
-such a tool that attempts to assist the developer in making energy
-friendly decisions is jStanley
-{[}\protect\hyperlink{ref-PSCS2018}{144}{]}. However, both the paper
-itself and our own replication of that study indicate that this work is
-not anywhere close to ideal. It only concerns the static analysis of the
-code and is very limited in usability. This prevents such tools of being
-used in practice. Additionally, there is the problem of how to actually
-measure the energy being consumed. A number of papers explain how hard
-this task actually is. Moura et al.
-{[}\protect\hyperlink{ref-MPEC2015}{135}{]} also allude to the fact that
-developers that do use third-party energy-management tools often lack
-trust in the accuracy of the tools that they are using. The measuring of
-energy-consumption is not actually as straightforward as one may think.
-In a number of papers, it is explained how hardware-based solutions are
-accurate but require expensive components. This is a serious issue,
-especially in the field of mobile software development. On the other
-hand, software-based solutions are cheaper but less accurate. Now there
-is work being done on creating more accurate software solutions
-{[}\protect\hyperlink{ref-NPPPZL2017}{57}{]}. Early work shows promising
-results in combining the best of both worlds in order to obtain improved
-results.
+conducted by looking at a large number of energy-aware commits in
+GitHub. This analysis has yielded a list of approaches that are being
+used by developers in practice. These include frequency and voltage
+scaling, usage of power efficient libraries, and more. The study notes
+that the vast majority of the commits focus on the lower levels of the
+software stack. Furthermore, only 16.2\% of the commits were related to
+the use of more efficient libraries or data structures. There is also a
+number of software qualities that have been shown to be popular when
+considering energy consumption. These include correctness,
+responsiveness, and performance. Another point that researches have
+addressed is whether software developers were certain of their
+energy-saving commits. The paper suggests that there are definitely
+cases where developers are not certain about their energy saving
+changes. This might be caused by the fact that there are a few
+user-friendly tools available for aiding developers in making
+energy-aware decisions. One example of such a tool that attempts to
+assist the developer in making energy friendly decisions is jStanley
+{[}\protect\hyperlink{ref-PSCS2018}{144}{]}. However, both this paper
+itself and our own replication study, indicate that current attempts on
+efficient energy consumption are not anywhere close to ideal. Most of
+the studies are limited to the static analysis of the source code and
+with the usability of the presented tools to be poor. This prevents such
+techniques of being used in practice. Additionally, there is the problem
+of how to actually measure the energy being consumed. A number of papers
+explain how hard this task actually is. Moura et al.
+{[}\protect\hyperlink{ref-MPEC2015}{135}{]} also alluded to the fact
+that developers that do use third-party energy-management tools often
+lack trust in the accuracy of the tools that they are using. The
+measurement of energy-consumption is not actually as straightforward as
+one may think. In a number of papers, it is explained that
+hardware-based solutions are accurate enough, but require expensive
+components. This is a serious issue, especially in the field of mobile
+software development. On the other hand, software-based solutions are
+cheaper but less accurate. Now there is work being done on creating more
+accurate software solutions
+{[}\protect\hyperlink{ref-NPPPZL2017}{57}{]}. Early studies show
+promising results in combining the best of both worlds in order to
+obtain improved results.
 
 \section{RQ3: Future research}\label{rq3-future-research-1}
 
