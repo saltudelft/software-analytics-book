@@ -1,14 +1,14 @@
 # Runtime and Performance Analytics
 
-In this chapter, we discuss the field of performance and runtime analytics. This chapter, however, does not cover the entire field because it is too broad. Using Kitchenham’s method
+In this chapter, we discuss the field of performance and runtime analytics. Using Kitchenham’s method
 [@kitchenham2004procedures], we have narrowed down the scope of this survey.
-
-For inspiration, we explored five recent papers on runtime and performance analytics
-published at top conferences. These five were selected because the papers discuss the software
-side of performance and runtime analytics which is more consistent with the scope of this book.
-However, focussing on only software, the field is still very broad. We have chosen to focus on the 
-field of performance vs. energy consumption. This choice was made due to it being a very 
-contemporary and thriving domain within runtime and performance analysis.
+For inspiration, we first explored five recent papers on runtime and performance analytics
+published at top conferences and journals. These five papers were selected because the papers discuss the "software"
+side of performance and runtime analytics, which is consistent with the scope of this book.
+We have chosen to focus on the field of performance Vs. energy consumption.
+This choice was made since studies on energy consumption
+refer to a contemporary and thriving research area
+of the runtime and performance analytics field.
 
 ## Introduction
 Energy consumption is an important factor in the day-to-day usage of software. Especially in the
