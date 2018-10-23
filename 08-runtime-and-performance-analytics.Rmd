@@ -273,51 +273,51 @@ results in combining the best of both worlds in order to obtain improved results
 ## RQ3: Future research
 In this section, we will take a look at the suggested future research directions that have been 
 mentioned in the papers used in this survey. We attempt to extract some general trends from the 
-future research suggestions that are included. A similarity between almost all of the papers 
-discussed in this section is that they agree the research field is still not very mature. The 
-conclusions of the majority of papers are that more research is required. However, in this survey,
-we found that the consensus is that it is hard to make strong claims, mainly due to having doubts 
-about both the measurement methods as well as the research methodologies. 
+future research suggestions that are included. A similar opinion among almost all of the papers 
+discussed in this section is that there is an agreement on the fact
+that the research field of energy consumption is still not very mature.
+The conclusions of the majority of papers mention that more research is required.
+However, in this survey, we found that there is a consensus regarding the belief that
+it is hard for researchers to make strong claims, mainly due to the doubts 
+about both the measurement methods and
+the limitations of the available research methodologies on the field. 
 
-One of the fields of research we looked at in the previous sections was the relation between 
-programming languages and energy consumption. Multiple papers suggest that the programming 
-language used for implementation has an influence on the energy consumption and performance 
+One of the fields of research we have looked at, in the previous sections, was the one referred to the relationship between programming languages and energy consumption. Multiple papers suggest that the programming 
+languages used for implementation have an influence on the energy consumption and performance 
 [@GKLS2018; @OOC2017]. These papers, however, do not look into the influence of specific 
-features of the programming languages on energy consumption and performance. 
-Or rather the specific characteristics of a programming language that cause the differences, 
-as described in the paper by Georgiou et al. [@GKLS2018]
+features of the programming languages on energy consumption and performance.
 
-In the investigations of this report, we came across a number of tools which can be used to aid 
-developers in their management of the energy consumption of applications. However, to our 
+We came across a number of tools which can be used to aid 
+developers to manage the energy consumption of applications. However, to our 
 knowledge, there are no studies reporting on the actual use of such tools. For future research, 
-we suggest investigating the number of developers actually using such tools. Furthermore, it is 
-important which features should be included in tools for optimal use. For example, we replicated 
-the paper that introduces jStanley, a tool which can be used for energy and performance 
+we suggest the investigation of the number of developers that actually use such tools.
+Furthermore, it is important for researchers to investigate which features should be included in tools for optimal use.
+For example, we replicated the paper that introduces jStanley, a tool which can be used for energy and performance 
 optimization [@PSCS2018]. We faced the issue that this tool cannot implement the suggested 
-improvements in an easy and efficient way. For example, we took the AssertJ open source project 
-from GitHub and there were more than 300 energy saving suggestions. A user has to click on every 
-suggestion to actually implement the improvement which is tedious work.
-Similarly, a lot of the papers reporting on tools that could be used in practice, are currently 
+improvements in an easy and efficient way. In particular, we analyzed the AssertJ open source project 
+from GitHub, and we got more than 300 energy saving suggestions.
+A user has to click on every suggestion to actually implement the recommended improvement. This is tedious work.
+Similarly, a lot of the papers that mention tools that could be used in practice are currently 
 being tested with benchmarks. However, it is always the question whether these benchmarks are 
 representative enough of the real world to hold actual merit.
 Additionally, the outcomes of the papers introducing these tools are not comparable. Testing all 
-these tools on the same project would give better insights into what tools are actually useful for 
-the developers to use in terms of gaining as much energy efficiency as possible. 
+these tools on the same projects would give better insights into what tools are actually useful for 
+the developers to use them in terms of achieving as much energy efficiency as possible. 
 
-Even though, to our knowledge, there have not been any studies into whether the tools described in 
-the research are actually been used in practice, there have been some studies into energy-saving 
-practices on GitHub. For instance, studies into the commit messages [@BLXWT2016; @MPEC2015] have 
+Even though to our knowledge, there have not been any studies yet referring to whether the tools described in 
+the current research studies are actually been used in practice, there have been some studies into energy-saving 
+practices on GitHub. For instance, studies taking into account commit messages [@BLXWT2016; @MPEC2015] have 
 shed some light into the state of practice. These studies looked into the commit messages 
 containing keywords related to energy consumption and classified the corresponding code. The 
 future research directions that are indicated by such papers is that it will be important to 
 verify that the energy-saving commits actually have an impact on the overall performance of the 
-software. That is both in terms of energy-consumption as well as metrics for the performance 
-related to usability. Similarly, another direction is verifying that the energy-saving techniques 
-are consistent across platforms.
+software. That is both in terms of energy consumption, as well as metrics for runtime performance
+and usability. Similarly, future work could be done on verifying that the energy-saving techniques 
+are consistent across different software platforms.
 
-Finally, it is to be noted that nearly all research is based on open-source projects from GitHub 
+Finally, it is to be noted that nearly all the investigated research studies are based on open-source projects from GitHub 
 repositories. Research on proprietary and closed-source software could possibly lead to different 
-results and would, therefore, be interesting to conduct. 
+results and would, therefore, be interesting to be considered.
 
 ## Conclusion
 Having answered the research questions of this chapter in the sections above, we can conclude that 
