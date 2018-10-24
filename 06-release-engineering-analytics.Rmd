@@ -5,18 +5,17 @@
 Release engineering is a software engineering discipline
 concerned with the development, implementation, and improvement of
 processes to deploy high-quality software reliably and predictably [@dyck2015a].
-The changes made by developers of a software system
+The changes made by the developers of a software system
 should eventually be integrated and deployed such that end users may benefit
 from them.
-In recent years, release engineers have developed and
-adopted techniques to build infrastructures and pipelines which automate the
+In recent years, software industry has
+adopted techniques to build infrastructure and pipeline which automate the
 process of releasing software to an increasingly large degree.
-These modern approaches have resulted
-in various practices such as releasing new versions of a software system in
+These modern release engineering practices have resulted
+in adoption of various other practices such as releasing new versions of a software system in
 significantly shorter cycles.
 
-Due to these developments being industry-driven, release engineering forms a
-largely uncharted territory for software engineering research.
+Most of the developments in release engineering are industry-driven, with less research to support the developments.
 Efforts to close this gap would be relevant both for practitioners as well as
 researchers [@adams2016a].
 On the one hand, claims and rationales are presented by the industry to justify
@@ -47,39 +46,37 @@ Our review thus aims to answer the following questions.
 
     This question aims to identify the so-called "state of the practice" in
     release engineering.
-    We will summarize practices that have been adopted to drive release
-    engineering forward. In addition, we will identify the tools utilized to bring
-    this about.
+    We will summarize practices that have been adopted in modern release
+    engineering. In addition, we will identify the tools utilized to implement modern release engineering.
 
 - **RQ2:** _What aspects of modern release engineering have been studied
   in software analytics research so far?_
 
     In order to answer this question, we investigate the practices that previous
-    empirical case studies have focused on.
+    empirical studies have focused on.
     In doing so, we identify the associated costs and benefits
     that have been found, and the analysis methods used.
 
 - **RQ3:** _What aspects of modern release engineering make for relevant
   study objects in future software analytics research?_
 
-    In answering this question, we aim to identify the gap between practice and
+    By answering this question, we aim to identify the gaps between practice and
     research in release engineering.
     This way, our intent is not only to guide but also to motivate future research.
 
 ## Research Protocol
 
-Our research has been performed following the procedures for performing
-systematic reviews by Kitchenham @kitchenham2004procedures.
-In this process, we have set up strategies for searching, selecting and
+We follow the procedure to conduct systematic reviews as proposed by Kitchenham @kitchenham2004procedures.
+We set up strategies for searching, selecting and
 quality-assessing studies.
-Subsequently, we have extracted data from the selected studies and
+Subsequently, we extracted data from the selected studies and
 synthesized the answers to our research questions.
 
-All the papers that were found, were stored in a custom-built web-based tool for
+All the papers found were stored in a custom-built web-based tool for
 conducting literature reviews.
 The source code of this tool is published in a GitHub repository.
 ^[See https://github.com/jessetilro/research]
-The tool was hosted on a virtual private server, such that all retrieved
+The tool was hosted on a virtual private server such that all retrieved
 publications were stored centrally, accessible to all reviewers.
 
 In order to save space in this chapter of the book,
@@ -89,12 +86,10 @@ The interested can find our research protocol in detail in
 
 ## Answers
 
-In this section, we will give an answer to each of the research questions
-that we have presented in [Section 7.1.1](#research-questions-1).
+In this section, we answer each research question presented in [Section 7.1.1](#research-questions-1).
 
 ### RQ1: Modern Release Engineering Practices
 
-This section aims to answer to the question:
 _How is modern release engineering done in practice?_
 
 Adams et al. @adams2016a and Karvonen et al. @karvonen2017a have described release engineering
@@ -102,14 +97,14 @@ practices that are currently in use in the industry.
 Adams et al. @adams2016a focused on modern release engineering,
 while Karvonen et al. @karvonen2017a investigated agile release engineering,
 which is a subset of all modern release engineering.
-Both studies agreed that modern release engineering consists
+Both studies agree that modern release engineering consists
 of the following components:
 
 - **Rapid Releases (RR).**
 
-    In contrast with traditional release cycles,
-    RRs regularly push new releases to users in a regular schedule.
-    As an example, FireFox releases a new version every six weeks.
+    In contrast with traditional release cycles, software systems following
+    Rapid Release cycles regularly push new releases to users in a regular schedule.
+    For example, FireFox releases a new version every six weeks. 
 
 - **DevOps.**
 
@@ -143,24 +138,25 @@ and thus enable continuous deployment or delivery:
 
 - **Branching and Merging.**
 
-    There are several possible strategies of branching and merging.
+    There are several possible strategies of collaboration. Branching and merging is one of them and is most widely used. 
     Typically, merging must be done as often as possible
-    in order to release as often as possible.
+    in order to avoid conflicts thereby enabling release of software as often as possible.
 
 - **Build System.**
 
-    Building the software must be done in a consistent way,
-    such that each build produces the same result.
     With the build configuration stored inside the project,
     every developer (or automated tool) only needs to issue a single command
     in order to build the project,
     instead of manually having to configure the build process every time.
+    
+    Building a software must be done in a consistent way,
+    such that each build produces the same result.
 
 - **Infrastructure-as-Code.**
 
     In the same alley of "storing configuration",
     infrastructure-as-code means that the server (or virtual machine)
-    on which the software product is running
+    on which a software product is running
     can also be automatically configured with code,
     instead of having to configure each server manually.
 
@@ -175,7 +171,7 @@ This section aims to answer to the question:
 _What aspects of modern release engineering
 have been studied in software analytics research so far?_
 
-Over the years, the software industry has come up with inventive approaches to deliver new 
+Over the years, the software industry has come up with innovative approaches to deliver new 
 features and fixes in a more efficient and faster manner. This has resulted in case studies 
 being done to assess the associated risk and cost factors, and what benefits certain 
 strategies can give.
@@ -189,17 +185,16 @@ Mozilla
 Firefox and has examined the impact of release engineering on testing efforts. Observations of 
 the paper conclude that the rapid release cycle performs more test executions per day, but 
 these tests focus on a smaller subset of the test case corpus and that testing happens closer 
-to release and is more continuous. A limitation of this study is that it measures correlation, 
-rather than causation. Da Costa et al. @da2014a has further zoomed into the integration of 
+to release and is more continuous. Da Costa et al. @da2014a has further zoomed into the integration of 
 addressed issues
-and has considered data from Mozilla Firefox, as well as data from ArgoUML and Eclipse. The 
+and have considered data from Mozilla Firefox, as well as data from ArgoUML and Eclipse. The 
 paper found that addressed issues are usually delayed in a rapid release cycle and are often 
 excluded from releases.
 Similar conclusions based on Mozilla Firefox were made by Da Costa et al. @da2016a,
 who found that minor-traditional releases tend to have
 less integration delay than major/minor-rapid releases.
 
-Castelluccio et al. @castelluccio2017a has examined the practice of *patch uplifting* in the 
+Castelluccio et al. @castelluccio2017a examined the practice of *patch uplifting* in the 
 release management at 
 Mozilla Firefox where patches that fix critical issues, or implement high-value features are 
 often promoted directly from the development channel to a stabilization channel. The paper 
