@@ -133,52 +133,44 @@ TU Delft and its respective authors and distributed under the
 \chapter*{Contributors}\label{contributors}
 \addcontentsline{toc}{chapter}{Contributors}
 
+The following people, listed here in alphabetic order, contibuted to
+this book.
+
 \section*{Authors}\label{authors}
 \addcontentsline{toc}{section}{Authors}
 
-The following people contributed content to this book.
-
-Henk Grent is a Master Computer Science student at TU Delft,
-specializing in the Data Science track.
-
-Mark Haakman is a Master Computer Science student at TU Delft,
-specializing in the Data Science track.
-
-Frenk van Mil is a Master Computer Science student at TU Delft,
-specializing in the Data Science track.
-
-\href{http://maxvandeursen.nl}{Max van Deursen} is a Master Computer
-Science student at TU Delft, specializing in the Software Technology
-track.
-
-Gerben Oolbekkink is a Master Computer Science student at TU Delft,
-specializing in the Software Technology track.
+\textbf{Guillem Bonet} is a Computer Science student at TU Delft on
+exchange from Universitat Politècnica de Catalunya, specializing in the
+Software Engineering track.
 
 \href{https://www.linkedin.com/in/andrei-simion-constantinescu/}{Andrei
 Simion-Constantinescu} is a Master Computer Science student at TU Delft,
 specializing in the Data Science \& Technology track.
 
-Joost Wooning is a Master Computer Science student at TU Delft,
+\href{http://maxvandeursen.nl}{Max van Deursen} is a Master Computer
+Science student at TU Delft, specializing in the Software Technology
+track.
+
+\textbf{Björn Evers} is a Master Computer Science student at TU Delft,
 specializing in the Software Technology track.
 
-Guillem Bonet is a Computer Science student at TU Delft on exchange from
-Universitat Politècnica de Catalunya, specializing in the Software
-Engineering track.
-
-Zequn Zhou is a Master Computer Science student at TU Delft,
+\textbf{Henk Grent} is a Master Computer Science student at TU Delft,
 specializing in the Data Science track.
 
-Björn Evers is a Master Computer Science student at TU Delft,
-specializing in the Software Technology track.
+\textbf{Mark Haakman} is a Master Computer Science student at TU Delft,
+specializing in the Data Science track.
 
-Zina Wang is a Master Computer Science student at TU Delft, specializing
-in the Data Science track.
+\textbf{Frenk van Mil} is a Master Computer Science student at TU Delft,
+specializing in the Data Science track.
 
-\href{https://www.linkedin.com/in/mpsijm/}{Maarten Sijm} is a Master
+\href{https://www.linkedin.com/in/nsalminen/}{Nels Numan} is a Master
 Computer Science student at TU Delft, specializing in the Software
 Technology track.
 
-\href{https://www.linkedin.com/in/nsalminen/}{Nels Numan} is a Master
+\textbf{Gerben Oolbekkink} is a Master Computer Science student at TU
+Delft, specializing in the Software Technology track.
+
+\href{https://www.linkedin.com/in/mpsijm/}{Maarten Sijm} is a Master
 Computer Science student at TU Delft, specializing in the Software
 Technology track.
 
@@ -186,17 +178,26 @@ Technology track.
 Computer Science student at TU Delft, specializing in the Software
 Technology track.
 
+\textbf{Joost Wooning} is a Master Computer Science student at TU Delft,
+specializing in the Software Technology track.
+
+\textbf{Zina Wang} is a Master Computer Science student at TU Delft,
+specializing in the Data Science track.
+
+\textbf{Zequn Zhou} is a Master Computer Science student at TU Delft,
+specializing in the Data Science track.
+
 \section*{Editors}\label{editors}
 \addcontentsline{toc}{section}{Editors}
 
 The following people edited the book and oversaw its production.
 
+\href{http://inventitech.com}{Moritz Beller} is a post doc working on
+software analytics at TU Delft and co-taught IN4334.
+
 \href{http://gousios.org}{Georgios Gousios} is assistant professor of
 software analytics at TU Delft and the main teacher of the IN4334
 course.
-
-\href{http://inventitech.com}{Moritz Beller} is a post doc working on
-software analytics at TU Delft and co-taught IN4334.
 
 \href{https://jhejderup.github.io/}{Joseph Hejderup} is a PhD student
 working on analytics for package managers at TU Delft and taught the
@@ -5753,1485 +5754,7 @@ reviews.
 \appendix
 
 
-\section{Appendix to Chapter 7 (Code
-Review)}\label{appendix-to-chapter-7-code-review}
-
-\subsection{Extracted data}\label{extracted-data}
-
-This section contains data extracted from all resources included in the
-survey, according to the \emph{Data collection} section of the review
-protocol. Note that if some data could not be collected, it is
-explicitly stated.
-
-The resources are listed in alphabetical order of first author name, and
-then by year published.
-
-\subsubsection{Expectations, outcomes, and challenges of modern code
-review}\label{expectations-outcomes-and-challenges-of-modern-code-review}
-
-Reference: {[}\protect\hyperlink{ref-bacchelli2013expectations}{11}{]}
-
-\textbf{Summary}
-
-This paper describes research about the goals and actual effects of code
-reviews. Interviews and experiments have been done with people in the
-programming field.
-
-One of the main conclusions is that the main effect of doing code
-reviews is that everyone involved understands the code better. This is
-opposed to what the goal of code reviews generally is: discovering
-errors.
-
-For answering \textbf{RQ1}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Sub-topic}: in practice; tools
-\item
-  \emph{Research method}: empirical; qualitative
-\item
-  \emph{Tools}: N/A
-\item
-  \emph{Datasets}: Data collected from interviews, surveys and code
-  reviews
-\end{itemize}
-
-\textbf{Research questions and answers}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{What are the motivations and expectations for modern code
-  review? Do they change from managers to developers and testers?} The
-  top motivation for code reviews is finding defects, closely followed
-  by code improvement. There does not seem to be a large difference
-  between managers, developers and testers.
-\item
-  \emph{What are the actual outcomes of modern code review? Do they
-  match the expectations?} Code improvements are the most seen outcomes
-  of code review, followed by code understanding and social
-  communication. The outcomes do not match the expectations well. For
-  example, only 14\% of researched review comments was about code
-  defects, while about 44\% chose finding defects as the main motivation
-  for doing code review.
-\item
-  \emph{What are the main challenges experienced when performing modern
-  code reviews relative to the expectations and outcomes?} The main
-  challenges is by far understanding the code under review. This occurs
-  for example when code has to be reviewed that is not in the same
-  system as a developers works on daily.
-\end{itemize}
-
-For answering \textbf{RQ2}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Tools used}: CodeFlow, a reviewing tool. It is not publicly
-  available.
-\item
-  \emph{Company/organization}: Microsoft
-\item
-  \emph{Evaluation}: At the time of this paper, it still focusses mainly
-  on fixing errors, and not on the more often ocurring results of doing
-  code review.
-\end{itemize}
-
-For answering \textbf{RQ3}:
-
-\textbf{Future research challenges}:
-
-\begin{itemize}
-\tightlist
-\item
-  Research on automating code review tasks. This mainly concerns
-  low-level tasks, like checking boundary conditions or catching common
-  mistakes.
-\item
-  Research on code comprehension during code review. According to the
-  authors research has been done on this with new developers in mind,
-  but it would also be applicable to code reviews. The authors note that
-  IDEs often include tools for code comprehension, but code review tools
-  do not.
-\item
-  Research on awareness and learning during code review. Those two
-  aspects were cited as motivations for code review by developers.
-  Future research could research these aspects more explicitly.
-\end{itemize}
-
-\subsubsection{A Faceted Classification Scheme for Change-Based
-Industrial Code Review
-Processes}\label{a-faceted-classification-scheme-for-change-based-industrial-code-review-processes}
-
-Reference: {[}\protect\hyperlink{ref-baum2016faceted}{16}{]}
-
-\textbf{Summary} The broad research questions answered in this article
-are: How is code review performed in industry today? Which commonalities
-and variations exist between code review processes of different teams
-and companies? The article describes a classification scheme for
-change-based code review processes in industry. This scheme is based on
-descriptions of the code review processes of eleven companies, obtained
-from interviews with software engineering professionals that were
-performed during a Grounded Theory study.
-
-\subsubsection{The Choice of Code Review Process: A Survey on the State
-of the
-Practice}\label{the-choice-of-code-review-process-a-survey-on-the-state-of-the-practice}
-
-Reference: {[}\protect\hyperlink{ref-baum2017choice}{15}{]}
-
-\textbf{Summary} This paper, published in 2017, is trying to answer 3
-RQs. Firstly, how prevalent is change-based review in the industry?
-Secondly, does the chance that code review remains in use increase if
-code review is embedded into the process (and its supporting tools) so
-that it does not require a conscious decision to do a review? Thirdly,
-are the intended and acceptable levels of review effects a mediator in
-determining the code review process?
-
-\subsubsection{The influence of non-technical factors on code
-review}\label{the-influence-of-non-technical-factors-on-code-review}
-
-Reference: {[}\protect\hyperlink{ref-baysal2013influence}{19}{]}
-
-\textbf{Summary} This paper focus on the influence of several
-non-technical factors on code review response time and outcome. An
-empirical study of code review process for WebKit, a large open source
-project was described to see the influence. Specifically, the authors
-replicated some previously studied factors and extended several more
-factors that had not beed explored.
-
-For answering \textbf{RQ1}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Sub-topic}: open-source, impact
-\item
-  \emph{Research method}: empirical study
-\item
-  \emph{Tools}: WebKit
-\item
-  \emph{Datasets}: WebKit code review data extracted from Bugzilla.
-\end{itemize}
-
-\textbf{Research questions and answers}:
-
-\begin{itemize}
-\item
-  \emph{What factors can influence how long it takes for a patch to be
-  reviewed?} The organizational and personal factors influence review
-  timeliness. Some factors that influenced the time required to review a
-  patch, such as the size of the patch itself or the part of the code
-  base being modified, are unsurprising and are likely related to the
-  technical complexity of a given change. The most influential factors
-  of the code review process on review time are the organization a patch
-  writer is affiliated with and their level of participation within the
-  project.
-\item
-  \emph{What factors influence the outcome of the review process?} The
-  organizational and personal factors influence the likelihood of a
-  patch being accepted. The most influential factors of the code review
-  process on patch acceptance are the organization a patch writer is
-  affiliated with and their level of participation within the project.
-\end{itemize}
-
-For answering \textbf{RQ3}:
-
-\textbf{Future research challenges}:
-
-\begin{itemize}
-\tightlist
-\item
-  Research on studying how best to interpret empirical software
-  engineering research within the context of contextual factors.
-  Understanding the reasons behind observable developer behaviour
-  requires an understanding of the contexts, processes, organizational
-  and individual factors that can influence code review and its outcome.
-\end{itemize}
-
-\textbf{Notes}:
-
-This paper has an extended version
-{[}\protect\hyperlink{ref-baysal2016investigating}{18}{]}.
-
-\subsubsection{Investigating technical and non-technical factors
-influencing modern code
-review}\label{investigating-technical-and-non-technical-factors-influencing-modern-code-review}
-
-Reference: {[}\protect\hyperlink{ref-baysal2016investigating}{18}{]}
-
-\textbf{Summary}:
-
-This article primirarily discusses some non-technical factors that
-influence the code review process. This are factors like review
-experience, amount of contributions to a project and company
-affiliation.
-
-It is found that the most important factors influencing the code review
-process, in terms of both review time and patch acceptance, are the
-organization affiliation of the patch writer and the amount of
-participation of the patch writer in the project.
-
-For answering \textbf{RQ1}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Sub-topic}: non-technical
-\item
-  \emph{Research method}: empirical; quantitative
-\item
-  \emph{Tools}: Custom
-\item
-  \emph{Datasets}: WebKit reviews, Google Blink reviews
-\end{itemize}
-
-\textbf{Research questions and answers}:
-
-\begin{itemize}
-\item
-  \emph{What factors can influence how long it takes for a patch to be
-  reviewed?} ``Based on the results of two empirical studies, we found
-  that both technical (patch size and component) , as well as
-  non-technical (organization, patch writer experience, and reviewer
-  activity) factors affect review timeliness when studying the effect of
-  individual variables. While priority appears to influence review time
-  for WebKit, we were not able to confirm this for Blink.''
-\item
-  \emph{What factors influence the outcome of the review process?} ``Our
-  findings from both studies suggest that patch writer experience
-  affects code review outcome. For the WebKit project, factors like
-  priority, organization, and review queue also have an effect on the
-  patch acceptance.''
-\end{itemize}
-
-For answering \textbf{RQ2}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Tools}: N/A
-\item
-  \emph{Company/Organization}: N/A
-\item
-  \emph{Evaluation}: N/A
-\end{itemize}
-
-\textbf{Notes}:
-
-This paper has a shorter version
-{[}\protect\hyperlink{ref-baysal2013influence}{19}{]}.
-
-For answering \textbf{RQ3}:
-
-\textbf{Future research challenges}:
-
-Not stated
-
-\subsubsection{Modern code reviews in open-source projects: Which
-problems do they
-fix?}\label{modern-code-reviews-in-open-source-projects-which-problems-do-they-fix}
-
-Reference: {[}\protect\hyperlink{ref-beller2014modern}{21}{]}
-
-\textbf{Summary} It has been researched what kinds of problems are
-solved by doing code reviews. The conclusion is that 75\% are
-improvements in evolvability of the code, and 25\% in functional
-aspects.
-
-It has also been researched which part of the review comments is
-actually followed up by an action, and which part of the edits after a
-review are actually caused by review comments.
-
-For answering \textbf{RQ1}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Sub-topic}: impact,changes
-\item
-  \emph{Research method}: empirically explore; change classification
-\item
-  \emph{Tools}: R
-\item
-  \emph{Datasets}: documented history of ConQAT and GROMACS
-\end{itemize}
-
-\textbf{Research questions and answers}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Which types of changes occur in code under review?} 75\% of
-  changes are related to the evolvability of the system, and only 25\%
-  to its functionality.
-\item
-  \emph{What triggered the changes occurring in code under review?}
-  78-90\% of the trigger are review comments and the remaining 10-22\%
-  are `undocumented'.
-\item
-  \emph{What influences the number of changes in code under review?}
-  Code churn, number of changed files and task type are the most
-  important factors influencing the number of changes.
-\end{itemize}
-
-\subsubsection{Lessons learned from building and deploying a code review
-analytics
-platform}\label{lessons-learned-from-building-and-deploying-a-code-review-analytics-platform}
-
-Reference: {[}\protect\hyperlink{ref-bird2015lessons}{29}{]}
-
-\textbf{Summary}:
-
-A code review data analyzation platform developed and used by Microsoft
-is discussed. It is mainly presented what users of the system think of
-it and how its use influences development teams. One of the conclusions
-is that in general, the platform has a positive influence on development
-teams and their products.
-
-For answering \textbf{RQ2}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Tools used:} CodeFlow, CodeFlow Analytics
-\item
-  \emph{Company/organization using the tool:} Microsoft
-\item
-  \emph{Evaluation of the tool:} CodeFlow has already had a positive
-  implace on development teams because of its simplicity, low barrier
-  for feedback and flexible support of Microsoft's disparate engineering
-  systems. But some challenges such as dealing with branches and linking
-  reviews to commits need to improve.
-\end{itemize}
-
-As for CodeFlow Analytics: the tool is being used increasingly
-throughout Microsoft, with different teams using the tool for different
-purposes. It is for example effectively used to create dashboards with
-code review evaluation information, or for examining past reviews in
-detail. However, some parts of the tool still need to improve in terms
-of user-friendliness, for example because some functionality is
-difficult to find.
-
-For answering \textbf{RQ3}:
-
-\textbf{Future research challenges}:
-
-\begin{itemize}
-\tightlist
-\item
-  Research on an automatic way to classify and assess the usefulness of
-  comments. This was specifically requested by an interviewees's and is
-  still an open challenge regarding CodeFlow.
-\item
-  Research on many aspects of code review based on data from CodeFlow
-  Analytics or other similar tools.
-\item
-  Research on methods to automatically recommend reviewers for changes
-  in the system.
-\end{itemize}
-
-\subsubsection{Software Reviews: The State of the
-Practice}\label{software-reviews-the-state-of-the-practice}
-
-Reference: {[}\protect\hyperlink{ref-ciolkowski2003software}{42}{]}
-
-\textbf{Summary} To investigate how industry carries out software
-reviews and in what forms, this paper conducted a two-part survey in
-2002, the first part based on a national initiative in Germany and the
-second involving companies worldwide. Additionally, this paper also
-include some fundamental concepts of code review, such as
-functionalities of code review.
-
-\subsubsection{Code reviews do not find bugs: how the current code
-review best practice slows us
-down}\label{code-reviews-do-not-find-bugs-how-the-current-code-review-best-practice-slows-us-down}
-
-Reference: {[}\protect\hyperlink{ref-czerwonka2015code}{52}{]}
-
-\textbf{Summary} As code review has many uses and benefits, the authors
-hope to find out whether the current code review methods are
-sufficiently efficient. They also research whether other methods may be
-more efficient. With experience gained at Microsoft and with support of
-data, the authors posit (1) that code reviews often do not find
-functionality issues that should block a code submission; (2) that
-effective code reviews should be performed by people with a specific set
-of skills; and (3) that the social aspect of code reviews cannot be
-ignored.
-
-For answering \textbf{RQ1}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Sub-topic}: impact
-\item
-  \emph{Research method}: empirical
-\item
-  \emph{Tools}: not mentioned
-\item
-  \emph{Datasets}: data collected from engineering systems
-\end{itemize}
-
-\textbf{Research questions and answers}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{In what situations, do code reviews provide more value than
-  others?} Unlike inspections, code reviews do not require participants
-  to be in the same place nor do they happen at a fixed, prearranged
-  time. Aligning with a distributed nature of many projects, code
-  reviews are asynchronous and frequently supporting geographically
-  distributed reviewers.
-\item
-  \emph{What is the value of consistency of applying code reviews
-  equally to all code changes?} Code review usefulness is negatively
-  correlated with the size of a code review. With 20 or more changed
-  files, the more files there are in a single review, the lower the
-  overall rate of useful feedback.
-\end{itemize}
-
-For answering \textbf{RQ3}:
-
-\textbf{Future research challenges}:
-
-\begin{itemize}
-\item
-  Research on undocumented changes of code review because prior research
-  has neglected.
-\item
-  Due to its costs, code reviewing practice is a topic deserving to be
-  better understood, systematized and applied to software engineering
-  workflow with more precision than the best practice currently
-  prescribes.
-\end{itemize}
-
-\subsubsection{Design and code inspections to reduce errors in program
-development}\label{design-and-code-inspections-to-reduce-errors-in-program-development}
-
-Reference: {[}\protect\hyperlink{ref-fagan2002design}{66}{]}
-
-\textbf{Summary} This paper describes a method to thoroughly check code
-quality after each step of the development process, in a heavyweight
-manner. It does not really concern agile development.
-
-The authors state that these methods do not affect the developing
-process negatively, and that they work well for improving software
-quality.
-
-\subsubsection{An exploratory study of the pull-based software
-development
-model}\label{an-exploratory-study-of-the-pull-based-software-development-model}
-
-Reference: {[}\protect\hyperlink{ref-gousios2014exploratory}{74}{]}
-
-\textbf{Summary} This article focuses on how much pull requests are
-being used and how they are used, focusing on GitHub. For example, it is
-concluded that pull-requests are not being used that much, that
-pull-requests are being merged fast after they have been submitted, and
-that a pull request not being merged is most of the time not caused by
-technical errors in the pull-request.
-
-For answering \textbf{RQ1}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Sub-topic}: open-source, in practice
-\item
-  \emph{Research method}: empirical; qualitative for finding out reasons
-  for closing pull request, rest quantitative.
-\item
-  \emph{Tools}: Custom developed tools, available online
-\item
-  \emph{Datasets}: GHTorrent dataset, along with data collected by
-  authors. The last is also available online
-\end{itemize}
-
-\textbf{Research questions and answers}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{How popular is the pull based development model?} ``14\% of
-  repositories are using pull requests on Github. Pull requests and
-  shared repositories are equally used among projects. Pull request
-  usage is increasing in absolute numbers, even though the proportion of
-  repositories using pull requests has decreased slightly.''
-\item
-  \emph{What are the lifecycle characteristics of pull requests?} ``Most
-  pull requests are less than 20 lines long and processed (merged or
-  discarded) in less than 1 day. The discussion spans on average to 3
-  comments, while code reviews affect the time to merge a pull request.
-  Inclusion of test code does not affect the time or the decision to
-  merge a pull request. Pull requests receive no special treatment,
-  irrespective whether they come from contributors or the core team.''
-\item
-  \emph{What factors affect the decision and the time required to merge
-  a pull request?} ``The decision to merge a pull request is mainly
-  influenced by whether the pull request modifies recently modified
-  code. The time to merge is influenced by the developer's previous
-  track record, the size of the project and its test coverage and the
-  project's openness to external contributions.''
-\item
-  \emph{Why are some pull requests not merged?} ``53\% of pull requests
-  are rejected for reasons having to do with the distributed nature of
-  pull based development. Only 13\% of the pull requests are rejected
-  due to technical reasons.''
-\end{itemize}
-
-For answering \textbf{RQ2}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Tools used}: GitHub PR system
-\item
-  \emph{Company/organization}: Several open-source projects
-\item
-  \emph{Evaluation}: N/A
-\end{itemize}
-
-For answering \textbf{RQ3}:
-
-\textbf{Future research challenges}:
-
-\begin{itemize}
-\tightlist
-\item
-  More research is needed on \emph{drive-by commits}, which the paper
-  loosely defines as commits added to a repository through a PR by a
-  user that has never contributed to the repository and hence does so
-  for the first time. Often this new contributor also has created a fork
-  for the sole purpose of creating this PR. More research is needed on
-  accurately defining drive-by commits and on assessing their
-  implications.
-\item
-  More research is needed on the effect of the democratization of the
-  develoment process, which occurs for example through the use of pull
-  requests. Democratization could for example lead to a substantially
-  stronger commons ecosystem.
-\item
-  Validating the used models on data from different sources and on
-  projects on different languages.
-\item
-  Research on the motives of developers to work in a highly transparent
-  workspace.
-\item
-  Research on formation of teams and management hierarchies with respect
-  to open-source projects.
-\item
-  Research on novel code review practices.
-\item
-  Research on ways to managing tasks in the pull-based development
-  model.
-\end{itemize}
-
-\textbf{Challenges in practice}:
-
-\begin{itemize}
-\tightlist
-\item
-  Development of tools to help the core team of a project with
-  prioritizing their work. The paper gives as an example a tool which
-  would suggest whether a pull request can be merged or not, because
-  this can be predicted with fairly high accuracy.
-\item
-  Development of tools that would suggest categories of improvement for
-  pull request, for example by suggesting that more documentation needs
-  to be added.
-\end{itemize}
-
-\subsubsection{The impact of code review coverage and code review
-participation on software quality: A case study of the qt, vtk, and itk
-projects}\label{the-impact-of-code-review-coverage-and-code-review-participation-on-software-quality-a-case-study-of-the-qt-vtk-and-itk-projects}
-
-Reference: {[}\protect\hyperlink{ref-mcintosh2014impact}{129}{]}
-
-\textbf{Summary} This paper focuses on the influence of doing
-light-weight code reviews on software quality. In particular, the effect
-of review coverage (the part of the code that has been reviewed) and
-review participation (a measure for how much reviewers are involved in
-the review process) are being assessed.
-
-It turns out that both aspects improve software quality when they are
-higher. Review participation is the most influential. According to the
-authors there are other aspects, which they have not looked into, that
-are of significant importance for the review process.
-
-For answering \textbf{RQ1}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Sub-topic}: open-source, in practice, impact
-\item
-  \emph{Research method}: qualitative for finding out the impact of code
-  review coverage and code review participation on software quality rest
-  quantitative.
-\item
-  \emph{Tools}: N/A
-\item
-  \emph{Datasets}: Data extracted from Qt, VTK and ITK code review
-  dataset and necessary metrics including version control metrics,
-  coverage metrics and participation metrics.
-\end{itemize}
-
-\textbf{Research questions and answers}:
-
-\begin{itemize}
-\item
-  \emph{Is there a relationship between code review coverage and
-  post-release defects?} Although review coverage is negatively
-  associated with software quality in our models, several defect-prone
-  components have high coverage rates, suggesting that other properties
-  of the code review process are at play.
-\item
-  \emph{Is there a relationship between code review participation and
-  post-release defects?} Lack of participation in code review has a
-  negative impact on software quality. Reviews without discussion are
-  associated with higher post-release defect counts, suggesting that the
-  amount of discussion generated during review should be considered when
-  making integration decisions.
-\end{itemize}
-
-For answering \textbf{RQ2}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Tools}: Gerrit
-\item
-  \emph{Company/Organization}: N/A
-\item
-  \emph{Evaluation}: N/A
-\end{itemize}
-
-For answering \textbf{RQ3}:
-
-\textbf{Future research challenges}:
-
-\begin{itemize}
-\tightlist
-\item
-  Research on other properties of modern code review such as code
-  ownership. Inspired by this paper, other properties of modern code
-  review can also be explored.
-\end{itemize}
-
-\textbf{Notes}:
-
-There exists an extended and improved version of this paper
-{[}\protect\hyperlink{ref-mcintosh2016empirical}{128}{]}. Only the
-original version of the paper has been included in this survey.
-
-\subsubsection{A Study of the Quality-Impacting Practices of Modern Code
-Review at Sony
-Mobile}\label{a-study-of-the-quality-impacting-practices-of-modern-code-review-at-sony-mobile}
-
-Reference: {[}\protect\hyperlink{ref-shimagaki2016study}{168}{]}
-
-\textbf{Summary} First the study by McIntosh et al.
-{[}\protect\hyperlink{ref-mcintosh2016empirical}{128}{]} is replicated
-in a proprietary setting at Sony Mobile. A qualitative study, including
-interviews, is also done with the question ``Why are certain reviewing
-practices associated with better software quality?''
-
-The results from this study are the same as those from the replicated
-study for RQ1, but not for RQ2. Also, what has been found has been
-confirmed by the quanitative study has been supported by the qualitative
-study.
-
-For answering \textbf{RQ1}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Sub-topic}:
-\item
-  \emph{Research method}: replication: empirical, quantitative;
-  qualitative
-\item
-  \emph{Tools}: N/A
-\item
-  \emph{Datasets}: Review data from Sony Mobile
-\end{itemize}
-
-\textbf{Research questions and answers}:
-
-\begin{itemize}
-\item
-  \emph{Is there a relationship between code review coverage and
-  post-release defects?} ``Although our review coverage model
-  outperforms our baseline model, of the three studied review coverage
-  metrics, only the proportion of In-House contributions contributes
-  significantly to our model fits. Comparison with previous work.
-  Similar to the prior work
-  {[}\protect\hyperlink{ref-mcintosh2016empirical}{128}{]}, we find that
-  Reviewed Commit and Reviewed Churn provide little explanatory power,
-  suggesting that other reviewing factors are at play.''
-\item
-  \emph{Is there a relationship between code review participation and
-  post-release defects?} ``Our review participation model also
-  outperforms our baseline model. Of the studied review participation
-  metrics, only the measure of accumulated effort to improve code
-  changes (Patch Sd) and the rate of author self-verification (Self
-  Verify) contribute significantly to our model fits. Comparison with
-  previous work. Unlike the prior work
-  {[}\protect\hyperlink{ref-mcintosh2016empirical}{128}{]}, code
-  reviewing time and discussion length did not provide exploratory power
-  to the Sony Mobile model''
-\end{itemize}
-
-For answering \textbf{RQ2}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Tools}: Gerrit
-\item
-  \emph{Company/Organization}: Sony Mobile
-\item
-  \emph{Evaluation}: N/A
-\end{itemize}
-
-For answering \textbf{RQ3}:
-
-\textbf{Future research challenges}:
-
-Not stated
-
-\subsubsection{ReDA: A Web-based Visualization Tool for Analyzing Modern
-Code Review
-Dataset}\label{reda-a-web-based-visualization-tool-for-analyzing-modern-code-review-dataset}
-
-Reference: {[}\protect\hyperlink{ref-thongtanunam2014reda}{181}{]}
-
-\textbf{Summary}:
-
-This paper intoduces \emph{ReDA}, a web-based visualization tool for
-code review datasets. It processes data from Gerrit, presents statistics
-about the data, visualizes it, and points the user towards possible
-problems occurring during the review process. It was tested briefly on
-some open-source projects.
-
-For answering \textbf{RQ1}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Sub-topic}: visualization; tools
-\item
-  \emph{Research method}: qualitative; empirical
-\item
-  \emph{Tools}: ReDA
-\item
-  \emph{Datasets}: Android code review data
-\end{itemize}
-
-\textbf{Research questions and answers}:
-
-N/A
-
-For answering \textbf{RQ2}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Tools}: N/A
-\item
-  \emph{Company/Organization}: N/A
-\item
-  \emph{Evaluation}: N/A
-\end{itemize}
-
-For answering \textbf{RQ3}:
-
-\textbf{Future research challenges}:
-
-The authors aim to develop a live code review monitoring dashboard based
-on ReDA. They also aim to create a more portable version of ReDA that is
-also compatible with other tools supporting the MCR process.
-
-\subsubsection{Who should review my code? A file location-based
-code-reviewer recommendation approach for modern code
-review}\label{who-should-review-my-code-a-file-location-based-code-reviewer-recommendation-approach-for-modern-code-review}
-
-Reference: {[}\protect\hyperlink{ref-thongtanunam2015should}{180}{]}
-
-\textbf{Summary}:
-
-This paper presents (1) research on how often a reviewer cannot be found
-for a code change and the influence of this on the time it takes to
-process a code change, (2) a tool (\emph{RevFinder}) for automatically
-suggesting reviewers based on files reviewed previously, and (3) an
-empirical evaluation of that tool on four open-source projects.
-
-Of the researched projects, up to 30\% of the code changes have problems
-finding a reviewer. These reviews take on average 12 days longer. Also,
-it is found that RevFinder works 3 to 4 times better than an existing
-tool.
-
-For answering \textbf{RQ1}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Sub-topic}: reviewers; tools
-\item
-  \emph{Research method}: quantitative; empirical
-\item
-  \emph{Tools}: Custom
-\item
-  \emph{Datasets}: Custom: Gerrit review data from Android, OpenStack,
-  Qt and LibreOffice
-\end{itemize}
-
-\textbf{Research questions and answers}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{How do reviews with code-reviewer assignment problem impact
-  reviewing time?} ``4\%-30\% of reviews have code-reviewer assignment
-  problem. These reviews significantly take 12 days longer to approve a
-  code change. A code-reviewer recommendation tool is necessary in
-  distributed software development to speed up a code review process.''
-\item
-  \emph{Does RevFinder accurately recommend code-reviewers?} ``RevFinder
-  correctly recommended 79\% of reviews with a top-10 recommendation.
-  RevFinder is 4 times more accurate than ReviewBot. This indicates that
-  leveraging a similarity of previously reviewed file path can
-  accurately recommend code-reviewers.''
-\item
-  \emph{Does RevFinder provide better ranking of recommended
-  code-reviewers?} ``RevFinder recommended the correct code-reviewers
-  with a median rank of 4. The code-reviewers ranking of RevFinder is 3
-  times better than that of ReviewBot, indicating that RevFinder
-  provides a better ranking of correct code-reviewers.''
-\end{itemize}
-
-For answering \textbf{RQ2}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Tools}: Gerrit
-\item
-  \emph{Company/Organization}: Google (Android), OpenStack, Qt, The
-  Document Foundation (LibreOffice)
-\item
-  \emph{Evaluation}: N/A
-\end{itemize}
-
-For answering \textbf{RQ3}:
-
-\textbf{Future research challenges}:
-
-Researching how RevFinder works in practice, in terms of how effectively
-and practically it helps developers in recommending code-reviewers, when
-deployed in a live development environment.
-
-\subsubsection{Revisiting code ownership and its relationship with
-software quality in the scope of modern code
-review}\label{revisiting-code-ownership-and-its-relationship-with-software-quality-in-the-scope-of-modern-code-review}
-
-Reference: {[}\protect\hyperlink{ref-thongtanunam2016revisiting}{179}{]}
-
-\textbf{Summary}:
-
-This paper researches the effect code reviews have on code ownership.
-This question is answered by looking at two open-source projects. It was
-found that a lot of contributors do not submit code changes for a
-specific ticket, but still do quite some reviewing. It was also found
-that code that contains post-release errors has often been reviewed or
-authored by people who neither author or review often.
-
-For answering \textbf{RQ1}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Sub-topic}: code ownership
-\item
-  \emph{Research method}: empirical; quantitative
-\item
-  \emph{Tools}: R; Custom
-\item
-  \emph{Datasets}: Review dataset from Hamasaki et al.
-  {[}\protect\hyperlink{ref-hamasaki2013does}{78}{]}. Code dataset from
-  the Qt system from McIntosh et al.
-  {[}\protect\hyperlink{ref-mcintosh2014impact}{129}{]}. Ammended with
-  custom datasets for Qt and OpenStack.
-\end{itemize}
-
-\textbf{Research questions and answers}:
-
-\begin{itemize}
-\item
-  \emph{How do code authoring and reviewing contributions differ?} ``The
-  developers who only contribute to a module by reviewing code changes
-  account for the largest set of contributors to that module. Moreover,
-  18\%-50\% of these review-only developers are documented core
-  developers of the studied systems, suggesting that code ownership
-  heuristics that only consider authorship activity are missing the
-  activity of these major contributors.''
-\item
-  \emph{Should code review activity be used to refine traditional code
-  ownership heuristics?} ``Many minor authors are major reviewers who
-  actually make large contributions to the evolution of modules by
-  reviewing code changes. Code review activity can be used to refine
-  traditional code ownership heuristics to more accurately identify the
-  defect-prone modules.''
-\item
-  \emph{Is there a relationship between review-specific and review-aware
-  code ownership heuristics and defect-proneness?} ``Even when we
-  control for several confounding factors, the proportion of developers
-  in the minor author \& minor reviewer category shares a strong
-  relationship with defectproneness. Indeed, modules with a larger
-  proportion of developers without authorship or reviewing expertise are
-  more likely to be defect-prone.''
-\end{itemize}
-
-For answering \textbf{RQ2}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Tools}: Gerrit
-\item
-  \emph{Company/Organization}: The Qt, OpenStack, VTK and ITK projects
-\item
-  \emph{Evaluation}: N/A
-\end{itemize}
-
-\subsubsection{Review participation in modern code
-review}\label{review-participation-in-modern-code-review}
-
-Reference: {[}\protect\hyperlink{ref-thongtanunam2017review}{178}{]}
-
-\textbf{Summary} This paper discusses the factors that influence review
-participation in code review. Previous studies identified that review
-participation influences the code review process significantly, but did
-not study the factors that actually influence review participation.
-
-It was most importantly found that ``(\ldots{}) the review participation
-history, the description length, the number of days since the last
-modification of files, the past involvement of an author, and the past
-involvement of reviewers share a strong relationship with the likelihood
-that a patch will suffer from poor review participation.''
-
-For answering \textbf{RQ1}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Sub-topic}: review participation
-\item
-  \emph{Research method}: empirical; quantitative
-\item
-  \emph{Tools}: N/A
-\item
-  \emph{Datasets}: Review data for the Android, Qt and OpenStack
-  projects
-\end{itemize}
-
-\textbf{Research questions and answers}:
-
-\begin{itemize}
-\item
-  \emph{What patch characteristics share a relationship with the
-  likelihood of a patch not being selected by reviewers?} ``We find that
-  the number of reviewers of prior patches, the number of days since the
-  last modification of the patched files share a strong increasing
-  relationship with the likelihood that a patch will have at least one
-  reviewer. The description length is also a strong indicator of a patch
-  that is likely to not be selected by reviewers.''
-\item
-  \emph{What patch characteristics share a relationship with the
-  likelihood of a patch not being discussed?} ``We find that the
-  description length, churn, and the discussion length of prior patches
-  share an increasing relationship with the likelihood that a patch will
-  be discussed. We also find that the past involvement of reviewers
-  shares an increasing relationship with the likelihood. On the other
-  hand, the past involvement of an author shares an inverse relationship
-  with the likelihood.''
-\item
-  \emph{What patch characteristics share a relationship with the
-  likelihood of a patch receiving slow initial feedback?} ``We find that
-  the feedback delay of prior patches shares a strong relationship with
-  the likelihood that a patch will receive slow initial feedback.
-  Furthermore, a patch is likely to receive slow initial feedback if its
-  purpose is to introduces new features.''
-\end{itemize}
-
-For answering \textbf{RQ2}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Tools}: Gerrit
-\item
-  \emph{Company/Organization}: Android, Qt and OpenStack
-\item
-  \emph{Evaluation}: N/A
-\end{itemize}
-
-For answering \textbf{RQ3}:
-
-\textbf{Future research challenges}:
-
-The paper notes that it assumes that the review process is the same for
-a whole project, even for larger projects. Future work should examine
-whether there are differences in review processes across subsystems.
-
-\subsubsection{Mining the Modern Code Review Repositories: A Dataset of
-People, Process and
-Product}\label{mining-the-modern-code-review-repositories-a-dataset-of-people-process-and-product}
-
-Reference: {[}\protect\hyperlink{ref-yang2016mining}{192}{]}
-
-\textbf{Summary}:
-
-This paper introduces a dataset that has been systematically collected
-from review data from several projects. The subject projects are
-OpenStack, LibreOffice, AOSP, Qt and Eclipse. The dataset is made public
-for the purpose of doing further research using it. Also, tools may be
-tested on the data in the dataset, in order to have one benchmark
-dataset to compare different tools.
-
-For answering \textbf{RQ1}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Sub-topic}: tools; dataset
-\item
-  \emph{Research method}: N/A
-\item
-  \emph{Tools}: N/A
-\item
-  \emph{Datasets}: Review data from the OpenStack, LibreOffice, AOSP, Qt
-  and Eclipse projects
-\end{itemize}
-
-\textbf{Research questions and answers}: N/A
-
-For answering \textbf{RQ2}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Tools}: Gerrit
-\item
-  \emph{Company/Organization}: OpenStack, LibreOffice, AOSP, Qt, Eclipse
-\item
-  \emph{Evaluation}: N/A
-\end{itemize}
-
-For answering \textbf{RQ3}:
-
-\textbf{Future research challenges}:
-
-Research using the dataset that has been created, and tests of tools on
-the dataset.
-
-\subsubsection{Automatically recommending peer reviewers in modern code
-review}\label{automatically-recommending-peer-reviewers-in-modern-code-review}
-
-Reference: {[}\protect\hyperlink{ref-zanjani2016automatically}{195}{]}
-
-\textbf{Summary}:
-
-This paper introduces \emph{cHRev}, a reviewer recommendation approach
-that, according to the paper, works better in most circumstances than
-\emph{RevFinder} introduces by Thongtanunam et al.
-{[}\protect\hyperlink{ref-thongtanunam2015should}{180}{]}. It recommends
-reviewers based on their previous review activity. For this it notably
-uses the frequency of reviews for a specific part of the system and also
-how recent the reviewing activity was.
-
-For answering \textbf{RQ1}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Sub-topic}: reviewer recomendation
-\item
-  \emph{Research method}: quantitative; empirical
-\item
-  \emph{Tools}: Custom
-\item
-  \emph{Datasets}: Reviewing data for Mylyn, Eclipse, Android, and MS
-  Office
-\end{itemize}
-
-\textbf{Research questions and answers}:
-
-\begin{itemize}
-\item
-  \emph{What is the accuracy of cHRev in recommending reviewers on real
-  software systems across closed and open source projects?} ``cHRev
-  makes accurate reviewer recommendations in terms of precision and
-  recall. On average, less than two recommendations are needed to find
-  the first correct reviewer in both closed and open source systems.''
-\item
-  \emph{How do the accuracies of cHRev (trained from the code review
-  history), REVFINDER (also, trained from the code review history,
-  albeit differently), xFinder (trained from the commit history), and
-  RevCom (trained from a combination of the code review and commit
-  histories) compare in recommending code reviewers?} ``cHRev performs
-  much better than REVFINDER which is based on reviewers of files with
-  similar names and paths and xFinder which relies on source code
-  repository data, and cHRev is statistically equivalent to RevCom which
-  requires both past reviews and commits.''
-\end{itemize}
-
-For answering \textbf{RQ2}:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Tools}: Gerrit; CodeFlow
-\item
-  \emph{Company/Organization}: CodeFlow by Microsoft; Gerrit by the
-  other three projects
-\item
-  \emph{Evaluation}: N/A
-\end{itemize}
-
-For answering \textbf{RQ3}:
-
-\textbf{Future research challenges}:
-
-The authors plan to include textual analysis of review comments and
-additional measures of reviewers' contributions and impact in their
-approach.
-
-\subsection{Excluded papers}\label{excluded-papers}
-
-The following papers have been excluded from the survey. These papers
-are candidates, but have not been added to the final survey for the
-stated reason.
-
-\begin{itemize}
-\tightlist
-\item
-  {[}\protect\hyperlink{ref-cohen2010modern}{45}{]}: This book is not
-  accessible via the TU Delft subscription of Safari Books Online, and
-  hence we could not read it to include it in the survey.
-\item
-  {[}\protect\hyperlink{ref-mcintosh2016empirical}{128}{]}: This is an
-  extended and improved version of a paper already included in the
-  survey. Because of time constraints we will not reconsider this
-  version.
-\item
-  {[}\protect\hyperlink{ref-fagan2002design}{66}{]}: This paper does not
-  conform to our exclusion criterion saying that it should be published
-  in 2008 or later.
-\end{itemize}
-
-\subsection{Table 1}\label{table-1}
-
-\begin{longtable}[]{@{}llll@{}}
-\toprule
-\begin{minipage}[b]{0.63\columnwidth}\raggedright\strut
-Title\strut
-\end{minipage} & \begin{minipage}[b]{0.03\columnwidth}\raggedright\strut
-Year\strut
-\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright\strut
-Reference\strut
-\end{minipage} & \begin{minipage}[b]{0.09\columnwidth}\raggedright\strut
-In survey? (Y/N)\strut
-\end{minipage}\tabularnewline
-\midrule
-\endhead
-\begin{minipage}[t]{0.63\columnwidth}\raggedright\strut
-Expectations, outcomes, and challenges of modern code review\strut
-\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
-2013\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
-{[}\protect\hyperlink{ref-bacchelli2013expectations}{11}{]}\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
-Y\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.63\columnwidth}\raggedright\strut
-Modern code reviews in open-source projects: Which problems do they
-fix?\strut
-\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
-2014\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
-{[}\protect\hyperlink{ref-beller2014modern}{21}{]}\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
-Y\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.63\columnwidth}\raggedright\strut
-Lessons learned from building and deploying a code review analytics
-platform\strut
-\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
-2015\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
-{[}\protect\hyperlink{ref-bird2015lessons}{29}{]}\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
-Y\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.63\columnwidth}\raggedright\strut
-An exploratory study of the pull-based software development model\strut
-\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
-2014\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
-{[}\protect\hyperlink{ref-gousios2014exploratory}{74}{]}\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
-Y\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.63\columnwidth}\raggedright\strut
-The impact of code review coverage and code review participation on
-software quality: A case study of the qt, vtk, and itk projects\strut
-\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
-2014\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
-{[}\protect\hyperlink{ref-mcintosh2014impact}{129}{]}\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
-Y\strut
-\end{minipage}\tabularnewline
-\bottomrule
-\end{longtable}
-
-\subsection{Table 2}\label{table-2}
-
-\begin{longtable}[]{@{}llllll@{}}
-\toprule
-\begin{minipage}[b]{0.47\columnwidth}\raggedright\strut
-Title\strut
-\end{minipage} & \begin{minipage}[b]{0.03\columnwidth}\raggedright\strut
-Year\strut
-\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedright\strut
-Reference\strut
-\end{minipage} & \begin{minipage}[b]{0.06\columnwidth}\raggedright\strut
-Search date\strut
-\end{minipage} & \begin{minipage}[b]{0.07\columnwidth}\raggedright\strut
-Result number\strut
-\end{minipage} & \begin{minipage}[b]{0.08\columnwidth}\raggedright\strut
-In survey? (Y/N)\strut
-\end{minipage}\tabularnewline
-\midrule
-\endhead
-\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
-Investigating technical and non-technical factors influencing modern
-code review\strut
-\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
-2016\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-{[}\protect\hyperlink{ref-baysal2016investigating}{18}{]}\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
-29-09-2018\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright\strut
-9\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
-Y\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
-Modern code review\strut
-\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
-2010\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-{[}\protect\hyperlink{ref-cohen2010modern}{45}{]}\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
-25-09-2018\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright\strut
-1\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
-N\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
-An empirical study of the impact of modern code review practices on
-software quality\strut
-\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
-2016\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-{[}\protect\hyperlink{ref-mcintosh2016empirical}{128}{]}\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
-25-09-2018\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright\strut
-4\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
-N\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
-A Study of the Quality-Impacting Practices of Modern Code Review at Sony
-Mobile\strut
-\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
-2016\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-{[}\protect\hyperlink{ref-shimagaki2016study}{168}{]}\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
-29-09-2018\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright\strut
-11\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
-Y\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
-Reda: A web-based visualization tool for analyzing modern code review
-dataset\strut
-\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
-2014\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-{[}\protect\hyperlink{ref-thongtanunam2014reda}{181}{]}\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
-29-09-2018\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright\strut
-8\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
-Y\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
-Who should review my code? A file location-based code-reviewer
-recommendation approach for modern code review\strut
-\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
-2015\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-{[}\protect\hyperlink{ref-thongtanunam2015should}{180}{]}\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
-29-09-2018\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright\strut
-5\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
-Y\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
-Revisiting code ownership and its relationship with software quality in
-the scope of modern code review\strut
-\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
-2016\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-{[}\protect\hyperlink{ref-thongtanunam2016revisiting}{179}{]}\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
-29-09-2018\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright\strut
-6\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
-Y\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
-Review participation in modern code review\strut
-\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
-2017\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-{[}\protect\hyperlink{ref-thongtanunam2017review}{178}{]}\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
-29-09-2018\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright\strut
-10\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
-Y\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
-Mining the Modern Code Review Repositories: A Dataset of People, Process
-and Product\strut
-\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
-2016\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-{[}\protect\hyperlink{ref-yang2016mining}{192}{]}\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
-29-09-2018\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright\strut
-12\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
-Y\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
-Automatically recommending peer reviewers in modern code review\strut
-\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
-2016\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-{[}\protect\hyperlink{ref-zanjani2016automatically}{195}{]}\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
-29-09-2018\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright\strut
-7\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
-Y\strut
-\end{minipage}\tabularnewline
-\bottomrule
-\end{longtable}
-
-\subsection{Table 3}\label{table-3}
-
-\begin{longtable}[]{@{}llll@{}}
-\toprule
-\begin{minipage}[b]{0.56\columnwidth}\raggedright\strut
-Title\strut
-\end{minipage} & \begin{minipage}[b]{0.04\columnwidth}\raggedright\strut
-Year\strut
-\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedright\strut
-Reference\strut
-\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright\strut
-In survey? (Y/N)\strut
-\end{minipage}\tabularnewline
-\midrule
-\endhead
-\begin{minipage}[t]{0.56\columnwidth}\raggedright\strut
-A Faceted Classification Scheme for Change-Based Industrial Code Review
-Processes\strut
-\end{minipage} & \begin{minipage}[t]{0.04\columnwidth}\raggedright\strut
-2016\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright\strut
-{[}\protect\hyperlink{ref-baum2016faceted}{16}{]}\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright\strut
-Y\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.56\columnwidth}\raggedright\strut
-The Choice of Code Review Process: A Survey on the State of the
-Practice\strut
-\end{minipage} & \begin{minipage}[t]{0.04\columnwidth}\raggedright\strut
-2017\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright\strut
-{[}\protect\hyperlink{ref-baum2017choice}{15}{]}\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright\strut
-Y\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.56\columnwidth}\raggedright\strut
-The influence of non-technical factors on code review\strut
-\end{minipage} & \begin{minipage}[t]{0.04\columnwidth}\raggedright\strut
-2013\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright\strut
-{[}\protect\hyperlink{ref-baysal2013influence}{19}{]}\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright\strut
-Y\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.56\columnwidth}\raggedright\strut
-Impact of peer code review on peer impression formation: A survey\strut
-\end{minipage} & \begin{minipage}[t]{0.04\columnwidth}\raggedright\strut
-2013\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright\strut
-{[}\protect\hyperlink{ref-bosu2013impact}{33}{]}\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright\strut
-N\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.56\columnwidth}\raggedright\strut
-Software Reviews: The State of the Practice\strut
-\end{minipage} & \begin{minipage}[t]{0.04\columnwidth}\raggedright\strut
-2003\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright\strut
-{[}\protect\hyperlink{ref-ciolkowski2003software}{42}{]}\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright\strut
-N\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.56\columnwidth}\raggedright\strut
-Code reviews do not find bugs: how the current code review best practice
-slows us down\strut
-\end{minipage} & \begin{minipage}[t]{0.04\columnwidth}\raggedright\strut
-2015\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright\strut
-{[}\protect\hyperlink{ref-czerwonka2015code}{52}{]}\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright\strut
-Y\strut
-\end{minipage}\tabularnewline
-\bottomrule
-\end{longtable}
+\chapter{Appendix}\label{appendix-1}
 
 \section{Appendix to Chapter 6 (Release Engineering
 Analytics)}\label{appendix-to-chapter-6-release-engineering-analytics}
@@ -10421,6 +8944,1486 @@ Are these research gaps filled by any other publications in this survey?
 \begin{itemize}
 \item
 \end{itemize}
+
+\section{Appendix to Chapter 7 (Code
+Review)}\label{appendix-to-chapter-7-code-review}
+
+\subsection{Extracted data}\label{extracted-data}
+
+This section contains data extracted from all resources included in the
+survey, according to the \emph{Data collection} section of the review
+protocol. Note that if some data could not be collected, it is
+explicitly stated.
+
+The resources are listed in alphabetical order of first author name, and
+then by year published.
+
+\subsubsection{Expectations, outcomes, and challenges of modern code
+review}\label{expectations-outcomes-and-challenges-of-modern-code-review}
+
+Reference: {[}\protect\hyperlink{ref-bacchelli2013expectations}{11}{]}
+
+\textbf{Summary}
+
+This paper describes research about the goals and actual effects of code
+reviews. Interviews and experiments have been done with people in the
+programming field.
+
+One of the main conclusions is that the main effect of doing code
+reviews is that everyone involved understands the code better. This is
+opposed to what the goal of code reviews generally is: discovering
+errors.
+
+For answering \textbf{RQ1}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Sub-topic}: in practice; tools
+\item
+  \emph{Research method}: empirical; qualitative
+\item
+  \emph{Tools}: N/A
+\item
+  \emph{Datasets}: Data collected from interviews, surveys and code
+  reviews
+\end{itemize}
+
+\textbf{Research questions and answers}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{What are the motivations and expectations for modern code
+  review? Do they change from managers to developers and testers?} The
+  top motivation for code reviews is finding defects, closely followed
+  by code improvement. There does not seem to be a large difference
+  between managers, developers and testers.
+\item
+  \emph{What are the actual outcomes of modern code review? Do they
+  match the expectations?} Code improvements are the most seen outcomes
+  of code review, followed by code understanding and social
+  communication. The outcomes do not match the expectations well. For
+  example, only 14\% of researched review comments was about code
+  defects, while about 44\% chose finding defects as the main motivation
+  for doing code review.
+\item
+  \emph{What are the main challenges experienced when performing modern
+  code reviews relative to the expectations and outcomes?} The main
+  challenges is by far understanding the code under review. This occurs
+  for example when code has to be reviewed that is not in the same
+  system as a developers works on daily.
+\end{itemize}
+
+For answering \textbf{RQ2}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Tools used}: CodeFlow, a reviewing tool. It is not publicly
+  available.
+\item
+  \emph{Company/organization}: Microsoft
+\item
+  \emph{Evaluation}: At the time of this paper, it still focusses mainly
+  on fixing errors, and not on the more often ocurring results of doing
+  code review.
+\end{itemize}
+
+For answering \textbf{RQ3}:
+
+\textbf{Future research challenges}:
+
+\begin{itemize}
+\tightlist
+\item
+  Research on automating code review tasks. This mainly concerns
+  low-level tasks, like checking boundary conditions or catching common
+  mistakes.
+\item
+  Research on code comprehension during code review. According to the
+  authors research has been done on this with new developers in mind,
+  but it would also be applicable to code reviews. The authors note that
+  IDEs often include tools for code comprehension, but code review tools
+  do not.
+\item
+  Research on awareness and learning during code review. Those two
+  aspects were cited as motivations for code review by developers.
+  Future research could research these aspects more explicitly.
+\end{itemize}
+
+\subsubsection{A Faceted Classification Scheme for Change-Based
+Industrial Code Review
+Processes}\label{a-faceted-classification-scheme-for-change-based-industrial-code-review-processes}
+
+Reference: {[}\protect\hyperlink{ref-baum2016faceted}{16}{]}
+
+\textbf{Summary} The broad research questions answered in this article
+are: How is code review performed in industry today? Which commonalities
+and variations exist between code review processes of different teams
+and companies? The article describes a classification scheme for
+change-based code review processes in industry. This scheme is based on
+descriptions of the code review processes of eleven companies, obtained
+from interviews with software engineering professionals that were
+performed during a Grounded Theory study.
+
+\subsubsection{The Choice of Code Review Process: A Survey on the State
+of the
+Practice}\label{the-choice-of-code-review-process-a-survey-on-the-state-of-the-practice}
+
+Reference: {[}\protect\hyperlink{ref-baum2017choice}{15}{]}
+
+\textbf{Summary} This paper, published in 2017, is trying to answer 3
+RQs. Firstly, how prevalent is change-based review in the industry?
+Secondly, does the chance that code review remains in use increase if
+code review is embedded into the process (and its supporting tools) so
+that it does not require a conscious decision to do a review? Thirdly,
+are the intended and acceptable levels of review effects a mediator in
+determining the code review process?
+
+\subsubsection{The influence of non-technical factors on code
+review}\label{the-influence-of-non-technical-factors-on-code-review}
+
+Reference: {[}\protect\hyperlink{ref-baysal2013influence}{19}{]}
+
+\textbf{Summary} This paper focus on the influence of several
+non-technical factors on code review response time and outcome. An
+empirical study of code review process for WebKit, a large open source
+project was described to see the influence. Specifically, the authors
+replicated some previously studied factors and extended several more
+factors that had not beed explored.
+
+For answering \textbf{RQ1}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Sub-topic}: open-source, impact
+\item
+  \emph{Research method}: empirical study
+\item
+  \emph{Tools}: WebKit
+\item
+  \emph{Datasets}: WebKit code review data extracted from Bugzilla.
+\end{itemize}
+
+\textbf{Research questions and answers}:
+
+\begin{itemize}
+\item
+  \emph{What factors can influence how long it takes for a patch to be
+  reviewed?} The organizational and personal factors influence review
+  timeliness. Some factors that influenced the time required to review a
+  patch, such as the size of the patch itself or the part of the code
+  base being modified, are unsurprising and are likely related to the
+  technical complexity of a given change. The most influential factors
+  of the code review process on review time are the organization a patch
+  writer is affiliated with and their level of participation within the
+  project.
+\item
+  \emph{What factors influence the outcome of the review process?} The
+  organizational and personal factors influence the likelihood of a
+  patch being accepted. The most influential factors of the code review
+  process on patch acceptance are the organization a patch writer is
+  affiliated with and their level of participation within the project.
+\end{itemize}
+
+For answering \textbf{RQ3}:
+
+\textbf{Future research challenges}:
+
+\begin{itemize}
+\tightlist
+\item
+  Research on studying how best to interpret empirical software
+  engineering research within the context of contextual factors.
+  Understanding the reasons behind observable developer behaviour
+  requires an understanding of the contexts, processes, organizational
+  and individual factors that can influence code review and its outcome.
+\end{itemize}
+
+\textbf{Notes}:
+
+This paper has an extended version
+{[}\protect\hyperlink{ref-baysal2016investigating}{18}{]}.
+
+\subsubsection{Investigating technical and non-technical factors
+influencing modern code
+review}\label{investigating-technical-and-non-technical-factors-influencing-modern-code-review}
+
+Reference: {[}\protect\hyperlink{ref-baysal2016investigating}{18}{]}
+
+\textbf{Summary}:
+
+This article primirarily discusses some non-technical factors that
+influence the code review process. This are factors like review
+experience, amount of contributions to a project and company
+affiliation.
+
+It is found that the most important factors influencing the code review
+process, in terms of both review time and patch acceptance, are the
+organization affiliation of the patch writer and the amount of
+participation of the patch writer in the project.
+
+For answering \textbf{RQ1}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Sub-topic}: non-technical
+\item
+  \emph{Research method}: empirical; quantitative
+\item
+  \emph{Tools}: Custom
+\item
+  \emph{Datasets}: WebKit reviews, Google Blink reviews
+\end{itemize}
+
+\textbf{Research questions and answers}:
+
+\begin{itemize}
+\item
+  \emph{What factors can influence how long it takes for a patch to be
+  reviewed?} ``Based on the results of two empirical studies, we found
+  that both technical (patch size and component) , as well as
+  non-technical (organization, patch writer experience, and reviewer
+  activity) factors affect review timeliness when studying the effect of
+  individual variables. While priority appears to influence review time
+  for WebKit, we were not able to confirm this for Blink.''
+\item
+  \emph{What factors influence the outcome of the review process?} ``Our
+  findings from both studies suggest that patch writer experience
+  affects code review outcome. For the WebKit project, factors like
+  priority, organization, and review queue also have an effect on the
+  patch acceptance.''
+\end{itemize}
+
+For answering \textbf{RQ2}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Tools}: N/A
+\item
+  \emph{Company/Organization}: N/A
+\item
+  \emph{Evaluation}: N/A
+\end{itemize}
+
+\textbf{Notes}:
+
+This paper has a shorter version
+{[}\protect\hyperlink{ref-baysal2013influence}{19}{]}.
+
+For answering \textbf{RQ3}:
+
+\textbf{Future research challenges}:
+
+Not stated
+
+\subsubsection{Modern code reviews in open-source projects: Which
+problems do they
+fix?}\label{modern-code-reviews-in-open-source-projects-which-problems-do-they-fix}
+
+Reference: {[}\protect\hyperlink{ref-beller2014modern}{21}{]}
+
+\textbf{Summary} It has been researched what kinds of problems are
+solved by doing code reviews. The conclusion is that 75\% are
+improvements in evolvability of the code, and 25\% in functional
+aspects.
+
+It has also been researched which part of the review comments is
+actually followed up by an action, and which part of the edits after a
+review are actually caused by review comments.
+
+For answering \textbf{RQ1}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Sub-topic}: impact,changes
+\item
+  \emph{Research method}: empirically explore; change classification
+\item
+  \emph{Tools}: R
+\item
+  \emph{Datasets}: documented history of ConQAT and GROMACS
+\end{itemize}
+
+\textbf{Research questions and answers}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Which types of changes occur in code under review?} 75\% of
+  changes are related to the evolvability of the system, and only 25\%
+  to its functionality.
+\item
+  \emph{What triggered the changes occurring in code under review?}
+  78-90\% of the trigger are review comments and the remaining 10-22\%
+  are `undocumented'.
+\item
+  \emph{What influences the number of changes in code under review?}
+  Code churn, number of changed files and task type are the most
+  important factors influencing the number of changes.
+\end{itemize}
+
+\subsubsection{Lessons learned from building and deploying a code review
+analytics
+platform}\label{lessons-learned-from-building-and-deploying-a-code-review-analytics-platform}
+
+Reference: {[}\protect\hyperlink{ref-bird2015lessons}{29}{]}
+
+\textbf{Summary}:
+
+A code review data analyzation platform developed and used by Microsoft
+is discussed. It is mainly presented what users of the system think of
+it and how its use influences development teams. One of the conclusions
+is that in general, the platform has a positive influence on development
+teams and their products.
+
+For answering \textbf{RQ2}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Tools used:} CodeFlow, CodeFlow Analytics
+\item
+  \emph{Company/organization using the tool:} Microsoft
+\item
+  \emph{Evaluation of the tool:} CodeFlow has already had a positive
+  implace on development teams because of its simplicity, low barrier
+  for feedback and flexible support of Microsoft's disparate engineering
+  systems. But some challenges such as dealing with branches and linking
+  reviews to commits need to improve.
+\end{itemize}
+
+As for CodeFlow Analytics: the tool is being used increasingly
+throughout Microsoft, with different teams using the tool for different
+purposes. It is for example effectively used to create dashboards with
+code review evaluation information, or for examining past reviews in
+detail. However, some parts of the tool still need to improve in terms
+of user-friendliness, for example because some functionality is
+difficult to find.
+
+For answering \textbf{RQ3}:
+
+\textbf{Future research challenges}:
+
+\begin{itemize}
+\tightlist
+\item
+  Research on an automatic way to classify and assess the usefulness of
+  comments. This was specifically requested by an interviewees's and is
+  still an open challenge regarding CodeFlow.
+\item
+  Research on many aspects of code review based on data from CodeFlow
+  Analytics or other similar tools.
+\item
+  Research on methods to automatically recommend reviewers for changes
+  in the system.
+\end{itemize}
+
+\subsubsection{Software Reviews: The State of the
+Practice}\label{software-reviews-the-state-of-the-practice}
+
+Reference: {[}\protect\hyperlink{ref-ciolkowski2003software}{42}{]}
+
+\textbf{Summary} To investigate how industry carries out software
+reviews and in what forms, this paper conducted a two-part survey in
+2002, the first part based on a national initiative in Germany and the
+second involving companies worldwide. Additionally, this paper also
+include some fundamental concepts of code review, such as
+functionalities of code review.
+
+\subsubsection{Code reviews do not find bugs: how the current code
+review best practice slows us
+down}\label{code-reviews-do-not-find-bugs-how-the-current-code-review-best-practice-slows-us-down}
+
+Reference: {[}\protect\hyperlink{ref-czerwonka2015code}{52}{]}
+
+\textbf{Summary} As code review has many uses and benefits, the authors
+hope to find out whether the current code review methods are
+sufficiently efficient. They also research whether other methods may be
+more efficient. With experience gained at Microsoft and with support of
+data, the authors posit (1) that code reviews often do not find
+functionality issues that should block a code submission; (2) that
+effective code reviews should be performed by people with a specific set
+of skills; and (3) that the social aspect of code reviews cannot be
+ignored.
+
+For answering \textbf{RQ1}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Sub-topic}: impact
+\item
+  \emph{Research method}: empirical
+\item
+  \emph{Tools}: not mentioned
+\item
+  \emph{Datasets}: data collected from engineering systems
+\end{itemize}
+
+\textbf{Research questions and answers}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{In what situations, do code reviews provide more value than
+  others?} Unlike inspections, code reviews do not require participants
+  to be in the same place nor do they happen at a fixed, prearranged
+  time. Aligning with a distributed nature of many projects, code
+  reviews are asynchronous and frequently supporting geographically
+  distributed reviewers.
+\item
+  \emph{What is the value of consistency of applying code reviews
+  equally to all code changes?} Code review usefulness is negatively
+  correlated with the size of a code review. With 20 or more changed
+  files, the more files there are in a single review, the lower the
+  overall rate of useful feedback.
+\end{itemize}
+
+For answering \textbf{RQ3}:
+
+\textbf{Future research challenges}:
+
+\begin{itemize}
+\item
+  Research on undocumented changes of code review because prior research
+  has neglected.
+\item
+  Due to its costs, code reviewing practice is a topic deserving to be
+  better understood, systematized and applied to software engineering
+  workflow with more precision than the best practice currently
+  prescribes.
+\end{itemize}
+
+\subsubsection{Design and code inspections to reduce errors in program
+development}\label{design-and-code-inspections-to-reduce-errors-in-program-development}
+
+Reference: {[}\protect\hyperlink{ref-fagan2002design}{66}{]}
+
+\textbf{Summary} This paper describes a method to thoroughly check code
+quality after each step of the development process, in a heavyweight
+manner. It does not really concern agile development.
+
+The authors state that these methods do not affect the developing
+process negatively, and that they work well for improving software
+quality.
+
+\subsubsection{An exploratory study of the pull-based software
+development
+model}\label{an-exploratory-study-of-the-pull-based-software-development-model}
+
+Reference: {[}\protect\hyperlink{ref-gousios2014exploratory}{74}{]}
+
+\textbf{Summary} This article focuses on how much pull requests are
+being used and how they are used, focusing on GitHub. For example, it is
+concluded that pull-requests are not being used that much, that
+pull-requests are being merged fast after they have been submitted, and
+that a pull request not being merged is most of the time not caused by
+technical errors in the pull-request.
+
+For answering \textbf{RQ1}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Sub-topic}: open-source, in practice
+\item
+  \emph{Research method}: empirical; qualitative for finding out reasons
+  for closing pull request, rest quantitative.
+\item
+  \emph{Tools}: Custom developed tools, available online
+\item
+  \emph{Datasets}: GHTorrent dataset, along with data collected by
+  authors. The last is also available online
+\end{itemize}
+
+\textbf{Research questions and answers}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{How popular is the pull based development model?} ``14\% of
+  repositories are using pull requests on Github. Pull requests and
+  shared repositories are equally used among projects. Pull request
+  usage is increasing in absolute numbers, even though the proportion of
+  repositories using pull requests has decreased slightly.''
+\item
+  \emph{What are the lifecycle characteristics of pull requests?} ``Most
+  pull requests are less than 20 lines long and processed (merged or
+  discarded) in less than 1 day. The discussion spans on average to 3
+  comments, while code reviews affect the time to merge a pull request.
+  Inclusion of test code does not affect the time or the decision to
+  merge a pull request. Pull requests receive no special treatment,
+  irrespective whether they come from contributors or the core team.''
+\item
+  \emph{What factors affect the decision and the time required to merge
+  a pull request?} ``The decision to merge a pull request is mainly
+  influenced by whether the pull request modifies recently modified
+  code. The time to merge is influenced by the developer's previous
+  track record, the size of the project and its test coverage and the
+  project's openness to external contributions.''
+\item
+  \emph{Why are some pull requests not merged?} ``53\% of pull requests
+  are rejected for reasons having to do with the distributed nature of
+  pull based development. Only 13\% of the pull requests are rejected
+  due to technical reasons.''
+\end{itemize}
+
+For answering \textbf{RQ2}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Tools used}: GitHub PR system
+\item
+  \emph{Company/organization}: Several open-source projects
+\item
+  \emph{Evaluation}: N/A
+\end{itemize}
+
+For answering \textbf{RQ3}:
+
+\textbf{Future research challenges}:
+
+\begin{itemize}
+\tightlist
+\item
+  More research is needed on \emph{drive-by commits}, which the paper
+  loosely defines as commits added to a repository through a PR by a
+  user that has never contributed to the repository and hence does so
+  for the first time. Often this new contributor also has created a fork
+  for the sole purpose of creating this PR. More research is needed on
+  accurately defining drive-by commits and on assessing their
+  implications.
+\item
+  More research is needed on the effect of the democratization of the
+  develoment process, which occurs for example through the use of pull
+  requests. Democratization could for example lead to a substantially
+  stronger commons ecosystem.
+\item
+  Validating the used models on data from different sources and on
+  projects on different languages.
+\item
+  Research on the motives of developers to work in a highly transparent
+  workspace.
+\item
+  Research on formation of teams and management hierarchies with respect
+  to open-source projects.
+\item
+  Research on novel code review practices.
+\item
+  Research on ways to managing tasks in the pull-based development
+  model.
+\end{itemize}
+
+\textbf{Challenges in practice}:
+
+\begin{itemize}
+\tightlist
+\item
+  Development of tools to help the core team of a project with
+  prioritizing their work. The paper gives as an example a tool which
+  would suggest whether a pull request can be merged or not, because
+  this can be predicted with fairly high accuracy.
+\item
+  Development of tools that would suggest categories of improvement for
+  pull request, for example by suggesting that more documentation needs
+  to be added.
+\end{itemize}
+
+\subsubsection{The impact of code review coverage and code review
+participation on software quality: A case study of the qt, vtk, and itk
+projects}\label{the-impact-of-code-review-coverage-and-code-review-participation-on-software-quality-a-case-study-of-the-qt-vtk-and-itk-projects}
+
+Reference: {[}\protect\hyperlink{ref-mcintosh2014impact}{129}{]}
+
+\textbf{Summary} This paper focuses on the influence of doing
+light-weight code reviews on software quality. In particular, the effect
+of review coverage (the part of the code that has been reviewed) and
+review participation (a measure for how much reviewers are involved in
+the review process) are being assessed.
+
+It turns out that both aspects improve software quality when they are
+higher. Review participation is the most influential. According to the
+authors there are other aspects, which they have not looked into, that
+are of significant importance for the review process.
+
+For answering \textbf{RQ1}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Sub-topic}: open-source, in practice, impact
+\item
+  \emph{Research method}: qualitative for finding out the impact of code
+  review coverage and code review participation on software quality rest
+  quantitative.
+\item
+  \emph{Tools}: N/A
+\item
+  \emph{Datasets}: Data extracted from Qt, VTK and ITK code review
+  dataset and necessary metrics including version control metrics,
+  coverage metrics and participation metrics.
+\end{itemize}
+
+\textbf{Research questions and answers}:
+
+\begin{itemize}
+\item
+  \emph{Is there a relationship between code review coverage and
+  post-release defects?} Although review coverage is negatively
+  associated with software quality in our models, several defect-prone
+  components have high coverage rates, suggesting that other properties
+  of the code review process are at play.
+\item
+  \emph{Is there a relationship between code review participation and
+  post-release defects?} Lack of participation in code review has a
+  negative impact on software quality. Reviews without discussion are
+  associated with higher post-release defect counts, suggesting that the
+  amount of discussion generated during review should be considered when
+  making integration decisions.
+\end{itemize}
+
+For answering \textbf{RQ2}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Tools}: Gerrit
+\item
+  \emph{Company/Organization}: N/A
+\item
+  \emph{Evaluation}: N/A
+\end{itemize}
+
+For answering \textbf{RQ3}:
+
+\textbf{Future research challenges}:
+
+\begin{itemize}
+\tightlist
+\item
+  Research on other properties of modern code review such as code
+  ownership. Inspired by this paper, other properties of modern code
+  review can also be explored.
+\end{itemize}
+
+\textbf{Notes}:
+
+There exists an extended and improved version of this paper
+{[}\protect\hyperlink{ref-mcintosh2016empirical}{128}{]}. Only the
+original version of the paper has been included in this survey.
+
+\subsubsection{A Study of the Quality-Impacting Practices of Modern Code
+Review at Sony
+Mobile}\label{a-study-of-the-quality-impacting-practices-of-modern-code-review-at-sony-mobile}
+
+Reference: {[}\protect\hyperlink{ref-shimagaki2016study}{168}{]}
+
+\textbf{Summary} First the study by McIntosh et al.
+{[}\protect\hyperlink{ref-mcintosh2016empirical}{128}{]} is replicated
+in a proprietary setting at Sony Mobile. A qualitative study, including
+interviews, is also done with the question ``Why are certain reviewing
+practices associated with better software quality?''
+
+The results from this study are the same as those from the replicated
+study for RQ1, but not for RQ2. Also, what has been found has been
+confirmed by the quanitative study has been supported by the qualitative
+study.
+
+For answering \textbf{RQ1}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Sub-topic}:
+\item
+  \emph{Research method}: replication: empirical, quantitative;
+  qualitative
+\item
+  \emph{Tools}: N/A
+\item
+  \emph{Datasets}: Review data from Sony Mobile
+\end{itemize}
+
+\textbf{Research questions and answers}:
+
+\begin{itemize}
+\item
+  \emph{Is there a relationship between code review coverage and
+  post-release defects?} ``Although our review coverage model
+  outperforms our baseline model, of the three studied review coverage
+  metrics, only the proportion of In-House contributions contributes
+  significantly to our model fits. Comparison with previous work.
+  Similar to the prior work
+  {[}\protect\hyperlink{ref-mcintosh2016empirical}{128}{]}, we find that
+  Reviewed Commit and Reviewed Churn provide little explanatory power,
+  suggesting that other reviewing factors are at play.''
+\item
+  \emph{Is there a relationship between code review participation and
+  post-release defects?} ``Our review participation model also
+  outperforms our baseline model. Of the studied review participation
+  metrics, only the measure of accumulated effort to improve code
+  changes (Patch Sd) and the rate of author self-verification (Self
+  Verify) contribute significantly to our model fits. Comparison with
+  previous work. Unlike the prior work
+  {[}\protect\hyperlink{ref-mcintosh2016empirical}{128}{]}, code
+  reviewing time and discussion length did not provide exploratory power
+  to the Sony Mobile model''
+\end{itemize}
+
+For answering \textbf{RQ2}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Tools}: Gerrit
+\item
+  \emph{Company/Organization}: Sony Mobile
+\item
+  \emph{Evaluation}: N/A
+\end{itemize}
+
+For answering \textbf{RQ3}:
+
+\textbf{Future research challenges}:
+
+Not stated
+
+\subsubsection{ReDA: A Web-based Visualization Tool for Analyzing Modern
+Code Review
+Dataset}\label{reda-a-web-based-visualization-tool-for-analyzing-modern-code-review-dataset}
+
+Reference: {[}\protect\hyperlink{ref-thongtanunam2014reda}{181}{]}
+
+\textbf{Summary}:
+
+This paper intoduces \emph{ReDA}, a web-based visualization tool for
+code review datasets. It processes data from Gerrit, presents statistics
+about the data, visualizes it, and points the user towards possible
+problems occurring during the review process. It was tested briefly on
+some open-source projects.
+
+For answering \textbf{RQ1}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Sub-topic}: visualization; tools
+\item
+  \emph{Research method}: qualitative; empirical
+\item
+  \emph{Tools}: ReDA
+\item
+  \emph{Datasets}: Android code review data
+\end{itemize}
+
+\textbf{Research questions and answers}:
+
+N/A
+
+For answering \textbf{RQ2}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Tools}: N/A
+\item
+  \emph{Company/Organization}: N/A
+\item
+  \emph{Evaluation}: N/A
+\end{itemize}
+
+For answering \textbf{RQ3}:
+
+\textbf{Future research challenges}:
+
+The authors aim to develop a live code review monitoring dashboard based
+on ReDA. They also aim to create a more portable version of ReDA that is
+also compatible with other tools supporting the MCR process.
+
+\subsubsection{Who should review my code? A file location-based
+code-reviewer recommendation approach for modern code
+review}\label{who-should-review-my-code-a-file-location-based-code-reviewer-recommendation-approach-for-modern-code-review}
+
+Reference: {[}\protect\hyperlink{ref-thongtanunam2015should}{180}{]}
+
+\textbf{Summary}:
+
+This paper presents (1) research on how often a reviewer cannot be found
+for a code change and the influence of this on the time it takes to
+process a code change, (2) a tool (\emph{RevFinder}) for automatically
+suggesting reviewers based on files reviewed previously, and (3) an
+empirical evaluation of that tool on four open-source projects.
+
+Of the researched projects, up to 30\% of the code changes have problems
+finding a reviewer. These reviews take on average 12 days longer. Also,
+it is found that RevFinder works 3 to 4 times better than an existing
+tool.
+
+For answering \textbf{RQ1}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Sub-topic}: reviewers; tools
+\item
+  \emph{Research method}: quantitative; empirical
+\item
+  \emph{Tools}: Custom
+\item
+  \emph{Datasets}: Custom: Gerrit review data from Android, OpenStack,
+  Qt and LibreOffice
+\end{itemize}
+
+\textbf{Research questions and answers}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{How do reviews with code-reviewer assignment problem impact
+  reviewing time?} ``4\%-30\% of reviews have code-reviewer assignment
+  problem. These reviews significantly take 12 days longer to approve a
+  code change. A code-reviewer recommendation tool is necessary in
+  distributed software development to speed up a code review process.''
+\item
+  \emph{Does RevFinder accurately recommend code-reviewers?} ``RevFinder
+  correctly recommended 79\% of reviews with a top-10 recommendation.
+  RevFinder is 4 times more accurate than ReviewBot. This indicates that
+  leveraging a similarity of previously reviewed file path can
+  accurately recommend code-reviewers.''
+\item
+  \emph{Does RevFinder provide better ranking of recommended
+  code-reviewers?} ``RevFinder recommended the correct code-reviewers
+  with a median rank of 4. The code-reviewers ranking of RevFinder is 3
+  times better than that of ReviewBot, indicating that RevFinder
+  provides a better ranking of correct code-reviewers.''
+\end{itemize}
+
+For answering \textbf{RQ2}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Tools}: Gerrit
+\item
+  \emph{Company/Organization}: Google (Android), OpenStack, Qt, The
+  Document Foundation (LibreOffice)
+\item
+  \emph{Evaluation}: N/A
+\end{itemize}
+
+For answering \textbf{RQ3}:
+
+\textbf{Future research challenges}:
+
+Researching how RevFinder works in practice, in terms of how effectively
+and practically it helps developers in recommending code-reviewers, when
+deployed in a live development environment.
+
+\subsubsection{Revisiting code ownership and its relationship with
+software quality in the scope of modern code
+review}\label{revisiting-code-ownership-and-its-relationship-with-software-quality-in-the-scope-of-modern-code-review}
+
+Reference: {[}\protect\hyperlink{ref-thongtanunam2016revisiting}{179}{]}
+
+\textbf{Summary}:
+
+This paper researches the effect code reviews have on code ownership.
+This question is answered by looking at two open-source projects. It was
+found that a lot of contributors do not submit code changes for a
+specific ticket, but still do quite some reviewing. It was also found
+that code that contains post-release errors has often been reviewed or
+authored by people who neither author or review often.
+
+For answering \textbf{RQ1}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Sub-topic}: code ownership
+\item
+  \emph{Research method}: empirical; quantitative
+\item
+  \emph{Tools}: R; Custom
+\item
+  \emph{Datasets}: Review dataset from Hamasaki et al.
+  {[}\protect\hyperlink{ref-hamasaki2013does}{78}{]}. Code dataset from
+  the Qt system from McIntosh et al.
+  {[}\protect\hyperlink{ref-mcintosh2014impact}{129}{]}. Ammended with
+  custom datasets for Qt and OpenStack.
+\end{itemize}
+
+\textbf{Research questions and answers}:
+
+\begin{itemize}
+\item
+  \emph{How do code authoring and reviewing contributions differ?} ``The
+  developers who only contribute to a module by reviewing code changes
+  account for the largest set of contributors to that module. Moreover,
+  18\%-50\% of these review-only developers are documented core
+  developers of the studied systems, suggesting that code ownership
+  heuristics that only consider authorship activity are missing the
+  activity of these major contributors.''
+\item
+  \emph{Should code review activity be used to refine traditional code
+  ownership heuristics?} ``Many minor authors are major reviewers who
+  actually make large contributions to the evolution of modules by
+  reviewing code changes. Code review activity can be used to refine
+  traditional code ownership heuristics to more accurately identify the
+  defect-prone modules.''
+\item
+  \emph{Is there a relationship between review-specific and review-aware
+  code ownership heuristics and defect-proneness?} ``Even when we
+  control for several confounding factors, the proportion of developers
+  in the minor author \& minor reviewer category shares a strong
+  relationship with defectproneness. Indeed, modules with a larger
+  proportion of developers without authorship or reviewing expertise are
+  more likely to be defect-prone.''
+\end{itemize}
+
+For answering \textbf{RQ2}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Tools}: Gerrit
+\item
+  \emph{Company/Organization}: The Qt, OpenStack, VTK and ITK projects
+\item
+  \emph{Evaluation}: N/A
+\end{itemize}
+
+\subsubsection{Review participation in modern code
+review}\label{review-participation-in-modern-code-review}
+
+Reference: {[}\protect\hyperlink{ref-thongtanunam2017review}{178}{]}
+
+\textbf{Summary} This paper discusses the factors that influence review
+participation in code review. Previous studies identified that review
+participation influences the code review process significantly, but did
+not study the factors that actually influence review participation.
+
+It was most importantly found that ``(\ldots{}) the review participation
+history, the description length, the number of days since the last
+modification of files, the past involvement of an author, and the past
+involvement of reviewers share a strong relationship with the likelihood
+that a patch will suffer from poor review participation.''
+
+For answering \textbf{RQ1}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Sub-topic}: review participation
+\item
+  \emph{Research method}: empirical; quantitative
+\item
+  \emph{Tools}: N/A
+\item
+  \emph{Datasets}: Review data for the Android, Qt and OpenStack
+  projects
+\end{itemize}
+
+\textbf{Research questions and answers}:
+
+\begin{itemize}
+\item
+  \emph{What patch characteristics share a relationship with the
+  likelihood of a patch not being selected by reviewers?} ``We find that
+  the number of reviewers of prior patches, the number of days since the
+  last modification of the patched files share a strong increasing
+  relationship with the likelihood that a patch will have at least one
+  reviewer. The description length is also a strong indicator of a patch
+  that is likely to not be selected by reviewers.''
+\item
+  \emph{What patch characteristics share a relationship with the
+  likelihood of a patch not being discussed?} ``We find that the
+  description length, churn, and the discussion length of prior patches
+  share an increasing relationship with the likelihood that a patch will
+  be discussed. We also find that the past involvement of reviewers
+  shares an increasing relationship with the likelihood. On the other
+  hand, the past involvement of an author shares an inverse relationship
+  with the likelihood.''
+\item
+  \emph{What patch characteristics share a relationship with the
+  likelihood of a patch receiving slow initial feedback?} ``We find that
+  the feedback delay of prior patches shares a strong relationship with
+  the likelihood that a patch will receive slow initial feedback.
+  Furthermore, a patch is likely to receive slow initial feedback if its
+  purpose is to introduces new features.''
+\end{itemize}
+
+For answering \textbf{RQ2}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Tools}: Gerrit
+\item
+  \emph{Company/Organization}: Android, Qt and OpenStack
+\item
+  \emph{Evaluation}: N/A
+\end{itemize}
+
+For answering \textbf{RQ3}:
+
+\textbf{Future research challenges}:
+
+The paper notes that it assumes that the review process is the same for
+a whole project, even for larger projects. Future work should examine
+whether there are differences in review processes across subsystems.
+
+\subsubsection{Mining the Modern Code Review Repositories: A Dataset of
+People, Process and
+Product}\label{mining-the-modern-code-review-repositories-a-dataset-of-people-process-and-product}
+
+Reference: {[}\protect\hyperlink{ref-yang2016mining}{192}{]}
+
+\textbf{Summary}:
+
+This paper introduces a dataset that has been systematically collected
+from review data from several projects. The subject projects are
+OpenStack, LibreOffice, AOSP, Qt and Eclipse. The dataset is made public
+for the purpose of doing further research using it. Also, tools may be
+tested on the data in the dataset, in order to have one benchmark
+dataset to compare different tools.
+
+For answering \textbf{RQ1}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Sub-topic}: tools; dataset
+\item
+  \emph{Research method}: N/A
+\item
+  \emph{Tools}: N/A
+\item
+  \emph{Datasets}: Review data from the OpenStack, LibreOffice, AOSP, Qt
+  and Eclipse projects
+\end{itemize}
+
+\textbf{Research questions and answers}: N/A
+
+For answering \textbf{RQ2}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Tools}: Gerrit
+\item
+  \emph{Company/Organization}: OpenStack, LibreOffice, AOSP, Qt, Eclipse
+\item
+  \emph{Evaluation}: N/A
+\end{itemize}
+
+For answering \textbf{RQ3}:
+
+\textbf{Future research challenges}:
+
+Research using the dataset that has been created, and tests of tools on
+the dataset.
+
+\subsubsection{Automatically recommending peer reviewers in modern code
+review}\label{automatically-recommending-peer-reviewers-in-modern-code-review}
+
+Reference: {[}\protect\hyperlink{ref-zanjani2016automatically}{195}{]}
+
+\textbf{Summary}:
+
+This paper introduces \emph{cHRev}, a reviewer recommendation approach
+that, according to the paper, works better in most circumstances than
+\emph{RevFinder} introduces by Thongtanunam et al.
+{[}\protect\hyperlink{ref-thongtanunam2015should}{180}{]}. It recommends
+reviewers based on their previous review activity. For this it notably
+uses the frequency of reviews for a specific part of the system and also
+how recent the reviewing activity was.
+
+For answering \textbf{RQ1}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Sub-topic}: reviewer recomendation
+\item
+  \emph{Research method}: quantitative; empirical
+\item
+  \emph{Tools}: Custom
+\item
+  \emph{Datasets}: Reviewing data for Mylyn, Eclipse, Android, and MS
+  Office
+\end{itemize}
+
+\textbf{Research questions and answers}:
+
+\begin{itemize}
+\item
+  \emph{What is the accuracy of cHRev in recommending reviewers on real
+  software systems across closed and open source projects?} ``cHRev
+  makes accurate reviewer recommendations in terms of precision and
+  recall. On average, less than two recommendations are needed to find
+  the first correct reviewer in both closed and open source systems.''
+\item
+  \emph{How do the accuracies of cHRev (trained from the code review
+  history), REVFINDER (also, trained from the code review history,
+  albeit differently), xFinder (trained from the commit history), and
+  RevCom (trained from a combination of the code review and commit
+  histories) compare in recommending code reviewers?} ``cHRev performs
+  much better than REVFINDER which is based on reviewers of files with
+  similar names and paths and xFinder which relies on source code
+  repository data, and cHRev is statistically equivalent to RevCom which
+  requires both past reviews and commits.''
+\end{itemize}
+
+For answering \textbf{RQ2}:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Tools}: Gerrit; CodeFlow
+\item
+  \emph{Company/Organization}: CodeFlow by Microsoft; Gerrit by the
+  other three projects
+\item
+  \emph{Evaluation}: N/A
+\end{itemize}
+
+For answering \textbf{RQ3}:
+
+\textbf{Future research challenges}:
+
+The authors plan to include textual analysis of review comments and
+additional measures of reviewers' contributions and impact in their
+approach.
+
+\subsection{Excluded papers}\label{excluded-papers}
+
+The following papers have been excluded from the survey. These papers
+are candidates, but have not been added to the final survey for the
+stated reason.
+
+\begin{itemize}
+\tightlist
+\item
+  {[}\protect\hyperlink{ref-cohen2010modern}{45}{]}: This book is not
+  accessible via the TU Delft subscription of Safari Books Online, and
+  hence we could not read it to include it in the survey.
+\item
+  {[}\protect\hyperlink{ref-mcintosh2016empirical}{128}{]}: This is an
+  extended and improved version of a paper already included in the
+  survey. Because of time constraints we will not reconsider this
+  version.
+\item
+  {[}\protect\hyperlink{ref-fagan2002design}{66}{]}: This paper does not
+  conform to our exclusion criterion saying that it should be published
+  in 2008 or later.
+\end{itemize}
+
+\subsection{Table 1}\label{table-1}
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+\begin{minipage}[b]{0.63\columnwidth}\raggedright\strut
+Title\strut
+\end{minipage} & \begin{minipage}[b]{0.03\columnwidth}\raggedright\strut
+Year\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright\strut
+Reference\strut
+\end{minipage} & \begin{minipage}[b]{0.09\columnwidth}\raggedright\strut
+In survey? (Y/N)\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.63\columnwidth}\raggedright\strut
+Expectations, outcomes, and challenges of modern code review\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+2013\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+{[}\protect\hyperlink{ref-bacchelli2013expectations}{11}{]}\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Y\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.63\columnwidth}\raggedright\strut
+Modern code reviews in open-source projects: Which problems do they
+fix?\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+2014\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+{[}\protect\hyperlink{ref-beller2014modern}{21}{]}\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Y\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.63\columnwidth}\raggedright\strut
+Lessons learned from building and deploying a code review analytics
+platform\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+2015\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+{[}\protect\hyperlink{ref-bird2015lessons}{29}{]}\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Y\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.63\columnwidth}\raggedright\strut
+An exploratory study of the pull-based software development model\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+2014\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+{[}\protect\hyperlink{ref-gousios2014exploratory}{74}{]}\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Y\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.63\columnwidth}\raggedright\strut
+The impact of code review coverage and code review participation on
+software quality: A case study of the qt, vtk, and itk projects\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+2014\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+{[}\protect\hyperlink{ref-mcintosh2014impact}{129}{]}\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Y\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\subsection{Table 2}\label{table-2}
+
+\begin{longtable}[]{@{}llllll@{}}
+\toprule
+\begin{minipage}[b]{0.47\columnwidth}\raggedright\strut
+Title\strut
+\end{minipage} & \begin{minipage}[b]{0.03\columnwidth}\raggedright\strut
+Year\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedright\strut
+Reference\strut
+\end{minipage} & \begin{minipage}[b]{0.06\columnwidth}\raggedright\strut
+Search date\strut
+\end{minipage} & \begin{minipage}[b]{0.07\columnwidth}\raggedright\strut
+Result number\strut
+\end{minipage} & \begin{minipage}[b]{0.08\columnwidth}\raggedright\strut
+In survey? (Y/N)\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+Investigating technical and non-technical factors influencing modern
+code review\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+2016\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
+{[}\protect\hyperlink{ref-baysal2016investigating}{18}{]}\strut
+\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
+29-09-2018\strut
+\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright\strut
+9\strut
+\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
+Y\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+Modern code review\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+2010\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
+{[}\protect\hyperlink{ref-cohen2010modern}{45}{]}\strut
+\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
+25-09-2018\strut
+\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright\strut
+1\strut
+\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
+N\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+An empirical study of the impact of modern code review practices on
+software quality\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+2016\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
+{[}\protect\hyperlink{ref-mcintosh2016empirical}{128}{]}\strut
+\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
+25-09-2018\strut
+\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright\strut
+4\strut
+\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
+N\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+A Study of the Quality-Impacting Practices of Modern Code Review at Sony
+Mobile\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+2016\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
+{[}\protect\hyperlink{ref-shimagaki2016study}{168}{]}\strut
+\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
+29-09-2018\strut
+\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright\strut
+11\strut
+\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
+Y\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+Reda: A web-based visualization tool for analyzing modern code review
+dataset\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+2014\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
+{[}\protect\hyperlink{ref-thongtanunam2014reda}{181}{]}\strut
+\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
+29-09-2018\strut
+\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright\strut
+8\strut
+\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
+Y\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+Who should review my code? A file location-based code-reviewer
+recommendation approach for modern code review\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+2015\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
+{[}\protect\hyperlink{ref-thongtanunam2015should}{180}{]}\strut
+\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
+29-09-2018\strut
+\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright\strut
+5\strut
+\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
+Y\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+Revisiting code ownership and its relationship with software quality in
+the scope of modern code review\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+2016\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
+{[}\protect\hyperlink{ref-thongtanunam2016revisiting}{179}{]}\strut
+\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
+29-09-2018\strut
+\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright\strut
+6\strut
+\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
+Y\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+Review participation in modern code review\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+2017\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
+{[}\protect\hyperlink{ref-thongtanunam2017review}{178}{]}\strut
+\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
+29-09-2018\strut
+\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright\strut
+10\strut
+\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
+Y\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+Mining the Modern Code Review Repositories: A Dataset of People, Process
+and Product\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+2016\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
+{[}\protect\hyperlink{ref-yang2016mining}{192}{]}\strut
+\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
+29-09-2018\strut
+\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright\strut
+12\strut
+\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
+Y\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+Automatically recommending peer reviewers in modern code review\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+2016\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
+{[}\protect\hyperlink{ref-zanjani2016automatically}{195}{]}\strut
+\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
+29-09-2018\strut
+\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright\strut
+7\strut
+\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
+Y\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\subsection{Table 3}\label{table-3}
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+\begin{minipage}[b]{0.56\columnwidth}\raggedright\strut
+Title\strut
+\end{minipage} & \begin{minipage}[b]{0.04\columnwidth}\raggedright\strut
+Year\strut
+\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedright\strut
+Reference\strut
+\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright\strut
+In survey? (Y/N)\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.56\columnwidth}\raggedright\strut
+A Faceted Classification Scheme for Change-Based Industrial Code Review
+Processes\strut
+\end{minipage} & \begin{minipage}[t]{0.04\columnwidth}\raggedright\strut
+2016\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright\strut
+{[}\protect\hyperlink{ref-baum2016faceted}{16}{]}\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright\strut
+Y\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.56\columnwidth}\raggedright\strut
+The Choice of Code Review Process: A Survey on the State of the
+Practice\strut
+\end{minipage} & \begin{minipage}[t]{0.04\columnwidth}\raggedright\strut
+2017\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright\strut
+{[}\protect\hyperlink{ref-baum2017choice}{15}{]}\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright\strut
+Y\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.56\columnwidth}\raggedright\strut
+The influence of non-technical factors on code review\strut
+\end{minipage} & \begin{minipage}[t]{0.04\columnwidth}\raggedright\strut
+2013\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright\strut
+{[}\protect\hyperlink{ref-baysal2013influence}{19}{]}\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright\strut
+Y\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.56\columnwidth}\raggedright\strut
+Impact of peer code review on peer impression formation: A survey\strut
+\end{minipage} & \begin{minipage}[t]{0.04\columnwidth}\raggedright\strut
+2013\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright\strut
+{[}\protect\hyperlink{ref-bosu2013impact}{33}{]}\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright\strut
+N\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.56\columnwidth}\raggedright\strut
+Software Reviews: The State of the Practice\strut
+\end{minipage} & \begin{minipage}[t]{0.04\columnwidth}\raggedright\strut
+2003\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright\strut
+{[}\protect\hyperlink{ref-ciolkowski2003software}{42}{]}\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright\strut
+N\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.56\columnwidth}\raggedright\strut
+Code reviews do not find bugs: how the current code review best practice
+slows us down\strut
+\end{minipage} & \begin{minipage}[t]{0.04\columnwidth}\raggedright\strut
+2015\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright\strut
+{[}\protect\hyperlink{ref-czerwonka2015code}{52}{]}\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright\strut
+Y\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
 
 \hypertarget{refs}{}
 \hypertarget{ref-Abate2011}{}
