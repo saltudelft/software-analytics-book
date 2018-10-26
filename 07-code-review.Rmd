@@ -6,7 +6,7 @@ author, in order to improve code quality and reduce the amount of software defec
 software engineering practice, code review is applied in industry and many open-source projects.
 
 Concerning research, code review has become a popular topic recently according to the number of
-published papers. As noted in [@bacchelli2013expectations], the concept of modern code review was
+published papers. As noted in reference [@bacchelli2013expectations], the concept of modern code review was
 proposed in 2013. Since then, many researchers not only explored the modern code review process and
 its impact on software quality, but also pointed out the possible methods to improve the
 application of code review.
@@ -23,7 +23,7 @@ The goal of the review is to summarize the state of the art and identify future 
 code review area. The research questions are as follows:
 
 * **RQ1**: *What is the state of the art in the research area of code review?* This question
-focusses on topics that are researched often, the results of that research, and research methods,
+focuses on topics that are researched often, the results of that research, and research methods,
 tools and datasets that are used.
 * **RQ2**: *What is the current state of practice in the area of code review?* This concerns tools
 and techniques that are developed and used in practice, by open source projects but also by
@@ -32,7 +32,7 @@ commercial companies.
 challenges and challenges for use in practice.
 
 ### Search process
-The search process consists of the following:
+The search process consists of the following steps:
 
 * A Google Scholar search using the search query *"modern code review" OR "modern code reviews"*.
 The results list will be sorted by decreasing relevance by Google Scholar and will be considered by
@@ -41,7 +41,7 @@ us in order.
 tools. For this search queries *code review* and *code review tools* are used, respectively. The
 result list will be considered in order.
 * All papers in the initial seed provided by the course instructor will be considered.
-* All papers referenced by already collected papers will be considered. We exlude papers found
+* All papers referenced by already collected papers will be considered. We exude papers found
 using this rule of the search process. In other words, we do not apply this rule recursively.
 
 From now on, elements of all four categories listed above in general will be called *resource*.
@@ -183,7 +183,7 @@ found that code improvement is the most prevalent result of code reviews, follow
 understanding among the development team and social communication within the development team. They
 note that finding errors is not a prevalent result of doing code reviews, as opposed to what most
 people participating in it expect from it. In numbers they find that 14% of code review comments
-were about finding defects, while as much as 44% of the developers inidcates finding defects as the
+were about finding defects, while as much as 44% of the developers indicates finding defects as the
 main motivation for doing code reviews.
 
 A bit to the contrary, McIntosh et al. [@mcintosh2014impact] find that low participation in code
@@ -191,7 +191,7 @@ reviews does lead to a significant increase in post-release defects, which sugge
 which developers show much activity actually help in finding defects. They additionally find that
 review coverage, the share of code that has been reviewed, also influences the amount of
 post-release defects, though not as much as review participation. Shimagaki et al.
-[@shimagaki2016study] performed a replication at Sony Mobile study of the just mentioned study by
+[@shimagaki2016study] performed a replication at Sony Mobile study of the aforementioned study by
 McIntosh et al. Their results were the same for review coverage, and partly for review
 participation. Contrary to McIntosh et al., they found that the reviewing time and discussion
 length metrics for review participation did not contribute significantly to the amount of
@@ -282,7 +282,7 @@ and ticket system/bug tracker. For others, lots of open source tools were used o
 Gerrit, Crucible, Stash, GitHub pull requests, Upsource, Collaborator, ReviewClipse and CodeFlow
 [@baum2016faceted].
 
-Concluding, based on different enterprises' expectation and requirments, they apply various methods
+Concluding, based on different enterprises' expectation and requirements, they apply various methods
 for code review. Additionally, we also find different tools are not very comparable as research
 mentions these are tools for different teams, projects and metrics. It is hard to say which tool is
 generally better than others. We found that code review is commonly applied in industries
@@ -337,7 +337,7 @@ Future research can focus on this and figure out whether the undocumented change
 difference.
 
 The authors of reference [@gousios2014exploratory] propose to research on the effect of the
-democratization of the develoment process, which
+democratization of the development process, which
 occurs for example through the use of pull requests. Democratization could for example lead to a
 substantially stronger commons ecosystem.
   
@@ -360,7 +360,7 @@ review tasks, which mainly concerns low-level tasks, like checking boundary cond
 common mistakes. 
 
 Similarly, authors of reference [@bird2015lessons] suggest to explore an automatic way to classify
-and assess the usefulness of comments. This was specifically requested by an interviewees's and is
+and assess the usefulness of comments. This was specifically requested by an interviewee's and is
 still an open challenge regarding CodeFlow, an in-house code review tool. They also propose to
 research on methods to automatically recommend reviewers for changes in the system.
 
@@ -381,7 +381,7 @@ MCR process.
 
 ## Conclusions
 While answering **RQ1**, we found that doing code reviews can improve social aspects and improve
-code rubustness against errors. Additionally, finding a reviewer and the experience of a reviewer
+code robustness against errors. Additionally, finding a reviewer and the experience of a reviewer
 significantly influence the code review process, along with technical and non-technical aspects of
 the submitter and patch, like experience or patch description length. On another note, most changes
 done during code review are done for maintainability, not for resolving errors, and often the
@@ -389,7 +389,7 @@ number of comments that are done during review are small. Last, we discussed two
 recommending reviewers that aim to reduce the time to find appropriate reviewers.
 
 As for **RQ2**, we noticed that tools like Gerrit, Crucible, Stash, GitHub pull requests, Upsource,
-Collaborator, ReviewClipse and CodeFlow are commonly used in practice. Most reseach proves that
+Collaborator, ReviewClipse and CodeFlow are commonly used in practice. Most research proves that
 code review helps share knowledge and develop defect-free software. It is not very reasonable to
 rank various tools, as code review itself is much more important for quality of software compared
 to the choice of a specific tool.
