@@ -37,6 +37,18 @@ specializing in the Software Technology track.
 Zina Wang is a Master Computer Science student at TU Delft, 
 specializing in the Data Science track.
 
+[Maarten Sijm](https://www.linkedin.com/in/mpsijm/)
+is a Master Computer Science student at TU Delft,
+specializing in the Software Technology track.
+
+[Nels Numan](https://www.linkedin.com/in/nsalminen/)
+is a Master Computer Science student at TU Delft,
+specializing in the Software Technology track.
+
+[Jesse Tilro](https://www.linkedin.com/in/jesse-tilro/)
+is a Master Computer Science student at TU Delft,
+specializing in the Software Technology track.
+
 ## Editors {-}
 
 The following people edited the book and oversaw its production.
