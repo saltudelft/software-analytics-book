@@ -9,6 +9,9 @@ to this book.
 Universitat Politècnica de Catalunya, specializing in the Software 
 Engineering track.
 
+[Nicolas Chaves de Plaza](https://www.linkedin.com/in/nicolaschavesdeplaza/) is a Computer Science student at TU Delft,
+specializing in the Data Science track.
+
 [Andrei Simion-Constantinescu](https://www.linkedin.com/in/andrei-simion-constantinescu/) 
 is a Master Computer Science student at TU Delft, specializing in the Data Science & 
 Technology track.
@@ -33,6 +36,10 @@ specializing in the Software Technology track.
 **Gerben Oolbekkink** is a Master Computer Science student at TU Delft, 
 specializing in the Software Technology track.
 
+[Gijs Reichert](https://www.linkedin.com/in/gijs-reichert/)
+is a Master Computer Science student at TU Delft,
+specializing in the Software Technology track.
+
 [Maarten Sijm](https://www.linkedin.com/in/mpsijm/)
 is a Master Computer Science student at TU Delft,
 specializing in the Software Technology track.
@@ -40,6 +47,10 @@ specializing in the Software Technology track.
 [Jesse Tilro](https://www.linkedin.com/in/jesse-tilro/)
 is a Master Computer Science student at TU Delft,
 specializing in the Software Technology track.
+
+**Michal Vácha** is a Master Computer Science student at TU Delft on
+exchange from the Czech Technical University in Prague specializing 
+in the Cyber Security track.
 
 **Joost Wooning** is a Master Computer Science student at TU Delft,
 specializing in the Software Technology track.
