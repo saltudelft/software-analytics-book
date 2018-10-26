@@ -66,3 +66,5 @@ the ecosystem analytics lecture of the IN4334 course.
 
 [Maria Kechagia](https://mkechagia.github.io/) is a post doc working on 
 crash analytics and program analysis at TU Delft and co-taught IN4334.
+
+[Ayushi Rastogi](https://ayushirastogi.github.io/) is a post doc working on software analytics in TU Delft. She delivered lectures on process analytics and release engineering analytics in IN4334 course. 
