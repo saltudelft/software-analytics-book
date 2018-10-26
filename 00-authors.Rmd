@@ -1,47 +1,39 @@
 # Contributors {-}
 
+The following people, listed here in alphabetic order, contibuted
+to this book.
+
 ## Authors {-}
 
-The following people contributed content to this book.
-
-Henk Grent is a Master Computer Science student at TU Delft, specializing in the Data Science track.
-
-Mark Haakman is a Master Computer Science student at TU Delft, specializing in the Data Science track.
-
-Frenk van Mil is a Master Computer Science student at TU Delft, specializing in the Data Science track.
-
-[Max van Deursen](http://maxvandeursen.nl) is a Master Computer
-Science student at TU Delft, specializing in the Software 
-Technology track.
-
-Gerben Oolbekkink is a Master Computer Science student at TU Delft, 
-specializing in the Software Technology track.
+**Guillem Bonet** is a Computer Science student at TU Delft on exchange from 
+Universitat Politècnica de Catalunya, specializing in the Software 
+Engineering track.
 
 [Andrei Simion-Constantinescu](https://www.linkedin.com/in/andrei-simion-constantinescu/) 
 is a Master Computer Science student at TU Delft, specializing in the Data Science & 
 Technology track.
 
-Joost Wooning is a Master Computer Science student at TU Delft,
+[Max van Deursen](http://maxvandeursen.nl) is a Master Computer
+Science student at TU Delft, specializing in the Software 
+Technology track.
+
+**Björn Evers** is a Master Computer Science student at TU Delft, 
 specializing in the Software Technology track.
 
-Guillem Bonet is a Computer Science student at TU Delft on exchange from 
-Universitat Politècnica de Catalunya, specializing in the Software 
-Engineering track.
+**Henk Grent** is a Master Computer Science student at TU Delft, specializing in the Data Science track.
 
-Zequn Zhou is a Master Computer Science student at TU Delft, 
-specializing in the Data Science track.
+**Mark Haakman** is a Master Computer Science student at TU Delft, specializing in the Data Science track.
 
-Björn Evers is a Master Computer Science student at TU Delft, 
-specializing in the Software Technology track.
+**Frenk van Mil** is a Master Computer Science student at TU Delft, specializing in the Data Science track.
 
-Zina Wang is a Master Computer Science student at TU Delft, 
-specializing in the Data Science track.
-
-[Maarten Sijm](https://www.linkedin.com/in/mpsijm/)
+[Nels Numan](https://www.linkedin.com/in/nsalminen/)
 is a Master Computer Science student at TU Delft,
 specializing in the Software Technology track.
 
-[Nels Numan](https://www.linkedin.com/in/nsalminen/)
+**Gerben Oolbekkink** is a Master Computer Science student at TU Delft, 
+specializing in the Software Technology track.
+
+[Maarten Sijm](https://www.linkedin.com/in/mpsijm/)
 is a Master Computer Science student at TU Delft,
 specializing in the Software Technology track.
 
@@ -49,16 +41,26 @@ specializing in the Software Technology track.
 is a Master Computer Science student at TU Delft,
 specializing in the Software Technology track.
 
+**Joost Wooning** is a Master Computer Science student at TU Delft,
+specializing in the Software Technology track.
+
+**Zina Wang** is a Master Computer Science student at TU Delft, 
+specializing in the Data Science track.
+
+**Zequn Zhou** is a Master Computer Science student at TU Delft, 
+specializing in the Data Science track.
+
+
 ## Editors {-}
 
 The following people edited the book and oversaw its production.
 
+[Moritz Beller](http://inventitech.com) is a post doc working on 
+software analytics at TU Delft and co-taught IN4334.
+
 [Georgios Gousios](http://gousios.org) is assistant professor of
 software analytics at TU Delft and the main teacher of the IN4334
 course.
-
-[Moritz Beller](http://inventitech.com) is a post doc working on 
-software analytics at TU Delft and co-taught IN4334.
 
 [Joseph Hejderup](https://jhejderup.github.io/) is a PhD student
 working on analytics for package managers at TU Delft and taught
@@ -67,4 +69,6 @@ the ecosystem analytics lecture of the IN4334 course.
 [Maria Kechagia](https://mkechagia.github.io/) is a post doc working on 
 crash analytics and program analysis at TU Delft and co-taught IN4334.
 
-[Ayushi Rastogi](https://ayushirastogi.github.io/) is a post doc working on software analytics in TU Delft. She delivered lectures on process analytics and release engineering analytics in IN4334 course. 
+[Ayushi Rastogi](https://ayushirastogi.github.io/) is a post doc working on 
+software analytics in TU Delft. She delivered lectures on process analytics
+and release engineering analytics in IN4334 course. 
