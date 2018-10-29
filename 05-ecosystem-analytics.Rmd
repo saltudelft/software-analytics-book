@@ -29,8 +29,8 @@ projects form a global graph-like structure known as a _software ecosystem_, whe
 software projects and edges represent the dependency between them. 
 
 As the interdependence between software projects in a shared environment encompasses more than the
-code that they depend on; several attempts have been made to define the phenomena around _software
-ecosystem_: Messerschmitt and Szyperski @Messerschmitt2003 state that a _software ecosystem_ is
+code that they depend on; several attempts have been made to define the phenomena around software
+ecosystems: Messerschmitt and Szyperski @Messerschmitt2003 state that a software ecosystem is
 "a collection of software products that have some given degree of symbiotic relationships". On a
 similar line, Lungu @Lungu2009 defines a context to the symbiotic relationship between projects: "A
 software ecosystem is a collection of software projects which are developed and co-evolve in the
@@ -38,7 +38,7 @@ same environment." An overlooked element is the social-technical relationships b
 projects, Mens et al. @Mens2013 incorporate this aspect to Lungu's @Lungu2009 definition with the
 following extension: "by explicitly considering the communities involved (e.g. user and developer
 communities) as being part of the software ecosystem". Stallman @Stallman2002 opposes the use of
-_software ecosystem_ to describe interdependent networks of software projects: "It is inadvisable
+software ecosystem to describe interdependent networks of software projects: "It is inadvisable
 to describe the free software community, or any human community, as an ecosystem, because that word
 implies the absence of ethical judgment." Although software ecosystems are subject to ethical
 judgments, this is not a limiting factor to capture interconnected software projects as an
@@ -60,7 +60,7 @@ Through the lens of a literature survey, this chapter reviews and consolidates r
 ecosystem analytics from both a theoretical and practical standpoint. By synthesizing recent
 studies, practices, open challenges and applications of ecosystem analytics, we aim to equip the
 reader with a comprehensive overview and recommendations for future research in this field. Thus,
-we have formulate the three research questions:
+we have formulate the following three research questions:
 
 * **RQ1**: What is the current state of the art in software analytics for ecosystem analytics?
 * **RQ2**: What are the practical implications of the state of the art?
