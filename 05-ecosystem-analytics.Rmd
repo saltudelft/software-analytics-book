@@ -269,49 +269,44 @@ effective. These improvements are highlighted by answering the last research que
 
 ### RQ3: What are the open challenges in ecosystem analytics, for which future research is required?
 <!--List of challenges, research questions and an aggregated set of open research items -->
-This research question gives insight in the current open challenges in the field of ecosystem
+This research question gives insight into the current open challenges in the field of ecosystem
 analytics. It focuses on the challenges described in the studied papers.
 
 The most common open challenge across almost all papers is the generalization of results. Most of
-the studied papers only use a single ecosystem on which they base their results. This in turn
-means that it is unsure whether these results hold for other ecosystems as well in a similar
-fashion. For example, Claes et al. @Claes2015 state that a possibility for future work is to
-investigate to what extent the findings can be reused in the framework of other package-based
-software distributions.
+the studied papers use a single ecosystem on which they base their results on. This, in turn, means
+that it is unclear whether the results hold for other ecosystems. For example, Claes et al.
+@Claes2015 state that a possibility for future work is to investigate to what extent findings are
+transferable between package-based software distributions.
 
-However, even if multiple ecosystems are researched within one paper, it shows to still not be
-enough to provide a generalization for each ecosystem. Decan, Mens, and Grosjean @Decan2018 state,
-after researching dependency network evolution for seven ecosystems, that they do not make any
-claims that their results can be generalized beyond the main package managers for specific
-languages. This is because Decan, Mens, and Grosjean @Decan2018 do not expect similar results for
-networks such as WordPress, as these packages tend to be more high-level (e.g. used by end users
-instead of reused by other packages). This is shown as well in the different results obtained by
-Bogart et al. @Bogart2016, which shows that values differ per ecosystem. This overall shows that
-there is a lot of space for future research to be done in generalizing research beyond the already
-researched ecosystems.
+However, Decan, Mens, and Grosjean @Decan2018 state, after researching dependency network evolution
+for seven ecosystems, that they do not make any claims that their results can be generalized beyond
+the main package managers for specific languages. This is because Decan, Mens, and Grosjean
+@Decan2018 do not expect similar results for networks such as WordPress, as these packages tend to
+be more high-level (e.g. used by end users instead of reused by other packages). This is shown as
+well in the different results obtained by Bogart et al. @Bogart2016, which shows that values differ
+per ecosystem. Overall, this shows that there is a lot of space for future research to be done in
+generalizing research beyond the already researched ecosystems.
 
 Another persistent open challenge is the ability to determine the health of an ecosystem. Although
-Jansen @Jansen2014 has provided OSEHO, "a framework that is used to establish the health of an
-open source ecosystem", Jansen @Jansen2014 notes that "there is surprisingly little literature
-available about open source ecosystem health". Kikas et al. @Kikas2017 agree, stating that a
-general goal is to provide analytics to maintainers about the overall ecosystem trends.
+Jansen @Jansen2014 has provided OSEHO, "a framework that is used to establish the health of an open
+source ecosystem", Jansen @Jansen2014 notes that "there is surprisingly little literature available
+about open source ecosystem health". Kikas et al. @Kikas2017 agree, stating that a general goal
+should be to provide analytics for maintainers about the overall ecosystem trends.
 
-This challenge is related to determining a systems health. Kikas et al. @Kikas2017 state that "a
-measure quantifying dependency health in an ecosystem should be developed". Moreover, according to
-Jansen @Jansen2014, determining the health of a system from an ecosystem perspective is required
-to determine which systems to use.
+Furthermore, this challenge is related to determining the health of a system. Kikas et al.
+@Kikas2017 state that "a measure quantifying dependency health in an ecosystem should be
+developed". Moreover, according to Jansen @Jansen2014, determining the health of a system from an
+ecosystem perspective is required to determine which systems to use. This problem also ties into
+developing mechanisms for assisting developers in the selection of packages as well. In particular,
+finding the best dependency, according to the functionality needs of the existing application.
+Abdalkareem et al. @Abdalkareem2017 state that helping developers find the best packages suiting
+their needs need to be addressed. Kikas et al. @Kikas2017 agree that another general goal is to
+provide maintainers with improved tooling to manage their dependencies.
 
-Because of this, this challenge ties into the assistance while selecting packages as well. This
-challenge is about selecting the best dependency, according to the functionality needs of the
-existing application. Abdalkareem et al. @Abdalkareem2017 state that helping developers find the
-best packages suiting their needs need to be addressed. Kikas et al. @Kikas2017 agree that another
-general goal is to provide maintainers with tools to manage their dependencies.
-
-However, whenever these dependencies are chosen, another open challenge is to assist maintainers
-to keep these dependencies up to date. In order to find out when dependencies have to be updated,
-metrics have to be defined. Bavota et al. @Bavota2014 state that their observations could be a
-starting point to build recommenders for supporting developers in complex dependency upgrade
-activity. Cox et al. @Cox2015 provide "a metric to aid stakeholders in deciding on whether the
-dependencies of a system should be updated". However, Cox et al. @Cox2015 state multiple
-refinements on this metric which could still be researched.
-
+However, whenever dependencies are chosen, another open challenge is to assist maintainers to keep
+dependencies up to date. In order to find out when dependencies should be updated, there is a need
+for developing new metrics. Bavota et al. @Bavota2014 state that their observations could be a
+starting point to build recommenders for supporting developers in complex dependency upgrades. Cox
+et al. @Cox2015 provide "a metric to aid stakeholders in deciding on whether the dependencies of a
+system should be updated". However, Cox et al. @Cox2015 also state multiple refinements on this
+metric which could still be researched.
