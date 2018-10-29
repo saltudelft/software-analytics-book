@@ -121,111 +121,103 @@ same selection strategy as for the digital search engine; we first read the titl
 with the abstract if it is not clear or relevant. The result is tabulated in Table 4.
 
 ## Answers
-In this section, an aggregation of information, found in the papers, is presented. Each subsection
-of this section focuses on one of the three research questions posed in Section 1.
+In this section, we answer our research questions by synthesizing information we found in the
+papers.
 
 ### RQ1: What is the current state of the art in software analytics for ecosystem analytics?
 <!-- Topics that are being explored, research methods, tools and datasets being used -->
-To answer this research question, we examine the explored topics in ecosystem analytics. Moreover,
-we summarize which research methods, tools and datasets are being used to explore this topics.
+To answer this research question, we explore topics in ecosystem analytics. For each explored
+topic, we then summarize which research methods, tools, and datasets are being used.
 
 #### Explored Topics
-The main topics we explored in ecosystem analytics are the usage of trivial packages, (breaking)
-changes in dependencies and their impacts, quality of dependencies and dependency networks.
+We discover the usage of trivial packages, the impact of (breaking) changes in dependencies,
+quality of dependencies and dependency networks to be strong area topics in ecosystem analytics.
 
-Trivial packages are a recurring topic in the area of software analytics, notably incidents
-like Left-pad, Schleuter @NPM2016, stress the possible impact trivial packages can have on a software ecosystem.
-Research in this topic explores the usage of trivial packages both quantitatively and qualitatively
-by analysing the usage of the trivial packages and the reasons why developers choose to use them
-respectively.
+Notable incidents like the Left-pad incident have sparked interest in studying trivial packages.
+Research on this topic explores the usage of trivial packages both quantitatively and qualitatively
+by analyzing the usage of the trivial packages and the reasons why developers choose to use them
+respectively.  Schleuter @NPM2016 stress that trivial packages can have a profound impact on
+software ecosystems.
 
-Breaking changes is a major topic researched by some papers. Much like trivial packages research
-is done both quantitatively and qualitatively in this topic. The impact of breaking changes and the
-way in which developers react to these changes are considered to be the notable problems in 
-this topic.
+Breaking changes is another popularly researched topic. Similar to trivial packages, researchers
+use both quantitatively and qualitatively methods. The impact of breaking changes and the way in
+which developers react to these changes makes it a very important topic.
 
-Establishing a metric for the health of an ecosystem dependency is also a heavily explored topic.
-Researchers are trying to find ways in which a metric can be used to establish the quality of
-dependencies.
+Developing metrics to measure the health of an ecosystem is another popular area. Researchers are
+experimenting with metrics to measure aspects such as the quality of dependencies.
 
-Dependency networks allow us to gain insight in the way in which ecosystems evolve over time.
+Dependency networks allow researchers to study gain insights into the evolution of software
+ecosystems over time.
 
-#### Used Research Methods
+#### Research Methods
 The studied papers cover a plethora of research methods. These methods can be divided into two
 categories: quantitative and qualitative.
 
-Many quantitative research papers analyse the data in a statistical manner, using software
-ecosystems as their data. The types of data depend heavily on the ecosystem used for analysis.
-Some papers go as far as using the source code of packages @Abdalkareem2017. While other
-research focusses on the meta-data of software ecosystems, such as dependency networks @Kikas2017.
-Another recurring research method is survival analysis, as used by @Decan2018, which can be used
-to estimate the survival rate of a population over time. In software engineering this has
-been successfully applied to open source projects.
+Many quantitative research papers analyze the data in a statistical manner, using software
+ecosystems as their data. The types of data depend heavily on the ecosystem used for analysis. Some
+papers go as far as using the source code of packages @Abdalkareem2017. While other research
+focusses on the meta-data of software ecosystems, such as dependency networks @Kikas2017. Another
+recurring research method is survival analysis, as used by @Decan2018, which can be used to
+estimate the survival rate of a population over time. In software engineering, this has been
+successfully applied to open source projects.
 
-Some qualitative research has been done in software ecosystems to gain a better understanding
-in to the behaviour of the interactions between developers and software ecosystems. Some
-papers solely rely on the results of qualitative research whereas some papers use both quantitative
-research and qualitative research to triangulate their findings.
+Qualitative research within software ecosystems aims to gain a better understanding of the interplay
+between developers and software ecosystems. Certain papers solely rely on the results of
+qualitative research whereas some papers use both quantitative research and qualitative research to
+triangulate their findings.
 
-#### Used Ecosystems
-As has been said above, the most common explored topic within the body of studied papers are
-topics relating to dependencies between different software projects. Therefore, it does make a lot
-of sense that the most common ecosystems used are those of package managers, since these package
-managers are central repositories from which the packages, as well as their dependencies, can
-easily be retrieved.
+#### Ecosystems
 
-The most common used ecosystem in the studied papers is _npm_[^5.5], as used by Abdalkareem et al.
-@Abdalkareem2017, Bogart et al. @Bogart2016, Decan, Mens, and Claes @Decan2017, Kikas et al.
-@Kikas2017, and Decan, Mens and Grosjean @Decan2018. There are a few reasons why this is the most
-common used ecosystem throughout the papers. Firstly, npm is the largest software registry,
-containing more than double of the next most populated package registry in 2016 @Linux2016.
-Moreover, npm is the package manager of JavaScript, which is the
-most used programming language according to a RedMonk survey @RedMonk2018. Kikas et al.
-@Kikas2017 explain that it is beneficial to use this ecosystem, because the majority of their
-packages are hosted on GitHub and Developers specify required packages in their project's
-dependency files. There are more ecosystems which have the same properties, such as RubyGems
-(Ruby) and Crates.io (Rust) @Kikas2017.
+As previously stated, studying dependencies between different software projects is one of the most
+common topics. Therefore, researchers primarily study package managers and their centralized
+repositories.
 
-However, these are not the only used ecosystems. Decan, Mens, and Grosjean @Decan2018 use the
-_libraries.io_ dataset for their research, which includes seven different packaging ecosystems:
-Cargo (rust), CPAN (Perl), CRAN (R), npm (JavaScript), NuGet (.NET), Packagist (PHP) and RubyGems
-(Ruby). Decan, Mens, and Grosjean @Decan2018 therefore study the most different ecosystems in one
-paper, relative to the papers studied in this survey.
+The most studied ecosystem is _npm_[^5.5], as used by Abdalkareem et al. @Abdalkareem2017, Bogart
+et al. @Bogart2016, Decan, Mens, and Claes @Decan2017, Kikas et al. @Kikas2017, and Decan, Mens and
+Grosjean @Decan2018. There are a few reasons why this a popularly studied ecosystem: npm is the
+largest software registry, containing more than double of the next most populated package registry
+in 2016 @Linux2016. Moreover, npm is the package manager of JavaScript, which is the most used
+programming language according to a RedMonk survey @RedMonk2018. Another compelling reason is that
+the majority of npm packages are openly developed and hosted on GitHub @Kikas2017. This is also the
+case for RubyGems (Ruby) and Crates.io (Rust) @Kikas2017.
 
-Apart from these datasets based on packages in package repositories, there are papers which use
-other datasets and therefore ecosystems as well. Bavota et al. @Bavota2014 research the Apache
-Community and therefore uses a dataset corresponding to the full Java subset of the Apache
-ecosystem. Cox et al. @Cox2015 instead use the dataset of the Apache Maven Project to validate his
-created metric. Claes et al. @Claes2015 research package incompatibilities and therefore uses a
-ten year period of the Debian i386 testing and stable distributions. Robbes, Lungu, and
-Röthlisberger @Robbes2012 opted for the Squeak/Pharo ecosystem, as they stated that this ecosystem
+Recently, Decan, Mens, and Grosjean @Decan2018 use a data service called _libraries.io_  which
+includes seven different packaging ecosystems: Cargo (rust), CPAN (Perl), CRAN (R), npm
+(JavaScript), NuGet (.NET), Packagist (PHP) and RubyGems (Ruby). Instead of manually scraping
+dependency data from a single ecosystem, researchers should take advantage of a data source that
+unifies multiple ecosystems in one data source, allowing researchers to study one problem over
+multiple ecosystems at once.
+
+Apart from package-based ecosystems, several papers study other ecosystems. Bavota et al.
+@Bavota2014 study the Apache ecosystem containing Java projects. For evaluating health metrics, Cox
+et al. @Cox2015 use Maven Central. Claes et al. @Claes2015 study ten years of package
+incompatibilities in testing and stable distributions of Debian i386. Robbes, Lungu, and
+Röthlisberger @Robbes2012 opted for the Squeak/Pharo ecosystem. They state that this ecosystem
 would provide support for answering their research questions.
 
 #### Main research findings
-Based on the findings of Abdalkareem et al. @Abdalkareem2017 trivial packages make up 16.8% of the
-NPM packages. Even though 10% of NPM uses trivial packages only 45% of these trivial packages have
-tests.
+Based on the findings of Abdalkareem et al. @Abdalkareem2017, trivial packages make up 16.8% of the
+NPM packages. Although, 10% of use trivial packages, only 45% of them have test suites.
 
-Robbes et al. @Robbes2012 mentions the large impact API changes can have on an ecosystem.
-Bogart et al. @Bogart2016 studied the attitude of developers towards breaking changes in
-dependencies. Their main findings were that an ecosystem plays an essential role in
-the way we can deal with breaking changes. Both papers conclude that developers generally
-do not respond in time to breaking changes and as a result breaking changes can have
-a large impact on a software ecosystem. This conclusion is reinforced by the findings of
-Decan et al. @Decan2018, where frequent changes can lead to an unstable dependency network
-due to transitive dependencies.
 
-Not only do developers not react in a timely fashion to breaking changes, Robbes et al.
-@Robbes2012 also found that developers are also not quick to respond to API deprecation.
-Bavota et al. @Bavota2014 suggests that updates should only be done when they consist of bug fixes,
-not API changes, to combat this issue. 
+Robbes et al. @Robbes2012 mention the large impact API changes can have on an ecosystem. Bogart et
+al. @Bogart2016 studied the attitude of developers towards breaking changes in dependencies. Their
+main findings were that an ecosystem plays an essential role in the way developers deal with
+breaking changes. Both papers conclude that developers generally do not respond in time to breaking
+changes and as a result breaking changes can have a large impact on a software ecosystem. This
+conclusion is reinforced by the findings of Decan et al. @Decan2018, where frequent changes can
+lead to an unstable dependency network due to transitive dependencies.
 
-Attempts have also been made to find a metric that establishes the 'health' of a 
-dependency. Cox et al. @Cox2015 contributes to this by providing a metric
-to establish the freshness of a dependency.
+Not only do developers not react in a timely fashion to breaking changes, but Robbes et al.
+@Robbes2012 also discover that developers are also not quick to respond to API deprecation. Bavota
+et al. @Bavota2014 suggests that updates should only be done when they consist of bug fixes, not
+API changes, to combat this issue.  
 
-An interesting finding in the topic of package dependency networks by Kikas et al.
-@Kikas2017 is that ecosystems, over time, become less dependent on a single popular package.
+Attempts have also been made to find a metric that establishes the health of a dependency. Cox et
+al. @Cox2015 contribute to this by providing a metric to establish the freshness of a dependency.
+
+An interesting finding in the topic of package dependency networks by Kikas et al. @Kikas2017 is
+that ecosystems, over time, become less dependent on a single popular package.
 
 ### RQ2: What are the practical implications of the state of the art?
 <!-- Rather than theoretical, actual case studies done with findings -->
