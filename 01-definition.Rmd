@@ -1,5 +1,58 @@
-# A contemporary view on Software Analytics
+# What is Software Analytics?
 
-## What is Software Analytics?
+![Modern software development](figures/modernse.png){width=70%}
+
+Modern software development can be seen as a process comprising many smaller,
+looping, isolated processes. Each loop is triggered by an _input_ and produces
+_output_ that triggers other processes. Moreover, each process has a different
+_granularity level_, while processes are can be distributed within teams or even
+among members of various teams.  The developers may
+
+* Software production begins with new feature requests, developed in
+  co-operation with the application clients/stakeholders. In agile environments,
+  a requirements team will developer and iterate over _user stories_, which
+  are then transformed into _feature requests_ that developers have to
+  work on.
+
+* A _developer_ loop is what we typically associate with software development.
+  In response to a feature request, a single developer _edits code_ to satisfy
+  the requirements, builds it on his local workstation (if necessary), _tests_
+  it either automatically or manually and then creates a _changeset_ in the form
+  of a _pull request_ or a patch to be integrated with the project mainline.
+
+* Within the context of a _developer team_, developers _review_
+  and/or _test_ each other's changesets. They are assisted in this process
+  by Continuous Integration, testing infrastructures and other automated
+  or semi-automated tools. Changes might be requested by the originating
+  developer. The end result of this loop is a _feature merge_ to the
+  project's mainline development.
+
+* Then, the _release team_ takes over. Given an incoming feature, they
+  will update the _documentation_ and they will release the software (i.e.,
+  produce a new software version and store it as an ofter immutable artifact).
+  In places where _devops_ is practiced, the released version will be deployed
+  in production. After a released version is produced, the maintainance
+  phase begins: incoming bugs are received and after initial analysis are
+  triaged and forwarded to developers for fixing.
+
+|Ref  |Who?  | Definition                                                    |
+|:---:|:----:|---------------------------------------------------------------|
+| [@Hassa10] | Hassan  | [Software Intelligence] offers software practitioners (not just developers) up-to-date and pertinent information to support their daily decision-making processes. |
+| [@Buse10] | Buse | The idea of analytics is to leverage potentially large amounts of data into real and actionable insights. |
+| [@Zhang11] | Zhang | Software analytics is to enable software practitioners to perform data exploration and analysis in order to obtain insightful and actionable information for data-driven tasks around software and services. |
+| [@Menzi13] | Menzies | Software analytics is analytics on software data for managers and software engineers with the aim of empowering software development individuals and teams to gain and share insight from their data to make better decisions.|
+
+The broader goal of software analytics is to extract value from data
+traces residing in software repositories, in order to assist developers
+to write better software.
 
 ## A list of Software Analytics Sub-Topics
+
+In this course, we will focus on state of the art research in the areas of:
+
+* Testing
+* Building and Continuous integration
+* Release engineering and DevOps
+* Ecosystems
+* Runtime
+* App stores
