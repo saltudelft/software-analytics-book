@@ -1,60 +1,76 @@
 # Ecosystem Analytics
 
 ## Motivation
-In the modern day and age, it is popular to make use of external software or libraries in software
-projects to use the functionality (for example parsing JSON) of these libraries, without having
-to develop this functionality itself. For example, in 2016, the package manager npm recorded 18
-billion package downloads in one month, according to @Linux2016. Moreover, multiple languages, such as Python
-and Rust, provide package managers (pip[^5.1] and Cargo[^5.2] respectively) which can be used to
-easily manage this third-party functionality, as well as distribute it.
+A popularized form of software reuse is the use of distributable packages. Packages are modular
+libraries packaged with reusable and extensible functionality. As an example, a software project in
+need of parsing JSON files can use a parsing package instead of developing and maintaining this
+functionality by themselves. Furthermore, developers can also build new packages on top of existing
+packages. As an example, a developer building a general-purpose parser for the web can depend and
+build upon the JSON parser package. 
 
-In parallel to this, the popularity of creating open source projects is on the rise as well. At
-the package repository npm only, 4,685 libraries were added in one week in 2016, according to @Linux2016. On
-platforms such as GitHub[^5.3], it is easy and quick to create a new software project, which can be
-developed, reviewed and used by the whole community. This development leads to more libraries
-being developed and being available for public use.
+To make packages available in software projects, package managers provide an automized workflow to
+fetch remote packages, resolve compatibility constraints between them and then integrate them into
+projects. Package managers can also be seen as "batteries included" for programming languages. For
+example, pip[^5.1] and Cargo[^5.2], official package managers for Python and Rust, provide its
+users with vast community developed and tested packages. The use of package managers is also
+immensely popular; npm, the de-facto package manager for JavaScript, recorded 18 billion package
+downloads in one month @Linux2016.
 
-As a result of these two developments, software projects are increasingly becoming interdependent
-on each other. Inspecting the dependency relations between projects leads to a graph-like
-structure of software projects. In this structure,the nodes are the projects and the edges
-represent a dependency between two software projects. This structure is known as a _software
-ecosystem_. Messerschmitt and Szyperski in @Messerschmitt2003 state that a _software ecosystem_ is "a
-collection of software products that have some given degree of symbiotic relationships." Another,
-similar definition is given by Lungu in @Lungu2009: "A software ecosystem is a collection of software
-projects which are developed and co-evolve in the same environment." Mens et al. in @Mens2013 extend
-this definition, "by explicitly considering the communities involved (e.g. user and developer
-communities) as being part of the software ecosystem." Stallman in @Stallman2002 opposes the overall
-notion of calling this structure a software ecosystem: "It is inadvisable to describe the free
-software community, or any human community, as an ecosystem, because that word implies the absence
-of ethical judgment."
+Additionally, there is also an increasing trend towards creating open source projects. In the time
+span of one week, npm register 4,685 newly created packages @Linux2016. An enabling factor of this
+trend is social coding platforms such as GitHub[^5.3], that provides an open environment for
+package communities to develop, review and use newly developed projects. Thus, leading to early
+adaption and widespread within package communities.
 
-Although Stallman in @Stallman2002 disagrees with the use of the term ecosystem, he does not
-necessarily disagree with the definition of the term. The definition which will be used in
-this chapter is the definition of Mens et al. in @Mens2013, since it captures the essence of the
-other two definitions, while adding the notion of the human communities alongside as well.
+As a consequence, software projects that import functionality from remotely-developed packages, and
+also at the same time export functionality as a package for others are increasingly becoming
+interdependent. In a shared environment such as npm or Github, the interdependence between software
+projects form a global graph-like structure known as a _software ecosystem_, where nodes represent
+software projects and edges represent the dependency between them. 
 
-By performing analysis on these software ecosystems, the aim is to generate meaningful insights.
-These insights can then be used to improve the efficiency and effectivity of the software
-development process, as well as to learn to identify and inform about potential problems. For
-example, a warning could be displayed if a dependency has a security vulnerability.
+As the interdependence between software projects in a shared environment encompasses more than the
+code that they depend on; several attempts have been made to define the phenomena around _software
+ecosystem_: Messerschmitt and Szyperski @Messerschmitt2003 state that a _software ecosystem_ is
+"a collection of software products that have some given degree of symbiotic relationships". On a
+similar line, Lungu @Lungu2009 defines a context to the symbiotic relationship between projects: "A
+software ecosystem is a collection of software projects which are developed and co-evolve in the
+same environment." An overlooked element is the social-technical relationships between dependent
+projects, Mens et al. @Mens2013 incorporate this aspect to Lungu's @Lungu2009 definition with the
+following extension: "by explicitly considering the communities involved (e.g. user and developer
+communities) as being part of the software ecosystem". Stallman @Stallman2002 opposes the use of
+_software ecosystem_ to describe interdependent networks of software projects: "It is inadvisable
+to describe the free software community, or any human community, as an ecosystem, because that word
+implies the absence of ethical judgment." Although software ecosystems are subject to ethical
+judgments, this is not a limiting factor to capture interconnected software projects as an
+ecosystem. 
 
-The field of research on software ecosystems, _ecosystem analytics_, focuses on performing such
-analysis. This chapter discovers what the current progress is in this field of research through a
-literature survey. This discovery is not limited to the theoretical perspective, but will uncover
-practical implications as well as the open challenges of the field. In order to describe each
-covered aspect, we have formulated three research questions:
+This chapter will use Mens et al.'s @Mens2013 definition of software ecosystems as it is the most
+modern and comprehensive definition (i.e., also including the social interaction) to describe and
+study interconnected software projects.
+
+Software ecosystems are interesting from two analytics perspectives, one being the _landscape
+perspective_ of contemporary software problems and the other being the _network perspepective_ for
+studying the propagation of contemporary software problems. Together they make up _ecosystem
+analytics_. The two perspectives can yield meaningful insights to identify the spread of common
+inefficiencies in software development processes or critical deficiency in source code. As an
+example, the network perspective of software ecosystems provides effective means to identify
+projects affected by a vulnerability originating from a distant software project. 
+
+Through the lens of a literature survey, this chapter reviews and consolidates recent research of
+ecosystem analytics from both a theoretical and practical standpoint. By synthesizing recent
+studies, practices, open challenges and applications of ecosystem analytics, we aim to equip the
+reader with a comprehensive overview and recommendations for future research in this field. Thus,
+we have formulate the three research questions:
 
 * **RQ1**: What is the current state of the art in software analytics for ecosystem analytics?
 * **RQ2**: What are the practical implications of the state of the art?
 * **RQ3**: What are the open challenges in ecosystem analytics, for which future research is
-required?
+  required?
 
 Each of these research questions will be answered using recent papers written in this field of
-research.
-
-This chapter is structured as follows. First, the research protocol is described in detail. This
-includes decisions on which papers are included in the review. After this, the research questions
-are answered using the previously stated set of papers.
+research. This chapter is structured as follows: First, the research protocol is described in
+detail. This includes decisions on which papers are included in the review. After this, the
+research questions are answered using the previously stated set of papers.
 
 ## Research Protocol
 
