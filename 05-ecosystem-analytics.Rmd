@@ -38,7 +38,7 @@ same environment." An overlooked element is the social-technical relationships b
 projects, Mens et al. @Mens2013 incorporate this aspect to Lungu's @Lungu2009 definition with the
 following extension: "by explicitly considering the communities involved (e.g. user and developer
 communities) as being part of the software ecosystem". Stallman @Stallman2002 opposes the use of
-software ecosystem to describe interdependent networks of software projects: "It is inadvisable
+software ecosystems to describe interdependent networks of software projects: "It is inadvisable
 to describe the free software community, or any human community, as an ecosystem, because that word
 implies the absence of ethical judgment." Although software ecosystems are subject to ethical
 judgments, this is not a limiting factor to capture interconnected software projects as an
@@ -74,35 +74,27 @@ research questions are answered using the previously stated set of papers.
 
 ## Research Protocol
 
-In order to review literature to answer the research questions given in the previous section, the
-survey method suggested by Kitchenham is used, conform to @kitchenham2004procedures.
-This method creates a systematic
-way to select a set of papers, which is relevant to the research question(s).
+We follow Kitchenham's @kitchenham2004procedures literature review protocol to systematically
+arrive at relevant publications for answering the research questions in the previous section.  As
+suggested in @kitchenham2004procedures, the search strategy should be iterative with
+consultations of experts in the field. Our search strategy consists of the following three
+steps:
 
-The search strategy, as described by Kitchenham @kitchenham2004procedures,
-are usually iterative and benefit
-from consultations with experts in the field, among other things. Our search strategy can be split
-in three different types:
-
-* the initial seed, given by an expert in the field, MSc. Joseph Hejderup
-* a search using a digital search engine, namely Google Scholar[^5.4]
-* a selection of referenced papers within papers selected before in the above two searches
+* Initial seed set from an expert in the field, MSc. Joseph Hejderup 
+* Searching in a digital search engine, namely Google Scholar[^5.4]
+* Selection of referenced papers based on findings from the previous two steps
 
 ### Initial seed
-MSc. Joseph Hejderup has provided us with a total of thirteen papers, as shown in Table 4.1.
 
-As each of these papers come from an expert in the field, each paper is assumed to be relevant to
-at least the field of software ecosystems. Because of this, each of these papers were judged on
-their relevance to either of the research questions. In Table 4.1, this relevance judgment is
-shown in the left column, since a paper is only selected, if the paper is indeed relevant. Table
-4.2 describes the reason for which each particular paper is not selected for the literature
-survey.
+An expert in the field of ecosystem analytics, MSc. Joseph Hejderup provided a list of thirteen
+papers, tabulated in Table 4.1. For each paper in the table, we evaluate its relevance against our
+research questions. In total, we consider three papers not be relevant as they do not strongly
+focus on the interconnections between projects (Table 4.2, presents a detailed explanation). 
 
 ### Digital Search Engine
-The second strategy type which is used to select relevant papers for this literature study, is by
-a digital search engine. In this literature survey, Google Scholar[^5.4] is used. From the initial
-seed, common keywords were retrieved and the following queries have been used to search for
-relevant papers:
+
+By identifying common and reoccurring keywords from the initial seed set, we construct the
+following Google Scholar[^5.4] queries: 
 
 * "engineering software ecosystems" _(2014)_
 * "software ecosystems" AND "empirical analysis" _(2018)_
@@ -110,26 +102,23 @@ relevant papers:
 * "software ecosystem analytics" _(2014)_
 * "software ecosystem" AND "analysis" _(2017)_
 
-For each of these queries, the results were first filtered by the publish year. These are
-described by the italic year after each query above. The papers that are filtered are published
-earlier than the set publish year. These specific years were chosen since the survey focuses on
-the state of the art within the ecosystem analytics. The difference in years per query is a result
-from not finding relevant papers in more recent times (e.g. for "software ecosystem analytics",
-the year is _2014_ because setting the filter to _2018_ or _2017_ did not result in relevant
-papers).
+As we aim to uncover the state-of-the-art in ecosystem analytics, some queries would not return any
+recent results. For example, querying "software ecosystem analytics" set to 2018 or 2016 would not
+yield any findings. Therefore, we could only retrieve the latest publications starting from 2014 in
+three queries. We documment this by adding the year in brackets with the most recent publication to
+each query string above.
 
-After this filtering, we first determined whether a paper was relevant to the literature survey by
-examining the title. If it was unclear whether the paper was indeed relevant by only looking at
-the title, the abstract of the paper was examined closely. On these two criteria, each of the
-selected papers were judged and ultimately selected. The selected paper using these method can be
-found in Table 4.3.
+To determine the relevance of a paper, we examine the title and the abstract of a candidate paper
+in each query result. Our selection process is the following: first, we read the title. If we find
+the title to be relevant, we stop and continue with examining the next paper. If not, we read the
+abstract as the last step. If the abstract is not relevant, we then discard the paper and continue
+with the next paper.  By following this process for each query result, we arrive with the following
+papers in Table 4.3
 
 ### Referenced papers
-The third method we use is by looking at the references found in the selected papers, using the
-two methods above. A selection has been made from these references. For these papers, the
-selection process is similar to that of the selected papers using the digital search engine; it is
-selected when both the title and the abstract are deemed relevant to the research questions. This
-has led to the papers in Table 4.4. being selected.
+Based on the selected papers from the previous two steps, we extract their references and apply the
+same selection strategy as for the digital search engine; we first read the title and then proceed
+with the abstract if it is not clear or relevant. The result is tabulated in Table 4.
 
 ## Answers
 In this section, an aggregation of information, found in the papers, is presented. Each subsection
