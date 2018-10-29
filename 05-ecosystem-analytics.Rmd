@@ -197,8 +197,7 @@ would provide support for answering their research questions.
 
 #### Main research findings
 Based on the findings of Abdalkareem et al. @Abdalkareem2017, trivial packages make up 16.8% of the
-NPM packages. Although, 10% of use trivial packages, only 45% of them have test suites.
-
+npm. Although, 10% of use trivial packages, only 45% of them have test suites.
 
 Robbes et al. @Robbes2012 mention the large impact API changes can have on an ecosystem. Bogart et
 al. @Bogart2016 studied the attitude of developers towards breaking changes in dependencies. Their
