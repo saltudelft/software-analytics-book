@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="build-analytics.html">
-<link rel="next" href="bug-prediction.html">
+<link rel="prev" href="contributors.html">
+<link rel="next" href="testing-analytics.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -193,7 +193,7 @@
 </ul></li>
 <li class="chapter" data-level="10" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>10</b> Final Words</a></li>
 <li class="appendix"><span><b>Appendix</b></span><ul>
-<li class="chapter" data-level="A.1" data-path="03-build-analytics.html"><a href="#appendix-to-chapter-5-ecosystem-analytics"><i class="fa fa-check"></i><b>A.1</b> Appendix to Chapter 5 (Ecosystem Analytics)</a></li>
+<li class="chapter" data-level="A.1" data-path="01-definition.html"><a href="#appendix-to-chapter-5-ecosystem-analytics"><i class="fa fa-check"></i><b>A.1</b> Appendix to Chapter 5 (Ecosystem Analytics)</a></li>
 <li class="chapter" data-level="A.2" data-path="final-words.html"><a href="final-words.html#appendix-to-chapter-6-release-engineering-analytics"><i class="fa fa-check"></i><b>A.2</b> Appendix to Chapter 6 (Release Engineering Analytics)</a><ul>
 <li class="chapter" data-level="A.2.1" data-path="final-words.html"><a href="final-words.html#project-timetable"><i class="fa fa-check"></i><b>A.2.1</b> Project Timetable</a></li>
 <li class="chapter" data-level="A.2.2" data-path="final-words.html"><a href="final-words.html#research-protocol-6"><i class="fa fa-check"></i><b>A.2.2</b> Research Protocol</a></li>
@@ -228,211 +228,83 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="appendix-build-analytics" class="section level1 unnumbered">
-<h1>Appendix: Build Analytics</h1>
+<div id="what-is-software-analytics" class="section level1">
+<h1><span class="header-section-number">Chapter 1</span> What is Software Analytics?</h1>
+<div class="figure">
+<img src="figures/modernse.png" alt="Modern software development" style="width:70.0%" />
+<p class="caption">Modern software development</p>
+</div>
+<p>Modern software development can be seen as a process comprising many smaller, looping, isolated processes. Each loop is triggered by an <em>input</em> and produces <em>output</em> that triggers other processes. Moreover, each process has a different <em>granularity level</em>, while processes are can be distributed within teams or even among members of various teams. The developers may</p>
+<ul>
+<li><p>Software production begins with new feature requests, developed in co-operation with the application clients/stakeholders. In agile environments, a requirements team will developer and iterate over <em>user stories</em>, which are then transformed into <em>feature requests</em> that developers have to work on.</p></li>
+<li><p>A <em>developer</em> loop is what we typically associate with software development. In response to a feature request, a single developer <em>edits code</em> to satisfy the requirements, builds it on his local workstation (if necessary), <em>tests</em> it either automatically or manually and then creates a <em>changeset</em> in the form of a <em>pull request</em> or a patch to be integrated with the project mainline.</p></li>
+<li><p>Within the context of a <em>developer team</em>, developers <em>review</em> and/or <em>test</em> each other’s changesets. They are assisted in this process by Continuous Integration, testing infrastructures and other automated or semi-automated tools. Changes might be requested by the originating developer. The end result of this loop is a <em>feature merge</em> to the project’s mainline development.</p></li>
+<li><p>Then, the <em>release team</em> takes over. Given an incoming feature, they will update the <em>documentation</em> and they will release the software (i.e., produce a new software version and store it as an ofter immutable artifact). In places where <em>devops</em> is practiced, the released version will be deployed in production. After a released version is produced, the maintainance phase begins: incoming bugs are received and after initial analysis are triaged and forwarded to developers for fixing.</p></li>
+</ul>
 <table>
-<caption><span id="tab:build-analytics-selected-papers">Table 3.1: </span> Selected papers</caption>
 <colgroup>
-<col width="54%" />
-<col width="22%" />
-<col width="15%" />
-<col width="6%" />
+<col width="7%" />
+<col width="9%" />
+<col width="83%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th>Paper with reference</th>
-<th>Source</th>
-<th>RQ</th>
-<th>Notes</th>
+<th align="center">Ref</th>
+<th align="center">Who?</th>
+<th>Definition</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>1. Bird et al. 2017 <span class="citation">[<a href="#ref-bird2017predicting">28</a>]</span></td>
-<td>Initial seed</td>
-<td>RQ1</td>
-<td>1</td>
+<td align="center"><span class="citation">[<a href="#ref-Hassa10">81</a>]</span></td>
+<td align="center">Hassan</td>
+<td>[Software Intelligence] offers software practitioners (not just developers) up-to-date and pertinent information to support their daily decision-making processes.</td>
 </tr>
 <tr class="even">
-<td>2. Beller et al. 2017 <span class="citation">[<a href="#ref-beller2017oops">24</a>]</span></td>
-<td>Initial seed</td>
-<td>RQ3</td>
-<td>-</td>
+<td align="center"><span class="citation">[<a href="#ref-Buse10">36</a>]</span></td>
+<td align="center">Buse</td>
+<td>The idea of analytics is to leverage potentially large amounts of data into real and actionable insights.</td>
 </tr>
 <tr class="odd">
-<td>3. Rausch et al. 2017 <span class="citation">[<a href="#ref-rausch2017empirical">160</a>]</span></td>
-<td>Initial seed</td>
-<td>RQ2</td>
-<td>-</td>
+<td align="center"><span class="citation">[<a href="#ref-Zhang11">199</a>]</span></td>
+<td align="center">Zhang</td>
+<td>Software analytics is to enable software practitioners to perform data exploration and analysis in order to obtain insightful and actionable information for data-driven tasks around software and services.</td>
 </tr>
 <tr class="even">
-<td>4. Beller et al. TravisTorrent 2017 <span class="citation">[<a href="#ref-beller2017travistorrent">25</a>]</span></td>
-<td>Initial seed</td>
-<td>RQ2</td>
-<td>-</td>
-</tr>
-<tr class="odd">
-<td>5. Pinto et al. 2018 <span class="citation">[<a href="#ref-pinto2018work">149</a>]</span></td>
-<td>Initial seed</td>
-<td>RQ3</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>6. Zhao et al. 2017 <span class="citation">[<a href="#ref-zhao2017impact">200</a>]</span></td>
-<td>Initial seed</td>
-<td>RQ3</td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td>7. Widder et al. 2018 <span class="citation">[<a href="#ref-widder2018m">193</a>]</span></td>
-<td>Initial seed</td>
-<td>RQ1</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>8. Hilton et al. 2016 <span class="citation">[<a href="#ref-hilton2016usage">86</a>]</span></td>
-<td>Initial seed</td>
-<td>RQ2</td>
-<td>-</td>
-</tr>
-<tr class="odd">
-<td>9. Vassallo et al. 2017 <span class="citation">[<a href="#ref-vassallo2017tale">188</a>]</span></td>
-<td>Ref 2</td>
-<td>-</td>
-<td>3</td>
-</tr>
-<tr class="even">
-<td>11. Hassan and Wang 2018 <span class="citation">[<a href="#ref-hassan2018hirebuild">82</a>]</span></td>
-<td>Ref 4</td>
-<td>RQ1</td>
-<td>-</td>
-</tr>
-<tr class="odd">
-<td>12. Vassallo et al. 2018 <span class="citation">[<a href="#ref-vassallo2018break">187</a>]</span></td>
-<td>Ref 2,3</td>
-<td>RQ1, RQ3</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>13. Zampetti et al. 2017 <span class="citation">[<a href="#ref-zampetti2017open">197</a>]</span></td>
-<td>Ref by 12</td>
-<td>-</td>
-<td>3</td>
-</tr>
-<tr class="odd">
-<td>14. Baltes et al. 2018 <span class="citation">[<a href="#ref-baltes2018no">12</a>]</span></td>
-<td>GScholar Search</td>
-<td>RQ1, RQ3</td>
-<td>4</td>
-</tr>
-<tr class="even">
-<td>15. Bisong et al. 2017 <span class="citation">[<a href="#ref-bisong2017built">30</a>]</span></td>
-<td>GScholar Search</td>
-<td>RQ1, RQ3</td>
-<td>5</td>
-</tr>
-<tr class="odd">
-<td>16. Santolucito et al. 2018 <span class="citation">[<a href="#ref-santolucito2018statically">166</a>]</span></td>
-<td>GScholar Search</td>
-<td>RQ1</td>
-<td>4</td>
-</tr>
-<tr class="even">
-<td>17. Ni and Li 2018 <span class="citation">[<a href="#ref-ni2018acona">140</a>]</span></td>
-<td>GScholar Search</td>
-<td>RQ1</td>
-<td>6</td>
-</tr>
-<tr class="odd">
-<td>18. Fowler and Foemmel 2006 <span class="citation">[<a href="#ref-fowler2006continuous">68</a>]</span></td>
-<td>GScholar Search</td>
-<td>RQ2</td>
-<td>7</td>
-</tr>
-<tr class="even">
-<td>19. Stolberg 2009 <span class="citation">[<a href="#ref-stolberg2009enabling">176</a>]</span></td>
-<td>GScholar Search</td>
-<td>RQ2</td>
-<td>7</td>
-</tr>
-<tr class="odd">
-<td>20. Vasilescu et al. 2014 <span class="citation">[<a href="#ref-vasilescu2014continuous">186</a>]</span></td>
-<td>GScholar Search</td>
-<td>RQ2</td>
-<td>7</td>
+<td align="center"><span class="citation">[<a href="#ref-Menzi13">133</a>]</span></td>
+<td align="center">Menzies</td>
+<td>Software analytics is analytics on software data for managers and software engineers with the aim of empowering software development individuals and teams to gain and share insight from their data to make better decisions.</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Notes</strong></p>
-<ol style="list-style-type: decimal">
-<li>US patent owned by Microsoft.</li>
-<li>Collaboration between universities in China, The Netherlands and The USA.</li>
-<li>Not included in this survey as it did not introduce a new technique or practice.</li>
-<li>Using search term “Github Continuous Integration”.</li>
-<li>Using search term “Predicting build time”</li>
-<li>Using search term “Predicting build failures”</li>
-<li>Using search term “Current practices in Continuous Integration”</li>
-</ol>
+<p>The broader goal of software analytics is to extract value from data traces residing in software repositories, in order to assist developers to write better software.</p>
+<div id="a-list-of-software-analytics-sub-topics" class="section level2">
+<h2><span class="header-section-number">1.1</span> A list of Software Analytics Sub-Topics</h2>
+<p>In this course, we will focus on state of the art research in the areas of:</p>
+<ul>
+<li>Testing</li>
+<li>Building and Continuous integration</li>
+<li>Release engineering and DevOps</li>
+<li>Ecosystems</li>
+<li>Runtime</li>
+<li>App stores</li>
+</ul>
 
+</div>
 </div>
 <h3>References</h3>
 <div id="refs" class="references">
-<div id="ref-bird2017predicting">
-<p>[28] Bird, C. and Zimmermann, T. 2017. Predicting software build errors. Google Patents.</p>
+<div id="ref-Hassa10">
+<p>[81] Hassan, A.E. and Xie, T. 2010. Software intelligence: The future of mining software engineering data. <em>Proceedings of the fse/sdp workshop on future of software engineering research</em> (New York, NY, USA, 2010), 161–166.</p>
 </div>
-<div id="ref-beller2017oops">
-<p>[24] Beller, M. et al. 2017. Oops, my tests broke the build: An explorative analysis of travis ci with github. <em>Mining software repositories (msr), 2017 ieee/acm 14th international conference on</em> (2017), 356–367.</p>
+<div id="ref-Buse10">
+<p>[36] Buse, R.P. and Zimmermann, T. 2010. Analytics for software development. <em>Proceedings of the fse/sdp workshop on future of software engineering research</em> (New York, NY, USA, 2010), 77–80.</p>
 </div>
-<div id="ref-rausch2017empirical">
-<p>[160] Rausch, T. et al. 2017. An empirical analysis of build failures in the continuous integration workflows of java-based open-source software. <em>Proceedings of the 14th international conference on mining software repositories</em> (2017), 345–355.</p>
+<div id="ref-Zhang11">
+<p>[199] Zhang, D. et al. 2011. Software analytics as a learning case in practice: Approaches and experiences. <em>Proceedings of the international workshop on machine learning technologies in software engineering</em> (New York, NY, USA, 2011), 55–58.</p>
 </div>
-<div id="ref-beller2017travistorrent">
-<p>[25] Beller, M. et al. 2017. Travistorrent: Synthesizing travis ci and github for full-stack research on continuous integration. <em>Proceedings of the 14th international conference on mining software repositories</em> (2017), 447–450.</p>
-</div>
-<div id="ref-pinto2018work">
-<p>[149] Pinto, G. and Rebouças, F.C.R.B.M. 2018. Work practices and challenges in continuous integration: A survey with travis ci users. (2018).</p>
-</div>
-<div id="ref-zhao2017impact">
-<p>[200] Zhao, Y. et al. 2017. The impact of continuous integration on other software development practices: A large-scale empirical study. <em>Proceedings of the 32nd ieee/acm international conference on automated software engineering</em> (2017), 60–71.</p>
-</div>
-<div id="ref-widder2018m">
-<p>[193] Widder, D.G. et al. 2018. I’im leaving you, travis: A continuous integration breakup story. (2018).</p>
-</div>
-<div id="ref-hilton2016usage">
-<p>[86] Hilton, M. et al. 2016. Usage, costs, and benefits of continuous integration in open-source projects. <em>Proceedings of the 31st ieee/acm international conference on automated software engineering</em> (2016), 426–437.</p>
-</div>
-<div id="ref-vassallo2017tale">
-<p>[188] Vassallo, C. et al. 2017. A tale of ci build failures: An open source and a financial organization perspective. <em>Software maintenance and evolution (icsme), 2017 ieee international conference on</em> (2017), 183–193.</p>
-</div>
-<div id="ref-hassan2018hirebuild">
-<p>[82] Hassan, F. and Wang, X. 2018. HireBuild: An automatic approach to history-driven repair of build scripts. <em>Proceedings of the 40th international conference on software engineering</em> (2018), 1078–1089.</p>
-</div>
-<div id="ref-vassallo2018break">
-<p>[187] Vassallo, C. et al. 2018. Un-break my build: Assisting developers with build repair hints. (2018).</p>
-</div>
-<div id="ref-zampetti2017open">
-<p>[197] Zampetti, F. et al. 2017. How open source projects use static code analysis tools in continuous integration pipelines. <em>Mining software repositories (msr), 2017 ieee/acm 14th international conference on</em> (2017), 334–344.</p>
-</div>
-<div id="ref-baltes2018no">
-<p>[12] Baltes, S. et al. 2018. (No) influence of continuous integration on the commit activity in github projects. <em>arXiv preprint arXiv:1802.08441</em>. (2018).</p>
-</div>
-<div id="ref-bisong2017built">
-<p>[30] Bisong, E. et al. 2017. Built to last or built too fast?: Evaluating prediction models for build times. <em>Proceedings of the 14th international conference on mining software repositories</em> (2017), 487–490.</p>
-</div>
-<div id="ref-santolucito2018statically">
-<p>[166] Santolucito, M. et al. 2018. Statically verifying continuous integration configurations. <em>arXiv preprint arXiv:1805.04473</em>. (2018).</p>
-</div>
-<div id="ref-ni2018acona">
-<p>[140] Ni, A. and Li, M. 2018. ACONA: Active online model adaptation for predicting continuous integration build failures. <em>Proceedings of the 40th international conference on software engineering: Companion proceeedings</em> (2018), 366–367.</p>
-</div>
-<div id="ref-fowler2006continuous">
-<p>[68] Fowler, M. and Foemmel, M. 2006. Continuous integration. <em>Thought-Works) http://www. thoughtworks. com/Continuous Integration. pdf</em>. 122, (2006), 14.</p>
-</div>
-<div id="ref-stolberg2009enabling">
-<p>[176] Stolberg, S. 2009. Enabling agile testing through continuous integration. <em>Agile conference, 2009. agile’09.</em> (2009), 369–374.</p>
-</div>
-<div id="ref-vasilescu2014continuous">
-<p>[186] Vasilescu, B. et al. 2014. Continuous integration in a social-coding world: Empirical evidence from github. <em>Software maintenance and evolution (icsme), 2014 ieee international conference on</em> (2014), 401–405.</p>
+<div id="ref-Menzi13">
+<p>[133] Menzies, T. and Zimmermann, T. 2013. Software analytics: So what? <em>IEEE Software</em>. 30, 4 (July 2013), 31–37.</p>
 </div>
 </div>
             </section>
@@ -440,8 +312,8 @@
           </div>
         </div>
       </div>
-<a href="build-analytics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="bug-prediction.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="contributors.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="testing-analytics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -471,7 +343,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/saltudelft/software-analytics-book/edit/master/03-build-analytics.Rmd",
+"link": "https://github.com/saltudelft/software-analytics-book/edit/master/01-definition.Rmd",
 "text": "Edit"
 },
 "download": ["software-analytics-survey.pdf", "software-analytics-survey.epub"],
