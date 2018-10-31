@@ -265,12 +265,51 @@ various teams. The developers may
   Then, the \emph{release team} takes over. Given an incoming feature,
   they will update the \emph{documentation} and they will release the
   software (i.e., produce a new software version and store it as an
-  ofter immutable artifact). In places where \emph{devops} is practiced,
-  the released version will be deployed in production. After a released
-  version is produced, the maintainance phase begins: incoming bugs are
+  immutable artifact). In places where \emph{devops} is practiced, the
+  released version will be deployed in production. After a released
+  version is produced, the maintenance phase begins: incoming bugs are
   received and after initial analysis are triaged and forwarded to
   developers for fixing.
 \end{itemize}
+
+Modern software teams use a variety of tools to accomplish these tasks:
+
+\begin{itemize}
+\item
+  Version control systems (such as Git) are the heart of the
+  collaboration infrastructure of modern software projects. Not only do
+  they store the software code, they also act as triggers to all
+\item
+  Issue management tools (such as Jira and GitHub issues) not only keep
+  bug reports and new feature requests, but they are increasingly used
+  as project planning infrastructure (e.g., for backlog management) and
+  for soliciting user feedback on new planned features.
+\item
+  Continuous Integration serves the dual role of both executing software
+  tests and, in many cases, triggering the deployment of the built
+  artifacts on testing or production environments.
+\item
+  Various teams use custom tools to statically analyze code (e.g.,
+  Fortify), assist them with code review (e.g., Gerrit) and
+  communication (e.g., Slack)
+\item
+  Infrastructure as code tools (like Puppet and Ansible) automate the
+  creation of deployment environments.
+\item
+  After deployment into production, tools, like the ELK stack, store
+  application runtime logs, while application stores store user reviews.
+\end{itemize}
+
+All those tools maintain records of developer activity in all stages of
+development. This information can be extracted, analyzed and linked
+across tools and across projects. The results of the analysis can be
+used to identify process bottlenecks, to train models that assist
+developers in their workflows and to help software teams make
+data-driven decisions.
+
+Within this context, various works have attempted to define what
+software analytics are. A selection of definitions can be seen in the
+table below.
 
 \begin{longtable}[]{@{}ccl@{}}
 \toprule
@@ -322,31 +361,13 @@ better decisions.\strut
 \bottomrule
 \end{longtable}
 
-The broader goal of software analytics is to extract value from data
-traces residing in software repositories, in order to assist developers
-to write better software.
+In our process- and feedback-centric view:
 
-\section{A list of Software Analytics
-Sub-Topics}\label{a-list-of-software-analytics-sub-topics}
-
-In this course, we will focus on state of the art research in the areas
-of:
-
-\begin{itemize}
-\tightlist
-\item
-  Testing
-\item
-  Building and Continuous integration
-\item
-  Release engineering and DevOps
-\item
-  Ecosystems
-\item
-  Runtime
-\item
-  App stores
-\end{itemize}
+\begin{quote}
+\emph{The overarching goal of \emph{software analytics} is to exploit
+the wealth of information in software repositories to optimize
+production, delivery and runtime operation of software.}
+\end{quote}
 
 \chapter{Testing Analytics}\label{testing-analytics}
 
@@ -4770,6 +4791,9 @@ researchers can consider conducting studies regarding the improvement of
 the practicality of existing tools that mine and categorize user
 reviews.
 
+\appendix
+
+
 \hypertarget{appendix}{\chapter*{Appendix}\label{appendix}}
 \addcontentsline{toc}{chapter}{Appendix}
 
@@ -5017,8 +5041,6 @@ RQ2\strut
 \item
   Using search term ``Current practices in Continuous Integration''
 \end{enumerate}
-
-\chapter{Appendix}\label{appendix-1}
 
 \section{Appendix to Chapter 5 (Ecosystem
 Analytics)}\label{appendix-to-chapter-5-ecosystem-analytics}
