@@ -354,18 +354,19 @@ of:
 
 Testing is an important aspect in software engineering, as it forms the
 first line of defence against the introduction of software faults Pinto
-et al. \cite{pinto2012understanding}. However, in practice it seems that
-not all developers test actively. In this chapter we will survey on the
-use of testing and the tools that make this possible. We will also look
-into the future development of tools that is done or required in order
-to improve testing practices in real-world applications. Testing is not
-the holy grail for completely removing all bugs from a program but it
-can decrease the chances for a user to encounter a bug. We believe that
-extra research is needed to ease the life of developers by making
-testing more efficient, easier to maintain and more effective.
-Therefore, we wanted to write a survey on the testing behavior, current
-practices and future developments of testing. In order to perform our
-survey, we formulated three Research Questions (RQs):
+et al. {[}\protect\hyperlink{ref-pinto2012understanding}{152}{]}.
+However, in practice it seems that not all developers test actively. In
+this chapter we will survey on the use of testing and the tools that
+make this possible. We will also look into the future development of
+tools that is done or required in order to improve testing practices in
+real-world applications. Testing is not the holy grail for completely
+removing all bugs from a program but it can decrease the chances for a
+user to encounter a bug. We believe that extra research is needed to
+ease the life of developers by making testing more efficient, easier to
+maintain and more effective. Therefore, we wanted to write a survey on
+the testing behavior, current practices and future developments of
+testing. In order to perform our survey, we formulated three Research
+Questions (RQs):
 
 \begin{itemize}
 \tightlist
@@ -384,18 +385,19 @@ explained.
 
 \section{Research Protocol}\label{research-protocol}
 
-For this chapter, Kitchenham's survey method \cite{Kitchenham2004} was
-applied. For this method, a protocol has to be specified. This protocol
-is defined for the research questions given above. Below the inclusion
-and exclusion criteria are given, which helped finding the rightful
-papers. After these criteria, the actual search for papers is described.
-The papers that were found are listed and after they are tested against
-the criteria that are given. The data that is extracted from these
-papers are list afterward. Some papers that were left out will be listed
-and the reasons for leaving them out will be given to make clear why
-some papers do not meet the required desire.
+For this chapter, we applied Kitchenham's survey method
+{[}{\textbf{???}}{]} was applied. For this method, a protocol has to be
+specified. This protocol is defined for the research questions given
+above. Below the inclusion and exclusion criteria are given, which
+helped finding papers. After these criteria, the actual search for
+papers is described. The papers that were found are listed and after
+they are tested against the criteria that are given. The data that is
+extracted from these papers are listed afterward. Some papers that were
+left out will be listed and the reasons for leaving them out will be
+given to make clear why some papers do not meet the desired
+requirements.
 
-Each of the papers found was tested using our inclusion and exclusion
+Each of the papers was tested using our inclusion and exclusion
 criteria. These criteria were introduced to make sure the papers have
 the information required to answer the RQs while also being relevant
 with respect to their quality and age. Below a list of inclusion and
@@ -420,8 +422,8 @@ inclusion and exclusion criteria were used:
   Papers stating the developers' problems related to testing are
   included.
 \item
-  Papers stating the technologies, related to testing analytics, which
-  developers use are included.
+  Papers stating the technologies related to testing analytics, which
+  developers use, are included.
 \item
   Papers writing about the expected advantage of current findings in
   testing analytics are included.
@@ -446,7 +448,7 @@ software, test*, analytics, test-suite, evolution, software development,
 computer science, software engineering, risk-driven, survey software
 testing
 
-The table below describes for each paper, which Query resulted in which
+The table below describes for each paper, which query resulted in which
 paper being found. Each of the papers is categorized with a
 corresponding research question. In the table below, the categories per
 paper were added based on their general topic. These broad topics will
@@ -698,9 +700,9 @@ RQ3\strut
 
 \section{Results}\label{results}
 
-In this section the research questions will be answered. To answer these
-questions, information from the relevant papers are aggregated. The
-answers to each research questions are summarized in the conclusion.
+In this section the research questions will be answered. To answer them,
+information from the relevant papers are aggregated. The answers to each
+research questions are summarized in the conclusion.
 
 \subsection{(RQ1) How do developers currently
 test?}\label{rq1-how-do-developers-currently-test}
@@ -730,7 +732,7 @@ cases were rarely updated when changes related to attributes or methods
 in the production code were made. Possible explanations for this are
 that these changes were not significant or the tests were too simple and
 were likely to pass. This also fits with the findings of Romano et al.
-{[}\protect\hyperlink{ref-ROMANO201764}{164}{]}, where they claim that
+{[}\protect\hyperlink{ref-ROMANO201764}{164}{]}, who claim that
 ``{[}d{]}evelopers write quick-and-dirty production code to pass the
 tests, do not update their tests often, and ignore refactoring.''
 
@@ -738,28 +740,28 @@ Besides older tests rarely being updated for changed code, even new
 tests do not necessarily have the purpose of validating new production
 code lines. Pinto et al.
 {[}\protect\hyperlink{ref-pinto2012understanding}{152}{]} observed that
-a significant number of new tests that are added, were not necessarily
-added to cover new code but rather to exercise the changed parts of the
+a significant number of new tests that are added were not necessarily
+added to cover new code, but rather to exercise the changed parts of the
 code after the program is modified. This finding fits with the
 observation of Marsavina et al.
 {[}\protect\hyperlink{ref-marsavina2014}{122}{]}, who found that test
 cases are created or deleted in order to address the modified branches
 whenever numerous condition related changes are conducted in the
 production code base. Older production code lines, therefore, may stay
-untouched by any test cases. Lines uncovered by any traditional code
-coverage tool should be indicated and signaled to the developer.
-Therefore, developers should be aware of the fact that they did not
-cover some lines of their production code with any tests. It seems to be
-a deliberate action by most developers to not cover older production
-code lines. These lines might be `too hard' to test, other lines may be
-easier to test, or developers do not seem to see the relevance of
-testing these uncovered lines of code. However, the most commonly used
-coverage metrics are branch coverage and conditional coverage
-{[}\protect\hyperlink{ref-GAROUSI20131354}{71}{]}. As both branch
-coverage and conditional coverage require multiple different conditions
-for if-statements, it may possibly be that the absolute number of missed
-lines of production code by tests is very low but rather the number of
-missed conditions is higher.
+untouched by any test cases. Lines not covered by the test (such as any
+traditional code coverage tool would find them) should be indicated and
+signaled to the developer. Therefore, developers should be aware of the
+fact that they did not cover some lines of their production code with
+any tests. It seems to be a deliberate action by most developers to not
+cover older production code lines. These lines might be `too hard' to
+test, other lines may be easier to test, or developers do not seem to
+see the relevance of testing these uncovered lines of code. However, the
+most commonly used coverage metrics are branch coverage and conditional
+coverage {[}\protect\hyperlink{ref-GAROUSI20131354}{71}{]}. As both
+branch coverage and conditional coverage require multiple different
+conditions for if-statements, it may possibly be that the absolute
+number of missed lines of production code by tests is very low but
+rather the number of missed conditions is higher.
 
 \subsubsection{Co-evolution}\label{co-evolution}
 
@@ -788,22 +790,23 @@ written before the respective test code. This is in contrast with the
 originally proposed constraint by Beck
 {[}\protect\hyperlink{ref-beck2003test}{20}{]}, where a line of
 production code should only be written after a failing automated test
-was written in advance. The confusion for the definition of TDD can also
-be traced back by the finding of Beller et al.
-{[}\protect\hyperlink{ref-beller2015}{26}{]}, where programmers who
-claim they practice TDD neither follow it strictly nor practice it for
-all of their modification. A survey conveyed by Garousi and Zhi
-{[}\protect\hyperlink{ref-GAROUSI20131354}{71}{]} on 196 respondents
-(amongst them managers and developers) indicated that with a ratio of
-3:1 use Test-last development and Test-driven development respectively.
-This found ratio is in contrast with the numbers found by Beller et al.
+was written in advance.
+
+The confusion about the definition of TDD is also supported by the
+finding of Beller et al. {[}\protect\hyperlink{ref-beller2015}{26}{]},
+where programmers who claim they practice TDD neither follow it strictly
+nor practice it for all of their modification. A survey by Garousi and
+Zhi {[}\protect\hyperlink{ref-GAROUSI20131354}{71}{]} on 196 respondents
+(amongst them managers and developers) indicated that a ratio of 3:1 use
+Test-last development and Test-driven development respectively. This
+ratio is in contrast with the numbers found by Beller et al.
 {[}\protect\hyperlink{ref-beller2015}{26}{]}; only 1.7\% of the observed
 developers seemed to follow the strict TDD definition, where most of
 these developers only practice this strict definition in less than 20\%
 of their time. However, it is important to mention that the survey done
 by Garousi and Zhi {[}\protect\hyperlink{ref-GAROUSI20131354}{71}{]}
-only surveyed the subjects, which allows the confusion for the
-definition of TDD to play a major role in the results found.
+only surveyed the subjects, which might allow the confusion for the
+definition of TDD to play a major role in the results.
 
 \subsection{(RQ2) What state of the art technologies are being
 used?}\label{rq2-what-state-of-the-art-technologies-are-being-used}
@@ -816,11 +819,11 @@ Generation}\label{test-evolution-and-generation}
 
 Pinto et al. {[}\protect\hyperlink{ref-pinto2012understanding}{152}{]}
 found the investigation of automated test repairing is not a promising
-research avenue, as these techniques would require manual guidance which
-could end up being similar to traditional refactoring tools.
-Nonetheless, more research is performed in this field since then. An
-approach for automatically repairing and generating test cases during
-software evolution is proposed by Mirzaaghaei et al.
+research avenue, as these techniques -- despite their name -- would
+require manual guidance, which could end up being similar to traditional
+refactoring tools. Nonetheless, more research is performed in this field
+since then. An approach for automatically repairing and generating test
+cases during software evolution is proposed by Mirzaaghaei et al.
 {[}\protect\hyperlink{ref-supportingtestsuite}{135}{]}. This approach
 uses information available in existing test cases, defines a set of
 heuristics to repair test cases invalidated by changes in the software,
@@ -830,8 +833,8 @@ instructions. The results show that the approach can effectively
 maintain evolving test suites and perform well compared to competing
 approaches.
 
-While full automated test suite generation can not replace human testing
-entirely yet, Bowring and Hegler
+While fully automated test suite generation can not replace human
+testing entirely yet, Bowring and Hegler
 {[}\protect\hyperlink{ref-bowring2014obsidian}{35}{]} introduced a tool
 that generates the templates for tests, which guarantees compilation,
 supports exception handling and finds a suitable location for the test.
@@ -850,11 +853,11 @@ of a Markov chain usage model, it is relatively easy to generate
 abstract test suites for different user classes and test purposes in an
 automated approach. By using proper tools, such as the TestUS
 Testplayer, even less experienced test engineers will be able to
-efficiently generate abstract test cases and to graphically assess
-quality characteristics of different test suites. Hurdugaci and Zaidman
-{[}\protect\hyperlink{ref-hurdugaci2012}{89}{]} introduces TestNForce
-(Visual Studio only), a tool to help developers identify unit tests that
-need to be altered and executed after code change.
+efficiently generate abstract test cases and graphically assess quality
+characteristics of different test suites. Hurdugaci and Zaidman
+{[}\protect\hyperlink{ref-hurdugaci2012}{89}{]} introduce TestNForce, a
+tool to help developers identify unit tests that need to be altered and
+executed after code change (Visual Studio only).
 
 \subsubsection{Risk-driven Testing}\label{risk-driven-testing}
 
@@ -864,7 +867,7 @@ on an original tool-supported, risk-driven security testing process
 called Pattern-driven and Model-based Vulnerability Testing. This fully
 automated testing process, relying on risk-driven strategies and
 Model-Based Testing (MBT) techniques, aims to improve the capability of
-detection of various Web application vulnerabilities, in particular SQL
+detecting various Web application vulnerabilities, in particular SQL
 injections, Cross-Site Scripting, and Cross-Site Request Forgery. An
 empirical evaluation shows that this novel process is appropriate for
 automatically generating and executing risk-driven vulnerability test
@@ -875,9 +878,9 @@ A new risk measure is defined by Noor and Hemmati
 factor to a test case if it is similar to a failing test case from
 history. The new risk measure is by far more effective in identifying
 failing test cases compared to the traditional risk measure. Using this
-method for identifying test cases with a high risk factor, these test
-cases can for example be ran in the background while developing code, to
-find faults earlier. Furthermore, prioritizing these tests while running
+method for identifying test cases with a high risk factor, risky test
+cases can for example be run in the background while developing code, to
+find faults earlier. Furthermore, prioritizing risky tests while running
 the entire test-suite could make the suite detect failing tests earlier
 and the developer can start fixing the faulty code right away.
 
@@ -891,19 +894,20 @@ in the field of software analytics.
 Generation}\label{co-evolution-and-test-generation}
 
 For understanding how test- and production code co-evolve and how tests
-can be generated to support developers, studies have been conducted
-{[}\protect\hyperlink{ref-marsavina2014}{122},
+can be generated to support developers, several studies have been
+conducted {[}\protect\hyperlink{ref-marsavina2014}{122},
 \protect\hyperlink{ref-pinto2012understanding}{152},
-\protect\hyperlink{ref-zaidman2011studying}{196}{]}. Additionally a tool
-has been made in order to analyze and, consequently, better understand
-test-suite evolution {[}\protect\hyperlink{ref-pinto2013}{151}{]}. For
-the time being the practical implications of this subtopic have mainly
-been sought in the repairing and generation of tests.
+\protect\hyperlink{ref-zaidman2011studying}{196}{]}. Additionally, a
+tool has been made in order to analyze and, consequently, better
+understand test-suite evolution
+{[}\protect\hyperlink{ref-pinto2013}{151}{]}. For the time being the
+practical implications of this subtopic have mainly been sought in the
+repairing and generation of tests.
 
 According to Pinto et al.
 {[}\protect\hyperlink{ref-pinto2012understanding}{152}{]} test repairs
 occur often enough to justify the development and research for automated
-repair techniques. M. Mirzaaghaei et al.
+repair techniques. Mirzaaghaei et al.
 {[}\protect\hyperlink{ref-supportingtestsuite}{135}{]} argue that
 evolving test cases is an expensive and time-consuming activity, for
 which automated approaches reduce the pressure on developers. Shamshiri
@@ -979,7 +983,7 @@ testing is mostly done in longer periods of increased testing. The
 methodology of TDD also seems to be a confusing term for developers, as
 there is not enough clear guidance in the implementation of it. The
 actual ratio of TLD and TDD is, therefore, unknown but can be guessed
-with great certainty to be much lower for TDD than for TDD.
+with great certainty to be much lower for TDD than for TDL.
 
 The current state of the art in testing analytics (RQ2) consists of
 research in co-evolution and generation of tests, and risk-driven
