@@ -189,7 +189,8 @@ risk-driven testing.
 
 #### Test Evolution and Generation
 Pinto et al. @pinto2012understanding found the investigation of automated test repairing is not a 
-promising research avenue, as these techniques would require manual guidance which could end up 
+promising research avenue, as these techniques -- despite their name -- would require manual guidance,
+which could end up 
 being similar to traditional refactoring tools. Nonetheless, more research is performed in this
 field since then. 
 An approach for automatically repairing and generating test cases during software evolution is 
@@ -200,7 +201,7 @@ generate new test cases for evolved software. This properly repairs 90% of the c
 addressed and covers the same amount of instructions. The results show that the approach can 
 effectively maintain evolving test suites and perform well compared to competing approaches.
 
-While full automated test suite generation can not replace human testing entirely yet, Bowring and
+While fully automated test suite generation can not replace human testing entirely yet, Bowring and
 Hegler @bowring2014obsidian introduced a 
 tool that generates the templates for tests, which guarantees compilation, supports exception 
 handling and finds a suitable location for the test. Developers still need to fix the test oracles 
@@ -215,17 +216,17 @@ usage
 profile of a Markov chain usage model, it is relatively easy to generate abstract test suites for 
 different user classes and test purposes in an automated approach. By using proper tools, such as the 
 TestUS Testplayer, even less experienced test engineers will be able to efficiently generate 
-abstract test cases and to graphically assess quality characteristics of different test suites.
-Hurdugaci and Zaidman @hurdugaci2012 introduces TestNForce (Visual Studio only), a tool to help
+abstract test cases and graphically assess quality characteristics of different test suites.
+Hurdugaci and Zaidman @hurdugaci2012 introduce TestNForce, a tool to help
 developers identify 
-unit tests that need to be altered and executed after code change.
+unit tests that need to be altered and executed after code change (Visual Studio only).
 
 #### Risk-driven Testing
 The paper by Vernotte et al. @vernotte2015 introduces and reports on an original tool-supported, 
 risk-driven security 
 testing process called Pattern-driven and Model-based Vulnerability Testing. This fully automated 
 testing process, relying on risk-driven strategies and Model-Based Testing (MBT) techniques, aims 
-to improve the capability of detection of various Web application vulnerabilities, in particular 
+to improve the capability of detecting various Web application vulnerabilities, in particular 
 SQL injections, Cross-Site Scripting, and Cross-Site Request Forgery. An empirical evaluation 
 shows that this novel process is appropriate for automatically generating and executing 
 risk-driven vulnerability test cases and is promising to be deployed for large-scale Web 
@@ -235,8 +236,8 @@ A new risk measure is defined by Noor and Hemmati @noor2015test, which assigns a
 test case if it 
 is similar to a failing test case from history. The new risk measure is by far more effective in 
 identifying failing test cases compared to the traditional risk measure. Using this method for 
-identifying test cases with a high risk factor, these test cases can for example be ran in the 
-background while developing code, to find faults earlier. Furthermore, prioritizing these tests 
+identifying test cases with a high risk factor, risky test cases can for example be run in the 
+background while developing code, to find faults earlier. Furthermore, prioritizing risky tests 
 while running the entire test-suite could make the suite detect failing tests earlier and the 
 developer can start fixing the faulty code right away.
 
@@ -248,8 +249,8 @@ analytics.
 
 #### Co-Evolution and Test Generation
 For understanding how test- and production code co-evolve and how tests can be generated to support
-developers, studies have been conducted 
-[@pinto2012understanding; @marsavina2014; @zaidman2011studying]. Additionally a tool has been made 
+developers, several studies have been conducted 
+[@pinto2012understanding; @marsavina2014; @zaidman2011studying]. Additionally, a tool has been made 
 in order to analyze and, consequently,
 better understand test-suite evolution @pinto2013. For the time being the practical
 implications of
@@ -257,7 +258,7 @@ this subtopic have mainly been sought in the repairing and generation of tests.
 
 
 According to Pinto et al. @pinto2012understanding test repairs occur often enough to justify the
-development and research for automated repair techniques. M. Mirzaaghaei et al.
+development and research for automated repair techniques. Mirzaaghaei et al.
 @supportingtestsuite argue that evolving test cases is an expensive and time-consuming activity,
 for which automated approaches reduce the pressure on developers. Shamshiri et al. 
 @shamshiri2018automatically argue that automated generation of unit tests does not end up
@@ -313,9 +314,9 @@ other hand, make sure their test code compiles when production code classes have
 However, testing is mostly done in longer periods of increased testing. The methodology of TDD
 also seems to be a confusing term for developers, as there is not enough clear guidance in the 
 implementation of it. The actual ratio of TLD and TDD is, therefore, unknown but can be guessed with
-great certainty to be much lower for TDD than for TDD.
+great certainty to be much lower for TDD than for TDL.
 
-The current state of the art in testing analytics (RQ2) consists of research in co-evolution and 
+The current state of the art in testing analytics (RQ2) consists of research in co-evolution and
 generation of tests, and risk-driven testing. Approaches are proposed for automatically repairing 
 and generating test cases during software evolution. While fully automated test suite generation is 
 not there yet, a tool is introduced that generates the templates for tests, which guarantees 
