@@ -39,6 +39,8 @@ Table: (\#tab:build-analytics-selected-papers) Selected papers
  
 
 
+# Appendix
+
 ## Appendix to Chapter 5 (Ecosystem Analytics)
 
 | Selected | Author(s)          | Title                                                                                         | Year | Keywords                                                                                                    |
@@ -141,7 +143,6 @@ _Table 4.7: Papers and findings for RQ1._
 [^5.4]: https://scholar.google.com
 [^5.5]: https://npmjs.com
 
-
 ## Appendix to Chapter 6 (Release Engineering Analytics)
 
 This appendix contains sections that were part of our process during
@@ -153,7 +154,7 @@ and the raw extracted data from the selected studies.
 
 ### Project Timetable
 
-The literature review was conducted over the course of four weeks. We worked iteratively and 
+The literature review was conducted over the course of four weeks. We worked iteratively and
 planned for four weekly milestones.
 
 +-----------+----------+-------------------------------------------------------+
@@ -326,7 +327,7 @@ except for level 5 (evidence obtained from expert opinion).
 5. Evidence obtained from expert opinion based on theory or consensus.
 
 Also, the studies will be examined to see if they contain any type of bias.
-For this, the same types of biases will be used as described by 
+For this, the same types of biases will be used as described by
 Kitchenham@kitchenham2004procedures:
 
 - Selection/Allocation bias: Systematic difference between comparison groups
@@ -962,7 +963,6 @@ What practices in release engineering does this publication mention?
     - Rapid Release (RR)
     - Continuous deployment
     - DevOps (similar to CD, congruent with release engineering practices)
-
 
 Are these practices to be classified under dated,
 state of the art or state of the practice? Why?
@@ -1754,7 +1754,6 @@ What research gaps does this publication contain?
 Are these research gaps filled by any other publications in this survey?
 
 -
-
 
 ## Appendix to Chapter 7 (Code Review)
 
