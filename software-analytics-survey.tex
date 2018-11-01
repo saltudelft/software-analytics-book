@@ -407,16 +407,16 @@ explained.
 \section{Research Protocol}\label{research-protocol}
 
 For this chapter, we applied Kitchenham's survey method
-{[}{\textbf{???}}{]} was applied. For this method, a protocol has to be
-specified. This protocol is defined for the research questions given
-above. Below the inclusion and exclusion criteria are given, which
-helped finding papers. After these criteria, the actual search for
-papers is described. The papers that were found are listed and after
-they are tested against the criteria that are given. The data that is
-extracted from these papers are listed afterward. Some papers that were
-left out will be listed and the reasons for leaving them out will be
-given to make clear why some papers do not meet the desired
-requirements.
+{[}\protect\hyperlink{ref-kitchenham2004procedures}{104}{]} was applied.
+For this method, a protocol has to be specified. This protocol is
+defined for the research questions given above. Below the inclusion and
+exclusion criteria are given, which helped finding papers. After these
+criteria, the actual search for papers is described. The papers that
+were found are listed and after they are tested against the criteria
+that are given. The data that is extracted from these papers are listed
+afterward. Some papers that were left out will be listed and the reasons
+for leaving them out will be given to make clear why some papers do not
+meet the desired requirements.
 
 Each of the papers was tested using our inclusion and exclusion
 criteria. These criteria were introduced to make sure the papers have
@@ -1576,11 +1576,11 @@ might be would allow more development and testing efforts to be
 allocated on the right places.
 
 However, reliably predicting which parts of source code are the most
-fault-prone is one of the holy grails of software engineering
+fault-prone is one of the toughest problems of software engineering
 {[}\protect\hyperlink{ref-DAmbros2012}{65}{]}. Thus it is not surprising
 that bug prediction continues to garner a widespread research interest
 in software analytics, now equipped with the ever-expanding toolbox of
-data-mining and machine learning techniques. In this survey we
+data-mining and machine learning techniques. In this survey, we
 investigate the current efforts in bug prediction in the light of the
 advances in software analytics methods and focus our attention on
 answering the following research questions:
@@ -1700,8 +1700,8 @@ We looked for additional papers with the following queries:
 \item
   Filtering by the number of citations. We selected papers with 10 or
   more citations in order to focus on the ones that already have some
-  visibility within the field. Also, there were some exceptions for
-  every recently published papers.
+  visibility within the field. Also, there were some exceptions for very
+  recently published papers.
 \item
   Exploring other impactful publications by the same authors.
 \end{enumerate}
@@ -1745,7 +1745,7 @@ groups based on which aspect of a piece of software they measure:
   \emph{The product}: the (static) code itself.
 \item
   \emph{The process}: the different aspects that describe how the
-  product developed through time. We include both simpler changelog
+  product developed through time. We include both simpler change log
   based metrics that require different versions as well as metrics that
   require detailed process recording.
 \end{itemize}
@@ -1773,11 +1773,11 @@ are based on the idea of classes and measure class-related concepts like
 \emph{amount of methods}, \emph{coupling}, \emph{inheritance} and
 \emph{cohesion} {[}\protect\hyperlink{ref-Gyimothy2005}{77}{]}.
 
-A drawback of static code metrics is that, the authors find that such
-metrics have high stasis which means they do not change a lot from
-release to release {[}\protect\hyperlink{ref-Rahman2013}{157}{]}. In
-turn, this can cause stagnation in the prediction models, which classify
-the same files as bug-prone over and over.
+A drawback of static code metrics is that that such metrics have high
+stasis, which means they do not change a lot from release to release
+{[}\protect\hyperlink{ref-Rahman2013}{157}{]}. In turn, this can cause
+stagnation in the prediction models, which classify the same files as
+bug-prone over and over.
 
 \subsubsection{Process metrics}\label{process-metrics}
 
@@ -1827,16 +1827,16 @@ found to outperform models based on other coarser metrics such as code
 churn; however, the gain in performance comes at the cost of extracting
 these fine-grained changes.
 
-\paragraph{Developer-based metrics}\label{developer-based-metrics}
+\subsubsection{Developer-based metrics}\label{developer-based-metrics}
 
 Besides metrics from code repositories we can also extract some metrics
 from developers itself. It was shown that modules touched by more
 developers are more likely to contain more bugs
-{[}\protect\hyperlink{ref-Matsumoto2010}{124}{]}. Also, using developer
-based metrics in combination with other metrics can improve prediction
-results {[}\protect\hyperlink{ref-Matsumoto2010}{124}{]}. Furthermore,
-it turns out that developer experience has no clear correlation with how
-much faults they introduce
+{[}\protect\hyperlink{ref-Matsumoto2010}{124}{]}. Also, using
+developer-based metrics in combination with other metrics can improve
+prediction results {[}\protect\hyperlink{ref-Matsumoto2010}{124}{]}.
+Furthermore, it turns out that developer experience has no clear
+correlation with how many faults they introduce
 {[}\protect\hyperlink{ref-rahman2011}{158}{]}.
 
 Faults can also be predicted by tracking micro-interactions of
@@ -1848,7 +1848,7 @@ find that their prediction results exceed those of some product and
 process metrics.
 
 Another set of metrics are scattering metrics, which uses data about how
-focussed a developers work is
+focused a developers work is
 {[}\protect\hyperlink{ref-DiNucci2018}{56}{]}. Structural scattering
 describes how structurally far apart in the project the code is.
 Semantic scattering measures how different the code being edited is in
@@ -1865,7 +1865,7 @@ prediction which can actually be used. We will also show some
 preliminary results of these models, however, as we will explain later
 on, it is not trivial to compare the results of different models.
 
-\paragraph{\texorpdfstring{History Complexity Metric
+\subsubsection{\texorpdfstring{History Complexity Metric
 {[}\protect\hyperlink{ref-hassan2009}{80}{]}}{History Complexity Metric {[}80{]}}}\label{history-complexity-metric-hassan2009}
 
 Files that are modified during periods of high change complexity will
@@ -1873,22 +1873,22 @@ contain more faults. Developers changing code during these periods will
 make mistakes, because they probably will not be aware of the current
 state of the code. This method is useful in practice because companies
 may not have a full bug history, while they probably do have history of
-code changes. Outperforms models based on prior faults, 15-38\% decrease
-in prediction errors. However, D'Ambros et al. contradict this statement
-{[}\protect\hyperlink{ref-DAmbros2010}{64}{]}.
+code changes. This method outperforms models based on prior faults, at a
+15-38\% decrease in prediction errors. However, D'Ambros et al.
+contradict this statement {[}\protect\hyperlink{ref-DAmbros2010}{64}{]}.
 
-\paragraph{\texorpdfstring{FixCache
+\subsubsection{\texorpdfstring{FixCache
 {[}\protect\hyperlink{ref-kim2007}{102}{]}}{FixCache {[}102{]}}}\label{fixcache-kim2007}
 
 Maintains a fixed-size cache of files that are most likely to contain
-bugs. Files are added to cache if it meets one of the locality criteria,
-which are:
+bugs. Files are added to cache if they meet one of the locality
+criteria, which are:
 
 \begin{itemize}
 \tightlist
 \item
-  Churn locality: if a file is recently modified it is likely to contain
-  faults
+  Churn locality: if a file is recently modified, it is likely to
+  contain faults
 \item
   Temporal locality: if a file contains a fault, it is more likely to
   contain more faults
@@ -1897,19 +1897,20 @@ which are:
   likely to contain faults
 \end{itemize}
 
-If the cache if full the least recently used file is removed from the
-cache. The size of the cache is set at 10\% of all files. Hit rate of
-about 73-95\% at file level, 46-72\% at method level.
+If the cache is full the least recently used file is removed from the
+cache. The size of the cache is set to 10\% of all files. The hit rate
+of the cache is about 73-95\% at file level and 46-72\% at method level,
+shwoing the practical performance gains achieved by having a cache.
 
-\paragraph{\texorpdfstring{Rahman
+\subsubsection{\texorpdfstring{Rahman
 {[}\protect\hyperlink{ref-rahman2011}{158}{]}}{Rahman {[}158{]}}}\label{rahman-rahman2011}
 
-The Rahman algorithm is based on the FixCache algorithm, in their
+The Rahman algorithm is based on the FixCache algorithm. In their
 research they found that the temporal locality was by far the most
 influential factor. The Rahman algorithm is thus implemented based
 solely on that factor.
 
-\paragraph{\texorpdfstring{Time-weighted risk algorithm
+\subsubsection{\texorpdfstring{Time-weighted risk algorithm
 {[}\protect\hyperlink{ref-Lewis2013}{112}{]}}{Time-weighted risk algorithm {[}112{]}}}\label{time-weighted-risk-algorithm-lewis2013}
 
 An algorithm based on the Rahman algorithm, it includes a weight factor
@@ -1917,7 +1918,7 @@ based on how old a commit is, older bug fixing commits have less impact
 on the overall bug-proneness of the file. Instead of showing top 10\% of
 bug-prone files, this shows the top 20 files.
 
-\paragraph{Machine learning}\label{machine-learning}
+\subsubsection{Machine learning}\label{machine-learning}
 
 With machine learning methods bugs can be predicted by software tools,
 these tools train on the code base, code history and other data from
@@ -1928,20 +1929,20 @@ this does not work for new projects since cross-project defect
 prediction does not yet give good results
 {[}\protect\hyperlink{ref-zimmermann2009}{201}{]}.
 
-\paragraph{Analysis on Abstract Syntax
+\subsubsection{Analysis on Abstract Syntax
 Trees}\label{analysis-on-abstract-syntax-trees}
 
 Because ASTs give a more high-level description of the syntax of a
 program it could give more useful insights for bug prediction than other
-analysis methods. Downside is that ASTs is that dynamic programming
-languages cannot produce static ASTs. Wang et al. uses ASTs in
-combination with a machine learning approach for bug prediction. They
-also show that using ASTs can improve cross-project prediction results
+analysis methods. Downside of ASTs is that dynamic programming languages
+cannot produce static ASTs. Wang et al. uses ASTs in combination with a
+machine learning approach for bug prediction. They also show that using
+ASTs can improve cross-project prediction results
 {[}\protect\hyperlink{ref-wang2016}{191}{]}.
 
 \subsection{RQ1: Evaluations}\label{rq1-evaluations}
 
-In order to answer this questions we looked at the scientific papers
+In order to answer these questions we looked at the scientific papers
 that benchmark prediction models in any way, and specifically looked at
 the way these are evaluated. We found that most papers use a simple yet
 logical approach to benchmark an algorithm's performance. This approach
@@ -1971,7 +1972,7 @@ distributions, which are project-specific characteristics that may be
 unknown or subject to change.''
 {[}\protect\hyperlink{ref-Lessman2008}{110}{]}.
 
-It is also worth noting the conclusion of Shepperd et al., in which they
+The conclusion of Shepperd et al. is also worth noting, in which they
 found that 30 percent of the variance of the algorithm's performance can
 be ``explained'' based on the research group, while the variability due
 to the choice of classifier is very small
@@ -1981,9 +1982,9 @@ to the choice of classifier is very small
 
 There seems to be none to very little usage of bug prediction tools in
 the industry, even searching outside the scope of the scientific
-literature did not come up with anything. On GitHub we could only find a
-handful of repositories which implement a bug prediction tool, however,
-none of these are actively maintained any longer.
+literature we did not come up with anything. On GitHub we could only
+find a handful of repositories which implement a bug prediction tool,
+however, none of these are actively maintained any longer.
 
 Furthermore, all the tools we did find were based on references
 {[}\protect\hyperlink{ref-Lewis2013}{112}{]} or
@@ -2032,11 +2033,11 @@ that bug prediction tools should have in some cases:
 developers}\label{rq2-actionable-tools-for-developers}
 
 The only paper that tackles this question is by Lewis et al., in which
-the authors deploy bug predicting software to developers workspaces and
-evaluate developers behaviour after and before having the software
-{[}\protect\hyperlink{ref-Lewis2013}{112}{]}. In this study they
-conclude currently, fault prediction does not provide actionable tools
-for developers.
+the authors deploy bug predicting software to developers workspaces at
+Google and evaluate developers behavior after and before having the
+software {[}\protect\hyperlink{ref-Lewis2013}{112}{]}. In this study
+they conclude currently, fault prediction does not provide actionable
+tools for developers.
 
 To answer this questions we found no more information in scientific
 papers, so we had to look outside of the academic world in order to see
@@ -2054,8 +2055,8 @@ We believe that the bug prediction field still has a lot of open
 challenges, for example, the use of developer-related factors in the
 predictions. Still no strong conclusions have been found, so this field
 requires a lot of further investigation to be able to find better models
-and useful applications of this techniques. All this challenges are
-anchored to a very hard to prove external validity.
+and useful applications of these techniques. All these challenges are
+anchored in a very hard to prove external validity.
 
 In conclusion, bug prediction is still a partially explored area, and
 even though some algorithms have proven to be successful to some degree,
