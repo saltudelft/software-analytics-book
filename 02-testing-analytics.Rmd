@@ -1,7 +1,7 @@
 # Testing Analytics
 ## Motivation
 Testing is an important aspect in software engineering, as it forms the first line of
-defence against the introduction of software faults Pinto et al. [@pinto2012understanding].
+defense against the introduction of software faults Pinto et al. [@pinto2012understanding].
 However, in
 practice it seems that not all developers test actively. In this chapter we will survey on the use 
 of testing and the tools that make this possible. We will also look into the future development of
@@ -262,7 +262,7 @@ development and research for automated repair techniques. Mirzaaghaei et al.
 @supportingtestsuite argue that evolving test cases is an expensive and time-consuming activity,
 for which automated approaches reduce the pressure on developers. Shamshiri et al. 
 @shamshiri2018automatically argue that automated generation of unit tests does not end up
-generating realistic tests and that the effectivity of developers writing manual tests is equal
+generating realistic tests and that the effectiveness of developers writing manual tests is equal
 to developers using automatically generated tests. Therefore, they call for the use of more
 realistic tests. This suggests that automated test generation is still a topic of future interest,
 which
