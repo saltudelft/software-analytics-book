@@ -25,7 +25,7 @@
 <meta name="author" content="Students and teachers of the 2018 IN4334 (Software Analytics) course @ TU Delft">
 
 
-<meta name="date" content="2018-10-31">
+<meta name="date" content="2018-11-01">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -85,11 +85,11 @@
 </ul></li>
 <li class="chapter" data-level="2.4" data-path="testing-analytics.html"><a href="testing-analytics.html#conclusion"><i class="fa fa-check"></i><b>2.4</b> Conclusion</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="build-analytics.html"><a href="build-analytics.html"><i class="fa fa-check"></i><b>3</b> Build analytics</a><ul>
+<li class="chapter" data-level="3" data-path="build-analytics.html"><a href="build-analytics.html"><i class="fa fa-check"></i><b>3</b> Build Analytics</a><ul>
 <li class="chapter" data-level="3.1" data-path="build-analytics.html"><a href="build-analytics.html#motivation-1"><i class="fa fa-check"></i><b>3.1</b> Motivation</a><ul>
 <li class="chapter" data-level="3.1.1" data-path="build-analytics.html"><a href="build-analytics.html#introduction"><i class="fa fa-check"></i><b>3.1.1</b> Introduction</a></li>
 <li class="chapter" data-level="3.1.2" data-path="build-analytics.html"><a href="build-analytics.html#continuous-integration-and-version-control-system"><i class="fa fa-check"></i><b>3.1.2</b> Continuous Integration and Version Control System</a></li>
-<li class="chapter" data-level="3.1.3" data-path="build-analytics.html"><a href="build-analytics.html#build-definition"><i class="fa fa-check"></i><b>3.1.3</b> Build Definition</a></li>
+<li class="chapter" data-level="3.1.3" data-path="build-analytics.html"><a href="build-analytics.html#build-analytics-definition"><i class="fa fa-check"></i><b>3.1.3</b> Build Analytics Definition</a></li>
 <li class="chapter" data-level="3.1.4" data-path="build-analytics.html"><a href="build-analytics.html#research-questions"><i class="fa fa-check"></i><b>3.1.4</b> Research Questions</a></li>
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="build-analytics.html"><a href="build-analytics.html#build-analytics-research-protocol"><i class="fa fa-check"></i><b>3.2</b> Research Protocol</a><ul>
@@ -231,7 +231,7 @@
 <h1><span class="header-section-number">Chapter 2</span> Testing Analytics</h1>
 <div id="motivation" class="section level2">
 <h2><span class="header-section-number">2.1</span> Motivation</h2>
-<p>Testing is an important aspect in software engineering, as it forms the first line of defence against the introduction of software faults Pinto et al. <span class="citation">[<a href="#ref-pinto2012understanding">152</a>]</span>. However, in practice it seems that not all developers test actively. In this chapter we will survey on the use of testing and the tools that make this possible. We will also look into the future development of tools that is done or required in order to improve testing practices in real-world applications. Testing is not the holy grail for completely removing all bugs from a program but it can decrease the chances for a user to encounter a bug. We believe that extra research is needed to ease the life of developers by making testing more efficient, easier to maintain and more effective. Therefore, we wanted to write a survey on the testing behavior, current practices and future developments of testing. In order to perform our survey, we formulated three Research Questions (RQs):</p>
+<p>Testing is an important aspect in software engineering, as it forms the first line of defense against the introduction of software faults Pinto et al. <span class="citation">[<a href="#ref-pinto2012understanding">152</a>]</span>. However, in practice it seems that not all developers test actively. In this chapter we will survey on the use of testing and the tools that make this possible. We will also look into the future development of tools that is done or required in order to improve testing practices in real-world applications. Testing is not the holy grail for completely removing all bugs from a program but it can decrease the chances for a user to encounter a bug. We believe that extra research is needed to ease the life of developers by making testing more efficient, easier to maintain and more effective. Therefore, we wanted to write a survey on the testing behavior, current practices and future developments of testing. In order to perform our survey, we formulated three Research Questions (RQs):</p>
 <ul>
 <li><strong>RQ1</strong> How do developers currently test?</li>
 <li><strong>RQ2</strong> What state of the art technologies are being used?</li>
@@ -455,7 +455,7 @@
 <div id="co-evolution-and-test-generation" class="section level4">
 <h4><span class="header-section-number">2.3.3.1</span> Co-Evolution and Test Generation</h4>
 <p>For understanding how test- and production code co-evolve and how tests can be generated to support developers, several studies have been conducted <span class="citation">[<a href="#ref-marsavina2014">122</a>, <a href="#ref-pinto2012understanding">152</a>, <a href="#ref-zaidman2011studying">196</a>]</span>. Additionally, a tool has been made in order to analyze and, consequently, better understand test-suite evolution <span class="citation">[<a href="#ref-pinto2013">151</a>]</span>. For the time being the practical implications of this subtopic have mainly been sought in the repairing and generation of tests.</p>
-<p>According to Pinto et al. <span class="citation">[<a href="#ref-pinto2012understanding">152</a>]</span> test repairs occur often enough to justify the development and research for automated repair techniques. Mirzaaghaei et al. <span class="citation">[<a href="#ref-supportingtestsuite">135</a>]</span> argue that evolving test cases is an expensive and time-consuming activity, for which automated approaches reduce the pressure on developers. Shamshiri et al. <span class="citation">[<a href="#ref-shamshiri2018automatically">169</a>]</span> argue that automated generation of unit tests does not end up generating realistic tests and that the effectivity of developers writing manual tests is equal to developers using automatically generated tests. Therefore, they call for the use of more realistic tests. This suggests that automated test generation is still a topic of future interest, which will likely be researched in order to find a way to generate realistic tests.</p>
+<p>According to Pinto et al. <span class="citation">[<a href="#ref-pinto2012understanding">152</a>]</span> test repairs occur often enough to justify the development and research for automated repair techniques. Mirzaaghaei et al. <span class="citation">[<a href="#ref-supportingtestsuite">135</a>]</span> argue that evolving test cases is an expensive and time-consuming activity, for which automated approaches reduce the pressure on developers. Shamshiri et al. <span class="citation">[<a href="#ref-shamshiri2018automatically">169</a>]</span> argue that automated generation of unit tests does not end up generating realistic tests and that the effectiveness of developers writing manual tests is equal to developers using automatically generated tests. Therefore, they call for the use of more realistic tests. This suggests that automated test generation is still a topic of future interest, which will likely be researched in order to find a way to generate realistic tests.</p>
 </div>
 <div id="risk-driven-testing-1" class="section level4">
 <h4><span class="header-section-number">2.3.3.2</span> Risk-driven Testing</h4>
