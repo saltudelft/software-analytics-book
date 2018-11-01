@@ -12,7 +12,7 @@ Being able to predict where such areas might be would allow more development and
 testing efforts to be allocated on the right places.
 
 However, reliably predicting which parts of source code are the most 
-fault-prone is one of the holy grails of software engineering [@DAmbros2012].
+fault-prone is one of the toughest problems of software engineering [@DAmbros2012].
 Thus it is not surprising that bug prediction continues to 
 garner a widespread research interest in software analytics, 
 now equipped with the ever-expanding toolbox of data-mining and machine learning techniques. 
@@ -87,7 +87,7 @@ based on which aspect of a piece of software they measure:
 
 * *The product*: the (static) code itself.
 * *The process*: the different aspects that describe how the product developed through time. 
-  We include both simpler changelog based metrics that require different versions as well 
+  We include both simpler change log based metrics that require different versions as well 
   as metrics that require detailed process recording.
 
 #### Product metrics
@@ -164,7 +164,7 @@ and _time spent on editing_.
 They find that their prediction results exceed those of some product and process metrics.
 
 Another set of metrics are scattering metrics, 
-which uses data about how focussed a developers work is [@DiNucci2018].
+which uses data about how focused a developers work is [@DiNucci2018].
 Structural scattering describes how structurally far apart in the project the code is. 
 Semantic scattering measures how different the code being edited is 
 in terms of implemented responsibilities, this is measured by textually comparing the code. 
@@ -296,7 +296,7 @@ have to do with the following properties that bug prediction tools should have i
 ### RQ2: Actionable tools for developers
 The only paper that tackles this question is by Lewis et al., 
 in which the authors deploy bug predicting software to developers 
-workspaces at Google and evaluate developers behaviour after and before having the software [@Lewis2013]. 
+workspaces at Google and evaluate developers behavior after and before having the software [@Lewis2013]. 
 In this study they conclude currently, 
 fault prediction does not provide actionable tools for developers.
 
