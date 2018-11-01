@@ -24,7 +24,7 @@ and extract information for the survey. Second, the actual findings for each of 
 questions will be explained.
 
 ## Research Protocol
-For this chapter, we applied Kitchenham's survey method [@Kitchenham2004] was applied. For this method, a 
+For this chapter, we applied Kitchenham's survey method [@kitchenham2004procedures] was applied. For this method, a 
 protocol has to be
 specified. This protocol is defined for the research questions given above. Below the inclusion
 and exclusion criteria are given, which helped finding papers. After these criteria,
